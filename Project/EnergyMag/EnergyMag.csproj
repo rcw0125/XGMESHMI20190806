@@ -1,0 +1,259 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E41FC841-8178-4255-A4D5-D3599A2983BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnergyMag</RootNamespace>
+    <AssemblyName>EnergyMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3174.18035, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\L3\AppServer\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\excel.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3208.26989, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\L3\AppServer\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\lib\新建文件夹\风动送样客户端\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="TeeChart, Version=3.5.3105.20151, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Steema Software\TeeChart for .NET v3\TeeChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CurveShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurveShowFrm.designer.cs">
+      <DependentUpon>CurveShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ENConManualFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENConManualFrm.designer.cs">
+      <DependentUpon>ENConManualFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyDataAddModFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyDataAddModFrm.Designer.cs">
+      <DependentUpon>EnergyDataAddModFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyDataManageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyDataManageFrm.Designer.cs">
+      <DependentUpon>EnergyDataManageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnergyMeter.Designer.cs">
+      <DependentUpon>EnergyMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyMeter1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnergyMeter1.Designer.cs">
+      <DependentUpon>EnergyMeter1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyMeter2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnergyMeter2.designer.cs">
+      <DependentUpon>EnergyMeter2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyMeter3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnergyMeter3.Designer.cs">
+      <DependentUpon>EnergyMeter3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyStatFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyStatFrm.designer.cs">
+      <DependentUpon>EnergyStatFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnergyStatShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnergyStatShowFrm.Designer.cs">
+      <DependentUpon>EnergyStatShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ENMagMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENMagMainFrm.Designer.cs">
+      <DependentUpon>ENMagMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ENMediumMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENMediumMagFrm.Designer.cs">
+      <DependentUpon>ENMediumMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireDataFrm.Designer.cs">
+      <DependentUpon>FireDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CurveShowFrm.resx">
+      <DependentUpon>CurveShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENConManualFrm.resx">
+      <DependentUpon>ENConManualFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyDataAddModFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnergyDataAddModFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyDataManageFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnergyDataManageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyMeter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EnergyMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyMeter1.resx">
+      <DependentUpon>EnergyMeter1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyMeter2.resx">
+      <DependentUpon>EnergyMeter2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyMeter3.resx">
+      <DependentUpon>EnergyMeter3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyStatFrm.resx">
+      <DependentUpon>EnergyStatFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnergyStatShowFrm.resx">
+      <DependentUpon>EnergyStatShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENMagMainFrm.resx">
+      <DependentUpon>ENMagMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENMediumMagFrm.resx">
+      <DependentUpon>ENMediumMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireDataFrm.resx">
+      <DependentUpon>FireDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

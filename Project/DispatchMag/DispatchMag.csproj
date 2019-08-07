@@ -1,0 +1,355 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA3B3E0B-769B-4303-9D4E-51B77E0973D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DispatchMag</RootNamespace>
+    <AssemblyName>DispatchMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="edwinformsui, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\edwinformsui.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="NCTelDataMag">
+      <HintPath>..\NCTelDataMag\bin\Debug\NCTelDataMag.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\lib\新建文件夹\风动送样客户端\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiapatchExceptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiapatchExceptionFrm.Designer.cs">
+      <DependentUpon>DiapatchExceptionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisExcepitonalItemsShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisExcepitonalItemsShowFrm.designer.cs">
+      <DependentUpon>DisExcepitonalItemsShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisExcepitonalShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisExcepitonalShowFrm.Designer.cs">
+      <DependentUpon>DisExcepitonalShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisExceptionalQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisExceptionalQueryFrm.Designer.cs">
+      <DependentUpon>DisExceptionalQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchMap.Designer.cs">
+      <DependentUpon>DispatchMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispExceptionalFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispExceptionalFrm.designer.cs">
+      <DependentUpon>DispExceptionalFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSchemaFrmOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessSchemaFrmOld.designer.cs">
+      <DependentUpon>ProcessSchemaFrmOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSchemaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessSchemaFrm.designer.cs">
+      <DependentUpon>ProcessSchemaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessTimeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessTimeFrm.Designer.cs">
+      <DependentUpon>ProcessTimeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchLogFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchLogFrm.Designer.cs">
+      <DependentUpon>DispatchLogFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogQueryFrm.Designer.cs">
+      <DependentUpon>LogQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\MESWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DiapatchExceptionFrm.resx">
+      <DependentUpon>DiapatchExceptionFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisExcepitonalItemsShowFrm.resx">
+      <DependentUpon>DisExcepitonalItemsShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisExcepitonalShowFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisExcepitonalShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisExceptionalQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisExceptionalQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DispatchMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispExceptionalFrm.resx">
+      <DependentUpon>DispExceptionalFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessSchemaFrmOld.resx">
+      <DependentUpon>ProcessSchemaFrmOld.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessSchemaFrm.resx">
+      <DependentUpon>ProcessSchemaFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessTimeFrm.resx">
+      <DependentUpon>ProcessTimeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchLogFrm.resx">
+      <DependentUpon>DispatchLogFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogQueryFrm.resx">
+      <DependentUpon>LogQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelBackFrm.resx">
+      <DependentUpon>SteelBackFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelDivFrm.resx">
+      <DependentUpon>SteelDivFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelExchangeFrm.resx">
+      <DependentUpon>SteelExchangeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelTurnFrm.resx">
+      <DependentUpon>SteelTurnFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelTurnQuery.resx">
+      <DependentUpon>SteelTurnQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelExchangeQueryFrm.resx">
+      <DependentUpon>SteelExchangeQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelBackQueryFrm.resx">
+      <DependentUpon>SteelBackQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SteelBackFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelBackFrm.Designer.cs">
+      <DependentUpon>SteelBackFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelDivFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelDivFrm.Designer.cs">
+      <DependentUpon>SteelDivFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelExchangeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelExchangeFrm.Designer.cs">
+      <DependentUpon>SteelExchangeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelTurnFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelTurnFrm.Designer.cs">
+      <DependentUpon>SteelTurnFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelTurnQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelTurnQuery.designer.cs">
+      <DependentUpon>SteelTurnQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelExchangeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelExchangeQueryFrm.designer.cs">
+      <DependentUpon>SteelExchangeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelBackQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelBackQueryFrm.Designer.cs">
+      <DependentUpon>SteelBackQueryFrm.cs</DependentUpon>
+    </Compile>
+    <None Include="Web References\MESWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MESWS\wsmes.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitMag\UnitMag.csproj">
+      <Project>{F1FEE102-40BA-4ABA-BC5B-6410D89B8D07}</Project>
+      <Name>UnitMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXFFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXFBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.36.155/wsmes.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MESWS\</RelPath>
+      <UpdateFromURL>http://192.168.36.155/wsmes.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DispatchMag_MESWS_WSMES</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\MESWS\wsmes.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

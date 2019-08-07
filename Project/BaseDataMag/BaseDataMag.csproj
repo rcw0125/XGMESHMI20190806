@@ -1,0 +1,385 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25363A78-EC23-4C1F-B0FA-ED107653EF9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseDataMag</RootNamespace>
+    <AssemblyName>BaseDataMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="COMIDE, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\COMIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\DataGridViewFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DOCObjClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\DOCObjClass.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL" />
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PxC1TrueDBGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxC1TrueDBGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PxC1TrueDBQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxC1TrueDBQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxColumnFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxColumnFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="PxConditionQuery, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxConditionQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxControls, Version=1.0.3373.21920, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="PxExpanddataGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxExpanddataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIniStyle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxIniStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIntelliSave, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxIntelliSave.dll</HintPath>
+    </Reference>
+    <Reference Include="PxInterfaceControls, Version=1.0.3379.27520, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxInterfaceControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxRadioButtonsPanel, Version=1.0.3463.29475, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxRadioButtonsPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolBar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxToolBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PxtoolStrip, Version=1.0.3791.19970, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxtoolStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxToolStripControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripQuery, Version=1.0.3743.24233, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxToolStripQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxTurnPageControls, Version=1.0.3688.18756, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxTurnPageControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxWarnClass, Version=1.0.3691.17726, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\PxWarnClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Session, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\Session.dll</HintPath>
+    </Reference>
+    <Reference Include="SysLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\SysLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart, Version=3.5.3105.20151, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL" />
+    <Reference Include="VirtualCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\VirtualCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\WeifenLuo.WinFormsUI.Docking.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressWireRelationMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressWireRelationMagFrm.Designer.cs">
+      <DependentUpon>AddressWireRelationMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseAllCodeMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseAllCodeMagFrm.designer.cs">
+      <DependentUpon>BaseAllCodeMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSteelBulkConsumeRateMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSteelBulkConsumeRateMagFrm.Designer.cs">
+      <DependentUpon>CSteelBulkConsumeRateMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleAgeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleAgeQueryFrm.Designer.cs">
+      <DependentUpon>IronLadleAgeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQMaterialMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQMaterialMagFrm.Designer.cs">
+      <DependentUpon>EQMaterialMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQMaterialMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQMaterialMagShowFrm.Designer.cs">
+      <DependentUpon>EQMaterialMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedMapFrm.designer.cs">
+      <DependentUpon>FeedMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleDataManageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleDataManageFrm.designer.cs">
+      <DependentUpon>IronLadleDataManageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialPriceMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialPriceMagFrm.Designer.cs">
+      <DependentUpon>MaterialPriceMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddressWireRelationMagFrm.resx">
+      <DependentUpon>AddressWireRelationMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseAllCodeMagFrm.resx">
+      <DependentUpon>BaseAllCodeMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSteelBulkConsumeRateMagFrm.resx">
+      <DependentUpon>CSteelBulkConsumeRateMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleAgeQueryFrm.resx">
+      <DependentUpon>IronLadleAgeQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQMaterialMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EQMaterialMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQMaterialMagShowFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EQMaterialMagShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedMapFrm.resx">
+      <DependentUpon>FeedMapFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleDataManageFrm.resx">
+      <DependentUpon>IronLadleDataManageFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialPriceMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaterialPriceMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftTeamMagFrm.resx">
+      <DependentUpon>ShiftTeamMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMagFrm.resx">
+      <DependentUpon>EmployeeMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelGradeStdMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelGradeStdMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WireCoefficientFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WireCoefficientFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostMediumMagFrm.resx">
+      <DependentUpon>CostMediumMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostStandardRateMagFrm.resx">
+      <DependentUpon>CostStandardRateMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitPriceMagFrm.resx">
+      <DependentUpon>UnitPriceMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitConsumeMagFrm.resx">
+      <DependentUpon>UnitConsumeMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShiftTeamMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftTeamMagFrm.designer.cs">
+      <DependentUpon>ShiftTeamMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMagFrm.designer.cs">
+      <DependentUpon>EmployeeMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelGradeStdMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelGradeStdMagFrm.Designer.cs">
+      <DependentUpon>SteelGradeStdMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WireCoefficientFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WireCoefficientFrm.Designer.cs">
+      <DependentUpon>WireCoefficientFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostMediumMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostMediumMagFrm.Designer.cs">
+      <DependentUpon>CostMediumMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostStandardRateMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostStandardRateMagFrm.Designer.cs">
+      <DependentUpon>CostStandardRateMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitPriceMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitPriceMagFrm.Designer.cs">
+      <DependentUpon>UnitPriceMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitConsumeMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitConsumeMagFrm.Designer.cs">
+      <DependentUpon>UnitConsumeMagFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

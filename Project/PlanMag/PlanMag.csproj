@@ -1,0 +1,339 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6B80B74-EB86-44FC-9016-F70FE4602BF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlanMag</RootNamespace>
+    <AssemblyName>PlanMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridValid, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\DataGridValid.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL" />
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\L3\AppServer\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOFStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFStatusFrm.Designer.cs">
+      <DependentUpon>BOFStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRouteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRouteFrm.designer.cs">
+      <DependentUpon>ChangeRouteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control.designer.cs">
+      <DependentUpon>Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataUpdate.Designer.cs">
+      <DependentUpon>DataUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispAccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispAccountFrm.Designer.cs">
+      <DependentUpon>DispAccountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenCastingPlanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenCastingPlanFrm.designer.cs">
+      <DependentUpon>GenCastingPlanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenTappingPlanFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenTappingPlanFrm.designer.cs">
+      <DependentUpon>GenTappingPlanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelProductPathFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelProductPathFrm.Designer.cs">
+      <DependentUpon>SelProductPathFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TappingPlanQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TappingPlanQueryFrm.Designer.cs">
+      <DependentUpon>TappingPlanQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanOrdIntegerateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanOrdIntegerateFrm.designer.cs">
+      <DependentUpon>PlanOrdIntegerateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanOrdRecFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanOrdRecFrm.Designer.cs">
+      <DependentUpon>PlanOrdRecFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanWriteInFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanWriteInFrm.Designer.cs">
+      <DependentUpon>PlanWriteInFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanWriteInShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanWriteInShowFrm.designer.cs">
+      <DependentUpon>PlanWriteInShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BOFStatusFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BOFStatusFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRouteFrm.resx">
+      <DependentUpon>ChangeRouteFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control.resx">
+      <DependentUpon>Control.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataUpdate.resx">
+      <DependentUpon>DataUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispAccountFrm.resx">
+      <DependentUpon>DispAccountFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenCastingPlanFrm.resx">
+      <DependentUpon>GenCastingPlanFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenTappingPlanFrm.resx">
+      <DependentUpon>GenTappingPlanFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelProductPathFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelProductPathFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TappingPlanQueryFrm.resx">
+      <DependentUpon>TappingPlanQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanOrdIntegerateFrm.resx">
+      <DependentUpon>PlanOrdIntegerateFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanOrdRecFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlanOrdRecFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanWriteInFrm.resx">
+      <DependentUpon>PlanWriteInFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanWriteInShowFrm.resx">
+      <DependentUpon>PlanWriteInShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TappingPlanMainFrm.resx">
+      <DependentUpon>TappingPlanMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TappingPlanModifyFrm.resx">
+      <DependentUpon>TappingPlanModifyFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePlanTimeFrm.resx">
+      <DependentUpon>ChangePlanTimeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateControl.resx">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteInTimeFrm.resx">
+      <DependentUpon>WriteInTimeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TappingActFrm.resx">
+      <DependentUpon>TappingActFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomPlanQueryFrm.resx">
+      <DependentUpon>BloomPlanQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TappingPlanMainFrm2.resx">
+      <DependentUpon>TappingPlanMainFrm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TappingPlanMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TappingPlanMainFrm.designer.cs">
+      <DependentUpon>TappingPlanMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TappingPlanModifyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TappingPlanModifyFrm.designer.cs">
+      <DependentUpon>TappingPlanModifyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePlanTimeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePlanTimeFrm.designer.cs">
+      <DependentUpon>ChangePlanTimeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateControl.designer.cs">
+      <DependentUpon>UpdateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteInTimeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteInTimeFrm.designer.cs">
+      <DependentUpon>WriteInTimeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TappingActFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TappingActFrm.Designer.cs">
+      <DependentUpon>TappingActFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomPlanQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomPlanQueryFrm.Designer.cs">
+      <DependentUpon>BloomPlanQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TappingPlanMainFrm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TappingPlanMainFrm2.designer.cs">
+      <DependentUpon>TappingPlanMainFrm2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\确认1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\取消1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

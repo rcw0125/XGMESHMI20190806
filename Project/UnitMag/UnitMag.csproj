@@ -1,0 +1,2264 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1FEE102-40BA-4ABA-BC5B-6410D89B8D07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitMag</RootNamespace>
+    <AssemblyName>UnitMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\FeigeDownload\1.15XGMESHMI\XGMESMain\bin\Release\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\FeigeDownload\1.15XGMESHMI\XGMESMain\bin\Release\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Preview.2, Version=2.0.20073.42109, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <HintPath>bin\Release\C1.C1Preview.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Preview.2, Version=2.0.20073.42109, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <HintPath>bin\Release\C1.Win.C1Preview.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.2, Version=2.0.20073.61130, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <HintPath>bin\Release\C1.Win.C1TrueDBGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="COMIDE, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\COMIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DataGridValid, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\DataGridValid.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\DataGridViewFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DOCObjClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\DOCObjClass.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxC1TrueDBGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxC1TrueDBGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PxC1TrueDBQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxC1TrueDBQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxColumnFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxColumnFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="PxConditionQuery, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxConditionQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxControls, Version=1.0.3373.21920, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="PxExpanddataGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxExpanddataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIniStyle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxIniStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIntelliSave, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxIntelliSave.dll</HintPath>
+    </Reference>
+    <Reference Include="PxInterfaceControls, Version=1.0.3379.27520, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxInterfaceControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxRadioButtonsPanel, Version=1.0.3463.29475, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxRadioButtonsPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolBar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PxtoolStrip, Version=1.0.3791.19970, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxtoolStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolStripControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripQuery, Version=1.0.3743.24233, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolStripQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxTurnPageControls, Version=1.0.3688.18756, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxTurnPageControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxWarnClass, Version=1.0.3691.17726, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxWarnClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Session, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SysLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\SysLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart, Version=3.5.3105.20151, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL" />
+    <Reference Include="VirtualCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\VirtualCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="WarnClass, Version=1.0.3014.26769, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\WarnClass.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\WeifenLuo.WinFormsUI.Docking.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AODMag\AODMag01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODMag01.Designer.cs">
+      <DependentUpon>AODMag01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODDesignateMaterialFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODDesignateMaterialFrm.Designer.cs">
+      <DependentUpon>AODDesignateMaterialFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODHeatFinalDataFrm.designer.cs">
+      <DependentUpon>AODHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODHeatInfoFrm.Designer.cs">
+      <DependentUpon>AODHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODAttributeFrm.designer.cs">
+      <DependentUpon>AODAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODDesignateLadleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODDesignateLadleFrm.designer.cs">
+      <DependentUpon>AODDesignateLadleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODDutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODDutyMagFrm.designer.cs">
+      <DependentUpon>AODDutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\ucAODStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AODMag\ucAODData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AODMag\ucAODData.Designer.cs">
+      <DependentUpon>ucAODData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AODMag\AODMag01M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AODMag\AODMag01M.Designer.cs">
+      <DependentUpon>AODMag01M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\DeSIronSheetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\DeSIronSheetFrm.designer.cs">
+      <DependentUpon>DeSIronSheetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronGrossFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronGrossFrm.Designer.cs">
+      <DependentUpon>IronGrossFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronNetWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronNetWeightFrm.Designer.cs">
+      <DependentUpon>IronNetWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronSampleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronSampleFrm.Designer.cs">
+      <DependentUpon>IronSampleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronSlagApplyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronSlagApplyInfo.Designer.cs">
+      <DependentUpon>IronSlagApplyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronTareFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronTareFrm.Designer.cs">
+      <DependentUpon>IronTareFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\PathInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\PathInfoFrm.Designer.cs">
+      <DependentUpon>PathInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronInfoFrm.Designer.cs">
+      <DependentUpon>IronInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronMagFrm.designer.cs">
+      <DependentUpon>IronMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\PathMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\PathMagFrm.designer.cs">
+      <DependentUpon>PathMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\QueryIronFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\QueryIronFrm.designer.cs">
+      <DependentUpon>QueryIronFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronSlagApplyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronSlagApplyFrm.designer.cs">
+      <DependentUpon>IronSlagApplyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\reSendApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\reSendApply.Designer.cs">
+      <DependentUpon>reSendApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFHeatInfoFrm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOFHeatInfoFrm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatInfoFrm.Designer.cs">
+      <DependentUpon>BOFHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\NewDesignateMaterialFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\NewDesignateMaterialFrm.Designer.cs">
+      <DependentUpon>NewDesignateMaterialFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\StackMaintenanceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\StackMaintenanceFrm.designer.cs">
+      <DependentUpon>StackMaintenanceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\ucBOFData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BOFMag\ucBOFData.Designer.cs">
+      <DependentUpon>ucBOFData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CBOF_Feed_Data.cs" />
+    <Compile Include="cbof_process_data.cs" />
+    <Compile Include="CCMMag\CCMMain06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain06.Designer.cs">
+      <DependentUpon>CCMMain06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain06L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain06L.Designer.cs">
+      <DependentUpon>CCMMain06L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain07.Designer.cs">
+      <DependentUpon>CCMMain07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ccmReScrapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ccmReScrapFrm.Designer.cs">
+      <DependentUpon>ccmReScrapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMTCDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMTCDataFrm.designer.cs">
+      <DependentUpon>CCMTCDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\AdditionShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\AdditionShowFrm.Designer.cs">
+      <DependentUpon>AdditionShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChoseDesShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChoseDesShowFrm.Designer.cs">
+      <DependentUpon>ChoseDesShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSEquipmentStatusMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSEquipmentStatusMag.Designer.cs">
+      <DependentUpon>DeSEquipmentStatusMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DesignateDeSUnitIDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DesignateDeSUnitIDFrm.Designer.cs">
+      <DependentUpon>DesignateDeSUnitIDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSIronSheetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSIronSheetFrm.designer.cs">
+      <DependentUpon>DeSIronSheetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagFrm02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagFrm02.Designer.cs">
+      <DependentUpon>DeSMagFrm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeTreatNoShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeTreatNoShowFrm.Designer.cs">
+      <DependentUpon>ChangeTreatNoShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeLanceShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeLanceShowFrm.Designer.cs">
+      <DependentUpon>ChangeLanceShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagMainFrm.Designer.cs">
+      <DependentUpon>DeSMagMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMatSetShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMatSetShow.Designer.cs">
+      <DependentUpon>DeSMatSetShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSStatusQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSStatusQueryFrm.Designer.cs">
+      <DependentUpon>DeSStatusQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSTreatFinalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSTreatFinalData.Designer.cs">
+      <DependentUpon>DeSTreatFinalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSTreatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSTreatInfoFrm.Designer.cs">
+      <DependentUpon>DeSTreatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\AdditionMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\AdditionMagFrm.designer.cs">
+      <DependentUpon>AdditionMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChoseDesTypeShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChoseDesTypeShowFrm.Designer.cs">
+      <DependentUpon>ChoseDesTypeShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagFrm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\DeSMagFrm01.Designer.cs">
+      <DependentUpon>DeSMagFrm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceChangeStatusShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceChangeStatusShow.Designer.cs">
+      <DependentUpon>LanceChangeStatusShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceMagFrm.Designer.cs">
+      <DependentUpon>LanceMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceQueryFrm.Designer.cs">
+      <DependentUpon>LanceQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\NewLanceShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\NewLanceShow.Designer.cs">
+      <DependentUpon>NewLanceShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceChangeAgeShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\LanceChangeAgeShow.Designer.cs">
+      <DependentUpon>LanceChangeAgeShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\PreRemoveSlagUnitIDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\PreRemoveSlagUnitIDFrm.Designer.cs">
+      <DependentUpon>PreRemoveSlagUnitIDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\RemoveSlagUnitIDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\RemoveSlagUnitIDFrm.Designer.cs">
+      <DependentUpon>RemoveSlagUnitIDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\RemoveSlagCountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\RemoveSlagCountFrm.Designer.cs">
+      <DependentUpon>RemoveSlagCountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeNoteMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\ChangeNoteMag.Designer.cs">
+      <DependentUpon>ChangeNoteMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\NewLanceDataShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DeSMag\NewLanceDataShow.Designer.cs">
+      <DependentUpon>NewLanceDataShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM7CureData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM7CureData.Designer.cs">
+      <DependentUpon>UCCCM7CureData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMData.designer.cs">
+      <DependentUpon>ucCCMData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMDatayuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMDatayuan.designer.cs">
+      <DependentUpon>ucCCMDatayuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMDataFor07.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMDataFor07.Designer.cs">
+      <DependentUpon>ucCCMDataFor07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm_plan.cs" />
+    <Compile Include="CQA_BOF_Std_Ar.cs" />
+    <Compile Include="CQA_BOF_Std_Base.cs" />
+    <Compile Include="CQA_BOF_Std_Bulk.cs" />
+    <Compile Include="CQA_BOF_Std_InToConver.cs" />
+    <Compile Include="CQA_BOF_Std_Ladle.cs" />
+    <Compile Include="CQA_BOF_Std_Slag_Ele.cs" />
+    <Compile Include="CQA_BOF_Std_Tapping.cs" />
+    <Compile Include="DEPMag\DEPAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPAttributeFrm.designer.cs">
+      <DependentUpon>DEPAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DEPDesignateMaterialFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPDesignateMaterialFrm.Designer.cs">
+      <DependentUpon>DEPDesignateMaterialFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DEPHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPHeatFinalDataFrm.designer.cs">
+      <DependentUpon>DEPHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DEPHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPHeatInfoFrm.Designer.cs">
+      <DependentUpon>DEPHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DEPMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPMag.Designer.cs">
+      <DependentUpon>DEPMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DePData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DePData.Designer.cs">
+      <DependentUpon>DePData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\DEPDutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPMag\DEPDutyMagFrm.designer.cs">
+      <DependentUpon>DEPDutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPMag\ucDePStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipmentStatusQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentStatusQueryFrm.designer.cs">
+      <DependentUpon>EquipmentStatusQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFAttributeFrm.designer.cs">
+      <DependentUpon>BOFAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BofMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BofMain01.Designer.cs">
+      <DependentUpon>BofMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BofMain02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BofMain02.Designer.cs">
+      <DependentUpon>BofMain02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BofMain03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BofMain03.Designer.cs">
+      <DependentUpon>BofMain03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BofMain04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BofMain04.Designer.cs">
+      <DependentUpon>BofMain04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\SteelReturnAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\SteelReturnAppFrm.Designer.cs">
+      <DependentUpon>SteelReturnAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\ucBOFData1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BOFMag\ucBOFData1.Designer.cs">
+      <DependentUpon>ucBOFData1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFDesignateMatFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFDesignateMatFrm.designer.cs">
+      <DependentUpon>BOFDesignateMatFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFEquStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFEquStatusFrm.designer.cs">
+      <DependentUpon>BOFEquStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatFinalDataFrm.designer.cs">
+      <DependentUpon>BOFHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatRemarkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatRemarkFrm.designer.cs">
+      <DependentUpon>BOFHeatRemarkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFHeatDataFrm.designer.cs">
+      <DependentUpon>BOFHeatDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFProcStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFProcStatusFrm.designer.cs">
+      <DependentUpon>BOFProcStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\ChangeGradeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\ChangeGradeFrm.designer.cs">
+      <DependentUpon>ChangeGradeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFStackMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFStackMagFrm.designer.cs">
+      <DependentUpon>BOFStackMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\BOFTechicsExceptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\BOFTechicsExceptionFrm.designer.cs">
+      <DependentUpon>BOFTechicsExceptionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOFMag\ucBOFStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BOFMag\UnitMagMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\UnitMagMainFrm.designer.cs">
+      <DependentUpon>UnitMagMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMAttributeFrm.designer.cs">
+      <DependentUpon>CCMAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMCureDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMCureDataFrm.Designer.cs">
+      <DependentUpon>CCMCureDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapDutyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapDutyFrm.Designer.cs">
+      <DependentUpon>CCMScrapDutyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapDutyInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapDutyInfoFrm.designer.cs">
+      <DependentUpon>CCMScrapDutyInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMarkScrapQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMarkScrapQueryFrm.Designer.cs">
+      <DependentUpon>CCMMarkScrapQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM5CureData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM5CureData.Designer.cs">
+      <DependentUpon>UCCCM5CureData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM14CureData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\UCCCM14CureData.Designer.cs">
+      <DependentUpon>UCCCM14CureData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMEquStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMEquStatusFrm.designer.cs">
+      <DependentUpon>CCMEquStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatFinalDataFrmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatFinalDataFrmNew.designer.cs">
+      <DependentUpon>CCMHeatFinalDataFrmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatInfoFrm.Designer.cs">
+      <DependentUpon>CCMHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatPathFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMHeatPathFrm.designer.cs">
+      <DependentUpon>CCMHeatPathFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain01.Designer.cs">
+      <DependentUpon>CCMMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain02.Designer.cs">
+      <DependentUpon>CCMMain02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain03.Designer.cs">
+      <DependentUpon>CCMMain03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain04.Designer.cs">
+      <DependentUpon>CCMMain04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMain05.Designer.cs">
+      <DependentUpon>CCMMain05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMakeProductFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMakeProductFrm.Designer.cs">
+      <DependentUpon>CCMMakeProductFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMMarkScrapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMMarkScrapFrm.Designer.cs">
+      <DependentUpon>CCMMarkScrapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMScrapInfoFrm.Designer.cs">
+      <DependentUpon>CCMScrapInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\CCMDesignateLadleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMDesignateLadleFrm.designer.cs">
+      <DependentUpon>CCMDesignateLadleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMData1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMData1.designer.cs">
+      <DependentUpon>ucCCMData1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\ucCCMStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMRefraFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\CCMRefraFrm.designer.cs">
+      <DependentUpon>CCMRefraFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\BigWaterGapQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\BigWaterGapQueryFrm.designer.cs">
+      <DependentUpon>BigWaterGapQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\SmoothBlockQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\SmoothBlockQueryFrm.designer.cs">
+      <DependentUpon>SmoothBlockQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCMMag\WaterGapQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\WaterGapQueryFrm.designer.cs">
+      <DependentUpon>WaterGapQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFMag\IronWarnDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFMag\IronWarnDisplay.Designer.cs">
+      <DependentUpon>IronWarnDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\JzcfModel.cs" />
+    <Compile Include="LFMag\LFAreaOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFAreaOperation.Designer.cs">
+      <DependentUpon>LFAreaOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFAttributeFrm.designer.cs">
+      <DependentUpon>LFAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFBlowArDataQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFBlowArDataQueryFrm.designer.cs">
+      <DependentUpon>LFBlowArDataQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFcfjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFcfjs.Designer.cs">
+      <DependentUpon>LFcfjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFDesignateLadleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFDesignateLadleFrm.designer.cs">
+      <DependentUpon>LFDesignateLadleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFEquStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFEquStatusFrm.Designer.cs">
+      <DependentUpon>LFEquStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFHeatDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFHeatDataFrm.designer.cs">
+      <DependentUpon>LFHeatDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFHeatFinalDataFrmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFHeatFinalDataFrmNew.designer.cs">
+      <DependentUpon>LFHeatFinalDataFrmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFHeatGearsQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFHeatGearsQueryFrm.designer.cs">
+      <DependentUpon>LFHeatGearsQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFHeatInfoFrm.Designer.cs">
+      <DependentUpon>LFHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFHeatRemarkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFHeatRemarkFrm.designer.cs">
+      <DependentUpon>LFHeatRemarkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LfMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain01.Designer.cs">
+      <DependentUpon>LfMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFMain02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFMain02.Designer.cs">
+      <DependentUpon>LFMain02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFMain03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFMain03.Designer.cs">
+      <DependentUpon>LFMain03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LfMain04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain04.Designer.cs">
+      <DependentUpon>LfMain04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LfMain04L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain04L.Designer.cs">
+      <DependentUpon>LfMain04L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LfMain05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain05.Designer.cs">
+      <DependentUpon>LfMain05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFRequestChangingGradeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFRequestChangingGradeFrm.designer.cs">
+      <DependentUpon>LFRequestChangingGradeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFTechicsExceptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFTechicsExceptionFrm.designer.cs">
+      <DependentUpon>LFTechicsExceptionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\LFWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFWeightFrm.designer.cs">
+      <DependentUpon>LFWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\ucLFAreaBrief.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LFMag\ucLFAreaBrief.Designer.cs">
+      <DependentUpon>ucLFAreaBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\ucLFData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LFMag\ucLFData.designer.cs">
+      <DependentUpon>ucLFData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LFMag\ucLFStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain04M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LfMain04M.Designer.cs">
+      <DependentUpon>LfMain04M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTDutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTDutyMagFrm.designer.cs">
+      <DependentUpon>MELTDutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTSteelReturnAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTSteelReturnAppFrm.Designer.cs">
+      <DependentUpon>MELTSteelReturnAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MESTool.cs" />
+    <Compile Include="MIFMag\IronBackQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\IronBackQueryFrm.Designer.cs">
+      <DependentUpon>IronBackQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\MIFApplyInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\MIFApplyInfoFrm.designer.cs">
+      <DependentUpon>MIFApplyInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\ConfirmIronFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\ConfirmIronFrm.designer.cs">
+      <DependentUpon>ConfirmIronFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\DirectFeedIronFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\DirectFeedIronFrm.designer.cs">
+      <DependentUpon>DirectFeedIronFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\FeedIronFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\FeedIronFrm.designer.cs">
+      <DependentUpon>FeedIronFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\IronWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\IronWeightFrm.Designer.cs">
+      <DependentUpon>IronWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\MIFMagMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\MIFMagMainFrm.designer.cs">
+      <DependentUpon>MIFMagMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\QueryMIFIronDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\QueryMIFIronDataFrm.Designer.cs">
+      <DependentUpon>QueryMIFIronDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\MIFSampleApplyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\MIFSampleApplyFrm.designer.cs">
+      <DependentUpon>MIFSampleApplyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIFMag\TappedFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIFMag\TappedFrm.designer.cs">
+      <DependentUpon>TappedFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyLadleGradeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyLadleGradeFrm.Designer.cs">
+      <DependentUpon>ModifyLadleGradeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mqhsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mqhsFrm.Designer.cs">
+      <DependentUpon>mqhsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newApply.Designer.cs">
+      <DependentUpon>newApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanTapping.cs" />
+    <Compile Include="ProductGradeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGradeQueryFrm.Designer.cs">
+      <DependentUpon>ProductGradeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PublicResource.cs" />
+    <Compile Include="Remark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remark.Designer.cs">
+      <DependentUpon>Remark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHBlowArDataQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHBlowArDataQueryFrm.designer.cs">
+      <DependentUpon>RHBlowArDataQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHWeightFrm.designer.cs">
+      <DependentUpon>RHWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHAttributeFrm.designer.cs">
+      <DependentUpon>RHAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHAreaOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHAreaOperation.Designer.cs">
+      <DependentUpon>RHAreaOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHDesignateLadleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHDesignateLadleFrm.designer.cs">
+      <DependentUpon>RHDesignateLadleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHHeatInfoFrm.Designer.cs">
+      <DependentUpon>RHHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHMain01.Designer.cs">
+      <DependentUpon>RHMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\ucRHAreaBrief.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RHMag\ucRHAreaBrief.Designer.cs">
+      <DependentUpon>ucRHAreaBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\ucRHStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SteelBackAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelBackAppFrm.Designer.cs">
+      <DependentUpon>SteelBackAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteelDivAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteelDivAppFrm.Designer.cs">
+      <DependentUpon>SteelDivAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Steel\BSteel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Steel\BSteel.designer.cs">
+      <DependentUpon>BSteel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Steel\CSteel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Steel\CSteel.designer.cs">
+      <DependentUpon>CSteel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\DutyMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\DutyMagFrm.designer.cs">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TapHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TapHeatInfoFrm.Designer.cs">
+      <DependentUpon>TapHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TapMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TapMain01.Designer.cs">
+      <DependentUpon>TapMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain02.Designer.cs">
+      <DependentUpon>TAPMain02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain03.Designer.cs">
+      <DependentUpon>TAPMain03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPMain04.Designer.cs">
+      <DependentUpon>TAPMain04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\MESService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AODMag\AODDesignateMaterialFrm.resx">
+      <DependentUpon>AODDesignateMaterialFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\AODHeatFinalDataFrm.resx">
+      <DependentUpon>AODHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\AODHeatInfoFrm.resx">
+      <DependentUpon>AODHeatInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\AODAttributeFrm.resx">
+      <DependentUpon>AODAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\AODDesignateLadleFrm.resx">
+      <DependentUpon>AODDesignateLadleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\AODDutyMagFrm.resx">
+      <DependentUpon>AODDutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\ucAODStatus.resx">
+      <DependentUpon>ucAODStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AODMag\ucAODData.resx">
+      <DependentUpon>ucAODData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\DeSIronSheetFrm.resx">
+      <DependentUpon>DeSIronSheetFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronGrossFrm.resx">
+      <DependentUpon>IronGrossFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronNetWeightFrm.resx">
+      <DependentUpon>IronNetWeightFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronSampleFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IronSampleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronSlagApplyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IronSlagApplyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronTareFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IronTareFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\PathInfoFrm.resx">
+      <DependentUpon>PathInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronInfoFrm.resx">
+      <DependentUpon>IronInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronMagFrm.resx">
+      <DependentUpon>IronMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\PathMagFrm.resx">
+      <DependentUpon>PathMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\QueryIronFrm.resx">
+      <DependentUpon>QueryIronFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronSlagApplyFrm.resx">
+      <DependentUpon>IronSlagApplyFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\reSendApply.resx">
+      <DependentUpon>reSendApply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFHeatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BOFHeatInfoFrm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFHeatInfoFrm.resx">
+      <DependentUpon>BOFHeatInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\NewDesignateMaterialFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewDesignateMaterialFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\StackMaintenanceFrm.resx">
+      <DependentUpon>StackMaintenanceFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\ucBOFData.resx">
+      <DependentUpon>ucBOFData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMMain07.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMMain07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ccmReScrapFrm.resx">
+      <DependentUpon>ccmReScrapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMTCDataFrm.resx">
+      <DependentUpon>CCMTCDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\AdditionShowFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdditionShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\ChoseDesShowFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChoseDesShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSEquipmentStatusMag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSEquipmentStatusMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DesignateDeSUnitIDFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DesignateDeSUnitIDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSIronSheetFrm.resx">
+      <DependentUpon>DeSIronSheetFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\ChangeTreatNoShowFrm.resx">
+      <DependentUpon>ChangeTreatNoShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\ChangeLanceShowFrm.resx">
+      <DependentUpon>ChangeLanceShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSMagFrm01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSMagFrm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSMagFrm02.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSMagFrm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSMagMainFrm.resx">
+      <DependentUpon>DeSMagMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSMatSetShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSMatSetShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSStatusQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSStatusQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSTreatFinalData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSTreatFinalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DeSTreatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeSTreatInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\AdditionMagFrm.resx">
+      <DependentUpon>AdditionMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\ChoseDesTypeShowFrm.resx">
+      <DependentUpon>ChoseDesTypeShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\LanceChangeStatusShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LanceChangeStatusShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\LanceMagFrm.resx">
+      <DependentUpon>LanceMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\LanceQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LanceQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\NewLanceShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewLanceShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\LanceChangeAgeShow.resx">
+      <DependentUpon>LanceChangeAgeShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\PreRemoveSlagUnitIDFrm.resx">
+      <DependentUpon>PreRemoveSlagUnitIDFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\RemoveSlagUnitIDFrm.resx">
+      <DependentUpon>RemoveSlagUnitIDFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\RemoveSlagCountFrm.resx">
+      <DependentUpon>RemoveSlagCountFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\ChangeNoteMag.resx">
+      <DependentUpon>ChangeNoteMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DeSMag\NewLanceDataShow.resx">
+      <DependentUpon>NewLanceDataShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\UCCCM7CureData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCCM7CureData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ucCCMData.resx">
+      <DependentUpon>ucCCMData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ucCCMDatayuan.resx">
+      <DependentUpon>ucCCMDatayuan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ucCCMDataFor07.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCCMDataFor07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPAttributeFrm.resx">
+      <DependentUpon>DEPAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPDesignateMaterialFrm.resx">
+      <DependentUpon>DEPDesignateMaterialFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPHeatFinalDataFrm.resx">
+      <DependentUpon>DEPHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPHeatInfoFrm.resx">
+      <DependentUpon>DEPHeatInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DePData.resx">
+      <DependentUpon>DePData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPMag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DEPMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\DEPDutyMagFrm.resx">
+      <DependentUpon>DEPDutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPMag\ucDePStatus.resx">
+      <DependentUpon>ucDePStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentStatusQueryFrm.resx">
+      <DependentUpon>EquipmentStatusQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFAttributeFrm.resx">
+      <DependentUpon>BOFAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFDesignateMatFrm.resx">
+      <DependentUpon>BOFDesignateMatFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFEquStatusFrm.resx">
+      <DependentUpon>BOFEquStatusFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFHeatFinalDataFrm.resx">
+      <DependentUpon>BOFHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFHeatRemarkFrm.resx">
+      <DependentUpon>BOFHeatRemarkFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFHeatDataFrm.resx">
+      <DependentUpon>BOFHeatDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFProcStatusFrm.resx">
+      <DependentUpon>BOFProcStatusFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\ChangeGradeFrm.resx">
+      <DependentUpon>ChangeGradeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFStackMagFrm.resx">
+      <DependentUpon>BOFStackMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\BOFTechicsExceptionFrm.resx">
+      <DependentUpon>BOFTechicsExceptionFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\SteelReturnAppFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelReturnAppFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\ucBOFData1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBOFData1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\ucBOFStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBOFStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\UnitMagMainFrm.resx">
+      <DependentUpon>UnitMagMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMAttributeFrm.resx">
+      <DependentUpon>CCMAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMCureDataFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMCureDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMScrapDutyFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMScrapDutyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMScrapDutyInfoFrm.resx">
+      <DependentUpon>CCMScrapDutyInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMMarkScrapQueryFrm.resx">
+      <DependentUpon>CCMMarkScrapQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\UCCCM5CureData.resx">
+      <DependentUpon>UCCCM5CureData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\UCCCM14CureData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCCM14CureData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMEquStatusFrm.resx">
+      <DependentUpon>CCMEquStatusFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMHeatFinalDataFrmNew.resx">
+      <DependentUpon>CCMHeatFinalDataFrmNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMHeatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMHeatInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMHeatPathFrm.resx">
+      <DependentUpon>CCMHeatPathFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMMakeProductFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMMakeProductFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMMarkScrapFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMMarkScrapFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMScrapInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CCMScrapInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMDesignateLadleFrm.resx">
+      <DependentUpon>CCMDesignateLadleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ucCCMData1.resx">
+      <DependentUpon>ucCCMData1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ucCCMStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCCMStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\CCMRefraFrm.resx">
+      <DependentUpon>CCMRefraFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\BigWaterGapQueryFrm.resx">
+      <DependentUpon>BigWaterGapQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\SmoothBlockQueryFrm.resx">
+      <DependentUpon>SmoothBlockQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\WaterGapQueryFrm.resx">
+      <DependentUpon>WaterGapQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFMag\IronWarnDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IronWarnDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFAreaOperation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LFAreaOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFAttributeFrm.resx">
+      <DependentUpon>LFAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFBlowArDataQueryFrm.resx">
+      <DependentUpon>LFBlowArDataQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFcfjs.resx">
+      <DependentUpon>LFcfjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFDesignateLadleFrm.resx">
+      <DependentUpon>LFDesignateLadleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFEquStatusFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LFEquStatusFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFHeatDataFrm.resx">
+      <DependentUpon>LFHeatDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFHeatFinalDataFrmNew.resx">
+      <DependentUpon>LFHeatFinalDataFrmNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFHeatGearsQueryFrm.resx">
+      <DependentUpon>LFHeatGearsQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFHeatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LFHeatInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFHeatRemarkFrm.resx">
+      <DependentUpon>LFHeatRemarkFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFRequestChangingGradeFrm.resx">
+      <DependentUpon>LFRequestChangingGradeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFTechicsExceptionFrm.resx">
+      <DependentUpon>LFTechicsExceptionFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFWeightFrm.resx">
+      <DependentUpon>LFWeightFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\ucLFAreaBrief.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucLFAreaBrief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\ucLFData.resx">
+      <DependentUpon>ucLFData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\ucLFStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucLFStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTDutyMagFrm.resx">
+      <DependentUpon>MELTDutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTMain01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MELTMain01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTSteelReturnAppFrm.resx">
+      <DependentUpon>MELTSteelReturnAppFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\IronBackQueryFrm.resx">
+      <DependentUpon>IronBackQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\MIFApplyInfoFrm.resx">
+      <DependentUpon>MIFApplyInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\ConfirmIronFrm.resx">
+      <DependentUpon>ConfirmIronFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\DirectFeedIronFrm.resx">
+      <DependentUpon>DirectFeedIronFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\FeedIronFrm.resx">
+      <DependentUpon>FeedIronFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\IronWeightFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IronWeightFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\MIFMagMainFrm.resx">
+      <DependentUpon>MIFMagMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\QueryMIFIronDataFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryMIFIronDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\MIFSampleApplyFrm.resx">
+      <DependentUpon>MIFSampleApplyFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIFMag\TappedFrm.resx">
+      <DependentUpon>TappedFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyLadleGradeFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifyLadleGradeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mqhsFrm.resx">
+      <DependentUpon>mqhsFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newApply.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGradeQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProductGradeQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remark.resx">
+      <DependentUpon>Remark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHBlowArDataQueryFrm.resx">
+      <DependentUpon>RHBlowArDataQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHWeightFrm.resx">
+      <DependentUpon>RHWeightFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHAttributeFrm.resx">
+      <DependentUpon>RHAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHAreaOperation.resx">
+      <DependentUpon>RHAreaOperation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHDesignateLadleFrm.resx">
+      <DependentUpon>RHDesignateLadleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHHeatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RHHeatInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\ucRHAreaBrief.resx">
+      <DependentUpon>ucRHAreaBrief.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\ucRHStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucRHStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelBackAppFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelBackAppFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteelDivAppFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelDivAppFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Steel\BSteel.resx">
+      <DependentUpon>BSteel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Steel\CSteel.resx">
+      <DependentUpon>CSteel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\DutyMagFrm.resx">
+      <DependentUpon>DutyMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TapHeatInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TapHeatInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHDischargeFrm.resx">
+      <DependentUpon>RHDischargeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHHeatFinalDataFrm.resx">
+      <DependentUpon>RHHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHHeatRemarkFrm.resx">
+      <DependentUpon>RHHeatRemarkFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHRequestChangingGradeFrm.resx">
+      <DependentUpon>RHRequestChangingGradeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\RHTechicsExceptionFrm.resx">
+      <DependentUpon>RHTechicsExceptionFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHMag\ucRHData.resx">
+      <DependentUpon>ucRHData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\ManualDataFrm.resx">
+      <DependentUpon>ManualDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TapDesignateLadleFrm.resx">
+      <DependentUpon>TapDesignateLadleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TAPEndFrm.resx">
+      <DependentUpon>TAPEndFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TAPHeatFinalDataFrm.resx">
+      <DependentUpon>TAPHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TapMain01.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TapMain01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TAPStartFrm.resx">
+      <DependentUpon>TAPStartFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TAPMag\TAPWeightFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TAPWeightFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUnitStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucUnitStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTAttributeFrm.resx">
+      <DependentUpon>MELTAttributeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTHeatFinalDataFrm.resx">
+      <DependentUpon>MELTHeatFinalDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTHeatInfoFrm.resx">
+      <DependentUpon>MELTHeatInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTChangeGradeFrm.resx">
+      <DependentUpon>MELTChangeGradeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\MELTDesignateMaterialFrm.resx">
+      <DependentUpon>MELTDesignateMaterialFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\ucMELTData.resx">
+      <DependentUpon>ucMELTData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MELTMag\ucMELTStatus.resx">
+      <DependentUpon>ucMELTStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CBOF_Feed_Data.datasource" />
+    <None Include="Properties\DataSources\cbof_process_data.datasource" />
+    <None Include="Properties\DataSources\ccm_plan.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Ar.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Base.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Bulk.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_InToConver.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Ladle.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Slag_Ele.datasource" />
+    <None Include="Properties\DataSources\CQA_BOF_Std_Tapping.datasource" />
+    <None Include="Properties\DataSources\PlanTapping.datasource" />
+    <None Include="Properties\DataSources\UnitMag.LFMag.Jzcf_alloydata.datasource" />
+    <None Include="Properties\DataSources\UnitMag.LFMag.LFcfjs.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RHMag\RHDischargeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHDischargeFrm.designer.cs">
+      <DependentUpon>RHDischargeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHHeatFinalDataFrm.designer.cs">
+      <DependentUpon>RHHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHHeatRemarkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHHeatRemarkFrm.designer.cs">
+      <DependentUpon>RHHeatRemarkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHRequestChangingGradeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHRequestChangingGradeFrm.designer.cs">
+      <DependentUpon>RHRequestChangingGradeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\RHTechicsExceptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RHMag\RHTechicsExceptionFrm.designer.cs">
+      <DependentUpon>RHTechicsExceptionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHMag\ucRHData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RHMag\ucRHData.designer.cs">
+      <DependentUpon>ucRHData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\ManualDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\ManualDataFrm.designer.cs">
+      <DependentUpon>ManualDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TapDesignateLadleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TapDesignateLadleFrm.designer.cs">
+      <DependentUpon>TapDesignateLadleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPEndFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPEndFrm.designer.cs">
+      <DependentUpon>TAPEndFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPHeatFinalDataFrm.designer.cs">
+      <DependentUpon>TAPHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPStartFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPStartFrm.designer.cs">
+      <DependentUpon>TAPStartFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TAPMag\TAPWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TAPMag\TAPWeightFrm.Designer.cs">
+      <DependentUpon>TAPWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUnitStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUnitStatus.Designer.cs">
+      <DependentUpon>ucUnitStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTAttributeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTAttributeFrm.designer.cs">
+      <DependentUpon>MELTAttributeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTHeatFinalDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTHeatFinalDataFrm.designer.cs">
+      <DependentUpon>MELTHeatFinalDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTHeatInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTHeatInfoFrm.Designer.cs">
+      <DependentUpon>MELTHeatInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTMain01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTMain01.Designer.cs">
+      <DependentUpon>MELTMain01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTChangeGradeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTChangeGradeFrm.designer.cs">
+      <DependentUpon>MELTChangeGradeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\MELTDesignateMaterialFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MELTMag\MELTDesignateMaterialFrm.Designer.cs">
+      <DependentUpon>MELTDesignateMaterialFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\ucMELTData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MELTMag\ucMELTData.Designer.cs">
+      <DependentUpon>ucMELTData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MELTMag\ucMELTStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <None Include="Web References\MESService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MESService\wsmes.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommDataMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommDataMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QualityMag\QualityMag.csproj">
+      <Project>{824E6F90-DB29-4A4A-8B4A-9FA777F7DA8B}</Project>
+      <Name>QualityMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOFBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOFFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VehicleBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IronLadleBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IronLadleFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LFBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LFFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXFBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXFFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VacTubeBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VacTubeFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCMBuye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCMFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesFree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesBusy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CCMBusy07.png" />
+    <None Include="Web References\MESService\wsmes.disco" />
+    <None Include="Resources\CCMBuye7.bmp" />
+    <None Include="Resources\CCMBusy7.png" />
+    <Content Include="Resources\CCMFree07.png" />
+    <None Include="Resources\CCMFree7.png" />
+    <None Include="Resources\CCMFree7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.36.155/wsmes.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MESService\</RelPath>
+      <UpdateFromURL>http://192.168.36.155/wsmes.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>UnitMag_localhost_WSMES</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

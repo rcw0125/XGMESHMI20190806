@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using EDoor.WinFormsUI.Docking;
+using HMIBase;
+
+namespace StoreMag.BulkStore
+{
+    public partial class BulkAppConfirmFrm : DockContent, IMESForm
+    {
+        public BulkAppConfirmFrm()
+        {
+            InitializeComponent();
+        }
+
+        #region IMESForm 成员
+
+        DockContent IMESForm.Document
+        {
+            get { return this as DockContent; }
+        }
+
+        AppSvrIF.Session IMESForm.L3Session
+        {
+            get
+            {
+                return Adapter.Session;
+            }
+            set
+            {
+                Adapter.Session = value;
+            }
+        }
+
+        #endregion
+
+        private void BulkAppConfirmFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        //确认
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            dvBulkAppConfirm.EndEdit();
+            bsBulkAppConfirm.EndEdit();
+            dsyAPPConfirm.AcceptChanges();
+            string check = MessageBox.Show("要确认申请信息么？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question).ToString();
+            if (check == "OK")
+            {
+                cmdBulkAppConfirm.Execute();
+                String returnFlag = cmdBulkAppConfirm.Command.Return.ToString();
+                if (returnFlag == "1")
+                {
+                    MessageBox.Show("确认申请信息成功！", "提示");
+                    dsyAPPConfirm.LoadData();                    
+                }
+                else
+                {
+                    MessageBox.Show("确认申请信息不成功！" , "提示");
+                    ds.LoadData();
+                }
+            }
+        }
+        //退出
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BulkAppConfirmFrm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            CommDataMag.CommonMethed.FlushMemory();
+        }
+
+    }
+}

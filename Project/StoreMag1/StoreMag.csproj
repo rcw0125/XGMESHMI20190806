@@ -1,0 +1,765 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A1CADE6-1539-494A-922B-86A345F6EBD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StoreMag</RootNamespace>
+    <AssemblyName>StoreMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Documents\Visual Studio 2005\Addins\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3380.32295, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\L3\AppServer\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\lib\新建文件夹\风动送样客户端\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="TeeChart, Version=3.5.3105.20151, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlloyStore\AlloyInformationInputFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyInformationInputFrm.Designer.cs">
+      <DependentUpon>AlloyInformationInputFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreLFMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreLFMag.designer.cs">
+      <DependentUpon>AlloyStoreLFMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreMag.designer.cs">
+      <DependentUpon>AlloyStoreMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAppFrm.designer.cs">
+      <DependentUpon>AlloyAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyBalanceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyBalanceFrm.designer.cs">
+      <DependentUpon>AlloyBalanceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaMapFrm.designer.cs">
+      <DependentUpon>AlloyAndAreaMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyInStoreComfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyInStoreComfirmFrm.designer.cs">
+      <DependentUpon>AlloyInStoreComfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyInStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyInStoreFrm.designer.cs">
+      <DependentUpon>AlloyInStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAppConfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAppConfirmFrm.designer.cs">
+      <DependentUpon>AlloyAppConfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyChangeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyChangeFrm.designer.cs">
+      <DependentUpon>AlloyChangeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreMagQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreMagQuery.Designer.cs">
+      <DependentUpon>AlloyStoreMagQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreRHMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreRHMag.designer.cs">
+      <DependentUpon>AlloyStoreRHMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyYLStoreMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyYLStoreMag.Designer.cs">
+      <DependentUpon>AlloyYLStoreMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyYLStoreMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyYLStoreMaintain.Designer.cs">
+      <DependentUpon>AlloyYLStoreMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\InStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\InStoreQueryFrm.Designer.cs">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\OutStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\OutStoreQueryFrm.Designer.cs">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyOutStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyOutStoreFrm.designer.cs">
+      <DependentUpon>AlloyOutStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\TransQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\TransQueryFrm.Designer.cs">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\BalanceQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\BalanceQueryFrm.Designer.cs">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaLFMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaLFMapFrm.designer.cs">
+      <DependentUpon>AlloyAndAreaLFMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaRHMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyAndAreaRHMapFrm.designer.cs">
+      <DependentUpon>AlloyAndAreaRHMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyStoreQueryFrm.Designer.cs">
+      <DependentUpon>AlloyStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyRollBackFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyRollBackFrm.designer.cs">
+      <DependentUpon>AlloyRollBackFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyToBulkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AlloyToBulkFrm.designer.cs">
+      <DependentUpon>AlloyToBulkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AODAlloyYLStoreMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AODAlloyYLStoreMag.Designer.cs">
+      <DependentUpon>AODAlloyYLStoreMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\AODAlloyYLStoreMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\AODAlloyYLStoreMaintain.Designer.cs">
+      <DependentUpon>AODAlloyYLStoreMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomOutStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomOutStoreFrm.Designer.cs">
+      <DependentUpon>BloomOutStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomOnStoreMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomOnStoreMagFrm.Designer.cs">
+      <DependentUpon>BloomOnStoreMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomSpileChangeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomSpileChangeFrm.Designer.cs">
+      <DependentUpon>BloomSpileChangeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomStoreMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomStoreMagFrm.Designer.cs">
+      <DependentUpon>BloomStoreMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomInStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomInStoreFrm.Designer.cs">
+      <DependentUpon>BloomInStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\BloomStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\BloomStoreQueryFrm.Designer.cs">
+      <DependentUpon>BloomStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\InStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\InStoreQueryFrm.Designer.cs">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\OutStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\OutStoreQueryFrm.Designer.cs">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloomStore\TransQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloomStore\TransQueryFrm.Designer.cs">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkStoreQueryFrm.Designer.cs">
+      <DependentUpon>BulkStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkToAlloyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkToAlloyFrm.designer.cs">
+      <DependentUpon>BulkToAlloyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkRollBackFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkRollBackFrm.designer.cs">
+      <DependentUpon>BulkRollBackFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BalanceQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BalanceQueryFrm.Designer.cs">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkAndAreaMapFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkAndAreaMapFrm.designer.cs">
+      <DependentUpon>BulkAndAreaMapFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkAppConfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkAppConfirmFrm.designer.cs">
+      <DependentUpon>BulkAppConfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkAppFrm.designer.cs">
+      <DependentUpon>BulkAppFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkBalanceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkBalanceFrm.designer.cs">
+      <DependentUpon>BulkBalanceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkChangeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkChangeFrm.designer.cs">
+      <DependentUpon>BulkChangeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkInformationInputFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkInformationInputFrm.Designer.cs">
+      <DependentUpon>BulkInformationInputFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkInStoreComfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkInStoreComfirmFrm.designer.cs">
+      <DependentUpon>BulkInStoreComfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkInStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkInStoreFrm.designer.cs">
+      <DependentUpon>BulkInStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\BulkStoreMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\BulkStoreMag.designer.cs">
+      <DependentUpon>BulkStoreMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\InStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\InStoreQueryFrm.Designer.cs">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\OutStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\OutStoreQueryFrm.Designer.cs">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BulkStore\TransQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkStore\TransQueryFrm.Designer.cs">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\LF4AlloyYLStoreMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\LF4AlloyYLStoreMag.Designer.cs">
+      <DependentUpon>LF4AlloyYLStoreMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlloyStore\LF4AlloyYLStoreMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlloyStore\LF4AlloyYLStoreMaintain.Designer.cs">
+      <DependentUpon>LF4AlloyYLStoreMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\BalanceQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\BalanceQueryFrm.Designer.cs">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\InStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\InStoreQueryFrm.Designer.cs">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\OutStoreQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\OutStoreQueryFrm.Designer.cs">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInStoreComfirmFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInStoreComfirmFrm.designer.cs">
+      <DependentUpon>ScrapInStoreComfirmFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapOutStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapOutStoreFrm.Designer.cs">
+      <DependentUpon>ScrapOutStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInformationInputFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInformationInputFrm.Designer.cs">
+      <DependentUpon>ScrapInformationInputFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapBalanceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapBalanceFrm.designer.cs">
+      <DependentUpon>ScrapBalanceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapInStoreFrm.designer.cs">
+      <DependentUpon>ScrapInStoreFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapOutStoreShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapOutStoreShowFrm.designer.cs">
+      <DependentUpon>ScrapOutStoreShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapStoreMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\ScrapStoreMagFrm.designer.cs">
+      <DependentUpon>ScrapStoreMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlloyStore\AlloyInformationInputFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlloyInformationInputFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyStoreLFMag.resx">
+      <DependentUpon>AlloyStoreLFMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyStoreMag.resx">
+      <DependentUpon>AlloyStoreMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyAppFrm.resx">
+      <DependentUpon>AlloyAppFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyBalanceFrm.resx">
+      <DependentUpon>AlloyBalanceFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyAndAreaMapFrm.resx">
+      <DependentUpon>AlloyAndAreaMapFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyInStoreComfirmFrm.resx">
+      <DependentUpon>AlloyInStoreComfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyInStoreFrm.resx">
+      <DependentUpon>AlloyInStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyAppConfirmFrm.resx">
+      <DependentUpon>AlloyAppConfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyChangeFrm.resx">
+      <DependentUpon>AlloyChangeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyStoreMagQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlloyStoreMagQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyStoreRHMag.resx">
+      <DependentUpon>AlloyStoreRHMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyYLStoreMag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlloyYLStoreMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyYLStoreMaintain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlloyYLStoreMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\InStoreQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\OutStoreQueryFrm.resx">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyOutStoreFrm.resx">
+      <DependentUpon>AlloyOutStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\TransQueryFrm.resx">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\BalanceQueryFrm.resx">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyAndAreaLFMapFrm.resx">
+      <DependentUpon>AlloyAndAreaLFMapFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyAndAreaRHMapFrm.resx">
+      <DependentUpon>AlloyAndAreaRHMapFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyStoreQueryFrm.resx">
+      <DependentUpon>AlloyStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyRollBackFrm.resx">
+      <DependentUpon>AlloyRollBackFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AlloyToBulkFrm.resx">
+      <DependentUpon>AlloyToBulkFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AODAlloyYLStoreMag.resx">
+      <DependentUpon>AODAlloyYLStoreMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\AODAlloyYLStoreMaintain.resx">
+      <DependentUpon>AODAlloyYLStoreMaintain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomOutStoreFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomOutStoreFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomOnStoreMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomOnStoreMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomSpileChangeFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomSpileChangeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomStoreMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomStoreMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomInStoreFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomInStoreFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\BloomStoreQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BloomStoreQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\InStoreQueryFrm.resx">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\OutStoreQueryFrm.resx">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloomStore\TransQueryFrm.resx">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkStoreQueryFrm.resx">
+      <DependentUpon>BulkStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkToAlloyFrm.resx">
+      <DependentUpon>BulkToAlloyFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkRollBackFrm.resx">
+      <DependentUpon>BulkRollBackFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BalanceQueryFrm.resx">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkAndAreaMapFrm.resx">
+      <DependentUpon>BulkAndAreaMapFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkAppConfirmFrm.resx">
+      <DependentUpon>BulkAppConfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkAppFrm.resx">
+      <DependentUpon>BulkAppFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkBalanceFrm.resx">
+      <DependentUpon>BulkBalanceFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkChangeFrm.resx">
+      <DependentUpon>BulkChangeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkInformationInputFrm.resx">
+      <DependentUpon>BulkInformationInputFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkInStoreComfirmFrm.resx">
+      <DependentUpon>BulkInStoreComfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkInStoreFrm.resx">
+      <DependentUpon>BulkInStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\BulkStoreMag.resx">
+      <DependentUpon>BulkStoreMag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\InStoreQueryFrm.resx">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\OutStoreQueryFrm.resx">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkStore\TransQueryFrm.resx">
+      <DependentUpon>TransQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\LF4AlloyYLStoreMag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LF4AlloyYLStoreMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlloyStore\LF4AlloyYLStoreMaintain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LF4AlloyYLStoreMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\BalanceQueryFrm.resx">
+      <DependentUpon>BalanceQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\InStoreQueryFrm.resx">
+      <DependentUpon>InStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\OutStoreQueryFrm.resx">
+      <DependentUpon>OutStoreQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapInStoreComfirmFrm.resx">
+      <DependentUpon>ScrapInStoreComfirmFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapOutStoreFrm.resx">
+      <DependentUpon>ScrapOutStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapInformationInputFrm.resx">
+      <DependentUpon>ScrapInformationInputFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapBalanceFrm.resx">
+      <DependentUpon>ScrapBalanceFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapInStoreFrm.resx">
+      <DependentUpon>ScrapInStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapOutStoreShowFrm.resx">
+      <DependentUpon>ScrapOutStoreShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\ScrapStoreMagFrm.resx">
+      <DependentUpon>ScrapStoreMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrapStore\RollbackOutStoreFrm.resx">
+      <DependentUpon>RollbackOutStoreFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ScrapStore\RollbackOutStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScrapStore\RollbackOutStoreFrm.Designer.cs">
+      <DependentUpon>RollbackOutStoreFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\导出到excel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

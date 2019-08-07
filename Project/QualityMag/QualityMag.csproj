@@ -1,0 +1,630 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{824E6F90-DB29-4A4A-8B4A-9FA777F7DA8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QualityMag</RootNamespace>
+    <AssemblyName>QualityMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseDataCtrl, Version=1.0.2943.17207, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\BaseDataCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridValid, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\DataGridValid.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\lib\新建文件夹\风动送样客户端\PxDataValid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WarnClass, Version=1.0.3014.26769, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\WarnClass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QualityJudge\BofIronToBXGJudgeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\BofIronToBXGJudgeFrm.Designer.cs">
+      <DependentUpon>BofIronToBXGJudgeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMag\CalWeightMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMag\CalWeightMaintenFrm.designer.cs">
+      <DependentUpon>CalWeightMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMag\DecideCodeMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMag\DecideCodeMaintenFrm.designer.cs">
+      <DependentUpon>DecideCodeMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMag\ExcepGroupCodeMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMag\ExcepGroupCodeMaintenFrm.designer.cs">
+      <DependentUpon>ExcepGroupCodeMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMag\HeatExcepCodeMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMag\HeatExcepCodeMaintenFrm.designer.cs">
+      <DependentUpon>HeatExcepCodeMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\AdviceInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\AdviceInfoFrm.Designer.cs">
+      <DependentUpon>AdviceInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\ApplyInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\ApplyInfoFrm.designer.cs">
+      <DependentUpon>ApplyInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\BFIronElementQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\BFIronElementQueryFrm.Designer.cs">
+      <DependentUpon>BFIronElementQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\BFSlagQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\BFSlagQueryFrm.Designer.cs">
+      <DependentUpon>BFSlagQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\ChemicalInfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\ChemicalInfoFrm.Designer.cs">
+      <DependentUpon>ChemicalInfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\CutAdviceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\CutAdviceFrm.Designer.cs">
+      <DependentUpon>CutAdviceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\ElementQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\ElementQueryFrm.Designer.cs">
+      <DependentUpon>ElementQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\HeatChemicalMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\HeatChemicalMagFrm.Designer.cs">
+      <DependentUpon>HeatChemicalMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\IronElementQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\IronElementQueryFrm.Designer.cs">
+      <DependentUpon>IronElementQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\SampleApplyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\SampleApplyFrm.Designer.cs">
+      <DependentUpon>SampleApplyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\LabAdviceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\LabAdviceFrm.designer.cs">
+      <DependentUpon>LabAdviceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\SampleApplyQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\SampleApplyQueryFrm.designer.cs">
+      <DependentUpon>SampleApplyQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\SlagQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\SlagQueryFrm.Designer.cs">
+      <DependentUpon>SlagQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabMag\SPrintQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabMag\SPrintQueryFrm.Designer.cs">
+      <DependentUpon>SPrintQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\HeatGradeJudgeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\HeatGradeJudgeFrm.Designer.cs">
+      <DependentUpon>HeatGradeJudgeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeQueryFrm.Designer.cs">
+      <DependentUpon>HotJudgeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\HeatFinalJudgeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\HeatFinalJudgeQueryFrm.Designer.cs">
+      <DependentUpon>HeatFinalJudgeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\SteelWaterToBXGJudgeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\SteelWaterToBXGJudgeFrm.Designer.cs">
+      <DependentUpon>SteelWaterToBXGJudgeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\SteelWaterToBXGJudgeQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\SteelWaterToBXGJudgeQueryFrm.Designer.cs">
+      <DependentUpon>SteelWaterToBXGJudgeQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\BloomStdSpileFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\BloomStdSpileFrm.Designer.cs">
+      <DependentUpon>BloomStdSpileFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\BOFStdInCtrEleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\BOFStdInCtrEleFrm.Designer.cs">
+      <DependentUpon>BOFStdInCtrEleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\BOFStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\BOFStdMaintenFrm.Designer.cs">
+      <DependentUpon>BOFStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeFrm.designer.cs">
+      <DependentUpon>HotJudgeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeDefendFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityJudge\HotJudgeDefendFrm.Designer.cs">
+      <DependentUpon>HotJudgeDefendFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\CasterStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\CasterStdMaintenFrm.Designer.cs">
+      <DependentUpon>CasterStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\CasterStdProdProcFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\CasterStdProdProcFrm.Designer.cs">
+      <DependentUpon>CasterStdProdProcFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\DesStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\DesStdMaintenFrm.Designer.cs">
+      <DependentUpon>DesStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\ExchangeSteelGradeMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\ExchangeSteelGradeMagFrm.Designer.cs">
+      <DependentUpon>ExchangeSteelGradeMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\LFStdInCtrEleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\LFStdInCtrEleFrm.designer.cs">
+      <DependentUpon>LFStdInCtrEleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="QualityJudge\BofIronToBXGJudgeFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BofIronToBXGJudgeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeMag\CalWeightMaintenFrm.resx">
+      <DependentUpon>CalWeightMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeMag\DecideCodeMaintenFrm.resx">
+      <DependentUpon>DecideCodeMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeMag\ExcepGroupCodeMaintenFrm.resx">
+      <DependentUpon>ExcepGroupCodeMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeMag\HeatExcepCodeMaintenFrm.resx">
+      <DependentUpon>HeatExcepCodeMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\AdviceInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdviceInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\ApplyInfoFrm.resx">
+      <DependentUpon>ApplyInfoFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\BFIronElementQueryFrm.resx">
+      <DependentUpon>BFIronElementQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\BFSlagQueryFrm.resx">
+      <DependentUpon>BFSlagQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\ChemicalInfoFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChemicalInfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\CutAdviceFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CutAdviceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\ElementQueryFrm.resx">
+      <DependentUpon>ElementQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\HeatChemicalMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeatChemicalMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\IronElementQueryFrm.resx">
+      <DependentUpon>IronElementQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\SampleApplyFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SampleApplyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\LabAdviceFrm.resx">
+      <DependentUpon>LabAdviceFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\SampleApplyQueryFrm.resx">
+      <DependentUpon>SampleApplyQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\SlagQueryFrm.resx">
+      <DependentUpon>SlagQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabMag\SPrintQueryFrm.resx">
+      <DependentUpon>SPrintQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\HeatGradeJudgeFrm.resx">
+      <DependentUpon>HeatGradeJudgeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\HotJudgeQueryFrm.resx">
+      <DependentUpon>HotJudgeQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\HeatFinalJudgeQueryFrm.resx">
+      <DependentUpon>HeatFinalJudgeQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\SteelWaterToBXGJudgeFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelWaterToBXGJudgeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\SteelWaterToBXGJudgeQueryFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelWaterToBXGJudgeQueryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\BloomStdSpileFrm.resx">
+      <DependentUpon>BloomStdSpileFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\BOFStdInCtrEleFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BOFStdInCtrEleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\BOFStdMaintenFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BOFStdMaintenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\HotJudgeFrm.resx">
+      <DependentUpon>HotJudgeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityJudge\HotJudgeDefendFrm.resx">
+      <DependentUpon>HotJudgeDefendFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\CasterStdMaintenFrm.resx">
+      <DependentUpon>CasterStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\CasterStdProdProcFrm.resx">
+      <DependentUpon>CasterStdProdProcFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\DesStdMaintenFrm.resx">
+      <DependentUpon>DesStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\ExchangeSteelGradeMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExchangeSteelGradeMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\LFStdInCtrEleFrm.resx">
+      <DependentUpon>LFStdInCtrEleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\LFStdMaintenFrm.resx">
+      <DependentUpon>LFStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\NewAndOldSteelGrade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAndOldSteelGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\ProcTimeStdMaintenFrm.resx">
+      <DependentUpon>ProcTimeStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\ProduceSheetMaintenFrm.resx">
+      <DependentUpon>ProduceSheetMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\ProduceSheetMaintenShowFrm.resx">
+      <DependentUpon>ProduceSheetMaintenShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\RHStdInCtrEleFrm.resx">
+      <DependentUpon>RHStdInCtrEleFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\RHStdMaintenFrm.resx">
+      <DependentUpon>RHStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\StdInCtrEleShowFrm.resx">
+      <DependentUpon>StdInCtrEleShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\SteelGradeGlobalMainten.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SteelGradeGlobalMainten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\SteelGradeIndexRelationFrm.resx">
+      <DependentUpon>SteelGradeIndexRelationFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\TransTimeStdMaintenFrm.resx">
+      <DependentUpon>TransTimeStdMaintenFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\ucSteelGradeGlobalMainten.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSteelGradeGlobalMainten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityStandard\UnitRouteFrm.resx">
+      <DependentUpon>UnitRouteFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testHMI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>testHMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QualityStandard\LFStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\LFStdMaintenFrm.Designer.cs">
+      <DependentUpon>LFStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\NewAndOldSteelGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\NewAndOldSteelGrade.Designer.cs">
+      <DependentUpon>NewAndOldSteelGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\ProcTimeStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\ProcTimeStdMaintenFrm.Designer.cs">
+      <DependentUpon>ProcTimeStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\ProduceSheetMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\ProduceSheetMaintenFrm.Designer.cs">
+      <DependentUpon>ProduceSheetMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\ProduceSheetMaintenShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\ProduceSheetMaintenShowFrm.Designer.cs">
+      <DependentUpon>ProduceSheetMaintenShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\RHStdInCtrEleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\RHStdInCtrEleFrm.Designer.cs">
+      <DependentUpon>RHStdInCtrEleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\RHStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\RHStdMaintenFrm.Designer.cs">
+      <DependentUpon>RHStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\StdInCtrEleShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\StdInCtrEleShowFrm.designer.cs">
+      <DependentUpon>StdInCtrEleShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\SteelGradeGlobalMainten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\SteelGradeGlobalMainten.Designer.cs">
+      <DependentUpon>SteelGradeGlobalMainten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\SteelGradeIndexRelationFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\SteelGradeIndexRelationFrm.Designer.cs">
+      <DependentUpon>SteelGradeIndexRelationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\TransTimeStdMaintenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\TransTimeStdMaintenFrm.Designer.cs">
+      <DependentUpon>TransTimeStdMaintenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\ucSteelGradeGlobalMainten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\ucSteelGradeGlobalMainten.Designer.cs">
+      <DependentUpon>ucSteelGradeGlobalMainten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityStandard\UnitRouteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityStandard\UnitRouteFrm.designer.cs">
+      <DependentUpon>UnitRouteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testHMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testHMI.Designer.cs">
+      <DependentUpon>testHMI.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,1247 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEC5B615-CF9C-4EC3-87A5-855AA876252E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EquipMag</RootNamespace>
+    <AssemblyName>EquipMag</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\XGMESMain\bin\Release\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="buttonHide, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Include\buttonHide.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL" />
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\L3\AppServer\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmMag\AlarmMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmMag\AlarmMagFrm.Designer.cs">
+      <DependentUpon>AlarmMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipSupplyWaterFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipSupplyWaterFrm.designer.cs">
+      <DependentUpon>EquipSupplyWaterFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustMagFrm.Designer.cs">
+      <DependentUpon>EquipAdjustMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustMainFrm.designer.cs">
+      <DependentUpon>EquipAdjustMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustDetailFrm.designer.cs">
+      <DependentUpon>EquipAdjustDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustParaStdFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustParaStdFrm.designer.cs">
+      <DependentUpon>EquipAdjustParaStdFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustSetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipAdjustSetFrm.designer.cs">
+      <DependentUpon>EquipAdjustSetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipCoilCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipCoilCheckFrm.designer.cs">
+      <DependentUpon>EquipCoilCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipColletCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipColletCheckFrm.designer.cs">
+      <DependentUpon>EquipColletCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipLanceCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipLanceCheckFrm.designer.cs">
+      <DependentUpon>EquipLanceCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipLevelCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipLevelCheckFrm.designer.cs">
+      <DependentUpon>EquipLevelCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipMoldArcCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipMoldArcCheckFrm.designer.cs">
+      <DependentUpon>EquipMoldArcCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipOscillateCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipOscillateCheckFrm.designer.cs">
+      <DependentUpon>EquipOscillateCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipPoleCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipPoleCheckFrm.designer.cs">
+      <DependentUpon>EquipPoleCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipRollerCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipRollerCheckFrm.designer.cs">
+      <DependentUpon>EquipRollerCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipSectArcCheckFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipAdjust\EquipRunCheckManage\EquipSectArcCheckFrm.designer.cs">
+      <DependentUpon>EquipSectArcCheckFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleBaseMagFrm.designer.cs">
+      <DependentUpon>IronLadleBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleFireShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleFireShowFrm.Designer.cs">
+      <DependentUpon>IronLadleFireShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleFireMagFrm.designer.cs">
+      <DependentUpon>IronLadleFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleTieShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleTieShowFrm.designer.cs">
+      <DependentUpon>IronLadleTieShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleTieMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleTieMagFrm.Designer.cs">
+      <DependentUpon>IronLadleTieMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleUseMagFrm.designer.cs">
+      <DependentUpon>IronLadleUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleUseShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleUseShowFrm.designer.cs">
+      <DependentUpon>IronLadleUseShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IronLadleMag\IronLadleAddShowFrm.designer.cs">
+      <DependentUpon>IronLadleAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\BOFTapStartFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\BOFTapStartFrm.Designer.cs">
+      <DependentUpon>BOFTapStartFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\ChooseLadleShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\ChooseLadleShowFrm.Designer.cs">
+      <DependentUpon>ChooseLadleShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleRepShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleRepShowFrm.designer.cs">
+      <DependentUpon>ComLadleRepShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleAddShowFrm.designer.cs">
+      <DependentUpon>LadleAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleInnerBuildMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleInnerBuildMagShowFrm.designer.cs">
+      <DependentUpon>LadleInnerBuildMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieShowFrm.Designer.cs">
+      <DependentUpon>ComLadleTieShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieMagFrm.designer.cs">
+      <DependentUpon>ComLadleTieMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildShowFrm.designer.cs">
+      <DependentUpon>FinLadleBuildShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildMagFrm.Designer.cs">
+      <DependentUpon>FinLadleBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleDreShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleDreShowFrm.designer.cs">
+      <DependentUpon>FinLadleDreShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleBaseMagFrm.Designer.cs">
+      <DependentUpon>LadleBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleFireShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleFireShowFrm.designer.cs">
+      <DependentUpon>LadleFireShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleFireMagFrm.Designer.cs">
+      <DependentUpon>LadleFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleFoldShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleFoldShowFrm.Designer.cs">
+      <DependentUpon>LadleFoldShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleFoldQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleFoldQueryFrm.Designer.cs">
+      <DependentUpon>LadleFoldQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleInnerBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleInnerBuildMagFrm.Designer.cs">
+      <DependentUpon>LadleInnerBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadlePlanMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadlePlanMagFrm.Designer.cs">
+      <DependentUpon>LadlePlanMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadlePourShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadlePourShowFrm.Designer.cs">
+      <DependentUpon>LadlePourShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadlePourQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadlePourQueryFrm.Designer.cs">
+      <DependentUpon>LadlePourQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleUseMagFrm.Designer.cs">
+      <DependentUpon>LadleUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleUseMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleUseMagShowFrm.designer.cs">
+      <DependentUpon>LadleUseMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\FinLadleBuildQueryFrm.Designer.cs">
+      <DependentUpon>FinLadleBuildQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieQueryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\ComLadleTieQueryFrm.designer.cs">
+      <DependentUpon>ComLadleTieQueryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleMag\LadleZb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleMag\LadleZb.Designer.cs">
+      <DependentUpon>LadleZb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceAddShowFrm.designer.cs">
+      <DependentUpon>LanceAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceBaseMagFrm.designer.cs">
+      <DependentUpon>LanceBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceCheckMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceCheckMagFrm.designer.cs">
+      <DependentUpon>LanceCheckMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceCheckMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceCheckMagShowFrm.designer.cs">
+      <DependentUpon>LanceCheckMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceDefendMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceDefendMagFrm.designer.cs">
+      <DependentUpon>LanceDefendMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceDefendMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceDefendMagShowFrm.designer.cs">
+      <DependentUpon>LanceDefendMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceMakeMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceMakeMagShowFrm.Designer.cs">
+      <DependentUpon>LanceMakeMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceUseMagFrm.designer.cs">
+      <DependentUpon>LanceUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LanceMag\LanceUseMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanceMag\LanceUseMagShowFrm.designer.cs">
+      <DependentUpon>LanceUseMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LfadditionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LfadditionFrm.Designer.cs">
+      <DependentUpon>LfadditionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LfWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LfWeightFrm.Designer.cs">
+      <DependentUpon>LfWeightFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\ChangeFlowIDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\ChangeFlowIDFrm.Designer.cs">
+      <DependentUpon>ChangeFlowIDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldAddShowFrm.designer.cs">
+      <DependentUpon>MoldAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldOnLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldOnLineFrm.Designer.cs">
+      <DependentUpon>MoldOnLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBaseMagFrm.designer.cs">
+      <DependentUpon>MoldBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardInstallMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardInstallMagFrm.designer.cs">
+      <DependentUpon>MoldBoardInstallMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardInstallMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardInstallMagShowFrm.designer.cs">
+      <DependentUpon>MoldBoardInstallMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardParUseShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardParUseShowFrm.designer.cs">
+      <DependentUpon>MoldBoardParUseShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardParUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardParUseMagFrm.designer.cs">
+      <DependentUpon>MoldBoardParUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeInstallMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeInstallMagFrm.designer.cs">
+      <DependentUpon>MoldPipeInstallMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeInstallMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeInstallMagShowFrm.designer.cs">
+      <DependentUpon>MoldPipeInstallMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeParUseShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeParUseShowFrm.designer.cs">
+      <DependentUpon>MoldPipeParUseShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeParUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldPipeParUseMagFrm.designer.cs">
+      <DependentUpon>MoldPipeParUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardCheckMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardCheckMagFrm.designer.cs">
+      <DependentUpon>MoldBoardCheckMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardCheckMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldMag\MoldBoardCheckMagShowFrm.designer.cs">
+      <DependentUpon>MoldBoardCheckMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlarmMag\AlarmMagFrm.resx">
+      <DependentUpon>AlarmMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoiloffCooling\EquipSupplyWaterFrm.resx">
+      <DependentUpon>EquipSupplyWaterFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipAdjustMagFrm.resx">
+      <DependentUpon>EquipAdjustMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipAdjustMainFrm.resx">
+      <DependentUpon>EquipAdjustMainFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipAdjustDetailFrm.resx">
+      <DependentUpon>EquipAdjustDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipAdjustParaStdFrm.resx">
+      <DependentUpon>EquipAdjustParaStdFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipAdjustSetFrm.resx">
+      <DependentUpon>EquipAdjustSetFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipCoilCheckFrm.resx">
+      <DependentUpon>EquipCoilCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipColletCheckFrm.resx">
+      <DependentUpon>EquipColletCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipLanceCheckFrm.resx">
+      <DependentUpon>EquipLanceCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipLevelCheckFrm.resx">
+      <DependentUpon>EquipLevelCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipMoldArcCheckFrm.resx">
+      <DependentUpon>EquipMoldArcCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipOscillateCheckFrm.resx">
+      <DependentUpon>EquipOscillateCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipPoleCheckFrm.resx">
+      <DependentUpon>EquipPoleCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipRollerCheckFrm.resx">
+      <DependentUpon>EquipRollerCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipAdjust\EquipRunCheckManage\EquipSectArcCheckFrm.resx">
+      <DependentUpon>EquipSectArcCheckFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleBaseMagFrm.resx">
+      <DependentUpon>IronLadleBaseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleFireShowFrm.resx">
+      <DependentUpon>IronLadleFireShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleFireMagFrm.resx">
+      <DependentUpon>IronLadleFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleTieShowFrm.resx">
+      <DependentUpon>IronLadleTieShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleTieMagFrm.resx">
+      <DependentUpon>IronLadleTieMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleUseMagFrm.resx">
+      <DependentUpon>IronLadleUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleUseShowFrm.resx">
+      <DependentUpon>IronLadleUseShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IronLadleMag\IronLadleAddShowFrm.resx">
+      <DependentUpon>IronLadleAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\BOFTapStartFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BOFTapStartFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\ChooseLadleShowFrm.resx">
+      <DependentUpon>ChooseLadleShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\ComLadleRepShowFrm.resx">
+      <DependentUpon>ComLadleRepShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleAddShowFrm.resx">
+      <DependentUpon>LadleAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleInnerBuildMagShowFrm.resx">
+      <DependentUpon>LadleInnerBuildMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\ComLadleTieShowFrm.resx">
+      <DependentUpon>ComLadleTieShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\ComLadleTieMagFrm.resx">
+      <DependentUpon>ComLadleTieMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\FinLadleBuildShowFrm.resx">
+      <DependentUpon>FinLadleBuildShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\FinLadleBuildMagFrm.resx">
+      <DependentUpon>FinLadleBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\FinLadleDreShowFrm.resx">
+      <DependentUpon>FinLadleDreShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleBaseMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LadleBaseMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleFireShowFrm.resx">
+      <DependentUpon>LadleFireShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleFireMagFrm.resx">
+      <DependentUpon>LadleFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleFoldShowFrm.resx">
+      <DependentUpon>LadleFoldShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleFoldQueryFrm.resx">
+      <DependentUpon>LadleFoldQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleInnerBuildMagFrm.resx">
+      <DependentUpon>LadleInnerBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadlePlanMagFrm.resx">
+      <DependentUpon>LadlePlanMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadlePourShowFrm.resx">
+      <DependentUpon>LadlePourShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadlePourQueryFrm.resx">
+      <DependentUpon>LadlePourQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleUseMagFrm.resx">
+      <DependentUpon>LadleUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleUseMagShowFrm.resx">
+      <DependentUpon>LadleUseMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\FinLadleBuildQueryFrm.resx">
+      <DependentUpon>FinLadleBuildQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\ComLadleTieQueryFrm.resx">
+      <DependentUpon>ComLadleTieQueryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleMag\LadleZb.resx">
+      <DependentUpon>LadleZb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceAddShowFrm.resx">
+      <DependentUpon>LanceAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceBaseMagFrm.resx">
+      <DependentUpon>LanceBaseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceCheckMagFrm.resx">
+      <DependentUpon>LanceCheckMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceCheckMagShowFrm.resx">
+      <DependentUpon>LanceCheckMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceDefendMagFrm.resx">
+      <DependentUpon>LanceDefendMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceDefendMagShowFrm.resx">
+      <DependentUpon>LanceDefendMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceMakeMagShowFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LanceMakeMagShowFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceUseMagFrm.resx">
+      <DependentUpon>LanceUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LanceMag\LanceUseMagShowFrm.resx">
+      <DependentUpon>LanceUseMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LfadditionFrm.resx">
+      <DependentUpon>LfadditionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LfWeightFrm.resx">
+      <DependentUpon>LfWeightFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\ChangeFlowIDFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangeFlowIDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldAddShowFrm.resx">
+      <DependentUpon>MoldAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldOnLineFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MoldOnLineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBaseMagFrm.resx">
+      <DependentUpon>MoldBaseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardInstallMagFrm.resx">
+      <DependentUpon>MoldBoardInstallMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardInstallMagShowFrm.resx">
+      <DependentUpon>MoldBoardInstallMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardParUseShowFrm.resx">
+      <DependentUpon>MoldBoardParUseShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardParUseMagFrm.resx">
+      <DependentUpon>MoldBoardParUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldPipeInstallMagFrm.resx">
+      <DependentUpon>MoldPipeInstallMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldPipeInstallMagShowFrm.resx">
+      <DependentUpon>MoldPipeInstallMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldPipeParUseShowFrm.resx">
+      <DependentUpon>MoldPipeParUseShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldPipeParUseMagFrm.resx">
+      <DependentUpon>MoldPipeParUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardCheckMagFrm.resx">
+      <DependentUpon>MoldBoardCheckMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldMag\MoldBoardCheckMagShowFrm.resx">
+      <DependentUpon>MoldBoardCheckMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishAddShowFrm.resx">
+      <DependentUpon>TundishAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishBaseMagFrm.resx">
+      <DependentUpon>TundishBaseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishBaseMagFrmOT.resx">
+      <DependentUpon>TundishBaseMagFrmOT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishFireDataFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TundishFireDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishMag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TundishMag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishOnLineFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TundishOnLineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishONorOFFLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TundishONorOFFLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishOTHotFireMagFrm.resx">
+      <DependentUpon>TundishOTHotFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishTFFHotFireMagFrm.resx">
+      <DependentUpon>TundishTFFHotFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishInnerBuildMagFrm.resx">
+      <DependentUpon>TundishInnerBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishInnerFireMagFrm.resx">
+      <DependentUpon>TundishInnerFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishOTInstallMagFrm.resx">
+      <DependentUpon>TundishOTInstallMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishOTRefraUseMagFrm.resx">
+      <DependentUpon>TundishOTRefraUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishTFFInstallMagFrm.resx">
+      <DependentUpon>TundishTFFInstallMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishTFFRefraUseMagFrm.resx">
+      <DependentUpon>TundishTFFRefraUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TundishMag\TundishWorkBuildMagFrm.resx">
+      <DependentUpon>TundishWorkBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\HotSypUseMagFrm.resx">
+      <DependentUpon>HotSypUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\HotSypBuildMagFrm.resx">
+      <DependentUpon>HotSypBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\HotSypBuildMagShowFrm.resx">
+      <DependentUpon>HotSypBuildMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\HotSypRepairShowFrm.resx">
+      <DependentUpon>HotSypRepairShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\HotSypUseMagShowFrm.resx">
+      <DependentUpon>HotSypUseMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeAddShowFrm.resx">
+      <DependentUpon>VacTubeAddShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\RHAreaOperation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RHAreaOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeBaseMagFrm.resx">
+      <DependentUpon>VacTubeBaseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeBuildMagFrm.resx">
+      <DependentUpon>VacTubeBuildMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeBuildMagShowFrm.resx">
+      <DependentUpon>VacTubeBuildMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeFireMagFrm.resx">
+      <DependentUpon>VacTubeFireMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeFireInfoShowFrm.resx">
+      <DependentUpon>VacTubeFireInfoShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeFireMagShowFrm.resx">
+      <DependentUpon>VacTubeFireMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeInstallFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VacTubeInstallFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeOffLineFrm.resx">
+      <DependentUpon>VacTubeOffLineFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeOnFireFrm.resx">
+      <DependentUpon>VacTubeOnFireFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeOnLineFrm.resx">
+      <DependentUpon>VacTubeOnLineFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeOnPositionFrm.resx">
+      <DependentUpon>VacTubeOnPositionFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeRepairShowFrm.resx">
+      <DependentUpon>VacTubeRepairShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeUseInfoShowFrm.resx">
+      <DependentUpon>VacTubeUseInfoShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeUseMagFrm.resx">
+      <DependentUpon>VacTubeUseMagFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacTubeMag\VacTubeUseMagShowFrm.resx">
+      <DependentUpon>VacTubeUseMagShowFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoiloffCooling\EquipRuntimeFrm.resx">
+      <DependentUpon>EquipRuntimeFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoiloffCooling\EquipCleaningDataFrm.resx">
+      <DependentUpon>EquipCleaningDataFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TundishMag\TundishAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishAddShowFrm.designer.cs">
+      <DependentUpon>TundishAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishBaseMagFrm.designer.cs">
+      <DependentUpon>TundishBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishBaseMagFrmOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishBaseMagFrmOT.designer.cs">
+      <DependentUpon>TundishBaseMagFrmOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishFireDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishFireDataFrm.Designer.cs">
+      <DependentUpon>TundishFireDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishMag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishMag.Designer.cs">
+      <DependentUpon>TundishMag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishOnLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishOnLineFrm.Designer.cs">
+      <DependentUpon>TundishOnLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishONorOFFLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishONorOFFLine.Designer.cs">
+      <DependentUpon>TundishONorOFFLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTHotFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTHotFireMagFrm.designer.cs">
+      <DependentUpon>TundishOTHotFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFHotFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFHotFireMagFrm.designer.cs">
+      <DependentUpon>TundishTFFHotFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishInnerBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishInnerBuildMagFrm.designer.cs">
+      <DependentUpon>TundishInnerBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishInnerFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishInnerFireMagFrm.designer.cs">
+      <DependentUpon>TundishInnerFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTInstallMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTInstallMagFrm.designer.cs">
+      <DependentUpon>TundishOTInstallMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTRefraUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishOTRefraUseMagFrm.designer.cs">
+      <DependentUpon>TundishOTRefraUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFInstallMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFInstallMagFrm.designer.cs">
+      <DependentUpon>TundishTFFInstallMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFRefraUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishTFFRefraUseMagFrm.designer.cs">
+      <DependentUpon>TundishTFFRefraUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TundishMag\TundishWorkBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TundishMag\TundishWorkBuildMagFrm.designer.cs">
+      <DependentUpon>TundishWorkBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypUseMagFrm.designer.cs">
+      <DependentUpon>HotSypUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypBuildMagFrm.designer.cs">
+      <DependentUpon>HotSypBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypBuildMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypBuildMagShowFrm.designer.cs">
+      <DependentUpon>HotSypBuildMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypRepairShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypRepairShowFrm.designer.cs">
+      <DependentUpon>HotSypRepairShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypUseMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\HotSypUseMagShowFrm.designer.cs">
+      <DependentUpon>HotSypUseMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeAddShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeAddShowFrm.designer.cs">
+      <DependentUpon>VacTubeAddShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\RHAreaOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\RHAreaOperation.Designer.cs">
+      <DependentUpon>RHAreaOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBaseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBaseMagFrm.designer.cs">
+      <DependentUpon>VacTubeBaseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBuildMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBuildMagFrm.designer.cs">
+      <DependentUpon>VacTubeBuildMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBuildMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeBuildMagShowFrm.designer.cs">
+      <DependentUpon>VacTubeBuildMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireMagFrm.designer.cs">
+      <DependentUpon>VacTubeFireMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireInfoShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireInfoShowFrm.designer.cs">
+      <DependentUpon>VacTubeFireInfoShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeFireMagShowFrm.designer.cs">
+      <DependentUpon>VacTubeFireMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeInstallFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeInstallFrm.Designer.cs">
+      <DependentUpon>VacTubeInstallFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOffLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOffLineFrm.designer.cs">
+      <DependentUpon>VacTubeOffLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnFireFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnFireFrm.designer.cs">
+      <DependentUpon>VacTubeOnFireFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnLineFrm.designer.cs">
+      <DependentUpon>VacTubeOnLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnPositionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeOnPositionFrm.designer.cs">
+      <DependentUpon>VacTubeOnPositionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeRepairShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeRepairShowFrm.designer.cs">
+      <DependentUpon>VacTubeRepairShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseInfoShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseInfoShowFrm.designer.cs">
+      <DependentUpon>VacTubeUseInfoShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseMagFrm.designer.cs">
+      <DependentUpon>VacTubeUseMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseMagShowFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacTubeMag\VacTubeUseMagShowFrm.designer.cs">
+      <DependentUpon>VacTubeUseMagShowFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipRuntimeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipRuntimeFrm.designer.cs">
+      <DependentUpon>EquipRuntimeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipCleaningDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoiloffCooling\EquipCleaningDataFrm.designer.cs">
+      <DependentUpon>EquipCleaningDataFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VacTubeFireCurve.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonMag\CommonMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommonMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="HMIComponent" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

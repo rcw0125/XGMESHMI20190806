@@ -1,0 +1,610 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2C85AE0-4124-4653-9A5F-EDD002B80F15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>spc</RootNamespace>
+    <AssemblyName>spc</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI">
+      <HintPath>..\QualityMag\bin\Debug\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF">
+      <HintPath>..\QualityMag\bin\Debug\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.2, Version=2.0.20181.296, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL" />
+    <Reference Include="CommonMag, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonMag\bin\Release\CommonMag.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI">
+      <HintPath>..\QualityMag\bin\Debug\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase">
+      <HintPath>..\QualityMag\bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bof\addHeatid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\addHeatid.Designer.cs">
+      <DependentUpon>addHeatid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\chengpin_p1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\chengpin_p1.Designer.cs">
+      <DependentUpon>chengpin_p1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\chengpin_p2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\chengpin_p2.Designer.cs">
+      <DependentUpon>chengpin_p2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\chengpin_p3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\chengpin_p3.Designer.cs">
+      <DependentUpon>chengpin_p3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\chengpin_p4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\chengpin_p4.Designer.cs">
+      <DependentUpon>chengpin_p4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_c1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_c1.Designer.cs">
+      <DependentUpon>jinzhan_c1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_c2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_c2.Designer.cs">
+      <DependentUpon>jinzhan_c2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_c3.Designer.cs">
+      <DependentUpon>jinzhan_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_c4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_c4.Designer.cs">
+      <DependentUpon>jinzhan_c4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_p1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_p1.Designer.cs">
+      <DependentUpon>jinzhan_p1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_p2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_p2.Designer.cs">
+      <DependentUpon>jinzhan_p2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_p3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_p3.Designer.cs">
+      <DependentUpon>jinzhan_p3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\jinzhan_p4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\jinzhan_p4.Designer.cs">
+      <DependentUpon>jinzhan_p4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\ladel_weight3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\ladel_weight3.Designer.cs">
+      <DependentUpon>ladel_weight3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\ladle_weight4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\ladle_weight4.Designer.cs">
+      <DependentUpon>ladle_weight4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\ladle_weight5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\ladle_weight5.Designer.cs">
+      <DependentUpon>ladle_weight5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\ladle_weight6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\ladle_weight6.Designer.cs">
+      <DependentUpon>ladle_weight6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\ladle_weight7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\ladle_weight7.Designer.cs">
+      <DependentUpon>ladle_weight7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\tundishtemp3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\tundishtemp3.Designer.cs">
+      <DependentUpon>tundishtemp3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\tundishtemp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\tundishtemp4.Designer.cs">
+      <DependentUpon>tundishtemp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\tundishtemp5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\tundishtemp5.Designer.cs">
+      <DependentUpon>tundishtemp5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\tundishtemp6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\tundishtemp6.Designer.cs">
+      <DependentUpon>tundishtemp6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ccm\tundishtemp7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ccm\tundishtemp7.Designer.cs">
+      <DependentUpon>tundishtemp7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\c_add1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\c_add1.Designer.cs">
+      <DependentUpon>c_add1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\c_add2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\c_add2.Designer.cs">
+      <DependentUpon>c_add2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\c_add3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\c_add3.Designer.cs">
+      <DependentUpon>c_add3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\c_add4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\c_add4.Designer.cs">
+      <DependentUpon>c_add4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\c_add5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\c_add5.Designer.cs">
+      <DependentUpon>c_add5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub1.Designer.cs">
+      <DependentUpon>ladletemp_sub1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub2.Designer.cs">
+      <DependentUpon>ladletemp_sub2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub3.Designer.cs">
+      <DependentUpon>ladletemp_sub3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub4.Designer.cs">
+      <DependentUpon>ladletemp_sub4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\ladletemp_sub5.Designer.cs">
+      <DependentUpon>ladletemp_sub5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\lizhan_c1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\lizhan_c1.Designer.cs">
+      <DependentUpon>lizhan_c1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\lizhan_c2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\lizhan_c2.Designer.cs">
+      <DependentUpon>lizhan_c2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\lizhan_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\lizhan_c3.Designer.cs">
+      <DependentUpon>lizhan_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\lizhan_c4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\lizhan_c4.Designer.cs">
+      <DependentUpon>lizhan_c4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\lizhan_c5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\lizhan_c5.Designer.cs">
+      <DependentUpon>lizhan_c5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\rh_c1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\rh_c1.Designer.cs">
+      <DependentUpon>rh_c1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\softblow1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\softblow1.Designer.cs">
+      <DependentUpon>softblow1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\softblow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\softblow2.Designer.cs">
+      <DependentUpon>softblow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\softblow3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\softblow3.Designer.cs">
+      <DependentUpon>softblow3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\softblow4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\softblow4.Designer.cs">
+      <DependentUpon>softblow4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\softblow5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\softblow5.Designer.cs">
+      <DependentUpon>softblow5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\spclf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\spclf.Designer.cs">
+      <DependentUpon>spclf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\temp1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\temp1.Designer.cs">
+      <DependentUpon>temp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\temp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\temp2.Designer.cs">
+      <DependentUpon>temp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\temp3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\temp3.Designer.cs">
+      <DependentUpon>temp3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\temp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\temp4.Designer.cs">
+      <DependentUpon>temp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\temp5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\temp5.Designer.cs">
+      <DependentUpon>temp5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\wire1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\wire1.Designer.cs">
+      <DependentUpon>wire1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\wire2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\wire2.Designer.cs">
+      <DependentUpon>wire2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\wire3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\wire3.Designer.cs">
+      <DependentUpon>wire3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\wire4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\wire4.Designer.cs">
+      <DependentUpon>wire4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\wire5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\wire5.Designer.cs">
+      <DependentUpon>wire5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_a1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_a1.Designer.cs">
+      <DependentUpon>zf_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_a2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_a2.Designer.cs">
+      <DependentUpon>zf_a2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_a3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_a3.Designer.cs">
+      <DependentUpon>zf_a3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_a4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_a4.Designer.cs">
+      <DependentUpon>zf_a4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_a5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_a5.Designer.cs">
+      <DependentUpon>zf_a5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_r1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_r1.Designer.cs">
+      <DependentUpon>zf_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_r2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_r2.Designer.cs">
+      <DependentUpon>zf_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_r3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_r3.Designer.cs">
+      <DependentUpon>zf_r3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_r4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_r4.Designer.cs">
+      <DependentUpon>zf_r4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lf\zf_r5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lf\zf_r5.Designer.cs">
+      <DependentUpon>zf_r5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="bof\Remark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\Remark.Designer.cs">
+      <DependentUpon>Remark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpcData.cs" />
+    <Compile Include="bof\spcform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\spcform.Designer.cs">
+      <DependentUpon>spcform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_1.Designer.cs">
+      <DependentUpon>tapping_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_2.Designer.cs">
+      <DependentUpon>tapping_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_3.Designer.cs">
+      <DependentUpon>tapping_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_4.Designer.cs">
+      <DependentUpon>tapping_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_o1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_o1.Designer.cs">
+      <DependentUpon>tapping_o1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_o2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_o2.Designer.cs">
+      <DependentUpon>tapping_o2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_o3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_o3.Designer.cs">
+      <DependentUpon>tapping_o3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\tapping_o4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\tapping_o4.Designer.cs">
+      <DependentUpon>tapping_o4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_c1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_c1.Designer.cs">
+      <DependentUpon>zhongdian_c1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_c2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_c2.Designer.cs">
+      <DependentUpon>zhongdian_c2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_c3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_c3.Designer.cs">
+      <DependentUpon>zhongdian_c3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_c4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_c4.Designer.cs">
+      <DependentUpon>zhongdian_c4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_p1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_p1.Designer.cs">
+      <DependentUpon>zhongdian_p1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_p2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_p2.Designer.cs">
+      <DependentUpon>zhongdian_p2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_p3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_p3.Designer.cs">
+      <DependentUpon>zhongdian_p3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bof\zhongdian_p4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bof\zhongdian_p4.Designer.cs">
+      <DependentUpon>zhongdian_p4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spcQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spcQuery.Designer.cs">
+      <DependentUpon>spcQuery.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bof\addHeatid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>addHeatid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bof\Remark.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Remark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bof\spcform.resx">
+      <DependentUpon>spcform.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lf\spclf.resx">
+      <DependentUpon>spclf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="spcQuery.resx">
+      <DependentUpon>spcQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlanResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetElement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetElementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetElementResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProcessResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMPlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCMPlanResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMElement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMElementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCMElementResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMStd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMStdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCMStdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCMProcessResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMHeatInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCMHeatInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCMHeatInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllProcess">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllProcessResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlan" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetElementSoapIn">
+    <wsdl:part name="parameters" element="tns:GetElement" />
+  </wsdl:message>
+  <wsdl:message name="GetElementSoapOut">
+    <wsdl:part name="parameters" element="tns:GetElementResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStd" />
+  </wsdl:message>
+  <wsdl:message name="GetStdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProcess" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCMPlan" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCMPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMElementSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCMElement" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMElementSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCMElementResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMStdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCMStd" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMStdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCMStdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCMProcess" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCMProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMHeatInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCMHeatInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetCCMHeatInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCMHeatInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllProcess" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllProcessResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSMESSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlan">
+      <wsdl:input message="tns:GetPlanSoapIn" />
+      <wsdl:output message="tns:GetPlanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetElement">
+      <wsdl:input message="tns:GetElementSoapIn" />
+      <wsdl:output message="tns:GetElementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStd">
+      <wsdl:input message="tns:GetStdSoapIn" />
+      <wsdl:output message="tns:GetStdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcess">
+      <wsdl:input message="tns:GetProcessSoapIn" />
+      <wsdl:output message="tns:GetProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMPlan">
+      <wsdl:input message="tns:GetCCMPlanSoapIn" />
+      <wsdl:output message="tns:GetCCMPlanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMElement">
+      <wsdl:input message="tns:GetCCMElementSoapIn" />
+      <wsdl:output message="tns:GetCCMElementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMStd">
+      <wsdl:input message="tns:GetCCMStdSoapIn" />
+      <wsdl:output message="tns:GetCCMStdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMProcess">
+      <wsdl:input message="tns:GetCCMProcessSoapIn" />
+      <wsdl:output message="tns:GetCCMProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMHeatInfo">
+      <wsdl:input message="tns:GetCCMHeatInfoSoapIn" />
+      <wsdl:output message="tns:GetCCMHeatInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProcess">
+      <wsdl:input message="tns:GetAllProcessSoapIn" />
+      <wsdl:output message="tns:GetAllProcessSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSMESSoap" type="tns:WSMESSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlan">
+      <soap:operation soapAction="http://tempuri.org/GetPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElement">
+      <soap:operation soapAction="http://tempuri.org/GetElement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStd">
+      <soap:operation soapAction="http://tempuri.org/GetStd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcess">
+      <soap:operation soapAction="http://tempuri.org/GetProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMPlan">
+      <soap:operation soapAction="http://tempuri.org/GetCCMPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMElement">
+      <soap:operation soapAction="http://tempuri.org/GetCCMElement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMStd">
+      <soap:operation soapAction="http://tempuri.org/GetCCMStd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMProcess">
+      <soap:operation soapAction="http://tempuri.org/GetCCMProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMHeatInfo">
+      <soap:operation soapAction="http://tempuri.org/GetCCMHeatInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProcess">
+      <soap:operation soapAction="http://tempuri.org/GetAllProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSMESSoap12" type="tns:WSMESSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlan">
+      <soap12:operation soapAction="http://tempuri.org/GetPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetElement">
+      <soap12:operation soapAction="http://tempuri.org/GetElement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStd">
+      <soap12:operation soapAction="http://tempuri.org/GetStd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcess">
+      <soap12:operation soapAction="http://tempuri.org/GetProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMPlan">
+      <soap12:operation soapAction="http://tempuri.org/GetCCMPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMElement">
+      <soap12:operation soapAction="http://tempuri.org/GetCCMElement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMStd">
+      <soap12:operation soapAction="http://tempuri.org/GetCCMStd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMProcess">
+      <soap12:operation soapAction="http://tempuri.org/GetCCMProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCMHeatInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetCCMHeatInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProcess">
+      <soap12:operation soapAction="http://tempuri.org/GetAllProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSMES">
+    <wsdl:port name="WSMESSoap" binding="tns:WSMESSoap">
+      <soap:address location="http://192.168.36.155/wsmes.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSMESSoap12" binding="tns:WSMESSoap12">
+      <soap12:address location="http://192.168.36.155/wsmes.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

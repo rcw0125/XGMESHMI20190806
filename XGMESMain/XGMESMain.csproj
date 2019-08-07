@@ -1,0 +1,405 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83E61245-A98A-4EA6-868F-29AC7D9A0A5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XGMESMain</RootNamespace>
+    <AssemblyName>XGMESMain</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>XGMESMain.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>628D991C99B51D5ED57AC86661AA44D257B4D58B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>XGMESMain_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>C:\Documents and Settings\Administrator\桌面\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>zh-CHS</TargetCulture>
+    <ProductName>邢钢MES客户端</ProductName>
+    <PublisherName>攀信软件</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppSvrHMI, Version=1.0.3432.30725, Culture=neutral, PublicKeyToken=76c0451e59d347dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="AppSvrIF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2e87e3c4ca6668f1, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppSvrIF.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.2, Version=2.0.20181.296, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL" />
+    <Reference Include="COMIDE, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\COMIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\DataGridViewFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DispatchMag, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Project\DispatchMag\bin\Debug\DispatchMag.dll</HintPath>
+    </Reference>
+    <Reference Include="EDWinFormsUI, Version=2.2.3261.36697, Culture=neutral, PublicKeyToken=55e7b6619b0ad0ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EDWinFormsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HMIBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\My Documents\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="PxC1TrueDBGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxC1TrueDBGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="PxC1TrueDBQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxC1TrueDBQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxColumnFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxColumnFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="PxConditionQuery, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxConditionQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxControls, Version=1.0.3373.21920, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxDataValid, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxDataValid.DLL</HintPath>
+    </Reference>
+    <Reference Include="PxExpanddataGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxExpanddataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIniStyle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxIniStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="PxIntelliSave, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxIntelliSave.dll</HintPath>
+    </Reference>
+    <Reference Include="PxInterfaceControls, Version=1.0.3379.27520, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxInterfaceControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxRadioButtonsPanel, Version=1.0.3463.29475, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxRadioButtonsPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolBar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PxtoolStrip, Version=1.0.3791.19970, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxtoolStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolStripControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxToolStripQuery, Version=1.0.3743.24233, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxToolStripQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="PxTurnPageControls, Version=1.0.3688.18756, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxTurnPageControls.dll</HintPath>
+    </Reference>
+    <Reference Include="PxWarnClass, Version=1.0.3691.17726, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PxWarnClass.dll</HintPath>
+    </Reference>
+    <Reference Include="SbMag">
+      <HintPath>..\SbMag\bin\Debug\SbMag.dll</HintPath>
+    </Reference>
+    <Reference Include="Session, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\Session.dll</HintPath>
+    </Reference>
+    <Reference Include="spc">
+      <HintPath>..\Project\spc\bin\Debug\spc.dll</HintPath>
+    </Reference>
+    <Reference Include="SysLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\SysLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VirtualCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Include\VirtualCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PXIDE\PXControls\WeifenLuo.WinFormsUI.Docking.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigConnection.Designer.cs">
+      <DependentUpon>frmConfigConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipTeamIDChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipTeamIDChanged.designer.cs">
+      <DependentUpon>frmTipTeamIDChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassWordMagFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassWordMagFrm.Designer.cs">
+      <DependentUpon>PassWordMagFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleApplication.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigConnection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConfigConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipTeamIDChanged.resx">
+      <DependentUpon>frmTipTeamIDChanged.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassWordMagFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassWordMagFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <None Include="文件\AppUpdate.config" />
+    <None Include="文件\AppUpdate.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project\BaseDataMag\BaseDataMag.csproj">
+      <Project>{25363A78-EC23-4C1F-B0FA-ED107653EF9A}</Project>
+      <Name>BaseDataMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\CommonMag\CommDataMag.csproj">
+      <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
+      <Name>CommDataMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\EquipMag\EquipMag.csproj">
+      <Project>{DEC5B615-CF9C-4EC3-87A5-855AA876252E}</Project>
+      <Name>EquipMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\NCTelDataMag\NCTelDataMag.csproj">
+      <Project>{DB13FC75-F5FE-454F-807E-9AD10ED62538}</Project>
+      <Name>NCTelDataMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\PlanMag\PlanMag.csproj">
+      <Project>{C6B80B74-EB86-44FC-9016-F70FE4602BF5}</Project>
+      <Name>PlanMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\QualityMag\QualityMag.csproj">
+      <Project>{824E6F90-DB29-4A4A-8B4A-9FA777F7DA8B}</Project>
+      <Name>QualityMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\StoreMag\StoreMag.csproj">
+      <Project>{7A1CADE6-1539-494A-922B-86A345F6EBD9}</Project>
+      <Name>StoreMag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project\UnitMag\UnitMag.csproj">
+      <Project>{F1FEE102-40BA-4ABA-BC5B-6410D89B8D07}</Project>
+      <Name>UnitMag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="文件\AppUpdate.exe" />
+    <Content Include="文件\BloomInfor.xslt" />
+    <Content Include="文件\BloomInStoreInfor.xslt" />
+    <Content Include="文件\BOFAddMaterialsInforToNC.xslt" />
+    <Content Include="文件\EDWinFormsUI.dll" />
+    <Content Include="文件\ExceptionalData.xslt" />
+    <Content Include="文件\ExceptionalMainData.xslt" />
+    <Content Include="文件\InStoreQualityInfor.xslt" />
+    <Content Include="文件\IronBloomInfor.xslt" />
+    <Content Include="文件\IronBloomInStoreInfor.xslt" />
+    <Content Include="文件\IronQualityJudgeInfor.xslt" />
+    <Content Include="文件\MillPlanToNC.xslt" />
+    <Content Include="文件\QualityJudgeInfor.xslt" />
+    <Content Include="文件\updateBloomInfor.xslt" />
+    <Content Include="文件\updateBloomInStoreInfor.xslt" />
+    <Content Include="文件\updateInStoreQualityInfor.xslt" />
+    <Content Include="文件\updateIronBloomInfor.xslt" />
+    <Content Include="文件\updateIronBloomInStoreInfor.xslt" />
+    <Content Include="文件\updateIronQualityJudgeInfor.xslt" />
+    <Content Include="文件\updateMaterialsInforToNC.xslt" />
+    <Content Include="文件\updateMillPlanToNC.xslt" />
+    <Content Include="文件\updateQualityJudgeInfor.xslt" />
+    <Content Include="文件\xtgt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties L3ProjectType="ClientApplication" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
