@@ -455,6 +455,7 @@ namespace UnitMag.LFMag
                 //btnAddOxygen.Visible = false;//UnLock;
                 if (!UnLock)
                 {
+                    pnlBase.Visible = false;//UnLock;
                     pnlProcess.Visible = UnLock;
                     fLPExcept.Visible = UnLock;
                     pnlNote.Visible = UnLock;
