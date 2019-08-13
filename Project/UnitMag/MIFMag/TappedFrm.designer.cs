@@ -47,6 +47,8 @@
             this.txtReturnSteelWeight = new PxDataValid.PxTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbDestination = new System.Windows.Forms.ComboBox();
+            this.tbYk = new PxDataValid.PxTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dsIronLadles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsIronLadles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -66,8 +68,10 @@
             this.cmbLadle.FormattingEnabled = true;
             this.cmbLadle.Location = new System.Drawing.Point(120, 22);
             this.cmbLadle.Name = "cmbLadle";
+            this.cmbLadle.ReadOnly = false;
             this.cmbLadle.Size = new System.Drawing.Size(150, 20);
             this.cmbLadle.TabIndex = 10;
+            this.cmbLadle.TMpEnabled = true;
             this.cmbLadle.ToolTipValid = this.toolTip1;
             this.cmbLadle.ValidEable = true;
             this.cmbLadle.ValueMember = "L3DataTable.IRONLADLEID";
@@ -127,19 +131,27 @@
             // tbWeight
             // 
             this.tbWeight.BackColor = System.Drawing.SystemColors.Window;
+            this.tbWeight.DisplayPrecision = 0;
             this.tbWeight.EnableNull = false;
             this.tbWeight.ErropPr = this.errorProvider1;
+            this.tbWeight.FixedLength = 0;
             this.tbWeight.Length = 0;
             this.tbWeight.Location = new System.Drawing.Point(120, 50);
-            this.tbWeight.Max = 99;
+            this.tbWeight.Max = 99D;
+            this.tbWeight.MaxNull = 99D;
+            this.tbWeight.MaxStringLength = 0;
             this.tbWeight.MaxStrLength = 0;
-            this.tbWeight.Min = 0;
+            this.tbWeight.Min = 0D;
+            this.tbWeight.MinNull = 0D;
+            this.tbWeight.MinStringLength = 0;
             this.tbWeight.MinStrLength = 0;
             this.tbWeight.Name = "tbWeight";
             this.tbWeight.Precision = 0;
+            this.tbWeight.Regex = "";
             this.tbWeight.Size = new System.Drawing.Size(150, 21);
             this.tbWeight.TabIndex = 8;
             this.tbWeight.ToolTipValid = this.toolTip1;
+            this.tbWeight.VaildWarning = "";
             this.tbWeight.ValidEable = true;
             this.tbWeight.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
             // 
@@ -164,18 +176,17 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(189, 3);
+            this.btnOK.Location = new System.Drawing.Point(191, 3);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 11;
             this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
-           
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(270, 3);
+            this.btnCancel.Location = new System.Drawing.Point(272, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 11;
@@ -188,15 +199,15 @@
             this.flowLayoutPanel1.Controls.Add(this.btnOK);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 177);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 174);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(348, 46);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(350, 46);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 83);
+            this.label1.Location = new System.Drawing.Point(23, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 12);
             this.label1.TabIndex = 7;
@@ -204,26 +215,34 @@
             // 
             // txtReturnSteelWeight
             // 
+            this.txtReturnSteelWeight.DisplayPrecision = 0;
             this.txtReturnSteelWeight.EnableNull = false;
             this.txtReturnSteelWeight.ErropPr = this.errorProvider1;
+            this.txtReturnSteelWeight.FixedLength = 0;
             this.txtReturnSteelWeight.Length = 0;
-            this.txtReturnSteelWeight.Location = new System.Drawing.Point(120, 80);
-            this.txtReturnSteelWeight.Max = 99;
+            this.txtReturnSteelWeight.Location = new System.Drawing.Point(120, 104);
+            this.txtReturnSteelWeight.Max = 99D;
+            this.txtReturnSteelWeight.MaxNull = 99D;
+            this.txtReturnSteelWeight.MaxStringLength = 0;
             this.txtReturnSteelWeight.MaxStrLength = 0;
-            this.txtReturnSteelWeight.Min = 0;
+            this.txtReturnSteelWeight.Min = 0D;
+            this.txtReturnSteelWeight.MinNull = 0D;
+            this.txtReturnSteelWeight.MinStringLength = 0;
             this.txtReturnSteelWeight.MinStrLength = 0;
             this.txtReturnSteelWeight.Name = "txtReturnSteelWeight";
             this.txtReturnSteelWeight.Precision = 0;
+            this.txtReturnSteelWeight.Regex = "";
             this.txtReturnSteelWeight.Size = new System.Drawing.Size(150, 21);
             this.txtReturnSteelWeight.TabIndex = 8;
             this.txtReturnSteelWeight.ToolTipValid = this.toolTip1;
+            this.txtReturnSteelWeight.VaildWarning = "";
             this.txtReturnSteelWeight.ValidEable = true;
             this.txtReturnSteelWeight.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 131);
+            this.label4.Location = new System.Drawing.Point(53, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 12);
             this.label4.TabIndex = 13;
@@ -235,10 +254,46 @@
             this.cmbDestination.Items.AddRange(new object[] {
             "转炉(碳钢)",
             "脱磷(不锈钢)"});
-            this.cmbDestination.Location = new System.Drawing.Point(120, 131);
+            this.cmbDestination.Location = new System.Drawing.Point(120, 132);
             this.cmbDestination.Name = "cmbDestination";
             this.cmbDestination.Size = new System.Drawing.Size(150, 20);
             this.cmbDestination.TabIndex = 14;
+            // 
+            // tbYk
+            // 
+            this.tbYk.BackColor = System.Drawing.SystemColors.Window;
+            this.tbYk.DisplayPrecision = 0;
+            this.tbYk.EnableNull = false;
+            this.tbYk.ErropPr = this.errorProvider1;
+            this.tbYk.FixedLength = 0;
+            this.tbYk.Length = 0;
+            this.tbYk.Location = new System.Drawing.Point(120, 77);
+            this.tbYk.Max = 99D;
+            this.tbYk.MaxNull = 99D;
+            this.tbYk.MaxStringLength = 0;
+            this.tbYk.MaxStrLength = 0;
+            this.tbYk.Min = 0D;
+            this.tbYk.MinNull = 0D;
+            this.tbYk.MinStringLength = 0;
+            this.tbYk.MinStrLength = 0;
+            this.tbYk.Name = "tbYk";
+            this.tbYk.Precision = 0;
+            this.tbYk.Regex = "";
+            this.tbYk.Size = new System.Drawing.Size(150, 21);
+            this.tbYk.TabIndex = 16;
+            this.tbYk.ToolTipValid = this.toolTip1;
+            this.tbYk.VaildWarning = "";
+            this.tbYk.ValidEable = true;
+            this.tbYk.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(59, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "压块[t]:";
             // 
             // TappedFrm
             // 
@@ -246,7 +301,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(348, 223);
+            this.ClientSize = new System.Drawing.Size(350, 220);
+            this.Controls.Add(this.tbYk);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbDestination);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -291,6 +348,7 @@
         private System.Data.DataColumn coldsIronLadlesL3DataTableReturn_Steel_Weight;
         private System.Windows.Forms.ComboBox cmbDestination;
         private System.Windows.Forms.Label label4;
-
+        private PxDataValid.PxTextBox tbYk;
+        private System.Windows.Forms.Label label5;
     }
 }

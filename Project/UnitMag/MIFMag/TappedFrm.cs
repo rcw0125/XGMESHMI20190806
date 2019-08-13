@@ -29,6 +29,11 @@ namespace UnitMag.MIFMag
             get { return double.Parse(this.tbWeight.Text); }
             set { tbWeight.Text = value.ToString(); }
         }
+        public double YkWeight
+        {
+            get { return double.Parse(this.tbYk.Text); }
+            set { tbYk.Text = value.ToString(); }
+        }
 
         public double ReturnSteelWeight
         {
@@ -51,6 +56,7 @@ namespace UnitMag.MIFMag
             cmbLadle.TextChanged += new EventHandler(pxControls_TextChanged);
             tbWeight.TextChanged += new EventHandler(pxControls_TextChanged);
             txtReturnSteelWeight.Text = "0";
+            tbYk.Text = "0";
             cmbDestination.Text = "×ªÂ¯(Ì¼¸Ö)";
             txtReturnSteelWeight.TextChanged += new EventHandler(pxControls_TextChanged);
         }

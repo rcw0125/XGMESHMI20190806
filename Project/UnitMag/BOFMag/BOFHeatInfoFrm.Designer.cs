@@ -141,6 +141,7 @@
             this.coldsMainMatL3DataTableName = new System.Data.DataColumn();
             this.coldsMainMatL3DataTableReturn_Steel_Weight = new System.Data.DataColumn();
             this.coldsMainMatL3DataTableCr = new System.Data.DataColumn();
+            this.coldsMainMatL3DataTableYkWeight = new System.Data.DataColumn();
             this.label55 = new System.Windows.Forms.Label();
             this.myLine1 = new buttonHide.MyLine();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -211,8 +212,7 @@
             this.btnMainMatCancel = new System.Windows.Forms.Button();
             this.btnMainMatConfirm = new System.Windows.Forms.Button();
             this.tabProcess = new System.Windows.Forms.TabPage();
-            this.label57 = new System.Windows.Forms.Label();
-            this.pxComboBox4 = new PxDataValid.PxComboBox();
+            this.cmbSpeedChange = new System.Windows.Forms.TextBox();
             this.bsProcess = new System.Windows.Forms.BindingSource(this.components);
             this.dsProcess = new AppSvrHMI.L3DataSet();
             this.schemadsProcess = new System.Data.DataTable();
@@ -249,6 +249,8 @@
             this.coldsProcessL3DataTableReBlow_Count = new System.Data.DataColumn();
             this.coldsProcessL3DataTableSingle_LaC = new System.Data.DataColumn();
             this.coldsProcessL3DataTableFinalSlag = new System.Data.DataColumn();
+            this.label57 = new System.Windows.Forms.Label();
+            this.pxComboBox4 = new PxDataValid.PxComboBox();
             this.txtSingleLaC = new PxDataValid.PxTextBox();
             this.txtReBlowCount = new PxDataValid.PxTextBox();
             this.label58 = new System.Windows.Forms.Label();
@@ -1054,7 +1056,6 @@
             this.coldsProcessL3DataTableO2Total = new System.Data.DataColumn();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.coldsProcessL3DataTableRemainSlag = new System.Data.DataColumn();
-            this.cmbSpeedChange = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.hmiRootPanel1.SuspendLayout();
@@ -1277,12 +1278,12 @@
             this.txtHeatID.FixedLength = 0;
             this.txtHeatID.Length = 0;
             this.txtHeatID.Location = new System.Drawing.Point(64, 3);
-            this.txtHeatID.Max = 0;
-            this.txtHeatID.MaxNull = 0.0;
+            this.txtHeatID.Max = 0D;
+            this.txtHeatID.MaxNull = 0D;
             this.txtHeatID.MaxStringLength = 0;
             this.txtHeatID.MaxStrLength = 0;
-            this.txtHeatID.Min = 0;
-            this.txtHeatID.MinNull = 0.0;
+            this.txtHeatID.Min = 0D;
+            this.txtHeatID.MinNull = 0D;
             this.txtHeatID.MinStringLength = 0;
             this.txtHeatID.MinStrLength = 0;
             this.txtHeatID.Name = "txtHeatID";
@@ -1373,10 +1374,10 @@
             this.tabBase.Controls.Add(this.tbxPreHeatID);
             this.tabBase.Controls.Add(this.label1);
             this.tabBase.Controls.Add(this.fLPBase);
-            this.tabBase.Location = new System.Drawing.Point(4, 21);
+            this.tabBase.Location = new System.Drawing.Point(4, 22);
             this.tabBase.Name = "tabBase";
             this.tabBase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBase.Size = new System.Drawing.Size(965, 386);
+            this.tabBase.Size = new System.Drawing.Size(965, 385);
             this.tabBase.TabIndex = 0;
             this.tabBase.Text = "基本数据";
             this.tabBase.UseVisualStyleBackColor = true;
@@ -1808,12 +1809,12 @@
             this.tbxSecondHand.FixedLength = 0;
             this.tbxSecondHand.Length = 0;
             this.tbxSecondHand.Location = new System.Drawing.Point(437, 87);
-            this.tbxSecondHand.Max = 0;
-            this.tbxSecondHand.MaxNull = 0.0;
+            this.tbxSecondHand.Max = 0D;
+            this.tbxSecondHand.MaxNull = 0D;
             this.tbxSecondHand.MaxStringLength = 0;
             this.tbxSecondHand.MaxStrLength = 0;
-            this.tbxSecondHand.Min = 0;
-            this.tbxSecondHand.MinNull = 0.0;
+            this.tbxSecondHand.Min = 0D;
+            this.tbxSecondHand.MinNull = 0D;
             this.tbxSecondHand.MinStringLength = 0;
             this.tbxSecondHand.MinStrLength = 0;
             this.tbxSecondHand.Name = "tbxSecondHand";
@@ -1844,12 +1845,12 @@
             this.tbxAssistant.FixedLength = 0;
             this.tbxAssistant.Length = 0;
             this.tbxAssistant.Location = new System.Drawing.Point(437, 60);
-            this.tbxAssistant.Max = 0;
-            this.tbxAssistant.MaxNull = 0.0;
+            this.tbxAssistant.Max = 0D;
+            this.tbxAssistant.MaxNull = 0D;
             this.tbxAssistant.MaxStringLength = 0;
             this.tbxAssistant.MaxStrLength = 0;
-            this.tbxAssistant.Min = 0;
-            this.tbxAssistant.MinNull = 0.0;
+            this.tbxAssistant.Min = 0D;
+            this.tbxAssistant.MinNull = 0D;
             this.tbxAssistant.MinStringLength = 0;
             this.tbxAssistant.MinStrLength = 0;
             this.tbxAssistant.Name = "tbxAssistant";
@@ -1880,12 +1881,12 @@
             this.tbxHeadFurnace.FixedLength = 0;
             this.tbxHeadFurnace.Length = 0;
             this.tbxHeadFurnace.Location = new System.Drawing.Point(437, 33);
-            this.tbxHeadFurnace.Max = 0;
-            this.tbxHeadFurnace.MaxNull = 0.0;
+            this.tbxHeadFurnace.Max = 0D;
+            this.tbxHeadFurnace.MaxNull = 0D;
             this.tbxHeadFurnace.MaxStringLength = 0;
             this.tbxHeadFurnace.MaxStrLength = 0;
-            this.tbxHeadFurnace.Min = 0;
-            this.tbxHeadFurnace.MinNull = 0.0;
+            this.tbxHeadFurnace.Min = 0D;
+            this.tbxHeadFurnace.MinNull = 0D;
             this.tbxHeadFurnace.MinStringLength = 0;
             this.tbxHeadFurnace.MinStrLength = 0;
             this.tbxHeadFurnace.Name = "tbxHeadFurnace";
@@ -1934,12 +1935,12 @@
             this.tbxSteelGradeIndex.FixedLength = 0;
             this.tbxSteelGradeIndex.Length = 0;
             this.tbxSteelGradeIndex.Location = new System.Drawing.Point(257, 60);
-            this.tbxSteelGradeIndex.Max = 0;
-            this.tbxSteelGradeIndex.MaxNull = 0.0;
+            this.tbxSteelGradeIndex.Max = 0D;
+            this.tbxSteelGradeIndex.MaxNull = 0D;
             this.tbxSteelGradeIndex.MaxStringLength = 0;
             this.tbxSteelGradeIndex.MaxStrLength = 0;
-            this.tbxSteelGradeIndex.Min = 0;
-            this.tbxSteelGradeIndex.MinNull = 0.0;
+            this.tbxSteelGradeIndex.Min = 0D;
+            this.tbxSteelGradeIndex.MinNull = 0D;
             this.tbxSteelGradeIndex.MinStringLength = 0;
             this.tbxSteelGradeIndex.MinStrLength = 0;
             this.tbxSteelGradeIndex.Name = "tbxSteelGradeIndex";
@@ -1971,12 +1972,12 @@
             this.tbxPreHeatID.FixedLength = 0;
             this.tbxPreHeatID.Length = 0;
             this.tbxPreHeatID.Location = new System.Drawing.Point(257, 33);
-            this.tbxPreHeatID.Max = 0;
-            this.tbxPreHeatID.MaxNull = 0.0;
+            this.tbxPreHeatID.Max = 0D;
+            this.tbxPreHeatID.MaxNull = 0D;
             this.tbxPreHeatID.MaxStringLength = 0;
             this.tbxPreHeatID.MaxStrLength = 0;
-            this.tbxPreHeatID.Min = 0;
-            this.tbxPreHeatID.MinNull = 0.0;
+            this.tbxPreHeatID.Min = 0D;
+            this.tbxPreHeatID.MinNull = 0D;
             this.tbxPreHeatID.MinStringLength = 0;
             this.tbxPreHeatID.MinStrLength = 0;
             this.tbxPreHeatID.Name = "tbxPreHeatID";
@@ -2006,7 +2007,7 @@
             this.fLPBase.Controls.Add(this.btnBaseConfirm);
             this.fLPBase.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPBase.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPBase.Location = new System.Drawing.Point(3, 348);
+            this.fLPBase.Location = new System.Drawing.Point(3, 347);
             this.fLPBase.Name = "fLPBase";
             this.fLPBase.Size = new System.Drawing.Size(957, 33);
             this.fLPBase.TabIndex = 89;
@@ -2054,10 +2055,10 @@
             this.tabMainMat.Controls.Add(this.tbxIronWeight);
             this.tabMainMat.Controls.Add(this.label18);
             this.tabMainMat.Controls.Add(this.fLPMainMat);
-            this.tabMainMat.Location = new System.Drawing.Point(4, 21);
+            this.tabMainMat.Location = new System.Drawing.Point(4, 22);
             this.tabMainMat.Name = "tabMainMat";
             this.tabMainMat.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainMat.Size = new System.Drawing.Size(965, 386);
+            this.tabMainMat.Size = new System.Drawing.Size(965, 385);
             this.tabMainMat.TabIndex = 5;
             this.tabMainMat.Text = "主原料数据";
             this.tabMainMat.UseVisualStyleBackColor = true;
@@ -2071,12 +2072,12 @@
             this.tbxCr.FixedLength = 0;
             this.tbxCr.Length = 0;
             this.tbxCr.Location = new System.Drawing.Point(534, 73);
-            this.tbxCr.Max = 5;
-            this.tbxCr.MaxNull = 5.0;
+            this.tbxCr.Max = 5D;
+            this.tbxCr.MaxNull = 5D;
             this.tbxCr.MaxStringLength = 0;
             this.tbxCr.MaxStrLength = 0;
-            this.tbxCr.Min = 0;
-            this.tbxCr.MinNull = 0.0;
+            this.tbxCr.Min = 0D;
+            this.tbxCr.MinNull = 0D;
             this.tbxCr.MinStringLength = 0;
             this.tbxCr.MinStrLength = 0;
             this.tbxCr.Name = "tbxCr";
@@ -2137,7 +2138,8 @@
             this.coldsMainMatL3DataTableGUID,
             this.coldsMainMatL3DataTableName,
             this.coldsMainMatL3DataTableReturn_Steel_Weight,
-            this.coldsMainMatL3DataTableCr});
+            this.coldsMainMatL3DataTableCr,
+             this.coldsMainMatL3DataTableYkWeight});
             this.schemadsMainMat.TableName = "L3DataTable";
             // 
             // coldsMainMatL3DataTableHeatID
@@ -2248,6 +2250,14 @@
             this.coldsMainMatL3DataTableCr.ColumnName = "Cr";
             this.coldsMainMatL3DataTableCr.DataType = typeof(float);
             this.coldsMainMatL3DataTableCr.Namespace = "";
+
+            // 
+            // coldsMainMatL3DataTableYkWeight
+            // 
+            this.coldsMainMatL3DataTableYkWeight.Caption = "YkWeight";
+            this.coldsMainMatL3DataTableYkWeight.ColumnName = "YkWeight";
+            this.coldsMainMatL3DataTableYkWeight.DataType = typeof(float);
+            this.coldsMainMatL3DataTableYkWeight.Namespace = "";
             // 
             // label55
             // 
@@ -2773,12 +2783,12 @@
             this.tbxIronTemp.FixedLength = 0;
             this.tbxIronTemp.Length = 0;
             this.tbxIronTemp.Location = new System.Drawing.Point(534, 97);
-            this.tbxIronTemp.Max = 2000;
-            this.tbxIronTemp.MaxNull = 2000.0;
+            this.tbxIronTemp.Max = 2000D;
+            this.tbxIronTemp.MaxNull = 2000D;
             this.tbxIronTemp.MaxStringLength = 0;
             this.tbxIronTemp.MaxStrLength = 0;
-            this.tbxIronTemp.Min = 0;
-            this.tbxIronTemp.MinNull = 0.0;
+            this.tbxIronTemp.Min = 0D;
+            this.tbxIronTemp.MinNull = 0D;
             this.tbxIronTemp.MinStringLength = 0;
             this.tbxIronTemp.MinStrLength = 0;
             this.tbxIronTemp.Name = "tbxIronTemp";
@@ -2810,12 +2820,12 @@
             this.tbxTi.FixedLength = 0;
             this.tbxTi.Length = 0;
             this.tbxTi.Location = new System.Drawing.Point(534, 46);
-            this.tbxTi.Max = 5;
-            this.tbxTi.MaxNull = 5.0;
+            this.tbxTi.Max = 5D;
+            this.tbxTi.MaxNull = 5D;
             this.tbxTi.MaxStringLength = 0;
             this.tbxTi.MaxStrLength = 0;
-            this.tbxTi.Min = 0;
-            this.tbxTi.MinNull = 0.0;
+            this.tbxTi.Min = 0D;
+            this.tbxTi.MinNull = 0D;
             this.tbxTi.MinStringLength = 0;
             this.tbxTi.MinStrLength = 0;
             this.tbxTi.Name = "tbxTi";
@@ -2847,12 +2857,12 @@
             this.tbxS.FixedLength = 0;
             this.tbxS.Length = 0;
             this.tbxS.Location = new System.Drawing.Point(534, 19);
-            this.tbxS.Max = 5;
-            this.tbxS.MaxNull = 5.0;
+            this.tbxS.Max = 5D;
+            this.tbxS.MaxNull = 5D;
             this.tbxS.MaxStringLength = 0;
             this.tbxS.MaxStrLength = 0;
-            this.tbxS.Min = 0;
-            this.tbxS.MinNull = 0.0;
+            this.tbxS.Min = 0D;
+            this.tbxS.MinNull = 0D;
             this.tbxS.MinStringLength = 0;
             this.tbxS.MinStrLength = 0;
             this.tbxS.Name = "tbxS";
@@ -2884,12 +2894,12 @@
             this.tbxP.FixedLength = 0;
             this.tbxP.Length = 0;
             this.tbxP.Location = new System.Drawing.Point(333, 97);
-            this.tbxP.Max = 5;
-            this.tbxP.MaxNull = 5.0;
+            this.tbxP.Max = 5D;
+            this.tbxP.MaxNull = 5D;
             this.tbxP.MaxStringLength = 0;
             this.tbxP.MaxStrLength = 0;
-            this.tbxP.Min = 0;
-            this.tbxP.MinNull = 0.0;
+            this.tbxP.Min = 0D;
+            this.tbxP.MinNull = 0D;
             this.tbxP.MinStringLength = 0;
             this.tbxP.MinStrLength = 0;
             this.tbxP.Name = "tbxP";
@@ -2921,12 +2931,12 @@
             this.tbxMn.FixedLength = 0;
             this.tbxMn.Length = 0;
             this.tbxMn.Location = new System.Drawing.Point(333, 70);
-            this.tbxMn.Max = 5;
-            this.tbxMn.MaxNull = 5.0;
+            this.tbxMn.Max = 5D;
+            this.tbxMn.MaxNull = 5D;
             this.tbxMn.MaxStringLength = 0;
             this.tbxMn.MaxStrLength = 0;
-            this.tbxMn.Min = 0;
-            this.tbxMn.MinNull = 0.0;
+            this.tbxMn.Min = 0D;
+            this.tbxMn.MinNull = 0D;
             this.tbxMn.MinStringLength = 0;
             this.tbxMn.MinStrLength = 0;
             this.tbxMn.Name = "tbxMn";
@@ -2958,12 +2968,12 @@
             this.tbxSi.FixedLength = 0;
             this.tbxSi.Length = 0;
             this.tbxSi.Location = new System.Drawing.Point(333, 43);
-            this.tbxSi.Max = 5;
-            this.tbxSi.MaxNull = 5.0;
+            this.tbxSi.Max = 5D;
+            this.tbxSi.MaxNull = 5D;
             this.tbxSi.MaxStringLength = 0;
             this.tbxSi.MaxStrLength = 0;
-            this.tbxSi.Min = 0;
-            this.tbxSi.MinNull = 0.0;
+            this.tbxSi.Min = 0D;
+            this.tbxSi.MinNull = 0D;
             this.tbxSi.MinStringLength = 0;
             this.tbxSi.MinStrLength = 0;
             this.tbxSi.Name = "tbxSi";
@@ -2995,12 +3005,12 @@
             this.tbxC.FixedLength = 0;
             this.tbxC.Length = 0;
             this.tbxC.Location = new System.Drawing.Point(333, 19);
-            this.tbxC.Max = 5;
-            this.tbxC.MaxNull = 5.0;
+            this.tbxC.Max = 5D;
+            this.tbxC.MaxNull = 5D;
             this.tbxC.MaxStringLength = 0;
             this.tbxC.MaxStrLength = 0;
-            this.tbxC.Min = 0;
-            this.tbxC.MinNull = 0.0;
+            this.tbxC.Min = 0D;
+            this.tbxC.MinNull = 0D;
             this.tbxC.MinStringLength = 0;
             this.tbxC.MinStrLength = 0;
             this.tbxC.Name = "tbxC";
@@ -3032,12 +3042,12 @@
             this.tbxReHeatAmount.FixedLength = 0;
             this.tbxReHeatAmount.Length = 0;
             this.tbxReHeatAmount.Location = new System.Drawing.Point(141, 97);
-            this.tbxReHeatAmount.Max = 11;
-            this.tbxReHeatAmount.MaxNull = 11.0;
+            this.tbxReHeatAmount.Max = 11D;
+            this.tbxReHeatAmount.MaxNull = 11D;
             this.tbxReHeatAmount.MaxStringLength = 0;
             this.tbxReHeatAmount.MaxStrLength = 0;
-            this.tbxReHeatAmount.Min = 0;
-            this.tbxReHeatAmount.MinNull = 0.0;
+            this.tbxReHeatAmount.Min = 0D;
+            this.tbxReHeatAmount.MinNull = 0D;
             this.tbxReHeatAmount.MinStringLength = 0;
             this.tbxReHeatAmount.MinStrLength = 0;
             this.tbxReHeatAmount.Name = "tbxReHeatAmount";
@@ -3061,19 +3071,19 @@
             // 
             // tbxPigIronWeight
             // 
-            this.tbxPigIronWeight.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsMainMat, "PigIronWeight", true));
+            this.tbxPigIronWeight.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsMainMat, "YkWeight", true));
             this.tbxPigIronWeight.DisplayPrecision = 0;
             this.tbxPigIronWeight.EnableNull = false;
             this.tbxPigIronWeight.ErropPr = this.errorProvider1;
             this.tbxPigIronWeight.FixedLength = 0;
             this.tbxPigIronWeight.Length = 0;
             this.tbxPigIronWeight.Location = new System.Drawing.Point(141, 70);
-            this.tbxPigIronWeight.Max = 11;
-            this.tbxPigIronWeight.MaxNull = 11.0;
+            this.tbxPigIronWeight.Max = 11D;
+            this.tbxPigIronWeight.MaxNull = 11D;
             this.tbxPigIronWeight.MaxStringLength = 0;
             this.tbxPigIronWeight.MaxStrLength = 0;
-            this.tbxPigIronWeight.Min = 0;
-            this.tbxPigIronWeight.MinNull = 0.0;
+            this.tbxPigIronWeight.Min = 0D;
+            this.tbxPigIronWeight.MinNull = 0D;
             this.tbxPigIronWeight.MinStringLength = 0;
             this.tbxPigIronWeight.MinStrLength = 0;
             this.tbxPigIronWeight.Name = "tbxPigIronWeight";
@@ -3089,11 +3099,11 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(76, 73);
+            this.label16.Location = new System.Drawing.Point(88, 73);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 12);
+            this.label16.Size = new System.Drawing.Size(53, 12);
             this.label16.TabIndex = 110;
-            this.label16.Text = "生铁块[T]:";
+            this.label16.Text = "压块[T]:";
             // 
             // tbxScrapWeight
             // 
@@ -3104,12 +3114,12 @@
             this.tbxScrapWeight.FixedLength = 0;
             this.tbxScrapWeight.Length = 0;
             this.tbxScrapWeight.Location = new System.Drawing.Point(141, 43);
-            this.tbxScrapWeight.Max = 99;
-            this.tbxScrapWeight.MaxNull = 99.0;
+            this.tbxScrapWeight.Max = 99D;
+            this.tbxScrapWeight.MaxNull = 99D;
             this.tbxScrapWeight.MaxStringLength = 0;
             this.tbxScrapWeight.MaxStrLength = 0;
-            this.tbxScrapWeight.Min = 0;
-            this.tbxScrapWeight.MinNull = 0.0;
+            this.tbxScrapWeight.Min = 0D;
+            this.tbxScrapWeight.MinNull = 0D;
             this.tbxScrapWeight.MinStringLength = 0;
             this.tbxScrapWeight.MinStrLength = 0;
             this.tbxScrapWeight.Name = "tbxScrapWeight";
@@ -3140,12 +3150,12 @@
             this.tbxIronWeight.FixedLength = 0;
             this.tbxIronWeight.Length = 0;
             this.tbxIronWeight.Location = new System.Drawing.Point(141, 19);
-            this.tbxIronWeight.Max = 999;
-            this.tbxIronWeight.MaxNull = 999.0;
+            this.tbxIronWeight.Max = 999D;
+            this.tbxIronWeight.MaxNull = 999D;
             this.tbxIronWeight.MaxStringLength = 0;
             this.tbxIronWeight.MaxStrLength = 0;
-            this.tbxIronWeight.Min = 0;
-            this.tbxIronWeight.MinNull = 0.0;
+            this.tbxIronWeight.Min = 0D;
+            this.tbxIronWeight.MinNull = 0D;
             this.tbxIronWeight.MinStringLength = 0;
             this.tbxIronWeight.MinStrLength = 0;
             this.tbxIronWeight.Name = "tbxIronWeight";
@@ -3174,7 +3184,7 @@
             this.fLPMainMat.Controls.Add(this.btnMainMatConfirm);
             this.fLPMainMat.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPMainMat.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPMainMat.Location = new System.Drawing.Point(3, 348);
+            this.fLPMainMat.Location = new System.Drawing.Point(3, 347);
             this.fLPMainMat.Name = "fLPMainMat";
             this.fLPMainMat.Size = new System.Drawing.Size(957, 33);
             this.fLPMainMat.TabIndex = 90;
@@ -3278,45 +3288,22 @@
             this.tabProcess.Controls.Add(this.label33);
             this.tabProcess.Controls.Add(this.label34);
             this.tabProcess.Controls.Add(this.fLPProcess);
-            this.tabProcess.Location = new System.Drawing.Point(4, 21);
+            this.tabProcess.Location = new System.Drawing.Point(4, 22);
             this.tabProcess.Name = "tabProcess";
             this.tabProcess.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProcess.Size = new System.Drawing.Size(965, 386);
+            this.tabProcess.Size = new System.Drawing.Size(965, 385);
             this.tabProcess.TabIndex = 2;
             this.tabProcess.Text = "冶炼数据";
             this.tabProcess.UseVisualStyleBackColor = true;
             // 
-            // label57
+            // cmbSpeedChange
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(634, 277);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(59, 12);
-            this.label57.TabIndex = 209;
-            this.label57.Text = "终渣状况:";
-            // 
-            // pxComboBox4
-            // 
-            this.pxComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.pxComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.pxComboBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.pxComboBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "FinalSlag", true));
-            this.pxComboBox4.EnableNull = true;
-            this.pxComboBox4.ErropPr = null;
-            this.pxComboBox4.FormattingEnabled = true;
-            this.pxComboBox4.Items.AddRange(new object[] {
-            "",
-            "稀",
-            "正常",
-            "稠"});
-            this.pxComboBox4.Location = new System.Drawing.Point(700, 274);
-            this.pxComboBox4.Name = "pxComboBox4";
-            this.pxComboBox4.ReadOnly = false;
-            this.pxComboBox4.Size = new System.Drawing.Size(62, 20);
-            this.pxComboBox4.TabIndex = 208;
-            this.pxComboBox4.TMpEnabled = true;
-            this.pxComboBox4.ToolTipValid = null;
-            this.pxComboBox4.ValidEable = true;
+            this.cmbSpeedChange.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "RemainSlag", true));
+            this.cmbSpeedChange.Location = new System.Drawing.Point(343, 277);
+            this.cmbSpeedChange.Name = "cmbSpeedChange";
+            this.cmbSpeedChange.ReadOnly = true;
+            this.cmbSpeedChange.Size = new System.Drawing.Size(65, 21);
+            this.cmbSpeedChange.TabIndex = 210;
             // 
             // bsProcess
             // 
@@ -3604,6 +3591,38 @@
             this.coldsProcessL3DataTableFinalSlag.ColumnName = "FinalSlag";
             this.coldsProcessL3DataTableFinalSlag.Namespace = "";
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(634, 277);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(59, 12);
+            this.label57.TabIndex = 209;
+            this.label57.Text = "终渣状况:";
+            // 
+            // pxComboBox4
+            // 
+            this.pxComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.pxComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.pxComboBox4.BackColor = System.Drawing.SystemColors.Window;
+            this.pxComboBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "FinalSlag", true));
+            this.pxComboBox4.EnableNull = true;
+            this.pxComboBox4.ErropPr = null;
+            this.pxComboBox4.FormattingEnabled = true;
+            this.pxComboBox4.Items.AddRange(new object[] {
+            "",
+            "稀",
+            "正常",
+            "稠"});
+            this.pxComboBox4.Location = new System.Drawing.Point(700, 274);
+            this.pxComboBox4.Name = "pxComboBox4";
+            this.pxComboBox4.ReadOnly = false;
+            this.pxComboBox4.Size = new System.Drawing.Size(62, 20);
+            this.pxComboBox4.TabIndex = 208;
+            this.pxComboBox4.TMpEnabled = true;
+            this.pxComboBox4.ToolTipValid = null;
+            this.pxComboBox4.ValidEable = true;
+            // 
             // txtSingleLaC
             // 
             this.txtSingleLaC.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "Single_LaC", true));
@@ -3613,12 +3632,12 @@
             this.txtSingleLaC.FixedLength = 0;
             this.txtSingleLaC.Length = 0;
             this.txtSingleLaC.Location = new System.Drawing.Point(520, 192);
-            this.txtSingleLaC.Max = 2000;
-            this.txtSingleLaC.MaxNull = 2000.0;
+            this.txtSingleLaC.Max = 2000D;
+            this.txtSingleLaC.MaxNull = 2000D;
             this.txtSingleLaC.MaxStringLength = 0;
             this.txtSingleLaC.MaxStrLength = 0;
-            this.txtSingleLaC.Min = 0;
-            this.txtSingleLaC.MinNull = 0.0;
+            this.txtSingleLaC.Min = 0D;
+            this.txtSingleLaC.MinNull = 0D;
             this.txtSingleLaC.MinStringLength = 0;
             this.txtSingleLaC.MinStrLength = 0;
             this.txtSingleLaC.Name = "txtSingleLaC";
@@ -3641,12 +3660,12 @@
             this.txtReBlowCount.FixedLength = 0;
             this.txtReBlowCount.Length = 0;
             this.txtReBlowCount.Location = new System.Drawing.Point(521, 163);
-            this.txtReBlowCount.Max = 2000;
-            this.txtReBlowCount.MaxNull = 2000.0;
+            this.txtReBlowCount.Max = 2000D;
+            this.txtReBlowCount.MaxNull = 2000D;
             this.txtReBlowCount.MaxStringLength = 0;
             this.txtReBlowCount.MaxStrLength = 0;
-            this.txtReBlowCount.Min = 0;
-            this.txtReBlowCount.MinNull = 0.0;
+            this.txtReBlowCount.Min = 0D;
+            this.txtReBlowCount.MinNull = 0D;
             this.txtReBlowCount.MinStringLength = 0;
             this.txtReBlowCount.MinStrLength = 0;
             this.txtReBlowCount.Name = "txtReBlowCount";
@@ -3678,12 +3697,12 @@
             this.pxTextBox6.FixedLength = 0;
             this.pxTextBox6.Length = 0;
             this.pxTextBox6.Location = new System.Drawing.Point(343, 247);
-            this.pxTextBox6.Max = 9999;
-            this.pxTextBox6.MaxNull = 9999.0;
+            this.pxTextBox6.Max = 9999D;
+            this.pxTextBox6.MaxNull = 9999D;
             this.pxTextBox6.MaxStringLength = 0;
             this.pxTextBox6.MaxStrLength = 0;
-            this.pxTextBox6.Min = 0;
-            this.pxTextBox6.MinNull = 0.0;
+            this.pxTextBox6.Min = 0D;
+            this.pxTextBox6.MinNull = 0D;
             this.pxTextBox6.MinStringLength = 0;
             this.pxTextBox6.MinStrLength = 0;
             this.pxTextBox6.Name = "pxTextBox6";
@@ -3715,12 +3734,12 @@
             this.txtCarpolite.FixedLength = 0;
             this.txtCarpolite.Length = 0;
             this.txtCarpolite.Location = new System.Drawing.Point(521, 247);
-            this.txtCarpolite.Max = 999;
-            this.txtCarpolite.MaxNull = 999.0;
+            this.txtCarpolite.Max = 999D;
+            this.txtCarpolite.MaxNull = 999D;
             this.txtCarpolite.MaxStringLength = 0;
             this.txtCarpolite.MaxStrLength = 0;
-            this.txtCarpolite.Min = 0;
-            this.txtCarpolite.MinNull = 0.0;
+            this.txtCarpolite.Min = 0D;
+            this.txtCarpolite.MinNull = 0D;
             this.txtCarpolite.MinStringLength = 0;
             this.txtCarpolite.MinStrLength = 0;
             this.txtCarpolite.Name = "txtCarpolite";
@@ -3751,12 +3770,12 @@
             this.txtColdMat.FixedLength = 0;
             this.txtColdMat.Length = 0;
             this.txtColdMat.Location = new System.Drawing.Point(870, 78);
-            this.txtColdMat.Max = 999;
-            this.txtColdMat.MaxNull = 999.0;
+            this.txtColdMat.Max = 999D;
+            this.txtColdMat.MaxNull = 999D;
             this.txtColdMat.MaxStringLength = 0;
             this.txtColdMat.MaxStrLength = 0;
-            this.txtColdMat.Min = 0;
-            this.txtColdMat.MinNull = 0.0;
+            this.txtColdMat.Min = 0D;
+            this.txtColdMat.MinNull = 0D;
             this.txtColdMat.MinStringLength = 0;
             this.txtColdMat.MinStrLength = 0;
             this.txtColdMat.Name = "txtColdMat";
@@ -3901,7 +3920,7 @@
             this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.Caption = "COLD_MAT_CUNSUME";
             this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.ColumnName = "COLD_MAT_CUNSUME";
             this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.DataType = typeof(double);
-            this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.DefaultValue = 0;
+            this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.DefaultValue = 0D;
             this.coldsTapProcessL3DataTableCOLD_MAT_CUNSUME.Namespace = "";
             // 
             // label53
@@ -4163,12 +4182,12 @@
             this.pxTextBox4.FixedLength = 0;
             this.pxTextBox4.Length = 0;
             this.pxTextBox4.Location = new System.Drawing.Point(700, 164);
-            this.pxTextBox4.Max = 2000;
-            this.pxTextBox4.MaxNull = 2000.0;
+            this.pxTextBox4.Max = 2000D;
+            this.pxTextBox4.MaxNull = 2000D;
             this.pxTextBox4.MaxStringLength = 0;
             this.pxTextBox4.MaxStrLength = 0;
-            this.pxTextBox4.Min = 0;
-            this.pxTextBox4.MinNull = 0.0;
+            this.pxTextBox4.Min = 0D;
+            this.pxTextBox4.MinNull = 0D;
             this.pxTextBox4.MinStringLength = 0;
             this.pxTextBox4.MinStrLength = 0;
             this.pxTextBox4.Name = "pxTextBox4";
@@ -4191,12 +4210,12 @@
             this.pxTextBox3.FixedLength = 0;
             this.pxTextBox3.Length = 0;
             this.pxTextBox3.Location = new System.Drawing.Point(700, 136);
-            this.pxTextBox3.Max = 2000;
-            this.pxTextBox3.MaxNull = 2000.0;
+            this.pxTextBox3.Max = 2000D;
+            this.pxTextBox3.MaxNull = 2000D;
             this.pxTextBox3.MaxStringLength = 0;
             this.pxTextBox3.MaxStrLength = 0;
-            this.pxTextBox3.Min = 0;
-            this.pxTextBox3.MinNull = 0.0;
+            this.pxTextBox3.Min = 0D;
+            this.pxTextBox3.MinNull = 0D;
             this.pxTextBox3.MinStringLength = 0;
             this.pxTextBox3.MinStrLength = 0;
             this.pxTextBox3.Name = "pxTextBox3";
@@ -4219,12 +4238,12 @@
             this.pxTextBox2.FixedLength = 0;
             this.pxTextBox2.Length = 0;
             this.pxTextBox2.Location = new System.Drawing.Point(700, 108);
-            this.pxTextBox2.Max = 2000;
-            this.pxTextBox2.MaxNull = 2000.0;
+            this.pxTextBox2.Max = 2000D;
+            this.pxTextBox2.MaxNull = 2000D;
             this.pxTextBox2.MaxStringLength = 0;
             this.pxTextBox2.MaxStrLength = 0;
-            this.pxTextBox2.Min = 0;
-            this.pxTextBox2.MinNull = 0.0;
+            this.pxTextBox2.Min = 0D;
+            this.pxTextBox2.MinNull = 0D;
             this.pxTextBox2.MinStringLength = 0;
             this.pxTextBox2.MinStrLength = 0;
             this.pxTextBox2.Name = "pxTextBox2";
@@ -4247,12 +4266,12 @@
             this.pxTextBox1.FixedLength = 0;
             this.pxTextBox1.Length = 0;
             this.pxTextBox1.Location = new System.Drawing.Point(700, 80);
-            this.pxTextBox1.Max = 2000;
-            this.pxTextBox1.MaxNull = 2000.0;
+            this.pxTextBox1.Max = 2000D;
+            this.pxTextBox1.MaxNull = 2000D;
             this.pxTextBox1.MaxStringLength = 0;
             this.pxTextBox1.MaxStrLength = 0;
-            this.pxTextBox1.Min = 0;
-            this.pxTextBox1.MinNull = 0.0;
+            this.pxTextBox1.Min = 0D;
+            this.pxTextBox1.MinNull = 0D;
             this.pxTextBox1.MinStringLength = 0;
             this.pxTextBox1.MinStrLength = 0;
             this.pxTextBox1.Name = "pxTextBox1";
@@ -4275,12 +4294,12 @@
             this.pxTextBox5.FixedLength = 0;
             this.pxTextBox5.Length = 0;
             this.pxTextBox5.Location = new System.Drawing.Point(700, 192);
-            this.pxTextBox5.Max = 999;
-            this.pxTextBox5.MaxNull = 999.0;
+            this.pxTextBox5.Max = 999D;
+            this.pxTextBox5.MaxNull = 999D;
             this.pxTextBox5.MaxStringLength = 0;
             this.pxTextBox5.MaxStrLength = 0;
-            this.pxTextBox5.Min = 0;
-            this.pxTextBox5.MinNull = 0.0;
+            this.pxTextBox5.Min = 0D;
+            this.pxTextBox5.MinNull = 0D;
             this.pxTextBox5.MinStringLength = 0;
             this.pxTextBox5.MinStrLength = 0;
             this.pxTextBox5.Name = "pxTextBox5";
@@ -4415,12 +4434,12 @@
             this.txtTappingWeight.FixedLength = 0;
             this.txtTappingWeight.Length = 0;
             this.txtTappingWeight.Location = new System.Drawing.Point(521, 218);
-            this.txtTappingWeight.Max = 99;
-            this.txtTappingWeight.MaxNull = 99.0;
+            this.txtTappingWeight.Max = 99D;
+            this.txtTappingWeight.MaxNull = 99D;
             this.txtTappingWeight.MaxStringLength = 0;
             this.txtTappingWeight.MaxStrLength = 0;
-            this.txtTappingWeight.Min = 0;
-            this.txtTappingWeight.MinNull = 0.0;
+            this.txtTappingWeight.Min = 0D;
+            this.txtTappingWeight.MinNull = 0D;
             this.txtTappingWeight.MinStringLength = 0;
             this.txtTappingWeight.MinStrLength = 0;
             this.txtTappingWeight.Name = "txtTappingWeight";
@@ -4452,12 +4471,12 @@
             this.txtTapholeLife.FixedLength = 0;
             this.txtTapholeLife.Length = 0;
             this.txtTapholeLife.Location = new System.Drawing.Point(870, 163);
-            this.txtTapholeLife.Max = 999;
-            this.txtTapholeLife.MaxNull = 999.0;
+            this.txtTapholeLife.Max = 999D;
+            this.txtTapholeLife.MaxNull = 999D;
             this.txtTapholeLife.MaxStringLength = 0;
             this.txtTapholeLife.MaxStrLength = 0;
-            this.txtTapholeLife.Min = 0;
-            this.txtTapholeLife.MinNull = 0.0;
+            this.txtTapholeLife.Min = 0D;
+            this.txtTapholeLife.MinNull = 0D;
             this.txtTapholeLife.MinStringLength = 0;
             this.txtTapholeLife.MinStrLength = 0;
             this.txtTapholeLife.Name = "txtTapholeLife";
@@ -4498,12 +4517,12 @@
             this.txtLadleNo.FixedLength = 0;
             this.txtLadleNo.Length = 0;
             this.txtLadleNo.Location = new System.Drawing.Point(870, 191);
-            this.txtLadleNo.Max = 0;
-            this.txtLadleNo.MaxNull = 0.0;
+            this.txtLadleNo.Max = 0D;
+            this.txtLadleNo.MaxNull = 0D;
             this.txtLadleNo.MaxStringLength = 0;
             this.txtLadleNo.MaxStrLength = 0;
-            this.txtLadleNo.Min = 0;
-            this.txtLadleNo.MinNull = 0.0;
+            this.txtLadleNo.Min = 0D;
+            this.txtLadleNo.MinNull = 0D;
             this.txtLadleNo.MinStringLength = 0;
             this.txtLadleNo.MinStrLength = 0;
             this.txtLadleNo.Name = "txtLadleNo";
@@ -4534,12 +4553,12 @@
             this.txtTappingOxygen.FixedLength = 0;
             this.txtTappingOxygen.Length = 0;
             this.txtTappingOxygen.Location = new System.Drawing.Point(521, 134);
-            this.txtTappingOxygen.Max = 2000;
-            this.txtTappingOxygen.MaxNull = 2000.0;
+            this.txtTappingOxygen.Max = 2000D;
+            this.txtTappingOxygen.MaxNull = 2000D;
             this.txtTappingOxygen.MaxStringLength = 0;
             this.txtTappingOxygen.MaxStrLength = 0;
-            this.txtTappingOxygen.Min = 0;
-            this.txtTappingOxygen.MinNull = 0.0;
+            this.txtTappingOxygen.Min = 0D;
+            this.txtTappingOxygen.MinNull = 0D;
             this.txtTappingOxygen.MinStringLength = 0;
             this.txtTappingOxygen.MinStrLength = 0;
             this.txtTappingOxygen.Name = "txtTappingOxygen";
@@ -4580,12 +4599,12 @@
             this.txtTappingTemp.FixedLength = 0;
             this.txtTappingTemp.Length = 0;
             this.txtTappingTemp.Location = new System.Drawing.Point(521, 106);
-            this.txtTappingTemp.Max = 2000;
-            this.txtTappingTemp.MaxNull = 2000.0;
+            this.txtTappingTemp.Max = 2000D;
+            this.txtTappingTemp.MaxNull = 2000D;
             this.txtTappingTemp.MaxStringLength = 0;
             this.txtTappingTemp.MaxStrLength = 0;
-            this.txtTappingTemp.Min = 0;
-            this.txtTappingTemp.MinNull = 0.0;
+            this.txtTappingTemp.Min = 0D;
+            this.txtTappingTemp.MinNull = 0D;
             this.txtTappingTemp.MinStringLength = 0;
             this.txtTappingTemp.MinStrLength = 0;
             this.txtTappingTemp.Name = "txtTappingTemp";
@@ -4617,12 +4636,12 @@
             this.txtLaCTemp.FixedLength = 0;
             this.txtLaCTemp.Length = 0;
             this.txtLaCTemp.Location = new System.Drawing.Point(521, 78);
-            this.txtLaCTemp.Max = 2000;
-            this.txtLaCTemp.MaxNull = 2000.0;
+            this.txtLaCTemp.Max = 2000D;
+            this.txtLaCTemp.MaxNull = 2000D;
             this.txtLaCTemp.MaxStringLength = 0;
             this.txtLaCTemp.MaxStrLength = 0;
-            this.txtLaCTemp.Min = 0;
-            this.txtLaCTemp.MinNull = 0.0;
+            this.txtLaCTemp.Min = 0D;
+            this.txtLaCTemp.MinNull = 0D;
             this.txtLaCTemp.MinStringLength = 0;
             this.txtLaCTemp.MinStrLength = 0;
             this.txtLaCTemp.Name = "txtLaCTemp";
@@ -4645,12 +4664,12 @@
             this.txtSmeltPeriodis.FixedLength = 0;
             this.txtSmeltPeriodis.Length = 0;
             this.txtSmeltPeriodis.Location = new System.Drawing.Point(694, 77);
-            this.txtSmeltPeriodis.Max = 9999.999;
-            this.txtSmeltPeriodis.MaxNull = 9999.999;
+            this.txtSmeltPeriodis.Max = 9999.999D;
+            this.txtSmeltPeriodis.MaxNull = 9999.999D;
             this.txtSmeltPeriodis.MaxStringLength = 0;
             this.txtSmeltPeriodis.MaxStrLength = 0;
-            this.txtSmeltPeriodis.Min = 0;
-            this.txtSmeltPeriodis.MinNull = 0.0;
+            this.txtSmeltPeriodis.Min = 0D;
+            this.txtSmeltPeriodis.MinNull = 0D;
             this.txtSmeltPeriodis.MinStringLength = 0;
             this.txtSmeltPeriodis.MinStrLength = 0;
             this.txtSmeltPeriodis.Name = "txtSmeltPeriodis";
@@ -4735,12 +4754,12 @@
             this.txtFurnaceAge.FixedLength = 0;
             this.txtFurnaceAge.Length = 0;
             this.txtFurnaceAge.Location = new System.Drawing.Point(870, 135);
-            this.txtFurnaceAge.Max = 99999;
-            this.txtFurnaceAge.MaxNull = 99999.0;
+            this.txtFurnaceAge.Max = 99999D;
+            this.txtFurnaceAge.MaxNull = 99999D;
             this.txtFurnaceAge.MaxStringLength = 0;
             this.txtFurnaceAge.MaxStrLength = 0;
-            this.txtFurnaceAge.Min = 0;
-            this.txtFurnaceAge.MinNull = 0.0;
+            this.txtFurnaceAge.Min = 0D;
+            this.txtFurnaceAge.MinNull = 0D;
             this.txtFurnaceAge.MinStringLength = 0;
             this.txtFurnaceAge.MinStrLength = 0;
             this.txtFurnaceAge.Name = "txtFurnaceAge";
@@ -4772,12 +4791,12 @@
             this.txtLanceAge.FixedLength = 0;
             this.txtLanceAge.Length = 0;
             this.txtLanceAge.Location = new System.Drawing.Point(870, 107);
-            this.txtLanceAge.Max = 9999;
-            this.txtLanceAge.MaxNull = 9999.0;
+            this.txtLanceAge.Max = 9999D;
+            this.txtLanceAge.MaxNull = 9999D;
             this.txtLanceAge.MaxStringLength = 0;
             this.txtLanceAge.MaxStrLength = 0;
-            this.txtLanceAge.Min = 0;
-            this.txtLanceAge.MinNull = 0.0;
+            this.txtLanceAge.Min = 0D;
+            this.txtLanceAge.MinNull = 0D;
             this.txtLanceAge.MinStringLength = 0;
             this.txtLanceAge.MinStrLength = 0;
             this.txtLanceAge.Name = "txtLanceAge";
@@ -4809,12 +4828,12 @@
             this.txtWaitingTime.FixedLength = 0;
             this.txtWaitingTime.Length = 0;
             this.txtWaitingTime.Location = new System.Drawing.Point(343, 218);
-            this.txtWaitingTime.Max = 999;
-            this.txtWaitingTime.MaxNull = 999.0;
+            this.txtWaitingTime.Max = 999D;
+            this.txtWaitingTime.MaxNull = 999D;
             this.txtWaitingTime.MaxStringLength = 0;
             this.txtWaitingTime.MaxStrLength = 0;
-            this.txtWaitingTime.Min = 0;
-            this.txtWaitingTime.MinNull = 0.0;
+            this.txtWaitingTime.Min = 0D;
+            this.txtWaitingTime.MinNull = 0D;
             this.txtWaitingTime.MinStringLength = 0;
             this.txtWaitingTime.MinStrLength = 0;
             this.txtWaitingTime.Name = "txtWaitingTime";
@@ -4844,12 +4863,12 @@
             this.txtSmeltPeriod.FixedLength = 0;
             this.txtSmeltPeriod.Length = 0;
             this.txtSmeltPeriod.Location = new System.Drawing.Point(343, 190);
-            this.txtSmeltPeriod.Max = 9999.9999;
-            this.txtSmeltPeriod.MaxNull = 9999.9999;
+            this.txtSmeltPeriod.Max = 9999.9999D;
+            this.txtSmeltPeriod.MaxNull = 9999.9999D;
             this.txtSmeltPeriod.MaxStringLength = 0;
             this.txtSmeltPeriod.MaxStrLength = 0;
-            this.txtSmeltPeriod.Min = 0;
-            this.txtSmeltPeriod.MinNull = 0.0;
+            this.txtSmeltPeriod.Min = 0D;
+            this.txtSmeltPeriod.MinNull = 0D;
             this.txtSmeltPeriod.MinStringLength = 0;
             this.txtSmeltPeriod.MinStrLength = 0;
             this.txtSmeltPeriod.Name = "txtSmeltPeriod";
@@ -4881,12 +4900,12 @@
             this.txtSplashingTime.FixedLength = 0;
             this.txtSplashingTime.Length = 0;
             this.txtSplashingTime.Location = new System.Drawing.Point(343, 162);
-            this.txtSplashingTime.Max = 999;
-            this.txtSplashingTime.MaxNull = 999.0;
+            this.txtSplashingTime.Max = 999D;
+            this.txtSplashingTime.MaxNull = 999D;
             this.txtSplashingTime.MaxStringLength = 0;
             this.txtSplashingTime.MaxStrLength = 0;
-            this.txtSplashingTime.Min = 0;
-            this.txtSplashingTime.MinNull = 0.0;
+            this.txtSplashingTime.Min = 0D;
+            this.txtSplashingTime.MinNull = 0D;
             this.txtSplashingTime.MinStringLength = 0;
             this.txtSplashingTime.MinStrLength = 0;
             this.txtSplashingTime.Name = "txtSplashingTime";
@@ -4918,12 +4937,12 @@
             this.txtTappingTime.FixedLength = 0;
             this.txtTappingTime.Length = 0;
             this.txtTappingTime.Location = new System.Drawing.Point(343, 134);
-            this.txtTappingTime.Max = 999;
-            this.txtTappingTime.MaxNull = 999.0;
+            this.txtTappingTime.Max = 999D;
+            this.txtTappingTime.MaxNull = 999D;
             this.txtTappingTime.MaxStringLength = 0;
             this.txtTappingTime.MaxStrLength = 0;
-            this.txtTappingTime.Min = 0;
-            this.txtTappingTime.MinNull = 0.0;
+            this.txtTappingTime.Min = 0D;
+            this.txtTappingTime.MinNull = 0D;
             this.txtTappingTime.MinStringLength = 0;
             this.txtTappingTime.MinStrLength = 0;
             this.txtTappingTime.Name = "txtTappingTime";
@@ -4955,12 +4974,12 @@
             this.txtReBlowTime.FixedLength = 0;
             this.txtReBlowTime.Length = 0;
             this.txtReBlowTime.Location = new System.Drawing.Point(343, 106);
-            this.txtReBlowTime.Max = 999;
-            this.txtReBlowTime.MaxNull = 999.0;
+            this.txtReBlowTime.Max = 999D;
+            this.txtReBlowTime.MaxNull = 999D;
             this.txtReBlowTime.MaxStringLength = 0;
             this.txtReBlowTime.MaxStrLength = 0;
-            this.txtReBlowTime.Min = 0;
-            this.txtReBlowTime.MinNull = 0.0;
+            this.txtReBlowTime.Min = 0D;
+            this.txtReBlowTime.MinNull = 0D;
             this.txtReBlowTime.MinStringLength = 0;
             this.txtReBlowTime.MinStrLength = 0;
             this.txtReBlowTime.Name = "txtReBlowTime";
@@ -4992,12 +5011,12 @@
             this.txtBlowO2Time.FixedLength = 0;
             this.txtBlowO2Time.Length = 0;
             this.txtBlowO2Time.Location = new System.Drawing.Point(343, 78);
-            this.txtBlowO2Time.Max = 9999;
-            this.txtBlowO2Time.MaxNull = 9999.0;
+            this.txtBlowO2Time.Max = 9999D;
+            this.txtBlowO2Time.MaxNull = 9999D;
             this.txtBlowO2Time.MaxStringLength = 0;
             this.txtBlowO2Time.MaxStrLength = 0;
-            this.txtBlowO2Time.Min = 0;
-            this.txtBlowO2Time.MinNull = 0.0;
+            this.txtBlowO2Time.Min = 0D;
+            this.txtBlowO2Time.MinNull = 0D;
             this.txtBlowO2Time.MinStringLength = 0;
             this.txtBlowO2Time.MinStrLength = 0;
             this.txtBlowO2Time.Name = "txtBlowO2Time";
@@ -5063,7 +5082,7 @@
             this.fLPProcess.Controls.Add(this.btnProcessConfirm);
             this.fLPProcess.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPProcess.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPProcess.Location = new System.Drawing.Point(3, 348);
+            this.fLPProcess.Location = new System.Drawing.Point(3, 347);
             this.fLPProcess.Name = "fLPProcess";
             this.fLPProcess.Size = new System.Drawing.Size(957, 33);
             this.fLPProcess.TabIndex = 89;
@@ -5083,10 +5102,10 @@
             this.tabExcept.Controls.Add(this.dvExcept);
             this.tabExcept.Controls.Add(this.fLPExcept);
             this.tabExcept.Controls.Add(this.bdExcept);
-            this.tabExcept.Location = new System.Drawing.Point(4, 21);
+            this.tabExcept.Location = new System.Drawing.Point(4, 22);
             this.tabExcept.Margin = new System.Windows.Forms.Padding(0);
             this.tabExcept.Name = "tabExcept";
-            this.tabExcept.Size = new System.Drawing.Size(965, 386);
+            this.tabExcept.Size = new System.Drawing.Size(965, 385);
             this.tabExcept.TabIndex = 15;
             this.tabExcept.Text = "工艺异常";
             this.tabExcept.UseVisualStyleBackColor = true;
@@ -5116,7 +5135,7 @@
             this.dvExcept.Location = new System.Drawing.Point(0, 25);
             this.dvExcept.Name = "dvExcept";
             this.dvExcept.RowTemplate.Height = 23;
-            this.dvExcept.Size = new System.Drawing.Size(965, 328);
+            this.dvExcept.Size = new System.Drawing.Size(965, 327);
             this.dvExcept.TabIndex = 91;
             // 
             // iDObjectDataGridViewTextBoxColumn
@@ -5405,7 +5424,7 @@
             this.fLPExcept.Controls.Add(this.btnConfirmExcept);
             this.fLPExcept.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPExcept.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPExcept.Location = new System.Drawing.Point(0, 353);
+            this.fLPExcept.Location = new System.Drawing.Point(0, 352);
             this.fLPExcept.Name = "fLPExcept";
             this.fLPExcept.Size = new System.Drawing.Size(965, 33);
             this.fLPExcept.TabIndex = 90;
@@ -5455,7 +5474,7 @@
             // bindingNavigatorCountItem7
             // 
             this.bindingNavigatorCountItem7.Name = "bindingNavigatorCountItem7";
-            this.bindingNavigatorCountItem7.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem7.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem7.Text = "/ {0}";
             this.bindingNavigatorCountItem7.ToolTipText = "总项数";
             // 
@@ -5537,7 +5556,7 @@
             // toolStripLabel11
             // 
             this.toolStripLabel11.Name = "toolStripLabel11";
-            this.toolStripLabel11.Size = new System.Drawing.Size(95, 22);
+            this.toolStripLabel11.Size = new System.Drawing.Size(91, 22);
             this.toolStripLabel11.Text = "  异常代码维护:";
             // 
             // txtExcept
@@ -5551,10 +5570,10 @@
             this.tabAlloy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabAlloy.Controls.Add(this.hmiRootPanel4);
             this.tabAlloy.Controls.Add(this.fLPAlloy);
-            this.tabAlloy.Location = new System.Drawing.Point(4, 21);
+            this.tabAlloy.Location = new System.Drawing.Point(4, 22);
             this.tabAlloy.Name = "tabAlloy";
             this.tabAlloy.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAlloy.Size = new System.Drawing.Size(965, 386);
+            this.tabAlloy.Size = new System.Drawing.Size(965, 385);
             this.tabAlloy.TabIndex = 12;
             this.tabAlloy.Text = "炉前合金数据";
             this.tabAlloy.UseVisualStyleBackColor = true;
@@ -5568,7 +5587,7 @@
             this.hmiRootPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel4.Location = new System.Drawing.Point(3, 3);
             this.hmiRootPanel4.Name = "hmiRootPanel4";
-            this.hmiRootPanel4.Size = new System.Drawing.Size(957, 345);
+            this.hmiRootPanel4.Size = new System.Drawing.Size(957, 344);
             this.hmiRootPanel4.TabIndex = 90;
             // 
             // cmbBatchID
@@ -5665,11 +5684,11 @@
             this.dvAlloy.Location = new System.Drawing.Point(0, 25);
             this.dvAlloy.Name = "dvAlloy";
             this.dvAlloy.RowTemplate.Height = 23;
-            this.dvAlloy.Size = new System.Drawing.Size(953, 316);
+            this.dvAlloy.Size = new System.Drawing.Size(953, 315);
             this.dvAlloy.TabIndex = 94;
             this.dvAlloy.CurrentCellDirtyStateChanged += new System.EventHandler(this.dvAlloy_CurrentCellDirtyStateChanged);
-            this.dvAlloy.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvAlloy.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvAlloy_DataBindingComplete);
+            this.dvAlloy.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -5976,7 +5995,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel2.Text = "/ {0}";
             this.toolStripLabel2.ToolTipText = "总项数";
             // 
@@ -6068,7 +6087,7 @@
             this.fLPAlloy.Controls.Add(this.btnAlloyCanfirm);
             this.fLPAlloy.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPAlloy.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPAlloy.Location = new System.Drawing.Point(3, 348);
+            this.fLPAlloy.Location = new System.Drawing.Point(3, 347);
             this.fLPAlloy.Name = "fLPAlloy";
             this.fLPAlloy.Size = new System.Drawing.Size(957, 33);
             this.fLPAlloy.TabIndex = 89;
@@ -6088,10 +6107,10 @@
             this.tabTapAlloy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabTapAlloy.Controls.Add(this.hmiRootPanel5);
             this.tabTapAlloy.Controls.Add(this.fLPTapAlloy);
-            this.tabTapAlloy.Location = new System.Drawing.Point(4, 21);
+            this.tabTapAlloy.Location = new System.Drawing.Point(4, 22);
             this.tabTapAlloy.Name = "tabTapAlloy";
             this.tabTapAlloy.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTapAlloy.Size = new System.Drawing.Size(965, 386);
+            this.tabTapAlloy.Size = new System.Drawing.Size(965, 385);
             this.tabTapAlloy.TabIndex = 13;
             this.tabTapAlloy.Text = "炉后合金数据";
             this.tabTapAlloy.UseVisualStyleBackColor = true;
@@ -6105,7 +6124,7 @@
             this.hmiRootPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel5.Location = new System.Drawing.Point(3, 3);
             this.hmiRootPanel5.Name = "hmiRootPanel5";
-            this.hmiRootPanel5.Size = new System.Drawing.Size(957, 345);
+            this.hmiRootPanel5.Size = new System.Drawing.Size(957, 344);
             this.hmiRootPanel5.TabIndex = 90;
             // 
             // cmbTapBatchID
@@ -6211,11 +6230,11 @@
             this.dvTapAlloy.Location = new System.Drawing.Point(0, 25);
             this.dvTapAlloy.Name = "dvTapAlloy";
             this.dvTapAlloy.RowTemplate.Height = 23;
-            this.dvTapAlloy.Size = new System.Drawing.Size(953, 316);
+            this.dvTapAlloy.Size = new System.Drawing.Size(953, 315);
             this.dvTapAlloy.TabIndex = 94;
             this.dvTapAlloy.CurrentCellDirtyStateChanged += new System.EventHandler(this.dvTapAlloy_CurrentCellDirtyStateChanged);
-            this.dvTapAlloy.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvTapAlloy.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvTapAlloy_DataBindingComplete);
+            this.dvTapAlloy.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn8
             // 
@@ -6443,7 +6462,7 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel3.Text = "/ {0}";
             this.toolStripLabel3.ToolTipText = "总项数";
             // 
@@ -6535,7 +6554,7 @@
             this.fLPTapAlloy.Controls.Add(this.btnTapAlloyConfirm);
             this.fLPTapAlloy.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPTapAlloy.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPTapAlloy.Location = new System.Drawing.Point(3, 348);
+            this.fLPTapAlloy.Location = new System.Drawing.Point(3, 347);
             this.fLPTapAlloy.Name = "fLPTapAlloy";
             this.fLPTapAlloy.Size = new System.Drawing.Size(957, 33);
             this.fLPTapAlloy.TabIndex = 89;
@@ -6555,10 +6574,10 @@
             this.tabMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabMat.Controls.Add(this.hmiRootPanel2);
             this.tabMat.Controls.Add(this.fLPMat);
-            this.tabMat.Location = new System.Drawing.Point(4, 21);
+            this.tabMat.Location = new System.Drawing.Point(4, 22);
             this.tabMat.Name = "tabMat";
             this.tabMat.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMat.Size = new System.Drawing.Size(965, 386);
+            this.tabMat.Size = new System.Drawing.Size(965, 385);
             this.tabMat.TabIndex = 1;
             this.tabMat.Text = "散装料数据";
             this.tabMat.UseVisualStyleBackColor = true;
@@ -6572,7 +6591,7 @@
             this.hmiRootPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel2.Location = new System.Drawing.Point(3, 3);
             this.hmiRootPanel2.Name = "hmiRootPanel2";
-            this.hmiRootPanel2.Size = new System.Drawing.Size(957, 345);
+            this.hmiRootPanel2.Size = new System.Drawing.Size(957, 344);
             this.hmiRootPanel2.TabIndex = 90;
             // 
             // cmbMatBatchID
@@ -6668,11 +6687,11 @@
             this.dvMat.Location = new System.Drawing.Point(0, 25);
             this.dvMat.Name = "dvMat";
             this.dvMat.RowTemplate.Height = 23;
-            this.dvMat.Size = new System.Drawing.Size(953, 316);
+            this.dvMat.Size = new System.Drawing.Size(953, 315);
             this.dvMat.TabIndex = 94;
             this.dvMat.CurrentCellDirtyStateChanged += new System.EventHandler(this.dvMat_CurrentCellDirtyStateChanged);
-            this.dvMat.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvMat.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvMat_DataBindingComplete);
+            this.dvMat.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn
             // 
@@ -6793,7 +6812,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -6885,7 +6904,7 @@
             this.fLPMat.Controls.Add(this.btnMatConfirm);
             this.fLPMat.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPMat.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPMat.Location = new System.Drawing.Point(3, 348);
+            this.fLPMat.Location = new System.Drawing.Point(3, 347);
             this.fLPMat.Name = "fLPMat";
             this.fLPMat.Size = new System.Drawing.Size(957, 33);
             this.fLPMat.TabIndex = 89;
@@ -6904,10 +6923,10 @@
             // 
             this.tabSumAddition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabSumAddition.Controls.Add(this.hmiRootPanel7);
-            this.tabSumAddition.Location = new System.Drawing.Point(4, 21);
+            this.tabSumAddition.Location = new System.Drawing.Point(4, 22);
             this.tabSumAddition.Name = "tabSumAddition";
             this.tabSumAddition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSumAddition.Size = new System.Drawing.Size(965, 386);
+            this.tabSumAddition.Size = new System.Drawing.Size(965, 385);
             this.tabSumAddition.TabIndex = 14;
             this.tabSumAddition.Text = "加料统计";
             this.tabSumAddition.UseVisualStyleBackColor = true;
@@ -6920,7 +6939,7 @@
             this.hmiRootPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel7.Location = new System.Drawing.Point(3, 3);
             this.hmiRootPanel7.Name = "hmiRootPanel7";
-            this.hmiRootPanel7.Size = new System.Drawing.Size(957, 378);
+            this.hmiRootPanel7.Size = new System.Drawing.Size(957, 377);
             this.hmiRootPanel7.TabIndex = 90;
             // 
             // dvSumAddition
@@ -6941,7 +6960,7 @@
             this.dvSumAddition.Name = "dvSumAddition";
             this.dvSumAddition.ReadOnly = true;
             this.dvSumAddition.RowTemplate.Height = 23;
-            this.dvSumAddition.Size = new System.Drawing.Size(953, 349);
+            this.dvSumAddition.Size = new System.Drawing.Size(953, 348);
             this.dvSumAddition.TabIndex = 94;
             this.dvSumAddition.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
@@ -7075,7 +7094,7 @@
             // toolStripLabel10
             // 
             this.toolStripLabel10.Name = "toolStripLabel10";
-            this.toolStripLabel10.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel10.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel10.Text = "/ {0}";
             this.toolStripLabel10.ToolTipText = "总项数";
             // 
@@ -7145,10 +7164,10 @@
             this.tabChemical.Controls.Add(this.dvChemical);
             this.tabChemical.Controls.Add(this.bnChemical);
             this.tabChemical.Controls.Add(this.fLPChemical);
-            this.tabChemical.Location = new System.Drawing.Point(4, 21);
+            this.tabChemical.Location = new System.Drawing.Point(4, 22);
             this.tabChemical.Name = "tabChemical";
             this.tabChemical.Padding = new System.Windows.Forms.Padding(3);
-            this.tabChemical.Size = new System.Drawing.Size(965, 386);
+            this.tabChemical.Size = new System.Drawing.Size(965, 385);
             this.tabChemical.TabIndex = 3;
             this.tabChemical.Text = "成份数据";
             this.tabChemical.UseVisualStyleBackColor = true;
@@ -7211,10 +7230,10 @@
             this.dvChemical.Location = new System.Drawing.Point(3, 28);
             this.dvChemical.Name = "dvChemical";
             this.dvChemical.RowTemplate.Height = 23;
-            this.dvChemical.Size = new System.Drawing.Size(957, 320);
+            this.dvChemical.Size = new System.Drawing.Size(957, 319);
             this.dvChemical.TabIndex = 92;
-            this.dvChemical.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvChemical.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvChemical_DataBindingComplete);
+            this.dvChemical.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn1
             // 
@@ -8100,7 +8119,7 @@
             // bindingNavigatorCountItem1
             // 
             this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem1.Text = "/ {0}";
             this.bindingNavigatorCountItem1.ToolTipText = "总项数";
             // 
@@ -8202,7 +8221,7 @@
             this.fLPChemical.Controls.Add(this.btnChemicalConfirm);
             this.fLPChemical.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPChemical.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPChemical.Location = new System.Drawing.Point(3, 348);
+            this.fLPChemical.Location = new System.Drawing.Point(3, 347);
             this.fLPChemical.Name = "fLPChemical";
             this.fLPChemical.Size = new System.Drawing.Size(957, 33);
             this.fLPChemical.TabIndex = 90;
@@ -8233,10 +8252,10 @@
             this.tabBottomBlow.Controls.Add(this.dvBottomBlow);
             this.tabBottomBlow.Controls.Add(this.bnBottomBlow);
             this.tabBottomBlow.Controls.Add(this.fLPBottomBlow);
-            this.tabBottomBlow.Location = new System.Drawing.Point(4, 21);
+            this.tabBottomBlow.Location = new System.Drawing.Point(4, 22);
             this.tabBottomBlow.Name = "tabBottomBlow";
             this.tabBottomBlow.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBottomBlow.Size = new System.Drawing.Size(965, 386);
+            this.tabBottomBlow.Size = new System.Drawing.Size(965, 385);
             this.tabBottomBlow.TabIndex = 8;
             this.tabBottomBlow.Text = "底吹数据";
             this.tabBottomBlow.UseVisualStyleBackColor = true;
@@ -8294,7 +8313,7 @@
             dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dvBottomBlow.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.dvBottomBlow.RowTemplate.Height = 23;
-            this.dvBottomBlow.Size = new System.Drawing.Size(957, 320);
+            this.dvBottomBlow.Size = new System.Drawing.Size(957, 319);
             this.dvBottomBlow.TabIndex = 94;
             this.dvBottomBlow.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
@@ -8624,7 +8643,7 @@
             // bindingNavigatorCountItem2
             // 
             this.bindingNavigatorCountItem2.Name = "bindingNavigatorCountItem2";
-            this.bindingNavigatorCountItem2.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem2.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem2.Text = "/ {0}";
             this.bindingNavigatorCountItem2.ToolTipText = "总项数";
             // 
@@ -8726,7 +8745,7 @@
             this.fLPBottomBlow.Controls.Add(this.btnBottomBlowConfirm);
             this.fLPBottomBlow.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPBottomBlow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPBottomBlow.Location = new System.Drawing.Point(3, 348);
+            this.fLPBottomBlow.Location = new System.Drawing.Point(3, 347);
             this.fLPBottomBlow.Name = "fLPBottomBlow";
             this.fLPBottomBlow.Size = new System.Drawing.Size(957, 33);
             this.fLPBottomBlow.TabIndex = 92;
@@ -8758,10 +8777,10 @@
             this.tabTopBlow.Controls.Add(this.dvTopBlow);
             this.tabTopBlow.Controls.Add(this.bnTopBlow);
             this.tabTopBlow.Controls.Add(this.fLPTopBlow);
-            this.tabTopBlow.Location = new System.Drawing.Point(4, 21);
+            this.tabTopBlow.Location = new System.Drawing.Point(4, 22);
             this.tabTopBlow.Name = "tabTopBlow";
             this.tabTopBlow.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTopBlow.Size = new System.Drawing.Size(965, 386);
+            this.tabTopBlow.Size = new System.Drawing.Size(965, 385);
             this.tabTopBlow.TabIndex = 7;
             this.tabTopBlow.Text = "顶吹数据";
             this.tabTopBlow.UseVisualStyleBackColor = true;
@@ -8783,7 +8802,7 @@
             this.dvTopBlow.Location = new System.Drawing.Point(3, 28);
             this.dvTopBlow.Name = "dvTopBlow";
             this.dvTopBlow.RowTemplate.Height = 23;
-            this.dvTopBlow.Size = new System.Drawing.Size(957, 320);
+            this.dvTopBlow.Size = new System.Drawing.Size(957, 319);
             this.dvTopBlow.TabIndex = 94;
             this.dvTopBlow.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
@@ -8940,7 +8959,7 @@
             // bindingNavigatorCountItem3
             // 
             this.bindingNavigatorCountItem3.Name = "bindingNavigatorCountItem3";
-            this.bindingNavigatorCountItem3.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem3.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem3.Text = "/ {0}";
             this.bindingNavigatorCountItem3.ToolTipText = "总项数";
             // 
@@ -9042,7 +9061,7 @@
             this.fLPTopBlow.Controls.Add(this.btnTopBlowConfirm);
             this.fLPTopBlow.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPTopBlow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPTopBlow.Location = new System.Drawing.Point(3, 348);
+            this.fLPTopBlow.Location = new System.Drawing.Point(3, 347);
             this.fLPTopBlow.Name = "fLPTopBlow";
             this.fLPTopBlow.Size = new System.Drawing.Size(957, 33);
             this.fLPTopBlow.TabIndex = 92;
@@ -9074,10 +9093,10 @@
             this.tabStatus.Controls.Add(this.dvStatus);
             this.tabStatus.Controls.Add(this.bnStatus);
             this.tabStatus.Controls.Add(this.fLPStatus);
-            this.tabStatus.Location = new System.Drawing.Point(4, 21);
+            this.tabStatus.Location = new System.Drawing.Point(4, 22);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatus.Size = new System.Drawing.Size(965, 386);
+            this.tabStatus.Size = new System.Drawing.Size(965, 385);
             this.tabStatus.TabIndex = 6;
             this.tabStatus.Text = "状态数据";
             this.tabStatus.UseVisualStyleBackColor = true;
@@ -9097,7 +9116,7 @@
             this.dvStatus.Location = new System.Drawing.Point(3, 28);
             this.dvStatus.Name = "dvStatus";
             this.dvStatus.RowTemplate.Height = 23;
-            this.dvStatus.Size = new System.Drawing.Size(957, 320);
+            this.dvStatus.Size = new System.Drawing.Size(957, 319);
             this.dvStatus.TabIndex = 93;
             this.dvStatus.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
@@ -9276,7 +9295,7 @@
             // bindingNavigatorCountItem4
             // 
             this.bindingNavigatorCountItem4.Name = "bindingNavigatorCountItem4";
-            this.bindingNavigatorCountItem4.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem4.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem4.Text = "/ {0}";
             this.bindingNavigatorCountItem4.ToolTipText = "总项数";
             // 
@@ -9378,7 +9397,7 @@
             this.fLPStatus.Controls.Add(this.btnStatusConfirm);
             this.fLPStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPStatus.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPStatus.Location = new System.Drawing.Point(3, 348);
+            this.fLPStatus.Location = new System.Drawing.Point(3, 347);
             this.fLPStatus.Name = "fLPStatus";
             this.fLPStatus.Size = new System.Drawing.Size(957, 33);
             this.fLPStatus.TabIndex = 91;
@@ -9407,10 +9426,10 @@
             // tabTemp
             // 
             this.tabTemp.Controls.Add(this.hmiRootPanel6);
-            this.tabTemp.Location = new System.Drawing.Point(4, 21);
+            this.tabTemp.Location = new System.Drawing.Point(4, 22);
             this.tabTemp.Margin = new System.Windows.Forms.Padding(0);
             this.tabTemp.Name = "tabTemp";
-            this.tabTemp.Size = new System.Drawing.Size(965, 386);
+            this.tabTemp.Size = new System.Drawing.Size(965, 385);
             this.tabTemp.TabIndex = 9;
             this.tabTemp.Text = "测温/定氧";
             this.tabTemp.UseVisualStyleBackColor = true;
@@ -9425,21 +9444,21 @@
             this.hmiRootPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel6.Location = new System.Drawing.Point(0, 0);
             this.hmiRootPanel6.Name = "hmiRootPanel6";
-            this.hmiRootPanel6.Size = new System.Drawing.Size(965, 386);
+            this.hmiRootPanel6.Size = new System.Drawing.Size(965, 385);
             this.hmiRootPanel6.TabIndex = 0;
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.dvOxygenTap);
             this.groupBox4.Controls.Add(this.dnOxygenTap);
             this.groupBox4.Location = new System.Drawing.Point(507, 159);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox4.Size = new System.Drawing.Size(454, 186);
+            this.groupBox4.Size = new System.Drawing.Size(454, 185);
             this.groupBox4.TabIndex = 98;
             this.groupBox4.TabStop = false;
             // 
@@ -9462,10 +9481,10 @@
             this.dvOxygenTap.Location = new System.Drawing.Point(0, 39);
             this.dvOxygenTap.Name = "dvOxygenTap";
             this.dvOxygenTap.RowTemplate.Height = 23;
-            this.dvOxygenTap.Size = new System.Drawing.Size(454, 147);
+            this.dvOxygenTap.Size = new System.Drawing.Size(454, 146);
             this.dvOxygenTap.TabIndex = 95;
-            this.dvOxygenTap.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvOxygenTap.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvOxygenTap_DataBindingComplete);
+            this.dvOxygenTap.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn10
             // 
@@ -9606,14 +9625,14 @@
             // toolStripLabel7
             // 
             this.toolStripLabel7.Name = "toolStripLabel7";
-            this.toolStripLabel7.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel7.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel7.Text = "/ {0}";
             this.toolStripLabel7.ToolTipText = "总项数";
             // 
             // toolStripLabel9
             // 
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(53, 22);
+            this.toolStripLabel9.Size = new System.Drawing.Size(56, 22);
             this.toolStripLabel9.Text = "炉后定氧";
             // 
             // toolStripButton17
@@ -9698,8 +9717,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.dvOxygen);
             this.groupBox3.Controls.Add(this.bnOxygen);
             this.groupBox3.Location = new System.Drawing.Point(507, 0);
@@ -9730,8 +9749,8 @@
             this.dvOxygen.RowTemplate.Height = 23;
             this.dvOxygen.Size = new System.Drawing.Size(454, 117);
             this.dvOxygen.TabIndex = 95;
-            this.dvOxygen.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvOxygen.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvOxygen_DataBindingComplete);
+            this.dvOxygen.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn6
             // 
@@ -9865,14 +9884,14 @@
             // bindingNavigatorCountItem6
             // 
             this.bindingNavigatorCountItem6.Name = "bindingNavigatorCountItem6";
-            this.bindingNavigatorCountItem6.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem6.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem6.Text = "/ {0}";
             this.bindingNavigatorCountItem6.ToolTipText = "总项数";
             // 
             // toolStripLabel8
             // 
             this.toolStripLabel8.Name = "toolStripLabel8";
-            this.toolStripLabel8.Size = new System.Drawing.Size(53, 22);
+            this.toolStripLabel8.Size = new System.Drawing.Size(56, 22);
             this.toolStripLabel8.Text = "炉前定氧";
             // 
             // bindingNavigatorMoveFirstItem6
@@ -9957,15 +9976,15 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.dvTempTap);
             this.groupBox2.Controls.Add(this.bnTempTap);
             this.groupBox2.Location = new System.Drawing.Point(0, 159);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(504, 189);
+            this.groupBox2.Size = new System.Drawing.Size(504, 188);
             this.groupBox2.TabIndex = 96;
             this.groupBox2.TabStop = false;
             // 
@@ -9989,10 +10008,10 @@
             this.dvTempTap.Location = new System.Drawing.Point(0, 39);
             this.dvTempTap.Name = "dvTempTap";
             this.dvTempTap.RowTemplate.Height = 23;
-            this.dvTempTap.Size = new System.Drawing.Size(504, 150);
+            this.dvTempTap.Size = new System.Drawing.Size(504, 149);
             this.dvTempTap.TabIndex = 96;
-            this.dvTempTap.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvTempTap.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvTempTap_DataBindingComplete);
+            this.dvTempTap.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn9
             // 
@@ -10203,14 +10222,14 @@
             // toolStripLabel5
             // 
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel5.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel5.Text = "/ {0}";
             this.toolStripLabel5.ToolTipText = "总项数";
             // 
             // toolStripLabel6
             // 
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(77, 22);
+            this.toolStripLabel6.Size = new System.Drawing.Size(80, 22);
             this.toolStripLabel6.Text = "炉后测温数据";
             // 
             // toolStripButton13
@@ -10326,8 +10345,8 @@
             this.dvTemp.RowTemplate.Height = 23;
             this.dvTemp.Size = new System.Drawing.Size(504, 120);
             this.dvTemp.TabIndex = 94;
-            this.dvTemp.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             this.dvTemp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvTemp_DataBindingComplete);
+            this.dvTemp.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn5
             // 
@@ -10489,14 +10508,14 @@
             // bindingNavigatorCountItem5
             // 
             this.bindingNavigatorCountItem5.Name = "bindingNavigatorCountItem5";
-            this.bindingNavigatorCountItem5.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem5.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem5.Text = "/ {0}";
             this.bindingNavigatorCountItem5.ToolTipText = "总项数";
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(77, 22);
+            this.toolStripLabel4.Size = new System.Drawing.Size(80, 22);
             this.toolStripLabel4.Text = "炉前测温数据";
             // 
             // bindingNavigatorMoveFirstItem5
@@ -10586,7 +10605,7 @@
             this.fLPTemp.Controls.Add(this.btnTempConfirm);
             this.fLPTemp.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPTemp.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPTemp.Location = new System.Drawing.Point(0, 353);
+            this.fLPTemp.Location = new System.Drawing.Point(0, 352);
             this.fLPTemp.Name = "fLPTemp";
             this.fLPTemp.Size = new System.Drawing.Size(965, 33);
             this.fLPTemp.TabIndex = 92;
@@ -10616,10 +10635,10 @@
             // 
             this.tabRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabRemark.Controls.Add(this.hmiRootPanel3);
-            this.tabRemark.Location = new System.Drawing.Point(4, 21);
+            this.tabRemark.Location = new System.Drawing.Point(4, 22);
             this.tabRemark.Name = "tabRemark";
             this.tabRemark.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRemark.Size = new System.Drawing.Size(965, 386);
+            this.tabRemark.Size = new System.Drawing.Size(965, 385);
             this.tabRemark.TabIndex = 11;
             this.tabRemark.Text = "炉次记事";
             this.tabRemark.UseVisualStyleBackColor = true;
@@ -10632,7 +10651,7 @@
             this.hmiRootPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel3.Location = new System.Drawing.Point(3, 3);
             this.hmiRootPanel3.Name = "hmiRootPanel3";
-            this.hmiRootPanel3.Size = new System.Drawing.Size(957, 378);
+            this.hmiRootPanel3.Size = new System.Drawing.Size(957, 377);
             this.hmiRootPanel3.TabIndex = 91;
             // 
             // dvRemark
@@ -10653,7 +10672,7 @@
             this.dvRemark.Name = "dvRemark";
             this.dvRemark.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dvRemark.RowTemplate.Height = 23;
-            this.dvRemark.Size = new System.Drawing.Size(957, 320);
+            this.dvRemark.Size = new System.Drawing.Size(957, 319);
             this.dvRemark.TabIndex = 94;
             this.dvRemark.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dv_DataError);
             // 
@@ -10846,7 +10865,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel1.Text = "/ {0}";
             this.toolStripLabel1.ToolTipText = "总项数";
             // 
@@ -10927,7 +10946,7 @@
             this.fLPRemark.Controls.Add(this.btnRemarkConfirm);
             this.fLPRemark.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fLPRemark.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.fLPRemark.Location = new System.Drawing.Point(0, 345);
+            this.fLPRemark.Location = new System.Drawing.Point(0, 344);
             this.fLPRemark.Name = "fLPRemark";
             this.fLPRemark.Size = new System.Drawing.Size(957, 33);
             this.fLPRemark.TabIndex = 92;
@@ -11603,15 +11622,6 @@
             this.coldsProcessL3DataTableRemainSlag.Caption = "RemainSlag";
             this.coldsProcessL3DataTableRemainSlag.ColumnName = "RemainSlag";
             this.coldsProcessL3DataTableRemainSlag.Namespace = "";
-            // 
-            // cmbSpeedChange
-            // 
-            this.cmbSpeedChange.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "RemainSlag", true));
-            this.cmbSpeedChange.Location = new System.Drawing.Point(343, 277);
-            this.cmbSpeedChange.Name = "cmbSpeedChange";
-            this.cmbSpeedChange.ReadOnly = true;
-            this.cmbSpeedChange.Size = new System.Drawing.Size(65, 21);
-            this.cmbSpeedChange.TabIndex = 210;
             // 
             // BOFHeatInfoFrm
             // 
@@ -12842,6 +12852,7 @@
         private PxDataValid.PxTextBox tbxCr;
         private System.Windows.Forms.Label label55;
         private System.Data.DataColumn coldsMainMatL3DataTableCr;
+        private System.Data.DataColumn coldsMainMatL3DataTableYkWeight;
         private PxDataValid.PxTextBox pxTextBox6;
         private System.Windows.Forms.Label label56;
         private System.Data.DataColumn coldsProcessL3DataTableO2Total;

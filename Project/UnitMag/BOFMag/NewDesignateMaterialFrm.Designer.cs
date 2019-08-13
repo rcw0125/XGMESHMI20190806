@@ -36,13 +36,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dvIronInfo = new System.Windows.Forms.DataGridView();
-            this.SELECTID = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.shiftDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.teamDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sourceDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsIronMode = new AppSvrHMI.L3DataSet();
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
             this.schemadsIronMode = new System.Data.DataTable();
@@ -56,38 +49,6 @@
             this.coldsIronModeL3DataTableCode_Val_Double = new System.Data.DataColumn();
             this.coldsIronModeL3DataTableCode_Function_Group = new System.Data.DataColumn();
             this.coldsIronModeL3DataTableNC_Code = new System.Data.DataColumn();
-            this.returnSteelWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qAStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qALevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produceContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salesContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tapTimeDataGridViewTextBoxColumn = new DataGridValid.DataGridViewValidateCellColumn();
-            this.cDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.siDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.As = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grossWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isDesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsIronInfo = new System.Windows.Forms.BindingSource(this.components);
             this.dsIronInfo = new AppSvrHMI.L3DataSet();
             this.schemadsIronInfo = new System.Data.DataTable();
@@ -136,6 +97,11 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dvScrapSteel = new System.Windows.Forms.DataGridView();
+            this.checkFlagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.scrapSlotIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScrapWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PigIronWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsScrapSteel = new System.Windows.Forms.BindingSource(this.components);
             this.dsScrapSteel = new AppSvrHMI.L3DataSet();
             this.schemadsScrapSteel = new System.Data.DataTable();
@@ -147,6 +113,9 @@
             this.coldsScrapSteelL3DataTableHEATID = new System.Data.DataColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Code_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aMOUNTDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsST = new System.Windows.Forms.BindingSource(this.components);
             this.dsST = new AppSvrHMI.L3DataSet();
             this.schemadsST = new System.Data.DataTable();
@@ -154,6 +123,17 @@
             this.AAcoldsSTL3DataTableAMOUNT = new System.Data.DataColumn();
             this.coldsSTL3DataTableCode_Des = new System.Data.DataColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsFG = new System.Windows.Forms.BindingSource(this.components);
+            this.dsFG = new AppSvrHMI.L3DataSet();
+            this.schemadsFG = new System.Data.DataTable();
+            this.coldsFGL3DataTableSCRAP_SLOT_ID = new System.Data.DataColumn();
+            this.coldsFGL3DataTableMATERIAL_CODE = new System.Data.DataColumn();
+            this.coldsFGL3DataTableAMOUNT = new System.Data.DataColumn();
+            this.coldsFGL3DataTableCode_Des = new System.Data.DataColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -165,12 +145,6 @@
             this.schemadsFGST = new System.Data.DataTable();
             this.coldsFGSTL3DataTableCode = new System.Data.DataColumn();
             this.AAcoldsFGSTL3DataTableCode_Des = new System.Data.DataColumn();
-            this.bsFG = new System.Windows.Forms.BindingSource(this.components);
-            this.dsFG = new AppSvrHMI.L3DataSet();
-            this.schemadsFG = new System.Data.DataTable();
-            this.coldsFGL3DataTableSCRAP_SLOT_ID = new System.Data.DataColumn();
-            this.coldsFGL3DataTableMATERIAL_CODE = new System.Data.DataColumn();
-            this.coldsFGL3DataTableAMOUNT = new System.Data.DataColumn();
             this.dsReturnSteel = new AppSvrHMI.L3DataSet();
             this.schemadsReturnSteel = new System.Data.DataTable();
             this.coldsReturnSteelL3DataTableHeatID = new System.Data.DataColumn();
@@ -227,19 +201,45 @@
             this.AcoldsFGSTL3DataTableCode_Des = new System.Data.DataColumn();
             this.AcoldsSTL3DataTableMATERIAL_CODE = new System.Data.DataColumn();
             this.AcoldsSTL3DataTableAMOUNT = new System.Data.DataColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.coldsFGL3DataTableCode_Des = new System.Data.DataColumn();
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Code_Des = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aMOUNTDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkFlagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.scrapSlotIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ScrapWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PigIronWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SELECTID = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.shiftDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.teamDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sourceDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.returnSteelWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qAStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qALevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produceContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesContractIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tapTimeDataGridViewTextBoxColumn = new DataGridValid.DataGridViewValidateCellColumn();
+            this.cDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.As = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.operatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grossWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isDesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvIronInfo)).BeginInit();
@@ -263,18 +263,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsST)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsST)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schemadsFG)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsFGST)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFGST)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsFGST)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsFG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsFG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schemadsFG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsReturnSteel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsReturnSteel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -331,6 +331,7 @@
             this.sourceDataGridViewCheckBoxColumn,
             this.returnSteelWeightDataGridViewTextBoxColumn,
             this.weightDataGridViewTextBoxColumn,
+            this.tareDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
             this.positionDataGridViewTextBoxColumn,
             this.qAStatusDataGridViewTextBoxColumn,
@@ -352,7 +353,6 @@
             this.ironTempDataGridViewTextBoxColumn,
             this.heatIDDataGridViewTextBoxColumn,
             this.operatorDataGridViewTextBoxColumn,
-            this.tareDataGridViewTextBoxColumn,
             this.grossWeightDataGridViewTextBoxColumn,
             this.object1DataGridViewTextBoxColumn,
             this.weight1DataGridViewTextBoxColumn,
@@ -378,70 +378,6 @@
             this.dvIronInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvIronInfo.Size = new System.Drawing.Size(977, 189);
             this.dvIronInfo.TabIndex = 0;
-            // 
-            // SELECTID
-            // 
-            this.SELECTID.DataPropertyName = "SELECTID";
-            this.SELECTID.FalseValue = "0";
-            this.SELECTID.Frozen = true;
-            this.SELECTID.HeaderText = "选择";
-            this.SELECTID.IndeterminateValue = "0";
-            this.SELECTID.Name = "SELECTID";
-            this.SELECTID.TrueValue = "1";
-            this.SELECTID.Width = 35;
-            // 
-            // shiftDataGridViewCheckBoxColumn
-            // 
-            this.shiftDataGridViewCheckBoxColumn.DataPropertyName = "Shift";
-            this.shiftDataGridViewCheckBoxColumn.HeaderText = "Shift";
-            this.shiftDataGridViewCheckBoxColumn.Name = "shiftDataGridViewCheckBoxColumn";
-            this.shiftDataGridViewCheckBoxColumn.Visible = false;
-            this.shiftDataGridViewCheckBoxColumn.Width = 41;
-            // 
-            // teamDataGridViewCheckBoxColumn
-            // 
-            this.teamDataGridViewCheckBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewCheckBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewCheckBoxColumn.Name = "teamDataGridViewCheckBoxColumn";
-            this.teamDataGridViewCheckBoxColumn.Visible = false;
-            this.teamDataGridViewCheckBoxColumn.Width = 35;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Visible = false;
-            this.nameDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // materialIDDataGridViewTextBoxColumn
-            // 
-            this.materialIDDataGridViewTextBoxColumn.DataPropertyName = "MaterialID";
-            this.materialIDDataGridViewTextBoxColumn.Frozen = true;
-            this.materialIDDataGridViewTextBoxColumn.HeaderText = "材料号";
-            this.materialIDDataGridViewTextBoxColumn.Name = "materialIDDataGridViewTextBoxColumn";
-            this.materialIDDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // ironLadleNoDataGridViewTextBoxColumn
-            // 
-            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
-            this.ironLadleNoDataGridViewTextBoxColumn.Frozen = true;
-            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
-            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
-            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // sourceDataGridViewCheckBoxColumn
-            // 
-            this.sourceDataGridViewCheckBoxColumn.DataPropertyName = "Source";
-            this.sourceDataGridViewCheckBoxColumn.DataSource = this.dsIronMode;
-            this.sourceDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.sourceDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.sourceDataGridViewCheckBoxColumn.Frozen = true;
-            this.sourceDataGridViewCheckBoxColumn.HeaderText = "出铁方式";
-            this.sourceDataGridViewCheckBoxColumn.Name = "sourceDataGridViewCheckBoxColumn";
-            this.sourceDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.sourceDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code_Val_Long";
-            this.sourceDataGridViewCheckBoxColumn.Width = 59;
             // 
             // dsIronMode
             // 
@@ -546,259 +482,6 @@
             this.coldsIronModeL3DataTableNC_Code.Caption = "NC_Code";
             this.coldsIronModeL3DataTableNC_Code.ColumnName = "NC_Code";
             this.coldsIronModeL3DataTableNC_Code.Namespace = "";
-            // 
-            // returnSteelWeightDataGridViewTextBoxColumn
-            // 
-            this.returnSteelWeightDataGridViewTextBoxColumn.DataPropertyName = "Return_Steel_Weight";
-            this.returnSteelWeightDataGridViewTextBoxColumn.HeaderText = "回炉钢水量";
-            this.returnSteelWeightDataGridViewTextBoxColumn.Name = "returnSteelWeightDataGridViewTextBoxColumn";
-            this.returnSteelWeightDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // weightDataGridViewTextBoxColumn
-            // 
-            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
-            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量";
-            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
-            this.weightDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Visible = false;
-            this.statusDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.Visible = false;
-            this.positionDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // qAStatusDataGridViewTextBoxColumn
-            // 
-            this.qAStatusDataGridViewTextBoxColumn.DataPropertyName = "QAStatus";
-            this.qAStatusDataGridViewTextBoxColumn.HeaderText = "QAStatus";
-            this.qAStatusDataGridViewTextBoxColumn.Name = "qAStatusDataGridViewTextBoxColumn";
-            this.qAStatusDataGridViewTextBoxColumn.Visible = false;
-            this.qAStatusDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // qALevelDataGridViewTextBoxColumn
-            // 
-            this.qALevelDataGridViewTextBoxColumn.DataPropertyName = "QALevel";
-            this.qALevelDataGridViewTextBoxColumn.HeaderText = "QALevel";
-            this.qALevelDataGridViewTextBoxColumn.Name = "qALevelDataGridViewTextBoxColumn";
-            this.qALevelDataGridViewTextBoxColumn.Visible = false;
-            this.qALevelDataGridViewTextBoxColumn.Width = 72;
-            // 
-            // orderContractIDDataGridViewTextBoxColumn
-            // 
-            this.orderContractIDDataGridViewTextBoxColumn.DataPropertyName = "OrderContractID";
-            this.orderContractIDDataGridViewTextBoxColumn.HeaderText = "OrderContractID";
-            this.orderContractIDDataGridViewTextBoxColumn.Name = "orderContractIDDataGridViewTextBoxColumn";
-            this.orderContractIDDataGridViewTextBoxColumn.Visible = false;
-            this.orderContractIDDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // produceContractIDDataGridViewTextBoxColumn
-            // 
-            this.produceContractIDDataGridViewTextBoxColumn.DataPropertyName = "ProduceContractID";
-            this.produceContractIDDataGridViewTextBoxColumn.HeaderText = "ProduceContractID";
-            this.produceContractIDDataGridViewTextBoxColumn.Name = "produceContractIDDataGridViewTextBoxColumn";
-            this.produceContractIDDataGridViewTextBoxColumn.Visible = false;
-            this.produceContractIDDataGridViewTextBoxColumn.Width = 132;
-            // 
-            // salesContractIDDataGridViewTextBoxColumn
-            // 
-            this.salesContractIDDataGridViewTextBoxColumn.DataPropertyName = "SalesContractID";
-            this.salesContractIDDataGridViewTextBoxColumn.HeaderText = "SalesContractID";
-            this.salesContractIDDataGridViewTextBoxColumn.Name = "salesContractIDDataGridViewTextBoxColumn";
-            this.salesContractIDDataGridViewTextBoxColumn.Visible = false;
-            this.salesContractIDDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // tapTimeDataGridViewTextBoxColumn
-            // 
-            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
-            this.tapTimeDataGridViewTextBoxColumn.DefaultHeaderCellType = typeof(System.Windows.Forms.DataGridViewColumnHeaderCell);
-            this.tapTimeDataGridViewTextBoxColumn.EnableNull = true;
-            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时间";
-            this.tapTimeDataGridViewTextBoxColumn.Length = 0;
-            this.tapTimeDataGridViewTextBoxColumn.Max = 0;
-            this.tapTimeDataGridViewTextBoxColumn.MaxInputLength = 32767;
-            this.tapTimeDataGridViewTextBoxColumn.MaxLength = 0;
-            this.tapTimeDataGridViewTextBoxColumn.Min = 0;
-            this.tapTimeDataGridViewTextBoxColumn.MinLength = 0;
-            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
-            this.tapTimeDataGridViewTextBoxColumn.Precision = 0;
-            this.tapTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tapTimeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.tapTimeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.tapTimeDataGridViewTextBoxColumn.ValidEable = true;
-            this.tapTimeDataGridViewTextBoxColumn.ValidType = DataGridValid.DataGridViewValidateCellColumn.TypeEnum.Integer;
-            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // cDataGridViewTextBoxColumn
-            // 
-            this.cDataGridViewTextBoxColumn.DataPropertyName = "C";
-            this.cDataGridViewTextBoxColumn.HeaderText = "C";
-            this.cDataGridViewTextBoxColumn.Name = "cDataGridViewTextBoxColumn";
-            this.cDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // siDataGridViewTextBoxColumn
-            // 
-            this.siDataGridViewTextBoxColumn.DataPropertyName = "Si";
-            this.siDataGridViewTextBoxColumn.HeaderText = "Si";
-            this.siDataGridViewTextBoxColumn.Name = "siDataGridViewTextBoxColumn";
-            this.siDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // mnDataGridViewTextBoxColumn
-            // 
-            this.mnDataGridViewTextBoxColumn.DataPropertyName = "Mn";
-            this.mnDataGridViewTextBoxColumn.HeaderText = "Mn";
-            this.mnDataGridViewTextBoxColumn.Name = "mnDataGridViewTextBoxColumn";
-            this.mnDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // pDataGridViewTextBoxColumn
-            // 
-            this.pDataGridViewTextBoxColumn.DataPropertyName = "P";
-            this.pDataGridViewTextBoxColumn.HeaderText = "P";
-            this.pDataGridViewTextBoxColumn.Name = "pDataGridViewTextBoxColumn";
-            this.pDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // sDataGridViewTextBoxColumn
-            // 
-            this.sDataGridViewTextBoxColumn.DataPropertyName = "S";
-            this.sDataGridViewTextBoxColumn.HeaderText = "S";
-            this.sDataGridViewTextBoxColumn.Name = "sDataGridViewTextBoxColumn";
-            this.sDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // tiDataGridViewTextBoxColumn
-            // 
-            this.tiDataGridViewTextBoxColumn.DataPropertyName = "Ti";
-            this.tiDataGridViewTextBoxColumn.HeaderText = "Ti";
-            this.tiDataGridViewTextBoxColumn.Name = "tiDataGridViewTextBoxColumn";
-            this.tiDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // Sn
-            // 
-            this.Sn.DataPropertyName = "Sn";
-            this.Sn.HeaderText = "Sn";
-            this.Sn.Name = "Sn";
-            this.Sn.Width = 42;
-            // 
-            // Sb
-            // 
-            this.Sb.DataPropertyName = "Sb";
-            this.Sb.HeaderText = "Sb";
-            this.Sb.Name = "Sb";
-            this.Sb.Width = 42;
-            // 
-            // As
-            // 
-            this.As.DataPropertyName = "As";
-            this.As.HeaderText = "As";
-            this.As.Name = "As";
-            this.As.Width = 42;
-            // 
-            // Pb
-            // 
-            this.Pb.DataPropertyName = "Pb";
-            this.Pb.HeaderText = "Pb";
-            this.Pb.Name = "Pb";
-            this.Pb.Width = 42;
-            // 
-            // ironTempDataGridViewTextBoxColumn
-            // 
-            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
-            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
-            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
-            this.ironTempDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // heatIDDataGridViewTextBoxColumn
-            // 
-            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
-            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
-            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
-            this.heatIDDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // operatorDataGridViewTextBoxColumn
-            // 
-            this.operatorDataGridViewTextBoxColumn.DataPropertyName = "Operator";
-            this.operatorDataGridViewTextBoxColumn.HeaderText = "Operator";
-            this.operatorDataGridViewTextBoxColumn.Name = "operatorDataGridViewTextBoxColumn";
-            this.operatorDataGridViewTextBoxColumn.Visible = false;
-            this.operatorDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // tareDataGridViewTextBoxColumn
-            // 
-            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
-            this.tareDataGridViewTextBoxColumn.HeaderText = "皮重";
-            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
-            this.tareDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // grossWeightDataGridViewTextBoxColumn
-            // 
-            this.grossWeightDataGridViewTextBoxColumn.DataPropertyName = "Gross_Weight";
-            this.grossWeightDataGridViewTextBoxColumn.HeaderText = "毛重";
-            this.grossWeightDataGridViewTextBoxColumn.Name = "grossWeightDataGridViewTextBoxColumn";
-            this.grossWeightDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // object1DataGridViewTextBoxColumn
-            // 
-            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
-            this.object1DataGridViewTextBoxColumn.HeaderText = "Object1";
-            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
-            this.object1DataGridViewTextBoxColumn.Visible = false;
-            this.object1DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // weight1DataGridViewTextBoxColumn
-            // 
-            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
-            this.weight1DataGridViewTextBoxColumn.HeaderText = "Weight1";
-            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
-            this.weight1DataGridViewTextBoxColumn.Visible = false;
-            this.weight1DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // object2DataGridViewTextBoxColumn
-            // 
-            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
-            this.object2DataGridViewTextBoxColumn.HeaderText = "Object2";
-            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
-            this.object2DataGridViewTextBoxColumn.Visible = false;
-            this.object2DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // weight2DataGridViewTextBoxColumn
-            // 
-            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
-            this.weight2DataGridViewTextBoxColumn.HeaderText = "Weight2";
-            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
-            this.weight2DataGridViewTextBoxColumn.Visible = false;
-            this.weight2DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // object3DataGridViewTextBoxColumn
-            // 
-            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
-            this.object3DataGridViewTextBoxColumn.HeaderText = "Object3";
-            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
-            this.object3DataGridViewTextBoxColumn.Visible = false;
-            this.object3DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // weight3DataGridViewTextBoxColumn
-            // 
-            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
-            this.weight3DataGridViewTextBoxColumn.HeaderText = "Weight3";
-            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
-            this.weight3DataGridViewTextBoxColumn.Visible = false;
-            this.weight3DataGridViewTextBoxColumn.Width = 72;
-            // 
-            // isDesDataGridViewTextBoxColumn
-            // 
-            this.isDesDataGridViewTextBoxColumn.DataPropertyName = "IsDes";
-            this.isDesDataGridViewTextBoxColumn.HeaderText = "IsDes";
-            this.isDesDataGridViewTextBoxColumn.Name = "isDesDataGridViewTextBoxColumn";
-            this.isDesDataGridViewTextBoxColumn.Visible = false;
-            this.isDesDataGridViewTextBoxColumn.Width = 60;
             // 
             // bsIronInfo
             // 
@@ -1237,6 +920,43 @@
             this.dvScrapSteel.CurrentCellChanged += new System.EventHandler(this.dvScrapSteel_CurrentCellChanged);
             this.dvScrapSteel.Click += new System.EventHandler(this.dvScrapSteel_Click);
             // 
+            // checkFlagDataGridViewTextBoxColumn1
+            // 
+            this.checkFlagDataGridViewTextBoxColumn1.DataPropertyName = "CheckFlag";
+            this.checkFlagDataGridViewTextBoxColumn1.FalseValue = "0";
+            this.checkFlagDataGridViewTextBoxColumn1.HeaderText = "选择";
+            this.checkFlagDataGridViewTextBoxColumn1.IndeterminateValue = "0";
+            this.checkFlagDataGridViewTextBoxColumn1.Name = "checkFlagDataGridViewTextBoxColumn1";
+            this.checkFlagDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.checkFlagDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.checkFlagDataGridViewTextBoxColumn1.TrueValue = "1";
+            this.checkFlagDataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // scrapSlotIDDataGridViewTextBoxColumn
+            // 
+            this.scrapSlotIDDataGridViewTextBoxColumn.DataPropertyName = "Scrap_Slot_ID";
+            this.scrapSlotIDDataGridViewTextBoxColumn.HeaderText = "废钢斗号";
+            this.scrapSlotIDDataGridViewTextBoxColumn.Name = "scrapSlotIDDataGridViewTextBoxColumn";
+            this.scrapSlotIDDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "重量[T]";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            // 
+            // ScrapWT
+            // 
+            this.ScrapWT.DataPropertyName = "ScrapWT";
+            this.ScrapWT.HeaderText = "废钢[T]";
+            this.ScrapWT.Name = "ScrapWT";
+            // 
+            // PigIronWT
+            // 
+            this.PigIronWT.DataPropertyName = "PigIronWT";
+            this.PigIronWT.HeaderText = "生铁[T]";
+            this.PigIronWT.Name = "PigIronWT";
+            // 
             // bsScrapSteel
             // 
             this.bsScrapSteel.DataMember = "L3DataTable";
@@ -1344,6 +1064,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(425, 44);
             this.dataGridView1.TabIndex = 0;
             // 
+            // sCRAPSLOTIDDataGridViewTextBoxColumn1
+            // 
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.DataPropertyName = "SCRAP_SLOT_ID";
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.HeaderText = "废钢斗号";
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.Name = "sCRAPSLOTIDDataGridViewTextBoxColumn1";
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.Width = 130;
+            // 
+            // Code_Des
+            // 
+            this.Code_Des.DataPropertyName = "Code_Des";
+            this.Code_Des.HeaderText = "生铁名称";
+            this.Code_Des.Name = "Code_Des";
+            this.Code_Des.ReadOnly = true;
+            // 
+            // aMOUNTDataGridViewTextBoxColumn1
+            // 
+            this.aMOUNTDataGridViewTextBoxColumn1.DataPropertyName = "AMOUNT";
+            this.aMOUNTDataGridViewTextBoxColumn1.HeaderText = "生铁重量";
+            this.aMOUNTDataGridViewTextBoxColumn1.Name = "aMOUNTDataGridViewTextBoxColumn1";
+            this.aMOUNTDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
             // bsST
             // 
             this.bsST.DataMember = "L3DataTable";
@@ -1407,6 +1149,107 @@
             this.groupBox5.TabIndex = 84;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "废钢";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn40,
+            this.dataGridViewTextBoxColumn41});
+            this.dataGridView2.DataSource = this.bsFG;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 20);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowTemplate.Height = 23;
+            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView2.Size = new System.Drawing.Size(425, 43);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "SCRAP_SLOT_ID";
+            this.dataGridViewTextBoxColumn39.HeaderText = "废钢斗号";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            this.dataGridViewTextBoxColumn39.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "Code_Des";
+            this.dataGridViewTextBoxColumn40.HeaderText = "废钢名称";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "AMOUNT";
+            this.dataGridViewTextBoxColumn41.HeaderText = "生铁重量";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            // 
+            // bsFG
+            // 
+            this.bsFG.DataMember = "L3DataTable";
+            this.bsFG.DataSource = this.dsFG;
+            // 
+            // dsFG
+            // 
+            this.dsFG.AutoLoad = true;
+            this.dsFG.AutoSubscribe = true;
+            this.dsFG.DataSetName = "L3DataSet";
+            this.dsFG.DeleteMethod = null;
+            this.dsFG.InsertMethod = null;
+            this.dsFG.L3DataAdapter = this.Adapter;
+            this.dsFG.LoadEvent = "Click";
+            this.dsFG.LoadTrigger = null;
+            this.dsFG.RefreshValve = 1000;
+            this.dsFG.SourceCommand = null;
+            this.dsFG.SourceCondition = "";
+            this.dsFG.SourceMethod = "";
+            this.dsFG.SourceType = AppSvrHMI.L3DataSetSourceType.SQL;
+            this.dsFG.SourceURI = "";
+            this.dsFG.SubscribeTarget = null;
+            this.dsFG.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsFG});
+            this.dsFG.UpdateEvent = "Click";
+            this.dsFG.UpdateMethod = null;
+            this.dsFG.UpdateTrigger = null;
+            // 
+            // schemadsFG
+            // 
+            this.schemadsFG.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsFGL3DataTableSCRAP_SLOT_ID,
+            this.coldsFGL3DataTableMATERIAL_CODE,
+            this.coldsFGL3DataTableAMOUNT,
+            this.coldsFGL3DataTableCode_Des});
+            this.schemadsFG.TableName = "L3DataTable";
+            // 
+            // coldsFGL3DataTableSCRAP_SLOT_ID
+            // 
+            this.coldsFGL3DataTableSCRAP_SLOT_ID.Caption = "SCRAP_SLOT_ID";
+            this.coldsFGL3DataTableSCRAP_SLOT_ID.ColumnName = "SCRAP_SLOT_ID";
+            this.coldsFGL3DataTableSCRAP_SLOT_ID.Namespace = "";
+            // 
+            // coldsFGL3DataTableMATERIAL_CODE
+            // 
+            this.coldsFGL3DataTableMATERIAL_CODE.Caption = "MATERIAL_CODE";
+            this.coldsFGL3DataTableMATERIAL_CODE.ColumnName = "MATERIAL_CODE";
+            this.coldsFGL3DataTableMATERIAL_CODE.Namespace = "";
+            // 
+            // coldsFGL3DataTableAMOUNT
+            // 
+            this.coldsFGL3DataTableAMOUNT.Caption = "AMOUNT";
+            this.coldsFGL3DataTableAMOUNT.ColumnName = "AMOUNT";
+            this.coldsFGL3DataTableAMOUNT.Namespace = "";
+            // 
+            // coldsFGL3DataTableCode_Des
+            // 
+            this.coldsFGL3DataTableCode_Des.Caption = "Code_Des";
+            this.coldsFGL3DataTableCode_Des.ColumnName = "Code_Des";
+            this.coldsFGL3DataTableCode_Des.Namespace = "";
             // 
             // groupBox3
             // 
@@ -1513,61 +1356,6 @@
             this.AAcoldsFGSTL3DataTableCode_Des.Caption = "Code_Des";
             this.AAcoldsFGSTL3DataTableCode_Des.ColumnName = "Code_Des";
             this.AAcoldsFGSTL3DataTableCode_Des.Namespace = "";
-            // 
-            // bsFG
-            // 
-            this.bsFG.DataMember = "L3DataTable";
-            this.bsFG.DataSource = this.dsFG;
-            // 
-            // dsFG
-            // 
-            this.dsFG.AutoLoad = true;
-            this.dsFG.AutoSubscribe = true;
-            this.dsFG.DataSetName = "L3DataSet";
-            this.dsFG.DeleteMethod = null;
-            this.dsFG.InsertMethod = null;
-            this.dsFG.L3DataAdapter = this.Adapter;
-            this.dsFG.LoadEvent = "Click";
-            this.dsFG.LoadTrigger = null;
-            this.dsFG.RefreshValve = 1000;
-            this.dsFG.SourceCommand = null;
-            this.dsFG.SourceCondition = "";
-            this.dsFG.SourceMethod = "";
-            this.dsFG.SourceType = AppSvrHMI.L3DataSetSourceType.SQL;
-            this.dsFG.SourceURI = "";
-            this.dsFG.SubscribeTarget = null;
-            this.dsFG.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsFG});
-            this.dsFG.UpdateEvent = "Click";
-            this.dsFG.UpdateMethod = null;
-            this.dsFG.UpdateTrigger = null;
-            // 
-            // schemadsFG
-            // 
-            this.schemadsFG.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsFGL3DataTableSCRAP_SLOT_ID,
-            this.coldsFGL3DataTableMATERIAL_CODE,
-            this.coldsFGL3DataTableAMOUNT,
-            this.coldsFGL3DataTableCode_Des});
-            this.schemadsFG.TableName = "L3DataTable";
-            // 
-            // coldsFGL3DataTableSCRAP_SLOT_ID
-            // 
-            this.coldsFGL3DataTableSCRAP_SLOT_ID.Caption = "SCRAP_SLOT_ID";
-            this.coldsFGL3DataTableSCRAP_SLOT_ID.ColumnName = "SCRAP_SLOT_ID";
-            this.coldsFGL3DataTableSCRAP_SLOT_ID.Namespace = "";
-            // 
-            // coldsFGL3DataTableMATERIAL_CODE
-            // 
-            this.coldsFGL3DataTableMATERIAL_CODE.Caption = "MATERIAL_CODE";
-            this.coldsFGL3DataTableMATERIAL_CODE.ColumnName = "MATERIAL_CODE";
-            this.coldsFGL3DataTableMATERIAL_CODE.Namespace = "";
-            // 
-            // coldsFGL3DataTableAMOUNT
-            // 
-            this.coldsFGL3DataTableAMOUNT.Caption = "AMOUNT";
-            this.coldsFGL3DataTableAMOUNT.ColumnName = "AMOUNT";
-            this.coldsFGL3DataTableAMOUNT.Namespace = "";
             // 
             // dsReturnSteel
             // 
@@ -1998,110 +1786,321 @@
             this.AcoldsSTL3DataTableAMOUNT.ColumnName = "AMOUNT";
             this.AcoldsSTL3DataTableAMOUNT.Namespace = "";
             // 
-            // dataGridView2
+            // SELECTID
             // 
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn39,
-            this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41});
-            this.dataGridView2.DataSource = this.bsFG;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 20);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView2.Size = new System.Drawing.Size(425, 43);
-            this.dataGridView2.TabIndex = 1;
+            this.SELECTID.DataPropertyName = "SELECTID";
+            this.SELECTID.FalseValue = "0";
+            this.SELECTID.Frozen = true;
+            this.SELECTID.HeaderText = "选择";
+            this.SELECTID.IndeterminateValue = "0";
+            this.SELECTID.Name = "SELECTID";
+            this.SELECTID.TrueValue = "1";
+            this.SELECTID.Width = 35;
             // 
-            // coldsFGL3DataTableCode_Des
+            // shiftDataGridViewCheckBoxColumn
             // 
-            this.coldsFGL3DataTableCode_Des.Caption = "Code_Des";
-            this.coldsFGL3DataTableCode_Des.ColumnName = "Code_Des";
-            this.coldsFGL3DataTableCode_Des.Namespace = "";
+            this.shiftDataGridViewCheckBoxColumn.DataPropertyName = "Shift";
+            this.shiftDataGridViewCheckBoxColumn.HeaderText = "Shift";
+            this.shiftDataGridViewCheckBoxColumn.Name = "shiftDataGridViewCheckBoxColumn";
+            this.shiftDataGridViewCheckBoxColumn.Visible = false;
+            this.shiftDataGridViewCheckBoxColumn.Width = 41;
             // 
-            // sCRAPSLOTIDDataGridViewTextBoxColumn1
+            // teamDataGridViewCheckBoxColumn
             // 
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.DataPropertyName = "SCRAP_SLOT_ID";
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.HeaderText = "废钢斗号";
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.Name = "sCRAPSLOTIDDataGridViewTextBoxColumn1";
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.sCRAPSLOTIDDataGridViewTextBoxColumn1.Width = 130;
+            this.teamDataGridViewCheckBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewCheckBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewCheckBoxColumn.Name = "teamDataGridViewCheckBoxColumn";
+            this.teamDataGridViewCheckBoxColumn.Visible = false;
+            this.teamDataGridViewCheckBoxColumn.Width = 35;
             // 
-            // Code_Des
+            // nameDataGridViewTextBoxColumn
             // 
-            this.Code_Des.DataPropertyName = "Code_Des";
-            this.Code_Des.HeaderText = "生铁名称";
-            this.Code_Des.Name = "Code_Des";
-            this.Code_Des.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Visible = false;
+            this.nameDataGridViewTextBoxColumn.Width = 54;
             // 
-            // aMOUNTDataGridViewTextBoxColumn1
+            // materialIDDataGridViewTextBoxColumn
             // 
-            this.aMOUNTDataGridViewTextBoxColumn1.DataPropertyName = "AMOUNT";
-            this.aMOUNTDataGridViewTextBoxColumn1.HeaderText = "生铁重量";
-            this.aMOUNTDataGridViewTextBoxColumn1.Name = "aMOUNTDataGridViewTextBoxColumn1";
-            this.aMOUNTDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.materialIDDataGridViewTextBoxColumn.DataPropertyName = "MaterialID";
+            this.materialIDDataGridViewTextBoxColumn.Frozen = true;
+            this.materialIDDataGridViewTextBoxColumn.HeaderText = "材料号";
+            this.materialIDDataGridViewTextBoxColumn.Name = "materialIDDataGridViewTextBoxColumn";
+            this.materialIDDataGridViewTextBoxColumn.Width = 66;
             // 
-            // dataGridViewTextBoxColumn39
+            // ironLadleNoDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "SCRAP_SLOT_ID";
-            this.dataGridViewTextBoxColumn39.HeaderText = "废钢斗号";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            this.dataGridViewTextBoxColumn39.Width = 130;
+            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
+            this.ironLadleNoDataGridViewTextBoxColumn.Frozen = true;
+            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
+            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
+            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
             // 
-            // dataGridViewTextBoxColumn40
+            // sourceDataGridViewCheckBoxColumn
             // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "Code_Des";
-            this.dataGridViewTextBoxColumn40.HeaderText = "废钢名称";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            this.sourceDataGridViewCheckBoxColumn.DataPropertyName = "Source";
+            this.sourceDataGridViewCheckBoxColumn.DataSource = this.dsIronMode;
+            this.sourceDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.sourceDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.sourceDataGridViewCheckBoxColumn.HeaderText = "出铁方式";
+            this.sourceDataGridViewCheckBoxColumn.Name = "sourceDataGridViewCheckBoxColumn";
+            this.sourceDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.sourceDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code_Val_Long";
+            this.sourceDataGridViewCheckBoxColumn.Width = 59;
             // 
-            // dataGridViewTextBoxColumn41
+            // returnSteelWeightDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "AMOUNT";
-            this.dataGridViewTextBoxColumn41.HeaderText = "生铁重量";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            this.returnSteelWeightDataGridViewTextBoxColumn.DataPropertyName = "Return_Steel_Weight";
+            this.returnSteelWeightDataGridViewTextBoxColumn.HeaderText = "回炉钢水量";
+            this.returnSteelWeightDataGridViewTextBoxColumn.Name = "returnSteelWeightDataGridViewTextBoxColumn";
+            this.returnSteelWeightDataGridViewTextBoxColumn.Width = 90;
             // 
-            // checkFlagDataGridViewTextBoxColumn1
+            // weightDataGridViewTextBoxColumn
             // 
-            this.checkFlagDataGridViewTextBoxColumn1.DataPropertyName = "CheckFlag";
-            this.checkFlagDataGridViewTextBoxColumn1.FalseValue = "0";
-            this.checkFlagDataGridViewTextBoxColumn1.HeaderText = "选择";
-            this.checkFlagDataGridViewTextBoxColumn1.IndeterminateValue = "0";
-            this.checkFlagDataGridViewTextBoxColumn1.Name = "checkFlagDataGridViewTextBoxColumn1";
-            this.checkFlagDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.checkFlagDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.checkFlagDataGridViewTextBoxColumn1.TrueValue = "1";
-            this.checkFlagDataGridViewTextBoxColumn1.Width = 50;
+            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
+            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量";
+            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
+            this.weightDataGridViewTextBoxColumn.Width = 78;
             // 
-            // scrapSlotIDDataGridViewTextBoxColumn
+            // tareDataGridViewTextBoxColumn
             // 
-            this.scrapSlotIDDataGridViewTextBoxColumn.DataPropertyName = "Scrap_Slot_ID";
-            this.scrapSlotIDDataGridViewTextBoxColumn.HeaderText = "废钢斗号";
-            this.scrapSlotIDDataGridViewTextBoxColumn.Name = "scrapSlotIDDataGridViewTextBoxColumn";
-            this.scrapSlotIDDataGridViewTextBoxColumn.Width = 130;
+            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
+            this.tareDataGridViewTextBoxColumn.HeaderText = "压块";
+            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
+            this.tareDataGridViewTextBoxColumn.Width = 54;
             // 
-            // amountDataGridViewTextBoxColumn
+            // statusDataGridViewTextBoxColumn
             // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "重量[T]";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Visible = false;
+            this.statusDataGridViewTextBoxColumn.Width = 66;
             // 
-            // ScrapWT
+            // positionDataGridViewTextBoxColumn
             // 
-            this.ScrapWT.DataPropertyName = "ScrapWT";
-            this.ScrapWT.HeaderText = "废钢[T]";
-            this.ScrapWT.Name = "ScrapWT";
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.Visible = false;
+            this.positionDataGridViewTextBoxColumn.Width = 78;
             // 
-            // PigIronWT
+            // qAStatusDataGridViewTextBoxColumn
             // 
-            this.PigIronWT.DataPropertyName = "PigIronWT";
-            this.PigIronWT.HeaderText = "生铁[T]";
-            this.PigIronWT.Name = "PigIronWT";
+            this.qAStatusDataGridViewTextBoxColumn.DataPropertyName = "QAStatus";
+            this.qAStatusDataGridViewTextBoxColumn.HeaderText = "QAStatus";
+            this.qAStatusDataGridViewTextBoxColumn.Name = "qAStatusDataGridViewTextBoxColumn";
+            this.qAStatusDataGridViewTextBoxColumn.Visible = false;
+            this.qAStatusDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // qALevelDataGridViewTextBoxColumn
+            // 
+            this.qALevelDataGridViewTextBoxColumn.DataPropertyName = "QALevel";
+            this.qALevelDataGridViewTextBoxColumn.HeaderText = "QALevel";
+            this.qALevelDataGridViewTextBoxColumn.Name = "qALevelDataGridViewTextBoxColumn";
+            this.qALevelDataGridViewTextBoxColumn.Visible = false;
+            this.qALevelDataGridViewTextBoxColumn.Width = 72;
+            // 
+            // orderContractIDDataGridViewTextBoxColumn
+            // 
+            this.orderContractIDDataGridViewTextBoxColumn.DataPropertyName = "OrderContractID";
+            this.orderContractIDDataGridViewTextBoxColumn.HeaderText = "OrderContractID";
+            this.orderContractIDDataGridViewTextBoxColumn.Name = "orderContractIDDataGridViewTextBoxColumn";
+            this.orderContractIDDataGridViewTextBoxColumn.Visible = false;
+            this.orderContractIDDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // produceContractIDDataGridViewTextBoxColumn
+            // 
+            this.produceContractIDDataGridViewTextBoxColumn.DataPropertyName = "ProduceContractID";
+            this.produceContractIDDataGridViewTextBoxColumn.HeaderText = "ProduceContractID";
+            this.produceContractIDDataGridViewTextBoxColumn.Name = "produceContractIDDataGridViewTextBoxColumn";
+            this.produceContractIDDataGridViewTextBoxColumn.Visible = false;
+            this.produceContractIDDataGridViewTextBoxColumn.Width = 132;
+            // 
+            // salesContractIDDataGridViewTextBoxColumn
+            // 
+            this.salesContractIDDataGridViewTextBoxColumn.DataPropertyName = "SalesContractID";
+            this.salesContractIDDataGridViewTextBoxColumn.HeaderText = "SalesContractID";
+            this.salesContractIDDataGridViewTextBoxColumn.Name = "salesContractIDDataGridViewTextBoxColumn";
+            this.salesContractIDDataGridViewTextBoxColumn.Visible = false;
+            this.salesContractIDDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // tapTimeDataGridViewTextBoxColumn
+            // 
+            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
+            this.tapTimeDataGridViewTextBoxColumn.DefaultHeaderCellType = typeof(System.Windows.Forms.DataGridViewColumnHeaderCell);
+            this.tapTimeDataGridViewTextBoxColumn.EnableNull = true;
+            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时间";
+            this.tapTimeDataGridViewTextBoxColumn.Length = 0;
+            this.tapTimeDataGridViewTextBoxColumn.Max = 0D;
+            this.tapTimeDataGridViewTextBoxColumn.MaxInputLength = 32767;
+            this.tapTimeDataGridViewTextBoxColumn.MaxLength = 0;
+            this.tapTimeDataGridViewTextBoxColumn.Min = 0D;
+            this.tapTimeDataGridViewTextBoxColumn.MinLength = 0;
+            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
+            this.tapTimeDataGridViewTextBoxColumn.Precision = 0;
+            this.tapTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tapTimeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.tapTimeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.tapTimeDataGridViewTextBoxColumn.ValidEable = true;
+            this.tapTimeDataGridViewTextBoxColumn.ValidType = DataGridValid.DataGridViewValidateCellColumn.TypeEnum.Integer;
+            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // cDataGridViewTextBoxColumn
+            // 
+            this.cDataGridViewTextBoxColumn.DataPropertyName = "C";
+            this.cDataGridViewTextBoxColumn.HeaderText = "C";
+            this.cDataGridViewTextBoxColumn.Name = "cDataGridViewTextBoxColumn";
+            this.cDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // siDataGridViewTextBoxColumn
+            // 
+            this.siDataGridViewTextBoxColumn.DataPropertyName = "Si";
+            this.siDataGridViewTextBoxColumn.HeaderText = "Si";
+            this.siDataGridViewTextBoxColumn.Name = "siDataGridViewTextBoxColumn";
+            this.siDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // mnDataGridViewTextBoxColumn
+            // 
+            this.mnDataGridViewTextBoxColumn.DataPropertyName = "Mn";
+            this.mnDataGridViewTextBoxColumn.HeaderText = "Mn";
+            this.mnDataGridViewTextBoxColumn.Name = "mnDataGridViewTextBoxColumn";
+            this.mnDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // pDataGridViewTextBoxColumn
+            // 
+            this.pDataGridViewTextBoxColumn.DataPropertyName = "P";
+            this.pDataGridViewTextBoxColumn.HeaderText = "P";
+            this.pDataGridViewTextBoxColumn.Name = "pDataGridViewTextBoxColumn";
+            this.pDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // sDataGridViewTextBoxColumn
+            // 
+            this.sDataGridViewTextBoxColumn.DataPropertyName = "S";
+            this.sDataGridViewTextBoxColumn.HeaderText = "S";
+            this.sDataGridViewTextBoxColumn.Name = "sDataGridViewTextBoxColumn";
+            this.sDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // tiDataGridViewTextBoxColumn
+            // 
+            this.tiDataGridViewTextBoxColumn.DataPropertyName = "Ti";
+            this.tiDataGridViewTextBoxColumn.HeaderText = "Ti";
+            this.tiDataGridViewTextBoxColumn.Name = "tiDataGridViewTextBoxColumn";
+            this.tiDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // Sn
+            // 
+            this.Sn.DataPropertyName = "Sn";
+            this.Sn.HeaderText = "Sn";
+            this.Sn.Name = "Sn";
+            this.Sn.Width = 42;
+            // 
+            // Sb
+            // 
+            this.Sb.DataPropertyName = "Sb";
+            this.Sb.HeaderText = "Sb";
+            this.Sb.Name = "Sb";
+            this.Sb.Width = 42;
+            // 
+            // As
+            // 
+            this.As.DataPropertyName = "As";
+            this.As.HeaderText = "As";
+            this.As.Name = "As";
+            this.As.Width = 42;
+            // 
+            // Pb
+            // 
+            this.Pb.DataPropertyName = "Pb";
+            this.Pb.HeaderText = "Pb";
+            this.Pb.Name = "Pb";
+            this.Pb.Width = 42;
+            // 
+            // ironTempDataGridViewTextBoxColumn
+            // 
+            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
+            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
+            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
+            this.ironTempDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // heatIDDataGridViewTextBoxColumn
+            // 
+            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
+            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
+            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
+            this.heatIDDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // operatorDataGridViewTextBoxColumn
+            // 
+            this.operatorDataGridViewTextBoxColumn.DataPropertyName = "Operator";
+            this.operatorDataGridViewTextBoxColumn.HeaderText = "Operator";
+            this.operatorDataGridViewTextBoxColumn.Name = "operatorDataGridViewTextBoxColumn";
+            this.operatorDataGridViewTextBoxColumn.Visible = false;
+            this.operatorDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // grossWeightDataGridViewTextBoxColumn
+            // 
+            this.grossWeightDataGridViewTextBoxColumn.DataPropertyName = "Gross_Weight";
+            this.grossWeightDataGridViewTextBoxColumn.HeaderText = "毛重";
+            this.grossWeightDataGridViewTextBoxColumn.Name = "grossWeightDataGridViewTextBoxColumn";
+            this.grossWeightDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // object1DataGridViewTextBoxColumn
+            // 
+            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
+            this.object1DataGridViewTextBoxColumn.HeaderText = "Object1";
+            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
+            this.object1DataGridViewTextBoxColumn.Visible = false;
+            this.object1DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // weight1DataGridViewTextBoxColumn
+            // 
+            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
+            this.weight1DataGridViewTextBoxColumn.HeaderText = "Weight1";
+            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
+            this.weight1DataGridViewTextBoxColumn.Visible = false;
+            this.weight1DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // object2DataGridViewTextBoxColumn
+            // 
+            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
+            this.object2DataGridViewTextBoxColumn.HeaderText = "Object2";
+            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
+            this.object2DataGridViewTextBoxColumn.Visible = false;
+            this.object2DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // weight2DataGridViewTextBoxColumn
+            // 
+            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
+            this.weight2DataGridViewTextBoxColumn.HeaderText = "Weight2";
+            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
+            this.weight2DataGridViewTextBoxColumn.Visible = false;
+            this.weight2DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // object3DataGridViewTextBoxColumn
+            // 
+            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
+            this.object3DataGridViewTextBoxColumn.HeaderText = "Object3";
+            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
+            this.object3DataGridViewTextBoxColumn.Visible = false;
+            this.object3DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // weight3DataGridViewTextBoxColumn
+            // 
+            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
+            this.weight3DataGridViewTextBoxColumn.HeaderText = "Weight3";
+            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
+            this.weight3DataGridViewTextBoxColumn.Visible = false;
+            this.weight3DataGridViewTextBoxColumn.Width = 72;
+            // 
+            // isDesDataGridViewTextBoxColumn
+            // 
+            this.isDesDataGridViewTextBoxColumn.DataPropertyName = "IsDes";
+            this.isDesDataGridViewTextBoxColumn.HeaderText = "IsDes";
+            this.isDesDataGridViewTextBoxColumn.Name = "isDesDataGridViewTextBoxColumn";
+            this.isDesDataGridViewTextBoxColumn.Visible = false;
+            this.isDesDataGridViewTextBoxColumn.Width = 60;
             // 
             // NewDesignateMaterialFrm
             // 
@@ -2138,19 +2137,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dsST)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsST)).EndInit();
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schemadsFG)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bsFGST)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFGST)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsFGST)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsFG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsFG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schemadsFG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsReturnSteel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsReturnSteel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2287,45 +2286,6 @@
         private System.Data.DataColumn coldsIronModeL3DataTableCode_Val_Double;
         private System.Data.DataColumn coldsIronModeL3DataTableCode_Function_Group;
         private System.Data.DataColumn coldsIronModeL3DataTableNC_Code;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn SELECTID;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn shiftDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn teamDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn materialIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ironLadleNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn sourceDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn returnSteelWeightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qAStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qALevelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderContractIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn produceContractIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salesContractIDDataGridViewTextBoxColumn;
-        private DataGridValid.DataGridViewValidateCellColumn tapTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn siDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mnDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn As;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ironTempDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn heatIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn operatorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tareDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn grossWeightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn object1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weight1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn object2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weight2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn object3DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn weight3DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn isDesDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private AppSvrHMI.L3DataSet dsFGST;
@@ -2366,5 +2326,44 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn SELECTID;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn shiftDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn teamDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn materialIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ironLadleNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn sourceDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn returnSteelWeightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn weightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tareDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qAStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qALevelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderContractIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn produceContractIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesContractIDDataGridViewTextBoxColumn;
+        private DataGridValid.DataGridViewValidateCellColumn tapTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn siDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mnDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn As;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ironTempDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn heatIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn operatorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grossWeightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn object1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn weight1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn object2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn weight2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn object3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn weight3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isDesDataGridViewTextBoxColumn;
     }
 }

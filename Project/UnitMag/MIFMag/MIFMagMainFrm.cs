@@ -141,11 +141,17 @@ namespace UnitMag.MIFMag
                 MessageBox.Show("回炉钢水量小于零,不能出铁！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+            if (frm.YkWeight < 0)
+            {
+                MessageBox.Show("压块小于零,不能出铁！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string MIFID = ctrl.Tag.ToString();
             AppSvrIF.Command cmd = new AppSvrIF.Command();
             string MIFUri = "XGMESLogic\\MIXFMag\\CMIF_Unit_Mag\\" + MIFID;
-            int iRet = Adapter.Session.CreateCommand((int)AppSvrIF.CommandType.Call, MIFUri, "OutputIron", ref cmd);
+            int iRet = Adapter.Session.CreateCommand((int)AppSvrIF.CommandType.Call, MIFUri, "OutputIronNew", ref cmd);
+            //int iRet = Adapter.Session.CreateCommand((int)AppSvrIF.CommandType.Call, MIFUri, "OutputIron", ref cmd);
             if (iRet != 0)
             {
                 //  [12/28/2008 sun]
@@ -157,6 +163,7 @@ namespace UnitMag.MIFMag
             cmd.set_Parameters(0, frm.LadleID);
             cmd.set_Parameters(1, frm.Weight);
             cmd.set_Parameters(2, frm.ReturnSteelWeight);
+           
             if (frm.Destination == "转炉(碳钢)")
             {
                 cmd.set_Parameters(3, "1");
@@ -165,6 +172,7 @@ namespace UnitMag.MIFMag
             {
                 cmd.set_Parameters(3, "2");
             }
+            cmd.set_Parameters(4, frm.YkWeight);
             iRet = Adapter.Session.Execute(cmd);
             if (iRet != 0 || 0 == (short)cmd.Return)
             {
