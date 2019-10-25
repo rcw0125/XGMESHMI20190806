@@ -343,6 +343,12 @@
     <Compile Include="BOFMag\BOFHeatInfoFrm.Designer.cs">
       <DependentUpon>BOFHeatInfoFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BOFMag\Bofwdjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOFMag\Bofwdjs.Designer.cs">
+      <DependentUpon>Bofwdjs.cs</DependentUpon>
+    </Compile>
     <Compile Include="BOFMag\NewDesignateMaterialFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1144,6 +1150,18 @@
     <Compile Include="ModifyLadleGradeFrm.Designer.cs">
       <DependentUpon>ModifyLadleGradeFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LfdhFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LfdhFrm.Designer.cs">
+      <DependentUpon>LfdhFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LadleWeightFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LadleWeightFrm.Designer.cs">
+      <DependentUpon>LadleWeightFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mqhsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1385,6 +1403,9 @@
     <EmbeddedResource Include="BOFMag\BOFHeatInfoFrm.resx">
       <DependentUpon>BOFHeatInfoFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOFMag\Bofwdjs.resx">
+      <DependentUpon>Bofwdjs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BOFMag\NewDesignateMaterialFrm.resx">
       <SubType>Designer</SubType>
@@ -1846,6 +1867,14 @@
       <SubType>Designer</SubType>
       <DependentUpon>ModifyLadleGradeFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LfdhFrm.resx">
+      <DependentUpon>LfdhFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LadleWeightFrm.resx">
+      <DependentUpon>LadleWeightFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="mqhsFrm.resx">
       <DependentUpon>mqhsFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2023,6 +2052,8 @@
     <None Include="Properties\DataSources\CQA_BOF_Std_Slag_Ele.datasource" />
     <None Include="Properties\DataSources\CQA_BOF_Std_Tapping.datasource" />
     <None Include="Properties\DataSources\PlanTapping.datasource" />
+    <None Include="Properties\DataSources\UnitMag.BOFMag.Bofwdjs.datasource" />
+    <None Include="Properties\DataSources\UnitMag.BOFMag.wdmodel.datasource" />
     <None Include="Properties\DataSources\UnitMag.LFMag.Jzcf_alloydata.datasource" />
     <None Include="Properties\DataSources\UnitMag.LFMag.LFcfjs.datasource" />
     <None Include="Properties\Settings.settings">

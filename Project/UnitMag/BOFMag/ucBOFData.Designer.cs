@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bsPlan = new System.Windows.Forms.BindingSource(this.components);
             this.dsPlan = new AppSvrHMI.L3DataSet();
             this.schemadsPlan = new System.Data.DataTable();
@@ -389,26 +389,43 @@
             this.coldsArrivleCCMSteelL3DataTableAmount = new System.Data.DataColumn();
             this.coldsArrivleCCMSteelL3DataTableIdx = new System.Data.DataColumn();
             this.dvPlan = new System.Windows.Forms.DataGridView();
+            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preSteelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.steelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SteelGrade_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Protocol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.other_tech_request = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bOFIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lFIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rHIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.casterIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STATUS = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsBOFStatus = new AppSvrHMI.L3DataSet();
             this.schemadsBOFStatus = new System.Data.DataTable();
             this.coldsBOFStatusL3DataTableCode = new System.Data.DataColumn();
             this.coldsBOFStatusL3DataTableCode_Des = new System.Data.DataColumn();
+            this.sideStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsSideStatus = new AppSvrHMI.L3DataSet();
             this.schemadsSideStatus = new System.Data.DataTable();
             this.coldsSideStatusL3DataTableCode = new System.Data.DataColumn();
             this.coldsSideStatusL3DataTableCode_Des = new System.Data.DataColumn();
+            this.lFStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsLFStatus = new AppSvrHMI.L3DataSet();
             this.schemadsLFStatus = new System.Data.DataTable();
             this.coldsLFStatusL3DataTableCode = new System.Data.DataColumn();
             this.coldsLFStatusL3DataTableCode_Des = new System.Data.DataColumn();
+            this.rHStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsRHStatus = new AppSvrHMI.L3DataSet();
             this.schemadsRHStatus = new System.Data.DataTable();
             this.coldsRHStatusL3DataTableCode = new System.Data.DataColumn();
             this.coldsRHStatusL3DataTableCode_Des = new System.Data.DataColumn();
+            this.casterStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsCasterStatus = new AppSvrHMI.L3DataSet();
             this.schemadsCasterStatus = new System.Data.DataTable();
             this.coldsCasterStatusL3DataTableCode = new System.Data.DataColumn();
             this.coldsCasterStatusL3DataTableCode_Des = new System.Data.DataColumn();
+            this.destitationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.planOrdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabStdElement = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.dvProEle = new System.Windows.Forms.DataGridView();
@@ -1251,23 +1268,7 @@
             this.coldsInCtrlL3DataTableOther2_Aim = new System.Data.DataColumn();
             this.coldsInCtrlL3DataTableOther3_Aim = new System.Data.DataColumn();
             this.cmdStaticCalculateBOFL2Model = new AppSvrHMI.L3Command(this.components);
-            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preSteelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.steelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SteelGrade_Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Protocol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.other_tech_request = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bOFIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lFIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rHIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.casterIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STATUS = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.sideStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.lFStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.rHStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.casterStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.destitationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.planOrdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bsPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsPlan)).BeginInit();
@@ -3939,14 +3940,14 @@
             this.idxDataGridViewTextBoxColumn,
             this.materialTypeDataGridViewTextBoxColumn});
             this.dvArrivleCCMSteel.DataSource = this.bsArrivleCCMSteel;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvArrivleCCMSteel.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvArrivleCCMSteel.DefaultCellStyle = dataGridViewCellStyle21;
             this.dvArrivleCCMSteel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvArrivleCCMSteel.Location = new System.Drawing.Point(3, 17);
             this.dvArrivleCCMSteel.Name = "dvArrivleCCMSteel";
@@ -4091,14 +4092,14 @@
             this.destitationDataGridViewTextBoxColumn,
             this.planOrdIDDataGridViewTextBoxColumn});
             this.dvPlan.DataSource = this.bsPlan;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvPlan.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvPlan.DefaultCellStyle = dataGridViewCellStyle22;
             this.dvPlan.Dock = System.Windows.Forms.DockStyle.Top;
             this.dvPlan.Location = new System.Drawing.Point(0, 0);
             this.dvPlan.Name = "dvPlan";
@@ -4108,6 +4109,105 @@
             this.dvPlan.TabIndex = 2;
             this.dvPlan.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvPlan_DataError);
             this.dvPlan.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dvPlan_RowPrePaint);
+            // 
+            // heatIDDataGridViewTextBoxColumn
+            // 
+            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
+            this.heatIDDataGridViewTextBoxColumn.Frozen = true;
+            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
+            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
+            this.heatIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.heatIDDataGridViewTextBoxColumn.Width = 65;
+            // 
+            // preSteelGradeIndexDataGridViewTextBoxColumn
+            // 
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "Pre_SteelGradeIndex";
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.Frozen = true;
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.HeaderText = "预定炼钢记号";
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.Name = "preSteelGradeIndexDataGridViewTextBoxColumn";
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
+            this.preSteelGradeIndexDataGridViewTextBoxColumn.Width = 83;
+            // 
+            // steelGradeIndexDataGridViewTextBoxColumn
+            // 
+            this.steelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "SteelGradeIndex";
+            this.steelGradeIndexDataGridViewTextBoxColumn.Frozen = true;
+            this.steelGradeIndexDataGridViewTextBoxColumn.HeaderText = "实际炼钢记号";
+            this.steelGradeIndexDataGridViewTextBoxColumn.Name = "steelGradeIndexDataGridViewTextBoxColumn";
+            this.steelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
+            this.steelGradeIndexDataGridViewTextBoxColumn.Width = 83;
+            // 
+            // SteelGrade_Plan
+            // 
+            this.SteelGrade_Plan.DataPropertyName = "SteelGrade";
+            this.SteelGrade_Plan.Frozen = true;
+            this.SteelGrade_Plan.HeaderText = "钢种";
+            this.SteelGrade_Plan.Name = "SteelGrade_Plan";
+            this.SteelGrade_Plan.ReadOnly = true;
+            this.SteelGrade_Plan.Width = 80;
+            // 
+            // Protocol
+            // 
+            this.Protocol.DataPropertyName = "Protocol";
+            this.Protocol.Frozen = true;
+            this.Protocol.HeaderText = "协议号";
+            this.Protocol.Name = "Protocol";
+            this.Protocol.ReadOnly = true;
+            this.Protocol.Width = 90;
+            // 
+            // other_tech_request
+            // 
+            this.other_tech_request.DataPropertyName = "other_tech_request";
+            this.other_tech_request.Frozen = true;
+            this.other_tech_request.HeaderText = "其他要求";
+            this.other_tech_request.Name = "other_tech_request";
+            this.other_tech_request.ReadOnly = true;
+            // 
+            // bOFIDDataGridViewTextBoxColumn
+            // 
+            this.bOFIDDataGridViewTextBoxColumn.DataPropertyName = "BOFID";
+            this.bOFIDDataGridViewTextBoxColumn.HeaderText = "转炉炉座号";
+            this.bOFIDDataGridViewTextBoxColumn.Name = "bOFIDDataGridViewTextBoxColumn";
+            this.bOFIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bOFIDDataGridViewTextBoxColumn.Width = 73;
+            // 
+            // lFIDDataGridViewTextBoxColumn
+            // 
+            this.lFIDDataGridViewTextBoxColumn.DataPropertyName = "LFID";
+            this.lFIDDataGridViewTextBoxColumn.HeaderText = "LF炉座号";
+            this.lFIDDataGridViewTextBoxColumn.Name = "lFIDDataGridViewTextBoxColumn";
+            this.lFIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lFIDDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // rHIDDataGridViewTextBoxColumn
+            // 
+            this.rHIDDataGridViewTextBoxColumn.DataPropertyName = "RHID";
+            this.rHIDDataGridViewTextBoxColumn.HeaderText = "RH炉座号";
+            this.rHIDDataGridViewTextBoxColumn.Name = "rHIDDataGridViewTextBoxColumn";
+            this.rHIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rHIDDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // casterIDDataGridViewTextBoxColumn
+            // 
+            this.casterIDDataGridViewTextBoxColumn.DataPropertyName = "CasterID";
+            this.casterIDDataGridViewTextBoxColumn.HeaderText = "铸机号";
+            this.casterIDDataGridViewTextBoxColumn.Name = "casterIDDataGridViewTextBoxColumn";
+            this.casterIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.casterIDDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // STATUS
+            // 
+            this.STATUS.DataPropertyName = "BOF_Status";
+            this.STATUS.DataSource = this.dsBOFStatus;
+            this.STATUS.DisplayMember = "L3DataTable.Code_Des";
+            this.STATUS.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.STATUS.HeaderText = "转炉状态";
+            this.STATUS.Name = "STATUS";
+            this.STATUS.ReadOnly = true;
+            this.STATUS.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.STATUS.ValueMember = "L3DataTable.Code";
+            this.STATUS.Width = 60;
             // 
             // dsBOFStatus
             // 
@@ -4151,6 +4251,20 @@
             this.coldsBOFStatusL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsBOFStatusL3DataTableCode_Des.Namespace = "";
             // 
+            // sideStatusDataGridViewTextBoxColumn
+            // 
+            this.sideStatusDataGridViewTextBoxColumn.DataPropertyName = "Side_Status";
+            this.sideStatusDataGridViewTextBoxColumn.DataSource = this.dsSideStatus;
+            this.sideStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.sideStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.sideStatusDataGridViewTextBoxColumn.HeaderText = "炉后状态";
+            this.sideStatusDataGridViewTextBoxColumn.Name = "sideStatusDataGridViewTextBoxColumn";
+            this.sideStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sideStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.sideStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.sideStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
+            this.sideStatusDataGridViewTextBoxColumn.Width = 60;
+            // 
             // dsSideStatus
             // 
             this.dsSideStatus.AutoLoad = true;
@@ -4192,6 +4306,20 @@
             this.coldsSideStatusL3DataTableCode_Des.Caption = "Code_Des";
             this.coldsSideStatusL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsSideStatusL3DataTableCode_Des.Namespace = "";
+            // 
+            // lFStatusDataGridViewTextBoxColumn
+            // 
+            this.lFStatusDataGridViewTextBoxColumn.DataPropertyName = "LF_Status";
+            this.lFStatusDataGridViewTextBoxColumn.DataSource = this.dsLFStatus;
+            this.lFStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.lFStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.lFStatusDataGridViewTextBoxColumn.HeaderText = "LF炉状态";
+            this.lFStatusDataGridViewTextBoxColumn.Name = "lFStatusDataGridViewTextBoxColumn";
+            this.lFStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lFStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.lFStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.lFStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
+            this.lFStatusDataGridViewTextBoxColumn.Width = 60;
             // 
             // dsLFStatus
             // 
@@ -4235,6 +4363,20 @@
             this.coldsLFStatusL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsLFStatusL3DataTableCode_Des.Namespace = "";
             // 
+            // rHStatusDataGridViewTextBoxColumn
+            // 
+            this.rHStatusDataGridViewTextBoxColumn.DataPropertyName = "RH_Status";
+            this.rHStatusDataGridViewTextBoxColumn.DataSource = this.dsRHStatus;
+            this.rHStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.rHStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.rHStatusDataGridViewTextBoxColumn.HeaderText = "RH炉状态";
+            this.rHStatusDataGridViewTextBoxColumn.Name = "rHStatusDataGridViewTextBoxColumn";
+            this.rHStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rHStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.rHStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.rHStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
+            this.rHStatusDataGridViewTextBoxColumn.Width = 60;
+            // 
             // dsRHStatus
             // 
             this.dsRHStatus.AutoLoad = true;
@@ -4277,6 +4419,20 @@
             this.coldsRHStatusL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsRHStatusL3DataTableCode_Des.Namespace = "";
             // 
+            // casterStatusDataGridViewTextBoxColumn
+            // 
+            this.casterStatusDataGridViewTextBoxColumn.DataPropertyName = "Caster_Status";
+            this.casterStatusDataGridViewTextBoxColumn.DataSource = this.dsCasterStatus;
+            this.casterStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.casterStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.casterStatusDataGridViewTextBoxColumn.HeaderText = "铸机状态";
+            this.casterStatusDataGridViewTextBoxColumn.Name = "casterStatusDataGridViewTextBoxColumn";
+            this.casterStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.casterStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.casterStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.casterStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
+            this.casterStatusDataGridViewTextBoxColumn.Width = 60;
+            // 
             // dsCasterStatus
             // 
             this.dsCasterStatus.AutoLoad = true;
@@ -4318,6 +4474,22 @@
             this.coldsCasterStatusL3DataTableCode_Des.Caption = "Code_Des";
             this.coldsCasterStatusL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsCasterStatusL3DataTableCode_Des.Namespace = "";
+            // 
+            // destitationDataGridViewTextBoxColumn
+            // 
+            this.destitationDataGridViewTextBoxColumn.DataPropertyName = "Destitation";
+            this.destitationDataGridViewTextBoxColumn.HeaderText = "去向";
+            this.destitationDataGridViewTextBoxColumn.Name = "destitationDataGridViewTextBoxColumn";
+            this.destitationDataGridViewTextBoxColumn.ReadOnly = true;
+            this.destitationDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // planOrdIDDataGridViewTextBoxColumn
+            // 
+            this.planOrdIDDataGridViewTextBoxColumn.DataPropertyName = "Plan_Ord_ID";
+            this.planOrdIDDataGridViewTextBoxColumn.HeaderText = "计划订单号";
+            this.planOrdIDDataGridViewTextBoxColumn.Name = "planOrdIDDataGridViewTextBoxColumn";
+            this.planOrdIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.planOrdIDDataGridViewTextBoxColumn.Width = 115;
             // 
             // tabStdElement
             // 
@@ -4386,21 +4558,21 @@
             this.Column31,
             this.Column35,
             this.Column21});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvProEle.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvProEle.DefaultCellStyle = dataGridViewCellStyle23;
             this.dvProEle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvProEle.Location = new System.Drawing.Point(0, 14);
             this.dvProEle.Name = "dvProEle";
             this.dvProEle.ReadOnly = true;
             this.dvProEle.RowHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dvProEle.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dvProEle.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dvProEle.RowTemplate.Height = 23;
             this.dvProEle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dvProEle.Size = new System.Drawing.Size(992, 492);
@@ -4672,14 +4844,14 @@
             this.dvSlagele.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dvSlagele.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dvSlagele.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvSlagele.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvSlagele.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dvSlagele.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.steelGradeIndexDataGridViewTextBoxColumn1,
             this.caOMaxDataGridViewTextBoxColumn,
@@ -4692,14 +4864,14 @@
             this.tFeMinDataGridViewTextBoxColumn});
             this.dvSlagele.DataMember = "L3DataTable";
             this.dvSlagele.DataSource = this.dsSlagele;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvSlagele.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvSlagele.DefaultCellStyle = dataGridViewCellStyle26;
             this.dvSlagele.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvSlagele.Location = new System.Drawing.Point(0, 14);
             this.dvSlagele.MultiSelect = false;
@@ -4842,14 +5014,14 @@
             this.bulkWeightMaxDataGridViewTextBoxColumn});
             this.dvStdBulk.DataMember = "L3DataTable";
             this.dvStdBulk.DataSource = this.dsStdBulk;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvStdBulk.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvStdBulk.DefaultCellStyle = dataGridViewCellStyle27;
             this.dvStdBulk.Location = new System.Drawing.Point(0, 155);
             this.dvStdBulk.MultiSelect = false;
             this.dvStdBulk.Name = "dvStdBulk";
@@ -5206,14 +5378,14 @@
             this.ladleMatAimDataGridViewTextBoxColumn});
             this.dvLadleMat.DataMember = "L3DataTable";
             this.dvLadleMat.DataSource = this.dsLadleMat;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvLadleMat.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvLadleMat.DefaultCellStyle = dataGridViewCellStyle28;
             this.dvLadleMat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvLadleMat.GridColor = System.Drawing.SystemColors.Control;
             this.dvLadleMat.Location = new System.Drawing.Point(0, 14);
@@ -5294,14 +5466,14 @@
             this.arBlowMinDataGridViewTextBoxColumn});
             this.dvTapping.DataMember = "L3DataTable";
             this.dvTapping.DataSource = this.dsTapping;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvTapping.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvTapping.DefaultCellStyle = dataGridViewCellStyle29;
             this.dvTapping.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvTapping.Location = new System.Drawing.Point(3, 17);
             this.dvTapping.MultiSelect = false;
@@ -5948,14 +6120,14 @@
             this.oxygenContentDataGridViewTextBoxColumn,
             this.measureTimeDataGridViewTextBoxColumn});
             this.dvTestOxy.DataSource = this.bsTestOxy;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvTestOxy.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvTestOxy.DefaultCellStyle = dataGridViewCellStyle31;
             this.dvTestOxy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvTestOxy.Location = new System.Drawing.Point(3, 14);
             this.dvTestOxy.Margin = new System.Windows.Forms.Padding(0);
@@ -5977,8 +6149,8 @@
             // measureTimeDataGridViewTextBoxColumn
             // 
             this.measureTimeDataGridViewTextBoxColumn.DataPropertyName = "Measure_Time";
-            dataGridViewCellStyle10.Format = "T";
-            this.measureTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.Format = "T";
+            this.measureTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle30;
             this.measureTimeDataGridViewTextBoxColumn.HeaderText = "定氧时刻";
             this.measureTimeDataGridViewTextBoxColumn.Name = "measureTimeDataGridViewTextBoxColumn";
             this.measureTimeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -6065,6 +6237,7 @@
             // 
             // groupBox35
             // 
+            this.groupBox35.Controls.Add(this.button1);
             this.groupBox35.Controls.Add(this.dbxHeatID);
             this.groupBox35.Controls.Add(this.lbTappingWeight);
             this.groupBox35.Controls.Add(this.lbLadleStatus);
@@ -6490,14 +6663,14 @@
             this.tempTimeDataGridViewTextBoxColumn,
             this.modeDataGridViewCheckBoxColumn});
             this.dvTemp.DataSource = this.bsTemp;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvTemp.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvTemp.DefaultCellStyle = dataGridViewCellStyle33;
             this.dvTemp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvTemp.Location = new System.Drawing.Point(3, 14);
             this.dvTemp.Margin = new System.Windows.Forms.Padding(0);
@@ -6526,8 +6699,8 @@
             // tempTimeDataGridViewTextBoxColumn
             // 
             this.tempTimeDataGridViewTextBoxColumn.DataPropertyName = "Temp_Time";
-            dataGridViewCellStyle12.Format = "T";
-            this.tempTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle32.Format = "T";
+            this.tempTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle32;
             this.tempTimeDataGridViewTextBoxColumn.HeaderText = "测温时刻";
             this.tempTimeDataGridViewTextBoxColumn.Name = "tempTimeDataGridViewTextBoxColumn";
             this.tempTimeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -6691,14 +6864,14 @@
             this.statusDataGridViewCheckBoxColumn});
             this.dataGridView8.DataMember = "L3DataTable";
             this.dataGridView8.DataSource = this.dsProStatus;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView8.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView8.Location = new System.Drawing.Point(0, 14);
             this.dataGridView8.Name = "dataGridView8";
@@ -6713,9 +6886,9 @@
             // 
             this.changeTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.changeTimeDataGridViewTextBoxColumn.DataPropertyName = "Change_Time";
-            dataGridViewCellStyle14.Format = "T";
-            dataGridViewCellStyle14.NullValue = null;
-            this.changeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle34.Format = "T";
+            dataGridViewCellStyle34.NullValue = null;
+            this.changeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle34;
             this.changeTimeDataGridViewTextBoxColumn.HeaderText = "变化时刻";
             this.changeTimeDataGridViewTextBoxColumn.Name = "changeTimeDataGridViewTextBoxColumn";
             this.changeTimeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -6803,14 +6976,14 @@
             this.weightDataGridViewTextBoxColumn4,
             this.dischargeTimeDataGridViewTextBoxColumn4});
             this.dvAllay.DataSource = this.bsAllay;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvAllay.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvAllay.DefaultCellStyle = dataGridViewCellStyle38;
             this.dvAllay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvAllay.Location = new System.Drawing.Point(3, 14);
             this.dvAllay.Margin = new System.Windows.Forms.Padding(0);
@@ -6881,9 +7054,9 @@
             // weightDataGridViewTextBoxColumn4
             // 
             this.weightDataGridViewTextBoxColumn4.DataPropertyName = "Weight";
-            dataGridViewCellStyle16.Format = "N0";
-            dataGridViewCellStyle16.NullValue = "0";
-            this.weightDataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle36.Format = "N0";
+            dataGridViewCellStyle36.NullValue = "0";
+            this.weightDataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle36;
             this.weightDataGridViewTextBoxColumn4.HeaderText = "重量[kg]";
             this.weightDataGridViewTextBoxColumn4.Name = "weightDataGridViewTextBoxColumn4";
             this.weightDataGridViewTextBoxColumn4.ReadOnly = true;
@@ -6892,8 +7065,8 @@
             // dischargeTimeDataGridViewTextBoxColumn4
             // 
             this.dischargeTimeDataGridViewTextBoxColumn4.DataPropertyName = "Discharge_Time";
-            dataGridViewCellStyle17.Format = "t";
-            this.dischargeTimeDataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle37.Format = "t";
+            this.dischargeTimeDataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle37;
             this.dischargeTimeDataGridViewTextBoxColumn4.HeaderText = "振料时间";
             this.dischargeTimeDataGridViewTextBoxColumn4.Name = "dischargeTimeDataGridViewTextBoxColumn4";
             this.dischargeTimeDataGridViewTextBoxColumn4.ReadOnly = true;
@@ -6925,14 +7098,14 @@
             this.elementDataGridViewTextBoxColumn3,
             this.weightDataGridViewTextBoxColumn3});
             this.dvSumAddition.DataSource = this.bsSumAddition;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvSumAddition.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvSumAddition.DefaultCellStyle = dataGridViewCellStyle40;
             this.dvSumAddition.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvSumAddition.Location = new System.Drawing.Point(3, 14);
             this.dvSumAddition.Margin = new System.Windows.Forms.Padding(0);
@@ -6962,9 +7135,9 @@
             // 
             this.weightDataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.weightDataGridViewTextBoxColumn3.DataPropertyName = "Weight";
-            dataGridViewCellStyle19.Format = "N0";
-            dataGridViewCellStyle19.NullValue = "0";
-            this.weightDataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle39.Format = "N0";
+            dataGridViewCellStyle39.NullValue = "0";
+            this.weightDataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle39;
             this.weightDataGridViewTextBoxColumn3.HeaderText = "重量[kg]";
             this.weightDataGridViewTextBoxColumn3.Name = "weightDataGridViewTextBoxColumn3";
             this.weightDataGridViewTextBoxColumn3.ReadOnly = true;
@@ -11764,176 +11937,16 @@
             this.cmdStaticCalculateBOFL2Model.Trigger = null;
             this.cmdStaticCalculateBOFL2Model.TriggerEvent = "Click";
             // 
-            // heatIDDataGridViewTextBoxColumn
+            // button1
             // 
-            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
-            this.heatIDDataGridViewTextBoxColumn.Frozen = true;
-            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
-            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
-            this.heatIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.heatIDDataGridViewTextBoxColumn.Width = 65;
-            // 
-            // preSteelGradeIndexDataGridViewTextBoxColumn
-            // 
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "Pre_SteelGradeIndex";
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.Frozen = true;
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.HeaderText = "预定炼钢记号";
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.Name = "preSteelGradeIndexDataGridViewTextBoxColumn";
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
-            this.preSteelGradeIndexDataGridViewTextBoxColumn.Width = 83;
-            // 
-            // steelGradeIndexDataGridViewTextBoxColumn
-            // 
-            this.steelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "SteelGradeIndex";
-            this.steelGradeIndexDataGridViewTextBoxColumn.Frozen = true;
-            this.steelGradeIndexDataGridViewTextBoxColumn.HeaderText = "实际炼钢记号";
-            this.steelGradeIndexDataGridViewTextBoxColumn.Name = "steelGradeIndexDataGridViewTextBoxColumn";
-            this.steelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
-            this.steelGradeIndexDataGridViewTextBoxColumn.Width = 83;
-            // 
-            // SteelGrade_Plan
-            // 
-            this.SteelGrade_Plan.DataPropertyName = "SteelGrade";
-            this.SteelGrade_Plan.Frozen = true;
-            this.SteelGrade_Plan.HeaderText = "钢种";
-            this.SteelGrade_Plan.Name = "SteelGrade_Plan";
-            this.SteelGrade_Plan.ReadOnly = true;
-            this.SteelGrade_Plan.Width = 80;
-            // 
-            // Protocol
-            // 
-            this.Protocol.DataPropertyName = "Protocol";
-            this.Protocol.Frozen = true;
-            this.Protocol.HeaderText = "协议号";
-            this.Protocol.Name = "Protocol";
-            this.Protocol.ReadOnly = true;
-            this.Protocol.Width = 90;
-            // 
-            // other_tech_request
-            // 
-            this.other_tech_request.DataPropertyName = "other_tech_request";
-            this.other_tech_request.Frozen = true;
-            this.other_tech_request.HeaderText = "其他要求";
-            this.other_tech_request.Name = "other_tech_request";
-            this.other_tech_request.ReadOnly = true;
-            // 
-            // bOFIDDataGridViewTextBoxColumn
-            // 
-            this.bOFIDDataGridViewTextBoxColumn.DataPropertyName = "BOFID";
-            this.bOFIDDataGridViewTextBoxColumn.HeaderText = "转炉炉座号";
-            this.bOFIDDataGridViewTextBoxColumn.Name = "bOFIDDataGridViewTextBoxColumn";
-            this.bOFIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bOFIDDataGridViewTextBoxColumn.Width = 73;
-            // 
-            // lFIDDataGridViewTextBoxColumn
-            // 
-            this.lFIDDataGridViewTextBoxColumn.DataPropertyName = "LFID";
-            this.lFIDDataGridViewTextBoxColumn.HeaderText = "LF炉座号";
-            this.lFIDDataGridViewTextBoxColumn.Name = "lFIDDataGridViewTextBoxColumn";
-            this.lFIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lFIDDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // rHIDDataGridViewTextBoxColumn
-            // 
-            this.rHIDDataGridViewTextBoxColumn.DataPropertyName = "RHID";
-            this.rHIDDataGridViewTextBoxColumn.HeaderText = "RH炉座号";
-            this.rHIDDataGridViewTextBoxColumn.Name = "rHIDDataGridViewTextBoxColumn";
-            this.rHIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rHIDDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // casterIDDataGridViewTextBoxColumn
-            // 
-            this.casterIDDataGridViewTextBoxColumn.DataPropertyName = "CasterID";
-            this.casterIDDataGridViewTextBoxColumn.HeaderText = "铸机号";
-            this.casterIDDataGridViewTextBoxColumn.Name = "casterIDDataGridViewTextBoxColumn";
-            this.casterIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.casterIDDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // STATUS
-            // 
-            this.STATUS.DataPropertyName = "BOF_Status";
-            this.STATUS.DataSource = this.dsBOFStatus;
-            this.STATUS.DisplayMember = "L3DataTable.Code_Des";
-            this.STATUS.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.STATUS.HeaderText = "转炉状态";
-            this.STATUS.Name = "STATUS";
-            this.STATUS.ReadOnly = true;
-            this.STATUS.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.STATUS.ValueMember = "L3DataTable.Code";
-            this.STATUS.Width = 60;
-            // 
-            // sideStatusDataGridViewTextBoxColumn
-            // 
-            this.sideStatusDataGridViewTextBoxColumn.DataPropertyName = "Side_Status";
-            this.sideStatusDataGridViewTextBoxColumn.DataSource = this.dsSideStatus;
-            this.sideStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.sideStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.sideStatusDataGridViewTextBoxColumn.HeaderText = "炉后状态";
-            this.sideStatusDataGridViewTextBoxColumn.Name = "sideStatusDataGridViewTextBoxColumn";
-            this.sideStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sideStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.sideStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.sideStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
-            this.sideStatusDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // lFStatusDataGridViewTextBoxColumn
-            // 
-            this.lFStatusDataGridViewTextBoxColumn.DataPropertyName = "LF_Status";
-            this.lFStatusDataGridViewTextBoxColumn.DataSource = this.dsLFStatus;
-            this.lFStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.lFStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.lFStatusDataGridViewTextBoxColumn.HeaderText = "LF炉状态";
-            this.lFStatusDataGridViewTextBoxColumn.Name = "lFStatusDataGridViewTextBoxColumn";
-            this.lFStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lFStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.lFStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.lFStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
-            this.lFStatusDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // rHStatusDataGridViewTextBoxColumn
-            // 
-            this.rHStatusDataGridViewTextBoxColumn.DataPropertyName = "RH_Status";
-            this.rHStatusDataGridViewTextBoxColumn.DataSource = this.dsRHStatus;
-            this.rHStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.rHStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.rHStatusDataGridViewTextBoxColumn.HeaderText = "RH炉状态";
-            this.rHStatusDataGridViewTextBoxColumn.Name = "rHStatusDataGridViewTextBoxColumn";
-            this.rHStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rHStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.rHStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.rHStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
-            this.rHStatusDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // casterStatusDataGridViewTextBoxColumn
-            // 
-            this.casterStatusDataGridViewTextBoxColumn.DataPropertyName = "Caster_Status";
-            this.casterStatusDataGridViewTextBoxColumn.DataSource = this.dsCasterStatus;
-            this.casterStatusDataGridViewTextBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.casterStatusDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.casterStatusDataGridViewTextBoxColumn.HeaderText = "铸机状态";
-            this.casterStatusDataGridViewTextBoxColumn.Name = "casterStatusDataGridViewTextBoxColumn";
-            this.casterStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.casterStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.casterStatusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.casterStatusDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
-            this.casterStatusDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // destitationDataGridViewTextBoxColumn
-            // 
-            this.destitationDataGridViewTextBoxColumn.DataPropertyName = "Destitation";
-            this.destitationDataGridViewTextBoxColumn.HeaderText = "去向";
-            this.destitationDataGridViewTextBoxColumn.Name = "destitationDataGridViewTextBoxColumn";
-            this.destitationDataGridViewTextBoxColumn.ReadOnly = true;
-            this.destitationDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // planOrdIDDataGridViewTextBoxColumn
-            // 
-            this.planOrdIDDataGridViewTextBoxColumn.DataPropertyName = "Plan_Ord_ID";
-            this.planOrdIDDataGridViewTextBoxColumn.HeaderText = "计划订单号";
-            this.planOrdIDDataGridViewTextBoxColumn.Name = "planOrdIDDataGridViewTextBoxColumn";
-            this.planOrdIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.planOrdIDDataGridViewTextBoxColumn.Width = 115;
+            this.button1.BackColor = System.Drawing.Color.Chartreuse;
+            this.button1.Location = new System.Drawing.Point(352, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 23);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "温度计算";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ucBOFData
             // 
@@ -13283,5 +13296,6 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn casterStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn destitationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn planOrdIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }

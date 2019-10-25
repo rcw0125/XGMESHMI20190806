@@ -42,7 +42,7 @@ namespace UnitMag
         private void btnQuery_Click(object sender, EventArgs e)
         {
             double dDateLength = Math.Round((tdtend.Value.ToOADate() - tdtstart.Value.ToOADate() + 1), 0);
-            if (dDateLength > 7)
+            if (dDateLength > 32)
             {
                 MessageBox.Show("请查询时间间隔在一周以内的数据！", "提示");
                 return;

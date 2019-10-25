@@ -21,7 +21,10 @@ namespace UnitMag.BOFMag
             Adapter.set_URIParameters("BOFID", UnitID);
             Adapter.Session = session;
             lbBOFID.Text = UnitID;
-
+            if (session.User == "17318")
+            {
+                txtFurnaceAge.ReadOnly = false;
+            }
             return ShowDialog();
         }
 
@@ -31,6 +34,10 @@ namespace UnitMag.BOFMag
             //if (txtCampaign.UpdateData() && txtFurnaceAge.UpdateData() && txtLanceAge.UpdateData() && txtTapholeLife.UpdateData() && l3DataBox1.UpdateData())
             if (txtCampaign.UpdateData() && txtLanceAge.UpdateData() && txtTapholeLife.UpdateData() && l3DataBox1.UpdateData())
             {
+                if (Adapter.Session.User == "17318")
+                {
+                    txtFurnaceAge.UpdateData();
+                }
                 MessageBox.Show("属性修改成功！", "提示");
             } 
             else

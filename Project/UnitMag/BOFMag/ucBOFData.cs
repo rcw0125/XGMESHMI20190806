@@ -675,6 +675,15 @@ namespace UnitMag.BOFMag
             catch { }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Bofwdjs wdjs = new Bofwdjs();
+            wdjs.Adapter = Adapter;
+            wdjs.bofid = Convert.ToInt16(UnitID.Substring(2, 1));
+            wdjs.strHeatid = dbxHeatID.Text.ToString();
+            wdjs.ShowDialog();
+        }
+
         //private void button2_Click(object sender, EventArgs e)
         //{
         //    int iRet = cmdStaticCalculateBOFL2Model.Execute();

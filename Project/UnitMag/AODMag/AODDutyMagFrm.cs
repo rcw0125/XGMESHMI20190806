@@ -70,6 +70,7 @@ namespace UnitMag.AODMag
         private void dvDuty_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             dvDuty.Columns[0].DefaultCellStyle.BackColor = Color.Silver;
+
             dvDuty.Columns[1].DefaultCellStyle.BackColor = Color.Silver;
         }
     }

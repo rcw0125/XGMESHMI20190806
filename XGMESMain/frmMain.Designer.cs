@@ -142,6 +142,7 @@
             this.加热档位查询HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lF吹氩数据查询BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lFToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lF电耗统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rH炉工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
@@ -168,6 +169,7 @@
             this.中包水口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大包水口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.大包称重分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.设备状态变化查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.生产实绩查询PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1409,7 +1411,8 @@
             this.lF数据查询ToolStripMenuItem,
             this.加热档位查询HToolStripMenuItem,
             this.lF吹氩数据查询BToolStripMenuItem,
-            this.lFToolStripMenuItem1});
+            this.lFToolStripMenuItem1,
+            this.lF电耗统计ToolStripMenuItem});
             this.lFToolStripMenuItem.Name = "lFToolStripMenuItem";
             this.lFToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem, "");
@@ -1497,6 +1500,14 @@
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem1, "UnitMag.LFMag.DutyMagFrm, UnitMag");
             this.lFToolStripMenuItem1.Text = "LF责任人维护(&D)...";
             // 
+            // lF电耗统计ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.lF电耗统计ToolStripMenuItem, "LFProcessDataQuery");
+            this.lF电耗统计ToolStripMenuItem.Name = "lF电耗统计ToolStripMenuItem";
+            this.lF电耗统计ToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.panelMain.SetTargetForm(this.lF电耗统计ToolStripMenuItem, "UnitMag.LfdhFrm,UnitMag");
+            this.lF电耗统计ToolStripMenuItem.Text = "LF电耗统计";
+            // 
             // rHToolStripMenuItem
             // 
             this.rHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1565,7 +1576,8 @@
             this.toolStripSeparator7,
             this.连铸数据查询ToolStripMenuItem,
             this.连铸耐材使用实绩查询ToolStripMenuItem,
-            this.连铸责任人维护ToolStripMenuItem});
+            this.连铸责任人维护ToolStripMenuItem,
+            this.大包称重分析ToolStripMenuItem});
             this.连铸工序管理ToolStripMenuItem.Name = "连铸工序管理ToolStripMenuItem";
             this.连铸工序管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.连铸工序管理ToolStripMenuItem, "");
@@ -1714,6 +1726,14 @@
             this.连铸责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.panelMain.SetTargetForm(this.连铸责任人维护ToolStripMenuItem, "UnitMag.CCMMag.DutyMagFrm, UnitMag");
             this.连铸责任人维护ToolStripMenuItem.Text = "连铸责任人维护...";
+            // 
+            // 大包称重分析ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.大包称重分析ToolStripMenuItem, "CCMProcessDataQuery");
+            this.大包称重分析ToolStripMenuItem.Name = "大包称重分析ToolStripMenuItem";
+            this.大包称重分析ToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.panelMain.SetTargetForm(this.大包称重分析ToolStripMenuItem, "UnitMag.LadleWeightFrm, UnitMag");
+            this.大包称重分析ToolStripMenuItem.Text = "大包称重分析";
             // 
             // toolStripSeparator17
             // 
@@ -5099,6 +5119,8 @@
         private System.Windows.Forms.ToolStripMenuItem 钢包折包操作ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nC投料查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 煤气回收统计查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lF电耗统计ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem;
     }
 }
 

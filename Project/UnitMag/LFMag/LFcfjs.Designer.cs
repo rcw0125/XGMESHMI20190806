@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.labelgrade = new System.Windows.Forms.Label();
             this.tbCr = new System.Windows.Forms.TextBox();
             this.tbMn = new System.Windows.Forms.TextBox();
             this.tbSi = new System.Windows.Forms.TextBox();
@@ -78,7 +79,6 @@
             this.crDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jzcfalloydataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
-            this.labelgrade = new System.Windows.Forms.Label();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -242,6 +242,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "元素吸收率";
+            // 
+            // labelgrade
+            // 
+            this.labelgrade.AutoSize = true;
+            this.labelgrade.ForeColor = System.Drawing.Color.Red;
+            this.labelgrade.Location = new System.Drawing.Point(35, 37);
+            this.labelgrade.Name = "labelgrade";
+            this.labelgrade.Size = new System.Drawing.Size(88, 16);
+            this.labelgrade.TabIndex = 2;
+            this.labelgrade.Text = "labelgrade";
             // 
             // tbCr
             // 
@@ -419,8 +429,7 @@
             this.ckbReblow.TabIndex = 3;
             this.ckbReblow.Text = "补吹";
             this.ckbReblow.UseVisualStyleBackColor = true;
-            //this.ckbReblow.CheckedChanged += new System.EventHandler(this.ckbAl_CheckedChanged);
-            //// 
+            // 
             // tbzdsi
             // 
             this.tbzdsi.Location = new System.Drawing.Point(36, 150);
@@ -570,16 +579,6 @@
             // Adapter
             // 
             this.Adapter.Session = null;
-            // 
-            // labelgrade
-            // 
-            this.labelgrade.AutoSize = true;
-            this.labelgrade.ForeColor = System.Drawing.Color.Red;
-            this.labelgrade.Location = new System.Drawing.Point(35, 37);
-            this.labelgrade.Name = "labelgrade";
-            this.labelgrade.Size = new System.Drawing.Size(88, 16);
-            this.labelgrade.TabIndex = 2;
-            this.labelgrade.Text = "labelgrade";
             // 
             // LFcfjs
             // 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
 
@@ -65,6 +67,9 @@ namespace UnitMag.BFMag
                 }
                 else
                 {
+                    string note = "ip地址" + GetLocalIP() + ",手工输入毛重铁次号：" + txtTapNo.Text.Trim() + ",罐号：" + txtTpcNo.Text.Trim();
+                    string strsql = " insert into TS_sys_log(note) values('" + note + "')";
+                    MESTool.exeSql(Adapter, strsql);
                     MessageBox.Show("设定毛重成功！");
                     this.Close();
                 }
@@ -75,6 +80,38 @@ namespace UnitMag.BFMag
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public string GetLocalIP()
+        {
+            try
+            {
+                string ip = "";
+                string HostName = Dns.GetHostName(); //得到主机名
+                IPHostEntry IpEntry = Dns.GetHostEntry(HostName);
+                for (int i = 0; i < IpEntry.AddressList.Length; i++)
+                {
+                    //从IP地址列表中筛选出IPv4类型的IP地址
+                    //AddressFamily.InterNetwork表示此IP为IPv4,
+                    //AddressFamily.InterNetworkV6表示此地址为IPv6类型
+                    if (IpEntry.AddressList[i].AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        if (IpEntry.AddressList[i].ToString().StartsWith("192.168.36") || IpEntry.AddressList[i].ToString().StartsWith("192.168.48") || (IpEntry.AddressList[i].ToString().StartsWith("192.168.2")))
+                        {
+                            return IpEntry.AddressList[i].ToString();
+                        }
+                        ip = IpEntry.AddressList[i].ToString();
+
+
+                    }
+                }
+                return ip;
+            }
+            catch
+            {
+                return "";
+            }
+
         }
 
     }
