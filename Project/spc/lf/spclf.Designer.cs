@@ -61,6 +61,7 @@
             this.Clalarmtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClYuanYin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClGaiJin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClPingJia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClGuid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clx = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clr = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -155,6 +156,7 @@
             this.Clalarmtype,
             this.ClYuanYin,
             this.ClGaiJin,
+            this.ClPingJia,
             this.ClGuid,
             this.Clx,
             this.Clr,
@@ -183,8 +185,8 @@
             this.gvAlarm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvAlarm.Size = new System.Drawing.Size(1176, 201);
             this.gvAlarm.TabIndex = 1;
-            this.gvAlarm.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvAlarm_RowPostPaint);
             this.gvAlarm.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvAlarm_CellContentDoubleClick);
+            this.gvAlarm.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.gvAlarm_RowPostPaint);
             // 
             // tabControl1
             // 
@@ -199,10 +201,10 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.splitContainer1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1168, 317);
+            this.tabPage1.Size = new System.Drawing.Size(1168, 316);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "控制图";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -221,8 +223,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.chartJicha);
-            this.splitContainer1.Size = new System.Drawing.Size(1162, 311);
-            this.splitContainer1.SplitterDistance = 185;
+            this.splitContainer1.Size = new System.Drawing.Size(1162, 310);
+            this.splitContainer1.SplitterDistance = 184;
             this.splitContainer1.TabIndex = 3;
             // 
             // panel1
@@ -233,7 +235,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1162, 185);
+            this.panel1.Size = new System.Drawing.Size(1162, 184);
             this.panel1.TabIndex = 0;
             // 
             // chartDanzhi
@@ -244,7 +246,7 @@
             this.chartDanzhi.Margin = new System.Windows.Forms.Padding(0);
             this.chartDanzhi.Name = "chartDanzhi";
             this.chartDanzhi.PropBag = resources.GetString("chartDanzhi.PropBag");
-            this.chartDanzhi.Size = new System.Drawing.Size(892, 185);
+            this.chartDanzhi.Size = new System.Drawing.Size(892, 184);
             this.chartDanzhi.TabIndex = 1;
             // 
             // chartZhifang
@@ -255,7 +257,7 @@
             this.chartZhifang.Margin = new System.Windows.Forms.Padding(0);
             this.chartZhifang.Name = "chartZhifang";
             this.chartZhifang.PropBag = resources.GetString("chartZhifang.PropBag");
-            this.chartZhifang.Size = new System.Drawing.Size(270, 185);
+            this.chartZhifang.Size = new System.Drawing.Size(270, 184);
             this.chartZhifang.TabIndex = 2;
             // 
             // chartJicha
@@ -336,47 +338,47 @@
             this.跳转到指定炉次ToolStripMenuItem,
             this.导出到EXCELToolStripMenuItem});
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(155, 136);
+            this.menuMain.Size = new System.Drawing.Size(161, 136);
             // 
             // reflashMenuItem
             // 
             this.reflashMenuItem.Name = "reflashMenuItem";
-            this.reflashMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.reflashMenuItem.Size = new System.Drawing.Size(160, 22);
             this.reflashMenuItem.Text = "刷新";
             this.reflashMenuItem.Click += new System.EventHandler(this.记录报警ToolStripMenuItem_Click);
             // 
             // 记录原因ToolStripMenuItem
             // 
             this.记录原因ToolStripMenuItem.Name = "记录原因ToolStripMenuItem";
-            this.记录原因ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.记录原因ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.记录原因ToolStripMenuItem.Text = "记录原因";
             this.记录原因ToolStripMenuItem.Click += new System.EventHandler(this.记录原因ToolStripMenuItem_Click);
             // 
             // 上一炉次ToolStripMenuItem
             // 
             this.上一炉次ToolStripMenuItem.Name = "上一炉次ToolStripMenuItem";
-            this.上一炉次ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.上一炉次ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.上一炉次ToolStripMenuItem.Text = "上一炉次";
             this.上一炉次ToolStripMenuItem.Click += new System.EventHandler(this.上一炉次ToolStripMenuItem_Click);
             // 
             // 下一炉次ToolStripMenuItem
             // 
             this.下一炉次ToolStripMenuItem.Name = "下一炉次ToolStripMenuItem";
-            this.下一炉次ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.下一炉次ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.下一炉次ToolStripMenuItem.Text = "下一炉次";
             this.下一炉次ToolStripMenuItem.Click += new System.EventHandler(this.下一炉次ToolStripMenuItem_Click);
             // 
             // 跳转到指定炉次ToolStripMenuItem
             // 
             this.跳转到指定炉次ToolStripMenuItem.Name = "跳转到指定炉次ToolStripMenuItem";
-            this.跳转到指定炉次ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.跳转到指定炉次ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.跳转到指定炉次ToolStripMenuItem.Text = "跳转到指定炉次";
             this.跳转到指定炉次ToolStripMenuItem.Click += new System.EventHandler(this.跳转到指定炉次ToolStripMenuItem_Click);
             // 
             // 导出到EXCELToolStripMenuItem
             // 
             this.导出到EXCELToolStripMenuItem.Name = "导出到EXCELToolStripMenuItem";
-            this.导出到EXCELToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.导出到EXCELToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.导出到EXCELToolStripMenuItem.Text = "导出到EXCEL";
             this.导出到EXCELToolStripMenuItem.Click += new System.EventHandler(this.导出到EXCELToolStripMenuItem_Click);
             // 
@@ -437,6 +439,13 @@
             this.ClGaiJin.HeaderText = "改进措施";
             this.ClGaiJin.Name = "ClGaiJin";
             this.ClGaiJin.ReadOnly = true;
+            // 
+            // ClPingJia
+            // 
+            this.ClPingJia.DataPropertyName = "pingjia";
+            this.ClPingJia.HeaderText = "评价";
+            this.ClPingJia.Name = "ClPingJia";
+            this.ClPingJia.ReadOnly = true;
             // 
             // ClGuid
             // 
@@ -659,6 +668,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Clalarmtype;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClYuanYin;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClGaiJin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClPingJia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClGuid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Clx;
         private System.Windows.Forms.DataGridViewTextBoxColumn Clr;
@@ -678,6 +688,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClMse;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClAnaItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClAnaType;
-
     }
 }

@@ -480,7 +480,7 @@ namespace spc
             }
             else if (maintype == "tundishtemp")
             {
-                sqlSb.Append("select t1.heatid as HEATID,t1.team as TEAM,'CCM' as ANATYPE,'" + qcitemcode + "' as ANAITEM,t1.MEASURE_TIME AS REPORT_DATE,t1." + qcitemcode + " as VAL,t2.Guid,t2.AlarmType,t2.YuanYin,t2.Gaijin,t2.AvgX,t2.MR,t2.Sd,t2.Mse from (");
+                sqlSb.Append("select t1.heatid as HEATID,t1.team as TEAM,'CCM' as ANATYPE,'" + qcitemcode + "' as ANAITEM,t1.MEASURE_TIME AS REPORT_DATE,t1." + qcitemcode + " as VAL,t2.Guid,t2.AlarmType,t2.YuanYin,t2.Gaijin,t2.pingjia,t2.AvgX,t2.MR,t2.Sd,t2.Mse from (");
                 sqlSb.Append("select lb.heatid,ap.team,lb.MEASURE_TIME,lb." + qcitemcode + ",ROW_NUMBER()OVER(PARTITION BY lb.heatid ORDER BY lb.MEASURE_TIME DESC) as RN,ROW_NUMBER()OVER(ORDER BY lb.MEASURE_TIME DESC) as ARN from cccm_heat_tundishtemp lb ");
                 sqlSb.Append(" inner join (select a.treatno,a.team,a.heatid,a.steelgradeindex,a.productiondate,b.tundish_heatnum from cccm_base_data a,cccm_process_data b where a.heatid=b.heatid and b.tundish_heatnum <>1) ap on ap.heatid=lb.heatid");
                // sqlSb.Append(string.Format(" where  lb.sample_address='{0}' ", unit));
@@ -649,6 +649,10 @@ namespace spc
                             {
                                 spc.GaiJin = dr.IsNull(col) ? "" : dr[col].ToString();
                             }
+                            else if (col.ColumnName.ToUpper() == "PINGJIA")
+                            {
+                                spc.PingJia = dr.IsNull(col) ? "" : dr[col].ToString();
+                            }
                             //else if (col.ColumnName.ToUpper() == "AVGX")
                             //{
                             //   // spc.AvgX = dr.IsNull(col) ? null : (double?)Convert.ToDouble(dr[col]);
@@ -660,7 +664,7 @@ namespace spc
                             //    {
                             //        spc.AvgX = (double)Convert.ToDouble(dr[col]);
                             //    }
-                               
+
                             //}
                             //else if (col.ColumnName.ToUpper() == "MR")
                             //{
@@ -865,12 +869,12 @@ namespace spc
                     gvAlarm.Rows[i].Cells["Clalarmtype"].Value = spcData[i].AlarmType;
                     gvAlarm.Rows[i].Cells["ClYuanYin"].Value = spcData[i].YuanYin;
                     gvAlarm.Rows[i].Cells["ClGaiJin"].Value = spcData[i].GaiJin;
+                    gvAlarm.Rows[i].Cells["ClPingJia"].Value = spcData[i].PingJia;
                     gvAlarm.Rows[i].Cells["ClGuid"].Value = spcData[i].Guid;
                     gvAlarm.Rows[i].Cells["Clx"].Value = spcData[i].X;
                     gvAlarm.Rows[i].Cells["Clr"].Value = spcData[i].R;
                     gvAlarm.Rows[i].Cells["ClUsl"].Value = spcData[i].USL;
                     gvAlarm.Rows[i].Cells["ClLsl"].Value = spcData[i].LSL;
-
                     gvAlarm.Rows[i].Cells["ClAvgX"].Value = spcData[i].AvgX;
                     gvAlarm.Rows[i].Cells["ClSd"].Value = spcData[i].Sd;
                     gvAlarm.Rows[i].Cells["ClUslx"].Value = spcData[i].USLX;
@@ -1013,10 +1017,10 @@ namespace spc
             string heatid = gvAlarm.Rows[e.RowIndex].Cells["ClHeatID"].Value.ToString();
             string yuanyin = gvAlarm.Rows[e.RowIndex].Cells["ClYuanYin"].Value.ToString();
             string gaijin = gvAlarm.Rows[e.RowIndex].Cells["ClGaiJin"].Value.ToString();
-            string _yuanyin = yuanyin, _gaijin = gaijin;
+            string _yuanyin = yuanyin, _gaijin = gaijin,pingjia="";
             Remark re = new Remark();
             //re.remark(heatid, alarmtype, ref yuanyin,ref  gaijin,maintype,this.Adapter.Session);
-            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin, maintype + qcitemcode, this.Adapter.Session);
+            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin,ref pingjia, maintype + qcitemcode, this.Adapter.Session);
             if ((_yuanyin != yuanyin) || (_gaijin != gaijin))
             {
                 gvAlarm.Rows[e.RowIndex].Cells["ClYuanYin"].Value = yuanyin;
@@ -1138,14 +1142,20 @@ namespace spc
             string heatid = gvAlarm.CurrentRow.Cells["ClHeatID"].Value.ToString();
             string yuanyin = gvAlarm.CurrentRow.Cells["ClYuanYin"].Value.ToString();
             string gaijin = gvAlarm.CurrentRow.Cells["ClGaiJin"].Value.ToString();
-            string _yuanyin = yuanyin, _gaijin = gaijin;
+            string pingjia = "";// ClPingJia
+            if (gvAlarm.CurrentRow.Cells["ClPingJia"].Value != null)
+            {
+                pingjia = gvAlarm.CurrentRow.Cells["ClPingJia"].Value.ToString();
+            }
+            string _yuanyin = yuanyin, _gaijin = gaijin, _pingjia = pingjia;
             Remark re = new Remark();
             //re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin);
-            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin, maintype + qcitemcode, this.Adapter.Session);
-            if ((_yuanyin != yuanyin) || (_gaijin != gaijin))
+            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin,ref pingjia, maintype + qcitemcode, this.Adapter.Session);
+            if ((_yuanyin != yuanyin) || (_gaijin != gaijin)||(_pingjia != pingjia))
             {
                 gvAlarm.CurrentRow.Cells["ClYuanYin"].Value = yuanyin;
                 gvAlarm.CurrentRow.Cells["ClGaiJin"].Value = gaijin;
+                gvAlarm.CurrentRow.Cells["ClPingJia"].Value = pingjia;
                 //      MessageBox.Show(heatid + "-" + alarmtype + "-" + yuanyin + "-" + gaijin);
 
                 if ((string)gvAlarm.CurrentRow.Cells["ClGuid"].Value == "")
@@ -1168,7 +1178,7 @@ namespace spc
                     //  string insert_operator = Adapter.GetUserDescription(Adapter.Session.User);
                     string insert_operator = Adapter.Session.User;
 
-                    sb.Append("INSERT INTO SPC_AlarmData(Guid,HeatId,AnaType,AnaItem,AlarmType,YuanYin,GaiJin,insert_time,insert_operator,AvgX,MR,Sd,Cpk,Ppk,unit,MSE) Values(");
+                    sb.Append("INSERT INTO SPC_AlarmData(Guid,HeatId,AnaType,AnaItem,AlarmType,YuanYin,GaiJin,pingjia,insert_time,insert_operator,AvgX,MR,Sd,Cpk,Ppk,unit,MSE) Values(");
                     sb.Append("'" + Guid + "',");
                     sb.Append("'" + heatid + "',");
                     sb.Append("'" + AnaType + "',");
@@ -1176,6 +1186,7 @@ namespace spc
                     sb.Append("'" + alarmtype + "',");
                     sb.Append("'" + yuanyin + "',");
                     sb.Append("'" + gaijin + "',");
+                    sb.Append("'" + pingjia + "',");
                     sb.Append("'" + nowtime + "',");
                     sb.Append("'" + insert_operator + "',");
                     sb.Append(AvgX + ",");
@@ -1211,6 +1222,7 @@ namespace spc
                     sb.Append(" AlarmType='" + alarmtype + "',");
                     sb.Append(" YuanYin='" + yuanyin + "',");
                     sb.Append(" GaiJin='" + gaijin + "',");
+                    sb.Append(" pingjia='" + pingjia + "',");
                     sb.Append(" AvgX=" + AvgX + ",");
                     sb.Append(" MR=" + MR + ",");
                     sb.Append(" Sd=" + Sd + ",");

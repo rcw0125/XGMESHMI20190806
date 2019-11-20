@@ -84,7 +84,7 @@ namespace spc
 
         
 
-        public bool remark(string heatid, string alarmtype, ref string yuanyin, ref string gaijin,string  type,AppSvrIF.Session session)
+        public bool remark(string heatid, string alarmtype, ref string yuanyin, ref string gaijin, ref string pingjia, string  type,AppSvrIF.Session session)
         {
             tbHeatid.Text = heatid;
             tbAlarmtype.Text = alarmtype;
@@ -92,11 +92,13 @@ namespace spc
             this.Adapter.Session = session;
             maintype = type;
             tbGaijin.Text = gaijin;
+            tbPingJia.Text = pingjia;
             loadData();
             if (ShowDialog() != DialogResult.OK)
                 return false;
             yuanyin = cbYuanyin.Text.Trim();
             gaijin = tbGaijin.Text.Trim();
+            pingjia = tbPingJia.Text.Trim();
             return true;
         }
         //public bool remark(string heatid, string alarmtype, ref string yuanyin, ref string gaijin)

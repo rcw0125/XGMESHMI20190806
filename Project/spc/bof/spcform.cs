@@ -1300,10 +1300,10 @@ namespace spc
             }
             string yuanyin = gvAlarm.Rows[e.RowIndex].Cells["ClYuanYin"].Value.ToString();
             string gaijin = gvAlarm.Rows[e.RowIndex].Cells["ClGaiJin"].Value.ToString();
-            string _yuanyin = yuanyin, _gaijin = gaijin;
+            string _yuanyin = yuanyin, _gaijin = gaijin,pingjia="";
             String bofunit = qc_des.Substring(0, 3);
             Remark re = new Remark();
-            re.remark(heatid, alarmtype, ref yuanyin,ref  gaijin,maintype+qcitemcode,this.Adapter.Session);
+            re.remark(heatid, alarmtype, ref yuanyin,ref  gaijin,ref pingjia,maintype+qcitemcode,this.Adapter.Session);
             if ((_yuanyin != yuanyin) || (_gaijin != gaijin))
             {
                 gvAlarm.Rows[e.RowIndex].Cells["ClYuanYin"].Value = yuanyin;
@@ -1425,11 +1425,11 @@ namespace spc
             }
             string yuanyin = gvAlarm.CurrentRow.Cells["ClYuanYin"].Value.ToString();
             string gaijin = gvAlarm.CurrentRow.Cells["ClGaiJin"].Value.ToString();
-            string _yuanyin = yuanyin, _gaijin = gaijin;
+            string _yuanyin = yuanyin, _gaijin = gaijin,pingjia="";
             String bofunit = qc_des.Substring(0,3);
             Remark re = new Remark();
            // re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin);
-            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin, maintype + qcitemcode, this.Adapter.Session);
+            re.remark(heatid, alarmtype, ref yuanyin, ref  gaijin,ref pingjia, maintype + qcitemcode, this.Adapter.Session);
             
            
             if ((_yuanyin != yuanyin) || (_gaijin != gaijin))

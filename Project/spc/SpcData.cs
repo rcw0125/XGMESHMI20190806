@@ -821,6 +821,25 @@ namespace spc
             }
         }
 
+        private string pingJia = "";
+        /// <summary>
+        /// 效果评价
+        /// </summary>
+        [DisplayName("效果评价")]
+        public string PingJia
+        {
+            get { return pingJia; }
+            set
+            {
+                if (pingJia != value)
+                {
+                    pingJia = value;
+                    RaisePropertyChanged("PingJia");
+                    rowState = DataRowState.Modified;
+                }
+            }
+        }
+
 
 
         private string guid = "";

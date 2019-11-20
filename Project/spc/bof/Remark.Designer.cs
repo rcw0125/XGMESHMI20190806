@@ -39,6 +39,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
             this.cbYuanyin = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbPingJia = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 127);
+            this.label3.Location = new System.Drawing.Point(68, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 4;
@@ -86,7 +88,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 187);
+            this.label4.Location = new System.Drawing.Point(68, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 5;
@@ -94,7 +96,7 @@
             // 
             // tbGaijin
             // 
-            this.tbGaijin.Location = new System.Drawing.Point(154, 187);
+            this.tbGaijin.Location = new System.Drawing.Point(154, 140);
             this.tbGaijin.Multiline = true;
             this.tbGaijin.Name = "tbGaijin";
             this.tbGaijin.Size = new System.Drawing.Size(266, 50);
@@ -103,7 +105,7 @@
             // btnSave
             // 
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.Location = new System.Drawing.Point(313, 258);
+            this.btnSave.Location = new System.Drawing.Point(313, 284);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(107, 33);
             this.btnSave.TabIndex = 6;
@@ -117,17 +119,36 @@
             // cbYuanyin
             // 
             this.cbYuanyin.FormattingEnabled = true;
-            this.cbYuanyin.Location = new System.Drawing.Point(154, 127);
+            this.cbYuanyin.Location = new System.Drawing.Point(154, 102);
             this.cbYuanyin.Name = "cbYuanyin";
             this.cbYuanyin.Size = new System.Drawing.Size(266, 20);
             this.cbYuanyin.TabIndex = 7;
             this.cbYuanyin.SelectedIndexChanged += new System.EventHandler(this.cbYuanyin_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(68, 207);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "效果评价：";
+            // 
+            // tbPingJia
+            // 
+            this.tbPingJia.Location = new System.Drawing.Point(154, 207);
+            this.tbPingJia.Multiline = true;
+            this.tbPingJia.Name = "tbPingJia";
+            this.tbPingJia.Size = new System.Drawing.Size(266, 50);
+            this.tbPingJia.TabIndex = 8;
             // 
             // Remark
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 329);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbPingJia);
             this.Controls.Add(this.cbYuanyin);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label4);
@@ -157,5 +178,7 @@
         private System.Windows.Forms.Button btnSave;
         private AppSvrHMI.L3Adapter Adapter;
         private System.Windows.Forms.ComboBox cbYuanyin;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbPingJia;
     }
 }
