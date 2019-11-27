@@ -37,19 +37,42 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.tbheatid = new System.Windows.Forms.TextBox();
+            this.lbcurtemp = new System.Windows.Forms.Label();
             this.lbtemp = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Adapter = new AppSvrHMI.L3Adapter(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbcurtemp = new System.Windows.Forms.Label();
             this.wdmodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Adapter = new AppSvrHMI.L3Adapter(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.heatidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lactemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ironweightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scrapweightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ykweight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pigironweight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.siDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -175,6 +198,18 @@
             this.tbheatid.Size = new System.Drawing.Size(115, 26);
             this.tbheatid.TabIndex = 1;
             // 
+            // lbcurtemp
+            // 
+            this.lbcurtemp.AutoSize = true;
+            this.lbcurtemp.Font = new System.Drawing.Font("宋体", 14F);
+            this.lbcurtemp.ForeColor = System.Drawing.Color.Red;
+            this.lbcurtemp.Location = new System.Drawing.Point(122, 119);
+            this.lbcurtemp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbcurtemp.Name = "lbcurtemp";
+            this.lbcurtemp.Size = new System.Drawing.Size(19, 19);
+            this.lbcurtemp.TabIndex = 0;
+            this.lbcurtemp.Text = "0";
+            // 
             // lbtemp
             // 
             this.lbtemp.AutoSize = true;
@@ -186,6 +221,16 @@
             this.lbtemp.Size = new System.Drawing.Size(19, 19);
             this.lbtemp.TabIndex = 0;
             this.lbtemp.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 121);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "本炉温度:";
             // 
             // label3
             // 
@@ -218,6 +263,7 @@
             this.ironweightDataGridViewTextBoxColumn,
             this.scrapweightDataGridViewTextBoxColumn,
             this.ykweight,
+            this.pigironweight,
             this.cDataGridViewTextBoxColumn,
             this.siDataGridViewTextBoxColumn,
             this.mnDataGridViewTextBoxColumn,
@@ -243,35 +289,167 @@
             this.dataGridView1.Size = new System.Drawing.Size(1071, 214);
             this.dataGridView1.TabIndex = 0;
             // 
+            // wdmodelBindingSource
+            // 
+            this.wdmodelBindingSource.DataSource = typeof(UnitMag.BOFMag.wdmodel);
+            // 
             // Adapter
             // 
             this.Adapter.Session = null;
             // 
-            // label4
+            // dataGridViewTextBoxColumn1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 121);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "本炉温度:";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "heatid";
+            this.dataGridViewTextBoxColumn1.HeaderText = "炉号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // lbcurtemp
+            // dataGridViewTextBoxColumn2
             // 
-            this.lbcurtemp.AutoSize = true;
-            this.lbcurtemp.Font = new System.Drawing.Font("宋体", 14F);
-            this.lbcurtemp.ForeColor = System.Drawing.Color.Red;
-            this.lbcurtemp.Location = new System.Drawing.Point(122, 119);
-            this.lbcurtemp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbcurtemp.Name = "lbcurtemp";
-            this.lbcurtemp.Size = new System.Drawing.Size(19, 19);
-            this.lbcurtemp.TabIndex = 0;
-            this.lbcurtemp.Text = "0";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "lactemp";
+            this.dataGridViewTextBoxColumn2.HeaderText = "拉碳温度";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            this.dataGridViewTextBoxColumn2.Width = 70;
             // 
-            // wdmodelBindingSource
+            // dataGridViewTextBoxColumn3
             // 
-            this.wdmodelBindingSource.DataSource = typeof(UnitMag.BOFMag.wdmodel);
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ironweight";
+            this.dataGridViewTextBoxColumn3.HeaderText = "铁水重量";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "scrapweight";
+            this.dataGridViewTextBoxColumn4.HeaderText = "废钢重量";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ykweight";
+            this.dataGridViewTextBoxColumn5.HeaderText = "压块";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "c";
+            this.dataGridViewTextBoxColumn6.HeaderText = "C";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "si";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Si";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "mn";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Mn";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "p";
+            this.dataGridViewTextBoxColumn9.HeaderText = "P";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "irontemp";
+            this.dataGridViewTextBoxColumn10.HeaderText = "铁水温度";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "shihui";
+            this.dataGridViewTextBoxColumn11.HeaderText = "石灰";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "baiyunhui";
+            this.dataGridViewTextBoxColumn12.HeaderText = "白云灰";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "baiyunshi";
+            this.dataGridViewTextBoxColumn13.HeaderText = "白云石";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "shihuishi";
+            this.dataGridViewTextBoxColumn14.HeaderText = "石灰石";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "shaojiekuang";
+            this.dataGridViewTextBoxColumn15.HeaderText = "烧结矿";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "cgfrj";
+            this.dataGridViewTextBoxColumn16.HeaderText = "碳硅发热剂";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "zdc";
+            this.dataGridViewTextBoxColumn17.HeaderText = "终点C";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "liuzha";
+            this.dataGridViewTextBoxColumn18.HeaderText = "留渣";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 55;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "o2time";
+            this.dataGridViewTextBoxColumn19.HeaderText = "供氧时间";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "sxzweight";
+            this.dataGridViewTextBoxColumn20.HeaderText = "三选钢渣";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "tlzweight";
+            this.dataGridViewTextBoxColumn21.HeaderText = "脱硫渣";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "qgzweight";
+            this.dataGridViewTextBoxColumn22.HeaderText = "切割渣";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 70;
             // 
             // heatidDataGridViewTextBoxColumn
             // 
@@ -307,6 +485,13 @@
             this.ykweight.HeaderText = "压块";
             this.ykweight.Name = "ykweight";
             this.ykweight.Width = 70;
+            // 
+            // pigironweight
+            // 
+            this.pigironweight.DataPropertyName = "pigironweight";
+            this.pigironweight.HeaderText = "铁块";
+            this.pigironweight.Name = "pigironweight";
+            this.pigironweight.Width = 70;
             // 
             // cDataGridViewTextBoxColumn
             // 
@@ -485,6 +670,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ironweightDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn scrapweightDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ykweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pigironweight;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn siDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mnDataGridViewTextBoxColumn;
@@ -502,5 +688,27 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sxzweight;
         private System.Windows.Forms.DataGridViewTextBoxColumn tlzweight;
         private System.Windows.Forms.DataGridViewTextBoxColumn qgzweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
     }
 }

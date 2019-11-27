@@ -89,6 +89,7 @@
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.出钢计划查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.钢坯计划订单执行情况查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.收坯统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.进厂铁水管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.铁水收集管理ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -969,7 +970,8 @@
             this.节奏控制ToolStripMenuItem,
             this.toolStripSeparator12,
             this.出钢计划查询ToolStripMenuItem,
-            this.钢坯计划订单执行情况查询ToolStripMenuItem});
+            this.钢坯计划订单执行情况查询ToolStripMenuItem,
+            this.收坯统计ToolStripMenuItem});
             this.计划管理ToolStripMenuItem.Name = "计划管理ToolStripMenuItem";
             this.计划管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 21);
             this.panelMain.SetTargetForm(this.计划管理ToolStripMenuItem, "");
@@ -1035,6 +1037,14 @@
             this.钢坯计划订单执行情况查询ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.panelMain.SetTargetForm(this.钢坯计划订单执行情况查询ToolStripMenuItem, "PlanMag.BloomPlanQueryFrm, PlanMag");
             this.钢坯计划订单执行情况查询ToolStripMenuItem.Text = "钢坯计划订单执行情况查询...";
+            // 
+            // 收坯统计ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.收坯统计ToolStripMenuItem, "BtnChengeRoute");
+            this.收坯统计ToolStripMenuItem.Name = "收坯统计ToolStripMenuItem";
+            this.收坯统计ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.panelMain.SetTargetForm(this.收坯统计ToolStripMenuItem, "UnitMag.shoupiFrm,UnitMag");
+            this.收坯统计ToolStripMenuItem.Text = "收坯统计";
             // 
             // 工序管理ToolStripMenuItem
             // 
@@ -5121,6 +5131,7 @@
         private System.Windows.Forms.ToolStripMenuItem 煤气回收统计查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lF电耗统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 收坯统计ToolStripMenuItem;
     }
 }
 

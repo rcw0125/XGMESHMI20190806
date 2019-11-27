@@ -112,6 +112,21 @@ namespace UnitMag.BOFMag
                     piancha += Math.Round(((tempdataList[1].ykweight - tempdataList[0].ykweight) / 1) * (-29), 1);
                 }
 
+                if (tempdataList[0].pigironweight >= 0 && tempdataList[1].pigironweight >= 0)
+                {
+                    piancha += Math.Round(((tempdataList[1].pigironweight - tempdataList[0].pigironweight) / 1) * (-16), 1);
+                }
+                double chazhi = tempdataList[0].ironweight + tempdataList[0].pigironweight + tempdataList[0].scrapweight - tempdataList[1].ironweight - tempdataList[1].pigironweight - tempdataList[1].scrapweight;
+                //供氧时间的影响，只考虑铁水、铁块、废钢+压块三者偏差均在±0.5t以内（＜0.5t）时计算，其它情况不参与计算
+                if (Math.Abs(chazhi) < 0.5)
+                {
+                    if (tempdataList[0].o2time > 0 && tempdataList[1].o2time > 0)
+                    {
+                        piancha += Math.Round(((tempdataList[1].o2time - tempdataList[0].o2time) / 15) * (10), 1);
+                    }
+
+                }
+
                 #endregion
 
                 #region 加入散装料部分
@@ -152,11 +167,7 @@ namespace UnitMag.BOFMag
                 {
                     piancha += Math.Round(((tempdataList[1].zdc - tempdataList[0].zdc) / 0.01) * (-2), 1);
                 }
-
-                if (tempdataList[0].o2time > 0 && tempdataList[1].o2time > 0)
-                {
-                    piancha += Math.Round(((tempdataList[1].o2time - tempdataList[0].o2time) / 15) * (10), 1);
-                }
+               
 
                 if (tempdataList[0].liuzha != tempdataList[1].liuzha)
                 {
@@ -198,7 +209,7 @@ namespace UnitMag.BOFMag
             {
                 tempdataList.Clear();
                 string preheatid = (Convert.ToInt64(tbheatid.Text.Trim()) - 1).ToString();
-                string strSql = " select heatid,ironweight ,(scrapweight + ykweight) as scrapweight,c,si,mn,p,irontemp ,ykweight,";
+                string strSql = " select heatid,ironweight ,(scrapweight + ykweight) as scrapweight,c,si,mn,p,irontemp ,ykweight,pigironweight,";
                 strSql += " (select  decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13301') as shihui,";
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13305') as baiyunhui, ";
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13323') as baiyunshi, ";
@@ -222,6 +233,7 @@ namespace UnitMag.BOFMag
                         tempdata.ironweight = Math.Round(Convert.ToDouble(dt.Rows[i]["ironweight"]), 1) ;
                         tempdata.scrapweight = Math.Round(Convert.ToDouble(dt.Rows[i]["scrapweight"]),1);
                         tempdata.ykweight = Math.Round(Convert.ToDouble(dt.Rows[i]["ykweight"]), 1);
+                        tempdata.pigironweight = Math.Round(Convert.ToDouble(dt.Rows[i]["pigironweight"]), 1);
                         tempdata.c =Math.Round(Convert.ToDouble(dt.Rows[i]["c"]),3) ;
                         tempdata.si = Math.Round(Convert.ToDouble(dt.Rows[i]["si"]), 3);
                         tempdata.mn = Math.Round(Convert.ToDouble(dt.Rows[i]["mn"]), 3);
@@ -307,6 +319,10 @@ namespace UnitMag.BOFMag
                 {
                     tempdataList[1].ironweight = tempdataList[0].ironweight;
                 }
+                if (tempdataList[1].pigironweight < 0.0001)
+                {
+                    tempdataList[1].pigironweight = tempdataList[0].pigironweight;
+                }
 
                 if (tempdataList[1].ironweight < 0.0001)
                 {
@@ -363,6 +379,8 @@ namespace UnitMag.BOFMag
         public double scrapweight { get; set; }
         [DisplayName("压块")]
         public double ykweight { get; set; }
+        [DisplayName("铁块")]
+        public double pigironweight { get; set; }
 
         [DisplayName("三选钢渣")]
         public double sxzweight { get; set; }
