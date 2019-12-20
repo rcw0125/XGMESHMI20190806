@@ -1,4 +1,4 @@
-﻿namespace UnitMag.LFMag
+﻿namespace UnitMag.RHMag
 {
     partial class RHBlowArDataQueryFrm
     {
@@ -295,7 +295,7 @@
             this.dsBase.SourceCondition = "1=2";
             this.dsBase.SourceMethod = "";
             this.dsBase.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsBase.SourceURI = "XGMESLogic\\LFMag\\CRH_BlowAr_Data";
+            this.dsBase.SourceURI = "XGMESLogic\\RHMag\\CRH_BlowAr_Data";
             this.dsBase.SubscribeTarget = "";
             this.dsBase.Tables.AddRange(new System.Data.DataTable[] {
             this.schemadsBase});
@@ -341,7 +341,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -414,7 +414,7 @@
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(49, 22);
+            this.btnQuery.Size = new System.Drawing.Size(52, 22);
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -439,7 +439,7 @@
             // 
             this.toolStripLabel5.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(17, 22);
+            this.toolStripLabel5.Size = new System.Drawing.Size(20, 22);
             this.toolStripLabel5.Text = "－";
             // 
             // dtStart
@@ -481,7 +481,7 @@
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(40, 22);
             this.toolStripLabel2.Text = "RH炉:";
             // 
             // txtHeatID
@@ -503,7 +503,7 @@
             this.btnOutPut.Image = ((System.Drawing.Image)(resources.GetObject("btnOutPut.Image")));
             this.btnOutPut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOutPut.Name = "btnOutPut";
-            this.btnOutPut.Size = new System.Drawing.Size(91, 22);
+            this.btnOutPut.Size = new System.Drawing.Size(93, 22);
             this.btnOutPut.Text = "导出到Excel";
             this.btnOutPut.Click += new System.EventHandler(this.btnOutPut_Click);
             // 

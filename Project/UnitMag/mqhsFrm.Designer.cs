@@ -232,11 +232,9 @@
             this.dvTel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvTel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvTel.Location = new System.Drawing.Point(0, 25);
-            this.dvTel.MultiSelect = false;
             this.dvTel.Name = "dvTel";
             this.dvTel.ReadOnly = true;
             this.dvTel.RowTemplate.Height = 23;
-            this.dvTel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvTel.Size = new System.Drawing.Size(895, 569);
             this.dvTel.TabIndex = 34;
             this.dvTel.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvTel_DataError);

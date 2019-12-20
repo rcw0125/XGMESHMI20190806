@@ -2139,7 +2139,7 @@
             this.coldsMainMatL3DataTableName,
             this.coldsMainMatL3DataTableReturn_Steel_Weight,
             this.coldsMainMatL3DataTableCr,
-             this.coldsMainMatL3DataTableYkWeight});
+            this.coldsMainMatL3DataTableYkWeight});
             this.schemadsMainMat.TableName = "L3DataTable";
             // 
             // coldsMainMatL3DataTableHeatID
@@ -2250,7 +2250,6 @@
             this.coldsMainMatL3DataTableCr.ColumnName = "Cr";
             this.coldsMainMatL3DataTableCr.DataType = typeof(float);
             this.coldsMainMatL3DataTableCr.Namespace = "";
-
             // 
             // coldsMainMatL3DataTableYkWeight
             // 
@@ -4452,6 +4451,7 @@
             this.txtTappingWeight.VaildWarning = "";
             this.txtTappingWeight.ValidEable = true;
             this.txtTappingWeight.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
+         
             // 
             // label43
             // 

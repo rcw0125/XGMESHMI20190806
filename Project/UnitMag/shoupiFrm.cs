@@ -76,12 +76,30 @@ namespace UnitMag
                 strsql += "        from cccm_base_data a ,cbof_feed_data b, csteel_data c where a.heatid = b.heatid and a.heatid = c.heatid ";
                 strsql += "       and to_char(productiondate,'yyyy-MM-dd')= '"+strStart+"' and a.ccmid='S6"+toolStripComboBox1.Text.Substring(0,1)+"' order by a.ccmid,a.productiondate ";
                 strsql += "       )";
+
+                if (toolStripComboBox1.Text.StartsWith("6"))
+                {
+                    strsql += "       union  select ccmid as 铸机,heatid as 炉号,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
+                    strsql += "        from (";
+                    strsql += "        select substr(a.ccmid, 3, 1) || '#连铸机' as ccmid, a.heatid, a.steelgrade,(select cal_weight  from cbloom_data where cbloom_data.heatid = a.heatid) as bloomweight, ";
+                    strsql += "        (select substr(ccmid, 3, 1) || '-' || tundish_heatnum from cccm_process_data where cccm_process_data.heatid = a.heatid) as baocihao,";
+                    strsql += "        round(b.ironweight, 2) as ironweight,round(b.scrapweight, 2) as scrapweight,round(b.pigironweight, 2) as pigironweight,0 as ykweight,c.weight as steelweight,to_char(a.productiondate,'HH24:MI:SS') as productiondate";
+                    strsql += "        from cccm_base_data a ,caod_feed_data b, csteel_data c where a.heatid = b.heatid and a.heatid = c.heatid ";
+                    strsql += "       and to_char(productiondate,'yyyy-MM-dd')= '" + strStart + "' and a.ccmid='S6" + toolStripComboBox1.Text.Substring(0, 1) + "' order by a.ccmid,a.productiondate ";
+                    strsql += "       )";
+
+                }
             }
             
 
             var data = UnitMag.MESTool.GetData(Adapter, strsql);
             listscsj.Clear();
             double ironweight = 0, scrapweight = 0, pigironweight = 0, ykweight = 0, steelweight = 0, shoupi = 0;
+            if (data == null)
+            {
+                MessageBox.Show("没有查询到数据！");
+                return;
+            }
             for (int i = 0; i < data.Rows.Count; i++)
             {
                 scsj curscsj = new scsj();
@@ -101,6 +119,15 @@ namespace UnitMag
                 curscsj.钢水 = (double)data.Rows[i]["钢水"];
                 steelweight += curscsj.钢水;
                 curscsj.收坯 = (double)data.Rows[i]["收坯"];
+                if (curscsj.收坯 > 1)
+                {
+                    curscsj.铁耗 = Math.Round(curscsj.铁水 * 1000 / curscsj.收坯, 1);
+                }
+                else
+                {
+                    curscsj.铁耗 = 0;
+                }
+                
                 shoupi += curscsj.收坯;
                 listscsj.Add(curscsj);
             }
@@ -128,6 +155,7 @@ namespace UnitMag
                 pjscsj.压块 = Math.Round(ykweight / data.Rows.Count, 2);
                 pjscsj.钢水 = Math.Round(steelweight / data.Rows.Count, 2);
                 pjscsj.收坯 = Math.Round(shoupi / data.Rows.Count, 2);
+                pjscsj.铁耗 = Math.Round(ljscsj.铁水*1000 / ljscsj.收坯, 2);
             }
             else
             {
@@ -137,6 +165,7 @@ namespace UnitMag
                 pjscsj.压块 = 0;
                 pjscsj.钢水 = 0;
                 pjscsj.收坯 = 0;
+                pjscsj.铁耗 = 0;
             }
             listscsj.Add(ljscsj);
             listscsj.Add(pjscsj);
@@ -187,6 +216,8 @@ namespace UnitMag
         public double 压块 { get; set; }
         public double 钢水 { get; set; }
         public double 收坯 { get; set; }
+
+        public double 铁耗 { get; set; }
 
 
 

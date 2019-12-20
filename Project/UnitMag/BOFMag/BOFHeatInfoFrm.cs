@@ -1624,21 +1624,23 @@ namespace UnitMag.BOFMag
             }
         }
 
-            //DataRow drNew = dsExceptCode.Tables[0].NewRow();
+      
+
+        //DataRow drNew = dsExceptCode.Tables[0].NewRow();
 
 
-            //drNew["EXCEPTIONAL_CODE"] = Convert.ToString(tempt + 1);
-            //drNew["EXCEPTIONAL_DES"] = txtExcept.Text.Trim();
-            //drNew["UNIT"] = "2";
-            //drNew["AUTO_JUDGE_FLAG"] = "0";
+        //drNew["EXCEPTIONAL_CODE"] = Convert.ToString(tempt + 1);
+        //drNew["EXCEPTIONAL_DES"] = txtExcept.Text.Trim();
+        //drNew["UNIT"] = "2";
+        //drNew["AUTO_JUDGE_FLAG"] = "0";
 
 
-            //dsExceptCode.Tables[0].Rows.Add(drNew);
-            //dsExceptCode.AcceptChanges();
-           // dsExceptCode.UpdateData();
+        //dsExceptCode.Tables[0].Rows.Add(drNew);
+        //dsExceptCode.AcceptChanges();
+        // dsExceptCode.UpdateData();
 
 
-        }
+    }
 
 
 

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using EDoor.WinFormsUI.Docking;
 using HMIBase;
 
-namespace UnitMag.LFMag
+namespace UnitMag.RHMag
 {
     public partial class RHBlowArDataQueryFrm : DockContent, IMESForm
     {
@@ -61,7 +61,7 @@ namespace UnitMag.LFMag
                 if (cmbUnitID.Text.Trim() != "")
                     strSQL += " and substr(TreatNo,1,1) =  '" + cmbUnitID.Text.Trim().Substring(2, 1) + "'";
             }
-            strSQL += " order by TreatNo ,LogTime";
+            strSQL += " order by LogTime";
             dsBase.SourceCondition = strSQL;
         }
 

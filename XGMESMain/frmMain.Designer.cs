@@ -125,6 +125,7 @@
             this.转炉实绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉衬维护查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.转炉铁耗统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.炉后工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉后ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉后工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -148,7 +149,6 @@
             this.rH炉工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.rH炉实绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rH吹氩数据查询BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rH责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -503,6 +503,7 @@
             this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeamID)).BeginInit();
@@ -1288,7 +1289,8 @@
             this.toolStripSeparator10,
             this.转炉实绩查询ToolStripMenuItem,
             this.转炉炉衬维护查询ToolStripMenuItem,
-            this.转炉责任人维护ToolStripMenuItem});
+            this.转炉责任人维护ToolStripMenuItem,
+            this.转炉铁耗统计ToolStripMenuItem});
             this.转炉工序管理ToolStripMenuItem.Name = "转炉工序管理ToolStripMenuItem";
             this.转炉工序管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.转炉工序管理ToolStripMenuItem, "");
@@ -1354,6 +1356,14 @@
             this.转炉责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.panelMain.SetTargetForm(this.转炉责任人维护ToolStripMenuItem, "UnitMag.BOFMag.DutyMagFrm, UnitMag");
             this.转炉责任人维护ToolStripMenuItem.Text = "转炉责任人维护...";
+            // 
+            // 转炉铁耗统计ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.转炉铁耗统计ToolStripMenuItem, "BOFProcessDataQuery");
+            this.转炉铁耗统计ToolStripMenuItem.Name = "转炉铁耗统计ToolStripMenuItem";
+            this.转炉铁耗统计ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.panelMain.SetTargetForm(this.转炉铁耗统计ToolStripMenuItem, "UnitMag.shoupiBofFrm,UnitMag");
+            this.转炉铁耗统计ToolStripMenuItem.Text = "转炉铁耗统计";
             // 
             // 炉后工序管理ToolStripMenuItem
             // 
@@ -1524,8 +1534,8 @@
             this.rH炉工序ToolStripMenuItem,
             this.toolStripSeparator8,
             this.rH炉实绩查询ToolStripMenuItem,
-            this.rH吹氩数据查询BToolStripMenuItem,
-            this.rH责任人维护ToolStripMenuItem});
+            this.rH责任人维护ToolStripMenuItem,
+            this.toolStripMenuItem4});
             this.rHToolStripMenuItem.Name = "rHToolStripMenuItem";
             this.rHToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.rHToolStripMenuItem, "");
@@ -1535,36 +1545,28 @@
             // 
             this.L3DataAdapter.SetAccessRight(this.rH炉工序ToolStripMenuItem, "RH1Mag");
             this.rH炉工序ToolStripMenuItem.Name = "rH炉工序ToolStripMenuItem";
-            this.rH炉工序ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.rH炉工序ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.rH炉工序ToolStripMenuItem, "UnitMag.RHMag.RHMain01, UnitMag");
             this.rH炉工序ToolStripMenuItem.Text = "1RH炉工序";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(187, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
             // 
             // rH炉实绩查询ToolStripMenuItem
             // 
             this.L3DataAdapter.SetAccessRight(this.rH炉实绩查询ToolStripMenuItem, "RHProcessDataQuery");
             this.rH炉实绩查询ToolStripMenuItem.Name = "rH炉实绩查询ToolStripMenuItem";
-            this.rH炉实绩查询ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.rH炉实绩查询ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.rH炉实绩查询ToolStripMenuItem, "UnitMag.RHMag.RHHeatFinalDataFrm, UnitMag");
             this.rH炉实绩查询ToolStripMenuItem.Text = "RH炉实绩查询(&Q)...";
-            // 
-            // rH吹氩数据查询BToolStripMenuItem
-            // 
-            this.L3DataAdapter.SetAccessRight(this.rH吹氩数据查询BToolStripMenuItem, "RHProcessDataQuery");
-            this.rH吹氩数据查询BToolStripMenuItem.Name = "rH吹氩数据查询BToolStripMenuItem";
-            this.rH吹氩数据查询BToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.panelMain.SetTargetForm(this.rH吹氩数据查询BToolStripMenuItem, "UnitMag.RHMag.RHBlowArDataQueryFrm, UnitMag");
-            this.rH吹氩数据查询BToolStripMenuItem.Text = "RH吹氩数据查询(&B)...";
             // 
             // rH责任人维护ToolStripMenuItem
             // 
             this.L3DataAdapter.SetAccessRight(this.rH责任人维护ToolStripMenuItem, "RHDuty");
             this.rH责任人维护ToolStripMenuItem.Name = "rH责任人维护ToolStripMenuItem";
-            this.rH责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.rH责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.rH责任人维护ToolStripMenuItem, "UnitMag.RHMag.DutyMagFrm, UnitMag");
             this.rH责任人维护ToolStripMenuItem.Text = "RH责任人维护(&D)...";
             // 
@@ -4335,6 +4337,7 @@
             // 
             // toolStripStatusLabel3
             // 
+            this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(131, 21);
             this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
@@ -4621,6 +4624,13 @@
             // 
             this.timer3.Interval = 3600000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.panelMain.SetTargetForm(this.toolStripMenuItem4, "UnitMag.RHMag.RHBlowArDataQueryFrm, UnitMag");
+            this.toolStripMenuItem4.Text = "RH吹氩数据查询";
             // 
             // frmMain
             // 
@@ -4946,7 +4956,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
         private System.Windows.Forms.ToolStripMenuItem 加热档位查询HToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lF吹氩数据查询BToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rH吹氩数据查询BToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 介质消耗定额维护ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 标准费率维护RToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 合金计划单价管理AToolStripMenuItem;
@@ -5132,6 +5141,8 @@
         private System.Windows.Forms.ToolStripMenuItem lF电耗统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 收坯统计ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 转炉铁耗统计ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
 
