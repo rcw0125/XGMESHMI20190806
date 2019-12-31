@@ -150,6 +150,7 @@
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.rH炉实绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rH责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸工序ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -503,7 +504,6 @@
             this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsTeamID)).BeginInit();
@@ -1569,6 +1569,13 @@
             this.rH责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.rH责任人维护ToolStripMenuItem, "UnitMag.RHMag.DutyMagFrm, UnitMag");
             this.rH责任人维护ToolStripMenuItem.Text = "RH责任人维护(&D)...";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.panelMain.SetTargetForm(this.toolStripMenuItem4, "UnitMag.RHMag.RHBlowArDataQueryFrm, UnitMag");
+            this.toolStripMenuItem4.Text = "RH吹氩数据查询";
             // 
             // 连铸工序管理ToolStripMenuItem
             // 
@@ -4624,13 +4631,6 @@
             // 
             this.timer3.Interval = 3600000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.panelMain.SetTargetForm(this.toolStripMenuItem4, "UnitMag.RHMag.RHBlowArDataQueryFrm, UnitMag");
-            this.toolStripMenuItem4.Text = "RH吹氩数据查询";
             // 
             // frmMain
             // 
