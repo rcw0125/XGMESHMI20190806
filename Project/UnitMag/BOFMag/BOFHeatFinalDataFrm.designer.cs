@@ -114,13 +114,13 @@
             this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter3 = new AppSvrHMI.L3CommandParameter();
             this.dsTempt = new AppSvrHMI.L3DataSet();
-            this.button1 = new System.Windows.Forms.Button();
             this.sendSheet = new AppSvrHMI.L3Command(this.components);
             this.l3CommandParameter4 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter5 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter6 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter7 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter8 = new AppSvrHMI.L3CommandParameter();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.bsBOFData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBOFData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsBOFData)).BeginInit();
@@ -176,7 +176,7 @@
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(73, 22);
+            this.btnConfirm.Size = new System.Drawing.Size(76, 22);
             this.btnConfirm.Text = "实绩确认";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -185,7 +185,7 @@
             this.Adapter.SetAccessRight(this.cxCheckFlag, "CheckBoxBOFInfo");
             this.cxCheckFlag.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cxCheckFlag.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cxCheckFlag.Location = new System.Drawing.Point(277, 0);
+            this.cxCheckFlag.Location = new System.Drawing.Point(362, 0);
             this.cxCheckFlag.Name = "cxCheckFlag";
             this.cxCheckFlag.Size = new System.Drawing.Size(99, 21);
             this.cxCheckFlag.TabIndex = 24;
@@ -465,7 +465,8 @@
             this.btnConfirm,
             this.txtHeatID,
             this.toolStripLabel5,
-            this.btnAdd});
+            this.btnAdd,
+            this.toolStripButton1});
             this.bdN1.Location = new System.Drawing.Point(0, 0);
             this.bdN1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bdN1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -480,7 +481,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -553,7 +554,7 @@
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(49, 22);
+            this.btnQuery.Size = new System.Drawing.Size(52, 22);
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -615,7 +616,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeftAutoMirrorImage = true;
-            this.btnAdd.Size = new System.Drawing.Size(49, 22);
+            this.btnAdd.Size = new System.Drawing.Size(52, 22);
             this.btnAdd.Text = "新增";
             this.btnAdd.Visible = false;
             // 
@@ -659,8 +660,8 @@
             this.dvBOFData.Size = new System.Drawing.Size(1022, 431);
             this.dvBOFData.TabIndex = 0;
             this.dvBOFData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvBOFData_CellDoubleClick_1);
-            this.dvBOFData.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvBOFData_DataError);
             this.dvBOFData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvBOFData_DataBindingComplete);
+            this.dvBOFData.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvBOFData_DataError);
             // 
             // HeatID
             // 
@@ -952,17 +953,6 @@
             this.dsTempt.UpdateMethod = null;
             this.dsTempt.UpdateTrigger = null;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(382, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 25);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "发送委托单";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // sendSheet
             // 
             this.sendSheet.Adapter = this.Adapter;
@@ -1034,12 +1024,21 @@
             this.l3CommandParameter8.TargetObject = null;
             this.l3CommandParameter8.TargetProperty = null;
             // 
+            // toolStripButton1
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton1, "LFbtnConfirm");
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(52, 22);
+            this.toolStripButton1.Text = "解锁";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // BOFHeatFinalDataFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 456);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.cxCheckFlag);
             this.Controls.Add(this.hmiRootPanel1);
             this.Controls.Add(this.bdN1);
@@ -1049,8 +1048,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.TabText = "转炉实绩数据管理";
             this.Text = "转炉实绩数据管理";
-            this.Load += new System.EventHandler(this.BOFHeatFinalDataFrm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BOFHeatFinalDataFrm_FormClosing);
+            this.Load += new System.EventHandler(this.BOFHeatFinalDataFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsBOFData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBOFData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsBOFData)).EndInit();
@@ -1157,12 +1156,12 @@
         private System.Windows.Forms.ToolStripTextBox txtHeatID;
         private System.Windows.Forms.ToolStripButton btnAdd;
         private AppSvrHMI.L3DataSet dsTempt;
-        private System.Windows.Forms.Button button1;
         private AppSvrHMI.L3Command sendSheet;
         private AppSvrHMI.L3CommandParameter l3CommandParameter4;
         private AppSvrHMI.L3CommandParameter l3CommandParameter5;
         private AppSvrHMI.L3CommandParameter l3CommandParameter6;
         private AppSvrHMI.L3CommandParameter l3CommandParameter7;
         private AppSvrHMI.L3CommandParameter l3CommandParameter8;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOpcVal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listreq" type="tns:ArrayOfValReq" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfValReq">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="valReq" nillable="true" type="tns:valReq" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="valReq">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOpcValResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOpcValResult" type="tns:ArrayOfValRes" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfValRes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="valRes" nillable="true" type="tns:valRes" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="valRes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="val" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOpcValSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOpcVal" />
+  </wsdl:message>
+  <wsdl:message name="GetOpcValSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOpcValResponse" />
+  </wsdl:message>
+  <wsdl:portType name="opcWSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpcVal">
+      <wsdl:input message="tns:GetOpcValSoapIn" />
+      <wsdl:output message="tns:GetOpcValSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="opcWSSoap" type="tns:opcWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpcVal">
+      <soap:operation soapAction="http://tempuri.org/GetOpcVal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="opcWSSoap12" type="tns:opcWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpcVal">
+      <soap12:operation soapAction="http://tempuri.org/GetOpcVal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="opcWS">
+    <wsdl:port name="opcWSSoap" binding="tns:opcWSSoap">
+      <soap:address location="http://192.168.48.234:808/opcws.asmx" />
+    </wsdl:port>
+    <wsdl:port name="opcWSSoap12" binding="tns:opcWSSoap12">
+      <soap12:address location="http://192.168.48.234:808/opcws.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

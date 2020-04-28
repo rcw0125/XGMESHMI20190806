@@ -78,6 +78,16 @@
             this.txtHeatid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.coll3DataSet1L3DataTable新字段1 = new System.Data.DataColumn();
+            this.dsTappingPlan = new AppSvrHMI.L3DataSet();
+            this.schemadsTappingPlan = new System.Data.DataTable();
+            this.coldsTappingPlanL3DataTableuserId = new System.Data.DataColumn();
+            this.coldsTappingPlanL3DataTablepassWord = new System.Data.DataColumn();
+            this.coldsTappingPlanL3DataTablelastModTime = new System.Data.DataColumn();
+            this.coldsTappingPlanL3DataTabletemp = new System.Data.DataColumn();
+            this.l3CommandParameter1 = new AppSvrHMI.L3CommandParameter();
+            this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,16 +105,6 @@
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.coll3DataSet1L3DataTable新字段1 = new System.Data.DataColumn();
-            this.dsTappingPlan = new AppSvrHMI.L3DataSet();
-            this.schemadsTappingPlan = new System.Data.DataTable();
-            this.coldsTappingPlanL3DataTableuserId = new System.Data.DataColumn();
-            this.coldsTappingPlanL3DataTablepassWord = new System.Data.DataColumn();
-            this.coldsTappingPlanL3DataTablelastModTime = new System.Data.DataColumn();
-            this.coldsTappingPlanL3DataTabletemp = new System.Data.DataColumn();
-            this.l3CommandParameter1 = new AppSvrHMI.L3CommandParameter();
-            this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             ((System.ComponentModel.ISupportInitialize)(this.l3DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemal3DataSet1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -124,7 +124,7 @@
             // 
             this.Adapter.SetAccessRight(this.btnUpdate, "BtnCastingPlanGen");
             this.btnUpdate.Font = new System.Drawing.Font("宋体", 16F);
-            this.btnUpdate.Location = new System.Drawing.Point(908, 159);
+            this.btnUpdate.Location = new System.Drawing.Point(840, 153);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(170, 36);
             this.btnUpdate.TabIndex = 153;
@@ -410,7 +410,7 @@
             // queryBtn
             // 
             this.queryBtn.Font = new System.Drawing.Font("宋体", 16F);
-            this.queryBtn.Location = new System.Drawing.Point(577, 153);
+            this.queryBtn.Location = new System.Drawing.Point(509, 147);
             this.queryBtn.Name = "queryBtn";
             this.queryBtn.Size = new System.Drawing.Size(117, 41);
             this.queryBtn.TabIndex = 0;
@@ -428,7 +428,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1387, 208);
+            this.groupBox1.Size = new System.Drawing.Size(1226, 208);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
@@ -439,7 +439,7 @@
             this.l3dbxTappingStatus.DataProperty = "TappingPlanEvent";
             this.l3dbxTappingStatus.DataType = AppSvrHMI.L3DataBoxType.dtText;
             this.l3dbxTappingStatus.L3DataAdapter = this.Adapter;
-            this.l3dbxTappingStatus.Location = new System.Drawing.Point(594, 31);
+            this.l3dbxTappingStatus.Location = new System.Drawing.Point(526, 25);
             this.l3dbxTappingStatus.Name = "l3dbxTappingStatus";
             this.l3dbxTappingStatus.Size = new System.Drawing.Size(100, 21);
             this.l3dbxTappingStatus.TabIndex = 152;
@@ -590,110 +590,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 208);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1387, 405);
+            this.dataGridView1.Size = new System.Drawing.Size(1226, 405);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "炉号";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 70;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "标识";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 70;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "转炉兑铁";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "转炉开吹";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 80;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "转炉结束";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 80;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "炉后结束";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 80;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "LF到达";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 80;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "LF处理开始";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 80;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "LF处理结束";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 80;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "LF离站";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 80;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "RH到达";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 80;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "RH处理开始";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 80;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "RH处理结束";
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 80;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "RH离站";
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 80;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "大包到达";
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 80;
-            // 
-            // Column16
-            // 
-            this.Column16.HeaderText = "大包开浇";
-            this.Column16.Name = "Column16";
-            this.Column16.Width = 80;
-            // 
-            // Column17
-            // 
-            this.Column17.HeaderText = "大包离开";
-            this.Column17.Name = "Column17";
-            this.Column17.Width = 80;
             // 
             // bindingSource1
             // 
@@ -785,9 +684,112 @@
             this.l3CommandParameter2.TargetObject = null;
             this.l3CommandParameter2.TargetProperty = null;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "炉号";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 70;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "标识";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 70;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "转炉兑铁";
+            this.Column3.Name = "Column3";
+            this.Column3.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "转炉开吹";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "转炉结束";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 80;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "炉后结束";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 80;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "LF到达";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 80;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "LF处理开始";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 80;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "LF处理结束";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 80;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "LF离站";
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 80;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "RH到达";
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 80;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "RH处理开始";
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 80;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "RH处理结束";
+            this.Column13.Name = "Column13";
+            this.Column13.Width = 80;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "RH离站";
+            this.Column14.Name = "Column14";
+            this.Column14.Width = 80;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "大包到达";
+            this.Column15.Name = "Column15";
+            this.Column15.Width = 80;
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "大包开浇";
+            this.Column16.Name = "Column16";
+            this.Column16.Width = 80;
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "大包离开";
+            this.Column17.Name = "Column17";
+            this.Column17.Visible = false;
+            this.Column17.Width = 80;
+            // 
             // Control
             // 
-            this.ClientSize = new System.Drawing.Size(1387, 613);
+            this.ClientSize = new System.Drawing.Size(1226, 613);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Control";

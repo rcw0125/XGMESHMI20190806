@@ -57,36 +57,36 @@ namespace UnitMag
             string strsql = "";
             if (toolStripComboBox1.Text == "" || toolStripComboBox1.Text == "全部")
             {
-                strsql = "      select ccmid as 铸机,heatid as 炉号,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
+                strsql = "      select ccmid as 铸机,heatid as 炉号,substr(heatid,2,1)|| '#转炉' as 炉座,(select to_char(blow_start_time,'HH24:MI:SS')  from cbof_process_data where heatid=d.heatid) as 开吹时间 ,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
                 strsql += "        from (";
                 strsql += "        select substr(a.ccmid, 3, 1) || '#连铸机' as ccmid, a.heatid, a.steelgrade,(select cal_weight  from cbloom_data where cbloom_data.heatid = a.heatid) as bloomweight, ";
                 strsql += "        (select substr(ccmid, 3, 1) || '-' || tundish_heatnum from cccm_process_data where cccm_process_data.heatid = a.heatid) as baocihao,";
                 strsql += "        round(b.ironweight, 2) as ironweight,round(b.scrapweight, 2) as scrapweight,round(b.pigironweight, 2) as pigironweight,round(ykweight, 2) as ykweight,c.weight as steelweight,to_char(a.productiondate,'HH24:MI:SS') as productiondate ";
                 strsql += "        from cccm_base_data a ,cbof_feed_data b, csteel_data c where a.heatid = b.heatid and a.heatid = c.heatid ";
                 strsql += "       and to_char(productiondate,'yyyy-MM-dd')= '"+strStart+"' order by a.ccmid,a.productiondate ";
-                strsql += "       )";
+                strsql += "       ) d";
             }
             else
             {
-                strsql = "      select ccmid as 铸机,heatid as 炉号,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
+                strsql = "      select ccmid as 铸机,heatid as 炉号,substr(heatid,2,1)|| '#转炉' as 炉座,(select to_char(blow_start_time,'HH24:MI:SS')  from cbof_process_data where heatid=d.heatid) as 开吹时间 ,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
                 strsql += "        from (";
                 strsql += "        select substr(a.ccmid, 3, 1) || '#连铸机' as ccmid, a.heatid, a.steelgrade,(select cal_weight  from cbloom_data where cbloom_data.heatid = a.heatid) as bloomweight, ";
                 strsql += "        (select substr(ccmid, 3, 1) || '-' || tundish_heatnum from cccm_process_data where cccm_process_data.heatid = a.heatid) as baocihao,";
                 strsql += "        round(b.ironweight, 2) as ironweight,round(b.scrapweight, 2) as scrapweight,round(b.pigironweight, 2) as pigironweight,round(ykweight, 2) as ykweight,c.weight as steelweight,to_char(a.productiondate,'HH24:MI:SS') as productiondate";
                 strsql += "        from cccm_base_data a ,cbof_feed_data b, csteel_data c where a.heatid = b.heatid and a.heatid = c.heatid ";
                 strsql += "       and to_char(productiondate,'yyyy-MM-dd')= '"+strStart+"' and a.ccmid='S6"+toolStripComboBox1.Text.Substring(0,1)+"' order by a.ccmid,a.productiondate ";
-                strsql += "       )";
+                strsql += "       )d ";
 
                 if (toolStripComboBox1.Text.StartsWith("6"))
                 {
-                    strsql += "       union  select ccmid as 铸机,heatid as 炉号,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
+                    strsql += "       union  select ccmid as 铸机,heatid as 炉号, 'AOD' as 炉座,(select to_char(blow_start_time,'HH24:MI:SS')  from caod_process_data where heatid=d.heatid) as 开吹时间 ,steelgrade as 钢种,baocihao as 包次,productiondate as 开浇时间,ironweight as 铁水,scrapweight as 废钢,pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0,bloomweight) as 收坯";
                     strsql += "        from (";
                     strsql += "        select substr(a.ccmid, 3, 1) || '#连铸机' as ccmid, a.heatid, a.steelgrade,(select cal_weight  from cbloom_data where cbloom_data.heatid = a.heatid) as bloomweight, ";
                     strsql += "        (select substr(ccmid, 3, 1) || '-' || tundish_heatnum from cccm_process_data where cccm_process_data.heatid = a.heatid) as baocihao,";
                     strsql += "        round(b.ironweight, 2) as ironweight,round(b.scrapweight, 2) as scrapweight,round(b.pigironweight, 2) as pigironweight,0 as ykweight,c.weight as steelweight,to_char(a.productiondate,'HH24:MI:SS') as productiondate";
                     strsql += "        from cccm_base_data a ,caod_feed_data b, csteel_data c where a.heatid = b.heatid and a.heatid = c.heatid ";
                     strsql += "       and to_char(productiondate,'yyyy-MM-dd')= '" + strStart + "' and a.ccmid='S6" + toolStripComboBox1.Text.Substring(0, 1) + "' order by a.ccmid,a.productiondate ";
-                    strsql += "       )";
+                    strsql += "       ) d";
 
                 }
             }
@@ -105,6 +105,8 @@ namespace UnitMag
                 scsj curscsj = new scsj();
                 curscsj.铸机 = data.Rows[i]["铸机"].ToString();
                 curscsj.炉号 = data.Rows[i]["炉号"].ToString();
+                curscsj.炉座 = data.Rows[i]["炉座"].ToString();
+                curscsj.开吹时间 = data.Rows[i]["开吹时间"].ToString();
                 curscsj.钢种 = data.Rows[i]["钢种"].ToString();
                 curscsj.包次 = data.Rows[i]["包次"].ToString();
                 curscsj.开浇时间 = data.Rows[i]["开浇时间"].ToString();
@@ -206,6 +208,8 @@ namespace UnitMag
         //    pigironweight as 铁块,ykweight as 压块,steelweight as 钢水,decode(bloomweight,null,0, bloomweight) as 收坯
         public string 铸机 { get; set; }
         public string 炉号 { get; set; }
+        public string 炉座 { get; set; }
+        public string 开吹时间 { get; set; }
         public string 钢种 { get; set; }
         public string 包次 { get; set; }
         public string 开浇时间 { get; set; }

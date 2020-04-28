@@ -150,359 +150,438 @@ namespace PlanMag
             dataGridView1.RowCount=3*row;
        
             for (int i = 0; i < row; i++)
-            { 
-            dataGridView1.Rows[3*i].Cells[1].Value="计划时间";
-            dataGridView1.Rows[3 * i].Cells[0].Value = l3DataSet1.Tables[0].Rows[i]["Heatid"].ToString();
-            dataGridView1.Rows[3 * i].Cells[2].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]).ToString("MM-dd HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[3].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[4].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[5].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[6].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[7].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[8].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[9].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[10].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[11].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[12].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[13].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[14].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[15].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i].Cells[16].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]).ToString("HH:mm:ss");
+            {
+                dataGridView1.Rows[3 * i].Cells[1].Value = "计划时间";
+                dataGridView1.Rows[3 * i].Cells[1].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[0].Value = l3DataSet1.Tables[0].Rows[i]["Heatid"].ToString();
+                dataGridView1.Rows[3 * i].Cells[0].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[2].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]).ToString("MM-dd HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[2].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[3].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[3].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[4].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[4].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[5].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[5].Style.BackColor = Color.Gold;
+                #region 对LF计划时间进行设置
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[6].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[6].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]).ToString("HH:mm:ss");
+                   
+                }
+                dataGridView1.Rows[3 * i].Cells[6].Style.BackColor = Color.Gold;
+
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[7].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[7].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[7].Style.BackColor = Color.Gold;
+
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[8].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[8].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[8].Style.BackColor = Color.Gold;
+
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[9].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[9].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[9].Style.BackColor = Color.Gold;
+                #endregion                
+                #region 对RH计划时间进行设置
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[10].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[10].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[10].Style.BackColor = Color.Gold;
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[11].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[11].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]).ToString("HH:mm:ss");
+                   
+                }
+                dataGridView1.Rows[3 * i].Cells[11].Style.BackColor = Color.Gold;
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[12].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[12].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[12].Style.BackColor = Color.Gold;
+                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]).ToString("HH:mm:ss") == "00:00:00")
+                {
+                    dataGridView1.Rows[3 * i].Cells[13].Value = "";
+                }
+                else
+                {
+                    dataGridView1.Rows[3 * i].Cells[13].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]).ToString("HH:mm:ss");
+                    
+                }
+                dataGridView1.Rows[3 * i].Cells[13].Style.BackColor = Color.Gold;
+                #endregion             
+                dataGridView1.Rows[3 * i].Cells[14].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[14].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[15].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[15].Style.BackColor = Color.Gold;
+                dataGridView1.Rows[3 * i].Cells[16].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]).ToString("HH:mm:ss");
+                dataGridView1.Rows[3 * i].Cells[16].Style.BackColor = Color.Gold;
 
 
-            //实际时间
-            dataGridView1.Rows[3 * i+1].Cells[1].Value = "实际时间";
-            //dataGridView1.Rows[3 * i+1].Cells[1].Value = l3DataSet1.Tables[0].Rows[i]["Heatid"].ToString();
-            string timestr = "";
-          
+
+                //实际时间
+                dataGridView1.Rows[3 * i + 1].Cells[1].Value = "实际时间";
+                //dataGridView1.Rows[3 * i+1].Cells[1].Value = l3DataSet1.Tables[0].Rows[i]["Heatid"].ToString();
+                string timestr = "";
+
                 //兑铁时刻
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]).ToString("MM-dd HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[2].Value = timestr;
-            if (timestr == "12-30 00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[2].Value = "";
-
-            }
-            else 
-            {
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]).ToString("MM-dd HH:mm:ss");
                
-                dataGridView1.Rows[3 * i + 2].Cells[2].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]);
-
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[2].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]))
+                if (timestr == "12-30 00:00:00")
                 {
-
-                    dataGridView1.Rows[3 * i + 2].Cells[2].Style.BackColor = Color.Red;
+                    dataGridView1.Rows[3 * i + 1].Cells[2].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[2].Value = "";
                 }
-            }
-
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[2].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[2].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[2].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_IronPrepared"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_IronPrepared"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[2].Style.BackColor = Color.Red;
+                    }
+                }
                 //开吹时刻
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[3].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[3].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[3].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[3].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]).ToString("HH:mm:ss");              
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[3].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[3].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[3].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[3].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[3].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[3].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[3].Style.BackColor = Color.Red;
+                    }
+                }
                 //转炉结束
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[4].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[4].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[4].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[4].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]).ToString("HH:mm:ss");           
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[4].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[4].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[4].Style.BackColor = Color.Red;
                 }
-               
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[4].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[4].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[4].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[4].Style.BackColor = Color.Red;
+                    }
+                }
                 //炉后结束
-
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[5].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[5].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[5].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[5].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]).ToString("HH:mm:ss");              
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[5].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[5].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[5].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[5].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[5].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[5].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[5].Style.BackColor = Color.Red;
+                    }
+                }
                 //精炼炉到达
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[6].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[6].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[6].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[6].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]).ToString("HH:mm:ss");
+                if (timestr == "00:00:00")
                 {
-
-                    dataGridView1.Rows[3 * i + 2].Cells[6].Style.BackColor = Color.Red;
+                    dataGridView1.Rows[3 * i + 1].Cells[6].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[6].Value = "";
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[6].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[6].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[6].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[6].Style.BackColor = Color.Red;
+                    }
+                }
 
                 //精炼炉处理开始
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[7].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[7].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[7].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[7].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]).ToString("HH:mm:ss");               
+                if (timestr == "00:00:00")
                 {
-
-                    dataGridView1.Rows[3 * i + 2].Cells[7].Style.BackColor = Color.Red;
+                    dataGridView1.Rows[3 * i + 1].Cells[7].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[7].Value = "";
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[7].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[7].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[7].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[7].Style.BackColor = Color.Red;
+                    }
+                }
                 //精炼炉处理结束
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[8].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[8].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[8].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[8].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]).ToString("HH:mm:ss");
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[8].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[8].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[8].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[8].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[8].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[8].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[8].Style.BackColor = Color.Red;
+                    }
+                }
                 //精炼炉离站
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[9].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[9].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[9].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[9].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]).ToString("HH:mm:ss");
+                
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[9].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[9].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[9].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[9].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[9].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[9].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[9].Style.BackColor = Color.Red;
+                    }
+                }
                 //RH炉进站
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[10].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[10].Value = "";
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]).ToString("HH:mm:ss");
 
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[10].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[10].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]))
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[10].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[10].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[10].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[10].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[10].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[10].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[10].Style.BackColor = Color.Red;
+                    }
+                }
                 //rh开始
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[11].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[11].Value = "";
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]).ToString("HH:mm:ss");
 
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[11].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[11].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]))
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[11].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[11].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[11].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[11].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[11].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[11].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[11].Style.BackColor = Color.Red;
+                    }
+                }
                 //rh结束
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[12].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[12].Value = "";
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]).ToString("HH:mm:ss");
 
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[12].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]);
-
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[12].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]))
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[12].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[12].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[12].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[12].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[12].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]);
+
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[12].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[12].Style.BackColor = Color.Red;
+                    }
+                }
                 //RH离站
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[13].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[13].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[13].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[13].Style.BackColor = Color.Green;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]).ToString("HH:mm:ss");
+               
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[13].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[13].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[13].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[13].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[13].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[13].Style.BackColor = Color.Green;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[13].Style.BackColor = Color.Red;
+                    }
+                }
                 //大包到达
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[14].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[14].Value = "";
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]).ToString("HH:mm:ss");
 
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[14].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[14].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]))
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[14].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[14].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[14].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[14].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[14].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[14].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]))
+                    {
+
+                        dataGridView1.Rows[3 * i + 2].Cells[14].Style.BackColor = Color.Red;
+                    }
+                }
                 //大包开浇
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[15].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[15].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[15].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]);
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[15].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]).ToString("HH:mm:ss");
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[15].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[15].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[15].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[15].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[15].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[15].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[15].Style.BackColor = Color.Red;
+                    }
+                }
                 //大包离站
-            timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]).ToString("HH:mm:ss");
-            dataGridView1.Rows[3 * i + 1].Cells[16].Value = timestr;
-            if (timestr == "00:00:00")
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[16].Value = "";
-
-            }
-            else
-            {
-                dataGridView1.Rows[3 * i + 2].Cells[16].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]);
-
-                //实际时间单元格颜色设置为蓝色
-                dataGridView1.Rows[3 * i + 1].Cells[16].Style.BackColor = Color.GreenYellow;
-                //实绩时间延迟，则警示为红色
-                if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]))
+                timestr = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]).ToString("HH:mm:ss");
+                if (timestr == "00:00:00")
                 {
+                    dataGridView1.Rows[3 * i + 1].Cells[16].Value = "";
+                    dataGridView1.Rows[3 * i + 2].Cells[16].Value = "";
 
-                    dataGridView1.Rows[3 * i + 2].Cells[16].Style.BackColor = Color.Red;
                 }
-            }
+                else
+                {
+                    dataGridView1.Rows[3 * i + 1].Cells[16].Value = timestr;
+                    dataGridView1.Rows[3 * i + 2].Cells[16].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]);
 
-             //节奏误差
-            dataGridView1.Rows[3 * i + 2].Cells[1].Value = "节奏误差";
-            
-            //dataGridView1.Rows[3 * i + 2].Cells[3].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFStart"])-Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFStart"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[4].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_BOFTapped"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_BOFTapped"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[5].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_TappedSideEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_TappedSideEnd"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[6].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFArrival"])-Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFArrival"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[7].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFStart"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[8].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFEnd"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[9].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_LFLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_LFLeave"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[10].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHArrival"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[11].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHStart"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[12].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHEnd"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[13].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_RHLeave"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_RHLeave"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[14].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CasterArrival"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CasterArrival"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[15].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingStart"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingStart"]);
-            //dataGridView1.Rows[3 * i + 2].Cells[16].Value = Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]) - Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]);
+                    //实际时间单元格颜色设置为蓝色
+                    dataGridView1.Rows[3 * i + 1].Cells[16].Style.BackColor = Color.GreenYellow;
+                    //实绩时间延迟，则警示为红色
+                    if (Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Act_Time_CastingEnd"]) > Convert.ToDateTime(l3DataSet1.Tables[0].Rows[i]["Aim_Time_CastingEnd"]))
+                    {
+                        dataGridView1.Rows[3 * i + 2].Cells[16].Style.BackColor = Color.Red;
+                    }
+                }
 
-            
+                //节奏误差
+                dataGridView1.Rows[3 * i + 2].Cells[1].Value = "节奏误差";                 
             }
 
            
@@ -521,18 +600,17 @@ namespace PlanMag
         {
             if (dataGridView1.Rows.Count < 0)
                 return;
-            if (dataGridView1.Rows[e.RowIndex].Cells[Column2.Index].Value.ToString().Trim() == "计划时间")
-            {
+            //if (dataGridView1.Rows[e.RowIndex].Cells[Column2.Index].Value.ToString().Trim() == "计划时间")
+            //{
 
-                dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Gold;
-            }
+            //    dataGridView1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Gold;
+            //}
             try
             {
                 //添加行号 
                 SolidBrush v_SolidBrush = new SolidBrush(dataGridView1.RowHeadersDefaultCellStyle.ForeColor);
                 int v_LineNo = 0;
                 v_LineNo = e.RowIndex + 1;
-
                 string v_Line = v_LineNo.ToString();
 
 
@@ -595,8 +673,9 @@ namespace PlanMag
             {
              heatid = dataGridView1.CurrentRow.Cells["Column1"].Value.ToString();
             }
-            catch
+            catch(Exception ex)
             {
+                MessageBox.Show("该行没有炉号，请选择炉号");
                 return;
             }
         

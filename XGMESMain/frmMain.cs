@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
+using UnitMag.CCMMag;
 
 //using EDoor.WinFormsUI.Docking;
 //using System.Threading;
@@ -355,7 +356,6 @@ namespace XGMESMain
             {
                 return "";
             }
-
         }
 
 
@@ -708,6 +708,18 @@ namespace XGMESMain
         {
             SbMag.sbyb yb = new SbMag.sbyb();
             yb.ShowDialog();
+        }
+
+
+        private void 重做甩废已上传NCToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (L3DataAdapter.Session.User == null)
+            {
+                MessageBox.Show("请先登录");
+                return;
+            }
+            ccmReScrapAllFrm Frm = new ccmReScrapAllFrm();
+            Frm.ShowDialogEx(L3DataAdapter.Session);
         }
     }
 }

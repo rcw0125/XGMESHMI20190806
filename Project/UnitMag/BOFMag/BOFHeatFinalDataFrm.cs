@@ -223,5 +223,13 @@ namespace UnitMag.BOFMag
             }
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            string strHeat = dvBOFData.CurrentRow.Cells["HeatID"].Value.ToString();
+            //UnitMag.MESTool.GetData(Adapter, strGradeTypeSql);
+            string sql = "update cbof_base_data set locked=0 where heatid='" + strHeat + "'";
+            UnitMag.MESTool.exeSql(Adapter, sql);
+            MessageBox.Show("²Ù×÷Íê³É£¡");
+        }
     }
 }

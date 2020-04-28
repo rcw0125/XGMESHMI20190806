@@ -59,20 +59,42 @@ namespace EquipMag.LanceMag
 
         private void cmbBOFID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbBOFID.Text == "1#转炉")
-            {
-                txtLanceNoA.Mask = "YB99";
-                txtLanceHeadType.Text = "Φ180";
-            }
-            if (cmbBOFID.Text == "2#转炉" || cmbBOFID.Text == "3#转炉")
+            //if (cmbBOFID.Text == "1#转炉")
+            //{
+            //    txtLanceNoA.Mask = "YB99";
+            //    txtLanceHeadType.Text = "Φ180";
+            //}
+            //if (cmbBOFID.Text == "2#转炉" || cmbBOFID.Text == "3#转炉")
+            //{
+            //    txtLanceNoA.Mask = @"Y\A99";
+            //    txtLanceHeadType.Text = "Φ168";
+            //}
+            //if (cmbBOFID.Text == "4#转炉")
+            //{
+            //    txtLanceNoA.Mask = @"Y\C99";
+            //    txtLanceHeadType.Text = "Φ219";
+            //}
+
+
+            //if (cmbBOFID.Text == "1#转炉")
+            //{
+            //    txtLanceNoA.Mask = "YB99";
+            //    txtLanceHeadType.Text = "Φ180";
+            //}
+            if (cmbBOFID.Text == "1#转炉"||cmbBOFID.Text == "2#转炉" || cmbBOFID.Text == "3#转炉")
             {
                 txtLanceNoA.Mask = @"Y\A99";
-                txtLanceHeadType.Text = "Φ168";
+                txtLanceHeadType.Text = "Φ180";
             }
             if (cmbBOFID.Text == "4#转炉")
             {
-                txtLanceNoA.Mask = @"Y\C99";
+                txtLanceNoA.Mask = @"Y\B99";
                 txtLanceHeadType.Text = "Φ219";
+            }
+            if (cmbBOFID.Text == "AOD炉")
+            {
+                txtLanceNoA.Mask = @"Y\C99";
+                txtLanceHeadType.Text = "ΦAOD";
             }
         }
     }

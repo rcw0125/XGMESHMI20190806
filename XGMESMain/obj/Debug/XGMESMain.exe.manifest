@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="XGMESMain.exe" version="1.0.1.0" publicKeyToken="0000000000000000" language="zh-CHS" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="XGMESMain" version="2019.12.20.1" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="XGMESMain" version="2020.4.27.1" language="neutral" processorArchitecture="x86" />
     <commandLine file="XGMESMain.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -15,15 +15,15 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC 清单选项
-         若想要更改 Windows 用户帐户控制级别，请
-         将 requestedExecutionLevel 节点替换为下述某项。
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
 
-       <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
-       <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
-       <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-        若想要使用文件和注册表虚拟化以实现向后
-        兼容，请删除 requestedExecutionLevel 节点。
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YYbRxHXYuTQHEqn2b8hKdIJyYR0=</dsig:DigestValue>
+        <dsig:DigestValue>SPoWy/4Uczkf/H3INM4K4pU/R3U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>E68jS4SYfhsbCFXMLjav6ByR5n4=</dsig:DigestValue>
+        <dsig:DigestValue>0dtw4HT88iRHic4TeqkL0FgQoJ0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -133,7 +133,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jhr+bZE3Oq9eY6SlK76D7UaLeQE=</dsig:DigestValue>
+        <dsig:DigestValue>rzJ6wz63Myc3CjBUzlkWA4RmFlM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,14 +162,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EquipMag.dll" size="6868480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EquipMag.dll" size="6868992">
       <assemblyIdentity name="EquipMag" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>uD/hvESUqA6400/ZVBF6n9CyU6Q=</dsig:DigestValue>
+        <dsig:DigestValue>0b34+oGo8wBkl/33ManILTs+flI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -193,19 +193,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hcJVqbNSNhl0NZIj09BHH1BSSdk=</dsig:DigestValue>
+        <dsig:DigestValue>FMqK0ivXXjSyg+fV8nbpFZStQYw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PlanMag.dll" size="1095168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PlanMag.dll" size="1098752">
       <assemblyIdentity name="PlanMag" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>N5ng2KqUXVj9RRXKsGiZi+B6Chc=</dsig:DigestValue>
+        <dsig:DigestValue>8LzNO38ZR5yhAuuuu8wNDCVKVL8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -414,14 +414,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QualityMag.dll" size="3267584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QualityMag.dll" size="3268096">
       <assemblyIdentity name="QualityMag" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>papAEm4s0ebPV06DUJw2x9aWTJY=</dsig:DigestValue>
+        <dsig:DigestValue>+UEIDo+pdd5fjjYxd10bvx0YJj4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -450,14 +450,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32616">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ktNm3hC1M2WpE4GIHeFQW655yXk=</dsig:DigestValue>
+        <dsig:DigestValue>H7EjqMV64UmZKI2srOm8FbwZoQk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -469,19 +469,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>uwMuDDgPAyXdpUmk+O+vCdwyH7E=</dsig:DigestValue>
+        <dsig:DigestValue>GUhIIydE4dfx0OyHKy/buRQ1ElY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UnitMag.dll" size="7410688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UnitMag.dll" size="7436800">
       <assemblyIdentity name="UnitMag" version="2.0.0.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iSYplxQN2AbnHstZP7PJVWicbR4=</dsig:DigestValue>
+        <dsig:DigestValue>Cxn/yadewJM5Ig+lly+vHULk40k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -498,14 +498,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XGMESMain.exe" size="343040">
-      <assemblyIdentity name="XGMESMain" version="2019.12.20.1" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XGMESMain.exe" size="343552">
+      <assemblyIdentity name="XGMESMain" version="2020.4.27.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hTjssfkXc5sRV/bhKhl5sN/czds=</dsig:DigestValue>
+        <dsig:DigestValue>T4d1ttZ8KDj6FdViAJ9gZzkHWoc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

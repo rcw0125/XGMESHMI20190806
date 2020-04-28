@@ -267,10 +267,10 @@
             this.tabPage1.Controls.Add(this.txtLanceHeadType);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(273, 126);
+            this.tabPage1.Size = new System.Drawing.Size(273, 125);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "氧枪信息";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -290,7 +290,8 @@
             "1#转炉",
             "2#转炉",
             "3#转炉",
-            "4#转炉"});
+            "4#转炉",
+            "AOD炉"});
             this.cmbBOFID.Location = new System.Drawing.Point(107, 16);
             this.cmbBOFID.Name = "cmbBOFID";
             this.cmbBOFID.Size = new System.Drawing.Size(121, 20);
@@ -359,6 +360,7 @@
             // 
             // dsLance
             // 
+            this.dsLance.AutoLoad = true;
             this.dsLance.AutoSubscribe = false;
             this.dsLance.DataSetName = "L3DataSet";
             this.dsLance.DeleteMethod = "";

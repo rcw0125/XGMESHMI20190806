@@ -57,6 +57,11 @@ namespace EquipMag.TundishMag
         {
             bsBase.EndEdit();
             string strShow = "";
+            if (cmbCastID.Text == "" && cmbCastID.Items.Count == 2)
+            {
+                MessageBox.Show("ÇëÑ¡ÔñÖý»ú£¡");
+                return;
+            }       
             if (cmdOnFire.Execute() >= 0)
             {
                 int iRet = Convert.ToInt32(cmdOnFire.Command.Return);

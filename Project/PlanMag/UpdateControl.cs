@@ -59,21 +59,34 @@ namespace PlanMag
             //DateTime dt = DateTime.Now;
             //dsTapping.Tables[0].Rows[0]["PlanExecuteDate"] = dt;
             dsTapping.UpdateData();
+            //dsTapping.SourceCondition = " casterid= '" + textBox2.Text + "' and treat_seq>='"+textBox3.Text+"' and (status= 11 or status= 12) order by treat_seq";
             dsTapping.LoadData();
+          
             string check = MessageBox.Show("确认要修改计划时间么？", "提示",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question).ToString();
             if (check == "OK")
             {
+                cmdchangecurheat.Execute();
+                String curreturnFlag = cmdchangecurheat.Command.Return.ToString();
+                if (curreturnFlag == "1")
+                {
+                   
+                }
+                else
+                {
+                    MessageBox.Show("修改本炉次计划时间不成功！", "提示");
+                    return;
+                }
                 cmdChangePlanTime.Execute();
                 String returnFlag = cmdChangePlanTime.Command.Return.ToString();
-                if (returnFlag == "1")
+                if (returnFlag == "0")
                 {
                     MessageBox.Show("修改计划时间成功！", "提示");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("修改计划时间不成功！", "提示");
+                    MessageBox.Show("修改下一计划时间不成功！", "提示");
                 }
             }
         }

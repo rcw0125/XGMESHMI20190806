@@ -3250,28 +3250,34 @@ namespace CommDataMag
                                     dInCtrolMin = -1;
                                 else
                                     dInCtrolMin = Convert.ToDouble(dsInCtrol.Tables[0].Rows[0][strColumnName + "_Min"].ToString());
-                                
+                                //国标大于0
                                 if (dGBMax >= 0)
                                 {
+                                    //大于国标，红色
                                     if (dRealValue > dGBMax)
                                     {
                                         cell.Style.BackColor = Color.Red;
                                         continue;
                                     }
+                                    //
                                     if (dInCtrolMax >= 0)
                                     {
+                                        //大于内控（小于国标）,浅粉红色
                                         if (dInCtrolMax < dRealValue)
                                         {
                                             cell.Style.BackColor = Color.LightPink;
                                             continue;
                                         }
+
                                         if (dGBMin >= 0)
                                         {
+                                            //小于国标下限，黄色
                                             if (dRealValue < dGBMin)
                                             {
                                                 cell.Style.BackColor = Color.Yellow;
                                                 continue;
                                             }
+
                                             if (dInCtrolMin >= 0 && dRealValue < dInCtrolMin)
                                             {
                                                 cell.Style.BackColor = Color.Khaki;

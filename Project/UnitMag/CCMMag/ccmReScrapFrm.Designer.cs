@@ -35,9 +35,9 @@
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,28 @@
             this.panel1.Size = new System.Drawing.Size(750, 127);
             this.panel1.TabIndex = 4;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 12F);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(12, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(320, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "3.炉号只能选择1天之内的炉号，请及时操作";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 12F);
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(12, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(416, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "2.操作后请及时联系质检，确认旧信息在CAP系统已删除  ";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -105,28 +127,6 @@
             this.label2.Size = new System.Drawing.Size(416, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "1.重新做甩废操作只能在炉次做出坯(入库)操作之前     ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(352, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "2.操作前请先联系质检，确认在CAP系统已删除  ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F);
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(12, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(344, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "3.炉号只能选择12小时之内的炉号，请及时操作";
             // 
             // ccmReScrapFrm
             // 

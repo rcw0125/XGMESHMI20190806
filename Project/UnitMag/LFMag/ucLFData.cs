@@ -1212,6 +1212,37 @@ namespace UnitMag.LFMag
 
            
         }
+
+        /// <summary>
+        /// 钢包信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (label46.Text.Trim() == "")
+            {
+                MessageBox.Show("当前工位没有钢包！");
+                return;
+            }
+            LFLadleInfo ladleInfo = new LFLadleInfo();
+            ladleInfo.ladleid = label46.Text.Trim();
+            ladleInfo.Adapter= Adapter;
+            ladleInfo.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (label38.Text.Trim() == "")
+            {
+                MessageBox.Show("当前工位没有钢包！");
+                return;
+            }
+            LFLadleInfo ladleInfo = new LFLadleInfo();
+            ladleInfo.ladleid = label38.Text.Trim();
+            ladleInfo.Adapter = Adapter;
+            ladleInfo.ShowDialog();
+        }
         //private int iCount = 0;
         //private int iFlag = 0;
         //private void dsArrivleLFSteel_OnDataLoaded(object sender)

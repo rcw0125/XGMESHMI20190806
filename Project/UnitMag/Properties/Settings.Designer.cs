@@ -32,5 +32,25 @@ namespace UnitMag.Properties {
                 return ((string)(this["UnitMag_localhost_WSMES"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.48.232/opcWS.asmx")]
+        public string UnitMag_WebReference_opcWS {
+            get {
+                return ((string)(this["UnitMag_WebReference_opcWS"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.48.234:808/opcws.asmx")]
+        public string UnitMag_OPCServer_opcWS {
+            get {
+                return ((string)(this["UnitMag_OPCServer_opcWS"]));
+            }
+        }
     }
 }

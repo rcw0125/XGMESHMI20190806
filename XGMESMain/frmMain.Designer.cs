@@ -90,6 +90,7 @@
             this.出钢计划查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.钢坯计划订单执行情况查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.收坯统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.天车位置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.进厂铁水管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.铁水收集管理ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,7 +126,6 @@
             this.转炉实绩查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉衬维护查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.转炉铁耗统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.炉后工序管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉后ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转炉炉后工序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -465,6 +465,7 @@
             this.改钢ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tESTHMIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.回退ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.重做甩废已上传NCToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpCatalog = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpIndex = new System.Windows.Forms.ToolStripMenuItem();
@@ -972,7 +973,8 @@
             this.toolStripSeparator12,
             this.出钢计划查询ToolStripMenuItem,
             this.钢坯计划订单执行情况查询ToolStripMenuItem,
-            this.收坯统计ToolStripMenuItem});
+            this.收坯统计ToolStripMenuItem,
+            this.天车位置ToolStripMenuItem});
             this.计划管理ToolStripMenuItem.Name = "计划管理ToolStripMenuItem";
             this.计划管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 21);
             this.panelMain.SetTargetForm(this.计划管理ToolStripMenuItem, "");
@@ -1041,11 +1043,18 @@
             // 
             // 收坯统计ToolStripMenuItem
             // 
-            this.L3DataAdapter.SetAccessRight(this.收坯统计ToolStripMenuItem, "BtnChengeRoute");
+            this.L3DataAdapter.SetAccessRight(this.收坯统计ToolStripMenuItem, "BOFProcessDataQuery");
             this.收坯统计ToolStripMenuItem.Name = "收坯统计ToolStripMenuItem";
             this.收坯统计ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.panelMain.SetTargetForm(this.收坯统计ToolStripMenuItem, "UnitMag.shoupiFrm,UnitMag");
             this.收坯统计ToolStripMenuItem.Text = "收坯统计";
+            // 
+            // 天车位置ToolStripMenuItem
+            // 
+            this.天车位置ToolStripMenuItem.Name = "天车位置ToolStripMenuItem";
+            this.天车位置ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.panelMain.SetTargetForm(this.天车位置ToolStripMenuItem, "UnitMag.trainWeiZhiFrm,UnitMag");
+            this.天车位置ToolStripMenuItem.Text = "天车位置";
             // 
             // 工序管理ToolStripMenuItem
             // 
@@ -1289,8 +1298,7 @@
             this.toolStripSeparator10,
             this.转炉实绩查询ToolStripMenuItem,
             this.转炉炉衬维护查询ToolStripMenuItem,
-            this.转炉责任人维护ToolStripMenuItem,
-            this.转炉铁耗统计ToolStripMenuItem});
+            this.转炉责任人维护ToolStripMenuItem});
             this.转炉工序管理ToolStripMenuItem.Name = "转炉工序管理ToolStripMenuItem";
             this.转炉工序管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.转炉工序管理ToolStripMenuItem, "");
@@ -1356,14 +1364,6 @@
             this.转炉责任人维护ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.panelMain.SetTargetForm(this.转炉责任人维护ToolStripMenuItem, "UnitMag.BOFMag.DutyMagFrm, UnitMag");
             this.转炉责任人维护ToolStripMenuItem.Text = "转炉责任人维护...";
-            // 
-            // 转炉铁耗统计ToolStripMenuItem
-            // 
-            this.L3DataAdapter.SetAccessRight(this.转炉铁耗统计ToolStripMenuItem, "BOFProcessDataQuery");
-            this.转炉铁耗统计ToolStripMenuItem.Name = "转炉铁耗统计ToolStripMenuItem";
-            this.转炉铁耗统计ToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.panelMain.SetTargetForm(this.转炉铁耗统计ToolStripMenuItem, "UnitMag.shoupiBofFrm,UnitMag");
-            this.转炉铁耗统计ToolStripMenuItem.Text = "转炉铁耗统计";
             // 
             // 炉后工序管理ToolStripMenuItem
             // 
@@ -1767,6 +1767,7 @@
             this.设备状态变化查询ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.设备状态变化查询ToolStripMenuItem, "UnitMag.EquipmentStatusQueryFrm, UnitMag");
             this.设备状态变化查询ToolStripMenuItem.Text = "设备状态变化查询(&Q)";
+            this.设备状态变化查询ToolStripMenuItem.Visible = false;
             // 
             // 生产实绩查询PToolStripMenuItem
             // 
@@ -1775,6 +1776,7 @@
             this.生产实绩查询PToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.生产实绩查询PToolStripMenuItem, "UnitMag.ProductGradeQueryFrm,UnitMag");
             this.生产实绩查询PToolStripMenuItem.Text = "生产实绩查询(&P)";
+            this.生产实绩查询PToolStripMenuItem.Visible = false;
             // 
             // 煤气回收统计查询ToolStripMenuItem
             // 
@@ -1806,6 +1808,7 @@
             this.sPC控制图ToolStripMenuItem.Size = new System.Drawing.Size(78, 21);
             this.panelMain.SetTargetForm(this.sPC控制图ToolStripMenuItem, "");
             this.sPC控制图ToolStripMenuItem.Text = "SPC控制图";
+            this.sPC控制图ToolStripMenuItem.Visible = false;
             // 
             // 转炉ToolStripMenuItem
             // 
@@ -1818,7 +1821,7 @@
             this.出钢量ToolStripMenuItem,
             this.出钢氧含量ToolStripMenuItem});
             this.转炉ToolStripMenuItem.Name = "转炉ToolStripMenuItem";
-            this.转炉ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.转炉ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.转炉ToolStripMenuItem, "");
             this.转炉ToolStripMenuItem.Text = "1#转炉";
             // 
@@ -1882,7 +1885,7 @@
             this.出钢量ToolStripMenuItem1,
             this.出钢氧含量ToolStripMenuItem1});
             this.转炉ToolStripMenuItem1.Name = "转炉ToolStripMenuItem1";
-            this.转炉ToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.转炉ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.转炉ToolStripMenuItem1, "");
             this.转炉ToolStripMenuItem1.Text = "2#转炉";
             // 
@@ -1946,7 +1949,7 @@
             this.出钢量ToolStripMenuItem2,
             this.出钢氧含量ToolStripMenuItem2});
             this.转炉ToolStripMenuItem2.Name = "转炉ToolStripMenuItem2";
-            this.转炉ToolStripMenuItem2.Size = new System.Drawing.Size(146, 22);
+            this.转炉ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.转炉ToolStripMenuItem2, "");
             this.转炉ToolStripMenuItem2.Text = "3#转炉";
             // 
@@ -2010,7 +2013,7 @@
             this.出钢量ToolStripMenuItem3,
             this.出钢氧含量ToolStripMenuItem3});
             this.转炉ToolStripMenuItem3.Name = "转炉ToolStripMenuItem3";
-            this.转炉ToolStripMenuItem3.Size = new System.Drawing.Size(146, 22);
+            this.转炉ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.转炉ToolStripMenuItem3, "");
             this.转炉ToolStripMenuItem3.Text = "4#转炉";
             // 
@@ -2075,7 +2078,7 @@
             this.大包温降ToolStripMenuItem,
             this.钙线喂入量ToolStripMenuItem});
             this.lFToolStripMenuItem3.Name = "lFToolStripMenuItem3";
-            this.lFToolStripMenuItem3.Size = new System.Drawing.Size(146, 22);
+            this.lFToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem3, "");
             this.lFToolStripMenuItem3.Text = "1#LF";
             // 
@@ -2147,7 +2150,7 @@
             this.大包温降ToolStripMenuItem1,
             this.钙线喂入量ToolStripMenuItem1});
             this.lFToolStripMenuItem4.Name = "lFToolStripMenuItem4";
-            this.lFToolStripMenuItem4.Size = new System.Drawing.Size(146, 22);
+            this.lFToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem4, "");
             this.lFToolStripMenuItem4.Text = "2#LF";
             // 
@@ -2219,7 +2222,7 @@
             this.大包温降ToolStripMenuItem2,
             this.钙线喂入量ToolStripMenuItem2});
             this.lFToolStripMenuItem5.Name = "lFToolStripMenuItem5";
-            this.lFToolStripMenuItem5.Size = new System.Drawing.Size(146, 22);
+            this.lFToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem5, "");
             this.lFToolStripMenuItem5.Text = "3#LF";
             // 
@@ -2291,7 +2294,7 @@
             this.大包温降ToolStripMenuItem3,
             this.钙线喂入量ToolStripMenuItem3});
             this.lFToolStripMenuItem6.Name = "lFToolStripMenuItem6";
-            this.lFToolStripMenuItem6.Size = new System.Drawing.Size(146, 22);
+            this.lFToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem6, "");
             this.lFToolStripMenuItem6.Text = "4#LF";
             // 
@@ -2363,7 +2366,7 @@
             this.大包温降ToolStripMenuItem4,
             this.钙线喂入量ToolStripMenuItem4});
             this.lFToolStripMenuItem7.Name = "lFToolStripMenuItem7";
-            this.lFToolStripMenuItem7.Size = new System.Drawing.Size(146, 22);
+            this.lFToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.lFToolStripMenuItem7, "spc.lf.wire5, spc");
             this.lFToolStripMenuItem7.Text = "5#LF";
             // 
@@ -2428,7 +2431,7 @@
             this.rHToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.离站CToolStripMenuItem5});
             this.rHToolStripMenuItem1.Name = "rHToolStripMenuItem1";
-            this.rHToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.rHToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.rHToolStripMenuItem1, "");
             this.rHToolStripMenuItem1.Text = "1#RH";
             // 
@@ -2445,7 +2448,7 @@
             this.中包温度ToolStripMenuItem,
             this.转包时中包重量ToolStripMenuItem});
             this.连铸机ToolStripMenuItem.Name = "连铸机ToolStripMenuItem";
-            this.连铸机ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.连铸机ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.连铸机ToolStripMenuItem, "");
             this.连铸机ToolStripMenuItem.Text = "3#连铸机";
             // 
@@ -2469,7 +2472,7 @@
             this.中包温度ToolStripMenuItem1,
             this.转包时中包重量ToolStripMenuItem1});
             this.连铸机ToolStripMenuItem1.Name = "连铸机ToolStripMenuItem1";
-            this.连铸机ToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.连铸机ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.连铸机ToolStripMenuItem1, "");
             this.连铸机ToolStripMenuItem1.Text = "4#连铸机";
             // 
@@ -2493,7 +2496,7 @@
             this.中包温度ToolStripMenuItem2,
             this.转包时中包重量ToolStripMenuItem2});
             this.连铸机ToolStripMenuItem2.Name = "连铸机ToolStripMenuItem2";
-            this.连铸机ToolStripMenuItem2.Size = new System.Drawing.Size(146, 22);
+            this.连铸机ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.连铸机ToolStripMenuItem2, "");
             this.连铸机ToolStripMenuItem2.Text = "5#连铸机";
             // 
@@ -2517,7 +2520,7 @@
             this.中包温度ToolStripMenuItem3,
             this.转包时中包重量ToolStripMenuItem3});
             this.连铸机ToolStripMenuItem3.Name = "连铸机ToolStripMenuItem3";
-            this.连铸机ToolStripMenuItem3.Size = new System.Drawing.Size(146, 22);
+            this.连铸机ToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.连铸机ToolStripMenuItem3, "");
             this.连铸机ToolStripMenuItem3.Text = "6#连铸机";
             // 
@@ -2541,7 +2544,7 @@
             this.中包温度ToolStripMenuItem4,
             this.转包时中包重量ToolStripMenuItem4});
             this.连铸ToolStripMenuItem.Name = "连铸ToolStripMenuItem";
-            this.连铸ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.连铸ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.连铸ToolStripMenuItem, "");
             this.连铸ToolStripMenuItem.Text = "7#连铸";
             // 
@@ -2562,7 +2565,7 @@
             // sPC数据查询ToolStripMenuItem
             // 
             this.sPC数据查询ToolStripMenuItem.Name = "sPC数据查询ToolStripMenuItem";
-            this.sPC数据查询ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.sPC数据查询ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.panelMain.SetTargetForm(this.sPC数据查询ToolStripMenuItem, "spc.spcQuery, spc");
             this.sPC数据查询ToolStripMenuItem.Text = "SPC数据查询";
             // 
@@ -4112,7 +4115,8 @@
             this.铁水电文补发ToolStripMenuItem,
             this.改钢ToolStripMenuItem,
             this.tESTHMIToolStripMenuItem,
-            this.回退ToolStripMenuItem});
+            this.回退ToolStripMenuItem,
+            this.重做甩废已上传NCToolStripMenuItem1});
             this.NC电文ToolStripMenuItem.Name = "NC电文ToolStripMenuItem";
             this.NC电文ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.panelMain.SetTargetForm(this.NC电文ToolStripMenuItem, "");
@@ -4122,7 +4126,7 @@
             // 
             this.L3DataAdapter.SetAccessRight(this.toolStripMenuItem2, "NCTelQuery");
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(163, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.toolStripMenuItem2, "NCTelDataMag.NCTelCheckFrm, NCTelDataMag");
             this.toolStripMenuItem2.Text = "电文批量补发";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
@@ -4131,14 +4135,14 @@
             // 
             this.L3DataAdapter.SetAccessRight(this.NC电文补发ToolStripMenuItem, "NCTelQuery");
             this.NC电文补发ToolStripMenuItem.Name = "NC电文补发ToolStripMenuItem";
-            this.NC电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.NC电文补发ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.NC电文补发ToolStripMenuItem, "NCTelDataMag.NCTelDataFrm, NCTelDataMag");
             this.NC电文补发ToolStripMenuItem.Text = "电文查询(&T)";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(160, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(183, 6);
             this.toolStripSeparator4.Visible = false;
             // 
             // 电文补发ToolStripMenuItem
@@ -4151,7 +4155,7 @@
             this.钢坯质检电文补发ToolStripMenuItem,
             this.钢坯入库电文补发ToolStripMenuItem});
             this.电文补发ToolStripMenuItem.Name = "电文补发ToolStripMenuItem";
-            this.电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.电文补发ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.电文补发ToolStripMenuItem, "");
             this.电文补发ToolStripMenuItem.Text = "钢坯电文补发(&S)";
             // 
@@ -4182,6 +4186,7 @@
             this.钢坯质检电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.panelMain.SetTargetForm(this.钢坯质检电文补发ToolStripMenuItem, "NCTelDataMag.QualityInforFrm, NCTelDataMag");
             this.钢坯质检电文补发ToolStripMenuItem.Text = "钢坯质检电文补发(&Q)";
+            this.钢坯质检电文补发ToolStripMenuItem.Visible = false;
             // 
             // 钢坯入库电文补发ToolStripMenuItem
             // 
@@ -4198,7 +4203,7 @@
             this.铁水质检电文补发ToolStripMenuItem,
             this.铁水入库电文补发ToolStripMenuItem});
             this.铁水电文补发ToolStripMenuItem.Name = "铁水电文补发ToolStripMenuItem";
-            this.铁水电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.铁水电文补发ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.铁水电文补发ToolStripMenuItem, "");
             this.铁水电文补发ToolStripMenuItem.Text = "铁水电文补发(&E)";
             // 
@@ -4227,14 +4232,14 @@
             // 
             this.L3DataAdapter.SetAccessRight(this.改钢ToolStripMenuItem, "ChangeSteel");
             this.改钢ToolStripMenuItem.Name = "改钢ToolStripMenuItem";
-            this.改钢ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.改钢ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.改钢ToolStripMenuItem, "NCTelDataMag.ChangeSteel, NCTelDataMag");
             this.改钢ToolStripMenuItem.Text = "改钢";
             // 
             // tESTHMIToolStripMenuItem
             // 
             this.tESTHMIToolStripMenuItem.Name = "tESTHMIToolStripMenuItem";
-            this.tESTHMIToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.tESTHMIToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.tESTHMIToolStripMenuItem, "QualityMag.QualityStandard.StdInCtrEleShowFrm, QualityMag");
             this.tESTHMIToolStripMenuItem.Text = "TESTHMI";
             this.tESTHMIToolStripMenuItem.Visible = false;
@@ -4243,9 +4248,18 @@
             // 
             this.L3DataAdapter.SetAccessRight(this.回退ToolStripMenuItem, "ChangeSteel");
             this.回退ToolStripMenuItem.Name = "回退ToolStripMenuItem";
-            this.回退ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.回退ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.panelMain.SetTargetForm(this.回退ToolStripMenuItem, "NCTelDataMag.HuiTui, NCTelDataMag");
             this.回退ToolStripMenuItem.Text = "回退";
+            // 
+            // 重做甩废已上传NCToolStripMenuItem1
+            // 
+            this.L3DataAdapter.SetAccessRight(this.重做甩废已上传NCToolStripMenuItem1, "NCSteelTel");
+            this.重做甩废已上传NCToolStripMenuItem1.Name = "重做甩废已上传NCToolStripMenuItem1";
+            this.重做甩废已上传NCToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
+            this.panelMain.SetTargetForm(this.重做甩废已上传NCToolStripMenuItem1, "");
+            this.重做甩废已上传NCToolStripMenuItem1.Text = "重做甩废(已上传NC)";
+            this.重做甩废已上传NCToolStripMenuItem1.Click += new System.EventHandler(this.重做甩废已上传NCToolStripMenuItem1_Click);
             // 
             // menuHelp
             // 
@@ -5141,8 +5155,9 @@
         private System.Windows.Forms.ToolStripMenuItem lF电耗统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 收坯统计ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 转炉铁耗统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem 天车位置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 重做甩废已上传NCToolStripMenuItem1;
     }
 }
 

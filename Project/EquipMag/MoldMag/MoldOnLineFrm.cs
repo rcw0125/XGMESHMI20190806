@@ -65,6 +65,7 @@ namespace EquipMag.MoldMag
             if (strCCMID.Equals("S60"))
                 strCCMID = "3¡¢4#Öý»ú";
             cmbCastID.Items.Add(strCCMID);
+           // cmbCastID.SelectedIndex = 0;
         }
 
         //È·ÈÏ

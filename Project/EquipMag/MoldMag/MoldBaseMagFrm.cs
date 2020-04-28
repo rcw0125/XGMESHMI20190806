@@ -103,6 +103,11 @@ namespace EquipMag.MoldMag
             }
             string strMoldID = dr[0]["MoldID"].ToString();
             string strCCMID = dr[0]["UnitID"].ToString();
+            if (strCCMID == "S60")
+            {
+                MessageBox.Show("请选择铸机号", "提示", MessageBoxButtons.OK);
+                return;
+            }
             int iFaceMea = Convert.ToInt16(dr[0]["Break_Face_Mea"]);
 
             MoldOnLineFrm Frm = new MoldOnLineFrm();

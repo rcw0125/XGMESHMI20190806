@@ -274,88 +274,112 @@ namespace UnitMag.BOFMag
                         tempdataList.Add(tempdata);
                     }             
                 }
-
+                int flag = 0;//是否指定主原料
                 if (tempdataList.Count == 1)
                 {
                     wdmodel tempdata = new wdmodel();
                     tempdata.heatid = tbheatid.Text.Trim();
                     tempdataList.Add(tempdata);
+                    flag = 1;
                 }
                 #region 对最后一炉的数据检查赋值
-                if (tempdataList[1].shihui < 1)
+                //if (tempdataList[1].shihui < 1)
+                //{
+                //    tempdataList[1].shihui = tempdataList[0].shihui;
+                //}
+                //if (tempdataList[1].baiyunhui < 1)
+                //{
+                //    tempdataList[1].baiyunhui = tempdataList[0].baiyunhui;
+                //}
+                //if (tempdataList[1].baiyunshi < 1)
+                //{
+                //    tempdataList[1].baiyunshi = tempdataList[0].baiyunshi;
+                //}
+                //if (tempdataList[1].shihuishi < 1)
+                //{
+                //    tempdataList[1].shihuishi = tempdataList[0].shihuishi;
+                //}
+                //if (tempdataList[1].shaojiekuang < 1)
+                //{
+                //    tempdataList[1].shaojiekuang = tempdataList[0].shaojiekuang;
+                //}
+                //if (tempdataList[1].cgfrj < 1)
+                //{
+                //    tempdataList[1].cgfrj = tempdataList[0].cgfrj;
+                //}
+
+                //if (tempdataList[1].zdc < 0.0001)
+                //{
+                //    tempdataList[1].zdc = tempdataList[0].zdc;
+                //}
+                //if (tempdataList[1].o2time < 1)
+                //{
+                //    tempdataList[1].o2time = tempdataList[0].o2time;
+                //}        
+                //if (tempdataList[1].ironweight < 0.0001)
+                //{
+                //    tempdataList[1].ironweight = tempdataList[0].ironweight;
+                //}
+                //if (tempdataList[1].pigironweight < 0.0001)
+                //{
+                //    tempdataList[1].pigironweight = tempdataList[0].pigironweight;
+                //}
+
+                //if (tempdataList[1].ironweight < 0.0001)
+                //{
+                //    tempdataList[1].ironweight = tempdataList[0].ironweight;
+                //}
+                //if (tempdataList[1].scrapweight < 0.0001)
+                //{
+                //    tempdataList[1].scrapweight = tempdataList[0].scrapweight;
+                //}
+                //if (tempdataList[1].ykweight < 0.0001)
+                //{
+                //    tempdataList[1].ykweight = tempdataList[0].ykweight;
+                //}
+                //if (tempdataList[1].c < 0.0001)
+                //{
+                //    tempdataList[1].c = tempdataList[0].c;
+                //}
+                //if (tempdataList[1].si < 0.0001)
+                //{
+                //    tempdataList[1].si = tempdataList[0].si;
+                //}
+                //if (tempdataList[1].mn < 0.0001)
+                //{
+                //    tempdataList[1].mn = tempdataList[0].mn;
+                //}
+                //if (tempdataList[1].p < 0.0001)
+                //{
+                //    tempdataList[1].p = tempdataList[0].p;
+                //}
+                //if (tempdataList[1].irontemp < 0.0001)
+                //{
+                //    tempdataList[1].irontemp = tempdataList[0].irontemp;
+                //}
+                if (flag == 1)
                 {
                     tempdataList[1].shihui = tempdataList[0].shihui;
-                }
-                if (tempdataList[1].baiyunhui < 1)
-                {
                     tempdataList[1].baiyunhui = tempdataList[0].baiyunhui;
-                }
-                if (tempdataList[1].baiyunshi < 1)
-                {
                     tempdataList[1].baiyunshi = tempdataList[0].baiyunshi;
-                }
-                if (tempdataList[1].shihuishi < 1)
-                {
                     tempdataList[1].shihuishi = tempdataList[0].shihuishi;
-                }
-                if (tempdataList[1].shaojiekuang < 1)
-                {
                     tempdataList[1].shaojiekuang = tempdataList[0].shaojiekuang;
-                }
-                if (tempdataList[1].cgfrj < 1)
-                {
                     tempdataList[1].cgfrj = tempdataList[0].cgfrj;
-                }
-
-                if (tempdataList[1].zdc < 0.0001)
-                {
                     tempdataList[1].zdc = tempdataList[0].zdc;
-                }
-                if (tempdataList[1].o2time < 1)
-                {
                     tempdataList[1].o2time = tempdataList[0].o2time;
-                }        
-                if (tempdataList[1].ironweight < 0.0001)
-                {
                     tempdataList[1].ironweight = tempdataList[0].ironweight;
-                }
-                if (tempdataList[1].pigironweight < 0.0001)
-                {
                     tempdataList[1].pigironweight = tempdataList[0].pigironweight;
-                }
-
-                if (tempdataList[1].ironweight < 0.0001)
-                {
                     tempdataList[1].ironweight = tempdataList[0].ironweight;
-                }
-                if (tempdataList[1].scrapweight < 0.0001)
-                {
                     tempdataList[1].scrapweight = tempdataList[0].scrapweight;
-                }
-                if (tempdataList[1].ykweight < 0.0001)
-                {
                     tempdataList[1].ykweight = tempdataList[0].ykweight;
-                }
-                if (tempdataList[1].c < 0.0001)
-                {
                     tempdataList[1].c = tempdataList[0].c;
-                }
-                if (tempdataList[1].si < 0.0001)
-                {
                     tempdataList[1].si = tempdataList[0].si;
-                }
-                if (tempdataList[1].mn < 0.0001)
-                {
                     tempdataList[1].mn = tempdataList[0].mn;
-                }
-                if (tempdataList[1].p < 0.0001)
-                {
                     tempdataList[1].p = tempdataList[0].p;
-                }
-                if (tempdataList[1].irontemp < 0.0001)
-                {
                     tempdataList[1].irontemp = tempdataList[0].irontemp;
                 }
+                            
+               
                 #endregion     
                 lbtemp.Text = tempdataList[0].lactemp.ToString();
                 lbcurtemp.Text = tempdataList[1].lactemp.ToString();
@@ -417,6 +441,10 @@ namespace UnitMag.BOFMag
         [DisplayName("石灰石")]
 
         public double shihuishi { get; set; }
+
+        [DisplayName("废渣块")]
+
+        public double feizhakuai { get; set; }
 
         [DisplayName("烧结矿")]
 

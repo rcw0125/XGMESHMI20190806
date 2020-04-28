@@ -99,6 +99,11 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.cmdChangePlanTime = new AppSvrHMI.L3Command(this.components);
             this.l3CommandParameter1 = new AppSvrHMI.L3CommandParameter();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmdchangecurheat = new AppSvrHMI.L3Command(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bsTapping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTapping)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsTapping)).BeginInit();
@@ -579,29 +584,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 52);
+            this.label1.Location = new System.Drawing.Point(63, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "炉号:";
             // 
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsTapping, "HeatID", true));
-            this.textBox1.Location = new System.Drawing.Point(149, 50);
+            this.textBox1.Location = new System.Drawing.Point(117, 49);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(112, 26);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(379, 47);
+            this.button1.BackColor = System.Drawing.Color.Salmon;
+            this.button1.Location = new System.Drawing.Point(395, 124);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(115, 28);
             this.button1.TabIndex = 155;
             this.button1.Text = "修改";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
@@ -609,25 +615,25 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(66, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.Size = new System.Drawing.Size(104, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "大包开浇时刻";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd hh:mm:ss";
+            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dateTimePicker2.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsTapping, "Aim_Time_CastingStart", true));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(149, 126);
+            this.dateTimePicker2.Location = new System.Drawing.Point(176, 126);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(188, 21);
+            this.dateTimePicker2.Size = new System.Drawing.Size(188, 26);
             this.dateTimePicker2.TabIndex = 3;
             // 
             // cmdChangePlanTime
             // 
             this.cmdChangePlanTime.Adapter = this.Adapter;
             this.cmdChangePlanTime.MergeReturnTarget = false;
-            this.cmdChangePlanTime.Method = "ModifyTappingPlanTimeInfor";
+            this.cmdChangePlanTime.Method = "TappingPlanChangeTimeTable";
             this.cmdChangePlanTime.Object = "XGMESLogic\\PlanMag\\CPlan_Mag\\Plan_Mag";
             this.cmdChangePlanTime.Parameters.Add(this.l3CommandParameter1);
             this.cmdChangePlanTime.ReturnTarget = null;
@@ -646,15 +652,69 @@
             this.l3CommandParameter1.TargetObject = null;
             this.l3CommandParameter1.TargetProperty = null;
             // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsTapping, "CasterID", true));
+            this.textBox2.Location = new System.Drawing.Point(117, 12);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(112, 26);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsTapping, "Treat_Seq", true));
+            this.textBox3.Location = new System.Drawing.Point(362, 12);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(100, 26);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(63, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "铸机:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(260, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "铸机顺序号:";
+            // 
+            // cmdchangecurheat
+            // 
+            this.cmdchangecurheat.Adapter = this.Adapter;
+            this.cmdchangecurheat.MergeReturnTarget = false;
+            this.cmdchangecurheat.Method = "ModifyTappingPlanTimeInfor";
+            this.cmdchangecurheat.Object = "XGMESLogic\\PlanMag\\CPlan_Mag\\Plan_Mag";
+            this.cmdchangecurheat.Parameters.Add(this.l3CommandParameter1);
+            this.cmdchangecurheat.ReturnTarget = null;
+            this.cmdchangecurheat.ReturnTargetProperty = null;
+            this.cmdchangecurheat.Trigger = null;
+            this.cmdchangecurheat.TriggerEvent = "Click";
+            // 
             // UpdateControl
             // 
             this.ClientSize = new System.Drawing.Size(619, 325);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("宋体", 12F);
             this.Name = "UpdateControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.TabText = "修改大包开浇时刻";
             this.Text = "修改大包开浇时刻";
             this.Load += new System.EventHandler(this.UpdateControl_Load);
@@ -737,5 +797,10 @@
         private System.Windows.Forms.Label label3;
         private AppSvrHMI.L3Command cmdChangePlanTime;
         private AppSvrHMI.L3CommandParameter l3CommandParameter1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private AppSvrHMI.L3Command cmdchangecurheat;
     }
 }

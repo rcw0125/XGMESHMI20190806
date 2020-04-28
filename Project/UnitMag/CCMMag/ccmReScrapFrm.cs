@@ -46,7 +46,7 @@ namespace UnitMag.CCMMag
         private void ccmReScrapFrm_Load(object sender, EventArgs e)
         {
             string strsql = " select  materialid from cbloom_data   where status<=9 and status >5   ";
-            strsql += " and materialid in (select heatid from cccm_base_data where productiondate > sysdate-0.5)";
+            strsql += " and materialid in (select heatid from cccm_base_data where productiondate > sysdate-1)";
             var dtheatid = MESTool.GetData(Adapter, strsql);
             if (dtheatid != null && dtheatid.Rows.Count > 0)
             {

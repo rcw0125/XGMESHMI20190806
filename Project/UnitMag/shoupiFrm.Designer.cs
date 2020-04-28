@@ -40,6 +40,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.btnQuery = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.tdtstart = new buttonHide.ToolStripToriDateTimePicker();
@@ -48,7 +49,6 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btnOutput = new System.Windows.Forms.ToolStripButton();
             this.dvTel = new System.Windows.Forms.DataGridView();
-            this.scsjBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,9 +61,12 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.铸机DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scsjBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.炉号DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.炉座 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.开吹时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.钢种DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.铸机DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.包次DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.开浇时间DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.铁水DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,7 +76,6 @@
             this.钢水DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.收坯DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.铁耗 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bnM)).BeginInit();
             this.bnM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMqhs)).BeginInit();
@@ -177,6 +179,14 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel2.AutoSize = false;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(100, 22);
+            this.toolStripLabel2.Text = " ";
+            // 
             // btnQuery
             // 
             this.btnQuery.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -255,9 +265,11 @@
             this.dvTel.ColumnHeadersHeight = 35;
             this.dvTel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvTel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.铸机DataGridViewTextBoxColumn,
             this.炉号DataGridViewTextBoxColumn,
+            this.炉座,
+            this.开吹时间,
             this.钢种DataGridViewTextBoxColumn,
+            this.铸机DataGridViewTextBoxColumn,
             this.包次DataGridViewTextBoxColumn,
             this.开浇时间DataGridViewTextBoxColumn,
             this.铁水DataGridViewTextBoxColumn,
@@ -276,10 +288,6 @@
             this.dvTel.Size = new System.Drawing.Size(895, 569);
             this.dvTel.TabIndex = 34;
             this.dvTel.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvTel_DataError);
-            // 
-            // scsjBindingSource
-            // 
-            this.scsjBindingSource.DataSource = typeof(UnitMag.scsj);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -364,13 +372,9 @@
             this.dataGridViewTextBoxColumn12.HeaderText = "铁耗";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // 铸机DataGridViewTextBoxColumn
+            // scsjBindingSource
             // 
-            this.铸机DataGridViewTextBoxColumn.DataPropertyName = "铸机";
-            this.铸机DataGridViewTextBoxColumn.HeaderText = "铸机";
-            this.铸机DataGridViewTextBoxColumn.Name = "铸机DataGridViewTextBoxColumn";
-            this.铸机DataGridViewTextBoxColumn.ReadOnly = true;
-            this.铸机DataGridViewTextBoxColumn.Width = 70;
+            this.scsjBindingSource.DataSource = typeof(UnitMag.scsj);
             // 
             // 炉号DataGridViewTextBoxColumn
             // 
@@ -380,6 +384,22 @@
             this.炉号DataGridViewTextBoxColumn.ReadOnly = true;
             this.炉号DataGridViewTextBoxColumn.Width = 80;
             // 
+            // 炉座
+            // 
+            this.炉座.DataPropertyName = "炉座";
+            this.炉座.HeaderText = "炉座";
+            this.炉座.Name = "炉座";
+            this.炉座.ReadOnly = true;
+            this.炉座.Width = 70;
+            // 
+            // 开吹时间
+            // 
+            this.开吹时间.DataPropertyName = "开吹时间";
+            this.开吹时间.HeaderText = "开吹时间";
+            this.开吹时间.Name = "开吹时间";
+            this.开吹时间.ReadOnly = true;
+            this.开吹时间.Width = 80;
+            // 
             // 钢种DataGridViewTextBoxColumn
             // 
             this.钢种DataGridViewTextBoxColumn.DataPropertyName = "钢种";
@@ -387,6 +407,14 @@
             this.钢种DataGridViewTextBoxColumn.Name = "钢种DataGridViewTextBoxColumn";
             this.钢种DataGridViewTextBoxColumn.ReadOnly = true;
             this.钢种DataGridViewTextBoxColumn.Width = 80;
+            // 
+            // 铸机DataGridViewTextBoxColumn
+            // 
+            this.铸机DataGridViewTextBoxColumn.DataPropertyName = "铸机";
+            this.铸机DataGridViewTextBoxColumn.HeaderText = "铸机";
+            this.铸机DataGridViewTextBoxColumn.Name = "铸机DataGridViewTextBoxColumn";
+            this.铸机DataGridViewTextBoxColumn.ReadOnly = true;
+            this.铸机DataGridViewTextBoxColumn.Width = 70;
             // 
             // 包次DataGridViewTextBoxColumn
             // 
@@ -426,7 +454,7 @@
             this.铁块DataGridViewTextBoxColumn.HeaderText = "铁块";
             this.铁块DataGridViewTextBoxColumn.Name = "铁块DataGridViewTextBoxColumn";
             this.铁块DataGridViewTextBoxColumn.ReadOnly = true;
-            this.铁块DataGridViewTextBoxColumn.Width = 80;
+            this.铁块DataGridViewTextBoxColumn.Width = 60;
             // 
             // 压块DataGridViewTextBoxColumn
             // 
@@ -434,7 +462,7 @@
             this.压块DataGridViewTextBoxColumn.HeaderText = "压块";
             this.压块DataGridViewTextBoxColumn.Name = "压块DataGridViewTextBoxColumn";
             this.压块DataGridViewTextBoxColumn.ReadOnly = true;
-            this.压块DataGridViewTextBoxColumn.Width = 80;
+            this.压块DataGridViewTextBoxColumn.Width = 60;
             // 
             // 钢水DataGridViewTextBoxColumn
             // 
@@ -458,14 +486,6 @@
             this.铁耗.HeaderText = "铁耗";
             this.铁耗.Name = "铁耗";
             this.铁耗.ReadOnly = true;
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel2.AutoSize = false;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(100, 22);
-            this.toolStripLabel2.Text = " ";
             // 
             // shoupiFrm
             // 
@@ -509,18 +529,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.BindingSource scsjBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 铸机DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 炉号DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 钢种DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 包次DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 开浇时间DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 铁水DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 废钢DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 铁块DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 压块DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 钢水DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 收坯DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 铁耗;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -534,5 +542,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 炉号DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 炉座;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 开吹时间;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 钢种DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 铸机DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 包次DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 开浇时间DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 铁水DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 废钢DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 铁块DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 压块DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 钢水DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 收坯DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 铁耗;
     }
 }

@@ -387,6 +387,12 @@
     <Compile Include="CCMMag\CCMMain07.Designer.cs">
       <DependentUpon>CCMMain07.cs</DependentUpon>
     </Compile>
+    <Compile Include="CCMMag\ccmReScrapAllFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CCMMag\ccmReScrapAllFrm.Designer.cs">
+      <DependentUpon>ccmReScrapAllFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CCMMag\ccmReScrapFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -593,6 +599,7 @@
     <Compile Include="CQA_BOF_Std_Ladle.cs" />
     <Compile Include="CQA_BOF_Std_Slag_Ele.cs" />
     <Compile Include="CQA_BOF_Std_Tapping.cs" />
+    <Compile Include="DbHelp.cs" />
     <Compile Include="DEPMag\DEPAttributeFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -996,6 +1003,12 @@
     <Compile Include="LFMag\LFHeatRemarkFrm.designer.cs">
       <DependentUpon>LFHeatRemarkFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LFMag\LFLadleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LFMag\LFLadleInfo.Designer.cs">
+      <DependentUpon>LFLadleInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="LFMag\LfMain01.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1162,6 +1175,12 @@
     <Compile Include="LadleWeightFrm.Designer.cs">
       <DependentUpon>LadleWeightFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="trainWeiZhiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainWeiZhiFrm.Designer.cs">
+      <DependentUpon>trainWeiZhiFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="shoupiBofFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1318,10 +1337,27 @@
       <DependentUpon>TAPMain04.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucTrain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTrain.Designer.cs">
+      <DependentUpon>ucTrain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Web References\MESService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OPCServer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="zonghe\ucCcm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="zonghe\ucCcm.Designer.cs">
+      <DependentUpon>ucCcm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AODMag\AODDesignateMaterialFrm.resx">
       <DependentUpon>AODDesignateMaterialFrm.cs</DependentUpon>
@@ -1433,6 +1469,9 @@
     <EmbeddedResource Include="CCMMag\CCMMain07.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CCMMain07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CCMMag\ccmReScrapAllFrm.resx">
+      <DependentUpon>ccmReScrapAllFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CCMMag\ccmReScrapFrm.resx">
       <DependentUpon>ccmReScrapFrm.cs</DependentUpon>
@@ -1799,6 +1838,9 @@
       <DependentUpon>LFHeatRemarkFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="LFMag\LFLadleInfo.resx">
+      <DependentUpon>LFLadleInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LFMag\LFRequestChangingGradeFrm.resx">
       <DependentUpon>LFRequestChangingGradeFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1885,6 +1927,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LadleWeightFrm.resx">
       <DependentUpon>LadleWeightFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainWeiZhiFrm.resx">
+      <DependentUpon>trainWeiZhiFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="shoupiBofFrm.resx">
@@ -2028,6 +2074,9 @@
       <SubType>Designer</SubType>
       <DependentUpon>TAPWeightFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucTrain.resx">
+      <DependentUpon>ucTrain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucUnitStatus.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ucUnitStatus.cs</DependentUpon>
@@ -2059,6 +2108,9 @@
     <EmbeddedResource Include="MELTMag\ucMELTStatus.resx">
       <DependentUpon>ucMELTStatus.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zonghe\ucCcm.resx">
+      <DependentUpon>ucCcm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\DataSources\CBOF_Feed_Data.datasource" />
@@ -2220,6 +2272,14 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Web References\MESService\wsmes.wsdl" />
+    <None Include="Web References\OPCServer\opcws.wsdl" />
+    <None Include="Web References\OPCServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OPCServer\valRes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonMag\CommDataMag.csproj">
@@ -2278,6 +2338,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\CCMBusy07.png" />
+    <None Include="Web References\OPCServer\opcws.disco" />
     <None Include="Web References\MESService\wsmes.disco" />
     <None Include="Resources\CCMBuye7.bmp" />
     <None Include="Resources\CCMBusy7.png" />
@@ -2299,6 +2360,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>UnitMag_localhost_WSMES</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.48.234:808/opcws.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OPCServer\</RelPath>
+      <UpdateFromURL>http://192.168.48.234:808/opcws.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>UnitMag_OPCServer_opcWS</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

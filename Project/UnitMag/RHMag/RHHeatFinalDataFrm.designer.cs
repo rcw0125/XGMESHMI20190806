@@ -108,6 +108,7 @@
             this.l3CommandParameter1 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter2 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter3 = new AppSvrHMI.L3CommandParameter();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.bsBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsBase)).BeginInit();
@@ -158,7 +159,7 @@
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(73, 22);
+            this.btnConfirm.Size = new System.Drawing.Size(76, 22);
             this.btnConfirm.Text = "实绩确认";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -166,7 +167,7 @@
             // 
             this.Adapter.SetAccessRight(this.cxCheckFlag, "CheckBoxRHInfo");
             this.cxCheckFlag.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cxCheckFlag.Location = new System.Drawing.Point(283, 0);
+            this.cxCheckFlag.Location = new System.Drawing.Point(366, 0);
             this.cxCheckFlag.Name = "cxCheckFlag";
             this.cxCheckFlag.Size = new System.Drawing.Size(86, 21);
             this.cxCheckFlag.TabIndex = 25;
@@ -451,7 +452,8 @@
             this.toolStripLabel2,
             this.btnConfirm,
             this.txtHeatID,
-            this.toolStripLabel4});
+            this.toolStripLabel4,
+            this.toolStripButton1});
             this.bdN1.Location = new System.Drawing.Point(0, 0);
             this.bdN1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bdN1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -466,7 +468,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -539,7 +541,7 @@
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(49, 22);
+            this.btnQuery.Size = new System.Drawing.Size(52, 22);
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -840,6 +842,16 @@
             this.l3CommandParameter3.TargetObject = null;
             this.l3CommandParameter3.TargetProperty = null;
             // 
+            // toolStripButton1
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton1, "LFbtnConfirm");
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(52, 22);
+            this.toolStripButton1.Text = "解锁";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // RHHeatFinalDataFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -951,5 +963,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gUIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.ToolStripTextBox txtHeatID;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
