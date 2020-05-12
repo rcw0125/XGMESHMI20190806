@@ -314,34 +314,34 @@ namespace UnitMag.CCMMag
 
         public void getLadleTareWeight()
         {
-            if (UnitID != "S65")
-            {
-                groupBox5.Visible = false;
-                return;
-            }
-            if (label17.Text.Trim() != "")
-            {
-                string sql = "select ladleno,weight,log_time from ";
-                sql += " (select * from clf_ladle_weight  where ladleno='" + label17.Text.Trim() + "' and status='2' order by log_time desc)  ";
-                sql += " where rownum<2  ";
-                var dt = UnitMag.MESTool.GetData(Adapter, sql);
-                if (dt != null && dt.Rows.Count > 0)
-                {
-                    dataGridView1.DataSource = dt;
-                    DateTime pz = Convert.ToDateTime(dt.Rows[0]["log_time"]);
-                    string strsql = "select count(*) from clf_ladle_weight  where ladleno='" + label17.Text.Trim() + "'and status='1' and log_time> ";
-                    strsql += " TO_DATE('"+ dt.Rows[0]["log_time"].ToString() + "','yyyy-MM-dd HH24:MI:SS')";
-                    var dtpd= UnitMag.MESTool.GetData(Adapter, strsql);
-                    if (dtpd != null && dtpd.Rows.Count > 0)
-                    {
-                        if (dtpd.Rows[0][0].ToString() != "1")
-                        {
+            //if (UnitID != "S65")
+            //{
+            //    groupBox5.Visible = false;
+            //    return;
+            //}
+            //if (label17.Text.Trim() != "")
+            //{
+            //    string sql = "select ladleno,weight,log_time from ";
+            //    sql += " (select * from clf_ladle_weight  where ladleno='" + label17.Text.Trim() + "' and status='2' order by log_time desc)  ";
+            //    sql += " where rownum<2  ";
+            //    var dt = UnitMag.MESTool.GetData(Adapter, sql);
+            //    if (dt != null && dt.Rows.Count > 0)
+            //    {
+            //        dataGridView1.DataSource = dt;
+            //        DateTime pz = Convert.ToDateTime(dt.Rows[0]["log_time"]);
+            //        string strsql = "select count(*) from clf_ladle_weight  where ladleno='" + label17.Text.Trim() + "'and status='1' and log_time> ";
+            //        strsql += " TO_DATE('"+ dt.Rows[0]["log_time"].ToString() + "','yyyy-MM-dd HH24:MI:SS')";
+            //        var dtpd= UnitMag.MESTool.GetData(Adapter, strsql);
+            //        if (dtpd != null && dtpd.Rows.Count > 0)
+            //        {
+            //            if (dtpd.Rows[0][0].ToString() != "1")
+            //            {
                             
-                            MessageBox.Show("上件岗位称皮重操作不规范，或没有称皮重！次数="+ dtpd.Rows[0][0].ToString());
-                        }
-                    }
-                }
-            }
+            //                MessageBox.Show("上件岗位称皮重操作不规范，或没有称皮重！次数="+ dtpd.Rows[0][0].ToString());
+            //            }
+            //        }
+            //    }
+            //}
         }
 
         private void dvPlan_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
@@ -645,9 +645,5 @@ namespace UnitMag.CCMMag
             dsPlan.LoadData();
         }
 
-        private void label17_TextChanged(object sender, EventArgs e)
-        {
-            getLadleTareWeight();
-        }
     }
 }

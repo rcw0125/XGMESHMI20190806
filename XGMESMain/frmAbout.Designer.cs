@@ -44,10 +44,8 @@
             this.MANUFACTURER_PHONE = new System.Windows.Forms.Label();
             this.MANUFACTURER_WEB = new System.Windows.Forms.LinkLabel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOK
@@ -205,14 +203,6 @@
             this.logoPictureBox.TabIndex = 13;
             this.logoPictureBox.TabStop = false;
             // 
-            // c1Chart1
-            // 
-            this.c1Chart1.Location = new System.Drawing.Point(200, 7);
-            this.c1Chart1.Name = "c1Chart1";
-            this.c1Chart1.PropBag = resources.GetString("c1Chart1.PropBag");
-            this.c1Chart1.Size = new System.Drawing.Size(200, 150);
-            this.c1Chart1.TabIndex = 14;
-            // 
             // frmAbout
             // 
             this.AcceptButton = this.btnOK;
@@ -220,7 +210,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnOK;
             this.ClientSize = new System.Drawing.Size(515, 277);
-            this.Controls.Add(this.c1Chart1);
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.MANUFACTURER_WEB);
             this.Controls.Add(this.MANUFACTURER_PHONE);
@@ -236,7 +225,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,6 +247,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label USER_INFO;
         private System.Windows.Forms.PictureBox logoPictureBox;
-        private C1.Win.C1Chart.C1Chart c1Chart1;
     }
 }

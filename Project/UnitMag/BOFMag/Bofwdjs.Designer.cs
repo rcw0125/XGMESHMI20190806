@@ -82,6 +82,7 @@
             this.baiyunhuiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.baiyunshiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shihuishi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.feizhakuai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shaojiekuang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cgfrj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zdc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,7 +104,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -115,9 +116,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1071, 476);
-            this.splitContainer1.SplitterDistance = 257;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(1072, 480);
+            this.splitContainer1.SplitterDistance = 259;
+            this.splitContainer1.SplitterWidth = 8;
             this.splitContainer1.TabIndex = 0;
             // 
             // groupBox3
@@ -125,9 +126,11 @@
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.tbtemp);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(451, 105);
+            this.groupBox3.Location = new System.Drawing.Point(448, 104);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 85);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.groupBox3.Size = new System.Drawing.Size(304, 88);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "温度预测";
@@ -135,9 +138,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Coral;
-            this.button1.Location = new System.Drawing.Point(24, 39);
+            this.button1.Location = new System.Drawing.Point(24, 40);
+            this.button1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 27);
+            this.button1.Size = new System.Drawing.Size(96, 24);
             this.button1.TabIndex = 2;
             this.button1.Text = "计算";
             this.button1.UseVisualStyleBackColor = false;
@@ -145,8 +149,8 @@
             // 
             // tbtemp
             // 
-            this.tbtemp.Location = new System.Drawing.Point(200, 42);
-            this.tbtemp.Margin = new System.Windows.Forms.Padding(4);
+            this.tbtemp.Location = new System.Drawing.Point(200, 40);
+            this.tbtemp.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.tbtemp.Name = "tbtemp";
             this.tbtemp.Size = new System.Drawing.Size(84, 26);
             this.tbtemp.TabIndex = 1;
@@ -154,8 +158,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(144, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(144, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 0;
@@ -171,20 +175,21 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.groupBox1.Location = new System.Drawing.Point(43, 53);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(40, 56);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(306, 149);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.groupBox1.Size = new System.Drawing.Size(304, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "炉次信息";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(213, 19);
+            this.button2.Location = new System.Drawing.Point(216, 16);
+            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 29);
+            this.button2.Size = new System.Drawing.Size(72, 32);
             this.button2.TabIndex = 2;
             this.button2.Text = "查询";
             this.button2.UseVisualStyleBackColor = true;
@@ -192,10 +197,10 @@
             // 
             // tbheatid
             // 
-            this.tbheatid.Location = new System.Drawing.Point(74, 21);
-            this.tbheatid.Margin = new System.Windows.Forms.Padding(4);
+            this.tbheatid.Location = new System.Drawing.Point(72, 24);
+            this.tbheatid.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.tbheatid.Name = "tbheatid";
-            this.tbheatid.Size = new System.Drawing.Size(115, 26);
+            this.tbheatid.Size = new System.Drawing.Size(116, 26);
             this.tbheatid.TabIndex = 1;
             // 
             // lbcurtemp
@@ -203,8 +208,8 @@
             this.lbcurtemp.AutoSize = true;
             this.lbcurtemp.Font = new System.Drawing.Font("宋体", 14F);
             this.lbcurtemp.ForeColor = System.Drawing.Color.Red;
-            this.lbcurtemp.Location = new System.Drawing.Point(122, 119);
-            this.lbcurtemp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbcurtemp.Location = new System.Drawing.Point(120, 120);
+            this.lbcurtemp.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.lbcurtemp.Name = "lbcurtemp";
             this.lbcurtemp.Size = new System.Drawing.Size(19, 19);
             this.lbcurtemp.TabIndex = 0;
@@ -215,8 +220,8 @@
             this.lbtemp.AutoSize = true;
             this.lbtemp.Font = new System.Drawing.Font("宋体", 14F);
             this.lbtemp.ForeColor = System.Drawing.Color.Red;
-            this.lbtemp.Location = new System.Drawing.Point(122, 80);
-            this.lbtemp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbtemp.Location = new System.Drawing.Point(120, 80);
+            this.lbtemp.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.lbtemp.Name = "lbtemp";
             this.lbtemp.Size = new System.Drawing.Size(19, 19);
             this.lbtemp.TabIndex = 0;
@@ -225,8 +230,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 121);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(32, 120);
+            this.label4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 0;
@@ -235,8 +240,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 80);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(16, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 16);
             this.label3.TabIndex = 0;
@@ -245,8 +250,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(16, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 0;
@@ -273,6 +278,7 @@
             this.baiyunhuiDataGridViewTextBoxColumn,
             this.baiyunshiDataGridViewTextBoxColumn,
             this.shihuishi,
+            this.feizhakuai,
             this.shaojiekuang,
             this.cgfrj,
             this.zdc,
@@ -284,9 +290,10 @@
             this.dataGridView1.DataSource = this.wdmodelBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1071, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(1072, 213);
             this.dataGridView1.TabIndex = 0;
             // 
             // wdmodelBindingSource
@@ -556,6 +563,13 @@
             this.shihuishi.Name = "shihuishi";
             this.shihuishi.Width = 70;
             // 
+            // feizhakuai
+            // 
+            this.feizhakuai.DataPropertyName = "feizhakuai";
+            this.feizhakuai.HeaderText = "废渣块";
+            this.feizhakuai.Name = "feizhakuai";
+            this.feizhakuai.Width = 70;
+            // 
             // shaojiekuang
             // 
             this.shaojiekuang.DataPropertyName = "shaojiekuang";
@@ -616,10 +630,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 476);
+            this.ClientSize = new System.Drawing.Size(1072, 480);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("宋体", 12F);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.Name = "Bofwdjs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "转炉温度计算";
@@ -665,29 +679,6 @@
         private System.Windows.Forms.Label lbtemp;
         private System.Windows.Forms.Label lbcurtemp;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn heatidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lactemp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ironweightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scrapweightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ykweight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pigironweight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn siDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mnDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn irontempDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shihuiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn baiyunhuiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn baiyunshiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shihuishi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shaojiekuang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cgfrj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zdc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn liuzha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn o2time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sxzweight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tlzweight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qgzweight;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -710,5 +701,29 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn heatidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lactemp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ironweightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scrapweightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ykweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pigironweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn siDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mnDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn irontempDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shihuiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn baiyunhuiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn baiyunshiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shihuishi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn feizhakuai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shaojiekuang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cgfrj;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zdc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn liuzha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn o2time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sxzweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tlzweight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qgzweight;
     }
 }

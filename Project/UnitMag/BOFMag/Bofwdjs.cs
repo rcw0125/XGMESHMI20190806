@@ -214,6 +214,7 @@ namespace UnitMag.BOFMag
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13305') as baiyunhui, ";
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13323') as baiyunshi, ";
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '13307') as shihuishi, ";
+                strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '67149') as feizhakuai, ";
                 strSql += " (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '60103') as shaojiekuang,";
                 strSql += "  (select decode(sum(weight),null,0,sum(weight)) from cbof_addition_data  where heatid = cbof_feed_data.heatid and type = 1 and element = '12176') as cgfrj, ";
                 strSql += "  (select blowo2_time-reblow_time from cbof_process_data where heatid = cbof_feed_data.heatid) as o2time, ";
@@ -242,6 +243,7 @@ namespace UnitMag.BOFMag
                         tempdata.baiyunhui = Math.Round(Convert.ToDouble(dt.Rows[i]["baiyunhui"]), 1);
                         tempdata.baiyunshi = Math.Round(Convert.ToDouble(dt.Rows[i]["baiyunshi"]), 1);
                         tempdata.shihuishi = Math.Round(Convert.ToDouble(dt.Rows[i]["shihuishi"]), 1);
+                        tempdata.feizhakuai = Math.Round(Convert.ToDouble(dt.Rows[i]["feizhakuai"]), 1);
                         tempdata.shaojiekuang = Math.Round(Convert.ToDouble(dt.Rows[i]["shaojiekuang"]), 1);
                         tempdata.cgfrj = Math.Round(Convert.ToDouble(dt.Rows[i]["cgfrj"]), 1);
                         tempdata.lactemp = Convert.ToInt16(dt.Rows[i]["lactemp"]);
@@ -363,6 +365,7 @@ namespace UnitMag.BOFMag
                     tempdataList[1].baiyunhui = tempdataList[0].baiyunhui;
                     tempdataList[1].baiyunshi = tempdataList[0].baiyunshi;
                     tempdataList[1].shihuishi = tempdataList[0].shihuishi;
+                    tempdataList[1].feizhakuai = tempdataList[0].feizhakuai;
                     tempdataList[1].shaojiekuang = tempdataList[0].shaojiekuang;
                     tempdataList[1].cgfrj = tempdataList[0].cgfrj;
                     tempdataList[1].zdc = tempdataList[0].zdc;
