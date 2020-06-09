@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using UnitMag.CCMMag;
+using System.ServiceProcess;
 
 //using EDoor.WinFormsUI.Docking;
 //using System.Threading;
@@ -34,7 +35,6 @@ namespace XGMESMain
                 if (pro.Start())
                 {
                     pro.Close();
-
                 }
             }
 
@@ -229,6 +229,14 @@ namespace XGMESMain
                 strsql += account + "','" + GetLocalIP() + "','" + GetComputerName() + "','" + existms() + "','" + version + "')";
                 exeSql(L3DataAdapter, strsql);
 
+                if (existms() == "是")
+                {
+                    toolStripStatusLabel4.Text = "";
+                }
+                else
+                {
+                    toolStripStatusLabel4.Text = "未安装MES监控程序，一个小时退出一次";
+                }
 
                 //add by hyh 2012-03-30  根据邢钢要求，定时修改密码，否则不应许登陆
                 //try
@@ -267,7 +275,7 @@ namespace XGMESMain
 
         private string existms()
         {
-            if (File.Exists(@"C:\Windows\ms\MyService.exe"))
+            if (IsServiceExisted("MyService"))
             {
                 return "是";
             }
@@ -275,6 +283,14 @@ namespace XGMESMain
             {
                 return "否";
             }
+            //if (File.Exists(@"C:\Windows\ms\MyService.exe"))
+            //{
+            //    return "是";
+            //}
+            //else
+            //{
+            //    return "否";
+            //}
         }
 
         /// <summary>
@@ -720,6 +736,19 @@ namespace XGMESMain
             }
             ccmReScrapAllFrm Frm = new ccmReScrapAllFrm();
             Frm.ShowDialogEx(L3DataAdapter.Session);
+        }
+        //判断服务是否存在
+        private bool IsServiceExisted(string serviceName)
+        {
+            ServiceController[] services = ServiceController.GetServices();
+            foreach (ServiceController sc in services)
+            {
+                if (sc.ServiceName.ToLower() == serviceName.ToLower())
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

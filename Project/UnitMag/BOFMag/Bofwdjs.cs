@@ -124,33 +124,26 @@ namespace UnitMag.BOFMag
                     {
                         piancha += Math.Round(((tempdataList[1].o2time - tempdataList[0].o2time) / 15) * (10), 1);
                     }
-
                 }
-
                 #endregion
 
                 #region 加入散装料部分
-
                 if (tempdataList[0].shihui >=0 && tempdataList[1].shihui >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].shihui - tempdataList[0].shihui) / 100) * (-5.1), 1);
                 }
-
                 if (tempdataList[0].baiyunhui >= 0 && tempdataList[1].baiyunhui >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].baiyunhui - tempdataList[0].baiyunhui) / 100) * (-6.6), 1);
                 }
-
                 if (tempdataList[0].baiyunshi >= 0 && tempdataList[1].baiyunshi >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].baiyunshi - tempdataList[0].baiyunshi) / 100) * (-7), 1);
                 }
-
                 if (tempdataList[0].shihuishi >= 0 && tempdataList[1].shihuishi >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].shihuishi - tempdataList[0].shihuishi) / 100) * (-7), 1);
                 }
-
                 if (tempdataList[0].shaojiekuang >= 0 && tempdataList[1].shaojiekuang >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].shaojiekuang - tempdataList[0].shaojiekuang) / 100) * (-10.32), 1);

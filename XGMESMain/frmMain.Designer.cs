@@ -172,6 +172,7 @@
             this.大包水口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.连铸责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大包称重分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.大包称重分析ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.设备状态变化查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.生产实绩查询PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -478,6 +479,7 @@
             this.labelUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.labelMsg = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbChangShift = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbShiftID = new System.Windows.Forms.ToolStripStatusLabel();
@@ -1596,7 +1598,8 @@
             this.连铸数据查询ToolStripMenuItem,
             this.连铸耐材使用实绩查询ToolStripMenuItem,
             this.连铸责任人维护ToolStripMenuItem,
-            this.大包称重分析ToolStripMenuItem});
+            this.大包称重分析ToolStripMenuItem,
+            this.大包称重分析ToolStripMenuItem1});
             this.连铸工序管理ToolStripMenuItem.Name = "连铸工序管理ToolStripMenuItem";
             this.连铸工序管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.连铸工序管理ToolStripMenuItem, "");
@@ -1753,6 +1756,14 @@
             this.大包称重分析ToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.panelMain.SetTargetForm(this.大包称重分析ToolStripMenuItem, "UnitMag.LadleWeightFrm, UnitMag");
             this.大包称重分析ToolStripMenuItem.Text = "大包称重分析";
+            // 
+            // 大包称重分析ToolStripMenuItem1
+            // 
+            this.L3DataAdapter.SetAccessRight(this.大包称重分析ToolStripMenuItem1, "CCMProcessDataQuery");
+            this.大包称重分析ToolStripMenuItem1.Name = "大包称重分析ToolStripMenuItem1";
+            this.大包称重分析ToolStripMenuItem1.Size = new System.Drawing.Size(205, 22);
+            this.panelMain.SetTargetForm(this.大包称重分析ToolStripMenuItem1, "UnitMag.NewLadleWeightFrm, UnitMag");
+            this.大包称重分析ToolStripMenuItem1.Text = "大包称重分析(新版)";
             // 
             // toolStripSeparator17
             // 
@@ -4323,6 +4334,7 @@
             this.labelUser,
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel2,
+            this.toolStripStatusLabel4,
             this.labelMsg,
             this.lbChangShift,
             this.lbShiftID,
@@ -4368,6 +4380,17 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 21);
             // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.toolStripStatusLabel4.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(34, 21);
+            // 
             // labelMsg
             // 
             this.labelMsg.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
@@ -4376,7 +4399,7 @@
             this.labelMsg.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
             this.labelMsg.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.labelMsg.Name = "labelMsg";
-            this.labelMsg.Size = new System.Drawing.Size(782, 21);
+            this.labelMsg.Size = new System.Drawing.Size(748, 21);
             this.labelMsg.Spring = true;
             this.labelMsg.Text = "   ";
             // 
@@ -5158,6 +5181,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem 天车位置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重做甩废已上传NCToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem1;
     }
 }
 

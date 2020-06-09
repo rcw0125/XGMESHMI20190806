@@ -30,24 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LFHeatInfoFrm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnProcessCancel = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.dtSoftBlowStartTime = new System.Windows.Forms.DateTimePicker();
@@ -304,6 +304,8 @@
             this.coldsProbe_VonderL3DataTableCode_Des = new System.Data.DataColumn();
             this.dtSoftBlowEndTime = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
+            this.pxtbLadleJk = new PxDataValid.PxTextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.txtSteelWeight = new PxDataValid.PxTextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.txtFeedWireTemp = new PxDataValid.PxTextBox();
@@ -871,8 +873,6 @@
             this.dataGridViewTextBoxColumn89 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn90 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn91 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pxtbLadleJk = new PxDataValid.PxTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bsProcess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsProcess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsProcess)).BeginInit();
@@ -1526,6 +1526,7 @@
             // 
             // errorProvider1
             // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider1.ContainerControl = this;
             // 
             // toolTip1
@@ -1624,6 +1625,7 @@
             this.txtDepartureTemp.DisplayPrecision = 0;
             this.txtDepartureTemp.EnableNull = false;
             this.txtDepartureTemp.ErropPr = this.errorProvider1;
+            this.errorProvider1.SetError(this.txtDepartureTemp, "必输项,在0-2000之间的32位有符号整数!");
             this.txtDepartureTemp.FixedLength = 0;
             this.txtDepartureTemp.Length = 0;
             this.txtDepartureTemp.Location = new System.Drawing.Point(597, 20);
@@ -1637,10 +1639,10 @@
             this.txtDepartureTemp.MinStrLength = 0;
             this.txtDepartureTemp.Name = "txtDepartureTemp";
             this.txtDepartureTemp.Precision = 0;
-            this.txtDepartureTemp.ReadOnly = true;
             this.txtDepartureTemp.Regex = "";
             this.txtDepartureTemp.Size = new System.Drawing.Size(85, 21);
             this.txtDepartureTemp.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.txtDepartureTemp, "必输项,在0-2000之间的32位有符号整数!");
             this.txtDepartureTemp.ToolTipValid = this.toolTip1;
             this.txtDepartureTemp.VaildWarning = "";
             this.txtDepartureTemp.ValidEable = true;
@@ -2815,8 +2817,8 @@
             // dischargeTimeDataGridViewTextBoxColumn
             // 
             this.dischargeTimeDataGridViewTextBoxColumn.DataPropertyName = "Discharge_Time";
-            dataGridViewCellStyle19.Format = "G";
-            this.dischargeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.Format = "G";
+            this.dischargeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.dischargeTimeDataGridViewTextBoxColumn.Frozen = true;
             this.dischargeTimeDataGridViewTextBoxColumn.HeaderText = "加料时刻";
             this.dischargeTimeDataGridViewTextBoxColumn.Name = "dischargeTimeDataGridViewTextBoxColumn";
@@ -3325,8 +3327,8 @@
             // 
             this.wireTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.wireTimeDataGridViewTextBoxColumn.DataPropertyName = "WireTime";
-            dataGridViewCellStyle20.Format = "G";
-            this.wireTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Format = "G";
+            this.wireTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.wireTimeDataGridViewTextBoxColumn.Frozen = true;
             this.wireTimeDataGridViewTextBoxColumn.HeaderText = "喂线时刻";
             this.wireTimeDataGridViewTextBoxColumn.Name = "wireTimeDataGridViewTextBoxColumn";
@@ -3741,6 +3743,42 @@
             this.label11.Size = new System.Drawing.Size(83, 12);
             this.label11.TabIndex = 178;
             this.label11.Text = "软吹结束时刻:";
+            // 
+            // pxtbLadleJk
+            // 
+            this.pxtbLadleJk.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "LadleJk", true));
+            this.pxtbLadleJk.DisplayPrecision = 0;
+            this.pxtbLadleJk.EnableNull = false;
+            this.pxtbLadleJk.ErropPr = null;
+            this.pxtbLadleJk.FixedLength = 0;
+            this.pxtbLadleJk.Length = 0;
+            this.pxtbLadleJk.Location = new System.Drawing.Point(597, 251);
+            this.pxtbLadleJk.Max = 99D;
+            this.pxtbLadleJk.MaxNull = 99D;
+            this.pxtbLadleJk.MaxStringLength = 0;
+            this.pxtbLadleJk.MaxStrLength = 0;
+            this.pxtbLadleJk.Min = 0D;
+            this.pxtbLadleJk.MinNull = 0D;
+            this.pxtbLadleJk.MinStringLength = 0;
+            this.pxtbLadleJk.MinStrLength = 0;
+            this.pxtbLadleJk.Name = "pxtbLadleJk";
+            this.pxtbLadleJk.Precision = 0;
+            this.pxtbLadleJk.Regex = "";
+            this.pxtbLadleJk.Size = new System.Drawing.Size(85, 21);
+            this.pxtbLadleJk.TabIndex = 16;
+            this.pxtbLadleJk.ToolTipValid = null;
+            this.pxtbLadleJk.VaildWarning = "";
+            this.pxtbLadleJk.ValidEable = true;
+            this.pxtbLadleJk.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(508, 254);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(83, 12);
+            this.label18.TabIndex = 174;
+            this.label18.Text = "钢包净空[mm]:";
             // 
             // txtSteelWeight
             // 
@@ -4736,9 +4774,9 @@
             // exceptionalTimeDataGridViewTextBoxColumn
             // 
             this.exceptionalTimeDataGridViewTextBoxColumn.DataPropertyName = "Exceptional_Time";
-            dataGridViewCellStyle21.Format = "G";
-            dataGridViewCellStyle21.NullValue = null;
-            this.exceptionalTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Format = "G";
+            dataGridViewCellStyle3.NullValue = null;
+            this.exceptionalTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.exceptionalTimeDataGridViewTextBoxColumn.HeaderText = "异常产生时间";
             this.exceptionalTimeDataGridViewTextBoxColumn.Name = "exceptionalTimeDataGridViewTextBoxColumn";
             this.exceptionalTimeDataGridViewTextBoxColumn.Width = 200;
@@ -5300,8 +5338,8 @@
             // arriveDateDataGridViewTextBoxColumn
             // 
             this.arriveDateDataGridViewTextBoxColumn.DataPropertyName = "Arrive_Date";
-            dataGridViewCellStyle22.Format = "G";
-            this.arriveDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.Format = "G";
+            this.arriveDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.arriveDateDataGridViewTextBoxColumn.HeaderText = "到样时间";
             this.arriveDateDataGridViewTextBoxColumn.Name = "arriveDateDataGridViewTextBoxColumn";
             this.arriveDateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -5310,8 +5348,8 @@
             // reportDateDataGridViewTextBoxColumn
             // 
             this.reportDateDataGridViewTextBoxColumn.DataPropertyName = "Report_Date";
-            dataGridViewCellStyle23.Format = "G";
-            this.reportDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.Format = "G";
+            this.reportDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.reportDateDataGridViewTextBoxColumn.HeaderText = "报告时间";
             this.reportDateDataGridViewTextBoxColumn.Name = "reportDateDataGridViewTextBoxColumn";
             this.reportDateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -5530,8 +5568,8 @@
             // logTimeDataGridViewTextBoxColumn1
             // 
             this.logTimeDataGridViewTextBoxColumn1.DataPropertyName = "LogTime";
-            dataGridViewCellStyle24.Format = "G";
-            this.logTimeDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Format = "G";
+            this.logTimeDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle6;
             this.logTimeDataGridViewTextBoxColumn1.HeaderText = "数据记录时间";
             this.logTimeDataGridViewTextBoxColumn1.Name = "logTimeDataGridViewTextBoxColumn1";
             this.logTimeDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -6151,8 +6189,8 @@
             // 
             this.changeTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.changeTimeDataGridViewTextBoxColumn.DataPropertyName = "Change_Time";
-            dataGridViewCellStyle25.Format = "G";
-            this.changeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle7.Format = "G";
+            this.changeTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
             this.changeTimeDataGridViewTextBoxColumn.HeaderText = "状态变化时刻";
             this.changeTimeDataGridViewTextBoxColumn.MinimumWidth = 120;
             this.changeTimeDataGridViewTextBoxColumn.Name = "changeTimeDataGridViewTextBoxColumn";
@@ -6557,8 +6595,8 @@
             // measureTimeDataGridViewTextBoxColumn
             // 
             this.measureTimeDataGridViewTextBoxColumn.DataPropertyName = "MeasureTime";
-            dataGridViewCellStyle26.Format = "G";
-            this.measureTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle8.Format = "G";
+            this.measureTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             this.measureTimeDataGridViewTextBoxColumn.HeaderText = "测温时刻";
             this.measureTimeDataGridViewTextBoxColumn.Name = "measureTimeDataGridViewTextBoxColumn";
             this.measureTimeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -6800,8 +6838,8 @@
             // 
             this.measureTimeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.measureTimeDataGridViewTextBoxColumn1.DataPropertyName = "Measure_Time";
-            dataGridViewCellStyle27.Format = "G";
-            this.measureTimeDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle9.Format = "G";
+            this.measureTimeDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
             this.measureTimeDataGridViewTextBoxColumn1.HeaderText = "定氧时刻";
             this.measureTimeDataGridViewTextBoxColumn1.Name = "measureTimeDataGridViewTextBoxColumn1";
             this.measureTimeDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8339,8 +8377,8 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Discharge_Time";
-            dataGridViewCellStyle28.Format = "G";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle10.Format = "G";
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn4.Frozen = true;
             this.dataGridViewTextBoxColumn4.HeaderText = "加料时刻";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
@@ -8424,8 +8462,8 @@
             // 
             this.dataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dataGridViewTextBoxColumn15.DataPropertyName = "WireTime";
-            dataGridViewCellStyle29.Format = "G";
-            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle11.Format = "G";
+            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewTextBoxColumn15.Frozen = true;
             this.dataGridViewTextBoxColumn15.HeaderText = "喂线时刻";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
@@ -8527,9 +8565,9 @@
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.DataPropertyName = "Exceptional_Time";
-            dataGridViewCellStyle30.Format = "G";
-            dataGridViewCellStyle30.NullValue = null;
-            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle12.Format = "G";
+            dataGridViewCellStyle12.NullValue = null;
+            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewTextBoxColumn28.HeaderText = "异常产生时间";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.Width = 200;
@@ -8549,8 +8587,8 @@
             // dataGridViewTextBoxColumn31
             // 
             this.dataGridViewTextBoxColumn31.DataPropertyName = "Arrive_Date";
-            dataGridViewCellStyle31.Format = "G";
-            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle13.Format = "G";
+            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewTextBoxColumn31.HeaderText = "到样时间";
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
             this.dataGridViewTextBoxColumn31.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8559,8 +8597,8 @@
             // dataGridViewTextBoxColumn32
             // 
             this.dataGridViewTextBoxColumn32.DataPropertyName = "Report_Date";
-            dataGridViewCellStyle32.Format = "G";
-            this.dataGridViewTextBoxColumn32.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle14.Format = "G";
+            this.dataGridViewTextBoxColumn32.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewTextBoxColumn32.HeaderText = "报告时间";
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
             this.dataGridViewTextBoxColumn32.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8785,8 +8823,8 @@
             // dataGridViewTextBoxColumn69
             // 
             this.dataGridViewTextBoxColumn69.DataPropertyName = "LogTime";
-            dataGridViewCellStyle33.Format = "G";
-            this.dataGridViewTextBoxColumn69.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle15.Format = "G";
+            this.dataGridViewTextBoxColumn69.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn69.HeaderText = "数据记录时间";
             this.dataGridViewTextBoxColumn69.Name = "dataGridViewTextBoxColumn69";
             this.dataGridViewTextBoxColumn69.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8808,8 +8846,8 @@
             // 
             this.dataGridViewTextBoxColumn72.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn72.DataPropertyName = "Change_Time";
-            dataGridViewCellStyle34.Format = "G";
-            this.dataGridViewTextBoxColumn72.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle16.Format = "G";
+            this.dataGridViewTextBoxColumn72.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn72.HeaderText = "状态变化时刻";
             this.dataGridViewTextBoxColumn72.MinimumWidth = 120;
             this.dataGridViewTextBoxColumn72.Name = "dataGridViewTextBoxColumn72";
@@ -8862,8 +8900,8 @@
             // dataGridViewTextBoxColumn79
             // 
             this.dataGridViewTextBoxColumn79.DataPropertyName = "MeasureTime";
-            dataGridViewCellStyle35.Format = "G";
-            this.dataGridViewTextBoxColumn79.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle17.Format = "G";
+            this.dataGridViewTextBoxColumn79.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn79.HeaderText = "测温时刻";
             this.dataGridViewTextBoxColumn79.Name = "dataGridViewTextBoxColumn79";
             this.dataGridViewTextBoxColumn79.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8891,8 +8929,8 @@
             // 
             this.dataGridViewTextBoxColumn83.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn83.DataPropertyName = "Measure_Time";
-            dataGridViewCellStyle36.Format = "G";
-            this.dataGridViewTextBoxColumn83.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle18.Format = "G";
+            this.dataGridViewTextBoxColumn83.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn83.HeaderText = "定氧时刻";
             this.dataGridViewTextBoxColumn83.Name = "dataGridViewTextBoxColumn83";
             this.dataGridViewTextBoxColumn83.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -8947,42 +8985,6 @@
             this.dataGridViewTextBoxColumn91.DataPropertyName = "InValidFlag";
             this.dataGridViewTextBoxColumn91.HeaderText = "是否有效";
             this.dataGridViewTextBoxColumn91.Name = "dataGridViewTextBoxColumn91";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(508, 254);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 12);
-            this.label18.TabIndex = 174;
-            this.label18.Text = "钢包净空[mm]:";
-            // 
-            // pxtbLadleJk
-            // 
-            this.pxtbLadleJk.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsProcess, "LadleJk", true));
-            this.pxtbLadleJk.DisplayPrecision = 0;
-            this.pxtbLadleJk.EnableNull = false;
-            this.pxtbLadleJk.ErropPr = null;
-            this.pxtbLadleJk.FixedLength = 0;
-            this.pxtbLadleJk.Length = 0;
-            this.pxtbLadleJk.Location = new System.Drawing.Point(597, 251);
-            this.pxtbLadleJk.Max = 99D;
-            this.pxtbLadleJk.MaxNull = 99D;
-            this.pxtbLadleJk.MaxStringLength = 0;
-            this.pxtbLadleJk.MaxStrLength = 0;
-            this.pxtbLadleJk.Min = 0D;
-            this.pxtbLadleJk.MinNull = 0D;
-            this.pxtbLadleJk.MinStringLength = 0;
-            this.pxtbLadleJk.MinStrLength = 0;
-            this.pxtbLadleJk.Name = "pxtbLadleJk";
-            this.pxtbLadleJk.Precision = 0;
-            this.pxtbLadleJk.Regex = "";
-            this.pxtbLadleJk.Size = new System.Drawing.Size(85, 21);
-            this.pxtbLadleJk.TabIndex = 16;
-            this.pxtbLadleJk.ToolTipValid = null;
-            this.pxtbLadleJk.VaildWarning = "";
-            this.pxtbLadleJk.ValidEable = true;
-            this.pxtbLadleJk.ValidType = PxDataValid.PxTextBox.TypeEnum.Float;
             // 
             // LFHeatInfoFrm
             // 

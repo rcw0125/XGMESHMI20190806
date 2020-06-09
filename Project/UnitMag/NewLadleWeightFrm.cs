@@ -47,20 +47,24 @@ namespace UnitMag
                 MessageBox.Show("请查询时间间隔在一周以内的数据！", "提示");
                 return;
             }
-            // 
-    //        select heatid as 炉号,ladleno as 钢包,grossweight as lf毛重,tareweight as 皮重,kzweight as 渣重, ccmgrossweight as 大包毛重,ccmtareweight as 浇完皮重,ccmlasttareweight as 上炉皮重
-
-    //from CLF_LADLE_WEIGHT where To_Char(LOG_TIME, 'yyyy-mm-dd') = '2019-09-05' and heatid is not null order by log_time desc;
+ //           select a.heatid as 炉号,a.ladleno as 钢包,a.weight as 净重,a.grossweight as lf毛重,a.tareweight as 皮重,a.kzweight as 扣除,b.dabaobi as 大包臂,
+ //b.grossweight as 大包毛重,b.tareweight as 浇完皮重 ,b.grossweight - b.tareweight as 浇注钢水量,case b.grossweight when null then 0 else b.grossweight - a.grossweight end as 毛重差,
+ //b.remainweight as 剩钢    ,
+ //(select to_char(castingstarttime, 'MM-dd HH24:MI') from cccm_process_data where heatid = a.heatid ) as 开浇时间,castingtime as 浇注周期,b.casting_weight as 理论重量,b.tundish_weight as 中包重量,
+ //b.zhupi_weight as 铸坯重量,zhupi_length as 铸坯长度,zhupi_danzhong as 单重,
+ //(select wm_concat(remark)  from cccm_heat_remark where heatid = a.heatid) as 备注     from CLF_LADLE_WEIGHT a,CCCM_LADLE_WEIGHT b where a.heatid is not null
+ //and a.heatid = b.heatid(+)
+ // and To_Char(a.LOG_TIME,'yyyy-mm-dd') >= '2020-05-10'    and To_Char(a.LOG_TIME,'yyyy-mm-dd') <= '2020-05-25'order by a.log_time desc
             string strStart = tdtstart.Value.ToString("yyyy-MM-dd");
             string strEnd = tdtend.Value.ToString("yyyy-MM-dd");
-            string strsql = " select heatid as 炉号,ladleno as 钢包,weight as 净重,grossweight as lf毛重,tareweight as 皮重,kzweight as 扣除,area as 大包臂, ccmgrossweight as 大包毛重,ccmtareweight as 浇完皮重,ccmlasttareweight as 上炉皮重";
-            strsql += "  ,case ccmgrossweight when null then 0 else ccmgrossweight-grossweight end as 毛重差,(select round(remainweight,1) FROM cccm_heat_ladle where heatid=CLF_LADLE_WEIGHT.heatid and rownum=1) as 剩钢  ";
-            strsql += "  ,ccminputareweight as 输入皮重,ccmgrossweight-weight-ccminputareweight as 皮重误差,lfjyweight as 浇余 ";
-            strsql += "  ,( select to_char(castingstarttime,'MM-dd HH24:MI') from cccm_process_data where heatid=CLF_LADLE_WEIGHT.heatid ) as 开浇时间  ";
-            strsql += "  ,( select wm_concat(remark)  from cccm_heat_remark where heatid=CLF_LADLE_WEIGHT.heatid) as 备注  ";
-            strsql += "   from CLF_LADLE_WEIGHT where  heatid is not null   and To_Char(LOG_TIME,'yyyy-mm-dd') >= '" + strStart + "'";          
-            strsql += "    and  To_Char(LOG_TIME,'yyyy-mm-dd') <= '" + strEnd + "'order by log_time desc";
-
+            string strsql = "  select a.heatid as 炉号,a.ladleno as 钢包,a.weight as 净重,a.grossweight as lf毛重,a.tareweight as 皮重,a.kzweight as 扣除,b.dabaobi as 大包臂,";
+            strsql += "  b.grossweight as 大包毛重,b.tareweight as 浇完皮重 ,b.grossweight - b.tareweight as 浇注钢水量,case b.grossweight when null then 0 else b.grossweight - a.grossweight end as 毛重差,  ";
+            strsql += "  b.remainweight as 剩钢    , ";
+            strsql += "  (select to_char(castingstarttime, 'MM-dd HH24:MI') from cccm_process_data where heatid = a.heatid ) as 开浇时间,castingtime as 浇注周期,b.casting_weight as 理论重量,b.tundish_weight as 中包重量,  ";
+            strsql += "  b.zhupi_weight as 铸坯重量,zhupi_length as 铸坯长度,zhupi_danzhong as 单重,  ";
+            strsql += "  (select wm_concat(remark)  from cccm_heat_remark where heatid = a.heatid) as 备注     from CLF_LADLE_WEIGHT a,CCCM_LADLE_WEIGHT b where a.heatid is not null  ";
+            strsql += "  and a.heatid = b.heatid(+)  ";
+            strsql += "   and To_Char(a.LOG_TIME,'yyyy-mm-dd') >= '"+strStart+"'    and To_Char(a.LOG_TIME,'yyyy-mm-dd') <= '"+strEnd+"'order by a.log_time desc";          
             var data = UnitMag.MESTool.GetData(Adapter, strsql);
             dvTel.DataSource = data;
             bsMqhs.DataSource = data;
@@ -102,21 +106,21 @@ namespace UnitMag
             //    temp = e.ColumnIndex + e.Value.ToString();
             //}
 
-            try
-            {
-                if (e.ColumnIndex == 10)
-                {
-                    if (e.Value != null && Math.Abs(Convert.ToDouble(e.Value)) > 1.5)
-                    {
-                        e.CellStyle.BackColor = Color.Yellow;
-                    }
+            //try
+            //{
+            //    if (e.ColumnIndex == 10)
+            //    {
+            //        if (e.Value != null && Math.Abs(Convert.ToDouble(e.Value)) > 1.5)
+            //        {
+            //            e.CellStyle.BackColor = Color.Yellow;
+            //        }
 
-                }
-            }
-            catch
-            {
+            //    }
+            //}
+            //catch
+            //{
 
-            }
+            //}
 
             try
             {
@@ -134,22 +138,22 @@ namespace UnitMag
 
             }
 
-            try
-            {
-                if (e.ColumnIndex == 13)
-                {
+            //try
+            //{
+            //    if (e.ColumnIndex == 13)
+            //    {
 
-                    if (e.Value != null && Math.Abs(Convert.ToDouble(e.Value))> 1)
-                    {
-                        e.CellStyle.BackColor = Color.Yellow;
-                    }
+            //        if (e.Value != null && Math.Abs(Convert.ToDouble(e.Value))> 1)
+            //        {
+            //            e.CellStyle.BackColor = Color.Yellow;
+            //        }
 
-                }
-            }
-            catch
-            {
+            //    }
+            //}
+            //catch
+            //{
 
-            }
+            //}
 
         }
     }

@@ -709,6 +709,7 @@
             this.l3DataBox140 = new AppSvrHMI.L3DataBox();
             this.label41 = new System.Windows.Forms.Label();
             this.ucLFStatus6 = new UnitMag.LFMag.ucLFStatus();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox16.SuspendLayout();
             this.groupBox24.SuspendLayout();
             this.groupBox25.SuspendLayout();
@@ -2179,8 +2180,8 @@
             // 
             // txtBOF01NowHeatID
             // 
-            this.txtBOF01NowHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01NowHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01NowHeatID.DataFormat = null;
             this.txtBOF01NowHeatID.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S21";
             this.txtBOF01NowHeatID.DataProperty = "HeatID";
@@ -2197,8 +2198,8 @@
             // 
             // txtBOF01NowSteelGradeIndex
             // 
-            this.txtBOF01NowSteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01NowSteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01NowSteelGradeIndex.DataFormat = null;
             this.txtBOF01NowSteelGradeIndex.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S21";
             this.txtBOF01NowSteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -2217,8 +2218,8 @@
             // 
             // txtBOF01NowInWeight
             // 
-            this.txtBOF01NowInWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01NowInWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01NowInWeight.DataFormat = "N3";
             this.txtBOF01NowInWeight.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S21";
             this.txtBOF01NowInWeight.DataProperty = "Load";
@@ -2267,8 +2268,8 @@
             // 
             // txtBOF01NowBlowTime
             // 
-            this.txtBOF01NowBlowTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01NowBlowTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01NowBlowTime.DataFormat = null;
             this.txtBOF01NowBlowTime.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S21";
             this.txtBOF01NowBlowTime.DataProperty = "StartProcessTime";
@@ -2306,8 +2307,8 @@
             // 
             // txtBOF01AfterHeatID
             // 
-            this.txtBOF01AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01AfterHeatID.DataFormat = null;
             this.txtBOF01AfterHeatID.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S31";
             this.txtBOF01AfterHeatID.DataProperty = "HeatID";
@@ -2345,8 +2346,8 @@
             // 
             // txtBOF01AfterSteelGradeIndex
             // 
-            this.txtBOF01AfterSteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01AfterSteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01AfterSteelGradeIndex.DataFormat = null;
             this.txtBOF01AfterSteelGradeIndex.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S31";
             this.txtBOF01AfterSteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -2386,8 +2387,8 @@
             // 
             // txtBOF01AfterSteelID
             // 
-            this.txtBOF01AfterSteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01AfterSteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01AfterSteelID.DataFormat = null;
             this.txtBOF01AfterSteelID.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S31";
             this.txtBOF01AfterSteelID.DataProperty = "LadleID";
@@ -2425,8 +2426,8 @@
             // 
             // txtBOF01AfterOut
             // 
-            this.txtBOF01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF01AfterOut.DataFormat = null;
             this.txtBOF01AfterOut.DataObject = "";
             this.txtBOF01AfterOut.DataProperty = null;
@@ -2511,8 +2512,8 @@
             // 
             // txtHeatID06
             // 
-            this.txtHeatID06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHeatID06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeatID06.DataFormat = null;
             this.txtHeatID06.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.txtHeatID06.DataProperty = "HeatID";
@@ -2550,8 +2551,8 @@
             // 
             // txtSteelGradeIndex06
             // 
-            this.txtSteelGradeIndex06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSteelGradeIndex06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSteelGradeIndex06.DataFormat = null;
             this.txtSteelGradeIndex06.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.txtSteelGradeIndex06.DataProperty = "SteelGradeIndex";
@@ -2590,8 +2591,8 @@
             // 
             // txtArriveTime06
             // 
-            this.txtArriveTime06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArriveTime06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArriveTime06.DataFormat = null;
             this.txtArriveTime06.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.txtArriveTime06.DataProperty = "ArriveTime";
@@ -2671,8 +2672,8 @@
             // 
             // txtWeight06
             // 
-            this.txtWeight06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeight06.DataFormat = "N3";
             this.txtWeight06.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.txtWeight06.DataProperty = "RemainedWeight";
@@ -2689,8 +2690,8 @@
             // 
             // txtTime06
             // 
-            this.txtTime06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime06.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTime06.DataFormat = null;
             this.txtTime06.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.txtTime06.DataProperty = "StartCastingTime";
@@ -2707,8 +2708,8 @@
             // 
             // dbxTundish6
             // 
-            this.dbxTundish6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxTundish6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxTundish6.DataFormat = null;
             this.dbxTundish6.DataObject = "";
             this.dbxTundish6.DataProperty = "";
@@ -2791,8 +2792,8 @@
             // 
             // dbxCasting6
             // 
-            this.dbxCasting6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxCasting6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxCasting6.DataFormat = null;
             this.dbxCasting6.DataObject = "";
             this.dbxCasting6.DataProperty = null;
@@ -2831,8 +2832,8 @@
             // 
             // l3DataBox25
             // 
-            this.l3DataBox25.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox25.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox25.DataFormat = null;
             this.l3DataBox25.DataObject = "";
             this.l3DataBox25.DataProperty = "";
@@ -3101,8 +3102,8 @@
             // 
             // l3DataBox84
             // 
-            this.l3DataBox84.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox84.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox84.DataFormat = null;
             this.l3DataBox84.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.l3DataBox84.DataProperty = null;
@@ -3120,8 +3121,8 @@
             // 
             // l3DataBox70
             // 
-            this.l3DataBox70.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox70.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox70.DataFormat = null;
             this.l3DataBox70.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
             this.l3DataBox70.DataProperty = "StartProcessTime";
@@ -3138,8 +3139,8 @@
             // 
             // l3DataBox83
             // 
-            this.l3DataBox83.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox83.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox83.DataFormat = "N3";
             this.l3DataBox83.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
             this.l3DataBox83.DataProperty = "Load";
@@ -3156,8 +3157,8 @@
             // 
             // l3DataBox71
             // 
-            this.l3DataBox71.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox71.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox71.DataFormat = null;
             this.l3DataBox71.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
             this.l3DataBox71.DataProperty = "SteelGradeIndex";
@@ -3271,8 +3272,8 @@
             // 
             // txtBOF04AfterOut
             // 
-            this.txtBOF04AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF04AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF04AfterOut.DataFormat = null;
             this.txtBOF04AfterOut.DataObject = "";
             this.txtBOF04AfterOut.DataProperty = null;
@@ -3289,8 +3290,8 @@
             // 
             // l3DataBox80
             // 
-            this.l3DataBox80.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox80.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox80.DataFormat = null;
             this.l3DataBox80.DataObject = "";
             this.l3DataBox80.DataProperty = null;
@@ -3308,8 +3309,8 @@
             // 
             // l3DataBox75
             // 
-            this.l3DataBox75.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox75.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox75.DataFormat = null;
             this.l3DataBox75.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S34";
             this.l3DataBox75.DataProperty = "SteelGradeIndex";
@@ -3328,8 +3329,8 @@
             // 
             // l3DataBox79
             // 
-            this.l3DataBox79.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox79.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox79.DataFormat = null;
             this.l3DataBox79.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
             this.l3DataBox79.DataProperty = "HeatID";
@@ -3346,8 +3347,8 @@
             // 
             // txtBOF04AfterHeatID
             // 
-            this.txtBOF04AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF04AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF04AfterHeatID.DataFormat = null;
             this.txtBOF04AfterHeatID.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S34";
             this.txtBOF04AfterHeatID.DataProperty = "HeatID";
@@ -3385,8 +3386,8 @@
             // 
             // l3DataBox77
             // 
-            this.l3DataBox77.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox77.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox77.DataFormat = null;
             this.l3DataBox77.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S34";
             this.l3DataBox77.DataProperty = "LadleID";
@@ -3550,8 +3551,8 @@
             // 
             // l3DataBox48
             // 
-            this.l3DataBox48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox48.DataFormat = null;
             this.l3DataBox48.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.l3DataBox48.DataProperty = null;
@@ -3569,8 +3570,8 @@
             // 
             // l3DataBox49
             // 
-            this.l3DataBox49.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox49.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox49.DataFormat = "N3";
             this.l3DataBox49.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
             this.l3DataBox49.DataProperty = "Load";
@@ -3640,8 +3641,8 @@
             // 
             // l3DataBox51
             // 
-            this.l3DataBox51.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox51.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox51.DataFormat = null;
             this.l3DataBox51.DataObject = "";
             this.l3DataBox51.DataProperty = null;
@@ -3659,8 +3660,8 @@
             // 
             // l3DataBox63
             // 
-            this.l3DataBox63.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox63.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox63.DataFormat = null;
             this.l3DataBox63.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
             this.l3DataBox63.DataProperty = "HeatID";
@@ -3709,8 +3710,8 @@
             // 
             // l3DataBox53
             // 
-            this.l3DataBox53.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox53.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox53.DataFormat = null;
             this.l3DataBox53.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S33";
             this.l3DataBox53.DataProperty = "LadleID";
@@ -3727,8 +3728,8 @@
             // 
             // txtBOF03AfterHeatID
             // 
-            this.txtBOF03AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF03AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF03AfterHeatID.DataFormat = null;
             this.txtBOF03AfterHeatID.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S33";
             this.txtBOF03AfterHeatID.DataProperty = "HeatID";
@@ -3745,8 +3746,8 @@
             // 
             // l3DataBox54
             // 
-            this.l3DataBox54.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox54.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox54.DataFormat = null;
             this.l3DataBox54.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S33";
             this.l3DataBox54.DataProperty = "SteelGradeIndex";
@@ -3765,8 +3766,8 @@
             // 
             // txtBOF03AfterOut
             // 
-            this.txtBOF03AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF03AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF03AfterOut.DataFormat = null;
             this.txtBOF03AfterOut.DataObject = "";
             this.txtBOF03AfterOut.DataProperty = null;
@@ -3825,8 +3826,8 @@
             // 
             // l3DataBox56
             // 
-            this.l3DataBox56.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox56.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox56.DataFormat = null;
             this.l3DataBox56.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
             this.l3DataBox56.DataProperty = "SteelGradeIndex";
@@ -3845,8 +3846,8 @@
             // 
             // l3DataBox59
             // 
-            this.l3DataBox59.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox59.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox59.DataFormat = null;
             this.l3DataBox59.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
             this.l3DataBox59.DataProperty = "StartProcessTime";
@@ -4016,8 +4017,8 @@
             this.ucBOFStatus2.StatusProperty = "Status";
             this.ucBOFStatus2.TabIndex = 102;
             this.ucBOFStatus2.UnitURI = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
-            this.ucBOFStatus2.Load += new System.EventHandler(this.ucBOFStatus2_Load);
             this.ucBOFStatus2.OnUnitStatusChanged += new UnitMag.ucUnitStatus.Delegate_OnUnitStatusChanged(this.ucStatus_OnUnitStatusChanged);
+            this.ucBOFStatus2.Load += new System.EventHandler(this.ucBOFStatus2_Load);
             // 
             // l3DataBox45
             // 
@@ -4074,8 +4075,8 @@
             // 
             // l3DataBox43
             // 
-            this.l3DataBox43.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox43.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox43.DataFormat = null;
             this.l3DataBox43.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
             this.l3DataBox43.DataProperty = "HeatID";
@@ -4103,8 +4104,8 @@
             // 
             // txtBOF02AfterHeatID
             // 
-            this.txtBOF02AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF02AfterHeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF02AfterHeatID.DataFormat = null;
             this.txtBOF02AfterHeatID.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S32";
             this.txtBOF02AfterHeatID.DataProperty = "HeatID";
@@ -4121,8 +4122,8 @@
             // 
             // txtBOF02AfterOut
             // 
-            this.txtBOF02AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBOF02AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF02AfterOut.DataFormat = null;
             this.txtBOF02AfterOut.DataObject = "";
             this.txtBOF02AfterOut.DataProperty = null;
@@ -4160,8 +4161,8 @@
             // 
             // l3DataBox29
             // 
-            this.l3DataBox29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox29.DataFormat = null;
             this.l3DataBox29.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
             this.l3DataBox29.DataProperty = "StartProcessTime";
@@ -4220,8 +4221,8 @@
             // 
             // l3DataBox39
             // 
-            this.l3DataBox39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox39.DataFormat = null;
             this.l3DataBox39.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
             this.l3DataBox39.DataProperty = "SteelGradeIndex";
@@ -4261,8 +4262,8 @@
             // 
             // l3DataBox38
             // 
-            this.l3DataBox38.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox38.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox38.DataFormat = null;
             this.l3DataBox38.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S32";
             this.l3DataBox38.DataProperty = "SteelGradeIndex";
@@ -4281,8 +4282,8 @@
             // 
             // l3DataBox32
             // 
-            this.l3DataBox32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox32.DataFormat = null;
             this.l3DataBox32.DataObject = "XGMESLogic\\TapSideMag\\CTap_Unit_Mag\\S32";
             this.l3DataBox32.DataProperty = "LadleID";
@@ -4320,8 +4321,8 @@
             // 
             // l3DataBox33
             // 
-            this.l3DataBox33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox33.DataFormat = null;
             this.l3DataBox33.DataObject = "";
             this.l3DataBox33.DataProperty = null;
@@ -4360,8 +4361,8 @@
             // 
             // l3DataBox34
             // 
-            this.l3DataBox34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox34.DataFormat = "N3";
             this.l3DataBox34.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
             this.l3DataBox34.DataProperty = "Load";
@@ -4378,8 +4379,8 @@
             // 
             // l3DataBox35
             // 
-            this.l3DataBox35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox35.DataFormat = null;
             this.l3DataBox35.DataObject = "";
             this.l3DataBox35.DataProperty = null;
@@ -4478,8 +4479,8 @@
             // 
             // l3DataBox26
             // 
-            this.l3DataBox26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox26.DataFormat = null;
             this.l3DataBox26.DataObject = "";
             this.l3DataBox26.DataProperty = null;
@@ -4675,8 +4676,8 @@
             // 
             // l3DataBox190
             // 
-            this.l3DataBox190.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox190.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox190.DataFormat = "N3";
             this.l3DataBox190.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
             this.l3DataBox190.DataProperty = "Weight";
@@ -4714,8 +4715,8 @@
             // 
             // txtRH01AfterOut
             // 
-            this.txtRH01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRH01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRH01AfterOut.DataFormat = null;
             this.txtRH01AfterOut.DataObject = "";
             this.txtRH01AfterOut.DataProperty = "";
@@ -4732,8 +4733,8 @@
             // 
             // l3DataBox193
             // 
-            this.l3DataBox193.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox193.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox193.DataFormat = null;
             this.l3DataBox193.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
             this.l3DataBox193.DataProperty = "StartProcessTime";
@@ -4792,8 +4793,8 @@
             // 
             // txtRH01HeatID
             // 
-            this.txtRH01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRH01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRH01HeatID.DataFormat = null;
             this.txtRH01HeatID.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
             this.txtRH01HeatID.DataProperty = "HeatID";
@@ -4831,8 +4832,8 @@
             // 
             // l3DataBox198
             // 
-            this.l3DataBox198.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox198.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox198.DataFormat = null;
             this.l3DataBox198.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
             this.l3DataBox198.DataProperty = "LadleID";
@@ -4891,8 +4892,8 @@
             // 
             // l3DataBox201
             // 
-            this.l3DataBox201.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox201.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox201.DataFormat = null;
             this.l3DataBox201.DataObject = "";
             this.l3DataBox201.DataProperty = "";
@@ -5005,8 +5006,8 @@
             // 
             // dbxTundish5
             // 
-            this.dbxTundish5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxTundish5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxTundish5.DataFormat = null;
             this.dbxTundish5.DataObject = "";
             this.dbxTundish5.DataProperty = "";
@@ -5024,8 +5025,8 @@
             // 
             // txtHeatID05
             // 
-            this.txtHeatID05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHeatID05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeatID05.DataFormat = null;
             this.txtHeatID05.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.txtHeatID05.DataProperty = "HeatID";
@@ -5042,8 +5043,8 @@
             // 
             // l3DataBox203
             // 
-            this.l3DataBox203.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox203.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox203.DataFormat = null;
             this.l3DataBox203.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.l3DataBox203.DataProperty = "RemainCastingTime";
@@ -5060,8 +5061,8 @@
             // 
             // txtTime05
             // 
-            this.txtTime05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTime05.DataFormat = null;
             this.txtTime05.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.txtTime05.DataProperty = "StartCastingTime";
@@ -5099,8 +5100,8 @@
             // 
             // txtWeight05
             // 
-            this.txtWeight05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeight05.DataFormat = "N3";
             this.txtWeight05.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.txtWeight05.DataProperty = "RemainedWeight";
@@ -5117,8 +5118,8 @@
             // 
             // txtSteelGradeIndex05
             // 
-            this.txtSteelGradeIndex05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSteelGradeIndex05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSteelGradeIndex05.DataFormat = null;
             this.txtSteelGradeIndex05.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.txtSteelGradeIndex05.DataProperty = "SteelGradeIndex";
@@ -5262,8 +5263,8 @@
             // 
             // dbxCasting5
             // 
-            this.dbxCasting5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxCasting5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxCasting5.DataFormat = null;
             this.dbxCasting5.DataObject = "";
             this.dbxCasting5.DataProperty = null;
@@ -5295,8 +5296,8 @@
             // 
             // txtArriveTime05
             // 
-            this.txtArriveTime05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArriveTime05.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArriveTime05.DataFormat = null;
             this.txtArriveTime05.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
             this.txtArriveTime05.DataProperty = "ArriveTime";
@@ -5377,8 +5378,8 @@
             // 
             // l3DataBox89
             // 
-            this.l3DataBox89.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox89.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox89.DataFormat = null;
             this.l3DataBox89.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
             this.l3DataBox89.DataProperty = "RemainCastingTime";
@@ -5515,8 +5516,8 @@
             // 
             // dbxCasting7
             // 
-            this.dbxCasting7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxCasting7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxCasting7.DataFormat = null;
             this.dbxCasting7.DataObject = "";
             this.dbxCasting7.DataProperty = null;
@@ -5555,8 +5556,8 @@
             // 
             // txtHeatID07
             // 
-            this.txtHeatID07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHeatID07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeatID07.DataFormat = null;
             this.txtHeatID07.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.txtHeatID07.DataProperty = "HeatID";
@@ -5594,8 +5595,8 @@
             // 
             // txtSteelGradeIndex07
             // 
-            this.txtSteelGradeIndex07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSteelGradeIndex07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSteelGradeIndex07.DataFormat = null;
             this.txtSteelGradeIndex07.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.txtSteelGradeIndex07.DataProperty = "SteelGradeIndex";
@@ -5664,8 +5665,8 @@
             // 
             // txtArriveTime07
             // 
-            this.txtArriveTime07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArriveTime07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArriveTime07.DataFormat = null;
             this.txtArriveTime07.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.txtArriveTime07.DataProperty = "ArriveTime";
@@ -5682,8 +5683,8 @@
             // 
             // dbxTundish7
             // 
-            this.dbxTundish7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxTundish7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxTundish7.DataFormat = null;
             this.dbxTundish7.DataObject = "";
             this.dbxTundish7.DataProperty = "";
@@ -5764,8 +5765,8 @@
             // 
             // l3DataBox61
             // 
-            this.l3DataBox61.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox61.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox61.DataFormat = null;
             this.l3DataBox61.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.l3DataBox61.DataProperty = "RemainCastingTime";
@@ -5782,8 +5783,8 @@
             // 
             // txtWeight07
             // 
-            this.txtWeight07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeight07.DataFormat = "N3";
             this.txtWeight07.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.txtWeight07.DataProperty = "RemainedWeight";
@@ -5800,8 +5801,8 @@
             // 
             // txtTime07
             // 
-            this.txtTime07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime07.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTime07.DataFormat = null;
             this.txtTime07.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
             this.txtTime07.DataProperty = "StartCastingTime";
@@ -5938,8 +5939,8 @@
             // 
             // txtHeatID04
             // 
-            this.txtHeatID04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHeatID04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeatID04.DataFormat = null;
             this.txtHeatID04.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.txtHeatID04.DataProperty = "HeatID";
@@ -5977,8 +5978,8 @@
             // 
             // txtSteelGradeIndex04
             // 
-            this.txtSteelGradeIndex04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSteelGradeIndex04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSteelGradeIndex04.DataFormat = null;
             this.txtSteelGradeIndex04.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.txtSteelGradeIndex04.DataProperty = "SteelGradeIndex";
@@ -6017,8 +6018,8 @@
             // 
             // dbxCasting4
             // 
-            this.dbxCasting4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxCasting4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxCasting4.DataFormat = null;
             this.dbxCasting4.DataObject = "";
             this.dbxCasting4.DataProperty = null;
@@ -6036,8 +6037,8 @@
             // 
             // txtArriveTime04
             // 
-            this.txtArriveTime04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArriveTime04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArriveTime04.DataFormat = null;
             this.txtArriveTime04.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.txtArriveTime04.DataProperty = "ArriveTime";
@@ -6138,8 +6139,8 @@
             // 
             // l3DataBox28
             // 
-            this.l3DataBox28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox28.DataFormat = null;
             this.l3DataBox28.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.l3DataBox28.DataProperty = "RemainCastingTime";
@@ -6156,8 +6157,8 @@
             // 
             // txtWeight04
             // 
-            this.txtWeight04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeight04.DataFormat = "N3";
             this.txtWeight04.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.txtWeight04.DataProperty = "RemainedWeight";
@@ -6174,8 +6175,8 @@
             // 
             // txtTime04
             // 
-            this.txtTime04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime04.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTime04.DataFormat = null;
             this.txtTime04.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
             this.txtTime04.DataProperty = "StartCastingTime";
@@ -6192,8 +6193,8 @@
             // 
             // dbxTundish4
             // 
-            this.dbxTundish4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxTundish4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxTundish4.DataFormat = null;
             this.dbxTundish4.DataObject = "";
             this.dbxTundish4.DataProperty = "";
@@ -6330,8 +6331,8 @@
             // 
             // txtHeatID03
             // 
-            this.txtHeatID03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHeatID03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHeatID03.DataFormat = null;
             this.txtHeatID03.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.txtHeatID03.DataProperty = "HeatID";
@@ -6348,8 +6349,8 @@
             // 
             // txtSteelGradeIndex03
             // 
-            this.txtSteelGradeIndex03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSteelGradeIndex03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSteelGradeIndex03.DataFormat = null;
             this.txtSteelGradeIndex03.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.txtSteelGradeIndex03.DataProperty = "SteelGradeIndex";
@@ -6409,8 +6410,8 @@
             // 
             // dbxCasting3
             // 
-            this.dbxCasting3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxCasting3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxCasting3.DataFormat = null;
             this.dbxCasting3.DataObject = "";
             this.dbxCasting3.DataProperty = null;
@@ -6449,8 +6450,8 @@
             // 
             // txtArriveTime03
             // 
-            this.txtArriveTime03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArriveTime03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArriveTime03.DataFormat = null;
             this.txtArriveTime03.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.txtArriveTime03.DataProperty = "ArriveTime";
@@ -6530,8 +6531,8 @@
             // 
             // l3DataBox22
             // 
-            this.l3DataBox22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox22.DataFormat = null;
             this.l3DataBox22.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.l3DataBox22.DataProperty = "RemainCastingTime";
@@ -6548,8 +6549,8 @@
             // 
             // txtWeight03
             // 
-            this.txtWeight03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWeight03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeight03.DataFormat = "N3";
             this.txtWeight03.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.txtWeight03.DataProperty = "RemainedWeight";
@@ -6566,8 +6567,8 @@
             // 
             // txtTime03
             // 
-            this.txtTime03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime03.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTime03.DataFormat = null;
             this.txtTime03.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
             this.txtTime03.DataProperty = "StartCastingTime";
@@ -6584,8 +6585,8 @@
             // 
             // dbxTundish3
             // 
-            this.dbxTundish3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dbxTundish3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dbxTundish3.DataFormat = null;
             this.dbxTundish3.DataObject = "";
             this.dbxTundish3.DataProperty = "";
@@ -6733,8 +6734,8 @@
             // 
             // txtLF03HeatID
             // 
-            this.txtLF03HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03HeatID.DataFormat = null;
             this.txtLF03HeatID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.txtLF03HeatID.DataProperty = "HeatID";
@@ -6809,8 +6810,8 @@
             // 
             // l3DataBox162
             // 
-            this.l3DataBox162.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox162.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox162.DataFormat = null;
             this.l3DataBox162.DataObject = "";
             this.l3DataBox162.DataProperty = "";
@@ -6828,8 +6829,8 @@
             // 
             // txtLF03SteelGradeIndex
             // 
-            this.txtLF03SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03SteelGradeIndex.DataFormat = null;
             this.txtLF03SteelGradeIndex.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.txtLF03SteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -6869,8 +6870,8 @@
             // 
             // txtLF03SteelID
             // 
-            this.txtLF03SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03SteelID.DataFormat = null;
             this.txtLF03SteelID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.txtLF03SteelID.DataProperty = "LadleID";
@@ -6950,8 +6951,8 @@
             // 
             // txtLF03DealTime
             // 
-            this.txtLF03DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03DealTime.DataFormat = null;
             this.txtLF03DealTime.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S43";
             this.txtLF03DealTime.DataProperty = "StartProcessTime";
@@ -6968,8 +6969,8 @@
             // 
             // txtLF03AfterOut
             // 
-            this.txtLF03AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03AfterOut.DataFormat = null;
             this.txtLF03AfterOut.DataObject = "";
             this.txtLF03AfterOut.DataProperty = "";
@@ -6986,8 +6987,8 @@
             // 
             // txtLF03Weight
             // 
-            this.txtLF03Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF03Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF03Weight.DataFormat = "N3";
             this.txtLF03Weight.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.txtLF03Weight.DataProperty = "Weight";
@@ -7100,8 +7101,8 @@
             // 
             // txtLF01HeatID
             // 
-            this.txtLF01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01HeatID.DataFormat = null;
             this.txtLF01HeatID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.txtLF01HeatID.DataProperty = "HeatID";
@@ -7160,8 +7161,8 @@
             // 
             // txtLF01SteelGradeIndex
             // 
-            this.txtLF01SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01SteelGradeIndex.DataFormat = null;
             this.txtLF01SteelGradeIndex.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.txtLF01SteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -7196,8 +7197,8 @@
             // 
             // l3DataBox15
             // 
-            this.l3DataBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox15.DataFormat = null;
             this.l3DataBox15.DataObject = "";
             this.l3DataBox15.DataProperty = "";
@@ -7236,8 +7237,8 @@
             // 
             // txtLF01SteelID
             // 
-            this.txtLF01SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01SteelID.DataFormat = null;
             this.txtLF01SteelID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.txtLF01SteelID.DataProperty = "LadleID";
@@ -7317,8 +7318,8 @@
             // 
             // txtLF01DealTime
             // 
-            this.txtLF01DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01DealTime.DataFormat = null;
             this.txtLF01DealTime.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S41";
             this.txtLF01DealTime.DataProperty = "StartProcessTime";
@@ -7335,8 +7336,8 @@
             // 
             // txtLF01AfterOut
             // 
-            this.txtLF01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01AfterOut.DataFormat = null;
             this.txtLF01AfterOut.DataObject = "";
             this.txtLF01AfterOut.DataProperty = "";
@@ -7353,8 +7354,8 @@
             // 
             // txtLF01Weight
             // 
-            this.txtLF01Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF01Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF01Weight.DataFormat = "N3";
             this.txtLF01Weight.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.txtLF01Weight.DataProperty = "Weight";
@@ -7467,8 +7468,8 @@
             // 
             // txtLF02HeatID
             // 
-            this.txtLF02HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02HeatID.DataFormat = null;
             this.txtLF02HeatID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.txtLF02HeatID.DataProperty = "HeatID";
@@ -7527,8 +7528,8 @@
             // 
             // l3DataBox17
             // 
-            this.l3DataBox17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox17.DataFormat = null;
             this.l3DataBox17.DataObject = "";
             this.l3DataBox17.DataProperty = "";
@@ -7562,8 +7563,8 @@
             // 
             // txtLF02SteelGradeIndex
             // 
-            this.txtLF02SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02SteelGradeIndex.DataFormat = null;
             this.txtLF02SteelGradeIndex.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.txtLF02SteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -7603,8 +7604,8 @@
             // 
             // txtLF02SteelID
             // 
-            this.txtLF02SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02SteelID.DataFormat = null;
             this.txtLF02SteelID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.txtLF02SteelID.DataProperty = "LadleID";
@@ -7685,8 +7686,8 @@
             // 
             // txtLF02DealTime
             // 
-            this.txtLF02DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02DealTime.DataFormat = null;
             this.txtLF02DealTime.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S42";
             this.txtLF02DealTime.DataProperty = "StartProcessTime";
@@ -7703,8 +7704,8 @@
             // 
             // txtLF02AfterOut
             // 
-            this.txtLF02AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02AfterOut.DataFormat = null;
             this.txtLF02AfterOut.DataObject = "";
             this.txtLF02AfterOut.DataProperty = "";
@@ -7721,8 +7722,8 @@
             // 
             // txtLF02Weight
             // 
-            this.txtLF02Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF02Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF02Weight.DataFormat = "N3";
             this.txtLF02Weight.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.txtLF02Weight.DataProperty = "Weight";
@@ -7835,8 +7836,8 @@
             // 
             // txtLF04HeatID
             // 
-            this.txtLF04HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04HeatID.DataFormat = null;
             this.txtLF04HeatID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name07}";
             this.txtLF04HeatID.DataProperty = "HeatID";
@@ -7911,8 +7912,8 @@
             // 
             // l3DataBox19
             // 
-            this.l3DataBox19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox19.DataFormat = null;
             this.l3DataBox19.DataObject = "";
             this.l3DataBox19.DataProperty = "";
@@ -7930,8 +7931,8 @@
             // 
             // txtLF04SteelGradeIndex
             // 
-            this.txtLF04SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04SteelGradeIndex.DataFormat = null;
             this.txtLF04SteelGradeIndex.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name07}";
             this.txtLF04SteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -7971,8 +7972,8 @@
             // 
             // txtLF04SteelID
             // 
-            this.txtLF04SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04SteelID.DataFormat = null;
             this.txtLF04SteelID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name07}";
             this.txtLF04SteelID.DataProperty = "LadleID";
@@ -8052,8 +8053,8 @@
             // 
             // txtLF04DealTime
             // 
-            this.txtLF04DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04DealTime.DataFormat = null;
             this.txtLF04DealTime.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S44";
             this.txtLF04DealTime.DataProperty = "StartProcessTime";
@@ -8070,8 +8071,8 @@
             // 
             // txtLF04AfterOut
             // 
-            this.txtLF04AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04AfterOut.DataFormat = null;
             this.txtLF04AfterOut.DataObject = "";
             this.txtLF04AfterOut.DataProperty = "";
@@ -8088,8 +8089,8 @@
             // 
             // txtLF04Weight
             // 
-            this.txtLF04Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF04Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF04Weight.DataFormat = "N3";
             this.txtLF04Weight.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name07}";
             this.txtLF04Weight.DataProperty = "Weight";
@@ -8211,8 +8212,8 @@
             // 
             // txtLF05HeatID
             // 
-            this.txtLF05HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05HeatID.DataFormat = null;
             this.txtLF05HeatID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name45}";
             this.txtLF05HeatID.DataProperty = "HeatID";
@@ -8287,8 +8288,8 @@
             // 
             // l3DataBox147
             // 
-            this.l3DataBox147.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox147.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox147.DataFormat = null;
             this.l3DataBox147.DataObject = "";
             this.l3DataBox147.DataProperty = "";
@@ -8306,8 +8307,8 @@
             // 
             // txtLF05SteelGradeIndex
             // 
-            this.txtLF05SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05SteelGradeIndex.DataFormat = null;
             this.txtLF05SteelGradeIndex.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name45}";
             this.txtLF05SteelGradeIndex.DataProperty = "SteelGradeIndex";
@@ -8347,8 +8348,8 @@
             // 
             // txtLF05SteelID
             // 
-            this.txtLF05SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05SteelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05SteelID.DataFormat = null;
             this.txtLF05SteelID.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name45}";
             this.txtLF05SteelID.DataProperty = "LadleID";
@@ -8428,8 +8429,8 @@
             // 
             // txtLF05DealTime
             // 
-            this.txtLF05DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05DealTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05DealTime.DataFormat = null;
             this.txtLF05DealTime.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S45";
             this.txtLF05DealTime.DataProperty = "StartProcessTime";
@@ -8446,8 +8447,8 @@
             // 
             // txtLF05AfterOut
             // 
-            this.txtLF05AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05AfterOut.DataFormat = null;
             this.txtLF05AfterOut.DataObject = "";
             this.txtLF05AfterOut.DataProperty = "";
@@ -8464,8 +8465,8 @@
             // 
             // txtLF05Weight
             // 
-            this.txtLF05Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLF05Weight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLF05Weight.DataFormat = "N3";
             this.txtLF05Weight.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name45}";
             this.txtLF05Weight.DataProperty = "Weight";
@@ -8507,7 +8508,7 @@
             // 
             this.tlpMIF.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tlpMIF.ColumnCount = 1;
-            this.tlpMIF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
+            this.tlpMIF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252F));
             this.tlpMIF.Controls.Add(this.panel29, 0, 2);
             this.tlpMIF.Controls.Add(this.panel4, 0, 1);
             this.tlpMIF.Controls.Add(this.panel3, 0, 0);
@@ -8557,7 +8558,7 @@
             this.panel29.Location = new System.Drawing.Point(1, 519);
             this.panel29.Margin = new System.Windows.Forms.Padding(0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(251, 258);
+            this.panel29.Size = new System.Drawing.Size(252, 258);
             this.panel29.TabIndex = 4;
             // 
             // l3DataBox165
@@ -9096,7 +9097,7 @@
             this.panel4.Location = new System.Drawing.Point(1, 260);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(251, 258);
+            this.panel4.Size = new System.Drawing.Size(252, 258);
             this.panel4.TabIndex = 3;
             // 
             // l3DataBox157
@@ -9635,7 +9636,7 @@
             this.panel3.Location = new System.Drawing.Point(1, 1);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(251, 258);
+            this.panel3.Size = new System.Drawing.Size(252, 258);
             this.panel3.TabIndex = 2;
             // 
             // l3DataBox141
@@ -10953,8 +10954,8 @@
             // 
             // l3DataBox13
             // 
-            this.l3DataBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox13.DataFormat = null;
             this.l3DataBox13.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.l3DataBox13.DataProperty = "HeatID";
@@ -11028,8 +11029,8 @@
             // 
             // l3DataBox93
             // 
-            this.l3DataBox93.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox93.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox93.DataFormat = null;
             this.l3DataBox93.DataObject = "";
             this.l3DataBox93.DataProperty = "";
@@ -11047,8 +11048,8 @@
             // 
             // l3DataBox95
             // 
-            this.l3DataBox95.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox95.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox95.DataFormat = null;
             this.l3DataBox95.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.l3DataBox95.DataProperty = "SteelGradeIndex";
@@ -11087,8 +11088,8 @@
             // 
             // l3DataBox99
             // 
-            this.l3DataBox99.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox99.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox99.DataFormat = null;
             this.l3DataBox99.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.l3DataBox99.DataProperty = "LadleID";
@@ -11168,8 +11169,8 @@
             // 
             // l3DataBox106
             // 
-            this.l3DataBox106.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox106.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox106.DataFormat = null;
             this.l3DataBox106.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S43";
             this.l3DataBox106.DataProperty = "StartProcessTime";
@@ -11186,8 +11187,8 @@
             // 
             // l3DataBox107
             // 
-            this.l3DataBox107.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox107.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox107.DataFormat = null;
             this.l3DataBox107.DataObject = "";
             this.l3DataBox107.DataProperty = "";
@@ -11204,8 +11205,8 @@
             // 
             // l3DataBox108
             // 
-            this.l3DataBox108.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox108.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox108.DataFormat = "N3";
             this.l3DataBox108.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name03}";
             this.l3DataBox108.DataProperty = "Weight";
@@ -11315,8 +11316,8 @@
             // 
             // l3DataBox111
             // 
-            this.l3DataBox111.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox111.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox111.DataFormat = null;
             this.l3DataBox111.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.l3DataBox111.DataProperty = "HeatID";
@@ -11375,8 +11376,8 @@
             // 
             // l3DataBox114
             // 
-            this.l3DataBox114.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox114.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox114.DataFormat = null;
             this.l3DataBox114.DataObject = "";
             this.l3DataBox114.DataProperty = "";
@@ -11409,8 +11410,8 @@
             // 
             // l3DataBox116
             // 
-            this.l3DataBox116.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox116.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox116.DataFormat = null;
             this.l3DataBox116.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.l3DataBox116.DataProperty = "SteelGradeIndex";
@@ -11449,8 +11450,8 @@
             // 
             // l3DataBox118
             // 
-            this.l3DataBox118.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox118.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox118.DataFormat = null;
             this.l3DataBox118.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.l3DataBox118.DataProperty = "LadleID";
@@ -11530,8 +11531,8 @@
             // 
             // l3DataBox122
             // 
-            this.l3DataBox122.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox122.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox122.DataFormat = null;
             this.l3DataBox122.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S42";
             this.l3DataBox122.DataProperty = "StartProcessTime";
@@ -11548,8 +11549,8 @@
             // 
             // l3DataBox123
             // 
-            this.l3DataBox123.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox123.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox123.DataFormat = null;
             this.l3DataBox123.DataObject = "";
             this.l3DataBox123.DataProperty = "";
@@ -11566,8 +11567,8 @@
             // 
             // l3DataBox124
             // 
-            this.l3DataBox124.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox124.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox124.DataFormat = "N3";
             this.l3DataBox124.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name02}";
             this.l3DataBox124.DataProperty = "Weight";
@@ -11677,8 +11678,8 @@
             // 
             // l3DataBox127
             // 
-            this.l3DataBox127.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox127.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox127.DataFormat = null;
             this.l3DataBox127.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.l3DataBox127.DataProperty = "HeatID";
@@ -11737,8 +11738,8 @@
             // 
             // l3DataBox130
             // 
-            this.l3DataBox130.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox130.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox130.DataFormat = null;
             this.l3DataBox130.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.l3DataBox130.DataProperty = "SteelGradeIndex";
@@ -11771,8 +11772,8 @@
             // 
             // l3DataBox132
             // 
-            this.l3DataBox132.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox132.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox132.DataFormat = null;
             this.l3DataBox132.DataObject = "";
             this.l3DataBox132.DataProperty = "";
@@ -11811,8 +11812,8 @@
             // 
             // l3DataBox134
             // 
-            this.l3DataBox134.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox134.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox134.DataFormat = null;
             this.l3DataBox134.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.l3DataBox134.DataProperty = "LadleID";
@@ -11892,8 +11893,8 @@
             // 
             // l3DataBox138
             // 
-            this.l3DataBox138.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox138.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox138.DataFormat = null;
             this.l3DataBox138.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S41";
             this.l3DataBox138.DataProperty = "StartProcessTime";
@@ -11910,8 +11911,8 @@
             // 
             // l3DataBox139
             // 
-            this.l3DataBox139.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox139.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox139.DataFormat = null;
             this.l3DataBox139.DataObject = "";
             this.l3DataBox139.DataProperty = "";
@@ -11928,8 +11929,8 @@
             // 
             // l3DataBox140
             // 
-            this.l3DataBox140.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox140.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.l3DataBox140.DataFormat = "N3";
             this.l3DataBox140.DataObject = "XGMESLogic\\LFMag\\CLF_Prod_Area\\{Name01}";
             this.l3DataBox140.DataProperty = "Weight";
@@ -11965,7 +11966,13 @@
             this.ucLFStatus6.TabIndex = 103;
             this.ucLFStatus6.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S41";
             // 
-            // ProcessSchemaFrm
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 600000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ProcessSchemaFrmOld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -11973,12 +11980,12 @@
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.label28);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ProcessSchemaFrm";
+            this.Name = "ProcessSchemaFrmOld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.TabText = "流程监视";
             this.Text = "流程监视";
-            this.Load += new System.EventHandler(this.ProcessSchemaFrm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProcessSchemaFrm_FormClosing);
+            this.Load += new System.EventHandler(this.ProcessSchemaFrm_Load);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             this.groupBox24.ResumeLayout(false);
@@ -12748,5 +12755,6 @@
         private AppSvrHMI.L3DataBox txtLF03Weight;
         private System.Windows.Forms.Label label45;
         private UnitMag.LFMag.ucLFStatus ucLFStatus8;
+        private System.Windows.Forms.Timer timer1;
     }
 }

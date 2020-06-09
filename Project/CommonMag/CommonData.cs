@@ -3392,40 +3392,51 @@ namespace CommDataMag
                         #endregion
 
                         #region 试样类别为LF炉的GG 2020-05-11
-                        if (cell.Value.ToString() == "GG")//判断为炉终高拉碳则表单涂色判断。
+                        try
                         {
-                            //if (strColumnName == "Cr" && dRealValue > 0.05)
-                            double value1 = 0;//Cr
-                            double value2 = 0;//Cu
-                            double value3 = 0;//ca
-
-                            value1 = Convert.ToDouble(dvCurrent.Rows[i].Cells[7].Value.ToString());
-                            value2 = Convert.ToDouble(dvCurrent.Rows[i].Cells[14].Value.ToString());
-                            value3 = Convert.ToDouble(dvCurrent.Rows[i].Cells[13].Value.ToString());
-                            var CrMin = Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString());
-
-                            if (dsInCtrol.Tables[0].Rows[0]["Cr_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString() != "")
+                            if (cell.Value.ToString() == "GG")//判断为炉终高拉碳则表单涂色判断。
                             {
-                                if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString()) <= 0.02)
+                                //if (strColumnName == "Cr" && dRealValue > 0.05)
+                                double value1 = 0;//Cr
+                                double value2 = 0;//Cu
+                                double value3 = 0;//ca
+
+                                value1 = Convert.ToDouble(dvCurrent.Rows[i].Cells[7].Value.ToString());
+                                value2 = Convert.ToDouble(dvCurrent.Rows[i].Cells[14].Value.ToString());
+                                value3 = Convert.ToDouble(dvCurrent.Rows[i].Cells[13].Value.ToString());
+                                //var CrMin = Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString());
+
+                                if (dsInCtrol.Tables[0].Rows[0]["Cr_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString() != "")
+                                {
+                                    if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cr_Min"].ToString()) <= 0.02)
+                                    {
+                                        if (value1 > 0.08)
+                                        {
+                                            dvCurrent.Rows[i].Cells[7].Style.BackColor = Color.Yellow;
+                                        }
+                                    }
+                                }
+                                else
                                 {
                                     if (value1 > 0.08)
                                     {
                                         dvCurrent.Rows[i].Cells[7].Style.BackColor = Color.Yellow;
                                     }
                                 }
-                            }
-                            else
-                            {
-                                if (value1 > 0.08)
+
+
+                                if (dsInCtrol.Tables[0].Rows[0]["Cu_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Cu_Min"].ToString() != "")
                                 {
-                                    dvCurrent.Rows[i].Cells[7].Style.BackColor = Color.Yellow;
+                                    if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cu_Min"].ToString()) <= 0.02)
+                                    {
+                                        if (value2 > 0.05)
+                                        {
+                                            dvCurrent.Rows[i].Cells[14].Style.BackColor = Color.Yellow;
+
+                                        }
+                                    }
                                 }
-                            }
-
-
-                            if (dsInCtrol.Tables[0].Rows[0]["Cu_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Cu_Min"].ToString() != "")
-                            {
-                                if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Cu_Min"].ToString()) <= 0.02)
+                                else
                                 {
                                     if (value2 > 0.05)
                                     {
@@ -3433,40 +3444,37 @@ namespace CommDataMag
 
                                     }
                                 }
-                            }
-                            else
-                            {
-                                if (value2 > 0.05)
+                                //ca使用AL的内控标准
+                                if (dsInCtrol.Tables[0].Rows[0]["Al_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Al_Min"].ToString() != "")
                                 {
-                                    dvCurrent.Rows[i].Cells[14].Style.BackColor = Color.Yellow;
-
-                                }
-                            }
-                            //ca使用AL的内控标准
-                            if (dsInCtrol.Tables[0].Rows[0]["Al_Min"] != null && dsInCtrol.Tables[0].Rows[0]["Al_Min"].ToString() != "")
-                            {
-                                if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Al_Min"].ToString()) >= 0.01)
-                                {
-                                    if (value3 < 0.001)
+                                    if (Convert.ToDouble(dsInCtrol.Tables[0].Rows[0]["Al_Min"].ToString()) >= 0.01)
                                     {
-                                        dvCurrent.Rows[i].Cells[13].Style.BackColor = Color.Yellow;
+                                        if (value3 < 0.001)
+                                        {
+                                            dvCurrent.Rows[i].Cells[13].Style.BackColor = Color.Yellow;
+                                        }
                                     }
                                 }
+                                //else
+                                //{
+                                //    if (value3 < 0.001)
+                                //    {
+                                //        dvCurrent.Rows[i].Cells[13].Style.BackColor = Color.Red;
+                                //    }
+                                //}
+                                //  double  value1 = value2 - 0.05;
+
+
+
+
+
                             }
-                            //else
-                            //{
-                            //    if (value3 < 0.001)
-                            //    {
-                            //        dvCurrent.Rows[i].Cells[13].Style.BackColor = Color.Red;
-                            //    }
-                            //}
-                            //  double  value1 = value2 - 0.05;
-
-
-                            
-                           
-                       
                         }
+                        catch
+                        { 
+                        
+                        }
+                       
                         #endregion
                     }
 

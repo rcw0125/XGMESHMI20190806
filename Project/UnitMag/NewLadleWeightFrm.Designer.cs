@@ -46,7 +46,6 @@
             this.tdtstart = new buttonHide.ToolStripToriDateTimePicker();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btnOutput = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.dvTel = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,21 +53,28 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bnM)).BeginInit();
             this.bnM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMqhs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvTel)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Adapter
@@ -96,8 +102,7 @@
             this.toolStripLabel3,
             this.tdtstart,
             this.toolStripLabel1,
-            this.btnOutput,
-            this.toolStripLabel2});
+            this.btnOutput});
             this.bnM.Location = new System.Drawing.Point(0, 0);
             this.bnM.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bnM.MoveLastItem = this.bindingNavigatorMovePreviousItem;
@@ -234,13 +239,6 @@
             this.btnOutput.Text = "导出到Excel";
             this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.Red;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(249, 22);
-            this.toolStripLabel2.Text = "输入皮重误差：“+”为毛重增加,\"-\"为毛重减少";
-            // 
             // dvTel
             // 
             this.dvTel.AllowUserToAddRows = false;
@@ -254,25 +252,28 @@
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column17,
-            this.Column12,
+            this.Column7,
             this.Column8,
             this.Column9,
             this.Column10,
             this.Column11,
-            this.Column7,
+            this.Column12,
+            this.Column14,
             this.Column15,
             this.Column16,
-            this.Column14,
+            this.Column17,
+            this.Column18,
+            this.Column19,
+            this.Column20,
             this.Column13});
             this.dvTel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dvTel.Location = new System.Drawing.Point(0, 25);
+            this.dvTel.Location = new System.Drawing.Point(0, 87);
             this.dvTel.MultiSelect = false;
             this.dvTel.Name = "dvTel";
             this.dvTel.ReadOnly = true;
             this.dvTel.RowTemplate.Height = 23;
             this.dvTel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvTel.Size = new System.Drawing.Size(895, 569);
+            this.dvTel.Size = new System.Drawing.Size(895, 507);
             this.dvTel.TabIndex = 34;
             this.dvTel.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dvTel_CellPainting);
             this.dvTel.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvTel_DataError);
@@ -326,13 +327,45 @@
             this.Column6.ReadOnly = true;
             this.Column6.Width = 55;
             // 
-            // Column17
+            // Column7
             // 
-            this.Column17.DataPropertyName = "浇余";
-            this.Column17.HeaderText = "浇余";
-            this.Column17.Name = "Column17";
-            this.Column17.ReadOnly = true;
-            this.Column17.Width = 55;
+            this.Column7.DataPropertyName = "大包臂";
+            this.Column7.HeaderText = "大包臂";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 50;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "大包毛重";
+            this.Column8.HeaderText = "大包毛重";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 55;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "浇完皮重";
+            this.Column9.HeaderText = "浇完皮重";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 55;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "浇注钢水量";
+            this.Column10.HeaderText = "浇注钢水量";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 55;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "毛重差";
+            this.Column11.HeaderText = "毛重差";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 55;
             // 
             // Column12
             // 
@@ -342,63 +375,6 @@
             this.Column12.ReadOnly = true;
             this.Column12.Width = 55;
             // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "大包毛重";
-            this.Column8.HeaderText = "大包毛重";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 78;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "浇完皮重";
-            this.Column9.HeaderText = "浇完皮重";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 78;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "上炉皮重";
-            this.Column10.HeaderText = "上炉皮重";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Visible = false;
-            this.Column10.Width = 80;
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "毛重差";
-            this.Column11.HeaderText = "毛重差";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 70;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "大包臂";
-            this.Column7.HeaderText = "大包臂";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 50;
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "输入皮重";
-            this.Column15.HeaderText = "输入皮重";
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            this.Column15.Width = 80;
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "皮重误差";
-            this.Column16.HeaderText = "输入皮重误差";
-            this.Column16.Name = "Column16";
-            this.Column16.ReadOnly = true;
-            this.Column16.Width = 80;
-            // 
             // Column14
             // 
             this.Column14.DataPropertyName = "开浇时间";
@@ -407,13 +383,93 @@
             this.Column14.ReadOnly = true;
             this.Column14.Width = 80;
             // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "浇注周期";
+            this.Column15.HeaderText = "浇注周期";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Width = 55;
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "理论重量";
+            this.Column16.HeaderText = "理论重量";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Width = 55;
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "中包重量";
+            this.Column17.HeaderText = "中包重量";
+            this.Column17.Name = "Column17";
+            this.Column17.ReadOnly = true;
+            this.Column17.Width = 55;
+            // 
+            // Column18
+            // 
+            this.Column18.DataPropertyName = "铸坯重量";
+            this.Column18.HeaderText = "铸坯重量";
+            this.Column18.Name = "Column18";
+            this.Column18.ReadOnly = true;
+            this.Column18.Width = 55;
+            // 
+            // Column19
+            // 
+            this.Column19.DataPropertyName = "铸坯长度";
+            this.Column19.HeaderText = "铸坯长度";
+            this.Column19.Name = "Column19";
+            this.Column19.ReadOnly = true;
+            this.Column19.Width = 55;
+            // 
+            // Column20
+            // 
+            this.Column20.DataPropertyName = "单重";
+            this.Column20.HeaderText = "单重";
+            this.Column20.Name = "Column20";
+            this.Column20.ReadOnly = true;
+            this.Column20.Width = 55;
+            // 
             // Column13
             // 
-            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column13.DataPropertyName = "备注";
             this.Column13.HeaderText = "备注";
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
+            this.Column13.Width = 300;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(895, 62);
+            this.panel1.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 10F);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(22, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(525, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "中包重量：停浇时重量减去开浇时中包重量； 铸坯重量：本炉铸坯跟踪值增量*单重";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 10F);
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(23, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(217, 14);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "理论重量：中包重量加上铸坯重量";
             // 
             // NewLadleWeightFrm
             // 
@@ -421,6 +477,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 594);
             this.Controls.Add(this.dvTel);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bnM);
             this.Name = "NewLadleWeightFrm";
             this.TabText = "5#机大包称重分析(新版本)";
@@ -431,6 +488,8 @@
             this.bnM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMqhs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvTel)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -454,23 +513,28 @@
         private System.Windows.Forms.DataGridView dvTel;
         private System.Windows.Forms.BindingSource bsMqhs;
         private System.Windows.Forms.ToolStripButton btnOutput;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

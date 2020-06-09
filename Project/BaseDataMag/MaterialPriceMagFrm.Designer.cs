@@ -147,7 +147,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(65, 40);
+            this.btnAdd.Size = new System.Drawing.Size(68, 40);
             this.btnAdd.Text = "新增";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -156,7 +156,7 @@
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(65, 40);
+            this.btnDel.Size = new System.Drawing.Size(68, 40);
             this.btnDel.Text = "删除";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -170,7 +170,7 @@
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(65, 40);
+            this.btnConfirm.Size = new System.Drawing.Size(68, 40);
             this.btnConfirm.Text = "确认";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -200,7 +200,7 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(65, 40);
+            this.btnExit.Size = new System.Drawing.Size(68, 40);
             this.btnExit.Text = "退出";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -209,7 +209,7 @@
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(65, 40);
+            this.btnCancel.Size = new System.Drawing.Size(68, 40);
             this.btnCancel.Text = "取消";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -223,7 +223,7 @@
             this.btnOutPut.Image = ((System.Drawing.Image)(resources.GetObject("btnOutPut.Image")));
             this.btnOutPut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOutPut.Name = "btnOutPut";
-            this.btnOutPut.Size = new System.Drawing.Size(107, 40);
+            this.btnOutPut.Size = new System.Drawing.Size(109, 40);
             this.btnOutPut.Text = "导出到Excel";
             this.btnOutPut.Click += new System.EventHandler(this.btnOutPut_Click);
             // 
@@ -232,7 +232,7 @@
             this.btnIncludeExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnIncludeExcel.Image")));
             this.btnIncludeExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnIncludeExcel.Name = "btnIncludeExcel";
-            this.btnIncludeExcel.Size = new System.Drawing.Size(95, 40);
+            this.btnIncludeExcel.Size = new System.Drawing.Size(97, 40);
             this.btnIncludeExcel.Text = "导入Excel";
             this.btnIncludeExcel.Click += new System.EventHandler(this.btnIncludeExcel_Click);
             // 
@@ -381,7 +381,7 @@
             this.coldsMatPriceL3DataTableSTANDARD_PRICE.Caption = "STANDARD_PRICE";
             this.coldsMatPriceL3DataTableSTANDARD_PRICE.ColumnName = "STANDARD_PRICE";
             this.coldsMatPriceL3DataTableSTANDARD_PRICE.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableSTANDARD_PRICE.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableSTANDARD_PRICE.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableSTANDARD_PRICE.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_JAN
@@ -389,7 +389,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.Caption = "BUDGET_PRICE_JAN";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.ColumnName = "BUDGET_PRICE_JAN";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JAN.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_FEB
@@ -397,7 +397,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.Caption = "BUDGET_PRICE_FEB";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.ColumnName = "BUDGET_PRICE_FEB";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_FEB.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_MAR
@@ -405,7 +405,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.Caption = "BUDGET_PRICE_MAR";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.ColumnName = "BUDGET_PRICE_MAR";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAR.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_APR
@@ -413,7 +413,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.Caption = "BUDGET_PRICE_APR";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.ColumnName = "BUDGET_PRICE_APR";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_APR.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_MAY
@@ -421,7 +421,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.Caption = "BUDGET_PRICE_MAY";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.ColumnName = "BUDGET_PRICE_MAY";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_MAY.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_JUN
@@ -429,7 +429,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.Caption = "BUDGET_PRICE_JUN";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.ColumnName = "BUDGET_PRICE_JUN";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUN.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_JUL
@@ -437,7 +437,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.Caption = "BUDGET_PRICE_JUL";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.ColumnName = "BUDGET_PRICE_JUL";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_JUL.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_AUG
@@ -445,7 +445,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.Caption = "BUDGET_PRICE_AUG";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.ColumnName = "BUDGET_PRICE_AUG";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_AUG.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_SEP
@@ -453,7 +453,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.Caption = "BUDGET_PRICE_SEP";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.ColumnName = "BUDGET_PRICE_SEP";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_SEP.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_OCT
@@ -461,7 +461,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.Caption = "BUDGET_PRICE_OCT";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.ColumnName = "BUDGET_PRICE_OCT";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_OCT.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_NOV
@@ -469,7 +469,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.Caption = "BUDGET_PRICE_NOV";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.ColumnName = "BUDGET_PRICE_NOV";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_NOV.Namespace = "";
             // 
             // coldsMatPriceL3DataTableBUDGET_PRICE_DEC
@@ -477,7 +477,7 @@
             this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.Caption = "BUDGET_PRICE_DEC";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.ColumnName = "BUDGET_PRICE_DEC";
             this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableBUDGET_PRICE_DEC.Namespace = "";
             // 
             // coldsMatPriceL3DataTableWORK_YEAR
@@ -492,7 +492,7 @@
             this.coldsMatPriceL3DataTableLATEST_PRICE.Caption = "LATEST_PRICE";
             this.coldsMatPriceL3DataTableLATEST_PRICE.ColumnName = "LATEST_PRICE";
             this.coldsMatPriceL3DataTableLATEST_PRICE.DataType = typeof(double);
-            this.coldsMatPriceL3DataTableLATEST_PRICE.DefaultValue = 0;
+            this.coldsMatPriceL3DataTableLATEST_PRICE.DefaultValue = 0D;
             this.coldsMatPriceL3DataTableLATEST_PRICE.Namespace = "";
             // 
             // coldsMatPriceL3DataTableOBJECT_ID
@@ -511,7 +511,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -584,7 +584,7 @@
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(49, 22);
+            this.btnQuery.Size = new System.Drawing.Size(52, 22);
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -704,8 +704,8 @@
             this.dvMatPrice.RowTemplate.Height = 23;
             this.dvMatPrice.Size = new System.Drawing.Size(1000, 632);
             this.dvMatPrice.TabIndex = 0;
-            this.dvMatPrice.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvMatPrice_DataBindingComplete);
             this.dvMatPrice.CurrentCellDirtyStateChanged += new System.EventHandler(this.dvMatPrice_CurrentCellDirtyStateChanged);
+            this.dvMatPrice.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvMatPrice_DataBindingComplete);
             this.dvMatPrice.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvMatPrice_DataError);
             // 
             // CheckFlag
@@ -968,12 +968,12 @@
             this.cmsSelectAll.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.全选ToolStripMenuItem});
             this.cmsSelectAll.Name = "cmsSelectAll";
-            this.cmsSelectAll.Size = new System.Drawing.Size(95, 26);
+            this.cmsSelectAll.Size = new System.Drawing.Size(101, 26);
             // 
             // 全选ToolStripMenuItem
             // 
             this.全选ToolStripMenuItem.Name = "全选ToolStripMenuItem";
-            this.全选ToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.全选ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.全选ToolStripMenuItem.Text = "全选";
             this.全选ToolStripMenuItem.Click += new System.EventHandler(this.全选ToolStripMenuItem_Click);
             // 
