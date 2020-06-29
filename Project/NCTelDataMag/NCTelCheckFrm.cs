@@ -509,7 +509,7 @@ namespace NCTelDataMag
                 strsql.Append(string.Format("( select heatid from CRETRUNDATA_NC where BILLTYPE='{0}' and flag=0 )", comboBox1.Text));
             }
             else
-            {
+            { 
 
                 return;
             }

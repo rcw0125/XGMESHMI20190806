@@ -450,6 +450,18 @@ namespace UnitMag.BFMag
           
         }
 
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            ModifyIronTime Frm = new ModifyIronTime();
+            Frm.ShowDialogEx(Adapter.Session);
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            ModifyIronWeight Frm = new ModifyIronWeight();
+            Frm.ShowDialogEx(Adapter.Session);
+        }
+
 
 
         ////指定去向

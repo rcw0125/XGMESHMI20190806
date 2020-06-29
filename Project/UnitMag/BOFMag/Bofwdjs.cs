@@ -116,9 +116,12 @@ namespace UnitMag.BOFMag
                 {
                     piancha += Math.Round(((tempdataList[1].pigironweight - tempdataList[0].pigironweight) / 1) * (-16), 1);
                 }
-                double chazhi = tempdataList[0].ironweight + tempdataList[0].pigironweight + tempdataList[0].scrapweight - tempdataList[1].ironweight - tempdataList[1].pigironweight - tempdataList[1].scrapweight;
+                //double chazhi = tempdataList[0].ironweight + tempdataList[0].pigironweight + tempdataList[0].scrapweight - tempdataList[1].ironweight - tempdataList[1].pigironweight - tempdataList[1].scrapweight;
+                double ironchazhi = Math.Abs(tempdataList[0].ironweight - tempdataList[1].ironweight);
+                double pigchazhi = Math.Abs(tempdataList[0].pigironweight - tempdataList[1].pigironweight);
+                double scrapchazhi = Math.Abs(tempdataList[0].scrapweight+ tempdataList[0].ykweight - tempdataList[1].scrapweight - tempdataList[1].ykweight);
                 //供氧时间的影响，只考虑铁水、铁块、废钢+压块三者偏差均在±0.5t以内（＜0.5t）时计算，其它情况不参与计算
-                if (Math.Abs(chazhi) < 0.5)
+                if (ironchazhi < 0.5&& pigchazhi<0.5&&scrapchazhi<0.5)
                 {
                     if (tempdataList[0].o2time > 0 && tempdataList[1].o2time > 0)
                     {

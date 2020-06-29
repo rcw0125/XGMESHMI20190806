@@ -73,6 +73,9 @@
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tSp1 = new System.Windows.Forms.ToolStrip();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
             this.btnAdd = new System.Windows.Forms.ToolStripButton();
@@ -265,7 +268,6 @@
             this.cmdpTapNo = new AppSvrHMI.L3CommandParameter();
             this.cmdModifySource = new AppSvrHMI.L3Command(this.components);
             this.cmdSource = new AppSvrHMI.L3CommandParameter();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tSp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsShiftID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsShiftID)).BeginInit();
@@ -309,7 +311,7 @@
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(65, 40);
+            this.btnDel.Size = new System.Drawing.Size(68, 40);
             this.btnDel.Text = "删除";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -319,7 +321,7 @@
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(65, 40);
+            this.btnConfirm.Size = new System.Drawing.Size(68, 40);
             this.btnConfirm.Text = "确定";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -329,7 +331,7 @@
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(65, 40);
+            this.btnCancel.Size = new System.Drawing.Size(68, 40);
             this.btnCancel.Text = "取消";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -345,7 +347,7 @@
             this.btnBFSample.Image = ((System.Drawing.Image)(resources.GetObject("btnBFSample.Image")));
             this.btnBFSample.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBFSample.Name = "btnBFSample";
-            this.btnBFSample.Size = new System.Drawing.Size(113, 40);
+            this.btnBFSample.Size = new System.Drawing.Size(116, 40);
             this.btnBFSample.Text = "铁沟样委托单";
             this.btnBFSample.Click += new System.EventHandler(this.btnBFSample_Click);
             // 
@@ -355,7 +357,7 @@
             this.btnDisSSample.Image = ((System.Drawing.Image)(resources.GetObject("btnDisSSample.Image")));
             this.btnDisSSample.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDisSSample.Name = "btnDisSSample";
-            this.btnDisSSample.Size = new System.Drawing.Size(101, 40);
+            this.btnDisSSample.Size = new System.Drawing.Size(104, 40);
             this.btnDisSSample.Text = "脱硫委托单";
             this.btnDisSSample.Visible = false;
             this.btnDisSSample.Click += new System.EventHandler(this.btnDisSSample_Click);
@@ -364,7 +366,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuSouresHF, "menuSouresHF");
             this.menuSouresHF.Name = "menuSouresHF";
-            this.menuSouresHF.Size = new System.Drawing.Size(166, 22);
+            this.menuSouresHF.Size = new System.Drawing.Size(160, 22);
             this.menuSouresHF.Text = "高炉铁水(&H)...";
             this.menuSouresHF.Click += new System.EventHandler(this.menuSouresHF_Click);
             // 
@@ -373,7 +375,7 @@
             this.Adapter.SetAccessRight(this.menuSoureS, "menuSoureS");
             this.menuSoureS.Enabled = false;
             this.menuSoureS.Name = "menuSoureS";
-            this.menuSoureS.Size = new System.Drawing.Size(166, 22);
+            this.menuSoureS.Size = new System.Drawing.Size(160, 22);
             this.menuSoureS.Text = "脱硫站铁水(&S)...";
             this.menuSoureS.Click += new System.EventHandler(this.menuSoureS_Click);
             // 
@@ -381,7 +383,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuGross, "menuGross");
             this.menuGross.Name = "menuGross";
-            this.menuGross.Size = new System.Drawing.Size(166, 22);
+            this.menuGross.Size = new System.Drawing.Size(160, 22);
             this.menuGross.Text = "设定毛重(&G)...";
             this.menuGross.Click += new System.EventHandler(this.menuGross_Click);
             // 
@@ -389,7 +391,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuTare, "menuTare");
             this.menuTare.Name = "menuTare";
-            this.menuTare.Size = new System.Drawing.Size(166, 22);
+            this.menuTare.Size = new System.Drawing.Size(160, 22);
             this.menuTare.Text = "设定净重(&T)...";
             this.menuTare.Click += new System.EventHandler(this.menuTare_Click);
             // 
@@ -397,7 +399,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuToIron, "menuToIron");
             this.menuToIron.Name = "menuToIron";
-            this.menuToIron.Size = new System.Drawing.Size(166, 22);
+            this.menuToIron.Size = new System.Drawing.Size(160, 22);
             this.menuToIron.Text = "去铸铁(&I)...";
             this.menuToIron.Click += new System.EventHandler(this.menuToIron_Click);
             // 
@@ -405,7 +407,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuToNC, "menuToNC");
             this.menuToNC.Name = "menuToNC";
-            this.menuToNC.Size = new System.Drawing.Size(166, 22);
+            this.menuToNC.Size = new System.Drawing.Size(160, 22);
             this.menuToNC.Text = "上传NC(&N)...";
             this.menuToNC.Click += new System.EventHandler(this.menuToNC_Click);
             // 
@@ -413,7 +415,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuToSteelAgain, "menuGross");
             this.menuToSteelAgain.Name = "menuToSteelAgain";
-            this.menuToSteelAgain.Size = new System.Drawing.Size(166, 22);
+            this.menuToSteelAgain.Size = new System.Drawing.Size(160, 22);
             this.menuToSteelAgain.Text = "重去炼钢(&L)...";
             this.menuToSteelAgain.Click += new System.EventHandler(this.menuToSteelAgain_Click);
             // 
@@ -421,19 +423,48 @@
             // 
             this.Adapter.SetAccessRight(this.toolStripSeparator7, "menuGross");
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(157, 6);
             // 
             // toolStripSeparator5
             // 
             this.Adapter.SetAccessRight(this.toolStripSeparator5, "menuGross");
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(157, 6);
             // 
             // toolStripSeparator6
             // 
             this.Adapter.SetAccessRight(this.toolStripSeparator6, "menuToNC");
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(157, 6);
+            // 
+            // toolStripButton1
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton1, "btnBFSample");
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(92, 40);
+            this.toolStripButton1.Text = "时间修正";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            // 
+            // toolStripButton2
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton2, "btnBFSample");
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(92, 40);
+            this.toolStripButton2.Text = "重新发送";
+            // 
+            // toolStripButton3
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton3, "CheckBoxBOFInfo");
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(92, 36);
+            this.toolStripButton3.Text = "重量修正";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // tSp1
             // 
@@ -452,11 +483,13 @@
             this.btnIronSlagSample,
             this.toolStripSeparator1,
             this.btnRefresh,
-            this.toolStripButton1});
+            this.toolStripButton2,
+            this.toolStripButton1,
+            this.toolStripButton3});
             this.tSp1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.tSp1.Location = new System.Drawing.Point(0, 0);
             this.tSp1.Name = "tSp1";
-            this.tSp1.Size = new System.Drawing.Size(1000, 43);
+            this.tSp1.Size = new System.Drawing.Size(997, 43);
             this.tSp1.TabIndex = 13;
             this.tSp1.Text = "toolStrip1";
             // 
@@ -466,7 +499,7 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(65, 40);
+            this.btnExit.Size = new System.Drawing.Size(68, 40);
             this.btnExit.Text = "退出";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -475,7 +508,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(65, 40);
+            this.btnAdd.Size = new System.Drawing.Size(68, 40);
             this.btnAdd.Text = "新增";
             this.btnAdd.Visible = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -485,7 +518,7 @@
             this.btnIronSlagSample.Image = ((System.Drawing.Image)(resources.GetObject("btnIronSlagSample.Image")));
             this.btnIronSlagSample.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnIronSlagSample.Name = "btnIronSlagSample";
-            this.btnIronSlagSample.Size = new System.Drawing.Size(113, 40);
+            this.btnIronSlagSample.Size = new System.Drawing.Size(116, 40);
             this.btnIronSlagSample.Text = "铁渣样委托单";
             this.btnIronSlagSample.Click += new System.EventHandler(this.btnIronSlagSample_Click);
             // 
@@ -499,7 +532,7 @@
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(65, 40);
+            this.btnRefresh.Size = new System.Drawing.Size(68, 40);
             this.btnRefresh.Text = "刷新";
             // 
             // dsShiftID
@@ -595,7 +628,7 @@
             this.hmiRootPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel1.Location = new System.Drawing.Point(0, 68);
             this.hmiRootPanel1.Name = "hmiRootPanel1";
-            this.hmiRootPanel1.Size = new System.Drawing.Size(1000, 182);
+            this.hmiRootPanel1.Size = new System.Drawing.Size(997, 182);
             this.hmiRootPanel1.TabIndex = 22;
             // 
             // dvM
@@ -686,14 +719,14 @@
             this.dvM.ReadOnly = true;
             this.dvM.RowTemplate.Height = 23;
             this.dvM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvM.Size = new System.Drawing.Size(996, 178);
+            this.dvM.Size = new System.Drawing.Size(993, 178);
             this.dvM.TabIndex = 25;
-            this.dvM.Sorted += new System.EventHandler(this.dvM_Sorted);
-            this.dvM.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dvM_RowPostPaint);
             this.dvM.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvM_CellMouseDoubleClick);
-            this.dvM.RowContextMenuStripNeeded += new System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler(this.dvM_RowContextMenuStripNeeded);
-            this.dvM.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvM_DataError);
             this.dvM.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvM_DataBindingComplete);
+            this.dvM.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvM_DataError);
+            this.dvM.RowContextMenuStripNeeded += new System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler(this.dvM_RowContextMenuStripNeeded);
+            this.dvM.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dvM_RowPostPaint);
+            this.dvM.Sorted += new System.EventHandler(this.dvM_Sorted);
             // 
             // BFID
             // 
@@ -1356,7 +1389,7 @@
             this.toolStripSeparator6,
             this.menuToNC});
             this.ctxtMenuStripModifyWT.Name = "ctxtMenuStripModifyWT";
-            this.ctxtMenuStripModifyWT.Size = new System.Drawing.Size(167, 176);
+            this.ctxtMenuStripModifyWT.Size = new System.Drawing.Size(161, 176);
             // 
             // bsBFIron
             // 
@@ -2180,14 +2213,14 @@
             this.bdN1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bdN1.Name = "bdN1";
             this.bdN1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bdN1.Size = new System.Drawing.Size(1000, 25);
+            this.bdN1.Size = new System.Drawing.Size(997, 25);
             this.bdN1.TabIndex = 21;
             this.bdN1.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -2245,7 +2278,7 @@
             // 
             this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(17, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(16, 22);
             this.toolStripLabel1.Text = "  ";
             // 
             // cmdSendIronDataToNC
@@ -2294,21 +2327,11 @@
             this.cmdSource.TargetObject = null;
             this.cmdSource.TargetProperty = null;
             // 
-            // toolStripButton1
-            // 
-            this.Adapter.SetAccessRight(this.toolStripButton1, "btnBFSample");
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(125, 40);
-            this.toolStripButton1.Text = "重新发送委托单";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
             // IronMagFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 250);
+            this.ClientSize = new System.Drawing.Size(997, 250);
             this.Controls.Add(this.hmiRootPanel1);
             this.Controls.Add(this.bdN1);
             this.Controls.Add(this.tSp1);
@@ -2316,8 +2339,8 @@
             this.Name = "IronMagFrm";
             this.TabText = "铁水信息收集管理";
             this.Text = "铁水信息收集管理";
-            this.Load += new System.EventHandler(this.IronMagFrm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IronMagFrm_FormClosing);
+            this.Load += new System.EventHandler(this.IronMagFrm_Load);
             this.tSp1.ResumeLayout(false);
             this.tSp1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsShiftID)).EndInit();
@@ -2562,5 +2585,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TareFlag;
         private System.Windows.Forms.DataGridViewTextBoxColumn AnalysisFlag;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }

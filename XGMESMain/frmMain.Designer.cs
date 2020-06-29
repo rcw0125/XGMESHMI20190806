@@ -472,6 +472,8 @@
             this.menuHelpIndex = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.日志查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.L3DataAdapter = new AppSvrHMI.L3Adapter(this.components);
             this.L3Session = new AppSvrIF.Session(this.components);
             this.statusMain = new System.Windows.Forms.StatusStrip();
@@ -4278,7 +4280,9 @@
             this.menuHelpCatalog,
             this.menuHelpIndex,
             this.toolStripSeparator2,
-            this.menuAbout});
+            this.menuAbout,
+            this.toolStripMenuItem3,
+            this.日志查询ToolStripMenuItem});
             this.menuHelp.Name = "menuHelp";
             this.menuHelp.Size = new System.Drawing.Size(61, 21);
             this.panelMain.SetTargetForm(this.menuHelp, "");
@@ -4287,7 +4291,7 @@
             // menuHelpCatalog
             // 
             this.menuHelpCatalog.Name = "menuHelpCatalog";
-            this.menuHelpCatalog.Size = new System.Drawing.Size(125, 22);
+            this.menuHelpCatalog.Size = new System.Drawing.Size(148, 22);
             this.panelMain.SetTargetForm(this.menuHelpCatalog, "");
             this.menuHelpCatalog.Text = "目录(&C)";
             this.menuHelpCatalog.Visible = false;
@@ -4296,7 +4300,7 @@
             // menuHelpIndex
             // 
             this.menuHelpIndex.Name = "menuHelpIndex";
-            this.menuHelpIndex.Size = new System.Drawing.Size(125, 22);
+            this.menuHelpIndex.Size = new System.Drawing.Size(148, 22);
             this.panelMain.SetTargetForm(this.menuHelpIndex, "");
             this.menuHelpIndex.Text = "索引(&I)";
             this.menuHelpIndex.Visible = false;
@@ -4305,16 +4309,32 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(122, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(145, 6);
             this.toolStripSeparator2.Visible = false;
             // 
             // menuAbout
             // 
             this.menuAbout.Name = "menuAbout";
-            this.menuAbout.Size = new System.Drawing.Size(125, 22);
+            this.menuAbout.Size = new System.Drawing.Size(148, 22);
             this.panelMain.SetTargetForm(this.menuAbout, "");
             this.menuAbout.Text = "关于(&A)...";
             this.menuAbout.Click += new System.EventHandler(this.OnOpenAboutDialog);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.L3DataAdapter.SetAccessRight(this.toolStripMenuItem3, "NCTelQuery");
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(148, 22);
+            this.panelMain.SetTargetForm(this.toolStripMenuItem3, "UnitMag.sysLogFrm,UnitMag");
+            this.toolStripMenuItem3.Text = "日志查询";
+            // 
+            // 日志查询ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.日志查询ToolStripMenuItem, "NCTelQuery");
+            this.日志查询ToolStripMenuItem.Name = "日志查询ToolStripMenuItem";
+            this.日志查询ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.panelMain.SetTargetForm(this.日志查询ToolStripMenuItem, "UnitMag.sysUserLoginFrm,UnitMag");
+            this.日志查询ToolStripMenuItem.Text = "用户登陆日志";
             // 
             // L3DataAdapter
             // 
@@ -5183,6 +5203,8 @@
         private System.Windows.Forms.ToolStripMenuItem 重做甩废已上传NCToolStripMenuItem1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripMenuItem 大包称重分析ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 日志查询ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
 
