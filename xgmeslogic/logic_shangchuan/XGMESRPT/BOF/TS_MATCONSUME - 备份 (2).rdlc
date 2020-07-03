@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>ORACLE</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>d685e04e-1b3a-4290-b380-e8e62ac033e0</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <DataSetName>DataSet1_TS_MATCONSUME</DataSetName>
+        <Top>0.75cm</Top>
+        <Width>10.66667cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.90476cm</Height>
+      </Table>
+    </ReportItems>
+    <Height>5cm</Height>
+  </Body>
+  <rd:ReportID>21643bee-c8e7-46fa-9e75-869166214154</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="DataSet1_TS_MATCONSUME">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>TS_MATCONSUMETableAdapter</rd:TableAdapterName>
+        <rd:TableName>TS_MATCONSUME</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT TS_MATCONSUME.*
+FROM TS_MATCONSUME</CommandText>
+        <DataSourceName>ConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="LOGTIME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LOGTIME</DataField>
+        </Field>
+        <Field Name="TEAM">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TEAM</DataField>
+        </Field>
+        <Field Name="HEATCOUNT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>HEATCOUNT_D</DataField>
+        </Field>
+        <Field Name="STEEL_WEIGHT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>STEEL_WEIGHT_D</DataField>
+        </Field>
+        <Field Name="IRONWEIGHT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>IRONWEIGHT_D</DataField>
+        </Field>
+        <Field Name="SCRAPWEIGHT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SCRAPWEIGHT_D</DataField>
+        </Field>
+        <Field Name="PIGIRONWEIGHT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>PIGIRONWEIGHT_D</DataField>
+        </Field>
+        <Field Name="STEEL_WEIGHT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>STEEL_WEIGHT_U_D</DataField>
+        </Field>
+        <Field Name="LIME_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LIME_MAT_D</DataField>
+        </Field>
+        <Field Name="MAGNESIUM_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MAGNESIUM_D</DataField>
+        </Field>
+        <Field Name="FLUORITE_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FLUORITE_MAT_D</DataField>
+        </Field>
+        <Field Name="DOLOMITE_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>DOLOMITE_MAT_D</DataField>
+        </Field>
+        <Field Name="FEO_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FEO_MAT_D</DataField>
+        </Field>
+        <Field Name="MOD_AGENT_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MOD_AGENT_MAT_D</DataField>
+        </Field>
+        <Field Name="SMALL_GRAY_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SMALL_GRAY_MAT_D</DataField>
+        </Field>
+        <Field Name="QUARTZ_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>QUARTZ_MAT_D</DataField>
+        </Field>
+        <Field Name="AL_V_MAT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AL_V_MAT_D</DataField>
+        </Field>
+        <Field Name="LIME_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LIME_MAT_U_D</DataField>
+        </Field>
+        <Field Name="MAGNESIUM_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MAGNESIUM_MAT_U_D</DataField>
+        </Field>
+        <Field Name="FLUORITE_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FLUORITE_MAT_U_D</DataField>
+        </Field>
+        <Field Name="DOLOMITE_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>DOLOMITE_MAT_U_D</DataField>
+        </Field>
+        <Field Name="FEO_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FEO_MAT_U_D</DataField>
+        </Field>
+        <Field Name="MOD_AGENT_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MOD_AGENT_MAT_U_D</DataField>
+        </Field>
+        <Field Name="SMALL_GRAY_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SMALL_GRAY_MAT_U_D</DataField>
+        </Field>
+        <Field Name="QUARTZ_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>QUARTZ_MAT_U_D</DataField>
+        </Field>
+        <Field Name="AL_V_MAT_U_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AL_V_MAT_U_D</DataField>
+        </Field>
+        <Field Name="HIGHT_PROBE_COUNT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>HIGHT_PROBE_COUNT_D</DataField>
+        </Field>
+        <Field Name="LOW_PROBE_COUNT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LOW_PROBE_COUNT_D</DataField>
+        </Field>
+        <Field Name="TEMP_COUNT_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>TEMP_COUNT_D</DataField>
+        </Field>
+        <Field Name="O2_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>O2_D</DataField>
+        </Field>
+        <Field Name="AR_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AR_D</DataField>
+        </Field>
+        <Field Name="N2_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>N2_D</DataField>
+        </Field>
+        <Field Name="HEATCOUNT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>HEATCOUNT_M</DataField>
+        </Field>
+        <Field Name="STEEL_WEIGHT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>STEEL_WEIGHT_M</DataField>
+        </Field>
+        <Field Name="IRONWEIGHT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>IRONWEIGHT_M</DataField>
+        </Field>
+        <Field Name="SCRAPWEIGHT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SCRAPWEIGHT_M</DataField>
+        </Field>
+        <Field Name="PIGIRONWEIGHT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>PIGIRONWEIGHT_M</DataField>
+        </Field>
+        <Field Name="STEEL_WEIGHT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>STEEL_WEIGHT_U_M</DataField>
+        </Field>
+        <Field Name="LIME_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LIME_MAT_M</DataField>
+        </Field>
+        <Field Name="MAGNESIUM_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MAGNESIUM_M</DataField>
+        </Field>
+        <Field Name="FLUORITE_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FLUORITE_MAT_M</DataField>
+        </Field>
+        <Field Name="DOLOMITE_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>DOLOMITE_MAT_M</DataField>
+        </Field>
+        <Field Name="FEO_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FEO_MAT_M</DataField>
+        </Field>
+        <Field Name="MOD_AGENT_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MOD_AGENT_MAT_M</DataField>
+        </Field>
+        <Field Name="SMALL_GRAY_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SMALL_GRAY_MAT_M</DataField>
+        </Field>
+        <Field Name="QUARTZ_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>QUARTZ_MAT_M</DataField>
+        </Field>
+        <Field Name="AL_V_MAT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AL_V_MAT_M</DataField>
+        </Field>
+        <Field Name="LIME_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LIME_MAT_U_M</DataField>
+        </Field>
+        <Field Name="MAGNESIUM_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MAGNESIUM_MAT_U_M</DataField>
+        </Field>
+        <Field Name="FLUORITE_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FLUORITE_MAT_U_M</DataField>
+        </Field>
+        <Field Name="DOLOMITE_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>DOLOMITE_MAT_U_M</DataField>
+        </Field>
+        <Field Name="FEO_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FEO_MAT_U_M</DataField>
+        </Field>
+        <Field Name="MOD_AGENT_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>MOD_AGENT_MAT_U_M</DataField>
+        </Field>
+        <Field Name="SMALL_GRAY_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SMALL_GRAY_MAT_U_M</DataField>
+        </Field>
+        <Field Name="QUARTZ_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>QUARTZ_MAT_U_M</DataField>
+        </Field>
+        <Field Name="AL_V_MAT_U_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AL_V_MAT_U_M</DataField>
+        </Field>
+        <Field Name="HIGHT_PROBE_COUNT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>HIGHT_PROBE_COUNT_M</DataField>
+        </Field>
+        <Field Name="LOW_PROBE_COUNT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>LOW_PROBE_COUNT_M</DataField>
+        </Field>
+        <Field Name="TEMP_COUNT_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>TEMP_COUNT_M</DataField>
+        </Field>
+        <Field Name="O2_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>O2_M</DataField>
+        </Field>
+        <Field Name="AR_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>AR_M</DataField>
+        </Field>
+        <Field Name="N2_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>N2_M</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>16cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

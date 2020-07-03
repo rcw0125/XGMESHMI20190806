@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet10" targetNamespace="http://tempuri.org/DataSet10.xsd" xmlns:mstns="http://tempuri.org/DataSet10.xsd" xmlns="http://tempuri.org/DataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TR_LF_ORIGINALDATATableAdapter" Name="TR_LF_ORIGINALDATA">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="XGWEBRPT.TR_LF_ORIGINALDATA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO "TR_LF_ORIGINALDATA" ("LFID", "LOGTIME", "TEAM", "SHIFT", "HEATFURNACE", "ASSISTANT", "SECONDHAND", "HEATID", "STEELGRADE", "CASTINGNO", "LADLESTATUS", "LADLEAGE", "LADLEID", "LADLESTATUS_NOTE", "LID_LIFE", "STEEL_WEIGHT", "ARRIVAL_TIME", "C_ARRIVAL", "SI_ARRIVAL", "MN_ARRIVAL", "P_ARRIVAL", "S_ARRIVAL", "AL_ARRIVAL", "CR_ARRIVAL", "TI_ARRIVAL", "V_ARRIVAL", "B_ARRIVAL", "MO_ARRIVAL", "HEAT_START_TIME", "HEAT_END_TIME", "HEAT_TIME", "OXYGEN_FACTORY", "OXYGEN1", "OXYGEN1_TEMP", "OXYGEN1_AL", "OXYGEN2", "OXYGEN2_TEMP", "OXYGEN2_AL", "ELEC_CONSUM", "FEEDWIRE_TIME", "FEEDWIRE_TEMP", "SOFTBLOW_STARTTIME", "SOFTBLOW_ENDTIME", "SOFTBLOW_TIME", "DEPARTURE_TEMP", "DEPARTURE_REMA_WT", "TECHNOLOGY_QUALITY", "DISTEMP_REASON", "CIRCSOFRHYTHM", "TUNDISH_TEMP_5MIN", "TUNDISH_TEMP_10MIN", "TUNDISH_TEMP_15MIN", "TUNDISH_TEMP_20MIN", "TUNDISH_TEMP_25MIN", "TUNDISH_TEMP_30MIN", "TUNDISH_TEMP_35MIN", "CASTING_STOP_TEMP", "TUNDISHTEMP_QUALITY", "C_PROCESS", "SI_PROCESS", "MN_PROCESS", "P_PROCESS", "S_PROCESS", "AL_PROCESS", "CR_PROCESS", "TI_PROCESS", "V_PROCESS", "B_PROCESS", "MO_PROCESS", "CA_PROCESS", "C_FINISHED", "SI_FINISHED", "MN_FINISHED", "P_FINISHED", "S_FINISHED", "AL_FINISHED", "CR_FINISHED", "TI_FINISHED", "V_FINISHED", "B_FINISHED", "MO_FINISHED", "CA_FINISHED", "CAO_PROCESS_ADD", "CAF_PROCESS_ADD", "AL2O3_PROCESS_ADD", "SIO2_PROCESS_ADD", "CAC_PROCESS_ADD", "ALL_PROCESS_ADD", "SI_FE_F_PROCESS_ADD", "H_C_MN_FE_PROCESS_ADD", "M_C_MN_FE_PROCESS_ADD", "SI_FE_PROCESS_ADD", "CR_FE_PROCESS_ADD", "B_FE_PROCESS_ADD", "V_FE_PROCESS_ADD", "MO_FE_PROCESS_ADD", "TI_FE_PROCESS_ADD", "OTHER", "MODEL_SYNTHETIC_SLAG", "DOSAGE_SYNTHETIC_SLAG", "C_AMOUNT", "FECA_AMOUNT", "FECA_ADDCA", "SICA_AMOUNT", "ALADD_AMOUNT", "NOTE", "SLAGANALYSIS_FEO", "SLAGANALYSIS_SIO2", "SLAGANALYSIS_CAO", "SLAGANALYSIS_MGO", "SLAGANALYSIS_AL203", "SLAGANALYSIS_S", "SLAGANALYSIS_P", "SLAGANALYSIS_MNO", "SLAGANALYSIS_TIO2", "HEAT_GAS", "SOFTBLOW_GAS", "PRODUCTIONDATE", "ARRIVE_TEMP", "NI_ARRIVAL", "NI_FINISHED", "L_C_MN_FE_PROCESS_ADD", "L_AL_SI_FE_PROCESS_ADD", "M_AL_SI_FE_PROCESS_ADD", "H_C_CR_FE_PROCESS_ADD", "L_TI_H_C_CR_FE_PROCESS_ADD", "C_SECOND", "SI_SECOND", "MN_SECOND", "P_SECOND", "S_SECOND", "AL_SECOND", "CR_SECOND", "TI_SECOND", "V_SECOND", "B_SECOND", "MO_SECOND", "CA_SECOND", "NI_SECOND", "C_THIRD", "SI_THIRD", "MN_THIRD", "P_THIRD", "S_THIRD", "AL_THIRD", "CR_THIRD", "TI_THIRD", "V_THIRD", "B_THIRD", "MO_THIRD", "CA_THIRD", "NI_THIRD", "HEATNUM_CASTING", "HEATNUM_TUNDISH", "NI_PROCESS", "POLE_VENDOR", "POLE_CONSUME", "COMPOSESLAG_NAME1", "COMPOSESLAG_AMOUNT1", "COMPOSESLAG_VENDOR1", "COMPOSESLAG_NAME2", "COMPOSESLAG_AMOUNT2", "COMPOSESLAG_VENDOR2", "FLOW_BLOWAR_HEAT", "FLOW_BLOWAR_SOFTBLOW", "TECHICSEXCEPTION", "VENDOR_C", "VENDOR_CASI", "VENDOR_CAFE", "LOWC_CRFE_MAT", "STOP_TIME_LEN", "TUNDISH_TEMP_2MIN", "TUNDISH_TEMP_DROP", "L_S_AMOUNT_CWIRE", "H_TI_FE_PROCESS_ADD", "CU_ARRIVAL", "CU_SECOND", "CU_THIRD", "CU_PROCESS", "CU_FINISHED", "CR_NI_CU_PROCESS", "CR_NI_CU_FINISHED", "JP_CAF_PROCESS_ADD", "S_FE_PROCESS_ADD", "P_FE_PROCESS_ADD", "S_AMOUNT", "ALS_ARRIVAL", "ALS_SECOND", "ALS_THIRD", "ALS_PROCESS", "ALS_FINISHED", "HOLDBACK_TIME", "L_AL_SI_FE_F_PROCESS_ADD", "LG_NI_PROCESS_ADD", "LG_ZCU_PROCESS_ADD", "IN_RHYTHM", "WOLLASTONITE_PROCESS_ADD", "STEEL_SI_FE_F_PROCESS_ADD", "STEEL_CAC_PROCESS_ADD", "SLAGANALYSIS_R", "HEAT_COUNT") VALUES (:LFID, :LOGTIME, :TEAM, :SHIFT, :HEATFURNACE, :ASSISTANT, :SECONDHAND, :HEATID, :STEELGRADE, :CASTINGNO, :LADLESTATUS, :LADLEAGE, :LADLEID, :LADLESTATUS_NOTE, :LID_LIFE, :STEEL_WEIGHT, :ARRIVAL_TIME, :C_ARRIVAL, :SI_ARRIVAL, :MN_ARRIVAL, :P_ARRIVAL, :S_ARRIVAL, :AL_ARRIVAL, :CR_ARRIVAL, :TI_ARRIVAL, :V_ARRIVAL, :B_ARRIVAL, :MO_ARRIVAL, :HEAT_START_TIME, :HEAT_END_TIME, :HEAT_TIME, :OXYGEN_FACTORY, :OXYGEN1, :OXYGEN1_TEMP, :OXYGEN1_AL, :OXYGEN2, :OXYGEN2_TEMP, :OXYGEN2_AL, :ELEC_CONSUM, :FEEDWIRE_TIME, :FEEDWIRE_TEMP, :SOFTBLOW_STARTTIME, :SOFTBLOW_ENDTIME, :SOFTBLOW_TIME, :DEPARTURE_TEMP, :DEPARTURE_REMA_WT, :TECHNOLOGY_QUALITY, :DISTEMP_REASON, :CIRCSOFRHYTHM, :TUNDISH_TEMP_5MIN, :TUNDISH_TEMP_10MIN, :TUNDISH_TEMP_15MIN, :TUNDISH_TEMP_20MIN, :TUNDISH_TEMP_25MIN, :TUNDISH_TEMP_30MIN, :TUNDISH_TEMP_35MIN, :CASTING_STOP_TEMP, :TUNDISHTEMP_QUALITY, :C_PROCESS, :SI_PROCESS, :MN_PROCESS, :P_PROCESS, :S_PROCESS, :AL_PROCESS, :CR_PROCESS, :TI_PROCESS, :V_PROCESS, :B_PROCESS, :MO_PROCESS, :CA_PROCESS, :C_FINISHED, :SI_FINISHED, :MN_FINISHED, :P_FINISHED, :S_FINISHED, :AL_FINISHED, :CR_FINISHED, :TI_FINISHED, :V_FINISHED, :B_FINISHED, :MO_FINISHED, :CA_FINISHED, :CAO_PROCESS_ADD, :CAF_PROCESS_ADD, :AL2O3_PROCESS_ADD, :SIO2_PROCESS_ADD, :CAC_PROCESS_ADD, :ALL_PROCESS_ADD, :SI_FE_F_PROCESS_ADD, :H_C_MN_FE_PROCESS_ADD, :M_C_MN_FE_PROCESS_ADD, :SI_FE_PROCESS_ADD, :CR_FE_PROCESS_ADD, :B_FE_PROCESS_ADD, :V_FE_PROCESS_ADD, :MO_FE_PROCESS_ADD, :TI_FE_PROCESS_ADD, :OTHER, :MODEL_SYNTHETIC_SLAG, :DOSAGE_SYNTHETIC_SLAG, :C_AMOUNT, :FECA_AMOUNT, :FECA_ADDCA, :SICA_AMOUNT, :ALADD_AMOUNT, :NOTE, :SLAGANALYSIS_FEO, :SLAGANALYSIS_SIO2, :SLAGANALYSIS_CAO, :SLAGANALYSIS_MGO, :SLAGANALYSIS_AL203, :SLAGANALYSIS_S, :SLAGANALYSIS_P, :SLAGANALYSIS_MNO, :SLAGANALYSIS_TIO2, :HEAT_GAS, :SOFTBLOW_GAS, :PRODUCTIONDATE, :ARRIVE_TEMP, :NI_ARRIVAL, :NI_FINISHED, :L_C_MN_FE_PROCESS_ADD, :p1, :p4, :H_C_CR_FE_PROCESS_ADD, :p7, :C_SECOND, :SI_SECOND, :MN_SECOND, :P_SECOND, :S_SECOND, :AL_SECOND, :CR_SECOND, :TI_SECOND, :V_SECOND, :B_SECOND, :MO_SECOND, :CA_SECOND, :NI_SECOND, :C_THIRD, :SI_THIRD, :MN_THIRD, :P_THIRD, :S_THIRD, :AL_THIRD, :CR_THIRD, :TI_THIRD, :V_THIRD, :B_THIRD, :MO_THIRD, :CA_THIRD, :NI_THIRD, :HEATNUM_CASTING, :HEATNUM_TUNDISH, :NI_PROCESS, :POLE_VENDOR, :POLE_CONSUME, :COMPOSESLAG_NAME1, :COMPOSESLAG_AMOUNT1, :COMPOSESLAG_VENDOR1, :COMPOSESLAG_NAME2, :COMPOSESLAG_AMOUNT2, :COMPOSESLAG_VENDOR2, :FLOW_BLOWAR_HEAT, :FLOW_BLOWAR_SOFTBLOW, :TECHICSEXCEPTION, :VENDOR_C, :VENDOR_CASI, :VENDOR_CAFE, :LOWC_CRFE_MAT, :STOP_TIME_LEN, :TUNDISH_TEMP_2MIN, :TUNDISH_TEMP_DROP, :L_S_AMOUNT_CWIRE, :H_TI_FE_PROCESS_ADD, :CU_ARRIVAL, :CU_SECOND, :CU_THIRD, :CU_PROCESS, :CU_FINISHED, :CR_NI_CU_PROCESS, :CR_NI_CU_FINISHED, :JP_CAF_PROCESS_ADD, :S_FE_PROCESS_ADD, :P_FE_PROCESS_ADD, :S_AMOUNT, :ALS_ARRIVAL, :ALS_SECOND, :ALS_THIRD, :ALS_PROCESS, :ALS_FINISHED, :HOLDBACK_TIME, :p10, :LG_NI_PROCESS_ADD, :LG_ZCU_PROCESS_ADD, :IN_RHYTHM, :p13, :p16, :STEEL_CAC_PROCESS_ADD, :SLAGANALYSIS_R, :HEAT_COUNT)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LFID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LFID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOGTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGTIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEAM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEAM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SHIFT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SHIFT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATFURNACE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATFURNACE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ASSISTANT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ASSISTANT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SECONDHAND" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SECONDHAND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="STEELGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="STEELGRADE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CASTINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CASTINGNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLESTATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLESTATUS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LADLEAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LADLEAGE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLEID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLEID" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLESTATUS_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLESTATUS_NOTE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LID_LIFE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LID_LIFE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEEL_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_WEIGHT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ARRIVAL_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ARRIVAL_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="HEAT_START_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="HEAT_START_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="HEAT_END_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="HEAT_END_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HEAT_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HEAT_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OXYGEN_FACTORY" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OXYGEN_FACTORY" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN1" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN1_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN1_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN1_AL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN1_AL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN2_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN2_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OXYGEN2_AL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OXYGEN2_AL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ELEC_CONSUM" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ELEC_CONSUM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FEEDWIRE_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FEEDWIRE_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FEEDWIRE_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FEEDWIRE_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="SOFTBLOW_STARTTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SOFTBLOW_STARTTIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="SOFTBLOW_ENDTIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="SOFTBLOW_ENDTIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SOFTBLOW_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SOFTBLOW_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="DEPARTURE_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="DEPARTURE_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="DEPARTURE_REMA_WT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="DEPARTURE_REMA_WT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TECHNOLOGY_QUALITY" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TECHNOLOGY_QUALITY" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="DISTEMP_REASON" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DISTEMP_REASON" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CIRCSOFRHYTHM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CIRCSOFRHYTHM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_5MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_5MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_10MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_10MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_15MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_15MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_20MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_20MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_25MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_25MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_30MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_30MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_35MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_35MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CASTING_STOP_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CASTING_STOP_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISHTEMP_QUALITY" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISHTEMP_QUALITY" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CA_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CA_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CA_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CA_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAO_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAO_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAF_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAF_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL2O3_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL2O3_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SIO2_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SIO2_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAC_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAC_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALL_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALL_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FE_F_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FE_F_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="H_C_MN_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="H_C_MN_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="M_C_MN_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="M_C_MN_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OTHER" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OTHER" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MODEL_SYNTHETIC_SLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MODEL_SYNTHETIC_SLAG" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="DOSAGE_SYNTHETIC_SLAG" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="DOSAGE_SYNTHETIC_SLAG" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_AMOUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FECA_AMOUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FECA_AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FECA_ADDCA" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FECA_ADDCA" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SICA_AMOUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SICA_AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALADD_AMOUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALADD_AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOTE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_FEO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_FEO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_SIO2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_SIO2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_CAO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_CAO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_MGO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_MGO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_AL203" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_AL203" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_S" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_S" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_P" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_P" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_MNO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_MNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_TIO2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_TIO2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HEAT_GAS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HEAT_GAS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SOFTBLOW_GAS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SOFTBLOW_GAS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="PRODUCTIONDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="PRODUCTIONDATE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ARRIVE_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ARRIVE_TEMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="L_C_MN_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_C_MN_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p1" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_AL_SI_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p4" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="M_AL_SI_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="H_C_CR_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="H_C_CR_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p7" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_TI_H_C_CR_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CA_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CA_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CA_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CA_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATNUM_CASTING" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATNUM_CASTING" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATNUM_TUNDISH" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATNUM_TUNDISH" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="POLE_VENDOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="POLE_VENDOR" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="POLE_CONSUME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="POLE_CONSUME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COMPOSESLAG_NAME1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMPOSESLAG_NAME1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COMPOSESLAG_AMOUNT1" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COMPOSESLAG_AMOUNT1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COMPOSESLAG_VENDOR1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMPOSESLAG_VENDOR1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COMPOSESLAG_NAME2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMPOSESLAG_NAME2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COMPOSESLAG_AMOUNT2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COMPOSESLAG_AMOUNT2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COMPOSESLAG_VENDOR2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMPOSESLAG_VENDOR2" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_BLOWAR_HEAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_HEAT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_BLOWAR_SOFTBLOW" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_SOFTBLOW" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TECHICSEXCEPTION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TECHICSEXCEPTION" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="VENDOR_C" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="VENDOR_C" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="VENDOR_CASI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="VENDOR_CASI" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="VENDOR_CAFE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="VENDOR_CAFE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOWC_CRFE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOWC_CRFE_MAT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STOP_TIME_LEN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STOP_TIME_LEN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_2MIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_2MIN" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISH_TEMP_DROP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_DROP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="L_S_AMOUNT_CWIRE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_S_AMOUNT_CWIRE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="H_TI_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="H_TI_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_NI_CU_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_NI_CU_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_NI_CU_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_NI_CU_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="JP_CAF_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="JP_CAF_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_FE_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_FE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_AMOUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_AMOUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_ARRIVAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_ARRIVAL" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_SECOND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_SECOND" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_THIRD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_THIRD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_PROCESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_PROCESS" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_FINISHED" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_FINISHED" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HOLDBACK_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HOLDBACK_TIME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p10" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_AL_SI_FE_F_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LG_NI_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LG_NI_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LG_ZCU_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LG_ZCU_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="IN_RHYTHM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IN_RHYTHM" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p13" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="WOLLASTONITE_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p16" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_SI_FE_F_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEEL_CAC_PROCESS_ADD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_CAC_PROCESS_ADD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SLAGANALYSIS_R" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SLAGANALYSIS_R" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HEAT_COUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HEAT_COUNT" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT TR_LF_ORIGINALDATA.*
+FROM TR_LF_ORIGINALDATA</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LFID" DataSetColumn="LFID" />
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="SHIFT" DataSetColumn="SHIFT" />
+              <Mapping SourceColumn="HEATFURNACE" DataSetColumn="HEATFURNACE" />
+              <Mapping SourceColumn="ASSISTANT" DataSetColumn="ASSISTANT" />
+              <Mapping SourceColumn="SECONDHAND" DataSetColumn="SECONDHAND" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="STEELGRADE" DataSetColumn="STEELGRADE" />
+              <Mapping SourceColumn="CASTINGNO" DataSetColumn="CASTINGNO" />
+              <Mapping SourceColumn="LADLESTATUS" DataSetColumn="LADLESTATUS" />
+              <Mapping SourceColumn="LADLEAGE" DataSetColumn="LADLEAGE" />
+              <Mapping SourceColumn="LADLEID" DataSetColumn="LADLEID" />
+              <Mapping SourceColumn="LADLESTATUS_NOTE" DataSetColumn="LADLESTATUS_NOTE" />
+              <Mapping SourceColumn="LID_LIFE" DataSetColumn="LID_LIFE" />
+              <Mapping SourceColumn="STEEL_WEIGHT" DataSetColumn="STEEL_WEIGHT" />
+              <Mapping SourceColumn="ARRIVAL_TIME" DataSetColumn="ARRIVAL_TIME" />
+              <Mapping SourceColumn="C_ARRIVAL" DataSetColumn="C_ARRIVAL" />
+              <Mapping SourceColumn="SI_ARRIVAL" DataSetColumn="SI_ARRIVAL" />
+              <Mapping SourceColumn="MN_ARRIVAL" DataSetColumn="MN_ARRIVAL" />
+              <Mapping SourceColumn="P_ARRIVAL" DataSetColumn="P_ARRIVAL" />
+              <Mapping SourceColumn="S_ARRIVAL" DataSetColumn="S_ARRIVAL" />
+              <Mapping SourceColumn="AL_ARRIVAL" DataSetColumn="AL_ARRIVAL" />
+              <Mapping SourceColumn="CR_ARRIVAL" DataSetColumn="CR_ARRIVAL" />
+              <Mapping SourceColumn="TI_ARRIVAL" DataSetColumn="TI_ARRIVAL" />
+              <Mapping SourceColumn="V_ARRIVAL" DataSetColumn="V_ARRIVAL" />
+              <Mapping SourceColumn="B_ARRIVAL" DataSetColumn="B_ARRIVAL" />
+              <Mapping SourceColumn="MO_ARRIVAL" DataSetColumn="MO_ARRIVAL" />
+              <Mapping SourceColumn="HEAT_START_TIME" DataSetColumn="HEAT_START_TIME" />
+              <Mapping SourceColumn="HEAT_END_TIME" DataSetColumn="HEAT_END_TIME" />
+              <Mapping SourceColumn="HEAT_TIME" DataSetColumn="HEAT_TIME" />
+              <Mapping SourceColumn="OXYGEN_FACTORY" DataSetColumn="OXYGEN_FACTORY" />
+              <Mapping SourceColumn="OXYGEN1" DataSetColumn="OXYGEN1" />
+              <Mapping SourceColumn="OXYGEN1_TEMP" DataSetColumn="OXYGEN1_TEMP" />
+              <Mapping SourceColumn="OXYGEN1_AL" DataSetColumn="OXYGEN1_AL" />
+              <Mapping SourceColumn="OXYGEN2" DataSetColumn="OXYGEN2" />
+              <Mapping SourceColumn="OXYGEN2_TEMP" DataSetColumn="OXYGEN2_TEMP" />
+              <Mapping SourceColumn="OXYGEN2_AL" DataSetColumn="OXYGEN2_AL" />
+              <Mapping SourceColumn="ELEC_CONSUM" DataSetColumn="ELEC_CONSUM" />
+              <Mapping SourceColumn="FEEDWIRE_TIME" DataSetColumn="FEEDWIRE_TIME" />
+              <Mapping SourceColumn="FEEDWIRE_TEMP" DataSetColumn="FEEDWIRE_TEMP" />
+              <Mapping SourceColumn="SOFTBLOW_STARTTIME" DataSetColumn="SOFTBLOW_STARTTIME" />
+              <Mapping SourceColumn="SOFTBLOW_ENDTIME" DataSetColumn="SOFTBLOW_ENDTIME" />
+              <Mapping SourceColumn="SOFTBLOW_TIME" DataSetColumn="SOFTBLOW_TIME" />
+              <Mapping SourceColumn="DEPARTURE_TEMP" DataSetColumn="DEPARTURE_TEMP" />
+              <Mapping SourceColumn="DEPARTURE_REMA_WT" DataSetColumn="DEPARTURE_REMA_WT" />
+              <Mapping SourceColumn="TECHNOLOGY_QUALITY" DataSetColumn="TECHNOLOGY_QUALITY" />
+              <Mapping SourceColumn="DISTEMP_REASON" DataSetColumn="DISTEMP_REASON" />
+              <Mapping SourceColumn="CIRCSOFRHYTHM" DataSetColumn="CIRCSOFRHYTHM" />
+              <Mapping SourceColumn="TUNDISH_TEMP_5MIN" DataSetColumn="TUNDISH_TEMP_5MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_10MIN" DataSetColumn="TUNDISH_TEMP_10MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_15MIN" DataSetColumn="TUNDISH_TEMP_15MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_20MIN" DataSetColumn="TUNDISH_TEMP_20MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_25MIN" DataSetColumn="TUNDISH_TEMP_25MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_30MIN" DataSetColumn="TUNDISH_TEMP_30MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_35MIN" DataSetColumn="TUNDISH_TEMP_35MIN" />
+              <Mapping SourceColumn="CASTING_STOP_TEMP" DataSetColumn="CASTING_STOP_TEMP" />
+              <Mapping SourceColumn="TUNDISHTEMP_QUALITY" DataSetColumn="TUNDISHTEMP_QUALITY" />
+              <Mapping SourceColumn="C_PROCESS" DataSetColumn="C_PROCESS" />
+              <Mapping SourceColumn="SI_PROCESS" DataSetColumn="SI_PROCESS" />
+              <Mapping SourceColumn="MN_PROCESS" DataSetColumn="MN_PROCESS" />
+              <Mapping SourceColumn="P_PROCESS" DataSetColumn="P_PROCESS" />
+              <Mapping SourceColumn="S_PROCESS" DataSetColumn="S_PROCESS" />
+              <Mapping SourceColumn="AL_PROCESS" DataSetColumn="AL_PROCESS" />
+              <Mapping SourceColumn="CR_PROCESS" DataSetColumn="CR_PROCESS" />
+              <Mapping SourceColumn="TI_PROCESS" DataSetColumn="TI_PROCESS" />
+              <Mapping SourceColumn="V_PROCESS" DataSetColumn="V_PROCESS" />
+              <Mapping SourceColumn="B_PROCESS" DataSetColumn="B_PROCESS" />
+              <Mapping SourceColumn="MO_PROCESS" DataSetColumn="MO_PROCESS" />
+              <Mapping SourceColumn="CA_PROCESS" DataSetColumn="CA_PROCESS" />
+              <Mapping SourceColumn="C_FINISHED" DataSetColumn="C_FINISHED" />
+              <Mapping SourceColumn="SI_FINISHED" DataSetColumn="SI_FINISHED" />
+              <Mapping SourceColumn="MN_FINISHED" DataSetColumn="MN_FINISHED" />
+              <Mapping SourceColumn="P_FINISHED" DataSetColumn="P_FINISHED" />
+              <Mapping SourceColumn="S_FINISHED" DataSetColumn="S_FINISHED" />
+              <Mapping SourceColumn="AL_FINISHED" DataSetColumn="AL_FINISHED" />
+              <Mapping SourceColumn="CR_FINISHED" DataSetColumn="CR_FINISHED" />
+              <Mapping SourceColumn="TI_FINISHED" DataSetColumn="TI_FINISHED" />
+              <Mapping SourceColumn="V_FINISHED" DataSetColumn="V_FINISHED" />
+              <Mapping SourceColumn="B_FINISHED" DataSetColumn="B_FINISHED" />
+              <Mapping SourceColumn="MO_FINISHED" DataSetColumn="MO_FINISHED" />
+              <Mapping SourceColumn="CA_FINISHED" DataSetColumn="CA_FINISHED" />
+              <Mapping SourceColumn="CAO_PROCESS_ADD" DataSetColumn="CAO_PROCESS_ADD" />
+              <Mapping SourceColumn="CAF_PROCESS_ADD" DataSetColumn="CAF_PROCESS_ADD" />
+              <Mapping SourceColumn="AL2O3_PROCESS_ADD" DataSetColumn="AL2O3_PROCESS_ADD" />
+              <Mapping SourceColumn="SIO2_PROCESS_ADD" DataSetColumn="SIO2_PROCESS_ADD" />
+              <Mapping SourceColumn="CAC_PROCESS_ADD" DataSetColumn="CAC_PROCESS_ADD" />
+              <Mapping SourceColumn="ALL_PROCESS_ADD" DataSetColumn="ALL_PROCESS_ADD" />
+              <Mapping SourceColumn="SI_FE_F_PROCESS_ADD" DataSetColumn="SI_FE_F_PROCESS_ADD" />
+              <Mapping SourceColumn="H_C_MN_FE_PROCESS_ADD" DataSetColumn="H_C_MN_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="M_C_MN_FE_PROCESS_ADD" DataSetColumn="M_C_MN_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="SI_FE_PROCESS_ADD" DataSetColumn="SI_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="CR_FE_PROCESS_ADD" DataSetColumn="CR_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="B_FE_PROCESS_ADD" DataSetColumn="B_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="V_FE_PROCESS_ADD" DataSetColumn="V_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="MO_FE_PROCESS_ADD" DataSetColumn="MO_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="TI_FE_PROCESS_ADD" DataSetColumn="TI_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="OTHER" DataSetColumn="OTHER" />
+              <Mapping SourceColumn="MODEL_SYNTHETIC_SLAG" DataSetColumn="MODEL_SYNTHETIC_SLAG" />
+              <Mapping SourceColumn="DOSAGE_SYNTHETIC_SLAG" DataSetColumn="DOSAGE_SYNTHETIC_SLAG" />
+              <Mapping SourceColumn="C_AMOUNT" DataSetColumn="C_AMOUNT" />
+              <Mapping SourceColumn="FECA_AMOUNT" DataSetColumn="FECA_AMOUNT" />
+              <Mapping SourceColumn="FECA_ADDCA" DataSetColumn="FECA_ADDCA" />
+              <Mapping SourceColumn="SICA_AMOUNT" DataSetColumn="SICA_AMOUNT" />
+              <Mapping SourceColumn="ALADD_AMOUNT" DataSetColumn="ALADD_AMOUNT" />
+              <Mapping SourceColumn="NOTE" DataSetColumn="NOTE" />
+              <Mapping SourceColumn="SLAGANALYSIS_FEO" DataSetColumn="SLAGANALYSIS_FEO" />
+              <Mapping SourceColumn="SLAGANALYSIS_SIO2" DataSetColumn="SLAGANALYSIS_SIO2" />
+              <Mapping SourceColumn="SLAGANALYSIS_CAO" DataSetColumn="SLAGANALYSIS_CAO" />
+              <Mapping SourceColumn="SLAGANALYSIS_MGO" DataSetColumn="SLAGANALYSIS_MGO" />
+              <Mapping SourceColumn="SLAGANALYSIS_AL203" DataSetColumn="SLAGANALYSIS_AL203" />
+              <Mapping SourceColumn="SLAGANALYSIS_S" DataSetColumn="SLAGANALYSIS_S" />
+              <Mapping SourceColumn="SLAGANALYSIS_P" DataSetColumn="SLAGANALYSIS_P" />
+              <Mapping SourceColumn="SLAGANALYSIS_MNO" DataSetColumn="SLAGANALYSIS_MNO" />
+              <Mapping SourceColumn="SLAGANALYSIS_TIO2" DataSetColumn="SLAGANALYSIS_TIO2" />
+              <Mapping SourceColumn="HEAT_GAS" DataSetColumn="HEAT_GAS" />
+              <Mapping SourceColumn="SOFTBLOW_GAS" DataSetColumn="SOFTBLOW_GAS" />
+              <Mapping SourceColumn="PRODUCTIONDATE" DataSetColumn="PRODUCTIONDATE" />
+              <Mapping SourceColumn="ARRIVE_TEMP" DataSetColumn="ARRIVE_TEMP" />
+              <Mapping SourceColumn="NI_ARRIVAL" DataSetColumn="NI_ARRIVAL" />
+              <Mapping SourceColumn="NI_FINISHED" DataSetColumn="NI_FINISHED" />
+              <Mapping SourceColumn="L_C_MN_FE_PROCESS_ADD" DataSetColumn="L_C_MN_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="L_AL_SI_FE_PROCESS_ADD" DataSetColumn="L_AL_SI_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="M_AL_SI_FE_PROCESS_ADD" DataSetColumn="M_AL_SI_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="H_C_CR_FE_PROCESS_ADD" DataSetColumn="H_C_CR_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="L_TI_H_C_CR_FE_PROCESS_ADD" DataSetColumn="L_TI_H_C_CR_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="C_SECOND" DataSetColumn="C_SECOND" />
+              <Mapping SourceColumn="SI_SECOND" DataSetColumn="SI_SECOND" />
+              <Mapping SourceColumn="MN_SECOND" DataSetColumn="MN_SECOND" />
+              <Mapping SourceColumn="P_SECOND" DataSetColumn="P_SECOND" />
+              <Mapping SourceColumn="S_SECOND" DataSetColumn="S_SECOND" />
+              <Mapping SourceColumn="AL_SECOND" DataSetColumn="AL_SECOND" />
+              <Mapping SourceColumn="CR_SECOND" DataSetColumn="CR_SECOND" />
+              <Mapping SourceColumn="TI_SECOND" DataSetColumn="TI_SECOND" />
+              <Mapping SourceColumn="V_SECOND" DataSetColumn="V_SECOND" />
+              <Mapping SourceColumn="B_SECOND" DataSetColumn="B_SECOND" />
+              <Mapping SourceColumn="MO_SECOND" DataSetColumn="MO_SECOND" />
+              <Mapping SourceColumn="CA_SECOND" DataSetColumn="CA_SECOND" />
+              <Mapping SourceColumn="NI_SECOND" DataSetColumn="NI_SECOND" />
+              <Mapping SourceColumn="C_THIRD" DataSetColumn="C_THIRD" />
+              <Mapping SourceColumn="SI_THIRD" DataSetColumn="SI_THIRD" />
+              <Mapping SourceColumn="MN_THIRD" DataSetColumn="MN_THIRD" />
+              <Mapping SourceColumn="P_THIRD" DataSetColumn="P_THIRD" />
+              <Mapping SourceColumn="S_THIRD" DataSetColumn="S_THIRD" />
+              <Mapping SourceColumn="AL_THIRD" DataSetColumn="AL_THIRD" />
+              <Mapping SourceColumn="CR_THIRD" DataSetColumn="CR_THIRD" />
+              <Mapping SourceColumn="TI_THIRD" DataSetColumn="TI_THIRD" />
+              <Mapping SourceColumn="V_THIRD" DataSetColumn="V_THIRD" />
+              <Mapping SourceColumn="B_THIRD" DataSetColumn="B_THIRD" />
+              <Mapping SourceColumn="MO_THIRD" DataSetColumn="MO_THIRD" />
+              <Mapping SourceColumn="CA_THIRD" DataSetColumn="CA_THIRD" />
+              <Mapping SourceColumn="NI_THIRD" DataSetColumn="NI_THIRD" />
+              <Mapping SourceColumn="HEATNUM_CASTING" DataSetColumn="HEATNUM_CASTING" />
+              <Mapping SourceColumn="HEATNUM_TUNDISH" DataSetColumn="HEATNUM_TUNDISH" />
+              <Mapping SourceColumn="NI_PROCESS" DataSetColumn="NI_PROCESS" />
+              <Mapping SourceColumn="POLE_VENDOR" DataSetColumn="POLE_VENDOR" />
+              <Mapping SourceColumn="POLE_CONSUME" DataSetColumn="POLE_CONSUME" />
+              <Mapping SourceColumn="COMPOSESLAG_NAME1" DataSetColumn="COMPOSESLAG_NAME1" />
+              <Mapping SourceColumn="COMPOSESLAG_AMOUNT1" DataSetColumn="COMPOSESLAG_AMOUNT1" />
+              <Mapping SourceColumn="COMPOSESLAG_VENDOR1" DataSetColumn="COMPOSESLAG_VENDOR1" />
+              <Mapping SourceColumn="COMPOSESLAG_NAME2" DataSetColumn="COMPOSESLAG_NAME2" />
+              <Mapping SourceColumn="COMPOSESLAG_AMOUNT2" DataSetColumn="COMPOSESLAG_AMOUNT2" />
+              <Mapping SourceColumn="COMPOSESLAG_VENDOR2" DataSetColumn="COMPOSESLAG_VENDOR2" />
+              <Mapping SourceColumn="FLOW_BLOWAR_HEAT" DataSetColumn="FLOW_BLOWAR_HEAT" />
+              <Mapping SourceColumn="FLOW_BLOWAR_SOFTBLOW" DataSetColumn="FLOW_BLOWAR_SOFTBLOW" />
+              <Mapping SourceColumn="TECHICSEXCEPTION" DataSetColumn="TECHICSEXCEPTION" />
+              <Mapping SourceColumn="VENDOR_C" DataSetColumn="VENDOR_C" />
+              <Mapping SourceColumn="VENDOR_CASI" DataSetColumn="VENDOR_CASI" />
+              <Mapping SourceColumn="VENDOR_CAFE" DataSetColumn="VENDOR_CAFE" />
+              <Mapping SourceColumn="LOWC_CRFE_MAT" DataSetColumn="LOWC_CRFE_MAT" />
+              <Mapping SourceColumn="STOP_TIME_LEN" DataSetColumn="STOP_TIME_LEN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_2MIN" DataSetColumn="TUNDISH_TEMP_2MIN" />
+              <Mapping SourceColumn="TUNDISH_TEMP_DROP" DataSetColumn="TUNDISH_TEMP_DROP" />
+              <Mapping SourceColumn="L_S_AMOUNT_CWIRE" DataSetColumn="L_S_AMOUNT_CWIRE" />
+              <Mapping SourceColumn="H_TI_FE_PROCESS_ADD" DataSetColumn="H_TI_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="CU_ARRIVAL" DataSetColumn="CU_ARRIVAL" />
+              <Mapping SourceColumn="CU_SECOND" DataSetColumn="CU_SECOND" />
+              <Mapping SourceColumn="CU_THIRD" DataSetColumn="CU_THIRD" />
+              <Mapping SourceColumn="CU_PROCESS" DataSetColumn="CU_PROCESS" />
+              <Mapping SourceColumn="CU_FINISHED" DataSetColumn="CU_FINISHED" />
+              <Mapping SourceColumn="CR_NI_CU_PROCESS" DataSetColumn="CR_NI_CU_PROCESS" />
+              <Mapping SourceColumn="CR_NI_CU_FINISHED" DataSetColumn="CR_NI_CU_FINISHED" />
+              <Mapping SourceColumn="JP_CAF_PROCESS_ADD" DataSetColumn="JP_CAF_PROCESS_ADD" />
+              <Mapping SourceColumn="S_FE_PROCESS_ADD" DataSetColumn="S_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="P_FE_PROCESS_ADD" DataSetColumn="P_FE_PROCESS_ADD" />
+              <Mapping SourceColumn="S_AMOUNT" DataSetColumn="S_AMOUNT" />
+              <Mapping SourceColumn="ALS_ARRIVAL" DataSetColumn="ALS_ARRIVAL" />
+              <Mapping SourceColumn="ALS_SECOND" DataSetColumn="ALS_SECOND" />
+              <Mapping SourceColumn="ALS_THIRD" DataSetColumn="ALS_THIRD" />
+              <Mapping SourceColumn="ALS_PROCESS" DataSetColumn="ALS_PROCESS" />
+              <Mapping SourceColumn="ALS_FINISHED" DataSetColumn="ALS_FINISHED" />
+              <Mapping SourceColumn="HOLDBACK_TIME" DataSetColumn="HOLDBACK_TIME" />
+              <Mapping SourceColumn="L_AL_SI_FE_F_PROCESS_ADD" DataSetColumn="L_AL_SI_FE_F_PROCESS_ADD" />
+              <Mapping SourceColumn="LG_NI_PROCESS_ADD" DataSetColumn="LG_NI_PROCESS_ADD" />
+              <Mapping SourceColumn="LG_ZCU_PROCESS_ADD" DataSetColumn="LG_ZCU_PROCESS_ADD" />
+              <Mapping SourceColumn="IN_RHYTHM" DataSetColumn="IN_RHYTHM" />
+              <Mapping SourceColumn="WOLLASTONITE_PROCESS_ADD" DataSetColumn="WOLLASTONITE_PROCESS_ADD" />
+              <Mapping SourceColumn="STEEL_SI_FE_F_PROCESS_ADD" DataSetColumn="STEEL_SI_FE_F_PROCESS_ADD" />
+              <Mapping SourceColumn="STEEL_CAC_PROCESS_ADD" DataSetColumn="STEEL_CAC_PROCESS_ADD" />
+              <Mapping SourceColumn="SLAGANALYSIS_R" DataSetColumn="SLAGANALYSIS_R" />
+              <Mapping SourceColumn="HEAT_COUNT" DataSetColumn="HEAT_COUNT" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TR_LF_ORIGINALDATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LFID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHIFT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATFURNACE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASSISTANT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECONDHAND" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEELGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CASTINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLESTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLEAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LADLEID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLESTATUS_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LID_LIFE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEEL_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ARRIVAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="C_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEAT_START_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HEAT_END_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HEAT_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN_FACTORY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OXYGEN1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN1_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN1_AL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN2_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OXYGEN2_AL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ELEC_CONSUM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FEEDWIRE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FEEDWIRE_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOFTBLOW_STARTTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SOFTBLOW_ENDTIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SOFTBLOW_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEPARTURE_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEPARTURE_REMA_WT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TECHNOLOGY_QUALITY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISTEMP_REASON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIRCSOFRHYTHM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_TEMP_5MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_10MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_15MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_20MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_25MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_30MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_35MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CASTING_STOP_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP_QUALITY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CA_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CA_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAO_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAF_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL2O3_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SIO2_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAC_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALL_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FE_F_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="H_C_MN_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M_C_MN_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OTHER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MODEL_SYNTHETIC_SLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOSAGE_SYNTHETIC_SLAG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FECA_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FECA_ADDCA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SICA_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALADD_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SLAGANALYSIS_FEO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_SIO2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_CAO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_MGO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_AL203" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_S" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_P" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_MNO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_TIO2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEAT_GAS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOFTBLOW_GAS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRODUCTIONDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ARRIVE_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_C_MN_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_AL_SI_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M_AL_SI_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="H_C_CR_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_TI_H_C_CR_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CA_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CA_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEATNUM_CASTING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATNUM_TUNDISH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NI_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POLE_VENDOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POLE_CONSUME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMPOSESLAG_NAME1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPOSESLAG_AMOUNT1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMPOSESLAG_VENDOR1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPOSESLAG_NAME2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPOSESLAG_AMOUNT2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMPOSESLAG_VENDOR2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLOW_BLOWAR_HEAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_BLOWAR_SOFTBLOW" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TECHICSEXCEPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENDOR_C" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENDOR_CASI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENDOR_CAFE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOWC_CRFE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STOP_TIME_LEN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_2MIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_DROP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_S_AMOUNT_CWIRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="H_TI_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_NI_CU_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_NI_CU_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JP_CAF_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_FE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_ARRIVAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_SECOND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_THIRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_PROCESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_FINISHED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HOLDBACK_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_AL_SI_FE_F_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LG_NI_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LG_ZCU_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IN_RHYTHM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WOLLASTONITE_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEEL_SI_FE_F_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEEL_CAC_PROCESS_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SLAGANALYSIS_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEAT_COUNT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

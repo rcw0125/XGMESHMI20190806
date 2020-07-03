@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDisHitVarietyInfo" targetNamespace="http://tempuri.org/dsDisHitVarietyInfo.xsd" xmlns:mstns="http://tempuri.org/dsDisHitVarietyInfo.xsd" xmlns="http://tempuri.org/dsDisHitVarietyInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TQ_DISHIT_VARIETY_INFOTableAdapter" GeneratorDataComponentClassName="TQ_DISHIT_VARIETY_INFOTableAdapter" Name="TQ_DISHIT_VARIETY_INFO" UserDataComponentName="TQ_DISHIT_VARIETY_INFOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TQ_DISHIT_VARIETY_INFO" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT LOGTIME, TEAM, HEATID, PLAN_STEELGRADE, DUTY, LFID, ELE_QUA_FLAG, 
+      DISHIT_ELE,BOF_TEAM,LFPRODUCTIONDATE
+FROM TQ_DISHIT_VARIETY_INFO</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="PLAN_STEELGRADE" DataSetColumn="PLAN_STEELGRADE" />
+              <Mapping SourceColumn="DUTY" DataSetColumn="DUTY" />
+              <Mapping SourceColumn="LFID" DataSetColumn="LFID" />
+              <Mapping SourceColumn="ELE_QUA_FLAG" DataSetColumn="ELE_QUA_FLAG" />
+              <Mapping SourceColumn="DISHIT_ELE" DataSetColumn="DISHIT_ELE" />
+              <Mapping SourceColumn="BOF_TEAM" DataSetColumn="BOF_TEAM" />
+              <Mapping SourceColumn="LFPRODUCTIONDATE" DataSetColumn="LFPRODUCTIONDATE" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDisHitVarietyInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsDisHitVarietyInfo" msprop:Generator_DataSetName="dsDisHitVarietyInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TQ_DISHIT_VARIETY_INFO" msprop:Generator_UserTableName="TQ_DISHIT_VARIETY_INFO" msprop:Generator_RowDeletedName="TQ_DISHIT_VARIETY_INFORowDeleted" msprop:Generator_RowChangedName="TQ_DISHIT_VARIETY_INFORowChanged" msprop:Generator_RowClassName="TQ_DISHIT_VARIETY_INFORow" msprop:Generator_RowChangingName="TQ_DISHIT_VARIETY_INFORowChanging" msprop:Generator_RowEvArgName="TQ_DISHIT_VARIETY_INFORowChangeEvent" msprop:Generator_RowEvHandlerName="TQ_DISHIT_VARIETY_INFORowChangeEventHandler" msprop:Generator_TableClassName="TQ_DISHIT_VARIETY_INFODataTable" msprop:Generator_TableVarName="tableTQ_DISHIT_VARIETY_INFO" msprop:Generator_RowDeletingName="TQ_DISHIT_VARIETY_INFORowDeleting" msprop:Generator_TablePropName="TQ_DISHIT_VARIETY_INFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGTIME" msprop:Generator_UserColumnName="LOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" msprop:Generator_UserColumnName="TEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATID" msprop:Generator_UserColumnName="HEATID" msprop:Generator_ColumnPropNameInRow="HEATID" msprop:Generator_ColumnVarNameInTable="columnHEATID" msprop:Generator_ColumnPropNameInTable="HEATIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PLAN_STEELGRADE" msprop:Generator_UserColumnName="PLAN_STEELGRADE" msprop:Generator_ColumnPropNameInRow="PLAN_STEELGRADE" msprop:Generator_ColumnVarNameInTable="columnPLAN_STEELGRADE" msprop:Generator_ColumnPropNameInTable="PLAN_STEELGRADEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DUTY" msprop:Generator_UserColumnName="DUTY" msprop:Generator_ColumnPropNameInRow="DUTY" msprop:Generator_ColumnVarNameInTable="columnDUTY" msprop:Generator_ColumnPropNameInTable="DUTYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LFID" msprop:Generator_UserColumnName="LFID" msprop:Generator_ColumnPropNameInRow="LFID" msprop:Generator_ColumnVarNameInTable="columnLFID" msprop:Generator_ColumnPropNameInTable="LFIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ELE_QUA_FLAG" msprop:Generator_UserColumnName="ELE_QUA_FLAG" msprop:Generator_ColumnVarNameInTable="columnELE_QUA_FLAG" msprop:Generator_ColumnPropNameInRow="ELE_QUA_FLAG" msprop:Generator_ColumnPropNameInTable="ELE_QUA_FLAGColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISHIT_ELE" msprop:Generator_UserColumnName="DISHIT_ELE" msprop:Generator_ColumnVarNameInTable="columnDISHIT_ELE" msprop:Generator_ColumnPropNameInRow="DISHIT_ELE" msprop:Generator_ColumnPropNameInTable="DISHIT_ELEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOF_TEAM" msprop:Generator_UserColumnName="BOF_TEAM" msprop:Generator_ColumnPropNameInRow="BOF_TEAM" msprop:Generator_ColumnVarNameInTable="columnBOF_TEAM" msprop:Generator_ColumnPropNameInTable="BOF_TEAMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LFPRODUCTIONDATE" msprop:Generator_UserColumnName="LFPRODUCTIONDATE" msprop:Generator_ColumnVarNameInTable="columnLFPRODUCTIONDATE" msprop:Generator_ColumnPropNameInRow="LFPRODUCTIONDATE" msprop:Generator_ColumnPropNameInTable="LFPRODUCTIONDATEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

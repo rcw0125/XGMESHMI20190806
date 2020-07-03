@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>ORACLE</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>514883c5-d59a-4235-b8db-a96841a59003</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <DataSetName>DataSet1_TS_ALLOYCONSUME</DataSetName>
+        <Top>1cm</Top>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <ZIndex>15</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <ZIndex>14</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox15">
+                      <rd:DefaultName>textbox15</rd:DefaultName>
+                      <ZIndex>13</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>宋体</FontFamily>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>2.53968cm</Height>
+      </Table>
+    </ReportItems>
+    <Height>5cm</Height>
+  </Body>
+  <rd:ReportID>ca69f4a6-1a22-48e8-bb4a-d1fba86e439d</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="DataSet1_TS_ALLOYCONSUME">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>TS_ALLOYCONSUMETableAdapter</rd:TableAdapterName>
+        <rd:TableName>TS_ALLOYCONSUME</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT BOF1_1ST_D, BOF1_1ST_M, BOF2_1ST_D, BOF2_1ST_M, BOF3_1ST_D, BOF3_1ST_M, BOF4_1ST_D, BOF4_1ST_M, BOF1_2ND_D, BOF1_2ND_M, BOF2_2ND_D, BOF2_2ND_M, BOF3_2ND_D, BOF3_2ND_M, BOF4_2ND_D, BOF4_2ND_M, BOF1_3RD_D, BOF1_3RD_M, BOF2_3RD_D, BOF2_3RD_M, BOF3_3RD_D, BOF3_3RD_M, BOF4_3RD_D, BOF4_3RD_M, BOF1_4TH_D, BOF1_4TH_M, BOF2_4TH_D, BOF2_4TH_M, BOF3_4TH_D, BOF3_4TH_M, BOF4_4TH_D, BOF4_4TH_M, SHOP_D, SHOP_M, FIRST_D, FIRST_M, SECOND_D, SECOND_M, THIRD_D, THIRD_M, FOURTH_D, FOURTH_M, BOF1_D, BOF1_M, BOF2_D, BOF2_M, BOF3_D, BOF3_M, BOF4_D, BOF4_M, MATCODE, LOGTIME FROM XGWEBRPT.TS_ALLOYCONSUME</CommandText>
+        <DataSourceName>ConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="BOF1_1ST_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_1ST_D</DataField>
+        </Field>
+        <Field Name="BOF1_1ST_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_1ST_M</DataField>
+        </Field>
+        <Field Name="BOF2_1ST_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_1ST_D</DataField>
+        </Field>
+        <Field Name="BOF2_1ST_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_1ST_M</DataField>
+        </Field>
+        <Field Name="BOF3_1ST_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_1ST_D</DataField>
+        </Field>
+        <Field Name="BOF3_1ST_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_1ST_M</DataField>
+        </Field>
+        <Field Name="BOF4_1ST_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_1ST_D</DataField>
+        </Field>
+        <Field Name="BOF4_1ST_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_1ST_M</DataField>
+        </Field>
+        <Field Name="BOF1_2ND_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_2ND_D</DataField>
+        </Field>
+        <Field Name="BOF1_2ND_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_2ND_M</DataField>
+        </Field>
+        <Field Name="BOF2_2ND_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_2ND_D</DataField>
+        </Field>
+        <Field Name="BOF2_2ND_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_2ND_M</DataField>
+        </Field>
+        <Field Name="BOF3_2ND_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_2ND_D</DataField>
+        </Field>
+        <Field Name="BOF3_2ND_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_2ND_M</DataField>
+        </Field>
+        <Field Name="BOF4_2ND_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_2ND_D</DataField>
+        </Field>
+        <Field Name="BOF4_2ND_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_2ND_M</DataField>
+        </Field>
+        <Field Name="BOF1_3RD_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_3RD_D</DataField>
+        </Field>
+        <Field Name="BOF1_3RD_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_3RD_M</DataField>
+        </Field>
+        <Field Name="BOF2_3RD_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_3RD_D</DataField>
+        </Field>
+        <Field Name="BOF2_3RD_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_3RD_M</DataField>
+        </Field>
+        <Field Name="BOF3_3RD_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_3RD_D</DataField>
+        </Field>
+        <Field Name="BOF3_3RD_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_3RD_M</DataField>
+        </Field>
+        <Field Name="BOF4_3RD_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_3RD_D</DataField>
+        </Field>
+        <Field Name="BOF4_3RD_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_3RD_M</DataField>
+        </Field>
+        <Field Name="BOF1_4TH_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_4TH_D</DataField>
+        </Field>
+        <Field Name="BOF1_4TH_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_4TH_M</DataField>
+        </Field>
+        <Field Name="BOF2_4TH_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_4TH_D</DataField>
+        </Field>
+        <Field Name="BOF2_4TH_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_4TH_M</DataField>
+        </Field>
+        <Field Name="BOF3_4TH_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_4TH_D</DataField>
+        </Field>
+        <Field Name="BOF3_4TH_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_4TH_M</DataField>
+        </Field>
+        <Field Name="BOF4_4TH_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_4TH_D</DataField>
+        </Field>
+        <Field Name="BOF4_4TH_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_4TH_M</DataField>
+        </Field>
+        <Field Name="SHOP_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SHOP_D</DataField>
+        </Field>
+        <Field Name="SHOP_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SHOP_M</DataField>
+        </Field>
+        <Field Name="FIRST_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FIRST_D</DataField>
+        </Field>
+        <Field Name="FIRST_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FIRST_M</DataField>
+        </Field>
+        <Field Name="SECOND_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SECOND_D</DataField>
+        </Field>
+        <Field Name="SECOND_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>SECOND_M</DataField>
+        </Field>
+        <Field Name="THIRD_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>THIRD_D</DataField>
+        </Field>
+        <Field Name="THIRD_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>THIRD_M</DataField>
+        </Field>
+        <Field Name="FOURTH_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FOURTH_D</DataField>
+        </Field>
+        <Field Name="FOURTH_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>FOURTH_M</DataField>
+        </Field>
+        <Field Name="BOF1_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_D</DataField>
+        </Field>
+        <Field Name="BOF1_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF1_M</DataField>
+        </Field>
+        <Field Name="BOF2_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_D</DataField>
+        </Field>
+        <Field Name="BOF2_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF2_M</DataField>
+        </Field>
+        <Field Name="BOF3_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_D</DataField>
+        </Field>
+        <Field Name="BOF3_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF3_M</DataField>
+        </Field>
+        <Field Name="BOF4_D">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_D</DataField>
+        </Field>
+        <Field Name="BOF4_M">
+          <rd:TypeName>System.Decimal</rd:TypeName>
+          <DataField>BOF4_M</DataField>
+        </Field>
+        <Field Name="MATCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MATCODE</DataField>
+        </Field>
+        <Field Name="LOGTIME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LOGTIME</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>21.33333cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

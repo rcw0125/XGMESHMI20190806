@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTQAlarmMessage" targetNamespace="http://tempuri.org/dsTQAlarmMessage.xsd" xmlns:mstns="http://tempuri.org/dsTQAlarmMessage.xsd" xmlns="http://tempuri.org/dsTQAlarmMessage.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TQ_ALARM_MESSAGETableAdapter" GeneratorDataComponentClassName="TQ_ALARM_MESSAGETableAdapter" Name="TQ_ALARM_MESSAGE" UserDataComponentName="TQ_ALARM_MESSAGETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TQ_ALARM_MESSAGE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TEAM, HEATID, STEELGRADE, WORKID, CONTENT, ALARMNAME, TUNDISH_NUM, 
+      REALVALUE, LOWVALUE, UPVALUE, ALARM_TIME, LOGTIME, ALARM_LEVEL, 
+      HEADFURNACE
+FROM TQ_ALARM_MESSAGE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="STEELGRADE" DataSetColumn="STEELGRADE" />
+              <Mapping SourceColumn="WORKID" DataSetColumn="WORKID" />
+              <Mapping SourceColumn="CONTENT" DataSetColumn="CONTENT" />
+              <Mapping SourceColumn="ALARMNAME" DataSetColumn="ALARMNAME" />
+              <Mapping SourceColumn="TUNDISH_NUM" DataSetColumn="TUNDISH_NUM" />
+              <Mapping SourceColumn="REALVALUE" DataSetColumn="REALVALUE" />
+              <Mapping SourceColumn="LOWVALUE" DataSetColumn="LOWVALUE" />
+              <Mapping SourceColumn="UPVALUE" DataSetColumn="UPVALUE" />
+              <Mapping SourceColumn="ALARM_TIME" DataSetColumn="ALARM_TIME" />
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="ALARM_LEVEL" DataSetColumn="ALARM_LEVEL" />
+              <Mapping SourceColumn="HEADFURNACE" DataSetColumn="HEADFURNACE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTQAlarmMessage" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsTQAlarmMessage" msprop:Generator_UserDSName="dsTQAlarmMessage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TQ_ALARM_MESSAGE" msprop:Generator_TableClassName="TQ_ALARM_MESSAGEDataTable" msprop:Generator_RowEvArgName="TQ_ALARM_MESSAGERowChangeEvent" msprop:Generator_TableVarName="tableTQ_ALARM_MESSAGE" msprop:Generator_TablePropName="TQ_ALARM_MESSAGE" msprop:Generator_RowDeletingName="TQ_ALARM_MESSAGERowDeleting" msprop:Generator_UserTableName="TQ_ALARM_MESSAGE" msprop:Generator_RowChangingName="TQ_ALARM_MESSAGERowChanging" msprop:Generator_RowDeletedName="TQ_ALARM_MESSAGERowDeleted" msprop:Generator_RowChangedName="TQ_ALARM_MESSAGERowChanged" msprop:Generator_RowEvHandlerName="TQ_ALARM_MESSAGERowChangeEventHandler" msprop:Generator_RowClassName="TQ_ALARM_MESSAGERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" msprop:Generator_UserColumnName="TEAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATID" msprop:Generator_ColumnVarNameInTable="columnHEATID" msprop:Generator_ColumnPropNameInRow="HEATID" msprop:Generator_ColumnPropNameInTable="HEATIDColumn" msprop:Generator_UserColumnName="HEATID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEELGRADE" msprop:Generator_ColumnVarNameInTable="columnSTEELGRADE" msprop:Generator_ColumnPropNameInRow="STEELGRADE" msprop:Generator_ColumnPropNameInTable="STEELGRADEColumn" msprop:Generator_UserColumnName="STEELGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WORKID" msprop:Generator_ColumnVarNameInTable="columnWORKID" msprop:Generator_ColumnPropNameInRow="WORKID" msprop:Generator_ColumnPropNameInTable="WORKIDColumn" msprop:Generator_UserColumnName="WORKID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTENT" msprop:Generator_ColumnVarNameInTable="columnCONTENT" msprop:Generator_ColumnPropNameInRow="CONTENT" msprop:Generator_ColumnPropNameInTable="CONTENTColumn" msprop:Generator_UserColumnName="CONTENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ALARMNAME" msprop:Generator_ColumnVarNameInTable="columnALARMNAME" msprop:Generator_ColumnPropNameInRow="ALARMNAME" msprop:Generator_ColumnPropNameInTable="ALARMNAMEColumn" msprop:Generator_UserColumnName="ALARMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_NUM" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_NUM" msprop:Generator_ColumnPropNameInRow="TUNDISH_NUM" msprop:Generator_ColumnPropNameInTable="TUNDISH_NUMColumn" msprop:Generator_UserColumnName="TUNDISH_NUM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REALVALUE" msprop:Generator_ColumnVarNameInTable="columnREALVALUE" msprop:Generator_ColumnPropNameInRow="REALVALUE" msprop:Generator_ColumnPropNameInTable="REALVALUEColumn" msprop:Generator_UserColumnName="REALVALUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOWVALUE" msprop:Generator_ColumnVarNameInTable="columnLOWVALUE" msprop:Generator_ColumnPropNameInRow="LOWVALUE" msprop:Generator_ColumnPropNameInTable="LOWVALUEColumn" msprop:Generator_UserColumnName="LOWVALUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPVALUE" msprop:Generator_ColumnVarNameInTable="columnUPVALUE" msprop:Generator_ColumnPropNameInRow="UPVALUE" msprop:Generator_ColumnPropNameInTable="UPVALUEColumn" msprop:Generator_UserColumnName="UPVALUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ALARM_TIME" msprop:Generator_ColumnVarNameInTable="columnALARM_TIME" msprop:Generator_ColumnPropNameInRow="ALARM_TIME" msprop:Generator_ColumnPropNameInTable="ALARM_TIMEColumn" msprop:Generator_UserColumnName="ALARM_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn" msprop:Generator_UserColumnName="LOGTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ALARM_LEVEL" msprop:Generator_ColumnVarNameInTable="columnALARM_LEVEL" msprop:Generator_ColumnPropNameInRow="ALARM_LEVEL" msprop:Generator_ColumnPropNameInTable="ALARM_LEVELColumn" msprop:Generator_UserColumnName="ALARM_LEVEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEADFURNACE" msprop:Generator_ColumnVarNameInTable="columnHEADFURNACE" msprop:Generator_ColumnPropNameInRow="HEADFURNACE" msprop:Generator_ColumnPropNameInTable="HEADFURNACEColumn" msprop:Generator_UserColumnName="HEADFURNACE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

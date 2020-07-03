@@ -1,0 +1,1201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOF" targetNamespace="http://tempuri.org/dsBOF.xsd" xmlns:mstns="http://tempuri.org/dsBOF.xsd" xmlns="http://tempuri.org/dsBOF.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TS_ORIGINALDATATableAdapter" GeneratorDataComponentClassName="TS_ORIGINALDATATableAdapter" Name="TS_ORIGINALDATA" UserDataComponentName="TS_ORIGINALDATATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TS_ORIGINALDATA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "TS_ORIGINALDATA" ("BOFID", "LOGTIME", "TEAM", "SHIFT", "HEADFURNACE", "ASSISTANT", "SECONDHAND", "HEATID", "FURNACEAGE", "PLAN_STEELGRADE", "CASTINGNO", "IRONWEIGHT", "SCRAPWEIGHT", "PIGIRONWEIGHT", "MIFID", "S_IRON", "SI_IRON", "P_IRON", "CHARGING_START_TIME", "TAPPING_END_TIME", "TOTAL_O2_PRESS", "WORK_O2_PRESS", "O2_BLOW", "LANCE_AGE", "BLOWO2_TIME", "LIME_MAT", "MAGNESIUM", "FLUORITE_MAT", "DOLOMITE_MAT", "FEO_MAT", "MOD_AGENT_MAT", "REBLOW_COUNT", "REBLOW_TIME", "DOLOMITE_LAC", "LIME_LAC", "MOD_AGENT_LAC", "LAC_TEMP", "TAPPING_TEMP", "TAPPING_OXYGEN", "LADLE_STATUS", "C_LAC", "P_LAC", "S_LAC", "TAPHOLE_LIFE", "TAP_TIME", "TAPPING_WEIGHT", "DOWN_SLAG_FLAG", "SPLASHING_TIME", "ELECTRODE_TABLETS", "CARBURIZING_AGENTS", "SI_FE", "LOW_AL_FERROSILICON", "MICRO_AL_FERROSILICON", "SI_MN", "HIGH_C_FERROMANGANESE", "MEDIUM_C_FERROMANGANESE", "MN_AL_FE_ALLOY", "SIC", "CALCIUM_CARBIDE", "MO_FE", "HIGH_C_FERROCHROME", "LOW_TI_HIGH_C_FERROCHROME", "LOW_C_FERROCHROME", "V_FE", "PRE_SLAG", "REFINING_SYNTHETIC_SLAG_TYPE", "REFINING_SYNTHETIC_SLAG_WEIGHT", "FLUORITE_TOP", "LIME_TOP", "SI_AL_FE_O2", "MN_AL_FE_O2", "AL", "TEMP_BEFORE_BLOWAR", "O2_BEFORE_BLOWAR", "SI_AL_FE_REO2", "MN_AL_FE_REO2", "TEMP_BLOWNAR", "O2_BLOWNAR", "BLOW_MODE", "TUNE_FLAG", "BLOWAR_TIME", "FEED_WEIGHT", "C_ARRIVAL_ELEMENT", "SI_ARRIVAL_ELEMENT", "MN_ARRIVAL_ELEMENT", "P_ARRIVAL_ELEMENT", "S_ARRIVAL_ELEMENT", "AL_ARRIVAL_ELEMENT", "V_ARRIVAL_ELEMENT", "TI_ARRIVAL_ELEMENT", "MO_ARRIVAL_ELEMENT", "B_ARRIVAL_ELEMENT", "CR_ARRIVAL_ELEMENT", "C_FIN", "SI_FIN", "MN_FIN", "P_FIN", "S_FIN", "AL_FIN", "V_FIN", "TI_FIN", "MO_FIN", "B_FIN", "CR_FIN", "CAO", "SIO2", "MGO", "TFE", "BOTTOMFLOW1", "BOTTOMFLOW2", "BOTTOMFLOW3", "BOTTOMFLOW4", "BOTTOMFLOW5", "BOTTOMFLOW6", "WAITING_TIME", "NOTE", "FURNACE_LINE_STATUS", "SCRAPSTATUS", "FEP_ALLOY", "FES_ALLOY", "NIBOARD_ALLOY", "CU_FIN", "NI_FIN", "CU_ARRIVAL_ELEMENT", "NI_ARRIVAL_ELEMENT", "ALV_MAT", "SIO2_MAT", "TEMP_BEF_AR_FLAG", "RETURN_STEEL_WEIGHT", "HEATNUM_CASTING", "HEATNUM_TUNDISH", "EXCEPT", "LADLE_NO", "TI_IRON", "MN_IRON", "C_IRON", "SI_FE_ALLOY", "LOW_C_MN_FE_ALLOY", "PROTOCOL", "TUNDISH_TEMP_FLAG", "CEQ_FIN", "SI_BA", "L_S_ELECTRODE_TABLETS", "FINAL_STEELGRADE", "CHANGE_REASON", "TEMP_AFT_AR_FLAG", "COLD_MAT_CUNSUME", "PRESSURE_SPRAY_AGENT", "COPPER_PLATE", "AL_LI", "JP_FLUORITE_TOP", "ALS_FIN", "ACTPROTOCOL", "REFINE_TYPE", "BORON_FE", "HI_TI_FE", "CORD_STEEL_WOLLASTONITE", "PROCESS_PATH", "SN_ARRIVAL_ELEMENT", "PB_ARRIVAL_ELEMENT", "SB_ARRIVAL_ELEMENT", "AS_ARRIVAL_ELEMENT", "SN_FIN", "AS_FIN", "PB_FIN", "SB_FIN", "LIMESTONE_MAT", "CA_FIN", "EL_MN", "MN_LAC", "CARBURANT_01", "CARBURANT_02", "CARBURANT_03", "CARBURANT_04", "CARBURANT_05", "BIG_SINTER", "QUARTZITE", "THREE_ELECTION_SCRAPWEIGHT", "LOW_C_MN_SI_ALLOY", "STEELMAKING_DOLOMITE_MAT", "ALUMINUM_INGOT_MAT", "LUMP_ORE_MAT", "CARBURANT_06", "GENERAL_LEVEL_FERROCHROME", "WASTE_BLOCK_MAT", "STEEL_BAUXITE_MAT", "FEO_MAT_LAC", "STEEL_LIMESTONE_LAC", "LOW_SI_HIGH_C_CR_FE", "LANCENO", "C_LUZ", "S_LUZ", "P_LUZ", "MN_LUZ", "LF_NOTE", "RH_NOTE", "CCM_NOTE", "LOW_TI_SI_FE", "REMAINSLAG", "O2TOTAL", "CR_IRON", "JINAN_LIME", "COKE_AGENT_LAC", "STAINLESS_FEO_MAT", "STAINLESS_FEO_MAT_LAC", "COKE_AGENT_MAT", "AL_CONSUME_RATE", "FINJUDGE_FLAG", "REFINE_LIME", "LIGHT_DOLOMITE_MAT", "CAL_WEIGHT", "IRONTEMP", "SMELT_PERIOD", "WAITSTEEL", "WAITTIME", "P2O5", "R", "MN_FE_65", "SICPYREXIA", "N2PRESSURE", "N_QITIYANG", "N_QITIYANG2", "LFID", "SPEEDCHANGE", "AUTOFLOW", "TEMPDATA", "TEMPTIME", "OXYDATA", "OXYTIME", "OXYTEMP", "LF_SHIHUI", "FZK", "CJICHA", "BEFORE_AR_TEMP_TIME", "TAP_AR_TIME", "YKWEIGHT", "TAP_LVXIAN", "CU_IRON") VALUES (:BOFID, :LOGTIME, :TEAM, :SHIFT, :HEADFURNACE, :ASSISTANT, :SECONDHAND, :HEATID, :FURNACEAGE, :PLAN_STEELGRADE, :CASTINGNO, :IRONWEIGHT, :SCRAPWEIGHT, :PIGIRONWEIGHT, :MIFID, :S_IRON, :SI_IRON, :P_IRON, :CHARGING_START_TIME, :TAPPING_END_TIME, :TOTAL_O2_PRESS, :WORK_O2_PRESS, :O2_BLOW, :LANCE_AGE, :BLOWO2_TIME, :LIME_MAT, :MAGNESIUM, :FLUORITE_MAT, :DOLOMITE_MAT, :FEO_MAT, :MOD_AGENT_MAT, :REBLOW_COUNT, :REBLOW_TIME, :DOLOMITE_LAC, :LIME_LAC, :MOD_AGENT_LAC, :LAC_TEMP, :TAPPING_TEMP, :TAPPING_OXYGEN, :LADLE_STATUS, :C_LAC, :P_LAC, :S_LAC, :TAPHOLE_LIFE, :TAP_TIME, :TAPPING_WEIGHT, :DOWN_SLAG_FLAG, :SPLASHING_TIME, :ELECTRODE_TABLETS, :CARBURIZING_AGENTS, :SI_FE, :LOW_AL_FERROSILICON, :MICRO_AL_FERROSILICON, :SI_MN, :HIGH_C_FERROMANGANESE, :p1, :MN_AL_FE_ALLOY, :SIC, :CALCIUM_CARBIDE, :MO_FE, :HIGH_C_FERROCHROME, :p4, :LOW_C_FERROCHROME, :V_FE, :PRE_SLAG, :p7, :p10, :FLUORITE_TOP, :LIME_TOP, :SI_AL_FE_O2, :MN_AL_FE_O2, :AL, :TEMP_BEFORE_BLOWAR, :O2_BEFORE_BLOWAR, :SI_AL_FE_REO2, :MN_AL_FE_REO2, :TEMP_BLOWNAR, :O2_BLOWNAR, :BLOW_MODE, :TUNE_FLAG, :BLOWAR_TIME, :FEED_WEIGHT, :C_ARRIVAL_ELEMENT, :SI_ARRIVAL_ELEMENT, :MN_ARRIVAL_ELEMENT, :P_ARRIVAL_ELEMENT, :S_ARRIVAL_ELEMENT, :AL_ARRIVAL_ELEMENT, :V_ARRIVAL_ELEMENT, :TI_ARRIVAL_ELEMENT, :MO_ARRIVAL_ELEMENT, :B_ARRIVAL_ELEMENT, :CR_ARRIVAL_ELEMENT, :C_FIN, :SI_FIN, :MN_FIN, :P_FIN, :S_FIN, :AL_FIN, :V_FIN, :TI_FIN, :MO_FIN, :B_FIN, :CR_FIN, :CAO, :SIO2, :MGO, :TFE, :BOTTOMFLOW1, :BOTTOMFLOW2, :BOTTOMFLOW3, :BOTTOMFLOW4, :BOTTOMFLOW5, :BOTTOMFLOW6, :WAITING_TIME, :NOTE, :FURNACE_LINE_STATUS, :SCRAPSTATUS, :FEP_ALLOY, :FES_ALLOY, :NIBOARD_ALLOY, :CU_FIN, :NI_FIN, :CU_ARRIVAL_ELEMENT, :NI_ARRIVAL_ELEMENT, :ALV_MAT, :SIO2_MAT, :TEMP_BEF_AR_FLAG, :RETURN_STEEL_WEIGHT, :HEATNUM_CASTING, :HEATNUM_TUNDISH, :EXCEPT, :LADLE_NO, :TI_IRON, :MN_IRON, :C_IRON, :SI_FE_ALLOY, :LOW_C_MN_FE_ALLOY, :PROTOCOL, :TUNDISH_TEMP_FLAG, :CEQ_FIN, :SI_BA, :L_S_ELECTRODE_TABLETS, :FINAL_STEELGRADE, :CHANGE_REASON, :TEMP_AFT_AR_FLAG, :COLD_MAT_CUNSUME, :PRESSURE_SPRAY_AGENT, :COPPER_PLATE, :AL_LI, :JP_FLUORITE_TOP, :ALS_FIN, :ACTPROTOCOL, :REFINE_TYPE, :BORON_FE, :HI_TI_FE, :p13, :PROCESS_PATH, :SN_ARRIVAL_ELEMENT, :PB_ARRIVAL_ELEMENT, :SB_ARRIVAL_ELEMENT, :AS_ARRIVAL_ELEMENT, :SN_FIN, :AS_FIN, :PB_FIN, :SB_FIN, :LIMESTONE_MAT, :CA_FIN, :EL_MN, :MN_LAC, :CARBURANT_01, :CARBURANT_02, :CARBURANT_03, :CARBURANT_04, :CARBURANT_05, :BIG_SINTER, :QUARTZITE, :p16, :LOW_C_MN_SI_ALLOY, :p19, :ALUMINUM_INGOT_MAT, :LUMP_ORE_MAT, :CARBURANT_06, :p22, :WASTE_BLOCK_MAT, :STEEL_BAUXITE_MAT, :FEO_MAT_LAC, :STEEL_LIMESTONE_LAC, :LOW_SI_HIGH_C_CR_FE, :LANCENO, :C_LUZ, :S_LUZ, :P_LUZ, :MN_LUZ, :LF_NOTE, :RH_NOTE, :CCM_NOTE, :LOW_TI_SI_FE, :REMAINSLAG, :O2TOTAL, :CR_IRON, :JINAN_LIME, :COKE_AGENT_LAC, :STAINLESS_FEO_MAT, :STAINLESS_FEO_MAT_LAC, :COKE_AGENT_MAT, :AL_CONSUME_RATE, :FINJUDGE_FLAG, :REFINE_LIME, :LIGHT_DOLOMITE_MAT, :CAL_WEIGHT, :IRONTEMP, :SMELT_PERIOD, :WAITSTEEL, :WAITTIME, :P2O5, :R, :MN_FE_65, :SICPYREXIA, :N2PRESSURE, :N_QITIYANG, :N_QITIYANG2, :LFID, :SPEEDCHANGE, :AUTOFLOW, :TEMPDATA, :TEMPTIME, :OXYDATA, :OXYTIME, :OXYTEMP, :LF_SHIHUI, :FZK, :CJICHA, :BEFORE_AR_TEMP_TIME, :TAP_AR_TIME, :YKWEIGHT, :TAP_LVXIAN, :CU_IRON)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOFID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOFID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOGTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEAM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEAM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SHIFT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SHIFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEADFURNACE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEADFURNACE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ASSISTANT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ASSISTANT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SECONDHAND" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SECONDHAND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FURNACEAGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FURNACEAGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PLAN_STEELGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PLAN_STEELGRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CASTINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CASTINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="IRONWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="IRONWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SCRAPWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SCRAPWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PIGIRONWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PIGIRONWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MIFID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MIFID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CHARGING_START_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CHARGING_START_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="TAPPING_END_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="TAPPING_END_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TOTAL_O2_PRESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TOTAL_O2_PRESS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="WORK_O2_PRESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="WORK_O2_PRESS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="O2_BLOW" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="O2_BLOW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LANCE_AGE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LANCE_AGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BLOWO2_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BLOWO2_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LIME_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LIME_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MAGNESIUM" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MAGNESIUM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLUORITE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLUORITE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="DOLOMITE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="DOLOMITE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FEO_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FEO_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MOD_AGENT_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOD_AGENT_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="REBLOW_COUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="REBLOW_COUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="REBLOW_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="REBLOW_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="DOLOMITE_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="DOLOMITE_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LIME_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LIME_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MOD_AGENT_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOD_AGENT_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LAC_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LAC_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAPPING_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAPPING_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAPPING_OXYGEN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAPPING_OXYGEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLE_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLE_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="C_LAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="C_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="P_LAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="P_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="S_LAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="S_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAPHOLE_LIFE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAPHOLE_LIFE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAP_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAP_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAPPING_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAPPING_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="DOWN_SLAG_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DOWN_SLAG_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPLASHING_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPLASHING_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ELECTRODE_TABLETS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ELECTRODE_TABLETS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURIZING_AGENTS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURIZING_AGENTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_AL_FERROSILICON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_AL_FERROSILICON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MICRO_AL_FERROSILICON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MICRO_AL_FERROSILICON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_MN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_MN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HIGH_C_FERROMANGANESE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HIGH_C_FERROMANGANESE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p1" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MEDIUM_C_FERROMANGANESE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_AL_FE_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_AL_FE_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SIC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SIC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CALCIUM_CARBIDE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CALCIUM_CARBIDE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HIGH_C_FERROCHROME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HIGH_C_FERROCHROME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p4" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_TI_HIGH_C_FERROCHROME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_C_FERROCHROME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_C_FERROCHROME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PRE_SLAG" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PRE_SLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REFINING_SYNTHETIC_SLAG_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p10" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="REFINING_SYNTHETIC_SLAG_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLUORITE_TOP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLUORITE_TOP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LIME_TOP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LIME_TOP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_AL_FE_O2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_AL_FE_O2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_AL_FE_O2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_AL_FE_O2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_BEFORE_BLOWAR" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_BEFORE_BLOWAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="O2_BEFORE_BLOWAR" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="O2_BEFORE_BLOWAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_AL_FE_REO2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_AL_FE_REO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_AL_FE_REO2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_AL_FE_REO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_BLOWNAR" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_BLOWNAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="O2_BLOWNAR" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="O2_BLOWNAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BLOW_MODE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BLOW_MODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNE_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNE_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BLOWAR_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BLOWAR_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FEED_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FEED_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="S_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="S_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="V_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="V_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MO_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MO_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="B_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="B_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SIO2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SIO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MGO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TFE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TFE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOTTOMFLOW6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOTTOMFLOW6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WAITING_TIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WAITING_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FURNACE_LINE_STATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FURNACE_LINE_STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SCRAPSTATUS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SCRAPSTATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FEP_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FEP_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FES_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FES_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NIBOARD_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NIBOARD_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="NI_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="NI_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALV_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALV_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SIO2_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SIO2_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEMP_BEF_AR_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEMP_BEF_AR_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="RETURN_STEEL_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="RETURN_STEEL_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATNUM_CASTING" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATNUM_CASTING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATNUM_TUNDISH" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATNUM_TUNDISH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="EXCEPT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EXCEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLE_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLE_NO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TI_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TI_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="C_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="C_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_FE_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_FE_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_C_MN_FE_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_C_MN_FE_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROTOCOL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROTOCOL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_TEMP_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_TEMP_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CEQ_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CEQ_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SI_BA" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SI_BA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="L_S_ELECTRODE_TABLETS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="L_S_ELECTRODE_TABLETS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FINAL_STEELGRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FINAL_STEELGRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CHANGE_REASON" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CHANGE_REASON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEMP_AFT_AR_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEMP_AFT_AR_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COLD_MAT_CUNSUME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COLD_MAT_CUNSUME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PRESSURE_SPRAY_AGENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PRESSURE_SPRAY_AGENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COPPER_PLATE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COPPER_PLATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_LI" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_LI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="JP_FLUORITE_TOP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="JP_FLUORITE_TOP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALS_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALS_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ACTPROTOCOL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACTPROTOCOL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REFINE_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REFINE_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BORON_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BORON_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HI_TI_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HI_TI_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p13" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CORD_STEEL_WOLLASTONITE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROCESS_PATH" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROCESS_PATH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SN_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SN_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PB_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PB_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SB_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SB_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AS_ARRIVAL_ELEMENT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AS_ARRIVAL_ELEMENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SN_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SN_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AS_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AS_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PB_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PB_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SB_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SB_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LIMESTONE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LIMESTONE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CA_FIN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CA_FIN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="EL_MN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="EL_MN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MN_LAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MN_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_01" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_01" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_02" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_02" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_03" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_03" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_04" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_04" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_05" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_05" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BIG_SINTER" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BIG_SINTER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="QUARTZITE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="QUARTZITE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p16" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="THREE_ELECTION_SCRAPWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_C_MN_SI_ALLOY" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_C_MN_SI_ALLOY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p19" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEELMAKING_DOLOMITE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="ALUMINUM_INGOT_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="ALUMINUM_INGOT_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LUMP_ORE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LUMP_ORE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CARBURANT_06" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CARBURANT_06" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p22" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="GENERAL_LEVEL_FERROCHROME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="WASTE_BLOCK_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="WASTE_BLOCK_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEEL_BAUXITE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_BAUXITE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FEO_MAT_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FEO_MAT_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEEL_LIMESTONE_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_LIMESTONE_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_SI_HIGH_C_CR_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_SI_HIGH_C_CR_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LANCENO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LANCENO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="C_LUZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="C_LUZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="S_LUZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="S_LUZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="P_LUZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="P_LUZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MN_LUZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MN_LUZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LF_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LF_NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="RH_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RH_NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CCM_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CCM_NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LOW_TI_SI_FE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LOW_TI_SI_FE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="REMAINSLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REMAINSLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="O2TOTAL" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="O2TOTAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CR_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CR_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="JINAN_LIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="JINAN_LIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COKE_AGENT_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COKE_AGENT_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STAINLESS_FEO_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STAINLESS_FEO_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STAINLESS_FEO_MAT_LAC" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STAINLESS_FEO_MAT_LAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COKE_AGENT_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COKE_AGENT_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AL_CONSUME_RATE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AL_CONSUME_RATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FINJUDGE_FLAG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FINJUDGE_FLAG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="REFINE_LIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="REFINE_LIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LIGHT_DOLOMITE_MAT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LIGHT_DOLOMITE_MAT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAL_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAL_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="IRONTEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="IRONTEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SMELT_PERIOD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SMELT_PERIOD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WAITSTEEL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WAITSTEEL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="WAITTIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="WAITTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="P2O5" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="P2O5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="R" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="MN_FE_65" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MN_FE_65" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SICPYREXIA" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SICPYREXIA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="N2PRESSURE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="N2PRESSURE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="N_QITIYANG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="N_QITIYANG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="N_QITIYANG2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="N_QITIYANG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LFID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LFID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPEEDCHANGE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPEEDCHANGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="AUTOFLOW" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AUTOFLOW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEMPDATA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEMPDATA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEMPTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEMPTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OXYDATA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OXYDATA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OXYTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OXYTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OXYTEMP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OXYTEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LF_SHIHUI" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LF_SHIHUI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FZK" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FZK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="CJICHA" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CJICHA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="BEFORE_AR_TEMP_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEFORE_AR_TEMP_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAP_AR_TIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAP_AR_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="YKWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="YKWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TAP_LVXIAN" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TAP_LVXIAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CU_IRON" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CU_IRON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT BOFID, LOGTIME, TEAM, SHIFT, HEADFURNACE, ASSISTANT, SECONDHAND, 
+      HEATID, FURNACEAGE, PLAN_STEELGRADE, CASTINGNO, IRONWEIGHT, 
+      SCRAPWEIGHT, PIGIRONWEIGHT, MIFID, S_IRON, SI_IRON, P_IRON, 
+      CHARGING_START_TIME, TAPPING_END_TIME, TOTAL_O2_PRESS, 
+      WORK_O2_PRESS, O2_BLOW, LANCE_AGE, BLOWO2_TIME, LIME_MAT, 
+      MAGNESIUM, FLUORITE_MAT, DOLOMITE_MAT, FEO_MAT, MOD_AGENT_MAT, 
+      REBLOW_COUNT, REBLOW_TIME, DOLOMITE_LAC, LIME_LAC, MOD_AGENT_LAC, 
+      LAC_TEMP, TAPPING_TEMP, TAPPING_OXYGEN, LADLE_STATUS, C_LAC, P_LAC, 
+      S_LAC, TAPHOLE_LIFE, TAP_TIME, TAPPING_WEIGHT, DOWN_SLAG_FLAG, 
+      SPLASHING_TIME, ELECTRODE_TABLETS, CARBURIZING_AGENTS, SI_FE, 
+      LOW_AL_FERROSILICON, MICRO_AL_FERROSILICON, SI_MN, 
+      HIGH_C_FERROMANGANESE, MEDIUM_C_FERROMANGANESE, MN_AL_FE_ALLOY, 
+      SIC, CALCIUM_CARBIDE, MO_FE, HIGH_C_FERROCHROME, 
+      LOW_TI_HIGH_C_FERROCHROME, LOW_C_FERROCHROME, V_FE, PRE_SLAG, 
+      REFINING_SYNTHETIC_SLAG_TYPE, REFINING_SYNTHETIC_SLAG_WEIGHT, 
+      FLUORITE_TOP, LIME_TOP, SI_AL_FE_O2, MN_AL_FE_O2, AL, 
+      TEMP_BEFORE_BLOWAR, O2_BEFORE_BLOWAR, SI_AL_FE_REO2, 
+      MN_AL_FE_REO2, TEMP_BLOWNAR, O2_BLOWNAR, BLOW_MODE, TUNE_FLAG, 
+      BLOWAR_TIME, FEED_WEIGHT, C_ARRIVAL_ELEMENT, SI_ARRIVAL_ELEMENT, 
+      MN_ARRIVAL_ELEMENT, P_ARRIVAL_ELEMENT, S_ARRIVAL_ELEMENT, 
+      AL_ARRIVAL_ELEMENT, V_ARRIVAL_ELEMENT, TI_ARRIVAL_ELEMENT, 
+      MO_ARRIVAL_ELEMENT, B_ARRIVAL_ELEMENT, CR_ARRIVAL_ELEMENT, C_FIN, 
+      SI_FIN, MN_FIN, P_FIN, S_FIN, AL_FIN, V_FIN, TI_FIN, MO_FIN, B_FIN, CR_FIN, CAO, 
+      SIO2, MGO, TFE, BOTTOMFLOW1, BOTTOMFLOW2, BOTTOMFLOW3, 
+      BOTTOMFLOW4, BOTTOMFLOW5, BOTTOMFLOW6, WAITING_TIME, NOTE, 
+      FURNACE_LINE_STATUS, SCRAPSTATUS, FEP_ALLOY, FES_ALLOY, 
+      NIBOARD_ALLOY, CU_FIN, NI_FIN, CU_ARRIVAL_ELEMENT, NI_ARRIVAL_ELEMENT, 
+      ALV_MAT, SIO2_MAT, TEMP_BEF_AR_FLAG, RETURN_STEEL_WEIGHT, 
+      HEATNUM_CASTING, HEATNUM_TUNDISH, "EXCEPT", LADLE_NO, TI_IRON, 
+      MN_IRON, C_IRON, SI_FE_ALLOY, LOW_C_MN_FE_ALLOY, PROTOCOL, 
+      TUNDISH_TEMP_FLAG, CEQ_FIN, SI_BA, L_S_ELECTRODE_TABLETS, 
+      FINAL_STEELGRADE, CHANGE_REASON, TEMP_AFT_AR_FLAG, 
+      COLD_MAT_CUNSUME, PRESSURE_SPRAY_AGENT, COPPER_PLATE, AL_LI, 
+      JP_FLUORITE_TOP, ALS_FIN, ACTPROTOCOL, REFINE_TYPE, BORON_FE, HI_TI_FE, 
+      CORD_STEEL_WOLLASTONITE, PROCESS_PATH, SN_ARRIVAL_ELEMENT, 
+      PB_ARRIVAL_ELEMENT, SB_ARRIVAL_ELEMENT, AS_ARRIVAL_ELEMENT, SN_FIN, 
+      AS_FIN, PB_FIN, SB_FIN, LIMESTONE_MAT, CA_FIN, EL_MN, MN_LAC, 
+      CARBURANT_01, CARBURANT_02, CARBURANT_03, CARBURANT_04, 
+      CARBURANT_05, BIG_SINTER, QUARTZITE, THREE_ELECTION_SCRAPWEIGHT, 
+      LOW_C_MN_SI_ALLOY, STEELMAKING_DOLOMITE_MAT, ALUMINUM_INGOT_MAT, 
+      LUMP_ORE_MAT, CARBURANT_06, GENERAL_LEVEL_FERROCHROME, 
+      WASTE_BLOCK_MAT, STEEL_BAUXITE_MAT, FEO_MAT_LAC, 
+      STEEL_LIMESTONE_LAC, LOW_SI_HIGH_C_CR_FE, LANCENO, C_LUZ, S_LUZ, 
+      P_LUZ, MN_LUZ, LF_NOTE, RH_NOTE, CCM_NOTE, LOW_TI_SI_FE, REMAINSLAG, 
+      O2TOTAL, CR_IRON, JINAN_LIME, COKE_AGENT_LAC, STAINLESS_FEO_MAT, 
+      STAINLESS_FEO_MAT_LAC, COKE_AGENT_MAT, AL_CONSUME_RATE, 
+      FINJUDGE_FLAG, REFINE_LIME, LIGHT_DOLOMITE_MAT, CAL_WEIGHT, IRONTEMP, 
+      SMELT_PERIOD, WAITSTEEL, WAITTIME, P2O5, R, MN_FE_65, SICPYREXIA, 
+      N2PRESSURE, N_QITIYANG, N_QITIYANG2, LFID, SPEEDCHANGE, AUTOFLOW,tempdata,
+      temptime,oxydata,oxytime,oxytemp,lf_shihui,fzk,cjicha,before_ar_temp_time,
+      tap_ar_time,ykweight,tap_lvxian,cu_iron    
+FROM TS_ORIGINALDATA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BOFID" DataSetColumn="BOFID" />
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="SHIFT" DataSetColumn="SHIFT" />
+              <Mapping SourceColumn="HEADFURNACE" DataSetColumn="HEADFURNACE" />
+              <Mapping SourceColumn="ASSISTANT" DataSetColumn="ASSISTANT" />
+              <Mapping SourceColumn="SECONDHAND" DataSetColumn="SECONDHAND" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="FURNACEAGE" DataSetColumn="FURNACEAGE" />
+              <Mapping SourceColumn="PLAN_STEELGRADE" DataSetColumn="PLAN_STEELGRADE" />
+              <Mapping SourceColumn="CASTINGNO" DataSetColumn="CASTINGNO" />
+              <Mapping SourceColumn="IRONWEIGHT" DataSetColumn="IRONWEIGHT" />
+              <Mapping SourceColumn="SCRAPWEIGHT" DataSetColumn="SCRAPWEIGHT" />
+              <Mapping SourceColumn="PIGIRONWEIGHT" DataSetColumn="PIGIRONWEIGHT" />
+              <Mapping SourceColumn="MIFID" DataSetColumn="MIFID" />
+              <Mapping SourceColumn="S_IRON" DataSetColumn="S_IRON" />
+              <Mapping SourceColumn="SI_IRON" DataSetColumn="SI_IRON" />
+              <Mapping SourceColumn="P_IRON" DataSetColumn="P_IRON" />
+              <Mapping SourceColumn="CHARGING_START_TIME" DataSetColumn="CHARGING_START_TIME" />
+              <Mapping SourceColumn="TAPPING_END_TIME" DataSetColumn="TAPPING_END_TIME" />
+              <Mapping SourceColumn="TOTAL_O2_PRESS" DataSetColumn="TOTAL_O2_PRESS" />
+              <Mapping SourceColumn="WORK_O2_PRESS" DataSetColumn="WORK_O2_PRESS" />
+              <Mapping SourceColumn="O2_BLOW" DataSetColumn="O2_BLOW" />
+              <Mapping SourceColumn="LANCE_AGE" DataSetColumn="LANCE_AGE" />
+              <Mapping SourceColumn="BLOWO2_TIME" DataSetColumn="BLOWO2_TIME" />
+              <Mapping SourceColumn="LIME_MAT" DataSetColumn="LIME_MAT" />
+              <Mapping SourceColumn="MAGNESIUM" DataSetColumn="MAGNESIUM" />
+              <Mapping SourceColumn="FLUORITE_MAT" DataSetColumn="FLUORITE_MAT" />
+              <Mapping SourceColumn="DOLOMITE_MAT" DataSetColumn="DOLOMITE_MAT" />
+              <Mapping SourceColumn="FEO_MAT" DataSetColumn="FEO_MAT" />
+              <Mapping SourceColumn="MOD_AGENT_MAT" DataSetColumn="MOD_AGENT_MAT" />
+              <Mapping SourceColumn="REBLOW_COUNT" DataSetColumn="REBLOW_COUNT" />
+              <Mapping SourceColumn="REBLOW_TIME" DataSetColumn="REBLOW_TIME" />
+              <Mapping SourceColumn="DOLOMITE_LAC" DataSetColumn="DOLOMITE_LAC" />
+              <Mapping SourceColumn="LIME_LAC" DataSetColumn="LIME_LAC" />
+              <Mapping SourceColumn="MOD_AGENT_LAC" DataSetColumn="MOD_AGENT_LAC" />
+              <Mapping SourceColumn="LAC_TEMP" DataSetColumn="LAC_TEMP" />
+              <Mapping SourceColumn="TAPPING_TEMP" DataSetColumn="TAPPING_TEMP" />
+              <Mapping SourceColumn="TAPPING_OXYGEN" DataSetColumn="TAPPING_OXYGEN" />
+              <Mapping SourceColumn="LADLE_STATUS" DataSetColumn="LADLE_STATUS" />
+              <Mapping SourceColumn="C_LAC" DataSetColumn="C_LAC" />
+              <Mapping SourceColumn="P_LAC" DataSetColumn="P_LAC" />
+              <Mapping SourceColumn="S_LAC" DataSetColumn="S_LAC" />
+              <Mapping SourceColumn="TAPHOLE_LIFE" DataSetColumn="TAPHOLE_LIFE" />
+              <Mapping SourceColumn="TAP_TIME" DataSetColumn="TAP_TIME" />
+              <Mapping SourceColumn="TAPPING_WEIGHT" DataSetColumn="TAPPING_WEIGHT" />
+              <Mapping SourceColumn="DOWN_SLAG_FLAG" DataSetColumn="DOWN_SLAG_FLAG" />
+              <Mapping SourceColumn="SPLASHING_TIME" DataSetColumn="SPLASHING_TIME" />
+              <Mapping SourceColumn="ELECTRODE_TABLETS" DataSetColumn="ELECTRODE_TABLETS" />
+              <Mapping SourceColumn="CARBURIZING_AGENTS" DataSetColumn="CARBURIZING_AGENTS" />
+              <Mapping SourceColumn="SI_FE" DataSetColumn="SI_FE" />
+              <Mapping SourceColumn="LOW_AL_FERROSILICON" DataSetColumn="LOW_AL_FERROSILICON" />
+              <Mapping SourceColumn="MICRO_AL_FERROSILICON" DataSetColumn="MICRO_AL_FERROSILICON" />
+              <Mapping SourceColumn="SI_MN" DataSetColumn="SI_MN" />
+              <Mapping SourceColumn="HIGH_C_FERROMANGANESE" DataSetColumn="HIGH_C_FERROMANGANESE" />
+              <Mapping SourceColumn="MEDIUM_C_FERROMANGANESE" DataSetColumn="MEDIUM_C_FERROMANGANESE" />
+              <Mapping SourceColumn="MN_AL_FE_ALLOY" DataSetColumn="MN_AL_FE_ALLOY" />
+              <Mapping SourceColumn="SIC" DataSetColumn="SIC" />
+              <Mapping SourceColumn="CALCIUM_CARBIDE" DataSetColumn="CALCIUM_CARBIDE" />
+              <Mapping SourceColumn="MO_FE" DataSetColumn="MO_FE" />
+              <Mapping SourceColumn="HIGH_C_FERROCHROME" DataSetColumn="HIGH_C_FERROCHROME" />
+              <Mapping SourceColumn="LOW_TI_HIGH_C_FERROCHROME" DataSetColumn="LOW_TI_HIGH_C_FERROCHROME" />
+              <Mapping SourceColumn="LOW_C_FERROCHROME" DataSetColumn="LOW_C_FERROCHROME" />
+              <Mapping SourceColumn="V_FE" DataSetColumn="V_FE" />
+              <Mapping SourceColumn="PRE_SLAG" DataSetColumn="PRE_SLAG" />
+              <Mapping SourceColumn="REFINING_SYNTHETIC_SLAG_TYPE" DataSetColumn="REFINING_SYNTHETIC_SLAG_TYPE" />
+              <Mapping SourceColumn="REFINING_SYNTHETIC_SLAG_WEIGHT" DataSetColumn="REFINING_SYNTHETIC_SLAG_WEIGHT" />
+              <Mapping SourceColumn="FLUORITE_TOP" DataSetColumn="FLUORITE_TOP" />
+              <Mapping SourceColumn="LIME_TOP" DataSetColumn="LIME_TOP" />
+              <Mapping SourceColumn="SI_AL_FE_O2" DataSetColumn="SI_AL_FE_O2" />
+              <Mapping SourceColumn="MN_AL_FE_O2" DataSetColumn="MN_AL_FE_O2" />
+              <Mapping SourceColumn="AL" DataSetColumn="AL" />
+              <Mapping SourceColumn="TEMP_BEFORE_BLOWAR" DataSetColumn="TEMP_BEFORE_BLOWAR" />
+              <Mapping SourceColumn="O2_BEFORE_BLOWAR" DataSetColumn="O2_BEFORE_BLOWAR" />
+              <Mapping SourceColumn="SI_AL_FE_REO2" DataSetColumn="SI_AL_FE_REO2" />
+              <Mapping SourceColumn="MN_AL_FE_REO2" DataSetColumn="MN_AL_FE_REO2" />
+              <Mapping SourceColumn="TEMP_BLOWNAR" DataSetColumn="TEMP_BLOWNAR" />
+              <Mapping SourceColumn="O2_BLOWNAR" DataSetColumn="O2_BLOWNAR" />
+              <Mapping SourceColumn="BLOW_MODE" DataSetColumn="BLOW_MODE" />
+              <Mapping SourceColumn="TUNE_FLAG" DataSetColumn="TUNE_FLAG" />
+              <Mapping SourceColumn="BLOWAR_TIME" DataSetColumn="BLOWAR_TIME" />
+              <Mapping SourceColumn="FEED_WEIGHT" DataSetColumn="FEED_WEIGHT" />
+              <Mapping SourceColumn="C_ARRIVAL_ELEMENT" DataSetColumn="C_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="SI_ARRIVAL_ELEMENT" DataSetColumn="SI_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="MN_ARRIVAL_ELEMENT" DataSetColumn="MN_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="P_ARRIVAL_ELEMENT" DataSetColumn="P_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="S_ARRIVAL_ELEMENT" DataSetColumn="S_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="AL_ARRIVAL_ELEMENT" DataSetColumn="AL_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="V_ARRIVAL_ELEMENT" DataSetColumn="V_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="TI_ARRIVAL_ELEMENT" DataSetColumn="TI_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="MO_ARRIVAL_ELEMENT" DataSetColumn="MO_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="B_ARRIVAL_ELEMENT" DataSetColumn="B_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="CR_ARRIVAL_ELEMENT" DataSetColumn="CR_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="C_FIN" DataSetColumn="C_FIN" />
+              <Mapping SourceColumn="SI_FIN" DataSetColumn="SI_FIN" />
+              <Mapping SourceColumn="MN_FIN" DataSetColumn="MN_FIN" />
+              <Mapping SourceColumn="P_FIN" DataSetColumn="P_FIN" />
+              <Mapping SourceColumn="S_FIN" DataSetColumn="S_FIN" />
+              <Mapping SourceColumn="AL_FIN" DataSetColumn="AL_FIN" />
+              <Mapping SourceColumn="V_FIN" DataSetColumn="V_FIN" />
+              <Mapping SourceColumn="TI_FIN" DataSetColumn="TI_FIN" />
+              <Mapping SourceColumn="MO_FIN" DataSetColumn="MO_FIN" />
+              <Mapping SourceColumn="B_FIN" DataSetColumn="B_FIN" />
+              <Mapping SourceColumn="CR_FIN" DataSetColumn="CR_FIN" />
+              <Mapping SourceColumn="CAO" DataSetColumn="CAO" />
+              <Mapping SourceColumn="SIO2" DataSetColumn="SIO2" />
+              <Mapping SourceColumn="MGO" DataSetColumn="MGO" />
+              <Mapping SourceColumn="TFE" DataSetColumn="TFE" />
+              <Mapping SourceColumn="BOTTOMFLOW1" DataSetColumn="BOTTOMFLOW1" />
+              <Mapping SourceColumn="BOTTOMFLOW2" DataSetColumn="BOTTOMFLOW2" />
+              <Mapping SourceColumn="BOTTOMFLOW3" DataSetColumn="BOTTOMFLOW3" />
+              <Mapping SourceColumn="BOTTOMFLOW4" DataSetColumn="BOTTOMFLOW4" />
+              <Mapping SourceColumn="BOTTOMFLOW5" DataSetColumn="BOTTOMFLOW5" />
+              <Mapping SourceColumn="BOTTOMFLOW6" DataSetColumn="BOTTOMFLOW6" />
+              <Mapping SourceColumn="WAITING_TIME" DataSetColumn="WAITING_TIME" />
+              <Mapping SourceColumn="NOTE" DataSetColumn="NOTE" />
+              <Mapping SourceColumn="FURNACE_LINE_STATUS" DataSetColumn="FURNACE_LINE_STATUS" />
+              <Mapping SourceColumn="SCRAPSTATUS" DataSetColumn="SCRAPSTATUS" />
+              <Mapping SourceColumn="FEP_ALLOY" DataSetColumn="FEP_ALLOY" />
+              <Mapping SourceColumn="FES_ALLOY" DataSetColumn="FES_ALLOY" />
+              <Mapping SourceColumn="NIBOARD_ALLOY" DataSetColumn="NIBOARD_ALLOY" />
+              <Mapping SourceColumn="CU_FIN" DataSetColumn="CU_FIN" />
+              <Mapping SourceColumn="NI_FIN" DataSetColumn="NI_FIN" />
+              <Mapping SourceColumn="CU_ARRIVAL_ELEMENT" DataSetColumn="CU_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="NI_ARRIVAL_ELEMENT" DataSetColumn="NI_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="ALV_MAT" DataSetColumn="ALV_MAT" />
+              <Mapping SourceColumn="SIO2_MAT" DataSetColumn="SIO2_MAT" />
+              <Mapping SourceColumn="TEMP_BEF_AR_FLAG" DataSetColumn="TEMP_BEF_AR_FLAG" />
+              <Mapping SourceColumn="RETURN_STEEL_WEIGHT" DataSetColumn="RETURN_STEEL_WEIGHT" />
+              <Mapping SourceColumn="HEATNUM_CASTING" DataSetColumn="HEATNUM_CASTING" />
+              <Mapping SourceColumn="HEATNUM_TUNDISH" DataSetColumn="HEATNUM_TUNDISH" />
+              <Mapping SourceColumn="EXCEPT" DataSetColumn="EXCEPT" />
+              <Mapping SourceColumn="LADLE_NO" DataSetColumn="LADLE_NO" />
+              <Mapping SourceColumn="TI_IRON" DataSetColumn="TI_IRON" />
+              <Mapping SourceColumn="MN_IRON" DataSetColumn="MN_IRON" />
+              <Mapping SourceColumn="C_IRON" DataSetColumn="C_IRON" />
+              <Mapping SourceColumn="SI_FE_ALLOY" DataSetColumn="SI_FE_ALLOY" />
+              <Mapping SourceColumn="LOW_C_MN_FE_ALLOY" DataSetColumn="LOW_C_MN_FE_ALLOY" />
+              <Mapping SourceColumn="PROTOCOL" DataSetColumn="PROTOCOL" />
+              <Mapping SourceColumn="TUNDISH_TEMP_FLAG" DataSetColumn="TUNDISH_TEMP_FLAG" />
+              <Mapping SourceColumn="CEQ_FIN" DataSetColumn="CEQ_FIN" />
+              <Mapping SourceColumn="SI_BA" DataSetColumn="SI_BA" />
+              <Mapping SourceColumn="L_S_ELECTRODE_TABLETS" DataSetColumn="L_S_ELECTRODE_TABLETS" />
+              <Mapping SourceColumn="FINAL_STEELGRADE" DataSetColumn="FINAL_STEELGRADE" />
+              <Mapping SourceColumn="CHANGE_REASON" DataSetColumn="CHANGE_REASON" />
+              <Mapping SourceColumn="TEMP_AFT_AR_FLAG" DataSetColumn="TEMP_AFT_AR_FLAG" />
+              <Mapping SourceColumn="COLD_MAT_CUNSUME" DataSetColumn="COLD_MAT_CUNSUME" />
+              <Mapping SourceColumn="PRESSURE_SPRAY_AGENT" DataSetColumn="PRESSURE_SPRAY_AGENT" />
+              <Mapping SourceColumn="COPPER_PLATE" DataSetColumn="COPPER_PLATE" />
+              <Mapping SourceColumn="AL_LI" DataSetColumn="AL_LI" />
+              <Mapping SourceColumn="JP_FLUORITE_TOP" DataSetColumn="JP_FLUORITE_TOP" />
+              <Mapping SourceColumn="ALS_FIN" DataSetColumn="ALS_FIN" />
+              <Mapping SourceColumn="ACTPROTOCOL" DataSetColumn="ACTPROTOCOL" />
+              <Mapping SourceColumn="REFINE_TYPE" DataSetColumn="REFINE_TYPE" />
+              <Mapping SourceColumn="BORON_FE" DataSetColumn="BORON_FE" />
+              <Mapping SourceColumn="HI_TI_FE" DataSetColumn="HI_TI_FE" />
+              <Mapping SourceColumn="CORD_STEEL_WOLLASTONITE" DataSetColumn="CORD_STEEL_WOLLASTONITE" />
+              <Mapping SourceColumn="PROCESS_PATH" DataSetColumn="PROCESS_PATH" />
+              <Mapping SourceColumn="SN_ARRIVAL_ELEMENT" DataSetColumn="SN_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="PB_ARRIVAL_ELEMENT" DataSetColumn="PB_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="SB_ARRIVAL_ELEMENT" DataSetColumn="SB_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="AS_ARRIVAL_ELEMENT" DataSetColumn="AS_ARRIVAL_ELEMENT" />
+              <Mapping SourceColumn="SN_FIN" DataSetColumn="SN_FIN" />
+              <Mapping SourceColumn="AS_FIN" DataSetColumn="AS_FIN" />
+              <Mapping SourceColumn="PB_FIN" DataSetColumn="PB_FIN" />
+              <Mapping SourceColumn="SB_FIN" DataSetColumn="SB_FIN" />
+              <Mapping SourceColumn="LIMESTONE_MAT" DataSetColumn="LIMESTONE_MAT" />
+              <Mapping SourceColumn="CA_FIN" DataSetColumn="CA_FIN" />
+              <Mapping SourceColumn="EL_MN" DataSetColumn="EL_MN" />
+              <Mapping SourceColumn="MN_LAC" DataSetColumn="MN_LAC" />
+              <Mapping SourceColumn="CARBURANT_01" DataSetColumn="CARBURANT_01" />
+              <Mapping SourceColumn="CARBURANT_02" DataSetColumn="CARBURANT_02" />
+              <Mapping SourceColumn="CARBURANT_03" DataSetColumn="CARBURANT_03" />
+              <Mapping SourceColumn="CARBURANT_04" DataSetColumn="CARBURANT_04" />
+              <Mapping SourceColumn="CARBURANT_05" DataSetColumn="CARBURANT_05" />
+              <Mapping SourceColumn="BIG_SINTER" DataSetColumn="BIG_SINTER" />
+              <Mapping SourceColumn="QUARTZITE" DataSetColumn="QUARTZITE" />
+              <Mapping SourceColumn="THREE_ELECTION_SCRAPWEIGHT" DataSetColumn="THREE_ELECTION_SCRAPWEIGHT" />
+              <Mapping SourceColumn="LOW_C_MN_SI_ALLOY" DataSetColumn="LOW_C_MN_SI_ALLOY" />
+              <Mapping SourceColumn="STEELMAKING_DOLOMITE_MAT" DataSetColumn="STEELMAKING_DOLOMITE_MAT" />
+              <Mapping SourceColumn="ALUMINUM_INGOT_MAT" DataSetColumn="ALUMINUM_INGOT_MAT" />
+              <Mapping SourceColumn="LUMP_ORE_MAT" DataSetColumn="LUMP_ORE_MAT" />
+              <Mapping SourceColumn="CARBURANT_06" DataSetColumn="CARBURANT_06" />
+              <Mapping SourceColumn="GENERAL_LEVEL_FERROCHROME" DataSetColumn="GENERAL_LEVEL_FERROCHROME" />
+              <Mapping SourceColumn="WASTE_BLOCK_MAT" DataSetColumn="WASTE_BLOCK_MAT" />
+              <Mapping SourceColumn="STEEL_BAUXITE_MAT" DataSetColumn="STEEL_BAUXITE_MAT" />
+              <Mapping SourceColumn="FEO_MAT_LAC" DataSetColumn="FEO_MAT_LAC" />
+              <Mapping SourceColumn="STEEL_LIMESTONE_LAC" DataSetColumn="STEEL_LIMESTONE_LAC" />
+              <Mapping SourceColumn="LOW_SI_HIGH_C_CR_FE" DataSetColumn="LOW_SI_HIGH_C_CR_FE" />
+              <Mapping SourceColumn="LANCENO" DataSetColumn="LANCENO" />
+              <Mapping SourceColumn="C_LUZ" DataSetColumn="C_LUZ" />
+              <Mapping SourceColumn="S_LUZ" DataSetColumn="S_LUZ" />
+              <Mapping SourceColumn="P_LUZ" DataSetColumn="P_LUZ" />
+              <Mapping SourceColumn="MN_LUZ" DataSetColumn="MN_LUZ" />
+              <Mapping SourceColumn="LF_NOTE" DataSetColumn="LF_NOTE" />
+              <Mapping SourceColumn="RH_NOTE" DataSetColumn="RH_NOTE" />
+              <Mapping SourceColumn="CCM_NOTE" DataSetColumn="CCM_NOTE" />
+              <Mapping SourceColumn="LOW_TI_SI_FE" DataSetColumn="LOW_TI_SI_FE" />
+              <Mapping SourceColumn="REMAINSLAG" DataSetColumn="REMAINSLAG" />
+              <Mapping SourceColumn="O2TOTAL" DataSetColumn="O2TOTAL" />
+              <Mapping SourceColumn="CR_IRON" DataSetColumn="CR_IRON" />
+              <Mapping SourceColumn="JINAN_LIME" DataSetColumn="JINAN_LIME" />
+              <Mapping SourceColumn="COKE_AGENT_LAC" DataSetColumn="COKE_AGENT_LAC" />
+              <Mapping SourceColumn="STAINLESS_FEO_MAT" DataSetColumn="STAINLESS_FEO_MAT" />
+              <Mapping SourceColumn="STAINLESS_FEO_MAT_LAC" DataSetColumn="STAINLESS_FEO_MAT_LAC" />
+              <Mapping SourceColumn="COKE_AGENT_MAT" DataSetColumn="COKE_AGENT_MAT" />
+              <Mapping SourceColumn="AL_CONSUME_RATE" DataSetColumn="AL_CONSUME_RATE" />
+              <Mapping SourceColumn="FINJUDGE_FLAG" DataSetColumn="FINJUDGE_FLAG" />
+              <Mapping SourceColumn="REFINE_LIME" DataSetColumn="REFINE_LIME" />
+              <Mapping SourceColumn="LIGHT_DOLOMITE_MAT" DataSetColumn="LIGHT_DOLOMITE_MAT" />
+              <Mapping SourceColumn="CAL_WEIGHT" DataSetColumn="CAL_WEIGHT" />
+              <Mapping SourceColumn="IRONTEMP" DataSetColumn="IRONTEMP" />
+              <Mapping SourceColumn="SMELT_PERIOD" DataSetColumn="SMELT_PERIOD" />
+              <Mapping SourceColumn="WAITSTEEL" DataSetColumn="WAITSTEEL" />
+              <Mapping SourceColumn="WAITTIME" DataSetColumn="WAITTIME" />
+              <Mapping SourceColumn="P2O5" DataSetColumn="P2O5" />
+              <Mapping SourceColumn="R" DataSetColumn="R" />
+              <Mapping SourceColumn="MN_FE_65" DataSetColumn="MN_FE_65" />
+              <Mapping SourceColumn="SICPYREXIA" DataSetColumn="SICPYREXIA" />
+              <Mapping SourceColumn="N2PRESSURE" DataSetColumn="N2PRESSURE" />
+              <Mapping SourceColumn="N_QITIYANG" DataSetColumn="N_QITIYANG" />
+              <Mapping SourceColumn="N_QITIYANG2" DataSetColumn="N_QITIYANG2" />
+              <Mapping SourceColumn="LFID" DataSetColumn="LFID" />
+              <Mapping SourceColumn="SPEEDCHANGE" DataSetColumn="SPEEDCHANGE" />
+              <Mapping SourceColumn="AUTOFLOW" DataSetColumn="AUTOFLOW" />
+              <Mapping SourceColumn="TEMPDATA" DataSetColumn="TEMPDATA" />
+              <Mapping SourceColumn="TEMPTIME" DataSetColumn="TEMPTIME" />
+              <Mapping SourceColumn="OXYDATA" DataSetColumn="OXYDATA" />
+              <Mapping SourceColumn="OXYTIME" DataSetColumn="OXYTIME" />
+              <Mapping SourceColumn="OXYTEMP" DataSetColumn="OXYTEMP" />
+              <Mapping SourceColumn="LF_SHIHUI" DataSetColumn="LF_SHIHUI" />
+              <Mapping SourceColumn="FZK" DataSetColumn="FZK" />
+              <Mapping SourceColumn="CJICHA" DataSetColumn="CJICHA" />
+              <Mapping SourceColumn="BEFORE_AR_TEMP_TIME" DataSetColumn="BEFORE_AR_TEMP_TIME" />
+              <Mapping SourceColumn="TAP_AR_TIME" DataSetColumn="TAP_AR_TIME" />
+              <Mapping SourceColumn="YKWEIGHT" DataSetColumn="YKWEIGHT" />
+              <Mapping SourceColumn="TAP_LVXIAN" DataSetColumn="TAP_LVXIAN" />
+              <Mapping SourceColumn="CU_IRON" DataSetColumn="CU_IRON" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOF" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsBOF" msprop:Generator_UserDSName="dsBOF">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TS_ORIGINALDATA" msprop:Generator_UserTableName="TS_ORIGINALDATA" msprop:Generator_RowEvArgName="TS_ORIGINALDATARowChangeEvent" msprop:Generator_TableVarName="tableTS_ORIGINALDATA" msprop:Generator_TablePropName="TS_ORIGINALDATA" msprop:Generator_RowDeletingName="TS_ORIGINALDATARowDeleting" msprop:Generator_RowChangingName="TS_ORIGINALDATARowChanging" msprop:Generator_RowDeletedName="TS_ORIGINALDATARowDeleted" msprop:Generator_RowEvHandlerName="TS_ORIGINALDATARowChangeEventHandler" msprop:Generator_TableClassName="TS_ORIGINALDATADataTable" msprop:Generator_RowChangedName="TS_ORIGINALDATARowChanged" msprop:Generator_RowClassName="TS_ORIGINALDATARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BOFID" msprop:Generator_ColumnVarNameInTable="columnBOFID" msprop:Generator_ColumnPropNameInRow="BOFID" msprop:Generator_ColumnPropNameInTable="BOFIDColumn" msprop:Generator_UserColumnName="BOFID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn" msprop:Generator_UserColumnName="LOGTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" msprop:Generator_UserColumnName="TEAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHIFT" msprop:Generator_ColumnVarNameInTable="columnSHIFT" msprop:Generator_ColumnPropNameInRow="SHIFT" msprop:Generator_ColumnPropNameInTable="SHIFTColumn" msprop:Generator_UserColumnName="SHIFT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEADFURNACE" msprop:Generator_ColumnVarNameInTable="columnHEADFURNACE" msprop:Generator_ColumnPropNameInRow="HEADFURNACE" msprop:Generator_ColumnPropNameInTable="HEADFURNACEColumn" msprop:Generator_UserColumnName="HEADFURNACE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASSISTANT" msprop:Generator_ColumnVarNameInTable="columnASSISTANT" msprop:Generator_ColumnPropNameInRow="ASSISTANT" msprop:Generator_ColumnPropNameInTable="ASSISTANTColumn" msprop:Generator_UserColumnName="ASSISTANT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECONDHAND" msprop:Generator_ColumnVarNameInTable="columnSECONDHAND" msprop:Generator_ColumnPropNameInRow="SECONDHAND" msprop:Generator_ColumnPropNameInTable="SECONDHANDColumn" msprop:Generator_UserColumnName="SECONDHAND" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATID" msprop:Generator_ColumnVarNameInTable="columnHEATID" msprop:Generator_ColumnPropNameInRow="HEATID" msprop:Generator_ColumnPropNameInTable="HEATIDColumn" msprop:Generator_UserColumnName="HEATID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FURNACEAGE" msprop:Generator_ColumnVarNameInTable="columnFURNACEAGE" msprop:Generator_ColumnPropNameInRow="FURNACEAGE" msprop:Generator_ColumnPropNameInTable="FURNACEAGEColumn" msprop:Generator_UserColumnName="FURNACEAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PLAN_STEELGRADE" msprop:Generator_ColumnVarNameInTable="columnPLAN_STEELGRADE" msprop:Generator_ColumnPropNameInRow="PLAN_STEELGRADE" msprop:Generator_ColumnPropNameInTable="PLAN_STEELGRADEColumn" msprop:Generator_UserColumnName="PLAN_STEELGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CASTINGNO" msprop:Generator_ColumnVarNameInTable="columnCASTINGNO" msprop:Generator_ColumnPropNameInRow="CASTINGNO" msprop:Generator_ColumnPropNameInTable="CASTINGNOColumn" msprop:Generator_UserColumnName="CASTINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRONWEIGHT" msprop:Generator_ColumnVarNameInTable="columnIRONWEIGHT" msprop:Generator_ColumnPropNameInRow="IRONWEIGHT" msprop:Generator_ColumnPropNameInTable="IRONWEIGHTColumn" msprop:Generator_UserColumnName="IRONWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SCRAPWEIGHT" msprop:Generator_ColumnVarNameInTable="columnSCRAPWEIGHT" msprop:Generator_ColumnPropNameInRow="SCRAPWEIGHT" msprop:Generator_ColumnPropNameInTable="SCRAPWEIGHTColumn" msprop:Generator_UserColumnName="SCRAPWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PIGIRONWEIGHT" msprop:Generator_ColumnVarNameInTable="columnPIGIRONWEIGHT" msprop:Generator_ColumnPropNameInRow="PIGIRONWEIGHT" msprop:Generator_ColumnPropNameInTable="PIGIRONWEIGHTColumn" msprop:Generator_UserColumnName="PIGIRONWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MIFID" msprop:Generator_ColumnVarNameInTable="columnMIFID" msprop:Generator_ColumnPropNameInRow="MIFID" msprop:Generator_ColumnPropNameInTable="MIFIDColumn" msprop:Generator_UserColumnName="MIFID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_IRON" msprop:Generator_ColumnVarNameInTable="columnS_IRON" msprop:Generator_ColumnPropNameInRow="S_IRON" msprop:Generator_ColumnPropNameInTable="S_IRONColumn" msprop:Generator_UserColumnName="S_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_IRON" msprop:Generator_ColumnVarNameInTable="columnSI_IRON" msprop:Generator_ColumnPropNameInRow="SI_IRON" msprop:Generator_ColumnPropNameInTable="SI_IRONColumn" msprop:Generator_UserColumnName="SI_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_IRON" msprop:Generator_ColumnVarNameInTable="columnP_IRON" msprop:Generator_ColumnPropNameInRow="P_IRON" msprop:Generator_ColumnPropNameInTable="P_IRONColumn" msprop:Generator_UserColumnName="P_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CHARGING_START_TIME" msprop:Generator_ColumnVarNameInTable="columnCHARGING_START_TIME" msprop:Generator_ColumnPropNameInRow="CHARGING_START_TIME" msprop:Generator_ColumnPropNameInTable="CHARGING_START_TIMEColumn" msprop:Generator_UserColumnName="CHARGING_START_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TAPPING_END_TIME" msprop:Generator_ColumnVarNameInTable="columnTAPPING_END_TIME" msprop:Generator_ColumnPropNameInRow="TAPPING_END_TIME" msprop:Generator_ColumnPropNameInTable="TAPPING_END_TIMEColumn" msprop:Generator_UserColumnName="TAPPING_END_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TOTAL_O2_PRESS" msprop:Generator_ColumnVarNameInTable="columnTOTAL_O2_PRESS" msprop:Generator_ColumnPropNameInRow="TOTAL_O2_PRESS" msprop:Generator_ColumnPropNameInTable="TOTAL_O2_PRESSColumn" msprop:Generator_UserColumnName="TOTAL_O2_PRESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WORK_O2_PRESS" msprop:Generator_ColumnVarNameInTable="columnWORK_O2_PRESS" msprop:Generator_ColumnPropNameInRow="WORK_O2_PRESS" msprop:Generator_ColumnPropNameInTable="WORK_O2_PRESSColumn" msprop:Generator_UserColumnName="WORK_O2_PRESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="O2_BLOW" msprop:Generator_ColumnVarNameInTable="columnO2_BLOW" msprop:Generator_ColumnPropNameInRow="O2_BLOW" msprop:Generator_ColumnPropNameInTable="O2_BLOWColumn" msprop:Generator_UserColumnName="O2_BLOW" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LANCE_AGE" msprop:Generator_ColumnVarNameInTable="columnLANCE_AGE" msprop:Generator_ColumnPropNameInRow="LANCE_AGE" msprop:Generator_ColumnPropNameInTable="LANCE_AGEColumn" msprop:Generator_UserColumnName="LANCE_AGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLOWO2_TIME" msprop:Generator_ColumnVarNameInTable="columnBLOWO2_TIME" msprop:Generator_ColumnPropNameInRow="BLOWO2_TIME" msprop:Generator_ColumnPropNameInTable="BLOWO2_TIMEColumn" msprop:Generator_UserColumnName="BLOWO2_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIME_MAT" msprop:Generator_ColumnVarNameInTable="columnLIME_MAT" msprop:Generator_ColumnPropNameInRow="LIME_MAT" msprop:Generator_ColumnPropNameInTable="LIME_MATColumn" msprop:Generator_UserColumnName="LIME_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAGNESIUM" msprop:Generator_ColumnVarNameInTable="columnMAGNESIUM" msprop:Generator_ColumnPropNameInRow="MAGNESIUM" msprop:Generator_ColumnPropNameInTable="MAGNESIUMColumn" msprop:Generator_UserColumnName="MAGNESIUM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLUORITE_MAT" msprop:Generator_ColumnVarNameInTable="columnFLUORITE_MAT" msprop:Generator_ColumnPropNameInRow="FLUORITE_MAT" msprop:Generator_ColumnPropNameInTable="FLUORITE_MATColumn" msprop:Generator_UserColumnName="FLUORITE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DOLOMITE_MAT" msprop:Generator_ColumnVarNameInTable="columnDOLOMITE_MAT" msprop:Generator_ColumnPropNameInRow="DOLOMITE_MAT" msprop:Generator_ColumnPropNameInTable="DOLOMITE_MATColumn" msprop:Generator_UserColumnName="DOLOMITE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FEO_MAT" msprop:Generator_ColumnVarNameInTable="columnFEO_MAT" msprop:Generator_ColumnPropNameInRow="FEO_MAT" msprop:Generator_ColumnPropNameInTable="FEO_MATColumn" msprop:Generator_UserColumnName="FEO_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOD_AGENT_MAT" msprop:Generator_ColumnVarNameInTable="columnMOD_AGENT_MAT" msprop:Generator_ColumnPropNameInRow="MOD_AGENT_MAT" msprop:Generator_ColumnPropNameInTable="MOD_AGENT_MATColumn" msprop:Generator_UserColumnName="MOD_AGENT_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REBLOW_COUNT" msprop:Generator_ColumnVarNameInTable="columnREBLOW_COUNT" msprop:Generator_ColumnPropNameInRow="REBLOW_COUNT" msprop:Generator_ColumnPropNameInTable="REBLOW_COUNTColumn" msprop:Generator_UserColumnName="REBLOW_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REBLOW_TIME" msprop:Generator_ColumnVarNameInTable="columnREBLOW_TIME" msprop:Generator_ColumnPropNameInRow="REBLOW_TIME" msprop:Generator_ColumnPropNameInTable="REBLOW_TIMEColumn" msprop:Generator_UserColumnName="REBLOW_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DOLOMITE_LAC" msprop:Generator_ColumnVarNameInTable="columnDOLOMITE_LAC" msprop:Generator_ColumnPropNameInRow="DOLOMITE_LAC" msprop:Generator_ColumnPropNameInTable="DOLOMITE_LACColumn" msprop:Generator_UserColumnName="DOLOMITE_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIME_LAC" msprop:Generator_ColumnVarNameInTable="columnLIME_LAC" msprop:Generator_ColumnPropNameInRow="LIME_LAC" msprop:Generator_ColumnPropNameInTable="LIME_LACColumn" msprop:Generator_UserColumnName="LIME_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOD_AGENT_LAC" msprop:Generator_ColumnVarNameInTable="columnMOD_AGENT_LAC" msprop:Generator_ColumnPropNameInRow="MOD_AGENT_LAC" msprop:Generator_ColumnPropNameInTable="MOD_AGENT_LACColumn" msprop:Generator_UserColumnName="MOD_AGENT_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LAC_TEMP" msprop:Generator_ColumnVarNameInTable="columnLAC_TEMP" msprop:Generator_ColumnPropNameInRow="LAC_TEMP" msprop:Generator_ColumnPropNameInTable="LAC_TEMPColumn" msprop:Generator_UserColumnName="LAC_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAPPING_TEMP" msprop:Generator_ColumnVarNameInTable="columnTAPPING_TEMP" msprop:Generator_ColumnPropNameInRow="TAPPING_TEMP" msprop:Generator_ColumnPropNameInTable="TAPPING_TEMPColumn" msprop:Generator_UserColumnName="TAPPING_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAPPING_OXYGEN" msprop:Generator_ColumnVarNameInTable="columnTAPPING_OXYGEN" msprop:Generator_ColumnPropNameInRow="TAPPING_OXYGEN" msprop:Generator_ColumnPropNameInTable="TAPPING_OXYGENColumn" msprop:Generator_UserColumnName="TAPPING_OXYGEN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LADLE_STATUS" msprop:Generator_ColumnVarNameInTable="columnLADLE_STATUS" msprop:Generator_ColumnPropNameInRow="LADLE_STATUS" msprop:Generator_ColumnPropNameInTable="LADLE_STATUSColumn" msprop:Generator_UserColumnName="LADLE_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C_LAC" msprop:Generator_ColumnVarNameInTable="columnC_LAC" msprop:Generator_ColumnPropNameInRow="C_LAC" msprop:Generator_ColumnPropNameInTable="C_LACColumn" msprop:Generator_UserColumnName="C_LAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_LAC" msprop:Generator_ColumnVarNameInTable="columnP_LAC" msprop:Generator_ColumnPropNameInRow="P_LAC" msprop:Generator_ColumnPropNameInTable="P_LACColumn" msprop:Generator_UserColumnName="P_LAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_LAC" msprop:Generator_ColumnVarNameInTable="columnS_LAC" msprop:Generator_ColumnPropNameInRow="S_LAC" msprop:Generator_ColumnPropNameInTable="S_LACColumn" msprop:Generator_UserColumnName="S_LAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAPHOLE_LIFE" msprop:Generator_ColumnVarNameInTable="columnTAPHOLE_LIFE" msprop:Generator_ColumnPropNameInRow="TAPHOLE_LIFE" msprop:Generator_ColumnPropNameInTable="TAPHOLE_LIFEColumn" msprop:Generator_UserColumnName="TAPHOLE_LIFE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAP_TIME" msprop:Generator_ColumnVarNameInTable="columnTAP_TIME" msprop:Generator_ColumnPropNameInRow="TAP_TIME" msprop:Generator_ColumnPropNameInTable="TAP_TIMEColumn" msprop:Generator_UserColumnName="TAP_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAPPING_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnTAPPING_WEIGHT" msprop:Generator_ColumnPropNameInRow="TAPPING_WEIGHT" msprop:Generator_ColumnPropNameInTable="TAPPING_WEIGHTColumn" msprop:Generator_UserColumnName="TAPPING_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DOWN_SLAG_FLAG" msprop:Generator_ColumnVarNameInTable="columnDOWN_SLAG_FLAG" msprop:Generator_ColumnPropNameInRow="DOWN_SLAG_FLAG" msprop:Generator_ColumnPropNameInTable="DOWN_SLAG_FLAGColumn" msprop:Generator_UserColumnName="DOWN_SLAG_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPLASHING_TIME" msprop:Generator_ColumnVarNameInTable="columnSPLASHING_TIME" msprop:Generator_ColumnPropNameInRow="SPLASHING_TIME" msprop:Generator_ColumnPropNameInTable="SPLASHING_TIMEColumn" msprop:Generator_UserColumnName="SPLASHING_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ELECTRODE_TABLETS" msprop:Generator_ColumnVarNameInTable="columnELECTRODE_TABLETS" msprop:Generator_ColumnPropNameInRow="ELECTRODE_TABLETS" msprop:Generator_ColumnPropNameInTable="ELECTRODE_TABLETSColumn" msprop:Generator_UserColumnName="ELECTRODE_TABLETS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURIZING_AGENTS" msprop:Generator_ColumnVarNameInTable="columnCARBURIZING_AGENTS" msprop:Generator_ColumnPropNameInRow="CARBURIZING_AGENTS" msprop:Generator_ColumnPropNameInTable="CARBURIZING_AGENTSColumn" msprop:Generator_UserColumnName="CARBURIZING_AGENTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FE" msprop:Generator_ColumnVarNameInTable="columnSI_FE" msprop:Generator_ColumnPropNameInRow="SI_FE" msprop:Generator_ColumnPropNameInTable="SI_FEColumn" msprop:Generator_UserColumnName="SI_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_AL_FERROSILICON" msprop:Generator_ColumnVarNameInTable="columnLOW_AL_FERROSILICON" msprop:Generator_ColumnPropNameInRow="LOW_AL_FERROSILICON" msprop:Generator_ColumnPropNameInTable="LOW_AL_FERROSILICONColumn" msprop:Generator_UserColumnName="LOW_AL_FERROSILICON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MICRO_AL_FERROSILICON" msprop:Generator_ColumnVarNameInTable="columnMICRO_AL_FERROSILICON" msprop:Generator_ColumnPropNameInRow="MICRO_AL_FERROSILICON" msprop:Generator_ColumnPropNameInTable="MICRO_AL_FERROSILICONColumn" msprop:Generator_UserColumnName="MICRO_AL_FERROSILICON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_MN" msprop:Generator_ColumnVarNameInTable="columnSI_MN" msprop:Generator_ColumnPropNameInRow="SI_MN" msprop:Generator_ColumnPropNameInTable="SI_MNColumn" msprop:Generator_UserColumnName="SI_MN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_FERROMANGANESE" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_FERROMANGANESE" msprop:Generator_ColumnPropNameInRow="HIGH_C_FERROMANGANESE" msprop:Generator_ColumnPropNameInTable="HIGH_C_FERROMANGANESEColumn" msprop:Generator_UserColumnName="HIGH_C_FERROMANGANESE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MEDIUM_C_FERROMANGANESE" msprop:Generator_ColumnVarNameInTable="columnMEDIUM_C_FERROMANGANESE" msprop:Generator_ColumnPropNameInRow="MEDIUM_C_FERROMANGANESE" msprop:Generator_ColumnPropNameInTable="MEDIUM_C_FERROMANGANESEColumn" msprop:Generator_UserColumnName="MEDIUM_C_FERROMANGANESE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_AL_FE_ALLOY" msprop:Generator_ColumnVarNameInTable="columnMN_AL_FE_ALLOY" msprop:Generator_ColumnPropNameInRow="MN_AL_FE_ALLOY" msprop:Generator_ColumnPropNameInTable="MN_AL_FE_ALLOYColumn" msprop:Generator_UserColumnName="MN_AL_FE_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SIC" msprop:Generator_ColumnVarNameInTable="columnSIC" msprop:Generator_ColumnPropNameInRow="SIC" msprop:Generator_ColumnPropNameInTable="SICColumn" msprop:Generator_UserColumnName="SIC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CALCIUM_CARBIDE" msprop:Generator_ColumnVarNameInTable="columnCALCIUM_CARBIDE" msprop:Generator_ColumnPropNameInRow="CALCIUM_CARBIDE" msprop:Generator_ColumnPropNameInTable="CALCIUM_CARBIDEColumn" msprop:Generator_UserColumnName="CALCIUM_CARBIDE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_FE" msprop:Generator_ColumnVarNameInTable="columnMO_FE" msprop:Generator_ColumnPropNameInRow="MO_FE" msprop:Generator_ColumnPropNameInTable="MO_FEColumn" msprop:Generator_UserColumnName="MO_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_FERROCHROME" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_FERROCHROME" msprop:Generator_ColumnPropNameInRow="HIGH_C_FERROCHROME" msprop:Generator_ColumnPropNameInTable="HIGH_C_FERROCHROMEColumn" msprop:Generator_UserColumnName="HIGH_C_FERROCHROME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_TI_HIGH_C_FERROCHROME" msprop:Generator_ColumnVarNameInTable="columnLOW_TI_HIGH_C_FERROCHROME" msprop:Generator_ColumnPropNameInRow="LOW_TI_HIGH_C_FERROCHROME" msprop:Generator_ColumnPropNameInTable="LOW_TI_HIGH_C_FERROCHROMEColumn" msprop:Generator_UserColumnName="LOW_TI_HIGH_C_FERROCHROME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_C_FERROCHROME" msprop:Generator_ColumnVarNameInTable="columnLOW_C_FERROCHROME" msprop:Generator_ColumnPropNameInRow="LOW_C_FERROCHROME" msprop:Generator_ColumnPropNameInTable="LOW_C_FERROCHROMEColumn" msprop:Generator_UserColumnName="LOW_C_FERROCHROME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_FE" msprop:Generator_ColumnVarNameInTable="columnV_FE" msprop:Generator_ColumnPropNameInRow="V_FE" msprop:Generator_ColumnPropNameInTable="V_FEColumn" msprop:Generator_UserColumnName="V_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRE_SLAG" msprop:Generator_ColumnVarNameInTable="columnPRE_SLAG" msprop:Generator_ColumnPropNameInRow="PRE_SLAG" msprop:Generator_ColumnPropNameInTable="PRE_SLAGColumn" msprop:Generator_UserColumnName="PRE_SLAG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REFINING_SYNTHETIC_SLAG_TYPE" msprop:Generator_ColumnVarNameInTable="columnREFINING_SYNTHETIC_SLAG_TYPE" msprop:Generator_ColumnPropNameInRow="REFINING_SYNTHETIC_SLAG_TYPE" msprop:Generator_ColumnPropNameInTable="REFINING_SYNTHETIC_SLAG_TYPEColumn" msprop:Generator_UserColumnName="REFINING_SYNTHETIC_SLAG_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFINING_SYNTHETIC_SLAG_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnREFINING_SYNTHETIC_SLAG_WEIGHT" msprop:Generator_ColumnPropNameInRow="REFINING_SYNTHETIC_SLAG_WEIGHT" msprop:Generator_ColumnPropNameInTable="REFINING_SYNTHETIC_SLAG_WEIGHTColumn" msprop:Generator_UserColumnName="REFINING_SYNTHETIC_SLAG_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLUORITE_TOP" msprop:Generator_ColumnVarNameInTable="columnFLUORITE_TOP" msprop:Generator_ColumnPropNameInRow="FLUORITE_TOP" msprop:Generator_ColumnPropNameInTable="FLUORITE_TOPColumn" msprop:Generator_UserColumnName="FLUORITE_TOP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIME_TOP" msprop:Generator_ColumnVarNameInTable="columnLIME_TOP" msprop:Generator_ColumnPropNameInRow="LIME_TOP" msprop:Generator_ColumnPropNameInTable="LIME_TOPColumn" msprop:Generator_UserColumnName="LIME_TOP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_AL_FE_O2" msprop:Generator_ColumnVarNameInTable="columnSI_AL_FE_O2" msprop:Generator_ColumnPropNameInRow="SI_AL_FE_O2" msprop:Generator_ColumnPropNameInTable="SI_AL_FE_O2Column" msprop:Generator_UserColumnName="SI_AL_FE_O2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_AL_FE_O2" msprop:Generator_ColumnVarNameInTable="columnMN_AL_FE_O2" msprop:Generator_ColumnPropNameInRow="MN_AL_FE_O2" msprop:Generator_ColumnPropNameInTable="MN_AL_FE_O2Column" msprop:Generator_UserColumnName="MN_AL_FE_O2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL" msprop:Generator_ColumnVarNameInTable="columnAL" msprop:Generator_ColumnPropNameInRow="AL" msprop:Generator_ColumnPropNameInTable="ALColumn" msprop:Generator_UserColumnName="AL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_BEFORE_BLOWAR" msprop:Generator_ColumnVarNameInTable="columnTEMP_BEFORE_BLOWAR" msprop:Generator_ColumnPropNameInRow="TEMP_BEFORE_BLOWAR" msprop:Generator_ColumnPropNameInTable="TEMP_BEFORE_BLOWARColumn" msprop:Generator_UserColumnName="TEMP_BEFORE_BLOWAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="O2_BEFORE_BLOWAR" msprop:Generator_ColumnVarNameInTable="columnO2_BEFORE_BLOWAR" msprop:Generator_ColumnPropNameInRow="O2_BEFORE_BLOWAR" msprop:Generator_ColumnPropNameInTable="O2_BEFORE_BLOWARColumn" msprop:Generator_UserColumnName="O2_BEFORE_BLOWAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_AL_FE_REO2" msprop:Generator_ColumnVarNameInTable="columnSI_AL_FE_REO2" msprop:Generator_ColumnPropNameInRow="SI_AL_FE_REO2" msprop:Generator_ColumnPropNameInTable="SI_AL_FE_REO2Column" msprop:Generator_UserColumnName="SI_AL_FE_REO2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_AL_FE_REO2" msprop:Generator_ColumnVarNameInTable="columnMN_AL_FE_REO2" msprop:Generator_ColumnPropNameInRow="MN_AL_FE_REO2" msprop:Generator_ColumnPropNameInTable="MN_AL_FE_REO2Column" msprop:Generator_UserColumnName="MN_AL_FE_REO2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_BLOWNAR" msprop:Generator_ColumnVarNameInTable="columnTEMP_BLOWNAR" msprop:Generator_ColumnPropNameInRow="TEMP_BLOWNAR" msprop:Generator_ColumnPropNameInTable="TEMP_BLOWNARColumn" msprop:Generator_UserColumnName="TEMP_BLOWNAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="O2_BLOWNAR" msprop:Generator_ColumnVarNameInTable="columnO2_BLOWNAR" msprop:Generator_ColumnPropNameInRow="O2_BLOWNAR" msprop:Generator_ColumnPropNameInTable="O2_BLOWNARColumn" msprop:Generator_UserColumnName="O2_BLOWNAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLOW_MODE" msprop:Generator_ColumnVarNameInTable="columnBLOW_MODE" msprop:Generator_ColumnPropNameInRow="BLOW_MODE" msprop:Generator_ColumnPropNameInTable="BLOW_MODEColumn" msprop:Generator_UserColumnName="BLOW_MODE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNE_FLAG" msprop:Generator_ColumnVarNameInTable="columnTUNE_FLAG" msprop:Generator_ColumnPropNameInRow="TUNE_FLAG" msprop:Generator_ColumnPropNameInTable="TUNE_FLAGColumn" msprop:Generator_UserColumnName="TUNE_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOWAR_TIME" msprop:Generator_ColumnVarNameInTable="columnBLOWAR_TIME" msprop:Generator_ColumnPropNameInRow="BLOWAR_TIME" msprop:Generator_ColumnPropNameInTable="BLOWAR_TIMEColumn" msprop:Generator_UserColumnName="BLOWAR_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FEED_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnFEED_WEIGHT" msprop:Generator_ColumnPropNameInRow="FEED_WEIGHT" msprop:Generator_ColumnPropNameInTable="FEED_WEIGHTColumn" msprop:Generator_UserColumnName="FEED_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnC_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="C_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="C_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="C_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnSI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="SI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="SI_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="SI_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnMN_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="MN_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="MN_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="MN_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnP_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="P_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="P_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="P_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnS_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="S_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="S_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="S_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnAL_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="AL_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="AL_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="AL_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnV_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="V_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="V_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="V_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnTI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="TI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="TI_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="TI_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnMO_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="MO_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="MO_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="MO_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnB_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="B_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="B_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="B_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnCR_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="CR_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="CR_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="CR_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_FIN" msprop:Generator_ColumnVarNameInTable="columnC_FIN" msprop:Generator_ColumnPropNameInRow="C_FIN" msprop:Generator_ColumnPropNameInTable="C_FINColumn" msprop:Generator_UserColumnName="C_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FIN" msprop:Generator_ColumnVarNameInTable="columnSI_FIN" msprop:Generator_ColumnPropNameInRow="SI_FIN" msprop:Generator_ColumnPropNameInTable="SI_FINColumn" msprop:Generator_UserColumnName="SI_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_FIN" msprop:Generator_ColumnVarNameInTable="columnMN_FIN" msprop:Generator_ColumnPropNameInRow="MN_FIN" msprop:Generator_ColumnPropNameInTable="MN_FINColumn" msprop:Generator_UserColumnName="MN_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_FIN" msprop:Generator_ColumnVarNameInTable="columnP_FIN" msprop:Generator_ColumnPropNameInRow="P_FIN" msprop:Generator_ColumnPropNameInTable="P_FINColumn" msprop:Generator_UserColumnName="P_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_FIN" msprop:Generator_ColumnVarNameInTable="columnS_FIN" msprop:Generator_ColumnPropNameInRow="S_FIN" msprop:Generator_ColumnPropNameInTable="S_FINColumn" msprop:Generator_UserColumnName="S_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_FIN" msprop:Generator_ColumnVarNameInTable="columnAL_FIN" msprop:Generator_ColumnPropNameInRow="AL_FIN" msprop:Generator_ColumnPropNameInTable="AL_FINColumn" msprop:Generator_UserColumnName="AL_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_FIN" msprop:Generator_ColumnVarNameInTable="columnV_FIN" msprop:Generator_ColumnPropNameInRow="V_FIN" msprop:Generator_ColumnPropNameInTable="V_FINColumn" msprop:Generator_UserColumnName="V_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_FIN" msprop:Generator_ColumnVarNameInTable="columnTI_FIN" msprop:Generator_ColumnPropNameInRow="TI_FIN" msprop:Generator_ColumnPropNameInTable="TI_FINColumn" msprop:Generator_UserColumnName="TI_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_FIN" msprop:Generator_ColumnVarNameInTable="columnMO_FIN" msprop:Generator_ColumnPropNameInRow="MO_FIN" msprop:Generator_ColumnPropNameInTable="MO_FINColumn" msprop:Generator_UserColumnName="MO_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_FIN" msprop:Generator_ColumnVarNameInTable="columnB_FIN" msprop:Generator_ColumnPropNameInRow="B_FIN" msprop:Generator_ColumnPropNameInTable="B_FINColumn" msprop:Generator_UserColumnName="B_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_FIN" msprop:Generator_ColumnVarNameInTable="columnCR_FIN" msprop:Generator_ColumnPropNameInRow="CR_FIN" msprop:Generator_ColumnPropNameInTable="CR_FINColumn" msprop:Generator_UserColumnName="CR_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAO" msprop:Generator_ColumnVarNameInTable="columnCAO" msprop:Generator_ColumnPropNameInRow="CAO" msprop:Generator_ColumnPropNameInTable="CAOColumn" msprop:Generator_UserColumnName="CAO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SIO2" msprop:Generator_ColumnVarNameInTable="columnSIO2" msprop:Generator_ColumnPropNameInRow="SIO2" msprop:Generator_ColumnPropNameInTable="SIO2Column" msprop:Generator_UserColumnName="SIO2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MGO" msprop:Generator_ColumnVarNameInTable="columnMGO" msprop:Generator_ColumnPropNameInRow="MGO" msprop:Generator_ColumnPropNameInTable="MGOColumn" msprop:Generator_UserColumnName="MGO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TFE" msprop:Generator_ColumnVarNameInTable="columnTFE" msprop:Generator_ColumnPropNameInRow="TFE" msprop:Generator_ColumnPropNameInTable="TFEColumn" msprop:Generator_UserColumnName="TFE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BOTTOMFLOW1" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW1" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW1" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW1Column" msprop:Generator_UserColumnName="BOTTOMFLOW1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOTTOMFLOW2" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW2" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW2" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW2Column" msprop:Generator_UserColumnName="BOTTOMFLOW2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOTTOMFLOW3" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW3" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW3" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW3Column" msprop:Generator_UserColumnName="BOTTOMFLOW3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOTTOMFLOW4" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW4" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW4" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW4Column" msprop:Generator_UserColumnName="BOTTOMFLOW4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOTTOMFLOW5" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW5" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW5" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW5Column" msprop:Generator_UserColumnName="BOTTOMFLOW5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOTTOMFLOW6" msprop:Generator_ColumnVarNameInTable="columnBOTTOMFLOW6" msprop:Generator_ColumnPropNameInRow="BOTTOMFLOW6" msprop:Generator_ColumnPropNameInTable="BOTTOMFLOW6Column" msprop:Generator_UserColumnName="BOTTOMFLOW6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WAITING_TIME" msprop:Generator_ColumnVarNameInTable="columnWAITING_TIME" msprop:Generator_ColumnPropNameInRow="WAITING_TIME" msprop:Generator_ColumnPropNameInTable="WAITING_TIMEColumn" msprop:Generator_UserColumnName="WAITING_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOTE" msprop:Generator_ColumnVarNameInTable="columnNOTE" msprop:Generator_ColumnPropNameInRow="NOTE" msprop:Generator_ColumnPropNameInTable="NOTEColumn" msprop:Generator_UserColumnName="NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FURNACE_LINE_STATUS" msprop:Generator_ColumnVarNameInTable="columnFURNACE_LINE_STATUS" msprop:Generator_ColumnPropNameInRow="FURNACE_LINE_STATUS" msprop:Generator_ColumnPropNameInTable="FURNACE_LINE_STATUSColumn" msprop:Generator_UserColumnName="FURNACE_LINE_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCRAPSTATUS" msprop:Generator_ColumnVarNameInTable="columnSCRAPSTATUS" msprop:Generator_ColumnPropNameInRow="SCRAPSTATUS" msprop:Generator_ColumnPropNameInTable="SCRAPSTATUSColumn" msprop:Generator_UserColumnName="SCRAPSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FEP_ALLOY" msprop:Generator_ColumnVarNameInTable="columnFEP_ALLOY" msprop:Generator_ColumnPropNameInRow="FEP_ALLOY" msprop:Generator_ColumnPropNameInTable="FEP_ALLOYColumn" msprop:Generator_UserColumnName="FEP_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FES_ALLOY" msprop:Generator_ColumnVarNameInTable="columnFES_ALLOY" msprop:Generator_ColumnPropNameInRow="FES_ALLOY" msprop:Generator_ColumnPropNameInTable="FES_ALLOYColumn" msprop:Generator_UserColumnName="FES_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NIBOARD_ALLOY" msprop:Generator_ColumnVarNameInTable="columnNIBOARD_ALLOY" msprop:Generator_ColumnPropNameInRow="NIBOARD_ALLOY" msprop:Generator_ColumnPropNameInTable="NIBOARD_ALLOYColumn" msprop:Generator_UserColumnName="NIBOARD_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_FIN" msprop:Generator_ColumnVarNameInTable="columnCU_FIN" msprop:Generator_ColumnPropNameInRow="CU_FIN" msprop:Generator_ColumnPropNameInTable="CU_FINColumn" msprop:Generator_UserColumnName="CU_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_FIN" msprop:Generator_ColumnVarNameInTable="columnNI_FIN" msprop:Generator_ColumnPropNameInRow="NI_FIN" msprop:Generator_ColumnPropNameInTable="NI_FINColumn" msprop:Generator_UserColumnName="NI_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnCU_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="CU_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="CU_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="CU_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnNI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="NI_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="NI_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="NI_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALV_MAT" msprop:Generator_ColumnVarNameInTable="columnALV_MAT" msprop:Generator_ColumnPropNameInRow="ALV_MAT" msprop:Generator_ColumnPropNameInTable="ALV_MATColumn" msprop:Generator_UserColumnName="ALV_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SIO2_MAT" msprop:Generator_ColumnVarNameInTable="columnSIO2_MAT" msprop:Generator_ColumnPropNameInRow="SIO2_MAT" msprop:Generator_ColumnPropNameInTable="SIO2_MATColumn" msprop:Generator_UserColumnName="SIO2_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_BEF_AR_FLAG" msprop:Generator_ColumnVarNameInTable="columnTEMP_BEF_AR_FLAG" msprop:Generator_ColumnPropNameInRow="TEMP_BEF_AR_FLAG" msprop:Generator_ColumnPropNameInTable="TEMP_BEF_AR_FLAGColumn" msprop:Generator_UserColumnName="TEMP_BEF_AR_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RETURN_STEEL_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnRETURN_STEEL_WEIGHT" msprop:Generator_ColumnPropNameInRow="RETURN_STEEL_WEIGHT" msprop:Generator_ColumnPropNameInTable="RETURN_STEEL_WEIGHTColumn" msprop:Generator_UserColumnName="RETURN_STEEL_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEATNUM_CASTING" msprop:Generator_ColumnVarNameInTable="columnHEATNUM_CASTING" msprop:Generator_ColumnPropNameInRow="HEATNUM_CASTING" msprop:Generator_ColumnPropNameInTable="HEATNUM_CASTINGColumn" msprop:Generator_UserColumnName="HEATNUM_CASTING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATNUM_TUNDISH" msprop:Generator_ColumnVarNameInTable="columnHEATNUM_TUNDISH" msprop:Generator_ColumnPropNameInRow="HEATNUM_TUNDISH" msprop:Generator_ColumnPropNameInTable="HEATNUM_TUNDISHColumn" msprop:Generator_UserColumnName="HEATNUM_TUNDISH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXCEPT" msprop:Generator_ColumnVarNameInTable="columnEXCEPT" msprop:Generator_ColumnPropNameInRow="EXCEPT" msprop:Generator_ColumnPropNameInTable="EXCEPTColumn" msprop:Generator_UserColumnName="EXCEPT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLE_NO" msprop:Generator_ColumnVarNameInTable="columnLADLE_NO" msprop:Generator_ColumnPropNameInRow="LADLE_NO" msprop:Generator_ColumnPropNameInTable="LADLE_NOColumn" msprop:Generator_UserColumnName="LADLE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TI_IRON" msprop:Generator_ColumnVarNameInTable="columnTI_IRON" msprop:Generator_ColumnPropNameInRow="TI_IRON" msprop:Generator_ColumnPropNameInTable="TI_IRONColumn" msprop:Generator_UserColumnName="TI_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_IRON" msprop:Generator_ColumnVarNameInTable="columnMN_IRON" msprop:Generator_ColumnPropNameInRow="MN_IRON" msprop:Generator_ColumnPropNameInTable="MN_IRONColumn" msprop:Generator_UserColumnName="MN_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_IRON" msprop:Generator_ColumnVarNameInTable="columnC_IRON" msprop:Generator_ColumnPropNameInRow="C_IRON" msprop:Generator_ColumnPropNameInTable="C_IRONColumn" msprop:Generator_UserColumnName="C_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_FE_ALLOY" msprop:Generator_ColumnVarNameInTable="columnSI_FE_ALLOY" msprop:Generator_ColumnPropNameInRow="SI_FE_ALLOY" msprop:Generator_ColumnPropNameInTable="SI_FE_ALLOYColumn" msprop:Generator_UserColumnName="SI_FE_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_C_MN_FE_ALLOY" msprop:Generator_ColumnVarNameInTable="columnLOW_C_MN_FE_ALLOY" msprop:Generator_ColumnPropNameInRow="LOW_C_MN_FE_ALLOY" msprop:Generator_ColumnPropNameInTable="LOW_C_MN_FE_ALLOYColumn" msprop:Generator_UserColumnName="LOW_C_MN_FE_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROTOCOL" msprop:Generator_ColumnVarNameInTable="columnPROTOCOL" msprop:Generator_ColumnPropNameInRow="PROTOCOL" msprop:Generator_ColumnPropNameInTable="PROTOCOLColumn" msprop:Generator_UserColumnName="PROTOCOL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_TEMP_FLAG" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_TEMP_FLAG" msprop:Generator_ColumnPropNameInRow="TUNDISH_TEMP_FLAG" msprop:Generator_ColumnPropNameInTable="TUNDISH_TEMP_FLAGColumn" msprop:Generator_UserColumnName="TUNDISH_TEMP_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEQ_FIN" msprop:Generator_ColumnVarNameInTable="columnCEQ_FIN" msprop:Generator_ColumnPropNameInRow="CEQ_FIN" msprop:Generator_ColumnPropNameInTable="CEQ_FINColumn" msprop:Generator_UserColumnName="CEQ_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_BA" msprop:Generator_ColumnVarNameInTable="columnSI_BA" msprop:Generator_ColumnPropNameInRow="SI_BA" msprop:Generator_ColumnPropNameInTable="SI_BAColumn" msprop:Generator_UserColumnName="SI_BA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L_S_ELECTRODE_TABLETS" msprop:Generator_ColumnVarNameInTable="columnL_S_ELECTRODE_TABLETS" msprop:Generator_ColumnPropNameInRow="L_S_ELECTRODE_TABLETS" msprop:Generator_ColumnPropNameInTable="L_S_ELECTRODE_TABLETSColumn" msprop:Generator_UserColumnName="L_S_ELECTRODE_TABLETS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FINAL_STEELGRADE" msprop:Generator_ColumnVarNameInTable="columnFINAL_STEELGRADE" msprop:Generator_ColumnPropNameInRow="FINAL_STEELGRADE" msprop:Generator_ColumnPropNameInTable="FINAL_STEELGRADEColumn" msprop:Generator_UserColumnName="FINAL_STEELGRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHANGE_REASON" msprop:Generator_ColumnVarNameInTable="columnCHANGE_REASON" msprop:Generator_ColumnPropNameInRow="CHANGE_REASON" msprop:Generator_ColumnPropNameInTable="CHANGE_REASONColumn" msprop:Generator_UserColumnName="CHANGE_REASON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEMP_AFT_AR_FLAG" msprop:Generator_ColumnVarNameInTable="columnTEMP_AFT_AR_FLAG" msprop:Generator_ColumnPropNameInRow="TEMP_AFT_AR_FLAG" msprop:Generator_ColumnPropNameInTable="TEMP_AFT_AR_FLAGColumn" msprop:Generator_UserColumnName="TEMP_AFT_AR_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COLD_MAT_CUNSUME" msprop:Generator_ColumnVarNameInTable="columnCOLD_MAT_CUNSUME" msprop:Generator_ColumnPropNameInRow="COLD_MAT_CUNSUME" msprop:Generator_ColumnPropNameInTable="COLD_MAT_CUNSUMEColumn" msprop:Generator_UserColumnName="COLD_MAT_CUNSUME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRESSURE_SPRAY_AGENT" msprop:Generator_ColumnVarNameInTable="columnPRESSURE_SPRAY_AGENT" msprop:Generator_ColumnPropNameInRow="PRESSURE_SPRAY_AGENT" msprop:Generator_ColumnPropNameInTable="PRESSURE_SPRAY_AGENTColumn" msprop:Generator_UserColumnName="PRESSURE_SPRAY_AGENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COPPER_PLATE" msprop:Generator_ColumnVarNameInTable="columnCOPPER_PLATE" msprop:Generator_ColumnPropNameInRow="COPPER_PLATE" msprop:Generator_ColumnPropNameInTable="COPPER_PLATEColumn" msprop:Generator_UserColumnName="COPPER_PLATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_LI" msprop:Generator_ColumnVarNameInTable="columnAL_LI" msprop:Generator_ColumnPropNameInRow="AL_LI" msprop:Generator_ColumnPropNameInTable="AL_LIColumn" msprop:Generator_UserColumnName="AL_LI" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JP_FLUORITE_TOP" msprop:Generator_ColumnVarNameInTable="columnJP_FLUORITE_TOP" msprop:Generator_ColumnPropNameInRow="JP_FLUORITE_TOP" msprop:Generator_ColumnPropNameInTable="JP_FLUORITE_TOPColumn" msprop:Generator_UserColumnName="JP_FLUORITE_TOP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALS_FIN" msprop:Generator_ColumnVarNameInTable="columnALS_FIN" msprop:Generator_ColumnPropNameInRow="ALS_FIN" msprop:Generator_ColumnPropNameInTable="ALS_FINColumn" msprop:Generator_UserColumnName="ALS_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACTPROTOCOL" msprop:Generator_ColumnVarNameInTable="columnACTPROTOCOL" msprop:Generator_ColumnPropNameInRow="ACTPROTOCOL" msprop:Generator_ColumnPropNameInTable="ACTPROTOCOLColumn" msprop:Generator_UserColumnName="ACTPROTOCOL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFINE_TYPE" msprop:Generator_ColumnVarNameInTable="columnREFINE_TYPE" msprop:Generator_ColumnPropNameInRow="REFINE_TYPE" msprop:Generator_ColumnPropNameInTable="REFINE_TYPEColumn" msprop:Generator_UserColumnName="REFINE_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BORON_FE" msprop:Generator_ColumnVarNameInTable="columnBORON_FE" msprop:Generator_ColumnPropNameInRow="BORON_FE" msprop:Generator_ColumnPropNameInTable="BORON_FEColumn" msprop:Generator_UserColumnName="BORON_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HI_TI_FE" msprop:Generator_ColumnVarNameInTable="columnHI_TI_FE" msprop:Generator_ColumnPropNameInRow="HI_TI_FE" msprop:Generator_ColumnPropNameInTable="HI_TI_FEColumn" msprop:Generator_UserColumnName="HI_TI_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CORD_STEEL_WOLLASTONITE" msprop:Generator_ColumnVarNameInTable="columnCORD_STEEL_WOLLASTONITE" msprop:Generator_ColumnPropNameInRow="CORD_STEEL_WOLLASTONITE" msprop:Generator_ColumnPropNameInTable="CORD_STEEL_WOLLASTONITEColumn" msprop:Generator_UserColumnName="CORD_STEEL_WOLLASTONITE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROCESS_PATH" msprop:Generator_ColumnVarNameInTable="columnPROCESS_PATH" msprop:Generator_ColumnPropNameInRow="PROCESS_PATH" msprop:Generator_ColumnPropNameInTable="PROCESS_PATHColumn" msprop:Generator_UserColumnName="PROCESS_PATH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SN_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnSN_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="SN_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="SN_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="SN_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PB_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnPB_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="PB_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="PB_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="PB_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SB_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnSB_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="SB_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="SB_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="SB_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AS_ARRIVAL_ELEMENT" msprop:Generator_ColumnVarNameInTable="columnAS_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInRow="AS_ARRIVAL_ELEMENT" msprop:Generator_ColumnPropNameInTable="AS_ARRIVAL_ELEMENTColumn" msprop:Generator_UserColumnName="AS_ARRIVAL_ELEMENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SN_FIN" msprop:Generator_ColumnVarNameInTable="columnSN_FIN" msprop:Generator_ColumnPropNameInRow="SN_FIN" msprop:Generator_ColumnPropNameInTable="SN_FINColumn" msprop:Generator_UserColumnName="SN_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AS_FIN" msprop:Generator_ColumnVarNameInTable="columnAS_FIN" msprop:Generator_ColumnPropNameInRow="AS_FIN" msprop:Generator_ColumnPropNameInTable="AS_FINColumn" msprop:Generator_UserColumnName="AS_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PB_FIN" msprop:Generator_ColumnVarNameInTable="columnPB_FIN" msprop:Generator_ColumnPropNameInRow="PB_FIN" msprop:Generator_ColumnPropNameInTable="PB_FINColumn" msprop:Generator_UserColumnName="PB_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SB_FIN" msprop:Generator_ColumnVarNameInTable="columnSB_FIN" msprop:Generator_ColumnPropNameInRow="SB_FIN" msprop:Generator_ColumnPropNameInTable="SB_FINColumn" msprop:Generator_UserColumnName="SB_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIMESTONE_MAT" msprop:Generator_ColumnVarNameInTable="columnLIMESTONE_MAT" msprop:Generator_ColumnPropNameInRow="LIMESTONE_MAT" msprop:Generator_ColumnPropNameInTable="LIMESTONE_MATColumn" msprop:Generator_UserColumnName="LIMESTONE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CA_FIN" msprop:Generator_ColumnVarNameInTable="columnCA_FIN" msprop:Generator_ColumnPropNameInRow="CA_FIN" msprop:Generator_ColumnPropNameInTable="CA_FINColumn" msprop:Generator_UserColumnName="CA_FIN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EL_MN" msprop:Generator_ColumnVarNameInTable="columnEL_MN" msprop:Generator_ColumnPropNameInRow="EL_MN" msprop:Generator_ColumnPropNameInTable="EL_MNColumn" msprop:Generator_UserColumnName="EL_MN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_LAC" msprop:Generator_ColumnVarNameInTable="columnMN_LAC" msprop:Generator_ColumnPropNameInRow="MN_LAC" msprop:Generator_ColumnPropNameInTable="MN_LACColumn" msprop:Generator_UserColumnName="MN_LAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARBURANT_01" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_01" msprop:Generator_ColumnPropNameInRow="CARBURANT_01" msprop:Generator_ColumnPropNameInTable="CARBURANT_01Column" msprop:Generator_UserColumnName="CARBURANT_01" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURANT_02" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_02" msprop:Generator_ColumnPropNameInRow="CARBURANT_02" msprop:Generator_ColumnPropNameInTable="CARBURANT_02Column" msprop:Generator_UserColumnName="CARBURANT_02" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURANT_03" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_03" msprop:Generator_ColumnPropNameInRow="CARBURANT_03" msprop:Generator_ColumnPropNameInTable="CARBURANT_03Column" msprop:Generator_UserColumnName="CARBURANT_03" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURANT_04" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_04" msprop:Generator_ColumnPropNameInRow="CARBURANT_04" msprop:Generator_ColumnPropNameInTable="CARBURANT_04Column" msprop:Generator_UserColumnName="CARBURANT_04" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURANT_05" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_05" msprop:Generator_ColumnPropNameInRow="CARBURANT_05" msprop:Generator_ColumnPropNameInTable="CARBURANT_05Column" msprop:Generator_UserColumnName="CARBURANT_05" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BIG_SINTER" msprop:Generator_ColumnVarNameInTable="columnBIG_SINTER" msprop:Generator_ColumnPropNameInRow="BIG_SINTER" msprop:Generator_ColumnPropNameInTable="BIG_SINTERColumn" msprop:Generator_UserColumnName="BIG_SINTER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QUARTZITE" msprop:Generator_ColumnVarNameInTable="columnQUARTZITE" msprop:Generator_ColumnPropNameInRow="QUARTZITE" msprop:Generator_ColumnPropNameInTable="QUARTZITEColumn" msprop:Generator_UserColumnName="QUARTZITE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THREE_ELECTION_SCRAPWEIGHT" msprop:Generator_ColumnVarNameInTable="columnTHREE_ELECTION_SCRAPWEIGHT" msprop:Generator_ColumnPropNameInRow="THREE_ELECTION_SCRAPWEIGHT" msprop:Generator_ColumnPropNameInTable="THREE_ELECTION_SCRAPWEIGHTColumn" msprop:Generator_UserColumnName="THREE_ELECTION_SCRAPWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_C_MN_SI_ALLOY" msprop:Generator_ColumnVarNameInTable="columnLOW_C_MN_SI_ALLOY" msprop:Generator_ColumnPropNameInRow="LOW_C_MN_SI_ALLOY" msprop:Generator_ColumnPropNameInTable="LOW_C_MN_SI_ALLOYColumn" msprop:Generator_UserColumnName="LOW_C_MN_SI_ALLOY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEELMAKING_DOLOMITE_MAT" msprop:Generator_ColumnVarNameInTable="columnSTEELMAKING_DOLOMITE_MAT" msprop:Generator_ColumnPropNameInRow="STEELMAKING_DOLOMITE_MAT" msprop:Generator_ColumnPropNameInTable="STEELMAKING_DOLOMITE_MATColumn" msprop:Generator_UserColumnName="STEELMAKING_DOLOMITE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALUMINUM_INGOT_MAT" msprop:Generator_ColumnVarNameInTable="columnALUMINUM_INGOT_MAT" msprop:Generator_ColumnPropNameInRow="ALUMINUM_INGOT_MAT" msprop:Generator_ColumnPropNameInTable="ALUMINUM_INGOT_MATColumn" msprop:Generator_UserColumnName="ALUMINUM_INGOT_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LUMP_ORE_MAT" msprop:Generator_ColumnVarNameInTable="columnLUMP_ORE_MAT" msprop:Generator_ColumnPropNameInRow="LUMP_ORE_MAT" msprop:Generator_ColumnPropNameInTable="LUMP_ORE_MATColumn" msprop:Generator_UserColumnName="LUMP_ORE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CARBURANT_06" msprop:Generator_ColumnVarNameInTable="columnCARBURANT_06" msprop:Generator_ColumnPropNameInRow="CARBURANT_06" msprop:Generator_ColumnPropNameInTable="CARBURANT_06Column" msprop:Generator_UserColumnName="CARBURANT_06" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GENERAL_LEVEL_FERROCHROME" msprop:Generator_ColumnVarNameInTable="columnGENERAL_LEVEL_FERROCHROME" msprop:Generator_ColumnPropNameInRow="GENERAL_LEVEL_FERROCHROME" msprop:Generator_ColumnPropNameInTable="GENERAL_LEVEL_FERROCHROMEColumn" msprop:Generator_UserColumnName="GENERAL_LEVEL_FERROCHROME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WASTE_BLOCK_MAT" msprop:Generator_ColumnVarNameInTable="columnWASTE_BLOCK_MAT" msprop:Generator_ColumnPropNameInRow="WASTE_BLOCK_MAT" msprop:Generator_ColumnPropNameInTable="WASTE_BLOCK_MATColumn" msprop:Generator_UserColumnName="WASTE_BLOCK_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEEL_BAUXITE_MAT" msprop:Generator_ColumnVarNameInTable="columnSTEEL_BAUXITE_MAT" msprop:Generator_ColumnPropNameInRow="STEEL_BAUXITE_MAT" msprop:Generator_ColumnPropNameInTable="STEEL_BAUXITE_MATColumn" msprop:Generator_UserColumnName="STEEL_BAUXITE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FEO_MAT_LAC" msprop:Generator_ColumnVarNameInTable="columnFEO_MAT_LAC" msprop:Generator_ColumnPropNameInRow="FEO_MAT_LAC" msprop:Generator_ColumnPropNameInTable="FEO_MAT_LACColumn" msprop:Generator_UserColumnName="FEO_MAT_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEEL_LIMESTONE_LAC" msprop:Generator_ColumnVarNameInTable="columnSTEEL_LIMESTONE_LAC" msprop:Generator_ColumnPropNameInRow="STEEL_LIMESTONE_LAC" msprop:Generator_ColumnPropNameInTable="STEEL_LIMESTONE_LACColumn" msprop:Generator_UserColumnName="STEEL_LIMESTONE_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOW_SI_HIGH_C_CR_FE" msprop:Generator_ColumnVarNameInTable="columnLOW_SI_HIGH_C_CR_FE" msprop:Generator_ColumnPropNameInRow="LOW_SI_HIGH_C_CR_FE" msprop:Generator_ColumnPropNameInTable="LOW_SI_HIGH_C_CR_FEColumn" msprop:Generator_UserColumnName="LOW_SI_HIGH_C_CR_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LANCENO" msprop:Generator_ColumnVarNameInTable="columnLANCENO" msprop:Generator_ColumnPropNameInRow="LANCENO" msprop:Generator_ColumnPropNameInTable="LANCENOColumn" msprop:Generator_UserColumnName="LANCENO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C_LUZ" msprop:Generator_ColumnVarNameInTable="columnC_LUZ" msprop:Generator_ColumnPropNameInRow="C_LUZ" msprop:Generator_ColumnPropNameInTable="C_LUZColumn" msprop:Generator_UserColumnName="C_LUZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_LUZ" msprop:Generator_ColumnVarNameInTable="columnS_LUZ" msprop:Generator_ColumnPropNameInRow="S_LUZ" msprop:Generator_ColumnPropNameInTable="S_LUZColumn" msprop:Generator_UserColumnName="S_LUZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_LUZ" msprop:Generator_ColumnVarNameInTable="columnP_LUZ" msprop:Generator_ColumnPropNameInRow="P_LUZ" msprop:Generator_ColumnPropNameInTable="P_LUZColumn" msprop:Generator_UserColumnName="P_LUZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MN_LUZ" msprop:Generator_ColumnVarNameInTable="columnMN_LUZ" msprop:Generator_ColumnPropNameInRow="MN_LUZ" msprop:Generator_ColumnPropNameInTable="MN_LUZColumn" msprop:Generator_UserColumnName="MN_LUZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LF_NOTE" msprop:Generator_ColumnVarNameInTable="columnLF_NOTE" msprop:Generator_ColumnPropNameInRow="LF_NOTE" msprop:Generator_ColumnPropNameInTable="LF_NOTEColumn" msprop:Generator_UserColumnName="LF_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RH_NOTE" msprop:Generator_ColumnVarNameInTable="columnRH_NOTE" msprop:Generator_ColumnPropNameInRow="RH_NOTE" msprop:Generator_ColumnPropNameInTable="RH_NOTEColumn" msprop:Generator_UserColumnName="RH_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CCM_NOTE" msprop:Generator_ColumnVarNameInTable="columnCCM_NOTE" msprop:Generator_ColumnPropNameInRow="CCM_NOTE" msprop:Generator_ColumnPropNameInTable="CCM_NOTEColumn" msprop:Generator_UserColumnName="CCM_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOW_TI_SI_FE" msprop:Generator_ColumnVarNameInTable="columnLOW_TI_SI_FE" msprop:Generator_ColumnPropNameInRow="LOW_TI_SI_FE" msprop:Generator_ColumnPropNameInTable="LOW_TI_SI_FEColumn" msprop:Generator_UserColumnName="LOW_TI_SI_FE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REMAINSLAG" msprop:Generator_ColumnVarNameInTable="columnREMAINSLAG" msprop:Generator_ColumnPropNameInRow="REMAINSLAG" msprop:Generator_ColumnPropNameInTable="REMAINSLAGColumn" msprop:Generator_UserColumnName="REMAINSLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="O2TOTAL" msprop:Generator_ColumnVarNameInTable="columnO2TOTAL" msprop:Generator_ColumnPropNameInRow="O2TOTAL" msprop:Generator_ColumnPropNameInTable="O2TOTALColumn" msprop:Generator_UserColumnName="O2TOTAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_IRON" msprop:Generator_ColumnVarNameInTable="columnCR_IRON" msprop:Generator_ColumnPropNameInRow="CR_IRON" msprop:Generator_ColumnPropNameInTable="CR_IRONColumn" msprop:Generator_UserColumnName="CR_IRON" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JINAN_LIME" msprop:Generator_ColumnVarNameInTable="columnJINAN_LIME" msprop:Generator_ColumnPropNameInRow="JINAN_LIME" msprop:Generator_ColumnPropNameInTable="JINAN_LIMEColumn" msprop:Generator_UserColumnName="JINAN_LIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COKE_AGENT_LAC" msprop:Generator_ColumnVarNameInTable="columnCOKE_AGENT_LAC" msprop:Generator_ColumnPropNameInRow="COKE_AGENT_LAC" msprop:Generator_ColumnPropNameInTable="COKE_AGENT_LACColumn" msprop:Generator_UserColumnName="COKE_AGENT_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STAINLESS_FEO_MAT" msprop:Generator_ColumnVarNameInTable="columnSTAINLESS_FEO_MAT" msprop:Generator_ColumnPropNameInRow="STAINLESS_FEO_MAT" msprop:Generator_ColumnPropNameInTable="STAINLESS_FEO_MATColumn" msprop:Generator_UserColumnName="STAINLESS_FEO_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STAINLESS_FEO_MAT_LAC" msprop:Generator_ColumnVarNameInTable="columnSTAINLESS_FEO_MAT_LAC" msprop:Generator_ColumnPropNameInRow="STAINLESS_FEO_MAT_LAC" msprop:Generator_ColumnPropNameInTable="STAINLESS_FEO_MAT_LACColumn" msprop:Generator_UserColumnName="STAINLESS_FEO_MAT_LAC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COKE_AGENT_MAT" msprop:Generator_ColumnVarNameInTable="columnCOKE_AGENT_MAT" msprop:Generator_ColumnPropNameInRow="COKE_AGENT_MAT" msprop:Generator_ColumnPropNameInTable="COKE_AGENT_MATColumn" msprop:Generator_UserColumnName="COKE_AGENT_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_CONSUME_RATE" msprop:Generator_ColumnVarNameInTable="columnAL_CONSUME_RATE" msprop:Generator_ColumnPropNameInRow="AL_CONSUME_RATE" msprop:Generator_ColumnPropNameInTable="AL_CONSUME_RATEColumn" msprop:Generator_UserColumnName="AL_CONSUME_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FINJUDGE_FLAG" msprop:Generator_ColumnVarNameInTable="columnFINJUDGE_FLAG" msprop:Generator_ColumnPropNameInRow="FINJUDGE_FLAG" msprop:Generator_ColumnPropNameInTable="FINJUDGE_FLAGColumn" msprop:Generator_UserColumnName="FINJUDGE_FLAG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFINE_LIME" msprop:Generator_ColumnVarNameInTable="columnREFINE_LIME" msprop:Generator_ColumnPropNameInRow="REFINE_LIME" msprop:Generator_ColumnPropNameInTable="REFINE_LIMEColumn" msprop:Generator_UserColumnName="REFINE_LIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LIGHT_DOLOMITE_MAT" msprop:Generator_ColumnVarNameInTable="columnLIGHT_DOLOMITE_MAT" msprop:Generator_ColumnPropNameInRow="LIGHT_DOLOMITE_MAT" msprop:Generator_ColumnPropNameInTable="LIGHT_DOLOMITE_MATColumn" msprop:Generator_UserColumnName="LIGHT_DOLOMITE_MAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAL_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnCAL_WEIGHT" msprop:Generator_ColumnPropNameInRow="CAL_WEIGHT" msprop:Generator_ColumnPropNameInTable="CAL_WEIGHTColumn" msprop:Generator_UserColumnName="CAL_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRONTEMP" msprop:Generator_ColumnVarNameInTable="columnIRONTEMP" msprop:Generator_ColumnPropNameInRow="IRONTEMP" msprop:Generator_ColumnPropNameInTable="IRONTEMPColumn" msprop:Generator_UserColumnName="IRONTEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SMELT_PERIOD" msprop:Generator_ColumnVarNameInTable="columnSMELT_PERIOD" msprop:Generator_ColumnPropNameInRow="SMELT_PERIOD" msprop:Generator_ColumnPropNameInTable="SMELT_PERIODColumn" msprop:Generator_UserColumnName="SMELT_PERIOD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WAITSTEEL" msprop:Generator_ColumnVarNameInTable="columnWAITSTEEL" msprop:Generator_ColumnPropNameInRow="WAITSTEEL" msprop:Generator_ColumnPropNameInTable="WAITSTEELColumn" msprop:Generator_UserColumnName="WAITSTEEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WAITTIME" msprop:Generator_ColumnVarNameInTable="columnWAITTIME" msprop:Generator_ColumnPropNameInRow="WAITTIME" msprop:Generator_ColumnPropNameInTable="WAITTIMEColumn" msprop:Generator_UserColumnName="WAITTIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P2O5" msprop:Generator_ColumnVarNameInTable="columnP2O5" msprop:Generator_ColumnPropNameInRow="P2O5" msprop:Generator_ColumnPropNameInTable="P2O5Column" msprop:Generator_UserColumnName="P2O5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="R" msprop:Generator_ColumnVarNameInTable="columnR" msprop:Generator_ColumnPropNameInRow="R" msprop:Generator_ColumnPropNameInTable="RColumn" msprop:Generator_UserColumnName="R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_FE_65" msprop:Generator_ColumnVarNameInTable="columnMN_FE_65" msprop:Generator_ColumnPropNameInRow="MN_FE_65" msprop:Generator_ColumnPropNameInTable="MN_FE_65Column" msprop:Generator_UserColumnName="MN_FE_65" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SICPYREXIA" msprop:Generator_ColumnVarNameInTable="columnSICPYREXIA" msprop:Generator_ColumnPropNameInRow="SICPYREXIA" msprop:Generator_ColumnPropNameInTable="SICPYREXIAColumn" msprop:Generator_UserColumnName="SICPYREXIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="N2PRESSURE" msprop:Generator_ColumnVarNameInTable="columnN2PRESSURE" msprop:Generator_ColumnPropNameInRow="N2PRESSURE" msprop:Generator_ColumnPropNameInTable="N2PRESSUREColumn" msprop:Generator_UserColumnName="N2PRESSURE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_COM" msprop:Generator_ColumnVarNameInTable="columnAL_COM" msprop:Generator_ColumnPropNameInRow="AL_COM" msprop:Generator_ColumnPropNameInTable="AL_COMColumn" msprop:Generator_UserColumnName="AL_COM" type="xs:string" minOccurs="0" />
+              <xs:element name="AL_COM_AVG" msprop:Generator_ColumnVarNameInTable="columnAL_COM_AVG" msprop:Generator_ColumnPropNameInRow="AL_COM_AVG" msprop:Generator_ColumnPropNameInTable="AL_COM_AVGColumn" msprop:Generator_UserColumnName="AL_COM_AVG" type="xs:string" minOccurs="0" />
+              <xs:element name="N_QITIYANG" msprop:Generator_ColumnVarNameInTable="columnN_QITIYANG" msprop:Generator_ColumnPropNameInRow="N_QITIYANG" msprop:Generator_ColumnPropNameInTable="N_QITIYANGColumn" msprop:Generator_UserColumnName="N_QITIYANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="N_QITIYANG2" msprop:Generator_ColumnVarNameInTable="columnN_QITIYANG2" msprop:Generator_ColumnPropNameInRow="N_QITIYANG2" msprop:Generator_ColumnPropNameInTable="N_QITIYANG2Column" msprop:Generator_UserColumnName="N_QITIYANG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LFID" msprop:Generator_ColumnVarNameInTable="columnLFID" msprop:Generator_ColumnPropNameInRow="LFID" msprop:Generator_ColumnPropNameInTable="LFIDColumn" msprop:Generator_UserColumnName="LFID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPEEDCHANGE" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGEColumn" msprop:Generator_UserColumnName="SPEEDCHANGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AUTOFLOW" msprop:Generator_ColumnVarNameInTable="columnAUTOFLOW" msprop:Generator_ColumnPropNameInRow="AUTOFLOW" msprop:Generator_ColumnPropNameInTable="AUTOFLOWColumn" msprop:Generator_UserColumnName="AUTOFLOW" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEMPDATA" msprop:Generator_ColumnVarNameInTable="columnTEMPDATA" msprop:Generator_ColumnPropNameInRow="TEMPDATA" msprop:Generator_ColumnPropNameInTable="TEMPDATAColumn" msprop:Generator_UserColumnName="TEMPDATA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEMPTIME" msprop:Generator_ColumnVarNameInTable="columnTEMPTIME" msprop:Generator_ColumnPropNameInRow="TEMPTIME" msprop:Generator_ColumnPropNameInTable="TEMPTIMEColumn" msprop:Generator_UserColumnName="TEMPTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OXYDATA" msprop:Generator_ColumnVarNameInTable="columnOXYDATA" msprop:Generator_ColumnPropNameInRow="OXYDATA" msprop:Generator_ColumnPropNameInTable="OXYDATAColumn" msprop:Generator_UserColumnName="OXYDATA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OXYTIME" msprop:Generator_ColumnVarNameInTable="columnOXYTIME" msprop:Generator_ColumnPropNameInRow="OXYTIME" msprop:Generator_ColumnPropNameInTable="OXYTIMEColumn" msprop:Generator_UserColumnName="OXYTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OXYTEMP" msprop:Generator_ColumnVarNameInTable="columnOXYTEMP" msprop:Generator_ColumnPropNameInRow="OXYTEMP" msprop:Generator_ColumnPropNameInTable="OXYTEMPColumn" msprop:Generator_UserColumnName="OXYTEMP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LF_SHIHUI" msprop:Generator_ColumnVarNameInTable="columnLF_SHIHUI" msprop:Generator_ColumnPropNameInRow="LF_SHIHUI" msprop:Generator_ColumnPropNameInTable="LF_SHIHUIColumn" msprop:Generator_UserColumnName="LF_SHIHUI" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FZK" msprop:Generator_ColumnVarNameInTable="columnFZK" msprop:Generator_ColumnPropNameInRow="FZK" msprop:Generator_ColumnPropNameInTable="FZKColumn" msprop:Generator_UserColumnName="FZK" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CJICHA" msprop:Generator_ColumnVarNameInTable="columnCJICHA" msprop:Generator_ColumnPropNameInRow="CJICHA" msprop:Generator_ColumnPropNameInTable="CJICHAColumn" msprop:Generator_UserColumnName="CJICHA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BEFORE_AR_TEMP_TIME" msprop:Generator_ColumnVarNameInTable="columnBEFORE_AR_TEMP_TIME" msprop:Generator_ColumnPropNameInRow="BEFORE_AR_TEMP_TIME" msprop:Generator_ColumnPropNameInTable="BEFORE_AR_TEMP_TIMEColumn" msprop:Generator_UserColumnName="BEFORE_AR_TEMP_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TAP_AR_TIME" msprop:Generator_ColumnVarNameInTable="columnTAP_AR_TIME" msprop:Generator_ColumnPropNameInRow="TAP_AR_TIME" msprop:Generator_ColumnPropNameInTable="TAP_AR_TIMEColumn" msprop:Generator_UserColumnName="TAP_AR_TIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="YKWEIGHT" msprop:Generator_ColumnVarNameInTable="columnYKWEIGHT" msprop:Generator_ColumnPropNameInRow="YKWEIGHT" msprop:Generator_ColumnPropNameInTable="YKWEIGHTColumn" msprop:Generator_UserColumnName="YKWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAP_LVXIAN" msprop:Generator_ColumnVarNameInTable="columnTAP_LVXIAN" msprop:Generator_ColumnPropNameInRow="TAP_LVXIAN" msprop:Generator_ColumnPropNameInTable="TAP_LVXIANColumn" msprop:Generator_UserColumnName="TAP_LVXIAN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_IRON" msprop:Generator_ColumnVarNameInTable="columnCU_IRON" msprop:Generator_ColumnPropNameInRow="CU_IRON" msprop:Generator_ColumnPropNameInTable="CU_IRONColumn" msprop:Generator_UserColumnName="CU_IRON" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1667 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Web.Calendar.2</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Util.FlagsEnumEditorControl.EnumValueDesc">
+            <summary>
+            Represents the one value in the enumeration.
+            </summary>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditorControl.EnumValueDesc.Owner">
+            <summary>
+            Gets the EnumValueDescCollection collection containing this object.
+            </summary>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditorControl.EnumValueDesc.EnumType">
+            <summary>
+            Gets the enumeration's type.
+            </summary>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditorControl.EnumValueDesc.BitCount">
+            <summary>
+            Gets the count of significant bits in EnumValue.
+            </summary>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditorControl.EnumValueDesc.EnumValue">
+            <summary>
+            Gets the enumeration's value.
+            </summary>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditorControl.EnumValueDesc.Value">
+            <summary>
+            Gets the enumeration's value as long unsigned integer.
+            </summary>
+        </member>
+        <member name="T:C1.Util.FlagsEnumEditorControl.EnumValueDescCollection">
+            <summary>
+            Collection of the EnumValueDesc objects.
+            </summary>
+        </member>
+        <member name="T:C1.Util.FlagsEnumEditor">
+            <summary>
+            Represents the editor of enum properties with FlagsAttribute attribute.
+            </summary>
+        </member>
+        <member name="M:C1.Util.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Gets the editor style used by the <see cref="M:C1.Util.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)"/> method.
+            The override for <see cref="T:C1.Util.FlagsEnumEditor"/> returns <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.DropDown"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Util.FlagsEnumEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Edits the specified object's value using the editor style 
+            indicated by the <see cref="M:C1.Util.FlagsEnumEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)"/> method. 
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Util.FlagsEnumEditor.IsDropDownResizable">
+            <summary>
+            Gets a value indicating whether drop-down editors should be resizable by the user. 
+            The override for <see cref="T:C1.Util.FlagsEnumEditor"/> returns true;
+            </summary>
+        </member>
+        <member name="M:C1.Win.AboutForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:C1.Win.LicensingForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1DescriptionAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1DescriptionAttribute replaces the DescriptionAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1CategoryAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1CategoryAttribute replaces the CategoryAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1Localizer">
+            <summary>
+            ------------------------------------------------------------------------
+            C1Localizer contains static methods to load and look up resources
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.BorderStyleConverter">
+            <summary>
+            Provides a unified way of converting string to System.Web.UI.WebControls.BorderStyle type
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderStyleConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Can Convert convert from type.
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderStyleConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Convert string to BorderStyle.
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.Calendar.Design.IPropertyPanel">
+            <summary>
+            IPropertyPanel
+            The property builder form contains panels that are UserControl
+            objects. They all must implement IPropertyPanel.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.PopupPanel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.PopupPanel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.PopupPanel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.StringTables">
+            <summary>
+            StringTables
+            this class contains a single static method InitTables that populates the
+            tables used by the Localizer class.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.PopupSetting">
+            <summary>
+            Class that stores the setting for calendar popping up.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.PopupSetting.#ctor">
+            <summary>
+            Constructor of PopupSetting.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.PopupSetting.LoadViewState(System.Object)">
+            <summary>
+            Loads view state in the splitter panel object.
+            </summary>
+            <param name="state">View state to load.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.PopupSetting.SaveViewState">
+            <summary>
+            Saves the view state and returns it as an object.
+            </summary>
+            <returns>Saved view state.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.PopupSetting.TrackViewState">
+            <summary>
+            Tracks the view state.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.AutoCollapse">
+            <summary>
+            Determines whether collapse the popup window automatically.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.Dock">
+            <summary>
+            Determines the alignment of the popup window to its buddy control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ShadowEnabled">
+            <summary>
+            Determines whether the shadow is dropped for the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ShadowOffset">
+            <summary>
+            Determines the shadow offset.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ShadowColor">
+            <summary>
+            Determines the shadow color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.Offset">
+            <summary>
+            Determines the offset of the popup window to its buddy control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.SlideDuration">
+            <summary>
+            Determines the slide duration in millisecond.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ExpandDirection">
+            <summary>
+            Determines the slide direction while expanding the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.CollapseDirection">
+            <summary>
+            Determines the slide direction while collapsing the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ExpandType">
+            <summary>
+            Determines the slide type while expanding the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.CollapseType">
+            <summary>
+            Determines the slide type while collapsing the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.ExpandTransition">
+            <summary>
+            Determines the transition type while expanding the popup window.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.PopupSetting.CollapseTransition">
+            <summary>
+            Determines the transition type while collapsing the popup window.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.BordersPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.BordersPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.BordersPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.FormatPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.FormatPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.FormatPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.Design.StyleCache">
+            <summary>
+            StyleCache
+            contains a style to be edited and a reference to the original
+            TableItemStyle (or C1WebCalendar object).
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.GeneralPanel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.GeneralPanel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.GeneralPanel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.TitlePanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.TitlePanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.TitlePanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.Design.PropertyBuilderDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.PropertyBuilderDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.Design.PropertyBuilderDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.Design.MenuBar">
+            <summary>
+            MenuBar is an owner-draw listbox
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.Design.MenuItem">
+            <summary>
+            MenuItem contains text, an image, and a property panel
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.CalendarItemStyle">
+            <summary>
+            Class that defines the compound style for rendering calendar cells.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.#ctor(C1.Web.Calendar.C1WebCalendar)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_owner"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.AddAttributesToRender(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebControl)">
+            <summary>
+               Adds information about all not empty style properties
+               to the list of attributes to render.
+            </summary>
+            <param name="writer"></param>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.CopyFrom(System.Web.UI.WebControls.Style)">
+            <summary>
+               Duplicates the non-empty style properties of the specified Style
+               into the instance of the Style class that
+               this method is called from.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.MergeWith(System.Web.UI.WebControls.Style)">
+            <summary>
+               Combines the style properties of the specified Style
+               into the instance of the Style class that
+               this method is called from.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.Reset">
+            <summary>
+            Removes any defined style elements from the style.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarItemStyle.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarItemStyle.BackgroundImage">
+            <summary>
+            URL to background image.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarItemStyle.CssText">
+            <summary>
+            Css style text.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarItemStyle.BorderDetailed">
+            <summary>
+            Style for each border side.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarItemStyle.StyleString">
+            <summary>
+            Represent resulting string what will apply to style html attribute. 
+            </summary>        
+        </member>
+        <member name="T:C1.Web.Calendar.C1WebCalendar">
+            <summary>
+            C1WebCalendar is an ASP.NET calendar control that has many advanced features.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.C1WebCalendar.#ctor">
+            <summary>
+            Construct a new instance of C1WebCalendar.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.C1WebCalendar.GetCallingAssembly">
+            <summary>
+            For internal use only.
+            </summary>
+            <returns>A reference to the calling <see cref="T:System.Reflection.Assembly"/>.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.C1WebCalendar.OnSelectedDatesChanged(System.EventArgs)">
+            <summary>
+            Fires the SelectedDatesChanged event.
+            </summary>
+            <param name="e">The event arg.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.C1WebCalendar.OnDisplayDateChanged(System.EventArgs)">
+            <summary>
+            Fires the DisplayDateChanged event.
+            </summary>
+            <param name="e">The event arg.</param>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.CellPadding">
+            <summary>
+            Gets or sets the amount of space between the contents of a calendar cell and the cell's border.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.CellSpacing">
+            <summary>
+            Gets or sets the amount of space between calendar cells.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowGridLines">
+            <summary>
+            Determines whether to display grid lines for month view table.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowOtherMonthDays">
+            <summary>
+            Determines whether to diaplay days that belong to other month in a month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PopupMode">
+            <summary>
+            Determines whether the calendar is in popup mode. User has to call client side methods PopupAt/PopupBeside to popup the calendar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PopupSetting">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ToolTipDateFormat">
+            <summary>
+            Determines the date format for tooltip when mouse is over the calendar days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.BuiltinImages">
+            <summary>
+            Determines the built-in images for calendar surface.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DayRows">
+            <summary>
+            Gets or sets the number of rows in month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DayColumns">
+            <summary>
+            Gets or sets the number of columns in month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.AutoPostBackOnSelect">
+            <summary>
+            Gets or sets a value that determines whether post back to server automatically when user selects a date.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.AutoPostBackOnNavigate">
+            <summary>
+            Gets or sets a value that determines whether post back to server automatically when user navigates between monthes.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.CultureInfo">
+            <summary>
+            Gets or sets the culture information for the calendar control rendering.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.WeekDayFormat">
+            <summary>
+            Gets or sets the display format for week headers.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthDayFormat">
+            <summary>
+            Gets or sets the display format for calendar days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowCalendarTitle">
+            <summary>
+            Determines whether to display the calendar title.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.CalendarTitle">
+            <summary>
+            Determines the string that displays on calendar title.
+            </summary>
+            <remarks>
+            CalenderTitle is the group tile shared by all the month views. To change the title for month views, you have to use
+            MonthViewTitle property.
+            
+            The title string can be any string or string that has date formatting parameters. 
+            
+            At most four parameters are accepted, each can has its own data format. They are:
+            {0} - The value of DiaplayDate.
+            {1} - The first month of month views, when multiple monthes are displayed.
+            {2} - The last month of month views, when multiple monthes are displayed.
+            {3} - The number of month views, when multiple monthes are displayed.
+            
+            For example:
+            "Schedule of {0:MMMM yyyy}".
+            "{1:MMMM yyyy} to {2:MMMM yyyy}"
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:C1.Web.Calendar.C1WebCalendar.MonthViewTitle" -->
+        <member name="P:C1.Web.Calendar.C1WebCalendar.TitleAlign">
+            <summary>
+            Determines the horizontal alignment for calendar title.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NavigationCellPadding">
+            <summary>
+            Gets or sets the cell padding for navigation table.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NavigationCellSpacing">
+            <summary>
+            Gets or sets the cell spacing for navigation table.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowMonthNavigator">
+            <summary>
+            Gets or sets a value that determines whether to display month navigator.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.AllowQuickSelector">
+            <summary>
+            Gets or sets a value that determines whether to popup month picker while clicking on the calendar title.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextText">
+            <summary>
+            Gets or sets the text displayed for the next navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextImage">
+            <summary>
+            Gets or sets the image for the next navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextToolTip">
+            <summary>
+            Gets or sets the tooltip string displayed for the next navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevText">
+            <summary>
+            Gets or sets the text displayed for the previous navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevImage">
+            <summary>
+            Gets or sets the image for the previous navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevToolTip">
+            <summary>
+            Gets or sets the tooltip string for the previous navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNextText">
+            <summary>
+            Gets or sets the text displayed for the next quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNextImage">
+            <summary>
+            Gets or sets the image name for the next quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNextToolTip">
+            <summary>
+            Gets or sets the tooltip string for the next quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickPrevText">
+            <summary>
+            Gets or sets the text displayed for the previous quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickPrevImage">
+            <summary>
+            Gets or sets the image name for the previous quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickPrevToolTip">
+            <summary>
+            Gets or sets the tooltip string for the previous quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NavigationStep">
+            <summary>
+            Gets or sets the number of months to swap after clicking the navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NavigationSlideType">
+            <summary>
+            Gets or sets the slide style while month swapping.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNavigationStep">
+            <summary>
+            Gets or sets the number of months to swap after clicking the quick-navigation button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.AllowPreview">
+            <summary>
+            Gets or sets whether the preview area is displayed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextPreviewImage">
+            <summary>
+            Gets or sets the image for the next preview bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevPreviewImage">
+            <summary>
+            Gets or sets the image for the previous preview bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.FirstDayOfWeek">
+            <summary>
+            Gets or sets the first day of week.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DisableDates">
+            <summary>
+            Gets or sets the disable dates collection.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MaxDate">
+            <summary>
+            Gets or sets the maximal date for selection.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MinDate">
+            <summary>
+            Gets or sets the minimal date for selection.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:C1.Web.Calendar.C1WebCalendar.CustomDays" -->
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DayTemplates">
+            <summary>
+            Gets the template collection.
+            </summary>
+            <remarks>
+            C1WebCalendar supports hosting templates in calendar day cells. 
+            
+            To add template controls, you have to:
+            1. Click the ellipsis button right beside the DayTemplates in property grid to open the DayTemplates collection editor.
+            2. Add template to this collection, give proper ID.
+            3. Select "Edit Templates" in smart tag.
+            
+            To "bind" template to a calendar day, you have to:
+            1. Click the ellipsis button right beside the CustomDays in property grid.
+            2. Add CustomDay in this collection.
+            3. Specify the TemplateID and Date property. The TemplateID should be the ID of template added in the above steps.
+            </remarks>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.FooterTemplate">
+            <summary>
+            The footer template of Calendar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.HeaderTemplate">
+            <summary>
+            The header template of Calendar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DisplayDate">
+            <summary>
+            Gets or sets the date for the current display month.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthCols">
+            <summary>
+            Gets or sets the number of month view columns.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthRows">
+            <summary>
+            Gets or sets the number of month view rows.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthViewSpacing">
+            <summary>
+            Gets or sets the spacing between month views.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowWeekDays">
+            <summary>
+            Determines whether to display week days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ShowWeekNumbers">
+            <summary>
+            Determines whether to display week numbers.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthSelectorText">
+            <summary>
+            Gets or sets the text displayed on the corner of month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthSelectorImage">
+            <summary>
+            Gets or sets the image displayed on the corner of month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.SelectionMode">
+            <summary>
+            Determines the selection mode.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.SelectedDate">
+            <summary>
+            Gets or sets the latest selected date.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.SelectedDates">
+            <summary>
+            Gets or sets the selected dates collection.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.WebSchedule">
+            <summary>
+            Gets or sets the C1WebSchedule control to interact with.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DayStyle">
+            <summary>
+            Gets or sets the compound style for normal days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DayStyleHover">
+            <summary>
+            Gets or sets the compound style for days when mouse is over.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.OtherMonthDayStyle">
+            <summary>
+            Gets or sets the compound style for the days that belong to onther month in a month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.OutOfRangeDayStyle">
+            <summary>
+            Gets or sets the compound style for the days out of the valid range.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.SelectedDayStyle">
+            <summary>
+            Gets or sets the compound style for the selected days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.SelectedDayStyleHover">
+            <summary>
+            Gets or sets the compound style for the selected days when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.DisabledDayStyle">
+            <summary>
+            Gets or sets the compound style for the disable days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.TodayDayStyle">
+            <summary>
+            Gets or sets the compound style for today.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.TodayDayStyleHover">
+            <summary>
+            Gets or sets the compound style for today when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.WeekendDayStyle">
+            <summary>
+            Gets or sets the compound style for the weekend days.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.WeekendDayStyleHover">
+            <summary>
+            Gets or sets the compound style for the weekend days when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextStyle">
+            <summary>
+            Gets or sets the compound style for next navigation element.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextStyleHover">
+            <summary>
+            Gets or sets the compound style for next navigation element when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNextStyle">
+            <summary>
+            Gets or sets the compound style for the next quick-navigation element.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickNextStyleHover">
+            <summary>
+            Gets or sets the compound style for the next quick-navigation element.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevStyle">
+            <summary>
+            Gets or sets the compound style for previous navigation element.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevStyleHover">
+            <summary>
+            Gets or sets the compound style for previous navigation element when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickPrevStyle">
+            <summary>
+            Gets or sets the compound style for the previous quick-navigation element.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.QuickPrevStyleHover">
+            <summary>
+            Gets or sets the compound style for the previous quick-navigation element when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.TitleStyle">
+            <summary>
+            Gets or sets the compound style for calendar title.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthViewStyle">
+            <summary>
+            Gets or sets the compound style for month view.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextPreviewStyle">
+            <summary>
+            Gets or sets the compound style for the next preview bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.NextPreviewStyleHover">
+            <summary>
+            Gets or sets the compound style for the next preview bar when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevPreviewStyle">
+            <summary>
+            Gets or sets the compound style for the previous preview bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.PrevPreviewStyleHover">
+            <summary>
+            Gets or sets the compound style for the previous preview bar when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.MonthTitleStyle">
+            <summary>
+            Gets or sets the compound style for the month title.
+            </summary>
+        </member>
+        <member name="E:C1.Web.Calendar.C1WebCalendar.SelectedDatesChanged">
+            <summary>
+            Fires when the SelectedDates property is changed by mouse clicking.
+            </summary>
+        </member>
+        <member name="E:C1.Web.Calendar.C1WebCalendar.DisplayDateChanged">
+            <summary>
+            Fires when the DisplayDate property is changed by navigating.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ClientOnBeforePopup">
+            <summary>
+            Gets or sets the method to be called before calendar is popup.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ClientOnAfterPopup">
+            <summary>
+            Gets or sets the method to be called after calendar is popup.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ClientOnBeforeClose">
+            <summary>
+            Gets or sets the method to be called before the calendar is closed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ClientOnAfterClose">
+            <summary>
+            Gets or sets the method to be called after the calendar is closed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.C1WebCalendar.ClientOnSelChange">
+            <summary>
+            Gets or sets the method to be called when selection is made.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.CalendarDay">
+            <summary>
+            Class that defines the properties for custom days.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDay.#ctor">
+            <summary>
+            Initialize a new instance of CalendarDay.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDay.#ctor(System.DateTime,C1.Web.Calendar.CalendarItemStyle,C1.Web.Calendar.CalendarItemStyle)">
+            <summary>
+            Initialize a new instance of CalendarDay.
+            </summary>
+            <param name="date">Date this custom day represents.</param>
+            <param name="style">The style of this custom day.</param>
+            <param name="styleHover">The style of this custom day when mouse is over it.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDay.#ctor(System.DateTime,C1.Web.Calendar.CalendarItemStyle,C1.Web.Calendar.CalendarItemStyle,System.String)">
+            <summary>
+            Initialize a new instance of CalendarDay.
+            </summary>
+            <param name="date">Date this custom day represents.</param>
+            <param name="style">The style of this custom day.</param>
+            <param name="styleHover">The style of this custom day when mouse is over it.</param>
+            <param name="tempID">ID of template added in DayTemplates collection.</param>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarDay.Date">
+            <summary>
+            The date this custom day represents.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarDay.Style">
+            <summary>
+            The style of this custom day.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarDay.HoverStyle">
+            <summary>
+            The style of this custom day when mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarDay.TemplateID">
+            <summary>
+            ID of template added in DayTemplates collection.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.CalendarDayCollection">
+            <summary>
+            Collection of CalendarDay objects.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.#ctor(C1.Web.Calendar.C1WebCalendar)">
+            <summary>
+            Initialize a new instance of CalendarDayCollection.
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Add(C1.Web.Calendar.CalendarDay)">
+            <summary>
+            Adds a CalendarDay to this collection.
+            </summary>
+            <param name="day">A CalendarDay to add.</param>
+            <returns>The position in this collection.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.AddRange(C1.Web.Calendar.CalendarDay[])">
+            <summary>
+            Adds a range of CalendarDay to this collection.
+            </summary>
+            <param name="days">CalendarDay array.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Clear">
+            <summary>
+            Clear this collection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Contains(C1.Web.Calendar.CalendarDay)">
+            <summary>
+            Detects whether the CalendarDay is contained in this collection.
+            </summary>
+            <param name="day">CalendarDay to detect.</param>
+            <returns>True if contained.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.IndexOf(System.Object)">
+            <summary>
+            Gets the index of a CalendarDay in this collection.
+            </summary>
+            <param name="day">CalendarDay to detect.</param>
+            <returns>Position in this collection.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Insert(System.Int32,C1.Web.Calendar.CalendarDay)">
+            <summary>
+            Inserts a CalendarDay in this collection.
+            </summary>
+            <param name="index">Position to insert.</param>
+            <param name="day">The CalendarDay to insert.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Remove(C1.Web.Calendar.CalendarDay)">
+            <summary>
+            Removes a CalendarDay from this collection.
+            </summary>
+            <param name="day">The CalendarDay to remove.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes a CalendarDay from this collection at specified position.
+            </summary>
+            <param name="index">The index of CalendarDay in this collection.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+            Removes a range of CalendarDay in this collection.
+            </summary>
+            <param name="startIndex">Start index.</param>
+            <param name="itemCount">End index.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Reverse">
+            <summary>
+            Revers the order of CalendarDays in this collection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Sort">
+            <summary>
+            Sorts the CalendarDays in this collection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.Sort(System.Collections.IComparer)">
+            <summary>
+            Sorts the CalendarDays in this collection.
+            </summary>
+            <param name="comparer">Custom comparer.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.CalendarDayCollection.ToArray">
+            <summary>
+            Converts the collection to CalendarDay array.
+            </summary>
+            <returns>Array of CalendarDay.</returns>
+        </member>
+        <member name="P:C1.Web.Calendar.CalendarDayCollection.Item(System.Object)">
+            <summary>
+            Indexer of this collection.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.Calendar.SlideType">
+            <summary>
+            Determines the slide type while month swapping or popping up.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.None">
+            <summary>
+            No slide.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.Constant">
+            <summary>
+            Slides in constant speed.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.ExpAccelerate">
+            <summary>
+            Slides in exponential accelerate speed.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.ExpDecelerate">
+            <summary>
+            Slides in exponential decelerate speed.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.QuadAccelerate">
+            <summary>
+            Slides in quadratic accelerate speed.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideType.QuadDecelerate">
+            <summary>
+            Slides in quadratic decelerate speed.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.SlideDirection">
+            <summary>
+            Determines the slide direction when popping up calendar
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideDirection.Up">
+            <summary>
+            Slides to the up direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideDirection.Down">
+            <summary>
+            Slides to the down direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideDirection.Left">
+            <summary>
+            Slides to the left direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SlideDirection.Right">
+            <summary>
+            Slides to the right direction.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.TransitionType">
+            <summary>
+            Determines the transition effects applying to popup window. 
+            </summary>
+            <remarks>
+            DirectX transition only works under IE after vesion 5.5.
+            Please see http://msdn2.microsoft.com/en-us/library/ms673540.aspx for more informations.
+            </remarks>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.None">
+            <summary>
+            No transition effect.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Dissolve">
+            <summary>
+            Reveals new content of the object by exposing random pixels.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Fade">
+            <summary>
+            Reveals new content of the object by fading out the original content.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Iriscircle">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=CIRCLE)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Iriscirclein">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=CIRCLE,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Iriscross">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=CROSS)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Iriscrossin">
+            <summary>
+            Reveals new content of the object with an iris effect.(irisStyle=CROSS,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisdiamond">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=DIAMOND)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisdiamondin">
+            <summary>
+            Reveals new content of the object with an iris effect.(irisStyle=DIAMOND,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisplus">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=PLUS)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisplusin">
+            <summary>
+            Reveals new content of the object with an iris effect.(irisStyle=PLUS,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irissquare">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=SQUARE)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irissquarein">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=SQUARE,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisstar">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=STAR)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Irisstarin">
+            <summary>
+            Reveals new content of the object with an iris effect. (irisStyle=STAR,motion=in)
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Pixelate">
+            <summary>
+            Reveals new content of the object by fading out the original content. 
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wheel2">
+            <summary>
+            Reveals new content of the object with a rotating motion, like spokes of a wheel covering the original content.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wheel8">
+            <summary>
+            Reveals new content of the object with a rotating motion, like spokes of a wheel covering the original content.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wipedown">
+            <summary>
+            Reveals new content of the object with a radial wipe. Down direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wipeleft">
+            <summary>
+            Reveals new content of the object with a radial wipe. Left direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wiperight">
+            <summary>
+            Reveals new content of the object with a radial wipe. Right direction.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.TransitionType.Wipeup">
+            <summary>
+            Reveals new content of the object with a radial wipe. Up direction.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.DockType">
+            <summary>
+            Determines the popup calendar's alignment to its buddy control.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.LeftTop">
+            <summary>
+            Pops up the calendar to the left side of the buddy control, with the top margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.LeftBottom">
+            <summary>
+            Pops up the calendar to the left side of the buddy control, with the bottom margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.TopLeft">
+            <summary>
+            Pops up the calendar to the top side of the buddy control, with the left margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.TopRight">
+            <summary>
+            Pops up the calendar to the top side of the buddy control, with the right margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.RightTop">
+            <summary>
+            Pops up the calendar to the right side of the buddy control, with the top margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.RightBottom">
+            <summary>
+            Pops up the calendar to the right side of the buddy control, with the bottom margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.BottomLeft">
+            <summary>
+            Pops up the calendar to the bottom side of the buddy control, with the left margin in the same line.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.DockType.BottomRight">
+            <summary>
+            Pops up the calendar to the bottom side of the buddy control, with the left margin in the same line.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.BuiltinImages">
+            <summary>
+            Determines the built-in images embedded in assembly.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.BuiltinImages.Default">
+            <summary>
+            Use the default built-in images in assembly.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.BuiltinImages.Gray">
+            <summary>
+            Use the gray style images in assembly.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.WeekDayFormat">
+            <summary>
+            Determines the format for displaying the week day.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.WeekDayFormat.FirstLetter">
+            <summary>
+            Displays the first single letter of the day of the week.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.WeekDayFormat.FirstTwoLetters">
+            <summary>
+            Displays the first two letters of the day of the week.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.WeekDayFormat.Abbreviated">
+            <summary>
+            Displays the abbreviated name of the day of the week.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.WeekDayFormat.Full">
+            <summary>
+            Displays the full name of the day of the week.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.MonthDayFormat">
+            <summary>
+            Determines the format for displaying the month day.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.MonthDayFormat.Default">
+            <summary>
+            Displays the day in month. Single-digit days will not have a leading zero.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.MonthDayFormat.ZeroPadding">
+            <summary>
+            Displays the day in month. Single-digit days will not have a leading zero.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.SelectionMode">
+            <summary>
+            Determines the mode of selection.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.None">
+            <summary>
+            Selection is not allowed.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.Day">
+            <summary>
+            Only one single day can be selected.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.Days">
+            <summary>
+            More days can be selected, by pressing the Ctrl or Shift keys.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.WeekDay">
+            <summary>
+            Week days are selectable.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.WeekNumber">
+            <summary>
+            Week numbers are selectable.
+            </summary>
+        </member>
+        <member name="F:C1.Web.Calendar.SelectionMode.Month">
+            <summary>
+            Entire month is selectable.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.C1Date">
+            <summary>
+            Wrapper class that stores calendar date for persisting.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.C1Date.#ctor">
+            <summary>
+            Initialize a new instance of C1Date.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.C1Date.#ctor(System.DateTime)">
+            <summary>
+            Initialize a new instance of C1Date.
+            </summary>
+            <param name="date">The date stored in this wrapper.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.C1Date.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initialize a new instance of C1Date.
+            </summary>
+            <param name="year">Year.</param>
+            <param name="month">Month.</param>
+            <param name="day">Day.</param>
+        </member>
+        <member name="P:C1.Web.Calendar.C1Date.Date">
+            <summary>
+            Gets or sets the date stored in this wrapper.
+            </summary>
+        </member>
+        <member name="T:C1.Web.Calendar.DateTimeCollection">
+            <summary>
+            Collection of C1Date.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.#ctor">
+            <summary>
+            Initialize a new instance of DateTimeCollection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Add(System.DateTime)">
+            <summary>
+            Adds a C1Date object that wrapps the specified date in this collection.
+            </summary>
+            <param name="date">Date to add.</param>
+            <returns>Position in this collection.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Add(C1.Web.Calendar.C1Date)">
+            <summary>
+            Adds a C1Date object in this collection.
+            </summary>
+            <param name="date">C1Date to add.</param>
+            <returns>Position in this collection.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.AddRange(C1.Web.Calendar.C1Date[])">
+            <summary>
+            Adds a range of C1Date objects.
+            </summary>
+            <param name="dates">C1Date object array.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.AddRange(System.DateTime,System.DateTime)">
+            <summary>
+            Adds a range of C1Date objects that represents the dates.
+            </summary>
+            <param name="start">Start date.</param>
+            <param name="end">End date.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Clear">
+            <summary>
+            Clears the collection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Clone">
+            <summary>
+            Clone the DateTimeCollection.
+            </summary>
+            <returns>New DateTimeCollection.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Contains(System.DateTime)">
+            <summary>
+            Determines whether the date is contained by one of wrapper in this collection.
+            </summary>
+            <param name="date">Date object to detect.</param>
+            <returns>True if contained.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Contains(C1.Web.Calendar.C1Date)">
+            <summary>
+            Determines whether the C1Date is contained in this collection.
+            </summary>
+            <param name="date">C1Date object to detect.</param>
+            <returns>True if contained.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.IndexOf(System.DateTime)">
+            <summary>
+            Detects the index of C1Date object that represents the specified date.
+            </summary>
+            <param name="date">The date to detect.</param>
+            <returns>Index of C1Date object that represents the specified date.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.IndexOf(System.Object)">
+            <summary>
+            Detects the index of C1Date object that represents the specified date.
+            </summary>
+            <param name="date">THe date to detect.</param>
+            <returns>Index of C1Date object that represents the specified date.</returns>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Insert(System.Int32,C1.Web.Calendar.C1Date)">
+            <summary>
+            Inserts the C1Date object in this collection.
+            </summary>
+            <param name="index">Insert position.</param>
+            <param name="date">C1Date to insert.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Remove(C1.Web.Calendar.C1Date)">
+            <summary>
+            Removes the C1Date object from the collection.
+            </summary>
+            <param name="date">C1Date object to remove.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the C1Date object from the position.
+            </summary>
+            <param name="index">Positon of C1Date object.</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Sort">
+            <summary>
+            Sorts the C1Date collection.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.Sort(System.Collections.IComparer)">
+            <summary>
+            Sorts the C1Date collection by using the specified comparer.
+            </summary>
+            <param name="comparer">IComparer</param>
+        </member>
+        <member name="M:C1.Web.Calendar.DateTimeCollection.ToArray">
+            <summary>
+            Converts the C1Date collection to array.
+            </summary>
+            <returns>C1Date object array.</returns>
+        </member>
+        <member name="P:C1.Web.Calendar.DateTimeCollection.Item(System.Object)">
+            <summary>
+            Indexer of this collection.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.Calendar.BorderDetailedStyle">
+            <summary>
+            Style for each border side.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.#ctor(System.Web.UI.StateBag)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="_ownerViewState"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.AddAttributesToRender(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebControl)">
+            <summary>
+            Adds information about all not empty style properties to the list of attributes to render.
+            </summary>
+            <param name="w"></param>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.CopyFrom(C1.Web.Calendar.BorderDetailedStyle)">
+            <summary>
+               Duplicates the non-empty style properties of the specified Style
+               into the instance of the Style class that
+               this method is called from.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.MergeWith(C1.Web.Calendar.BorderDetailedStyle)">
+            <summary>
+               Combines the style properties of the specified Style
+               into the instance of the Style class that
+               this method is called from.
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.Reset">
+            <summary>
+            Removes any defined style elements from the style.
+            </summary>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.LoadViewState(System.Object)">
+            <summary>
+            LoadViewState
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.SaveViewState">
+            <summary>
+            SaveViewState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.Calendar.BorderDetailedStyle.TrackViewState">
+            <summary>
+            TrackViewState
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderLeftColor">
+            <summary>
+            Left border color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderRightColor">
+            <summary>
+            Right border color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderTopColor">
+            <summary>
+            Top border color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderBottomColor">
+            <summary>
+            Bottom border color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderLeftStyle">
+            <summary>
+            Left border style.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderRightStyle">
+            <summary>
+            Right border style.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderTopStyle">
+            <summary>
+            Top border style.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderBottomStyle">
+            <summary>
+            Bottom border style.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderLeftWidth">
+            <summary>
+            Left border width.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderRightWidth">
+            <summary>
+            Right border width.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderTopWidth">
+            <summary>
+            Top border width.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.BorderBottomWidth">
+            <summary>
+            Bottom border width.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.StyleString">
+            <summary>
+            Represent resulting string what will apply to style html attribute. 
+            </summary>        
+        </member>
+        <member name="P:C1.Web.Calendar.BorderDetailedStyle.IsTrackingViewState">
+            <summary>
+            IsTrackingViewState
+            </summary>
+        </member>
+    </members>
+</doc>

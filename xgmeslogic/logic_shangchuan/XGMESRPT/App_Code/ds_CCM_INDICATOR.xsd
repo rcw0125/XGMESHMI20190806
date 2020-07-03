@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_CCM_INDICATOR" targetNamespace="http://tempuri.org/ds_CCM_INDICATOR.xsd" xmlns:mstns="http://tempuri.org/ds_CCM_INDICATOR.xsd" xmlns="http://tempuri.org/ds_CCM_INDICATOR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TQ_CCM_INDICATORTableAdapter" GeneratorDataComponentClassName="TQ_CCM_INDICATORTableAdapter" Name="TQ_CCM_INDICATOR" UserDataComponentName="TQ_CCM_INDICATORTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TQ_CCM_INDICATOR" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LOGTIME, TEAM, PRO_TOTAL_D, TUNDISH_TEMP_TOTAL_D, 
+      TUNDISH_TEMP_RATE_D, FUN_UNIT_RHY_TOTAL_D, FUN_UNIT_RHY_RATE_D, 
+      AUTO_CASTING_TOTAL_D, AUTO_CASTING_RATE_D, PRO_TOTAL_M, 
+      TUNDISH_TEMP_TOTAL_M, TUNDISH_TEMP_RATE_M, FUN_UNIT_RHY_TOTAL_M, 
+      FUN_UNIT_RHY_RATE_M, AUTO_CASTING_TOTAL_M, AUTO_CASTING_RATE_M, 
+      HIGH_C_STEEL_TOTAL_D, HIGH_C_STEEL_TEMP_TOTAL_D, 
+      HIGH_C_STEEL_TEMP_RATE_D, HIGH_C_STEEL_TOTAL_M, 
+      HIGH_C_STEEL_TEMP_TOTAL_M, HIGH_C_STEEL_TEMP_RATE_M, 
+      SPEEDCHANGE1_TOTAL_D, SPEEDCHANGE3_TOTAL_D, SPEEDCHANGE2_TOTAL_D, 
+      SPEEDCHANGE4_TOTAL_D, SPEEDCHANGE_TOTAL_D, CONSTANT_SPEED_RATE_D, 
+      SPEEDCHANGE_DETAILED
+FROM TQ_CCM_INDICATOR</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="PRO_TOTAL_D" DataSetColumn="PRO_TOTAL_D" />
+              <Mapping SourceColumn="TUNDISH_TEMP_TOTAL_D" DataSetColumn="TUNDISH_TEMP_TOTAL_D" />
+              <Mapping SourceColumn="TUNDISH_TEMP_RATE_D" DataSetColumn="TUNDISH_TEMP_RATE_D" />
+              <Mapping SourceColumn="FUN_UNIT_RHY_TOTAL_D" DataSetColumn="FUN_UNIT_RHY_TOTAL_D" />
+              <Mapping SourceColumn="FUN_UNIT_RHY_RATE_D" DataSetColumn="FUN_UNIT_RHY_RATE_D" />
+              <Mapping SourceColumn="AUTO_CASTING_TOTAL_D" DataSetColumn="AUTO_CASTING_TOTAL_D" />
+              <Mapping SourceColumn="AUTO_CASTING_RATE_D" DataSetColumn="AUTO_CASTING_RATE_D" />
+              <Mapping SourceColumn="PRO_TOTAL_M" DataSetColumn="PRO_TOTAL_M" />
+              <Mapping SourceColumn="TUNDISH_TEMP_TOTAL_M" DataSetColumn="TUNDISH_TEMP_TOTAL_M" />
+              <Mapping SourceColumn="TUNDISH_TEMP_RATE_M" DataSetColumn="TUNDISH_TEMP_RATE_M" />
+              <Mapping SourceColumn="FUN_UNIT_RHY_TOTAL_M" DataSetColumn="FUN_UNIT_RHY_TOTAL_M" />
+              <Mapping SourceColumn="FUN_UNIT_RHY_RATE_M" DataSetColumn="FUN_UNIT_RHY_RATE_M" />
+              <Mapping SourceColumn="AUTO_CASTING_TOTAL_M" DataSetColumn="AUTO_CASTING_TOTAL_M" />
+              <Mapping SourceColumn="AUTO_CASTING_RATE_M" DataSetColumn="AUTO_CASTING_RATE_M" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TOTAL_D" DataSetColumn="HIGH_C_STEEL_TOTAL_D" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TEMP_TOTAL_D" DataSetColumn="HIGH_C_STEEL_TEMP_TOTAL_D" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TEMP_RATE_D" DataSetColumn="HIGH_C_STEEL_TEMP_RATE_D" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TOTAL_M" DataSetColumn="HIGH_C_STEEL_TOTAL_M" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TEMP_TOTAL_M" DataSetColumn="HIGH_C_STEEL_TEMP_TOTAL_M" />
+              <Mapping SourceColumn="HIGH_C_STEEL_TEMP_RATE_M" DataSetColumn="HIGH_C_STEEL_TEMP_RATE_M" />
+              <Mapping SourceColumn="SPEEDCHANGE1_TOTAL_D" DataSetColumn="SPEEDCHANGE1_TOTAL_D" />
+              <Mapping SourceColumn="SPEEDCHANGE3_TOTAL_D" DataSetColumn="SPEEDCHANGE3_TOTAL_D" />
+              <Mapping SourceColumn="SPEEDCHANGE2_TOTAL_D" DataSetColumn="SPEEDCHANGE2_TOTAL_D" />
+              <Mapping SourceColumn="SPEEDCHANGE4_TOTAL_D" DataSetColumn="SPEEDCHANGE4_TOTAL_D" />
+              <Mapping SourceColumn="SPEEDCHANGE_TOTAL_D" DataSetColumn="SPEEDCHANGE_TOTAL_D" />
+              <Mapping SourceColumn="CONSTANT_SPEED_RATE_D" DataSetColumn="CONSTANT_SPEED_RATE_D" />
+              <Mapping SourceColumn="SPEEDCHANGE_DETAILED" DataSetColumn="SPEEDCHANGE_DETAILED" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_CCM_INDICATOR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ds_CCM_INDICATOR" msprop:Generator_UserDSName="ds_CCM_INDICATOR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TQ_CCM_INDICATOR" msprop:Generator_UserTableName="TQ_CCM_INDICATOR" msprop:Generator_RowEvArgName="TQ_CCM_INDICATORRowChangeEvent" msprop:Generator_TableVarName="tableTQ_CCM_INDICATOR" msprop:Generator_TablePropName="TQ_CCM_INDICATOR" msprop:Generator_RowDeletingName="TQ_CCM_INDICATORRowDeleting" msprop:Generator_RowChangingName="TQ_CCM_INDICATORRowChanging" msprop:Generator_RowDeletedName="TQ_CCM_INDICATORRowDeleted" msprop:Generator_RowEvHandlerName="TQ_CCM_INDICATORRowChangeEventHandler" msprop:Generator_TableClassName="TQ_CCM_INDICATORDataTable" msprop:Generator_RowChangedName="TQ_CCM_INDICATORRowChanged" msprop:Generator_RowClassName="TQ_CCM_INDICATORRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn" msprop:Generator_UserColumnName="LOGTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" msprop:Generator_UserColumnName="TEAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRO_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnPRO_TOTAL_D" msprop:Generator_ColumnPropNameInRow="PRO_TOTAL_D" msprop:Generator_ColumnPropNameInTable="PRO_TOTAL_DColumn" msprop:Generator_UserColumnName="PRO_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_TEMP_TOTAL_D" msprop:Generator_ColumnPropNameInRow="TUNDISH_TEMP_TOTAL_D" msprop:Generator_ColumnPropNameInTable="TUNDISH_TEMP_TOTAL_DColumn" msprop:Generator_UserColumnName="TUNDISH_TEMP_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_RATE_D" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_TEMP_RATE_D" msprop:Generator_ColumnPropNameInRow="TUNDISH_TEMP_RATE_D" msprop:Generator_ColumnPropNameInTable="TUNDISH_TEMP_RATE_DColumn" msprop:Generator_UserColumnName="TUNDISH_TEMP_RATE_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FUN_UNIT_RHY_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnFUN_UNIT_RHY_TOTAL_D" msprop:Generator_ColumnPropNameInRow="FUN_UNIT_RHY_TOTAL_D" msprop:Generator_ColumnPropNameInTable="FUN_UNIT_RHY_TOTAL_DColumn" msprop:Generator_UserColumnName="FUN_UNIT_RHY_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FUN_UNIT_RHY_RATE_D" msprop:Generator_ColumnVarNameInTable="columnFUN_UNIT_RHY_RATE_D" msprop:Generator_ColumnPropNameInRow="FUN_UNIT_RHY_RATE_D" msprop:Generator_ColumnPropNameInTable="FUN_UNIT_RHY_RATE_DColumn" msprop:Generator_UserColumnName="FUN_UNIT_RHY_RATE_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTO_CASTING_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnAUTO_CASTING_TOTAL_D" msprop:Generator_ColumnPropNameInRow="AUTO_CASTING_TOTAL_D" msprop:Generator_ColumnPropNameInTable="AUTO_CASTING_TOTAL_DColumn" msprop:Generator_UserColumnName="AUTO_CASTING_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTO_CASTING_RATE_D" msprop:Generator_ColumnVarNameInTable="columnAUTO_CASTING_RATE_D" msprop:Generator_ColumnPropNameInRow="AUTO_CASTING_RATE_D" msprop:Generator_ColumnPropNameInTable="AUTO_CASTING_RATE_DColumn" msprop:Generator_UserColumnName="AUTO_CASTING_RATE_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRO_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnPRO_TOTAL_M" msprop:Generator_ColumnPropNameInRow="PRO_TOTAL_M" msprop:Generator_ColumnPropNameInTable="PRO_TOTAL_MColumn" msprop:Generator_UserColumnName="PRO_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_TEMP_TOTAL_M" msprop:Generator_ColumnPropNameInRow="TUNDISH_TEMP_TOTAL_M" msprop:Generator_ColumnPropNameInTable="TUNDISH_TEMP_TOTAL_MColumn" msprop:Generator_UserColumnName="TUNDISH_TEMP_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_TEMP_RATE_M" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_TEMP_RATE_M" msprop:Generator_ColumnPropNameInRow="TUNDISH_TEMP_RATE_M" msprop:Generator_ColumnPropNameInTable="TUNDISH_TEMP_RATE_MColumn" msprop:Generator_UserColumnName="TUNDISH_TEMP_RATE_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FUN_UNIT_RHY_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnFUN_UNIT_RHY_TOTAL_M" msprop:Generator_ColumnPropNameInRow="FUN_UNIT_RHY_TOTAL_M" msprop:Generator_ColumnPropNameInTable="FUN_UNIT_RHY_TOTAL_MColumn" msprop:Generator_UserColumnName="FUN_UNIT_RHY_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FUN_UNIT_RHY_RATE_M" msprop:Generator_ColumnVarNameInTable="columnFUN_UNIT_RHY_RATE_M" msprop:Generator_ColumnPropNameInRow="FUN_UNIT_RHY_RATE_M" msprop:Generator_ColumnPropNameInTable="FUN_UNIT_RHY_RATE_MColumn" msprop:Generator_UserColumnName="FUN_UNIT_RHY_RATE_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTO_CASTING_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnAUTO_CASTING_TOTAL_M" msprop:Generator_ColumnPropNameInRow="AUTO_CASTING_TOTAL_M" msprop:Generator_ColumnPropNameInTable="AUTO_CASTING_TOTAL_MColumn" msprop:Generator_UserColumnName="AUTO_CASTING_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTO_CASTING_RATE_M" msprop:Generator_ColumnVarNameInTable="columnAUTO_CASTING_RATE_M" msprop:Generator_ColumnPropNameInRow="AUTO_CASTING_RATE_M" msprop:Generator_ColumnPropNameInTable="AUTO_CASTING_RATE_MColumn" msprop:Generator_UserColumnName="AUTO_CASTING_RATE_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TOTAL_D" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TOTAL_D" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TOTAL_DColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TEMP_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TEMP_TOTAL_D" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TEMP_TOTAL_D" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TEMP_TOTAL_DColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TEMP_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TEMP_RATE_D" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TEMP_RATE_D" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TEMP_RATE_D" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TEMP_RATE_DColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TEMP_RATE_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TOTAL_M" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TOTAL_M" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TOTAL_MColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TEMP_TOTAL_M" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TEMP_TOTAL_M" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TEMP_TOTAL_M" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TEMP_TOTAL_MColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TEMP_TOTAL_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HIGH_C_STEEL_TEMP_RATE_M" msprop:Generator_ColumnVarNameInTable="columnHIGH_C_STEEL_TEMP_RATE_M" msprop:Generator_ColumnPropNameInRow="HIGH_C_STEEL_TEMP_RATE_M" msprop:Generator_ColumnPropNameInTable="HIGH_C_STEEL_TEMP_RATE_MColumn" msprop:Generator_UserColumnName="HIGH_C_STEEL_TEMP_RATE_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE1_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE1_TOTAL_D" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE1_TOTAL_D" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE1_TOTAL_DColumn" msprop:Generator_UserColumnName="SPEEDCHANGE1_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE3_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE3_TOTAL_D" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE3_TOTAL_D" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE3_TOTAL_DColumn" msprop:Generator_UserColumnName="SPEEDCHANGE3_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE2_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE2_TOTAL_D" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE2_TOTAL_D" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE2_TOTAL_DColumn" msprop:Generator_UserColumnName="SPEEDCHANGE2_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE4_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE4_TOTAL_D" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE4_TOTAL_D" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE4_TOTAL_DColumn" msprop:Generator_UserColumnName="SPEEDCHANGE4_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE_TOTAL_D" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE_TOTAL_D" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE_TOTAL_D" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE_TOTAL_DColumn" msprop:Generator_UserColumnName="SPEEDCHANGE_TOTAL_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CONSTANT_SPEED_RATE_D" msprop:Generator_ColumnVarNameInTable="columnCONSTANT_SPEED_RATE_D" msprop:Generator_ColumnPropNameInRow="CONSTANT_SPEED_RATE_D" msprop:Generator_ColumnPropNameInTable="CONSTANT_SPEED_RATE_DColumn" msprop:Generator_UserColumnName="CONSTANT_SPEED_RATE_D" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEEDCHANGE_DETAILED" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE_DETAILED" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE_DETAILED" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGE_DETAILEDColumn" msprop:Generator_UserColumnName="SPEEDCHANGE_DETAILED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

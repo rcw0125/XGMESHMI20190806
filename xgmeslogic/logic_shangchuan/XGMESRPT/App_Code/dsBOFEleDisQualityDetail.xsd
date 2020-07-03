@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOFEleDisQualityDetail" targetNamespace="http://tempuri.org/dsBOFEleDisQualityDetail.xsd" xmlns:mstns="http://tempuri.org/dsBOFEleDisQualityDetail.xsd" xmlns="http://tempuri.org/dsBOFEleDisQualityDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TQ_BOF_ELE_DISQUALITY_DETAILTableAdapter" GeneratorDataComponentClassName="TQ_BOF_ELE_DISQUALITY_DETAILTableAdapter" Name="TQ_BOF_ELE_DISQUALITY_DETAIL" UserDataComponentName="TQ_BOF_ELE_DISQUALITY_DETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TQ_BOF_ELE_DISQUALITY_DETAIL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT LOGTIME, C_DETAIL, SI_DETAIL, MN_DETAIL, P_DETAIL, S_DETAIL, AL_DETAIL, 
+      CR_DETAIL, NI_DETAIL, CU_DETAIL, MO_DETAIL, TI_DETAIL, V_DETAIL, B_DETAIL, 
+      TEAM, HEATID,STEELGRADE,STEELGRADEINDEX,PROTOCOL,C_ARRIVAL,SI_ARRIVAL,MN_ARRIVAL,P_ARRIVAL,
+S_ARRIVAL,AL_ARRIVAL,CR_ARRIVAL,NI_ARRIVAL,CU_ARRIVAL,MO_ARRIVAL,V_ARRIVAL,TI_ARRIVAL,B_ARRIVAL,c_min_std,c_max_std,si_min_std,si_max_std,mn_min_std,mn_max_std,p_min_std,p_max_std,s_min_std,s_max_std,al_min_std,al_max_std,cr_min_std,cr_max_std,ni_min_std,ni_max_std,cu_min_std,cu_max_std,mo_min_std,mo_max_std,v_min_std,v_max_std,ti_min_std,ti_max_std,b_min_std,b_max_std
+FROM TQ_BOF_ELE_DISQUALITY_DETAIL</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="C_DETAIL" DataSetColumn="C_DETAIL" />
+              <Mapping SourceColumn="SI_DETAIL" DataSetColumn="SI_DETAIL" />
+              <Mapping SourceColumn="MN_DETAIL" DataSetColumn="MN_DETAIL" />
+              <Mapping SourceColumn="P_DETAIL" DataSetColumn="P_DETAIL" />
+              <Mapping SourceColumn="S_DETAIL" DataSetColumn="S_DETAIL" />
+              <Mapping SourceColumn="AL_DETAIL" DataSetColumn="AL_DETAIL" />
+              <Mapping SourceColumn="CR_DETAIL" DataSetColumn="CR_DETAIL" />
+              <Mapping SourceColumn="NI_DETAIL" DataSetColumn="NI_DETAIL" />
+              <Mapping SourceColumn="CU_DETAIL" DataSetColumn="CU_DETAIL" />
+              <Mapping SourceColumn="MO_DETAIL" DataSetColumn="MO_DETAIL" />
+              <Mapping SourceColumn="TI_DETAIL" DataSetColumn="TI_DETAIL" />
+              <Mapping SourceColumn="V_DETAIL" DataSetColumn="V_DETAIL" />
+              <Mapping SourceColumn="B_DETAIL" DataSetColumn="B_DETAIL" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="STEELGRADE" DataSetColumn="STEELGRADE" />
+              <Mapping SourceColumn="STEELGRADEINDEX" DataSetColumn="STEELGRADEINDEX" />
+              <Mapping SourceColumn="PROTOCOL" DataSetColumn="PROTOCOL" />
+              <Mapping SourceColumn="C_ARRIVAL" DataSetColumn="C_ARRIVAL" />
+              <Mapping SourceColumn="SI_ARRIVAL" DataSetColumn="SI_ARRIVAL" />
+              <Mapping SourceColumn="MN_ARRIVAL" DataSetColumn="MN_ARRIVAL" />
+              <Mapping SourceColumn="P_ARRIVAL" DataSetColumn="P_ARRIVAL" />
+              <Mapping SourceColumn="S_ARRIVAL" DataSetColumn="S_ARRIVAL" />
+              <Mapping SourceColumn="AL_ARRIVAL" DataSetColumn="AL_ARRIVAL" />
+              <Mapping SourceColumn="CR_ARRIVAL" DataSetColumn="CR_ARRIVAL" />
+              <Mapping SourceColumn="NI_ARRIVAL" DataSetColumn="NI_ARRIVAL" />
+              <Mapping SourceColumn="CU_ARRIVAL" DataSetColumn="CU_ARRIVAL" />
+              <Mapping SourceColumn="MO_ARRIVAL" DataSetColumn="MO_ARRIVAL" />
+              <Mapping SourceColumn="V_ARRIVAL" DataSetColumn="V_ARRIVAL" />
+              <Mapping SourceColumn="TI_ARRIVAL" DataSetColumn="TI_ARRIVAL" />
+              <Mapping SourceColumn="B_ARRIVAL" DataSetColumn="B_ARRIVAL" />
+              <Mapping SourceColumn="C_MIN_STD" DataSetColumn="C_MIN_STD" />
+              <Mapping SourceColumn="C_MAX_STD" DataSetColumn="C_MAX_STD" />
+              <Mapping SourceColumn="SI_MIN_STD" DataSetColumn="SI_MIN_STD" />
+              <Mapping SourceColumn="SI_MAX_STD" DataSetColumn="SI_MAX_STD" />
+              <Mapping SourceColumn="MN_MIN_STD" DataSetColumn="MN_MIN_STD" />
+              <Mapping SourceColumn="MN_MAX_STD" DataSetColumn="MN_MAX_STD" />
+              <Mapping SourceColumn="P_MIN_STD" DataSetColumn="P_MIN_STD" />
+              <Mapping SourceColumn="P_MAX_STD" DataSetColumn="P_MAX_STD" />
+              <Mapping SourceColumn="S_MIN_STD" DataSetColumn="S_MIN_STD" />
+              <Mapping SourceColumn="S_MAX_STD" DataSetColumn="S_MAX_STD" />
+              <Mapping SourceColumn="AL_MIN_STD" DataSetColumn="AL_MIN_STD" />
+              <Mapping SourceColumn="AL_MAX_STD" DataSetColumn="AL_MAX_STD" />
+              <Mapping SourceColumn="CR_MIN_STD" DataSetColumn="CR_MIN_STD" />
+              <Mapping SourceColumn="CR_MAX_STD" DataSetColumn="CR_MAX_STD" />
+              <Mapping SourceColumn="NI_MIN_STD" DataSetColumn="NI_MIN_STD" />
+              <Mapping SourceColumn="NI_MAX_STD" DataSetColumn="NI_MAX_STD" />
+              <Mapping SourceColumn="CU_MIN_STD" DataSetColumn="CU_MIN_STD" />
+              <Mapping SourceColumn="CU_MAX_STD" DataSetColumn="CU_MAX_STD" />
+              <Mapping SourceColumn="MO_MIN_STD" DataSetColumn="MO_MIN_STD" />
+              <Mapping SourceColumn="MO_MAX_STD" DataSetColumn="MO_MAX_STD" />
+              <Mapping SourceColumn="V_MIN_STD" DataSetColumn="V_MIN_STD" />
+              <Mapping SourceColumn="V_MAX_STD" DataSetColumn="V_MAX_STD" />
+              <Mapping SourceColumn="TI_MIN_STD" DataSetColumn="TI_MIN_STD" />
+              <Mapping SourceColumn="TI_MAX_STD" DataSetColumn="TI_MAX_STD" />
+              <Mapping SourceColumn="B_MIN_STD" DataSetColumn="B_MIN_STD" />
+              <Mapping SourceColumn="B_MAX_STD" DataSetColumn="B_MAX_STD" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOFEleDisQualityDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOFEleDisQualityDetail" msprop:Generator_DataSetName="dsBOFEleDisQualityDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TQ_BOF_ELE_DISQUALITY_DETAIL" msprop:Generator_UserTableName="TQ_BOF_ELE_DISQUALITY_DETAIL" msprop:Generator_RowDeletedName="TQ_BOF_ELE_DISQUALITY_DETAILRowDeleted" msprop:Generator_RowChangedName="TQ_BOF_ELE_DISQUALITY_DETAILRowChanged" msprop:Generator_RowClassName="TQ_BOF_ELE_DISQUALITY_DETAILRow" msprop:Generator_RowChangingName="TQ_BOF_ELE_DISQUALITY_DETAILRowChanging" msprop:Generator_RowEvArgName="TQ_BOF_ELE_DISQUALITY_DETAILRowChangeEvent" msprop:Generator_RowEvHandlerName="TQ_BOF_ELE_DISQUALITY_DETAILRowChangeEventHandler" msprop:Generator_TableClassName="TQ_BOF_ELE_DISQUALITY_DETAILDataTable" msprop:Generator_TableVarName="tableTQ_BOF_ELE_DISQUALITY_DETAIL" msprop:Generator_RowDeletingName="TQ_BOF_ELE_DISQUALITY_DETAILRowDeleting" msprop:Generator_TablePropName="TQ_BOF_ELE_DISQUALITY_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGTIME" msprop:Generator_UserColumnName="LOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C_DETAIL" msprop:Generator_UserColumnName="C_DETAIL" msprop:Generator_ColumnPropNameInRow="C_DETAIL" msprop:Generator_ColumnVarNameInTable="columnC_DETAIL" msprop:Generator_ColumnPropNameInTable="C_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SI_DETAIL" msprop:Generator_UserColumnName="SI_DETAIL" msprop:Generator_ColumnPropNameInRow="SI_DETAIL" msprop:Generator_ColumnVarNameInTable="columnSI_DETAIL" msprop:Generator_ColumnPropNameInTable="SI_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MN_DETAIL" msprop:Generator_UserColumnName="MN_DETAIL" msprop:Generator_ColumnPropNameInRow="MN_DETAIL" msprop:Generator_ColumnVarNameInTable="columnMN_DETAIL" msprop:Generator_ColumnPropNameInTable="MN_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_DETAIL" msprop:Generator_UserColumnName="P_DETAIL" msprop:Generator_ColumnPropNameInRow="P_DETAIL" msprop:Generator_ColumnVarNameInTable="columnP_DETAIL" msprop:Generator_ColumnPropNameInTable="P_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_DETAIL" msprop:Generator_UserColumnName="S_DETAIL" msprop:Generator_ColumnPropNameInRow="S_DETAIL" msprop:Generator_ColumnVarNameInTable="columnS_DETAIL" msprop:Generator_ColumnPropNameInTable="S_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AL_DETAIL" msprop:Generator_UserColumnName="AL_DETAIL" msprop:Generator_ColumnPropNameInRow="AL_DETAIL" msprop:Generator_ColumnVarNameInTable="columnAL_DETAIL" msprop:Generator_ColumnPropNameInTable="AL_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CR_DETAIL" msprop:Generator_UserColumnName="CR_DETAIL" msprop:Generator_ColumnPropNameInRow="CR_DETAIL" msprop:Generator_ColumnVarNameInTable="columnCR_DETAIL" msprop:Generator_ColumnPropNameInTable="CR_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NI_DETAIL" msprop:Generator_UserColumnName="NI_DETAIL" msprop:Generator_ColumnPropNameInRow="NI_DETAIL" msprop:Generator_ColumnVarNameInTable="columnNI_DETAIL" msprop:Generator_ColumnPropNameInTable="NI_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CU_DETAIL" msprop:Generator_UserColumnName="CU_DETAIL" msprop:Generator_ColumnPropNameInRow="CU_DETAIL" msprop:Generator_ColumnVarNameInTable="columnCU_DETAIL" msprop:Generator_ColumnPropNameInTable="CU_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MO_DETAIL" msprop:Generator_UserColumnName="MO_DETAIL" msprop:Generator_ColumnPropNameInRow="MO_DETAIL" msprop:Generator_ColumnVarNameInTable="columnMO_DETAIL" msprop:Generator_ColumnPropNameInTable="MO_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TI_DETAIL" msprop:Generator_UserColumnName="TI_DETAIL" msprop:Generator_ColumnPropNameInRow="TI_DETAIL" msprop:Generator_ColumnVarNameInTable="columnTI_DETAIL" msprop:Generator_ColumnPropNameInTable="TI_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="V_DETAIL" msprop:Generator_UserColumnName="V_DETAIL" msprop:Generator_ColumnPropNameInRow="V_DETAIL" msprop:Generator_ColumnVarNameInTable="columnV_DETAIL" msprop:Generator_ColumnPropNameInTable="V_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_DETAIL" msprop:Generator_UserColumnName="B_DETAIL" msprop:Generator_ColumnPropNameInRow="B_DETAIL" msprop:Generator_ColumnVarNameInTable="columnB_DETAIL" msprop:Generator_ColumnPropNameInTable="B_DETAILColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" msprop:Generator_UserColumnName="TEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATID" msprop:Generator_UserColumnName="HEATID" msprop:Generator_ColumnPropNameInRow="HEATID" msprop:Generator_ColumnVarNameInTable="columnHEATID" msprop:Generator_ColumnPropNameInTable="HEATIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEELGRADE" msprop:Generator_UserColumnName="STEELGRADE" msprop:Generator_ColumnVarNameInTable="columnSTEELGRADE" msprop:Generator_ColumnPropNameInRow="STEELGRADE" msprop:Generator_ColumnPropNameInTable="STEELGRADEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEELGRADEINDEX" msprop:Generator_UserColumnName="STEELGRADEINDEX" msprop:Generator_ColumnVarNameInTable="columnSTEELGRADEINDEX" msprop:Generator_ColumnPropNameInRow="STEELGRADEINDEX" msprop:Generator_ColumnPropNameInTable="STEELGRADEINDEXColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTOCOL" msprop:Generator_UserColumnName="PROTOCOL" msprop:Generator_ColumnPropNameInRow="PROTOCOL" msprop:Generator_ColumnVarNameInTable="columnPROTOCOL" msprop:Generator_ColumnPropNameInTable="PROTOCOLColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="C_ARRIVAL" msprop:Generator_UserColumnName="C_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnC_ARRIVAL" msprop:Generator_ColumnPropNameInRow="C_ARRIVAL" msprop:Generator_ColumnPropNameInTable="C_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_ARRIVAL" msprop:Generator_UserColumnName="SI_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnSI_ARRIVAL" msprop:Generator_ColumnPropNameInRow="SI_ARRIVAL" msprop:Generator_ColumnPropNameInTable="SI_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_ARRIVAL" msprop:Generator_UserColumnName="MN_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnMN_ARRIVAL" msprop:Generator_ColumnPropNameInRow="MN_ARRIVAL" msprop:Generator_ColumnPropNameInTable="MN_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_ARRIVAL" msprop:Generator_UserColumnName="P_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnP_ARRIVAL" msprop:Generator_ColumnPropNameInRow="P_ARRIVAL" msprop:Generator_ColumnPropNameInTable="P_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_ARRIVAL" msprop:Generator_UserColumnName="S_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnS_ARRIVAL" msprop:Generator_ColumnPropNameInRow="S_ARRIVAL" msprop:Generator_ColumnPropNameInTable="S_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_ARRIVAL" msprop:Generator_UserColumnName="AL_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnAL_ARRIVAL" msprop:Generator_ColumnPropNameInRow="AL_ARRIVAL" msprop:Generator_ColumnPropNameInTable="AL_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_ARRIVAL" msprop:Generator_UserColumnName="CR_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnCR_ARRIVAL" msprop:Generator_ColumnPropNameInRow="CR_ARRIVAL" msprop:Generator_ColumnPropNameInTable="CR_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_ARRIVAL" msprop:Generator_UserColumnName="NI_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnNI_ARRIVAL" msprop:Generator_ColumnPropNameInRow="NI_ARRIVAL" msprop:Generator_ColumnPropNameInTable="NI_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_ARRIVAL" msprop:Generator_UserColumnName="CU_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnCU_ARRIVAL" msprop:Generator_ColumnPropNameInRow="CU_ARRIVAL" msprop:Generator_ColumnPropNameInTable="CU_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_ARRIVAL" msprop:Generator_UserColumnName="MO_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnMO_ARRIVAL" msprop:Generator_ColumnPropNameInRow="MO_ARRIVAL" msprop:Generator_ColumnPropNameInTable="MO_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_ARRIVAL" msprop:Generator_UserColumnName="V_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnV_ARRIVAL" msprop:Generator_ColumnPropNameInRow="V_ARRIVAL" msprop:Generator_ColumnPropNameInTable="V_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_ARRIVAL" msprop:Generator_UserColumnName="TI_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnTI_ARRIVAL" msprop:Generator_ColumnPropNameInRow="TI_ARRIVAL" msprop:Generator_ColumnPropNameInTable="TI_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_ARRIVAL" msprop:Generator_UserColumnName="B_ARRIVAL" msprop:Generator_ColumnVarNameInTable="columnB_ARRIVAL" msprop:Generator_ColumnPropNameInRow="B_ARRIVAL" msprop:Generator_ColumnPropNameInTable="B_ARRIVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_MIN_STD" msprop:Generator_UserColumnName="C_MIN_STD" msprop:Generator_ColumnPropNameInRow="C_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnC_MIN_STD" msprop:Generator_ColumnPropNameInTable="C_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="C_MAX_STD" msprop:Generator_UserColumnName="C_MAX_STD" msprop:Generator_ColumnPropNameInRow="C_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnC_MAX_STD" msprop:Generator_ColumnPropNameInTable="C_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_MIN_STD" msprop:Generator_UserColumnName="SI_MIN_STD" msprop:Generator_ColumnPropNameInRow="SI_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnSI_MIN_STD" msprop:Generator_ColumnPropNameInTable="SI_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SI_MAX_STD" msprop:Generator_UserColumnName="SI_MAX_STD" msprop:Generator_ColumnPropNameInRow="SI_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnSI_MAX_STD" msprop:Generator_ColumnPropNameInTable="SI_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_MIN_STD" msprop:Generator_UserColumnName="MN_MIN_STD" msprop:Generator_ColumnPropNameInRow="MN_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnMN_MIN_STD" msprop:Generator_ColumnPropNameInTable="MN_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MN_MAX_STD" msprop:Generator_UserColumnName="MN_MAX_STD" msprop:Generator_ColumnPropNameInRow="MN_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnMN_MAX_STD" msprop:Generator_ColumnPropNameInTable="MN_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_MIN_STD" msprop:Generator_UserColumnName="P_MIN_STD" msprop:Generator_ColumnPropNameInRow="P_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnP_MIN_STD" msprop:Generator_ColumnPropNameInTable="P_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="P_MAX_STD" msprop:Generator_UserColumnName="P_MAX_STD" msprop:Generator_ColumnPropNameInRow="P_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnP_MAX_STD" msprop:Generator_ColumnPropNameInTable="P_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_MIN_STD" msprop:Generator_UserColumnName="S_MIN_STD" msprop:Generator_ColumnPropNameInRow="S_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnS_MIN_STD" msprop:Generator_ColumnPropNameInTable="S_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="S_MAX_STD" msprop:Generator_UserColumnName="S_MAX_STD" msprop:Generator_ColumnPropNameInRow="S_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnS_MAX_STD" msprop:Generator_ColumnPropNameInTable="S_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_MIN_STD" msprop:Generator_UserColumnName="AL_MIN_STD" msprop:Generator_ColumnPropNameInRow="AL_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnAL_MIN_STD" msprop:Generator_ColumnPropNameInTable="AL_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AL_MAX_STD" msprop:Generator_UserColumnName="AL_MAX_STD" msprop:Generator_ColumnPropNameInRow="AL_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnAL_MAX_STD" msprop:Generator_ColumnPropNameInTable="AL_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_MIN_STD" msprop:Generator_UserColumnName="CR_MIN_STD" msprop:Generator_ColumnPropNameInRow="CR_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnCR_MIN_STD" msprop:Generator_ColumnPropNameInTable="CR_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CR_MAX_STD" msprop:Generator_UserColumnName="CR_MAX_STD" msprop:Generator_ColumnPropNameInRow="CR_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnCR_MAX_STD" msprop:Generator_ColumnPropNameInTable="CR_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_MIN_STD" msprop:Generator_UserColumnName="NI_MIN_STD" msprop:Generator_ColumnPropNameInRow="NI_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnNI_MIN_STD" msprop:Generator_ColumnPropNameInTable="NI_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NI_MAX_STD" msprop:Generator_UserColumnName="NI_MAX_STD" msprop:Generator_ColumnPropNameInRow="NI_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnNI_MAX_STD" msprop:Generator_ColumnPropNameInTable="NI_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_MIN_STD" msprop:Generator_UserColumnName="CU_MIN_STD" msprop:Generator_ColumnPropNameInRow="CU_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnCU_MIN_STD" msprop:Generator_ColumnPropNameInTable="CU_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU_MAX_STD" msprop:Generator_UserColumnName="CU_MAX_STD" msprop:Generator_ColumnPropNameInRow="CU_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnCU_MAX_STD" msprop:Generator_ColumnPropNameInTable="CU_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_MIN_STD" msprop:Generator_UserColumnName="MO_MIN_STD" msprop:Generator_ColumnPropNameInRow="MO_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnMO_MIN_STD" msprop:Generator_ColumnPropNameInTable="MO_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MO_MAX_STD" msprop:Generator_UserColumnName="MO_MAX_STD" msprop:Generator_ColumnPropNameInRow="MO_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnMO_MAX_STD" msprop:Generator_ColumnPropNameInTable="MO_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_MIN_STD" msprop:Generator_UserColumnName="V_MIN_STD" msprop:Generator_ColumnPropNameInRow="V_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnV_MIN_STD" msprop:Generator_ColumnPropNameInTable="V_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="V_MAX_STD" msprop:Generator_UserColumnName="V_MAX_STD" msprop:Generator_ColumnPropNameInRow="V_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnV_MAX_STD" msprop:Generator_ColumnPropNameInTable="V_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_MIN_STD" msprop:Generator_UserColumnName="TI_MIN_STD" msprop:Generator_ColumnPropNameInRow="TI_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnTI_MIN_STD" msprop:Generator_ColumnPropNameInTable="TI_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TI_MAX_STD" msprop:Generator_UserColumnName="TI_MAX_STD" msprop:Generator_ColumnPropNameInRow="TI_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnTI_MAX_STD" msprop:Generator_ColumnPropNameInTable="TI_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_MIN_STD" msprop:Generator_UserColumnName="B_MIN_STD" msprop:Generator_ColumnPropNameInRow="B_MIN_STD" msprop:Generator_ColumnVarNameInTable="columnB_MIN_STD" msprop:Generator_ColumnPropNameInTable="B_MIN_STDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_MAX_STD" msprop:Generator_UserColumnName="B_MAX_STD" msprop:Generator_ColumnPropNameInRow="B_MAX_STD" msprop:Generator_ColumnVarNameInTable="columnB_MAX_STD" msprop:Generator_ColumnPropNameInTable="B_MAX_STDColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

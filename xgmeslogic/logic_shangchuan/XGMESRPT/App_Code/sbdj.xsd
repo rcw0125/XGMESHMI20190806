@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sbdj" targetNamespace="http://tempuri.org/sbdj.xsd" xmlns:mstns="http://tempuri.org/sbdj.xsd" xmlns="http://tempuri.org/sbdj.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString1.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TS_SBDJYBTableAdapter" GeneratorDataComponentClassName="TS_SBDJYBTableAdapter" Name="TS_SBDJYB" UserDataComponentName="TS_SBDJYBTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TS_SBDJYB" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM XGWEBRPT.TS_SBDJYB</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="SBID" DataSetColumn="SBID" />
+              <Mapping SourceColumn="SBNAME" DataSetColumn="SBNAME" />
+              <Mapping SourceColumn="DJLX" DataSetColumn="DJLX" />
+              <Mapping SourceColumn="DJDW" DataSetColumn="DJDW" />
+              <Mapping SourceColumn="DJLB" DataSetColumn="DJLB" />
+              <Mapping SourceColumn="DJZQ" DataSetColumn="DJZQ" />
+              <Mapping SourceColumn="STATUS01" DataSetColumn="STATUS01" />
+              <Mapping SourceColumn="COMMENT01" DataSetColumn="COMMENT01" />
+              <Mapping SourceColumn="DJR01" DataSetColumn="DJR01" />
+              <Mapping SourceColumn="COUNT01" DataSetColumn="COUNT01" />
+              <Mapping SourceColumn="STATUS02" DataSetColumn="STATUS02" />
+              <Mapping SourceColumn="COMMENT02" DataSetColumn="COMMENT02" />
+              <Mapping SourceColumn="DJR02" DataSetColumn="DJR02" />
+              <Mapping SourceColumn="COUNT02" DataSetColumn="COUNT02" />
+              <Mapping SourceColumn="STATUS03" DataSetColumn="STATUS03" />
+              <Mapping SourceColumn="COMMENT03" DataSetColumn="COMMENT03" />
+              <Mapping SourceColumn="DJR03" DataSetColumn="DJR03" />
+              <Mapping SourceColumn="COUNT03" DataSetColumn="COUNT03" />
+              <Mapping SourceColumn="STATUS04" DataSetColumn="STATUS04" />
+              <Mapping SourceColumn="COMMENT04" DataSetColumn="COMMENT04" />
+              <Mapping SourceColumn="DJR04" DataSetColumn="DJR04" />
+              <Mapping SourceColumn="COUNT04" DataSetColumn="COUNT04" />
+              <Mapping SourceColumn="STATUS05" DataSetColumn="STATUS05" />
+              <Mapping SourceColumn="COMMENT05" DataSetColumn="COMMENT05" />
+              <Mapping SourceColumn="DJR05" DataSetColumn="DJR05" />
+              <Mapping SourceColumn="COUNT05" DataSetColumn="COUNT05" />
+              <Mapping SourceColumn="STATUS06" DataSetColumn="STATUS06" />
+              <Mapping SourceColumn="COMMENT06" DataSetColumn="COMMENT06" />
+              <Mapping SourceColumn="DJR06" DataSetColumn="DJR06" />
+              <Mapping SourceColumn="COUNT06" DataSetColumn="COUNT06" />
+              <Mapping SourceColumn="STATUS07" DataSetColumn="STATUS07" />
+              <Mapping SourceColumn="COMMENT07" DataSetColumn="COMMENT07" />
+              <Mapping SourceColumn="DJR07" DataSetColumn="DJR07" />
+              <Mapping SourceColumn="COUNT07" DataSetColumn="COUNT07" />
+              <Mapping SourceColumn="STATUS08" DataSetColumn="STATUS08" />
+              <Mapping SourceColumn="COMMENT08" DataSetColumn="COMMENT08" />
+              <Mapping SourceColumn="DJR08" DataSetColumn="DJR08" />
+              <Mapping SourceColumn="COUNT08" DataSetColumn="COUNT08" />
+              <Mapping SourceColumn="STATUS09" DataSetColumn="STATUS09" />
+              <Mapping SourceColumn="COMMENT09" DataSetColumn="COMMENT09" />
+              <Mapping SourceColumn="DJR09" DataSetColumn="DJR09" />
+              <Mapping SourceColumn="COUNT09" DataSetColumn="COUNT09" />
+              <Mapping SourceColumn="STATUS10" DataSetColumn="STATUS10" />
+              <Mapping SourceColumn="COMMENT10" DataSetColumn="COMMENT10" />
+              <Mapping SourceColumn="DJR10" DataSetColumn="DJR10" />
+              <Mapping SourceColumn="COUNT10" DataSetColumn="COUNT10" />
+              <Mapping SourceColumn="STATUS11" DataSetColumn="STATUS11" />
+              <Mapping SourceColumn="COMMENT11" DataSetColumn="COMMENT11" />
+              <Mapping SourceColumn="DJR11" DataSetColumn="DJR11" />
+              <Mapping SourceColumn="COUNT11" DataSetColumn="COUNT11" />
+              <Mapping SourceColumn="STATUS12" DataSetColumn="STATUS12" />
+              <Mapping SourceColumn="COMMENT12" DataSetColumn="COMMENT12" />
+              <Mapping SourceColumn="DJR12" DataSetColumn="DJR12" />
+              <Mapping SourceColumn="COUNT12" DataSetColumn="COUNT12" />
+              <Mapping SourceColumn="STATUS13" DataSetColumn="STATUS13" />
+              <Mapping SourceColumn="COMMENT13" DataSetColumn="COMMENT13" />
+              <Mapping SourceColumn="DJR13" DataSetColumn="DJR13" />
+              <Mapping SourceColumn="COUNT13" DataSetColumn="COUNT13" />
+              <Mapping SourceColumn="STATUS14" DataSetColumn="STATUS14" />
+              <Mapping SourceColumn="COMMENT14" DataSetColumn="COMMENT14" />
+              <Mapping SourceColumn="DJR14" DataSetColumn="DJR14" />
+              <Mapping SourceColumn="COUNT14" DataSetColumn="COUNT14" />
+              <Mapping SourceColumn="STATUS15" DataSetColumn="STATUS15" />
+              <Mapping SourceColumn="COMMENT15" DataSetColumn="COMMENT15" />
+              <Mapping SourceColumn="DJR15" DataSetColumn="DJR15" />
+              <Mapping SourceColumn="COUNT15" DataSetColumn="COUNT15" />
+              <Mapping SourceColumn="STATUS16" DataSetColumn="STATUS16" />
+              <Mapping SourceColumn="COMMENT16" DataSetColumn="COMMENT16" />
+              <Mapping SourceColumn="DJR16" DataSetColumn="DJR16" />
+              <Mapping SourceColumn="COUNT16" DataSetColumn="COUNT16" />
+              <Mapping SourceColumn="STATUS17" DataSetColumn="STATUS17" />
+              <Mapping SourceColumn="COMMENT17" DataSetColumn="COMMENT17" />
+              <Mapping SourceColumn="DJR17" DataSetColumn="DJR17" />
+              <Mapping SourceColumn="COUNT17" DataSetColumn="COUNT17" />
+              <Mapping SourceColumn="STATUS18" DataSetColumn="STATUS18" />
+              <Mapping SourceColumn="COMMENT18" DataSetColumn="COMMENT18" />
+              <Mapping SourceColumn="DJR18" DataSetColumn="DJR18" />
+              <Mapping SourceColumn="COUNT18" DataSetColumn="COUNT18" />
+              <Mapping SourceColumn="STATUS19" DataSetColumn="STATUS19" />
+              <Mapping SourceColumn="COMMENT19" DataSetColumn="COMMENT19" />
+              <Mapping SourceColumn="DJR19" DataSetColumn="DJR19" />
+              <Mapping SourceColumn="COUNT19" DataSetColumn="COUNT19" />
+              <Mapping SourceColumn="STATUS20" DataSetColumn="STATUS20" />
+              <Mapping SourceColumn="COMMENT20" DataSetColumn="COMMENT20" />
+              <Mapping SourceColumn="DJR20" DataSetColumn="DJR20" />
+              <Mapping SourceColumn="COUNT20" DataSetColumn="COUNT20" />
+              <Mapping SourceColumn="STATUS21" DataSetColumn="STATUS21" />
+              <Mapping SourceColumn="COMMENT21" DataSetColumn="COMMENT21" />
+              <Mapping SourceColumn="DJR21" DataSetColumn="DJR21" />
+              <Mapping SourceColumn="COUNT21" DataSetColumn="COUNT21" />
+              <Mapping SourceColumn="STATUS22" DataSetColumn="STATUS22" />
+              <Mapping SourceColumn="COMMENT22" DataSetColumn="COMMENT22" />
+              <Mapping SourceColumn="DJR22" DataSetColumn="DJR22" />
+              <Mapping SourceColumn="COUNT22" DataSetColumn="COUNT22" />
+              <Mapping SourceColumn="STATUS23" DataSetColumn="STATUS23" />
+              <Mapping SourceColumn="COMMENT23" DataSetColumn="COMMENT23" />
+              <Mapping SourceColumn="DJR23" DataSetColumn="DJR23" />
+              <Mapping SourceColumn="COUNT23" DataSetColumn="COUNT23" />
+              <Mapping SourceColumn="STATUS24" DataSetColumn="STATUS24" />
+              <Mapping SourceColumn="COMMENT24" DataSetColumn="COMMENT24" />
+              <Mapping SourceColumn="DJR24" DataSetColumn="DJR24" />
+              <Mapping SourceColumn="COUNT24" DataSetColumn="COUNT24" />
+              <Mapping SourceColumn="STATUS25" DataSetColumn="STATUS25" />
+              <Mapping SourceColumn="COMMENT25" DataSetColumn="COMMENT25" />
+              <Mapping SourceColumn="DJR25" DataSetColumn="DJR25" />
+              <Mapping SourceColumn="COUNT25" DataSetColumn="COUNT25" />
+              <Mapping SourceColumn="STATUS26" DataSetColumn="STATUS26" />
+              <Mapping SourceColumn="COMMENT26" DataSetColumn="COMMENT26" />
+              <Mapping SourceColumn="DJR26" DataSetColumn="DJR26" />
+              <Mapping SourceColumn="COUNT26" DataSetColumn="COUNT26" />
+              <Mapping SourceColumn="STATUS27" DataSetColumn="STATUS27" />
+              <Mapping SourceColumn="COMMENT27" DataSetColumn="COMMENT27" />
+              <Mapping SourceColumn="DJR27" DataSetColumn="DJR27" />
+              <Mapping SourceColumn="COUNT27" DataSetColumn="COUNT27" />
+              <Mapping SourceColumn="STATUS28" DataSetColumn="STATUS28" />
+              <Mapping SourceColumn="COMMENT28" DataSetColumn="COMMENT28" />
+              <Mapping SourceColumn="DJR28" DataSetColumn="DJR28" />
+              <Mapping SourceColumn="COUNT28" DataSetColumn="COUNT28" />
+              <Mapping SourceColumn="STATUS29" DataSetColumn="STATUS29" />
+              <Mapping SourceColumn="COMMENT29" DataSetColumn="COMMENT29" />
+              <Mapping SourceColumn="DJR29" DataSetColumn="DJR29" />
+              <Mapping SourceColumn="COUNT29" DataSetColumn="COUNT29" />
+              <Mapping SourceColumn="STATUS30" DataSetColumn="STATUS30" />
+              <Mapping SourceColumn="COMMENT30" DataSetColumn="COMMENT30" />
+              <Mapping SourceColumn="DJR30" DataSetColumn="DJR30" />
+              <Mapping SourceColumn="COUNT30" DataSetColumn="COUNT30" />
+              <Mapping SourceColumn="STATUS31" DataSetColumn="STATUS31" />
+              <Mapping SourceColumn="COMMENT31" DataSetColumn="COMMENT31" />
+              <Mapping SourceColumn="DJR31" DataSetColumn="DJR31" />
+              <Mapping SourceColumn="COUNT31" DataSetColumn="COUNT31" />
+              <Mapping SourceColumn="DJBZ" DataSetColumn="DJBZ" />
+              <Mapping SourceColumn="YCOUNT" DataSetColumn="YCOUNT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sbdj" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="sbdj" msprop:Generator_UserDSName="sbdj">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TS_SBDJYB" msprop:Generator_TableClassName="TS_SBDJYBDataTable" msprop:Generator_TableVarName="tableTS_SBDJYB" msprop:Generator_TablePropName="TS_SBDJYB" msprop:Generator_RowDeletingName="TS_SBDJYBRowDeleting" msprop:Generator_UserTableName="TS_SBDJYB" msprop:Generator_RowChangingName="TS_SBDJYBRowChanging" msprop:Generator_RowEvHandlerName="TS_SBDJYBRowChangeEventHandler" msprop:Generator_RowDeletedName="TS_SBDJYBRowDeleted" msprop:Generator_RowEvArgName="TS_SBDJYBRowChangeEvent" msprop:Generator_RowChangedName="TS_SBDJYBRowChanged" msprop:Generator_RowClassName="TS_SBDJYBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn" msprop:Generator_UserColumnName="LOGTIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SBID" msprop:Generator_ColumnVarNameInTable="columnSBID" msprop:Generator_ColumnPropNameInRow="SBID" msprop:Generator_ColumnPropNameInTable="SBIDColumn" msprop:Generator_UserColumnName="SBID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SBNAME" msprop:Generator_ColumnVarNameInTable="columnSBNAME" msprop:Generator_ColumnPropNameInRow="SBNAME" msprop:Generator_ColumnPropNameInTable="SBNAMEColumn" msprop:Generator_UserColumnName="SBNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJLX" msprop:Generator_ColumnVarNameInTable="columnDJLX" msprop:Generator_ColumnPropNameInRow="DJLX" msprop:Generator_ColumnPropNameInTable="DJLXColumn" msprop:Generator_UserColumnName="DJLX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJDW" msprop:Generator_ColumnVarNameInTable="columnDJDW" msprop:Generator_ColumnPropNameInRow="DJDW" msprop:Generator_ColumnPropNameInTable="DJDWColumn" msprop:Generator_UserColumnName="DJDW" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJLB" msprop:Generator_ColumnVarNameInTable="columnDJLB" msprop:Generator_ColumnPropNameInRow="DJLB" msprop:Generator_ColumnPropNameInTable="DJLBColumn" msprop:Generator_UserColumnName="DJLB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJZQ" msprop:Generator_ColumnVarNameInTable="columnDJZQ" msprop:Generator_ColumnPropNameInRow="DJZQ" msprop:Generator_ColumnPropNameInTable="DJZQColumn" msprop:Generator_UserColumnName="DJZQ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS01" msprop:Generator_ColumnVarNameInTable="columnSTATUS01" msprop:Generator_ColumnPropNameInRow="STATUS01" msprop:Generator_ColumnPropNameInTable="STATUS01Column" msprop:Generator_UserColumnName="STATUS01" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT01" msprop:Generator_ColumnVarNameInTable="columnCOMMENT01" msprop:Generator_ColumnPropNameInRow="COMMENT01" msprop:Generator_ColumnPropNameInTable="COMMENT01Column" msprop:Generator_UserColumnName="COMMENT01" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR01" msprop:Generator_ColumnVarNameInTable="columnDJR01" msprop:Generator_ColumnPropNameInRow="DJR01" msprop:Generator_ColumnPropNameInTable="DJR01Column" msprop:Generator_UserColumnName="DJR01" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT01" msprop:Generator_ColumnVarNameInTable="columnCOUNT01" msprop:Generator_ColumnPropNameInRow="COUNT01" msprop:Generator_ColumnPropNameInTable="COUNT01Column" msprop:Generator_UserColumnName="COUNT01" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS02" msprop:Generator_ColumnVarNameInTable="columnSTATUS02" msprop:Generator_ColumnPropNameInRow="STATUS02" msprop:Generator_ColumnPropNameInTable="STATUS02Column" msprop:Generator_UserColumnName="STATUS02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT02" msprop:Generator_ColumnVarNameInTable="columnCOMMENT02" msprop:Generator_ColumnPropNameInRow="COMMENT02" msprop:Generator_ColumnPropNameInTable="COMMENT02Column" msprop:Generator_UserColumnName="COMMENT02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR02" msprop:Generator_ColumnVarNameInTable="columnDJR02" msprop:Generator_ColumnPropNameInRow="DJR02" msprop:Generator_ColumnPropNameInTable="DJR02Column" msprop:Generator_UserColumnName="DJR02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT02" msprop:Generator_ColumnVarNameInTable="columnCOUNT02" msprop:Generator_ColumnPropNameInRow="COUNT02" msprop:Generator_ColumnPropNameInTable="COUNT02Column" msprop:Generator_UserColumnName="COUNT02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS03" msprop:Generator_ColumnVarNameInTable="columnSTATUS03" msprop:Generator_ColumnPropNameInRow="STATUS03" msprop:Generator_ColumnPropNameInTable="STATUS03Column" msprop:Generator_UserColumnName="STATUS03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT03" msprop:Generator_ColumnVarNameInTable="columnCOMMENT03" msprop:Generator_ColumnPropNameInRow="COMMENT03" msprop:Generator_ColumnPropNameInTable="COMMENT03Column" msprop:Generator_UserColumnName="COMMENT03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR03" msprop:Generator_ColumnVarNameInTable="columnDJR03" msprop:Generator_ColumnPropNameInRow="DJR03" msprop:Generator_ColumnPropNameInTable="DJR03Column" msprop:Generator_UserColumnName="DJR03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT03" msprop:Generator_ColumnVarNameInTable="columnCOUNT03" msprop:Generator_ColumnPropNameInRow="COUNT03" msprop:Generator_ColumnPropNameInTable="COUNT03Column" msprop:Generator_UserColumnName="COUNT03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS04" msprop:Generator_ColumnVarNameInTable="columnSTATUS04" msprop:Generator_ColumnPropNameInRow="STATUS04" msprop:Generator_ColumnPropNameInTable="STATUS04Column" msprop:Generator_UserColumnName="STATUS04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT04" msprop:Generator_ColumnVarNameInTable="columnCOMMENT04" msprop:Generator_ColumnPropNameInRow="COMMENT04" msprop:Generator_ColumnPropNameInTable="COMMENT04Column" msprop:Generator_UserColumnName="COMMENT04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR04" msprop:Generator_ColumnVarNameInTable="columnDJR04" msprop:Generator_ColumnPropNameInRow="DJR04" msprop:Generator_ColumnPropNameInTable="DJR04Column" msprop:Generator_UserColumnName="DJR04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT04" msprop:Generator_ColumnVarNameInTable="columnCOUNT04" msprop:Generator_ColumnPropNameInRow="COUNT04" msprop:Generator_ColumnPropNameInTable="COUNT04Column" msprop:Generator_UserColumnName="COUNT04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS05" msprop:Generator_ColumnVarNameInTable="columnSTATUS05" msprop:Generator_ColumnPropNameInRow="STATUS05" msprop:Generator_ColumnPropNameInTable="STATUS05Column" msprop:Generator_UserColumnName="STATUS05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT05" msprop:Generator_ColumnVarNameInTable="columnCOMMENT05" msprop:Generator_ColumnPropNameInRow="COMMENT05" msprop:Generator_ColumnPropNameInTable="COMMENT05Column" msprop:Generator_UserColumnName="COMMENT05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR05" msprop:Generator_ColumnVarNameInTable="columnDJR05" msprop:Generator_ColumnPropNameInRow="DJR05" msprop:Generator_ColumnPropNameInTable="DJR05Column" msprop:Generator_UserColumnName="DJR05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT05" msprop:Generator_ColumnVarNameInTable="columnCOUNT05" msprop:Generator_ColumnPropNameInRow="COUNT05" msprop:Generator_ColumnPropNameInTable="COUNT05Column" msprop:Generator_UserColumnName="COUNT05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS06" msprop:Generator_ColumnVarNameInTable="columnSTATUS06" msprop:Generator_ColumnPropNameInRow="STATUS06" msprop:Generator_ColumnPropNameInTable="STATUS06Column" msprop:Generator_UserColumnName="STATUS06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT06" msprop:Generator_ColumnVarNameInTable="columnCOMMENT06" msprop:Generator_ColumnPropNameInRow="COMMENT06" msprop:Generator_ColumnPropNameInTable="COMMENT06Column" msprop:Generator_UserColumnName="COMMENT06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR06" msprop:Generator_ColumnVarNameInTable="columnDJR06" msprop:Generator_ColumnPropNameInRow="DJR06" msprop:Generator_ColumnPropNameInTable="DJR06Column" msprop:Generator_UserColumnName="DJR06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT06" msprop:Generator_ColumnVarNameInTable="columnCOUNT06" msprop:Generator_ColumnPropNameInRow="COUNT06" msprop:Generator_ColumnPropNameInTable="COUNT06Column" msprop:Generator_UserColumnName="COUNT06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS07" msprop:Generator_ColumnVarNameInTable="columnSTATUS07" msprop:Generator_ColumnPropNameInRow="STATUS07" msprop:Generator_ColumnPropNameInTable="STATUS07Column" msprop:Generator_UserColumnName="STATUS07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT07" msprop:Generator_ColumnVarNameInTable="columnCOMMENT07" msprop:Generator_ColumnPropNameInRow="COMMENT07" msprop:Generator_ColumnPropNameInTable="COMMENT07Column" msprop:Generator_UserColumnName="COMMENT07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR07" msprop:Generator_ColumnVarNameInTable="columnDJR07" msprop:Generator_ColumnPropNameInRow="DJR07" msprop:Generator_ColumnPropNameInTable="DJR07Column" msprop:Generator_UserColumnName="DJR07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT07" msprop:Generator_ColumnVarNameInTable="columnCOUNT07" msprop:Generator_ColumnPropNameInRow="COUNT07" msprop:Generator_ColumnPropNameInTable="COUNT07Column" msprop:Generator_UserColumnName="COUNT07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS08" msprop:Generator_ColumnVarNameInTable="columnSTATUS08" msprop:Generator_ColumnPropNameInRow="STATUS08" msprop:Generator_ColumnPropNameInTable="STATUS08Column" msprop:Generator_UserColumnName="STATUS08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT08" msprop:Generator_ColumnVarNameInTable="columnCOMMENT08" msprop:Generator_ColumnPropNameInRow="COMMENT08" msprop:Generator_ColumnPropNameInTable="COMMENT08Column" msprop:Generator_UserColumnName="COMMENT08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR08" msprop:Generator_ColumnVarNameInTable="columnDJR08" msprop:Generator_ColumnPropNameInRow="DJR08" msprop:Generator_ColumnPropNameInTable="DJR08Column" msprop:Generator_UserColumnName="DJR08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT08" msprop:Generator_ColumnVarNameInTable="columnCOUNT08" msprop:Generator_ColumnPropNameInRow="COUNT08" msprop:Generator_ColumnPropNameInTable="COUNT08Column" msprop:Generator_UserColumnName="COUNT08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS09" msprop:Generator_ColumnVarNameInTable="columnSTATUS09" msprop:Generator_ColumnPropNameInRow="STATUS09" msprop:Generator_ColumnPropNameInTable="STATUS09Column" msprop:Generator_UserColumnName="STATUS09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT09" msprop:Generator_ColumnVarNameInTable="columnCOMMENT09" msprop:Generator_ColumnPropNameInRow="COMMENT09" msprop:Generator_ColumnPropNameInTable="COMMENT09Column" msprop:Generator_UserColumnName="COMMENT09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR09" msprop:Generator_ColumnVarNameInTable="columnDJR09" msprop:Generator_ColumnPropNameInRow="DJR09" msprop:Generator_ColumnPropNameInTable="DJR09Column" msprop:Generator_UserColumnName="DJR09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT09" msprop:Generator_ColumnVarNameInTable="columnCOUNT09" msprop:Generator_ColumnPropNameInRow="COUNT09" msprop:Generator_ColumnPropNameInTable="COUNT09Column" msprop:Generator_UserColumnName="COUNT09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS10" msprop:Generator_ColumnVarNameInTable="columnSTATUS10" msprop:Generator_ColumnPropNameInRow="STATUS10" msprop:Generator_ColumnPropNameInTable="STATUS10Column" msprop:Generator_UserColumnName="STATUS10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT10" msprop:Generator_ColumnVarNameInTable="columnCOMMENT10" msprop:Generator_ColumnPropNameInRow="COMMENT10" msprop:Generator_ColumnPropNameInTable="COMMENT10Column" msprop:Generator_UserColumnName="COMMENT10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR10" msprop:Generator_ColumnVarNameInTable="columnDJR10" msprop:Generator_ColumnPropNameInRow="DJR10" msprop:Generator_ColumnPropNameInTable="DJR10Column" msprop:Generator_UserColumnName="DJR10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT10" msprop:Generator_ColumnVarNameInTable="columnCOUNT10" msprop:Generator_ColumnPropNameInRow="COUNT10" msprop:Generator_ColumnPropNameInTable="COUNT10Column" msprop:Generator_UserColumnName="COUNT10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS11" msprop:Generator_ColumnVarNameInTable="columnSTATUS11" msprop:Generator_ColumnPropNameInRow="STATUS11" msprop:Generator_ColumnPropNameInTable="STATUS11Column" msprop:Generator_UserColumnName="STATUS11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT11" msprop:Generator_ColumnVarNameInTable="columnCOMMENT11" msprop:Generator_ColumnPropNameInRow="COMMENT11" msprop:Generator_ColumnPropNameInTable="COMMENT11Column" msprop:Generator_UserColumnName="COMMENT11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR11" msprop:Generator_ColumnVarNameInTable="columnDJR11" msprop:Generator_ColumnPropNameInRow="DJR11" msprop:Generator_ColumnPropNameInTable="DJR11Column" msprop:Generator_UserColumnName="DJR11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT11" msprop:Generator_ColumnVarNameInTable="columnCOUNT11" msprop:Generator_ColumnPropNameInRow="COUNT11" msprop:Generator_ColumnPropNameInTable="COUNT11Column" msprop:Generator_UserColumnName="COUNT11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS12" msprop:Generator_ColumnVarNameInTable="columnSTATUS12" msprop:Generator_ColumnPropNameInRow="STATUS12" msprop:Generator_ColumnPropNameInTable="STATUS12Column" msprop:Generator_UserColumnName="STATUS12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT12" msprop:Generator_ColumnVarNameInTable="columnCOMMENT12" msprop:Generator_ColumnPropNameInRow="COMMENT12" msprop:Generator_ColumnPropNameInTable="COMMENT12Column" msprop:Generator_UserColumnName="COMMENT12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR12" msprop:Generator_ColumnVarNameInTable="columnDJR12" msprop:Generator_ColumnPropNameInRow="DJR12" msprop:Generator_ColumnPropNameInTable="DJR12Column" msprop:Generator_UserColumnName="DJR12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT12" msprop:Generator_ColumnVarNameInTable="columnCOUNT12" msprop:Generator_ColumnPropNameInRow="COUNT12" msprop:Generator_ColumnPropNameInTable="COUNT12Column" msprop:Generator_UserColumnName="COUNT12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS13" msprop:Generator_ColumnVarNameInTable="columnSTATUS13" msprop:Generator_ColumnPropNameInRow="STATUS13" msprop:Generator_ColumnPropNameInTable="STATUS13Column" msprop:Generator_UserColumnName="STATUS13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT13" msprop:Generator_ColumnVarNameInTable="columnCOMMENT13" msprop:Generator_ColumnPropNameInRow="COMMENT13" msprop:Generator_ColumnPropNameInTable="COMMENT13Column" msprop:Generator_UserColumnName="COMMENT13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR13" msprop:Generator_ColumnVarNameInTable="columnDJR13" msprop:Generator_ColumnPropNameInRow="DJR13" msprop:Generator_ColumnPropNameInTable="DJR13Column" msprop:Generator_UserColumnName="DJR13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT13" msprop:Generator_ColumnVarNameInTable="columnCOUNT13" msprop:Generator_ColumnPropNameInRow="COUNT13" msprop:Generator_ColumnPropNameInTable="COUNT13Column" msprop:Generator_UserColumnName="COUNT13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS14" msprop:Generator_ColumnVarNameInTable="columnSTATUS14" msprop:Generator_ColumnPropNameInRow="STATUS14" msprop:Generator_ColumnPropNameInTable="STATUS14Column" msprop:Generator_UserColumnName="STATUS14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT14" msprop:Generator_ColumnVarNameInTable="columnCOMMENT14" msprop:Generator_ColumnPropNameInRow="COMMENT14" msprop:Generator_ColumnPropNameInTable="COMMENT14Column" msprop:Generator_UserColumnName="COMMENT14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR14" msprop:Generator_ColumnVarNameInTable="columnDJR14" msprop:Generator_ColumnPropNameInRow="DJR14" msprop:Generator_ColumnPropNameInTable="DJR14Column" msprop:Generator_UserColumnName="DJR14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT14" msprop:Generator_ColumnVarNameInTable="columnCOUNT14" msprop:Generator_ColumnPropNameInRow="COUNT14" msprop:Generator_ColumnPropNameInTable="COUNT14Column" msprop:Generator_UserColumnName="COUNT14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS15" msprop:Generator_ColumnVarNameInTable="columnSTATUS15" msprop:Generator_ColumnPropNameInRow="STATUS15" msprop:Generator_ColumnPropNameInTable="STATUS15Column" msprop:Generator_UserColumnName="STATUS15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT15" msprop:Generator_ColumnVarNameInTable="columnCOMMENT15" msprop:Generator_ColumnPropNameInRow="COMMENT15" msprop:Generator_ColumnPropNameInTable="COMMENT15Column" msprop:Generator_UserColumnName="COMMENT15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR15" msprop:Generator_ColumnVarNameInTable="columnDJR15" msprop:Generator_ColumnPropNameInRow="DJR15" msprop:Generator_ColumnPropNameInTable="DJR15Column" msprop:Generator_UserColumnName="DJR15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT15" msprop:Generator_ColumnVarNameInTable="columnCOUNT15" msprop:Generator_ColumnPropNameInRow="COUNT15" msprop:Generator_ColumnPropNameInTable="COUNT15Column" msprop:Generator_UserColumnName="COUNT15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS16" msprop:Generator_ColumnVarNameInTable="columnSTATUS16" msprop:Generator_ColumnPropNameInRow="STATUS16" msprop:Generator_ColumnPropNameInTable="STATUS16Column" msprop:Generator_UserColumnName="STATUS16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT16" msprop:Generator_ColumnVarNameInTable="columnCOMMENT16" msprop:Generator_ColumnPropNameInRow="COMMENT16" msprop:Generator_ColumnPropNameInTable="COMMENT16Column" msprop:Generator_UserColumnName="COMMENT16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR16" msprop:Generator_ColumnVarNameInTable="columnDJR16" msprop:Generator_ColumnPropNameInRow="DJR16" msprop:Generator_ColumnPropNameInTable="DJR16Column" msprop:Generator_UserColumnName="DJR16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT16" msprop:Generator_ColumnVarNameInTable="columnCOUNT16" msprop:Generator_ColumnPropNameInRow="COUNT16" msprop:Generator_ColumnPropNameInTable="COUNT16Column" msprop:Generator_UserColumnName="COUNT16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS17" msprop:Generator_ColumnVarNameInTable="columnSTATUS17" msprop:Generator_ColumnPropNameInRow="STATUS17" msprop:Generator_ColumnPropNameInTable="STATUS17Column" msprop:Generator_UserColumnName="STATUS17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT17" msprop:Generator_ColumnVarNameInTable="columnCOMMENT17" msprop:Generator_ColumnPropNameInRow="COMMENT17" msprop:Generator_ColumnPropNameInTable="COMMENT17Column" msprop:Generator_UserColumnName="COMMENT17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR17" msprop:Generator_ColumnVarNameInTable="columnDJR17" msprop:Generator_ColumnPropNameInRow="DJR17" msprop:Generator_ColumnPropNameInTable="DJR17Column" msprop:Generator_UserColumnName="DJR17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT17" msprop:Generator_ColumnVarNameInTable="columnCOUNT17" msprop:Generator_ColumnPropNameInRow="COUNT17" msprop:Generator_ColumnPropNameInTable="COUNT17Column" msprop:Generator_UserColumnName="COUNT17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS18" msprop:Generator_ColumnVarNameInTable="columnSTATUS18" msprop:Generator_ColumnPropNameInRow="STATUS18" msprop:Generator_ColumnPropNameInTable="STATUS18Column" msprop:Generator_UserColumnName="STATUS18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT18" msprop:Generator_ColumnVarNameInTable="columnCOMMENT18" msprop:Generator_ColumnPropNameInRow="COMMENT18" msprop:Generator_ColumnPropNameInTable="COMMENT18Column" msprop:Generator_UserColumnName="COMMENT18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR18" msprop:Generator_ColumnVarNameInTable="columnDJR18" msprop:Generator_ColumnPropNameInRow="DJR18" msprop:Generator_ColumnPropNameInTable="DJR18Column" msprop:Generator_UserColumnName="DJR18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT18" msprop:Generator_ColumnVarNameInTable="columnCOUNT18" msprop:Generator_ColumnPropNameInRow="COUNT18" msprop:Generator_ColumnPropNameInTable="COUNT18Column" msprop:Generator_UserColumnName="COUNT18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS19" msprop:Generator_ColumnVarNameInTable="columnSTATUS19" msprop:Generator_ColumnPropNameInRow="STATUS19" msprop:Generator_ColumnPropNameInTable="STATUS19Column" msprop:Generator_UserColumnName="STATUS19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT19" msprop:Generator_ColumnVarNameInTable="columnCOMMENT19" msprop:Generator_ColumnPropNameInRow="COMMENT19" msprop:Generator_ColumnPropNameInTable="COMMENT19Column" msprop:Generator_UserColumnName="COMMENT19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR19" msprop:Generator_ColumnVarNameInTable="columnDJR19" msprop:Generator_ColumnPropNameInRow="DJR19" msprop:Generator_ColumnPropNameInTable="DJR19Column" msprop:Generator_UserColumnName="DJR19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT19" msprop:Generator_ColumnVarNameInTable="columnCOUNT19" msprop:Generator_ColumnPropNameInRow="COUNT19" msprop:Generator_ColumnPropNameInTable="COUNT19Column" msprop:Generator_UserColumnName="COUNT19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS20" msprop:Generator_ColumnVarNameInTable="columnSTATUS20" msprop:Generator_ColumnPropNameInRow="STATUS20" msprop:Generator_ColumnPropNameInTable="STATUS20Column" msprop:Generator_UserColumnName="STATUS20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT20" msprop:Generator_ColumnVarNameInTable="columnCOMMENT20" msprop:Generator_ColumnPropNameInRow="COMMENT20" msprop:Generator_ColumnPropNameInTable="COMMENT20Column" msprop:Generator_UserColumnName="COMMENT20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR20" msprop:Generator_ColumnVarNameInTable="columnDJR20" msprop:Generator_ColumnPropNameInRow="DJR20" msprop:Generator_ColumnPropNameInTable="DJR20Column" msprop:Generator_UserColumnName="DJR20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT20" msprop:Generator_ColumnVarNameInTable="columnCOUNT20" msprop:Generator_ColumnPropNameInRow="COUNT20" msprop:Generator_ColumnPropNameInTable="COUNT20Column" msprop:Generator_UserColumnName="COUNT20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS21" msprop:Generator_ColumnVarNameInTable="columnSTATUS21" msprop:Generator_ColumnPropNameInRow="STATUS21" msprop:Generator_ColumnPropNameInTable="STATUS21Column" msprop:Generator_UserColumnName="STATUS21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT21" msprop:Generator_ColumnVarNameInTable="columnCOMMENT21" msprop:Generator_ColumnPropNameInRow="COMMENT21" msprop:Generator_ColumnPropNameInTable="COMMENT21Column" msprop:Generator_UserColumnName="COMMENT21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR21" msprop:Generator_ColumnVarNameInTable="columnDJR21" msprop:Generator_ColumnPropNameInRow="DJR21" msprop:Generator_ColumnPropNameInTable="DJR21Column" msprop:Generator_UserColumnName="DJR21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT21" msprop:Generator_ColumnVarNameInTable="columnCOUNT21" msprop:Generator_ColumnPropNameInRow="COUNT21" msprop:Generator_ColumnPropNameInTable="COUNT21Column" msprop:Generator_UserColumnName="COUNT21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS22" msprop:Generator_ColumnVarNameInTable="columnSTATUS22" msprop:Generator_ColumnPropNameInRow="STATUS22" msprop:Generator_ColumnPropNameInTable="STATUS22Column" msprop:Generator_UserColumnName="STATUS22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT22" msprop:Generator_ColumnVarNameInTable="columnCOMMENT22" msprop:Generator_ColumnPropNameInRow="COMMENT22" msprop:Generator_ColumnPropNameInTable="COMMENT22Column" msprop:Generator_UserColumnName="COMMENT22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR22" msprop:Generator_ColumnVarNameInTable="columnDJR22" msprop:Generator_ColumnPropNameInRow="DJR22" msprop:Generator_ColumnPropNameInTable="DJR22Column" msprop:Generator_UserColumnName="DJR22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT22" msprop:Generator_ColumnVarNameInTable="columnCOUNT22" msprop:Generator_ColumnPropNameInRow="COUNT22" msprop:Generator_ColumnPropNameInTable="COUNT22Column" msprop:Generator_UserColumnName="COUNT22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS23" msprop:Generator_ColumnVarNameInTable="columnSTATUS23" msprop:Generator_ColumnPropNameInRow="STATUS23" msprop:Generator_ColumnPropNameInTable="STATUS23Column" msprop:Generator_UserColumnName="STATUS23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT23" msprop:Generator_ColumnVarNameInTable="columnCOMMENT23" msprop:Generator_ColumnPropNameInRow="COMMENT23" msprop:Generator_ColumnPropNameInTable="COMMENT23Column" msprop:Generator_UserColumnName="COMMENT23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR23" msprop:Generator_ColumnVarNameInTable="columnDJR23" msprop:Generator_ColumnPropNameInRow="DJR23" msprop:Generator_ColumnPropNameInTable="DJR23Column" msprop:Generator_UserColumnName="DJR23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT23" msprop:Generator_ColumnVarNameInTable="columnCOUNT23" msprop:Generator_ColumnPropNameInRow="COUNT23" msprop:Generator_ColumnPropNameInTable="COUNT23Column" msprop:Generator_UserColumnName="COUNT23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS24" msprop:Generator_ColumnVarNameInTable="columnSTATUS24" msprop:Generator_ColumnPropNameInRow="STATUS24" msprop:Generator_ColumnPropNameInTable="STATUS24Column" msprop:Generator_UserColumnName="STATUS24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT24" msprop:Generator_ColumnVarNameInTable="columnCOMMENT24" msprop:Generator_ColumnPropNameInRow="COMMENT24" msprop:Generator_ColumnPropNameInTable="COMMENT24Column" msprop:Generator_UserColumnName="COMMENT24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR24" msprop:Generator_ColumnVarNameInTable="columnDJR24" msprop:Generator_ColumnPropNameInRow="DJR24" msprop:Generator_ColumnPropNameInTable="DJR24Column" msprop:Generator_UserColumnName="DJR24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT24" msprop:Generator_ColumnVarNameInTable="columnCOUNT24" msprop:Generator_ColumnPropNameInRow="COUNT24" msprop:Generator_ColumnPropNameInTable="COUNT24Column" msprop:Generator_UserColumnName="COUNT24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS25" msprop:Generator_ColumnVarNameInTable="columnSTATUS25" msprop:Generator_ColumnPropNameInRow="STATUS25" msprop:Generator_ColumnPropNameInTable="STATUS25Column" msprop:Generator_UserColumnName="STATUS25" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT25" msprop:Generator_ColumnVarNameInTable="columnCOMMENT25" msprop:Generator_ColumnPropNameInRow="COMMENT25" msprop:Generator_ColumnPropNameInTable="COMMENT25Column" msprop:Generator_UserColumnName="COMMENT25" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR25" msprop:Generator_ColumnVarNameInTable="columnDJR25" msprop:Generator_ColumnPropNameInRow="DJR25" msprop:Generator_ColumnPropNameInTable="DJR25Column" msprop:Generator_UserColumnName="DJR25" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT25" msprop:Generator_ColumnVarNameInTable="columnCOUNT25" msprop:Generator_ColumnPropNameInRow="COUNT25" msprop:Generator_ColumnPropNameInTable="COUNT25Column" msprop:Generator_UserColumnName="COUNT25" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS26" msprop:Generator_ColumnVarNameInTable="columnSTATUS26" msprop:Generator_ColumnPropNameInRow="STATUS26" msprop:Generator_ColumnPropNameInTable="STATUS26Column" msprop:Generator_UserColumnName="STATUS26" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT26" msprop:Generator_ColumnVarNameInTable="columnCOMMENT26" msprop:Generator_ColumnPropNameInRow="COMMENT26" msprop:Generator_ColumnPropNameInTable="COMMENT26Column" msprop:Generator_UserColumnName="COMMENT26" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR26" msprop:Generator_ColumnVarNameInTable="columnDJR26" msprop:Generator_ColumnPropNameInRow="DJR26" msprop:Generator_ColumnPropNameInTable="DJR26Column" msprop:Generator_UserColumnName="DJR26" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT26" msprop:Generator_ColumnVarNameInTable="columnCOUNT26" msprop:Generator_ColumnPropNameInRow="COUNT26" msprop:Generator_ColumnPropNameInTable="COUNT26Column" msprop:Generator_UserColumnName="COUNT26" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS27" msprop:Generator_ColumnVarNameInTable="columnSTATUS27" msprop:Generator_ColumnPropNameInRow="STATUS27" msprop:Generator_ColumnPropNameInTable="STATUS27Column" msprop:Generator_UserColumnName="STATUS27" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT27" msprop:Generator_ColumnVarNameInTable="columnCOMMENT27" msprop:Generator_ColumnPropNameInRow="COMMENT27" msprop:Generator_ColumnPropNameInTable="COMMENT27Column" msprop:Generator_UserColumnName="COMMENT27" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR27" msprop:Generator_ColumnVarNameInTable="columnDJR27" msprop:Generator_ColumnPropNameInRow="DJR27" msprop:Generator_ColumnPropNameInTable="DJR27Column" msprop:Generator_UserColumnName="DJR27" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT27" msprop:Generator_ColumnVarNameInTable="columnCOUNT27" msprop:Generator_ColumnPropNameInRow="COUNT27" msprop:Generator_ColumnPropNameInTable="COUNT27Column" msprop:Generator_UserColumnName="COUNT27" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS28" msprop:Generator_ColumnVarNameInTable="columnSTATUS28" msprop:Generator_ColumnPropNameInRow="STATUS28" msprop:Generator_ColumnPropNameInTable="STATUS28Column" msprop:Generator_UserColumnName="STATUS28" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT28" msprop:Generator_ColumnVarNameInTable="columnCOMMENT28" msprop:Generator_ColumnPropNameInRow="COMMENT28" msprop:Generator_ColumnPropNameInTable="COMMENT28Column" msprop:Generator_UserColumnName="COMMENT28" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR28" msprop:Generator_ColumnVarNameInTable="columnDJR28" msprop:Generator_ColumnPropNameInRow="DJR28" msprop:Generator_ColumnPropNameInTable="DJR28Column" msprop:Generator_UserColumnName="DJR28" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT28" msprop:Generator_ColumnVarNameInTable="columnCOUNT28" msprop:Generator_ColumnPropNameInRow="COUNT28" msprop:Generator_ColumnPropNameInTable="COUNT28Column" msprop:Generator_UserColumnName="COUNT28" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS29" msprop:Generator_ColumnVarNameInTable="columnSTATUS29" msprop:Generator_ColumnPropNameInRow="STATUS29" msprop:Generator_ColumnPropNameInTable="STATUS29Column" msprop:Generator_UserColumnName="STATUS29" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT29" msprop:Generator_ColumnVarNameInTable="columnCOMMENT29" msprop:Generator_ColumnPropNameInRow="COMMENT29" msprop:Generator_ColumnPropNameInTable="COMMENT29Column" msprop:Generator_UserColumnName="COMMENT29" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR29" msprop:Generator_ColumnVarNameInTable="columnDJR29" msprop:Generator_ColumnPropNameInRow="DJR29" msprop:Generator_ColumnPropNameInTable="DJR29Column" msprop:Generator_UserColumnName="DJR29" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT29" msprop:Generator_ColumnVarNameInTable="columnCOUNT29" msprop:Generator_ColumnPropNameInRow="COUNT29" msprop:Generator_ColumnPropNameInTable="COUNT29Column" msprop:Generator_UserColumnName="COUNT29" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS30" msprop:Generator_ColumnVarNameInTable="columnSTATUS30" msprop:Generator_ColumnPropNameInRow="STATUS30" msprop:Generator_ColumnPropNameInTable="STATUS30Column" msprop:Generator_UserColumnName="STATUS30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT30" msprop:Generator_ColumnVarNameInTable="columnCOMMENT30" msprop:Generator_ColumnPropNameInRow="COMMENT30" msprop:Generator_ColumnPropNameInTable="COMMENT30Column" msprop:Generator_UserColumnName="COMMENT30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR30" msprop:Generator_ColumnVarNameInTable="columnDJR30" msprop:Generator_ColumnPropNameInRow="DJR30" msprop:Generator_ColumnPropNameInTable="DJR30Column" msprop:Generator_UserColumnName="DJR30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT30" msprop:Generator_ColumnVarNameInTable="columnCOUNT30" msprop:Generator_ColumnPropNameInRow="COUNT30" msprop:Generator_ColumnPropNameInTable="COUNT30Column" msprop:Generator_UserColumnName="COUNT30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS31" msprop:Generator_ColumnVarNameInTable="columnSTATUS31" msprop:Generator_ColumnPropNameInRow="STATUS31" msprop:Generator_ColumnPropNameInTable="STATUS31Column" msprop:Generator_UserColumnName="STATUS31" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMENT31" msprop:Generator_ColumnVarNameInTable="columnCOMMENT31" msprop:Generator_ColumnPropNameInRow="COMMENT31" msprop:Generator_ColumnPropNameInTable="COMMENT31Column" msprop:Generator_UserColumnName="COMMENT31" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJR31" msprop:Generator_ColumnVarNameInTable="columnDJR31" msprop:Generator_ColumnPropNameInRow="DJR31" msprop:Generator_ColumnPropNameInTable="DJR31Column" msprop:Generator_UserColumnName="DJR31" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNT31" msprop:Generator_ColumnVarNameInTable="columnCOUNT31" msprop:Generator_ColumnPropNameInRow="COUNT31" msprop:Generator_ColumnPropNameInTable="COUNT31Column" msprop:Generator_UserColumnName="COUNT31" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DJBZ" msprop:Generator_ColumnVarNameInTable="columnDJBZ" msprop:Generator_ColumnPropNameInRow="DJBZ" msprop:Generator_ColumnPropNameInTable="DJBZColumn" msprop:Generator_UserColumnName="DJBZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YCOUNT" msprop:Generator_ColumnVarNameInTable="columnYCOUNT" msprop:Generator_ColumnPropNameInRow="YCOUNT" msprop:Generator_ColumnPropNameInTable="YCOUNTColumn" msprop:Generator_UserColumnName="YCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

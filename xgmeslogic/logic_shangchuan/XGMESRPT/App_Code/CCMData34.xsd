@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CCMData34" targetNamespace="http://tempuri.org/CCMData34.xsd" xmlns:mstns="http://tempuri.org/CCMData34.xsd" xmlns="http://tempuri.org/CCMData34.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TC_ORIGINALDATA_NO3ANDNO4TableAdapter" GeneratorDataComponentClassName="TC_ORIGINALDATA_NO3ANDNO4TableAdapter" Name="TC_ORIGINALDATA_NO3ANDNO4" UserDataComponentName="TC_ORIGINALDATA_NO3ANDNO4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (Web.config)" DbObjectName="XGWEBRPT.TC_ORIGINALDATA_NO3ANDNO4" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "TC_ORIGINALDATA_NO3ANDNO4" ("LOGTIME", "TEAM", "SHIFT", "LOG_PER", "HEADFURNACE", "TUNDISH_1ST_OFFICER", "TUNDISH_2ND_OFFICER", "TUNDISH_3RD_OFFICER", "TUNDISH_4TH_OFFICER", "LADLE_OPERATOR", "STEEL_GRADE", "BLOCK_SIZE", "LENGTH", "HEATID", "CASTINGNO", "LADLEID", "LADLE_GRADE", "STEEL_WEIGHT", "TEMP", "STEELTEMPUPTO", "ARRIVAL_TIME", "CASTING_START_TIME", "CASTING_STOP_TIME", "OFF_LADLE_TIME", "REMAINWEIGHT", "HOLDTIME", "AUTOFLOW", "UNAUTOFLOW_REASON", "PROTECTION", "UNPROTECTION_REASON", "FLOW_BLOWAR_PROTECTCASTING", "TUNDISH_CARID", "TUNDISHID", "CASTINGSTARTTIME1", "CASTINGSTOPTIME1", "CASTINGSTARTTIME2", "CASTINGSTOPTIME2", "CASTINGSTARTTIME3", "CASTINGSTOPTIME3", "CASTINGSTARTTIME4", "CASTINGSTOPTIME4", "TUNDISHTEMP5", "TUNDISHTEMP10", "TUNDISHTEMP15", "TUNDISHTEMP20", "TUNDISHTEMP25", "TUNDISHTEMP30", "TUNDISHTEMP35", "LADLESTOPTEMP", "TUNDISHTEMPUPTO", "SPEED1ST", "SPEED2ND", "SPEED3RD", "SPEED4TH", "TUNDISHWEIGHT", "BOTTOM_TEMP", "WALL_TEMP", "THICKNESS", "PLUGBAR_CONTROL", "INJECTIONBAR_BLOWAR", "FLOW_BLOWAR_PLUGBAR_1ST", "FLOW_BLOWAR_PLUGBAR_2ND", "FLOW_BLOWAR_PLUGBAR_3RD", "FLOW_BLOWAR_PLUGBAR_4TH", "POSITION_PLUGBAR_1ST", "POSITION_PLUGBAR_2ND", "POSITION_PLUGBAR_3RD", "POSITION_PLUGBAR_4TH", "MOLD_ELEC_MIX_CURRENT_1ST", "MOLD_ELEC_MIX_CURRENT_2ND", "MOLD_ELEC_MIX_CURRENT_3RD", "MOLD_ELEC_MIX_CURRENT_4TH", "MOLD_ELEC_MIX_FREQ_1ST", "MOLD_ELEC_MIX_FREQ_2ND", "MOLD_ELEC_MIX_FREQ_3RD", "MOLD_ELEC_MIX_FREQ_4TH", "END_ELEC_MIX_CURRENT_1ST", "END_ELEC_MIX_CURRENT_2ND", "END_ELEC_MIX_CURRENT_3RD", "END_ELEC_MIX_CURRENT_4TH", "END_ELEC_MIX_FREQ_1ST", "END_ELEC_MIX_FREQ_2ND", "END_ELEC_MIX_FREQ_3RD", "END_ELEC_MIX_FREQ_4TH", "COOLING_METERNO", "FLOW_COOLING_1ST", "FLOW_COOLING_2ND", "FLOW_COOLING_3RD", "FLOW_COOLING_4TH", "COOLING_PRESS_1ST", "COOLING_PRESS_2ND", "COOLING_PRESS_3RD", "COOLING_PRESS_4TH", "FLOW_1ST", "FLOW_2ND", "FLOW_3RD", "FLOW_4TH", "IN_TEMP", "TEMP_OUT_MOLD_1ST", "TEMP_OUT_MOLD_2ND", "TEMP_OUT_MOLD_3RD", "TEMP_OUT_MOLD_4TH", "TEMP_DIF_MOLD_1ST", "TEMP_DIF_MOLD_2ND", "TEMP_DIF_MOLD_3RD", "TEMP_DIF_MOLD_4TH", "OSCILLATE_METERNO", "PROTECT_DREG_FAC", "PROTECT_DREG_TYPE", "BATCH_ID", "COVER_TYPE", "COVER_FAC", "COVER_ID", "BLOOM_COUNT", "NOTE", "MOLD_DIRECTION_ELECTMIX1", "MOLD_DIRECTION_ELECTMIX2", "MOLD_DIRECTION_ELECTMIX3", "MOLD_DIRECTION_ELECTMIX4", "END_DIRECTION_ELECTMIX1", "END_DIRECTION_ELECTMIX2", "END_DIRECTION_ELECTMIX3", "END_DIRECTION_ELECTMIX4", "CCMID", "TUNDISH_HEATCOUNT", "SPEEDCHANGE", "CASTINGTUNDISHWEIGHT", "ALLEXCEPT", "ACTPROTOCOL", "PROTOCOL", "BOF_NOTE", "LF_NOTE", "WARD_DREGS_FAC", "DRY_FLAP_FAC", "TUNDISHTEMP2", "TUNDISHTEMP40", "TUNDISHTEMP45", "TUNDISHTEMP50", "TUNDISHTEMP55", "TUNDISHTEMP60", "TUNDISHTEMP65", "TUNDISHTEMP70", "CAL_WEIGHT", "BEFORE_CASTING_TUNDISH_TEMP", "BEFORE_CASTING_SHUIKOU_TEMP1", "BEFORE_CASTING_SHUIKOU_TEMP2", "BEFORE_CASTING_SHUIKOU_TEMP3", "BEFORE_CASTING_SHUIKOU_TEMP4") VALUES (:LOGTIME, :TEAM, :SHIFT, :LOG_PER, :HEADFURNACE, :TUNDISH_1ST_OFFICER, :TUNDISH_2ND_OFFICER, :TUNDISH_3RD_OFFICER, :TUNDISH_4TH_OFFICER, :LADLE_OPERATOR, :STEEL_GRADE, :BLOCK_SIZE, :LENGTH, :HEATID, :CASTINGNO, :LADLEID, :LADLE_GRADE, :STEEL_WEIGHT, :TEMP, :STEELTEMPUPTO, :ARRIVAL_TIME, :CASTING_START_TIME, :CASTING_STOP_TIME, :OFF_LADLE_TIME, :REMAINWEIGHT, :HOLDTIME, :AUTOFLOW, :UNAUTOFLOW_REASON, :PROTECTION, :UNPROTECTION_REASON, :p1, :TUNDISH_CARID, :TUNDISHID, :CASTINGSTARTTIME1, :CASTINGSTOPTIME1, :CASTINGSTARTTIME2, :CASTINGSTOPTIME2, :CASTINGSTARTTIME3, :CASTINGSTOPTIME3, :CASTINGSTARTTIME4, :CASTINGSTOPTIME4, :TUNDISHTEMP5, :TUNDISHTEMP10, :TUNDISHTEMP15, :TUNDISHTEMP20, :TUNDISHTEMP25, :TUNDISHTEMP30, :TUNDISHTEMP35, :LADLESTOPTEMP, :TUNDISHTEMPUPTO, :SPEED1ST, :SPEED2ND, :SPEED3RD, :SPEED4TH, :TUNDISHWEIGHT, :BOTTOM_TEMP, :WALL_TEMP, :THICKNESS, :PLUGBAR_CONTROL, :INJECTIONBAR_BLOWAR, :p4, :p7, :p10, :p13, :POSITION_PLUGBAR_1ST, :POSITION_PLUGBAR_2ND, :POSITION_PLUGBAR_3RD, :POSITION_PLUGBAR_4TH, :p16, :p19, :p22, :p25, :p28, :p31, :p34, :p37, :p40, :p43, :p46, :p49, :END_ELEC_MIX_FREQ_1ST, :END_ELEC_MIX_FREQ_2ND, :END_ELEC_MIX_FREQ_3RD, :END_ELEC_MIX_FREQ_4TH, :COOLING_METERNO, :FLOW_COOLING_1ST, :FLOW_COOLING_2ND, :FLOW_COOLING_3RD, :FLOW_COOLING_4TH, :COOLING_PRESS_1ST, :COOLING_PRESS_2ND, :COOLING_PRESS_3RD, :COOLING_PRESS_4TH, :FLOW_1ST, :FLOW_2ND, :FLOW_3RD, :FLOW_4TH, :IN_TEMP, :TEMP_OUT_MOLD_1ST, :TEMP_OUT_MOLD_2ND, :TEMP_OUT_MOLD_3RD, :TEMP_OUT_MOLD_4TH, :TEMP_DIF_MOLD_1ST, :TEMP_DIF_MOLD_2ND, :TEMP_DIF_MOLD_3RD, :TEMP_DIF_MOLD_4TH, :OSCILLATE_METERNO, :PROTECT_DREG_FAC, :PROTECT_DREG_TYPE, :BATCH_ID, :COVER_TYPE, :COVER_FAC, :COVER_ID, :BLOOM_COUNT, :NOTE, :p52, :p55, :p58, :p61, :p64, :p67, :p70, :p73, :CCMID, :TUNDISH_HEATCOUNT, :SPEEDCHANGE, :CASTINGTUNDISHWEIGHT, :ALLEXCEPT, :ACTPROTOCOL, :PROTOCOL, :BOF_NOTE, :LF_NOTE, :WARD_DREGS_FAC, :DRY_FLAP_FAC, :TUNDISHTEMP2, :TUNDISHTEMP40, :TUNDISHTEMP45, :TUNDISHTEMP50, :TUNDISHTEMP55, :TUNDISHTEMP60, :TUNDISHTEMP65, :TUNDISHTEMP70, :CAL_WEIGHT, :p76, :p79, :p82, :p85, :p88)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOGTIME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOGTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TEAM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TEAM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SHIFT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SHIFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LOG_PER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LOG_PER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEADFURNACE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEADFURNACE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_1ST_OFFICER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_1ST_OFFICER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_2ND_OFFICER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_2ND_OFFICER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_3RD_OFFICER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_3RD_OFFICER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_4TH_OFFICER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_4TH_OFFICER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLE_OPERATOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLE_OPERATOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="STEEL_GRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="STEEL_GRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BLOCK_SIZE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BLOCK_SIZE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LENGTH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LENGTH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="HEATID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HEATID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CASTINGNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CASTINGNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLEID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLEID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LADLE_GRADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LADLE_GRADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEEL_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEEL_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="STEELTEMPUPTO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="STEELTEMPUPTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ARRIVAL_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ARRIVAL_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTING_START_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTING_START_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTING_STOP_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTING_STOP_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="OFF_LADLE_TIME" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="OFF_LADLE_TIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="REMAINWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="REMAINWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="HOLDTIME" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="HOLDTIME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="AUTOFLOW" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="AUTOFLOW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="UNAUTOFLOW_REASON" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UNAUTOFLOW_REASON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="PROTECTION" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="PROTECTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="UNPROTECTION_REASON" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UNPROTECTION_REASON" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p1" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_PROTECTCASTING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_CARID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_CARID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISHID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISHID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTARTTIME1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTARTTIME1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTOPTIME1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTOPTIME1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTARTTIME2" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTARTTIME2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTOPTIME2" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTOPTIME2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTARTTIME3" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTARTTIME3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTOPTIME3" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTOPTIME3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTARTTIME4" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTARTTIME4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="CASTINGSTOPTIME4" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="CASTINGSTOPTIME4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP5" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP10" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP15" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP15" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP20" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP25" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP25" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP30" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP30" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP35" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP35" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="LADLESTOPTEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="LADLESTOPTEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMPUPTO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMPUPTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPEED1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPEED1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPEED2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPEED2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPEED3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPEED3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="SPEED4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="SPEED4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BOTTOM_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BOTTOM_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="WALL_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="WALL_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="THICKNESS" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="THICKNESS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PLUGBAR_CONTROL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PLUGBAR_CONTROL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="INJECTIONBAR_BLOWAR" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="INJECTIONBAR_BLOWAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p4" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_PLUGBAR_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p7" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_PLUGBAR_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p10" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_PLUGBAR_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p13" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_BLOWAR_PLUGBAR_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="POSITION_PLUGBAR_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="POSITION_PLUGBAR_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="POSITION_PLUGBAR_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="POSITION_PLUGBAR_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="POSITION_PLUGBAR_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="POSITION_PLUGBAR_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="POSITION_PLUGBAR_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="POSITION_PLUGBAR_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p16" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_CURRENT_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p19" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_CURRENT_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p22" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_CURRENT_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p25" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_CURRENT_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p28" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_FREQ_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p31" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_FREQ_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p34" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_FREQ_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p37" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_ELEC_MIX_FREQ_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p40" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_CURRENT_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p43" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_CURRENT_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p46" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_CURRENT_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p49" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_CURRENT_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="END_ELEC_MIX_FREQ_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_FREQ_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="END_ELEC_MIX_FREQ_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_FREQ_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="END_ELEC_MIX_FREQ_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_FREQ_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="END_ELEC_MIX_FREQ_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_ELEC_MIX_FREQ_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COOLING_METERNO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COOLING_METERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_COOLING_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_COOLING_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_COOLING_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_COOLING_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_COOLING_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_COOLING_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_COOLING_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_COOLING_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COOLING_PRESS_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COOLING_PRESS_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COOLING_PRESS_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COOLING_PRESS_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COOLING_PRESS_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COOLING_PRESS_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="COOLING_PRESS_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="COOLING_PRESS_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FLOW_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FLOW_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="IN_TEMP" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="IN_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_OUT_MOLD_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_OUT_MOLD_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_OUT_MOLD_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_OUT_MOLD_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_OUT_MOLD_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_OUT_MOLD_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_OUT_MOLD_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_OUT_MOLD_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_DIF_MOLD_1ST" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_DIF_MOLD_1ST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_DIF_MOLD_2ND" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_DIF_MOLD_2ND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_DIF_MOLD_3RD" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_DIF_MOLD_3RD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TEMP_DIF_MOLD_4TH" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TEMP_DIF_MOLD_4TH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="OSCILLATE_METERNO" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="OSCILLATE_METERNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROTECT_DREG_FAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROTECT_DREG_FAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROTECT_DREG_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROTECT_DREG_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BATCH_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BATCH_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COVER_TYPE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COVER_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COVER_FAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COVER_FAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="COVER_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COVER_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="BLOOM_COUNT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BLOOM_COUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p52" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_DIRECTION_ELECTMIX1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p55" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_DIRECTION_ELECTMIX2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p58" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_DIRECTION_ELECTMIX3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p61" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="MOLD_DIRECTION_ELECTMIX4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p64" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_DIRECTION_ELECTMIX1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p67" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_DIRECTION_ELECTMIX2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p70" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_DIRECTION_ELECTMIX3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p73" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="END_DIRECTION_ELECTMIX4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="CCMID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CCMID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="TUNDISH_HEATCOUNT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TUNDISH_HEATCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SPEEDCHANGE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SPEEDCHANGE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CASTINGTUNDISHWEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CASTINGTUNDISHWEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ALLEXCEPT" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ALLEXCEPT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ACTPROTOCOL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACTPROTOCOL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PROTOCOL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROTOCOL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BOF_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BOF_NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LF_NOTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LF_NOTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="WARD_DREGS_FAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="WARD_DREGS_FAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="DRY_FLAP_FAC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DRY_FLAP_FAC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP2" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP40" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP45" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP45" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP50" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP55" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP55" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP60" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP60" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP65" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP65" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="TUNDISHTEMP70" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="TUNDISHTEMP70" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="CAL_WEIGHT" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="CAL_WEIGHT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p76" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BEFORE_CASTING_TUNDISH_TEMP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p79" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p82" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p85" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="p88" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LOGTIME, TEAM, SHIFT, LOG_PER, HEADFURNACE, TUNDISH_1ST_OFFICER, TUNDISH_2ND_OFFICER, TUNDISH_3RD_OFFICER, TUNDISH_4TH_OFFICER, LADLE_OPERATOR, STEEL_GRADE, BLOCK_SIZE, LENGTH, HEATID, CASTINGNO, LADLEID, LADLE_GRADE, STEEL_WEIGHT, TEMP, STEELTEMPUPTO, ARRIVAL_TIME, CASTING_START_TIME, CASTING_STOP_TIME, OFF_LADLE_TIME, REMAINWEIGHT, HOLDTIME, AUTOFLOW, UNAUTOFLOW_REASON, PROTECTION, UNPROTECTION_REASON, FLOW_BLOWAR_PROTECTCASTING, TUNDISH_CARID, TUNDISHID, CASTINGSTARTTIME1, CASTINGSTOPTIME1, CASTINGSTARTTIME2, CASTINGSTOPTIME2, CASTINGSTARTTIME3, CASTINGSTOPTIME3, CASTINGSTARTTIME4, CASTINGSTOPTIME4, TUNDISHTEMP5, TUNDISHTEMP10, TUNDISHTEMP15, TUNDISHTEMP20, TUNDISHTEMP25, TUNDISHTEMP30, TUNDISHTEMP35, LADLESTOPTEMP, TUNDISHTEMPUPTO, SPEED1ST, SPEED2ND, SPEED3RD, SPEED4TH, TUNDISHWEIGHT, BOTTOM_TEMP, WALL_TEMP, THICKNESS, PLUGBAR_CONTROL, INJECTIONBAR_BLOWAR, FLOW_BLOWAR_PLUGBAR_1ST, FLOW_BLOWAR_PLUGBAR_2ND, FLOW_BLOWAR_PLUGBAR_3RD, FLOW_BLOWAR_PLUGBAR_4TH, POSITION_PLUGBAR_1ST, POSITION_PLUGBAR_2ND, POSITION_PLUGBAR_3RD, POSITION_PLUGBAR_4TH, MOLD_ELEC_MIX_CURRENT_1ST, MOLD_ELEC_MIX_CURRENT_2ND, MOLD_ELEC_MIX_CURRENT_3RD, MOLD_ELEC_MIX_CURRENT_4TH, MOLD_ELEC_MIX_FREQ_1ST, MOLD_ELEC_MIX_FREQ_2ND, MOLD_ELEC_MIX_FREQ_3RD, MOLD_ELEC_MIX_FREQ_4TH, END_ELEC_MIX_CURRENT_1ST, END_ELEC_MIX_CURRENT_2ND, END_ELEC_MIX_CURRENT_3RD, END_ELEC_MIX_CURRENT_4TH, END_ELEC_MIX_FREQ_1ST, END_ELEC_MIX_FREQ_2ND, END_ELEC_MIX_FREQ_3RD, END_ELEC_MIX_FREQ_4TH, COOLING_METERNO, FLOW_COOLING_1ST, FLOW_COOLING_2ND, FLOW_COOLING_3RD, FLOW_COOLING_4TH, COOLING_PRESS_1ST, COOLING_PRESS_2ND, COOLING_PRESS_3RD, COOLING_PRESS_4TH, FLOW_1ST, FLOW_2ND, FLOW_3RD, FLOW_4TH, IN_TEMP, TEMP_OUT_MOLD_1ST, TEMP_OUT_MOLD_2ND, TEMP_OUT_MOLD_3RD, TEMP_OUT_MOLD_4TH, TEMP_DIF_MOLD_1ST, TEMP_DIF_MOLD_2ND, TEMP_DIF_MOLD_3RD, TEMP_DIF_MOLD_4TH, OSCILLATE_METERNO, PROTECT_DREG_FAC, PROTECT_DREG_TYPE, BATCH_ID, COVER_TYPE, COVER_FAC, COVER_ID, BLOOM_COUNT, NOTE, MOLD_DIRECTION_ELECTMIX1, MOLD_DIRECTION_ELECTMIX2, MOLD_DIRECTION_ELECTMIX3, MOLD_DIRECTION_ELECTMIX4, END_DIRECTION_ELECTMIX1, END_DIRECTION_ELECTMIX2, END_DIRECTION_ELECTMIX3, END_DIRECTION_ELECTMIX4, CCMID, TUNDISH_HEATCOUNT, SPEEDCHANGE, CASTINGTUNDISHWEIGHT, ALLEXCEPT, ACTPROTOCOL, PROTOCOL, BOF_NOTE, LF_NOTE, WARD_DREGS_FAC, DRY_FLAP_FAC, TUNDISHTEMP2, TUNDISHTEMP40, TUNDISHTEMP45, TUNDISHTEMP50, TUNDISHTEMP55, TUNDISHTEMP60, TUNDISHTEMP65, TUNDISHTEMP70, CAL_WEIGHT,BEFORE_CASTING_TUNDISH_TEMP,
+BEFORE_CASTING_SHUIKOU_TEMP1,BEFORE_CASTING_SHUIKOU_TEMP2,BEFORE_CASTING_SHUIKOU_TEMP3,BEFORE_CASTING_SHUIKOU_TEMP4
+ FROM TC_ORIGINALDATA_NO3ANDNO4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LOGTIME" DataSetColumn="LOGTIME" />
+              <Mapping SourceColumn="TEAM" DataSetColumn="TEAM" />
+              <Mapping SourceColumn="SHIFT" DataSetColumn="SHIFT" />
+              <Mapping SourceColumn="LOG_PER" DataSetColumn="LOG_PER" />
+              <Mapping SourceColumn="HEADFURNACE" DataSetColumn="HEADFURNACE" />
+              <Mapping SourceColumn="TUNDISH_1ST_OFFICER" DataSetColumn="TUNDISH_1ST_OFFICER" />
+              <Mapping SourceColumn="TUNDISH_2ND_OFFICER" DataSetColumn="TUNDISH_2ND_OFFICER" />
+              <Mapping SourceColumn="TUNDISH_3RD_OFFICER" DataSetColumn="TUNDISH_3RD_OFFICER" />
+              <Mapping SourceColumn="TUNDISH_4TH_OFFICER" DataSetColumn="TUNDISH_4TH_OFFICER" />
+              <Mapping SourceColumn="LADLE_OPERATOR" DataSetColumn="LADLE_OPERATOR" />
+              <Mapping SourceColumn="STEEL_GRADE" DataSetColumn="STEEL_GRADE" />
+              <Mapping SourceColumn="BLOCK_SIZE" DataSetColumn="BLOCK_SIZE" />
+              <Mapping SourceColumn="LENGTH" DataSetColumn="LENGTH" />
+              <Mapping SourceColumn="HEATID" DataSetColumn="HEATID" />
+              <Mapping SourceColumn="CASTINGNO" DataSetColumn="CASTINGNO" />
+              <Mapping SourceColumn="LADLEID" DataSetColumn="LADLEID" />
+              <Mapping SourceColumn="LADLE_GRADE" DataSetColumn="LADLE_GRADE" />
+              <Mapping SourceColumn="STEEL_WEIGHT" DataSetColumn="STEEL_WEIGHT" />
+              <Mapping SourceColumn="TEMP" DataSetColumn="TEMP" />
+              <Mapping SourceColumn="ARRIVAL_TIME" DataSetColumn="ARRIVAL_TIME" />
+              <Mapping SourceColumn="CASTING_START_TIME" DataSetColumn="CASTING_START_TIME" />
+              <Mapping SourceColumn="CASTING_STOP_TIME" DataSetColumn="CASTING_STOP_TIME" />
+              <Mapping SourceColumn="OFF_LADLE_TIME" DataSetColumn="OFF_LADLE_TIME" />
+              <Mapping SourceColumn="REMAINWEIGHT" DataSetColumn="REMAINWEIGHT" />
+              <Mapping SourceColumn="HOLDTIME" DataSetColumn="HOLDTIME" />
+              <Mapping SourceColumn="UNAUTOFLOW_REASON" DataSetColumn="UNAUTOFLOW_REASON" />
+              <Mapping SourceColumn="UNPROTECTION_REASON" DataSetColumn="UNPROTECTION_REASON" />
+              <Mapping SourceColumn="FLOW_BLOWAR_PROTECTCASTING" DataSetColumn="FLOW_BLOWAR_PROTECTCASTING" />
+              <Mapping SourceColumn="TUNDISH_CARID" DataSetColumn="TUNDISH_CARID" />
+              <Mapping SourceColumn="TUNDISHID" DataSetColumn="TUNDISHID" />
+              <Mapping SourceColumn="CASTINGSTARTTIME1" DataSetColumn="CASTINGSTARTTIME1" />
+              <Mapping SourceColumn="CASTINGSTOPTIME1" DataSetColumn="CASTINGSTOPTIME1" />
+              <Mapping SourceColumn="CASTINGSTARTTIME2" DataSetColumn="CASTINGSTARTTIME2" />
+              <Mapping SourceColumn="CASTINGSTOPTIME2" DataSetColumn="CASTINGSTOPTIME2" />
+              <Mapping SourceColumn="CASTINGSTARTTIME3" DataSetColumn="CASTINGSTARTTIME3" />
+              <Mapping SourceColumn="CASTINGSTOPTIME3" DataSetColumn="CASTINGSTOPTIME3" />
+              <Mapping SourceColumn="CASTINGSTARTTIME4" DataSetColumn="CASTINGSTARTTIME4" />
+              <Mapping SourceColumn="CASTINGSTOPTIME4" DataSetColumn="CASTINGSTOPTIME4" />
+              <Mapping SourceColumn="TUNDISHTEMP5" DataSetColumn="TUNDISHTEMP5" />
+              <Mapping SourceColumn="TUNDISHTEMP10" DataSetColumn="TUNDISHTEMP10" />
+              <Mapping SourceColumn="TUNDISHTEMP15" DataSetColumn="TUNDISHTEMP15" />
+              <Mapping SourceColumn="TUNDISHTEMP20" DataSetColumn="TUNDISHTEMP20" />
+              <Mapping SourceColumn="TUNDISHTEMP25" DataSetColumn="TUNDISHTEMP25" />
+              <Mapping SourceColumn="TUNDISHTEMP30" DataSetColumn="TUNDISHTEMP30" />
+              <Mapping SourceColumn="TUNDISHTEMP35" DataSetColumn="TUNDISHTEMP35" />
+              <Mapping SourceColumn="LADLESTOPTEMP" DataSetColumn="LADLESTOPTEMP" />
+              <Mapping SourceColumn="SPEED1ST" DataSetColumn="SPEED1ST" />
+              <Mapping SourceColumn="SPEED2ND" DataSetColumn="SPEED2ND" />
+              <Mapping SourceColumn="SPEED3RD" DataSetColumn="SPEED3RD" />
+              <Mapping SourceColumn="SPEED4TH" DataSetColumn="SPEED4TH" />
+              <Mapping SourceColumn="TUNDISHWEIGHT" DataSetColumn="TUNDISHWEIGHT" />
+              <Mapping SourceColumn="BOTTOM_TEMP" DataSetColumn="BOTTOM_TEMP" />
+              <Mapping SourceColumn="WALL_TEMP" DataSetColumn="WALL_TEMP" />
+              <Mapping SourceColumn="THICKNESS" DataSetColumn="THICKNESS" />
+              <Mapping SourceColumn="PLUGBAR_CONTROL" DataSetColumn="PLUGBAR_CONTROL" />
+              <Mapping SourceColumn="FLOW_BLOWAR_PLUGBAR_1ST" DataSetColumn="FLOW_BLOWAR_PLUGBAR_1ST" />
+              <Mapping SourceColumn="FLOW_BLOWAR_PLUGBAR_2ND" DataSetColumn="FLOW_BLOWAR_PLUGBAR_2ND" />
+              <Mapping SourceColumn="FLOW_BLOWAR_PLUGBAR_3RD" DataSetColumn="FLOW_BLOWAR_PLUGBAR_3RD" />
+              <Mapping SourceColumn="FLOW_BLOWAR_PLUGBAR_4TH" DataSetColumn="FLOW_BLOWAR_PLUGBAR_4TH" />
+              <Mapping SourceColumn="POSITION_PLUGBAR_1ST" DataSetColumn="POSITION_PLUGBAR_1ST" />
+              <Mapping SourceColumn="POSITION_PLUGBAR_2ND" DataSetColumn="POSITION_PLUGBAR_2ND" />
+              <Mapping SourceColumn="POSITION_PLUGBAR_3RD" DataSetColumn="POSITION_PLUGBAR_3RD" />
+              <Mapping SourceColumn="POSITION_PLUGBAR_4TH" DataSetColumn="POSITION_PLUGBAR_4TH" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_CURRENT_1ST" DataSetColumn="MOLD_ELEC_MIX_CURRENT_1ST" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_CURRENT_2ND" DataSetColumn="MOLD_ELEC_MIX_CURRENT_2ND" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_CURRENT_3RD" DataSetColumn="MOLD_ELEC_MIX_CURRENT_3RD" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_CURRENT_4TH" DataSetColumn="MOLD_ELEC_MIX_CURRENT_4TH" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_FREQ_1ST" DataSetColumn="MOLD_ELEC_MIX_FREQ_1ST" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_FREQ_2ND" DataSetColumn="MOLD_ELEC_MIX_FREQ_2ND" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_FREQ_3RD" DataSetColumn="MOLD_ELEC_MIX_FREQ_3RD" />
+              <Mapping SourceColumn="MOLD_ELEC_MIX_FREQ_4TH" DataSetColumn="MOLD_ELEC_MIX_FREQ_4TH" />
+              <Mapping SourceColumn="END_ELEC_MIX_CURRENT_1ST" DataSetColumn="END_ELEC_MIX_CURRENT_1ST" />
+              <Mapping SourceColumn="END_ELEC_MIX_CURRENT_2ND" DataSetColumn="END_ELEC_MIX_CURRENT_2ND" />
+              <Mapping SourceColumn="END_ELEC_MIX_CURRENT_3RD" DataSetColumn="END_ELEC_MIX_CURRENT_3RD" />
+              <Mapping SourceColumn="END_ELEC_MIX_CURRENT_4TH" DataSetColumn="END_ELEC_MIX_CURRENT_4TH" />
+              <Mapping SourceColumn="END_ELEC_MIX_FREQ_1ST" DataSetColumn="END_ELEC_MIX_FREQ_1ST" />
+              <Mapping SourceColumn="END_ELEC_MIX_FREQ_2ND" DataSetColumn="END_ELEC_MIX_FREQ_2ND" />
+              <Mapping SourceColumn="END_ELEC_MIX_FREQ_3RD" DataSetColumn="END_ELEC_MIX_FREQ_3RD" />
+              <Mapping SourceColumn="END_ELEC_MIX_FREQ_4TH" DataSetColumn="END_ELEC_MIX_FREQ_4TH" />
+              <Mapping SourceColumn="COOLING_METERNO" DataSetColumn="COOLING_METERNO" />
+              <Mapping SourceColumn="FLOW_COOLING_1ST" DataSetColumn="FLOW_COOLING_1ST" />
+              <Mapping SourceColumn="FLOW_COOLING_2ND" DataSetColumn="FLOW_COOLING_2ND" />
+              <Mapping SourceColumn="FLOW_COOLING_3RD" DataSetColumn="FLOW_COOLING_3RD" />
+              <Mapping SourceColumn="FLOW_COOLING_4TH" DataSetColumn="FLOW_COOLING_4TH" />
+              <Mapping SourceColumn="COOLING_PRESS_1ST" DataSetColumn="COOLING_PRESS_1ST" />
+              <Mapping SourceColumn="COOLING_PRESS_2ND" DataSetColumn="COOLING_PRESS_2ND" />
+              <Mapping SourceColumn="COOLING_PRESS_3RD" DataSetColumn="COOLING_PRESS_3RD" />
+              <Mapping SourceColumn="COOLING_PRESS_4TH" DataSetColumn="COOLING_PRESS_4TH" />
+              <Mapping SourceColumn="FLOW_1ST" DataSetColumn="FLOW_1ST" />
+              <Mapping SourceColumn="FLOW_2ND" DataSetColumn="FLOW_2ND" />
+              <Mapping SourceColumn="FLOW_3RD" DataSetColumn="FLOW_3RD" />
+              <Mapping SourceColumn="FLOW_4TH" DataSetColumn="FLOW_4TH" />
+              <Mapping SourceColumn="IN_TEMP" DataSetColumn="IN_TEMP" />
+              <Mapping SourceColumn="TEMP_OUT_MOLD_1ST" DataSetColumn="TEMP_OUT_MOLD_1ST" />
+              <Mapping SourceColumn="TEMP_OUT_MOLD_2ND" DataSetColumn="TEMP_OUT_MOLD_2ND" />
+              <Mapping SourceColumn="TEMP_OUT_MOLD_3RD" DataSetColumn="TEMP_OUT_MOLD_3RD" />
+              <Mapping SourceColumn="TEMP_OUT_MOLD_4TH" DataSetColumn="TEMP_OUT_MOLD_4TH" />
+              <Mapping SourceColumn="TEMP_DIF_MOLD_1ST" DataSetColumn="TEMP_DIF_MOLD_1ST" />
+              <Mapping SourceColumn="TEMP_DIF_MOLD_2ND" DataSetColumn="TEMP_DIF_MOLD_2ND" />
+              <Mapping SourceColumn="TEMP_DIF_MOLD_3RD" DataSetColumn="TEMP_DIF_MOLD_3RD" />
+              <Mapping SourceColumn="TEMP_DIF_MOLD_4TH" DataSetColumn="TEMP_DIF_MOLD_4TH" />
+              <Mapping SourceColumn="OSCILLATE_METERNO" DataSetColumn="OSCILLATE_METERNO" />
+              <Mapping SourceColumn="PROTECT_DREG_FAC" DataSetColumn="PROTECT_DREG_FAC" />
+              <Mapping SourceColumn="PROTECT_DREG_TYPE" DataSetColumn="PROTECT_DREG_TYPE" />
+              <Mapping SourceColumn="BATCH_ID" DataSetColumn="BATCH_ID" />
+              <Mapping SourceColumn="COVER_TYPE" DataSetColumn="COVER_TYPE" />
+              <Mapping SourceColumn="COVER_FAC" DataSetColumn="COVER_FAC" />
+              <Mapping SourceColumn="COVER_ID" DataSetColumn="COVER_ID" />
+              <Mapping SourceColumn="BLOOM_COUNT" DataSetColumn="BLOOM_COUNT" />
+              <Mapping SourceColumn="NOTE" DataSetColumn="NOTE" />
+              <Mapping SourceColumn="MOLD_DIRECTION_ELECTMIX1" DataSetColumn="MOLD_DIRECTION_ELECTMIX1" />
+              <Mapping SourceColumn="MOLD_DIRECTION_ELECTMIX2" DataSetColumn="MOLD_DIRECTION_ELECTMIX2" />
+              <Mapping SourceColumn="MOLD_DIRECTION_ELECTMIX3" DataSetColumn="MOLD_DIRECTION_ELECTMIX3" />
+              <Mapping SourceColumn="MOLD_DIRECTION_ELECTMIX4" DataSetColumn="MOLD_DIRECTION_ELECTMIX4" />
+              <Mapping SourceColumn="END_DIRECTION_ELECTMIX1" DataSetColumn="END_DIRECTION_ELECTMIX1" />
+              <Mapping SourceColumn="END_DIRECTION_ELECTMIX2" DataSetColumn="END_DIRECTION_ELECTMIX2" />
+              <Mapping SourceColumn="END_DIRECTION_ELECTMIX3" DataSetColumn="END_DIRECTION_ELECTMIX3" />
+              <Mapping SourceColumn="END_DIRECTION_ELECTMIX4" DataSetColumn="END_DIRECTION_ELECTMIX4" />
+              <Mapping SourceColumn="STEELTEMPUPTO" DataSetColumn="STEELTEMPUPTO1" />
+              <Mapping SourceColumn="AUTOFLOW" DataSetColumn="AUTOFLOW1" />
+              <Mapping SourceColumn="PROTECTION" DataSetColumn="PROTECTION1" />
+              <Mapping SourceColumn="TUNDISHTEMPUPTO" DataSetColumn="TUNDISHTEMPUPTO1" />
+              <Mapping SourceColumn="INJECTIONBAR_BLOWAR" DataSetColumn="INJECTIONBAR_BLOWAR1" />
+              <Mapping SourceColumn="CCMID" DataSetColumn="CCMID" />
+              <Mapping SourceColumn="TUNDISH_HEATCOUNT" DataSetColumn="TUNDISH_HEATCOUNT" />
+              <Mapping SourceColumn="SPEEDCHANGE" DataSetColumn="SPEEDCHANGE" />
+              <Mapping SourceColumn="CASTINGTUNDISHWEIGHT" DataSetColumn="CASTINGTUNDISHWEIGHT" />
+              <Mapping SourceColumn="ALLEXCEPT" DataSetColumn="ALLEXCEPT" />
+              <Mapping SourceColumn="ACTPROTOCOL" DataSetColumn="ACTPROTOCOL" />
+              <Mapping SourceColumn="PROTOCOL" DataSetColumn="PROTOCOL" />
+              <Mapping SourceColumn="BOF_NOTE" DataSetColumn="BOF_NOTE" />
+              <Mapping SourceColumn="LF_NOTE" DataSetColumn="LF_NOTE" />
+              <Mapping SourceColumn="WARD_DREGS_FAC" DataSetColumn="WARD_DREGS_FAC" />
+              <Mapping SourceColumn="DRY_FLAP_FAC" DataSetColumn="DRY_FLAP_FAC" />
+              <Mapping SourceColumn="TUNDISHTEMP2" DataSetColumn="TUNDISHTEMP2" />
+              <Mapping SourceColumn="TUNDISHTEMP40" DataSetColumn="TUNDISHTEMP40" />
+              <Mapping SourceColumn="TUNDISHTEMP45" DataSetColumn="TUNDISHTEMP45" />
+              <Mapping SourceColumn="TUNDISHTEMP50" DataSetColumn="TUNDISHTEMP50" />
+              <Mapping SourceColumn="TUNDISHTEMP55" DataSetColumn="TUNDISHTEMP55" />
+              <Mapping SourceColumn="TUNDISHTEMP60" DataSetColumn="TUNDISHTEMP60" />
+              <Mapping SourceColumn="TUNDISHTEMP65" DataSetColumn="TUNDISHTEMP65" />
+              <Mapping SourceColumn="TUNDISHTEMP70" DataSetColumn="TUNDISHTEMP70" />
+              <Mapping SourceColumn="CAL_WEIGHT" DataSetColumn="CAL_WEIGHT" />
+              <Mapping SourceColumn="BEFORE_CASTING_TUNDISH_TEMP" DataSetColumn="BEFORE_CASTING_TUNDISH_TEMP" />
+              <Mapping SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP1" DataSetColumn="BEFORE_CASTING_SHUIKOU_TEMP1" />
+              <Mapping SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP2" DataSetColumn="BEFORE_CASTING_SHUIKOU_TEMP2" />
+              <Mapping SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP3" DataSetColumn="BEFORE_CASTING_SHUIKOU_TEMP3" />
+              <Mapping SourceColumn="BEFORE_CASTING_SHUIKOU_TEMP4" DataSetColumn="BEFORE_CASTING_SHUIKOU_TEMP4" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CCMData34" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="CCMData34" msprop:Generator_UserDSName="CCMData34">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TC_ORIGINALDATA_NO3ANDNO4" msprop:Generator_UserTableName="TC_ORIGINALDATA_NO3ANDNO4" msprop:Generator_RowEvArgName="TC_ORIGINALDATA_NO3ANDNO4RowChangeEvent" msprop:Generator_TableVarName="tableTC_ORIGINALDATA_NO3ANDNO4" msprop:Generator_TablePropName="TC_ORIGINALDATA_NO3ANDNO4" msprop:Generator_RowDeletingName="TC_ORIGINALDATA_NO3ANDNO4RowDeleting" msprop:Generator_RowChangingName="TC_ORIGINALDATA_NO3ANDNO4RowChanging" msprop:Generator_RowDeletedName="TC_ORIGINALDATA_NO3ANDNO4RowDeleted" msprop:Generator_RowEvHandlerName="TC_ORIGINALDATA_NO3ANDNO4RowChangeEventHandler" msprop:Generator_TableClassName="TC_ORIGINALDATA_NO3ANDNO4DataTable" msprop:Generator_RowChangedName="TC_ORIGINALDATA_NO3ANDNO4RowChanged" msprop:Generator_RowClassName="TC_ORIGINALDATA_NO3ANDNO4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGTIME" msprop:Generator_ColumnVarNameInTable="columnLOGTIME" msprop:Generator_ColumnPropNameInRow="LOGTIME" msprop:Generator_ColumnPropNameInTable="LOGTIMEColumn" msprop:Generator_UserColumnName="LOGTIME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEAM" msprop:Generator_ColumnVarNameInTable="columnTEAM" msprop:Generator_ColumnPropNameInRow="TEAM" msprop:Generator_ColumnPropNameInTable="TEAMColumn" msprop:Generator_UserColumnName="TEAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHIFT" msprop:Generator_ColumnVarNameInTable="columnSHIFT" msprop:Generator_ColumnPropNameInRow="SHIFT" msprop:Generator_ColumnPropNameInTable="SHIFTColumn" msprop:Generator_UserColumnName="SHIFT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOG_PER" msprop:Generator_ColumnVarNameInTable="columnLOG_PER" msprop:Generator_ColumnPropNameInRow="LOG_PER" msprop:Generator_ColumnPropNameInTable="LOG_PERColumn" msprop:Generator_UserColumnName="LOG_PER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEADFURNACE" msprop:Generator_ColumnVarNameInTable="columnHEADFURNACE" msprop:Generator_ColumnPropNameInRow="HEADFURNACE" msprop:Generator_ColumnPropNameInTable="HEADFURNACEColumn" msprop:Generator_UserColumnName="HEADFURNACE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_1ST_OFFICER" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_1ST_OFFICER" msprop:Generator_ColumnPropNameInRow="TUNDISH_1ST_OFFICER" msprop:Generator_ColumnPropNameInTable="TUNDISH_1ST_OFFICERColumn" msprop:Generator_UserColumnName="TUNDISH_1ST_OFFICER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_2ND_OFFICER" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_2ND_OFFICER" msprop:Generator_ColumnPropNameInRow="TUNDISH_2ND_OFFICER" msprop:Generator_ColumnPropNameInTable="TUNDISH_2ND_OFFICERColumn" msprop:Generator_UserColumnName="TUNDISH_2ND_OFFICER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_3RD_OFFICER" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_3RD_OFFICER" msprop:Generator_ColumnPropNameInRow="TUNDISH_3RD_OFFICER" msprop:Generator_ColumnPropNameInTable="TUNDISH_3RD_OFFICERColumn" msprop:Generator_UserColumnName="TUNDISH_3RD_OFFICER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_4TH_OFFICER" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_4TH_OFFICER" msprop:Generator_ColumnPropNameInRow="TUNDISH_4TH_OFFICER" msprop:Generator_ColumnPropNameInTable="TUNDISH_4TH_OFFICERColumn" msprop:Generator_UserColumnName="TUNDISH_4TH_OFFICER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLE_OPERATOR" msprop:Generator_ColumnVarNameInTable="columnLADLE_OPERATOR" msprop:Generator_ColumnPropNameInRow="LADLE_OPERATOR" msprop:Generator_ColumnPropNameInTable="LADLE_OPERATORColumn" msprop:Generator_UserColumnName="LADLE_OPERATOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEEL_GRADE" msprop:Generator_ColumnVarNameInTable="columnSTEEL_GRADE" msprop:Generator_ColumnPropNameInRow="STEEL_GRADE" msprop:Generator_ColumnPropNameInTable="STEEL_GRADEColumn" msprop:Generator_UserColumnName="STEEL_GRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOCK_SIZE" msprop:Generator_ColumnVarNameInTable="columnBLOCK_SIZE" msprop:Generator_ColumnPropNameInRow="BLOCK_SIZE" msprop:Generator_ColumnPropNameInTable="BLOCK_SIZEColumn" msprop:Generator_UserColumnName="BLOCK_SIZE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LENGTH" msprop:Generator_ColumnVarNameInTable="columnLENGTH" msprop:Generator_ColumnPropNameInRow="LENGTH" msprop:Generator_ColumnPropNameInTable="LENGTHColumn" msprop:Generator_UserColumnName="LENGTH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HEATID" msprop:Generator_ColumnVarNameInTable="columnHEATID" msprop:Generator_ColumnPropNameInRow="HEATID" msprop:Generator_ColumnPropNameInTable="HEATIDColumn" msprop:Generator_UserColumnName="HEATID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CASTINGNO" msprop:Generator_ColumnVarNameInTable="columnCASTINGNO" msprop:Generator_ColumnPropNameInRow="CASTINGNO" msprop:Generator_ColumnPropNameInTable="CASTINGNOColumn" msprop:Generator_UserColumnName="CASTINGNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLEID" msprop:Generator_ColumnVarNameInTable="columnLADLEID" msprop:Generator_ColumnPropNameInRow="LADLEID" msprop:Generator_ColumnPropNameInTable="LADLEIDColumn" msprop:Generator_UserColumnName="LADLEID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LADLE_GRADE" msprop:Generator_ColumnVarNameInTable="columnLADLE_GRADE" msprop:Generator_ColumnPropNameInRow="LADLE_GRADE" msprop:Generator_ColumnPropNameInTable="LADLE_GRADEColumn" msprop:Generator_UserColumnName="LADLE_GRADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STEEL_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnSTEEL_WEIGHT" msprop:Generator_ColumnPropNameInRow="STEEL_WEIGHT" msprop:Generator_ColumnPropNameInTable="STEEL_WEIGHTColumn" msprop:Generator_UserColumnName="STEEL_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP" msprop:Generator_ColumnVarNameInTable="columnTEMP" msprop:Generator_ColumnPropNameInRow="TEMP" msprop:Generator_ColumnPropNameInTable="TEMPColumn" msprop:Generator_UserColumnName="TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEELTEMPUPTO" msprop:Generator_ColumnVarNameInTable="columnSTEELTEMPUPTO" msprop:Generator_ColumnPropNameInRow="STEELTEMPUPTO" msprop:Generator_ColumnPropNameInTable="STEELTEMPUPTOColumn" msprop:Generator_UserColumnName="STEELTEMPUPTO" type="xs:string" minOccurs="0" />
+              <xs:element name="ARRIVAL_TIME" msprop:Generator_ColumnVarNameInTable="columnARRIVAL_TIME" msprop:Generator_ColumnPropNameInRow="ARRIVAL_TIME" msprop:Generator_ColumnPropNameInTable="ARRIVAL_TIMEColumn" msprop:Generator_UserColumnName="ARRIVAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTING_START_TIME" msprop:Generator_ColumnVarNameInTable="columnCASTING_START_TIME" msprop:Generator_ColumnPropNameInRow="CASTING_START_TIME" msprop:Generator_ColumnPropNameInTable="CASTING_START_TIMEColumn" msprop:Generator_UserColumnName="CASTING_START_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTING_STOP_TIME" msprop:Generator_ColumnVarNameInTable="columnCASTING_STOP_TIME" msprop:Generator_ColumnPropNameInRow="CASTING_STOP_TIME" msprop:Generator_ColumnPropNameInTable="CASTING_STOP_TIMEColumn" msprop:Generator_UserColumnName="CASTING_STOP_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_LADLE_TIME" msprop:Generator_ColumnVarNameInTable="columnOFF_LADLE_TIME" msprop:Generator_ColumnPropNameInRow="OFF_LADLE_TIME" msprop:Generator_ColumnPropNameInTable="OFF_LADLE_TIMEColumn" msprop:Generator_UserColumnName="OFF_LADLE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REMAINWEIGHT" msprop:Generator_ColumnVarNameInTable="columnREMAINWEIGHT" msprop:Generator_ColumnPropNameInRow="REMAINWEIGHT" msprop:Generator_ColumnPropNameInTable="REMAINWEIGHTColumn" msprop:Generator_UserColumnName="REMAINWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HOLDTIME" msprop:Generator_ColumnVarNameInTable="columnHOLDTIME" msprop:Generator_ColumnPropNameInRow="HOLDTIME" msprop:Generator_ColumnPropNameInTable="HOLDTIMEColumn" msprop:Generator_UserColumnName="HOLDTIME" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTOFLOW" msprop:Generator_ColumnVarNameInTable="columnAUTOFLOW" msprop:Generator_ColumnPropNameInRow="AUTOFLOW" msprop:Generator_ColumnPropNameInTable="AUTOFLOWColumn" msprop:Generator_UserColumnName="AUTOFLOW" type="xs:string" minOccurs="0" />
+              <xs:element name="UNAUTOFLOW_REASON" msprop:Generator_ColumnVarNameInTable="columnUNAUTOFLOW_REASON" msprop:Generator_ColumnPropNameInRow="UNAUTOFLOW_REASON" msprop:Generator_ColumnPropNameInTable="UNAUTOFLOW_REASONColumn" msprop:Generator_UserColumnName="UNAUTOFLOW_REASON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTECTION" msprop:Generator_ColumnVarNameInTable="columnPROTECTION" msprop:Generator_ColumnPropNameInRow="PROTECTION" msprop:Generator_ColumnPropNameInTable="PROTECTIONColumn" msprop:Generator_UserColumnName="PROTECTION" type="xs:string" minOccurs="0" />
+              <xs:element name="UNPROTECTION_REASON" msprop:Generator_ColumnVarNameInTable="columnUNPROTECTION_REASON" msprop:Generator_ColumnPropNameInRow="UNPROTECTION_REASON" msprop:Generator_ColumnPropNameInTable="UNPROTECTION_REASONColumn" msprop:Generator_UserColumnName="UNPROTECTION_REASON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLOW_BLOWAR_PROTECTCASTING" msprop:Generator_ColumnVarNameInTable="columnFLOW_BLOWAR_PROTECTCASTING" msprop:Generator_ColumnPropNameInRow="FLOW_BLOWAR_PROTECTCASTING" msprop:Generator_ColumnPropNameInTable="FLOW_BLOWAR_PROTECTCASTINGColumn" msprop:Generator_UserColumnName="FLOW_BLOWAR_PROTECTCASTING" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISH_CARID" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_CARID" msprop:Generator_ColumnPropNameInRow="TUNDISH_CARID" msprop:Generator_ColumnPropNameInTable="TUNDISH_CARIDColumn" msprop:Generator_UserColumnName="TUNDISH_CARID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISHID" msprop:Generator_ColumnVarNameInTable="columnTUNDISHID" msprop:Generator_ColumnPropNameInRow="TUNDISHID" msprop:Generator_ColumnPropNameInTable="TUNDISHIDColumn" msprop:Generator_UserColumnName="TUNDISHID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CASTINGSTARTTIME1" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTARTTIME1" msprop:Generator_ColumnPropNameInRow="CASTINGSTARTTIME1" msprop:Generator_ColumnPropNameInTable="CASTINGSTARTTIME1Column" msprop:Generator_UserColumnName="CASTINGSTARTTIME1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTOPTIME1" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTOPTIME1" msprop:Generator_ColumnPropNameInRow="CASTINGSTOPTIME1" msprop:Generator_ColumnPropNameInTable="CASTINGSTOPTIME1Column" msprop:Generator_UserColumnName="CASTINGSTOPTIME1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTARTTIME2" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTARTTIME2" msprop:Generator_ColumnPropNameInRow="CASTINGSTARTTIME2" msprop:Generator_ColumnPropNameInTable="CASTINGSTARTTIME2Column" msprop:Generator_UserColumnName="CASTINGSTARTTIME2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTOPTIME2" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTOPTIME2" msprop:Generator_ColumnPropNameInRow="CASTINGSTOPTIME2" msprop:Generator_ColumnPropNameInTable="CASTINGSTOPTIME2Column" msprop:Generator_UserColumnName="CASTINGSTOPTIME2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTARTTIME3" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTARTTIME3" msprop:Generator_ColumnPropNameInRow="CASTINGSTARTTIME3" msprop:Generator_ColumnPropNameInTable="CASTINGSTARTTIME3Column" msprop:Generator_UserColumnName="CASTINGSTARTTIME3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTOPTIME3" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTOPTIME3" msprop:Generator_ColumnPropNameInRow="CASTINGSTOPTIME3" msprop:Generator_ColumnPropNameInTable="CASTINGSTOPTIME3Column" msprop:Generator_UserColumnName="CASTINGSTOPTIME3" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTARTTIME4" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTARTTIME4" msprop:Generator_ColumnPropNameInRow="CASTINGSTARTTIME4" msprop:Generator_ColumnPropNameInTable="CASTINGSTARTTIME4Column" msprop:Generator_UserColumnName="CASTINGSTARTTIME4" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CASTINGSTOPTIME4" msprop:Generator_ColumnVarNameInTable="columnCASTINGSTOPTIME4" msprop:Generator_ColumnPropNameInRow="CASTINGSTOPTIME4" msprop:Generator_ColumnPropNameInTable="CASTINGSTOPTIME4Column" msprop:Generator_UserColumnName="CASTINGSTOPTIME4" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP5" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP5" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP5" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP5Column" msprop:Generator_UserColumnName="TUNDISHTEMP5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP10" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP10" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP10" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP10Column" msprop:Generator_UserColumnName="TUNDISHTEMP10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP15" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP15" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP15" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP15Column" msprop:Generator_UserColumnName="TUNDISHTEMP15" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP20" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP20" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP20" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP20Column" msprop:Generator_UserColumnName="TUNDISHTEMP20" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP25" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP25" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP25" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP25Column" msprop:Generator_UserColumnName="TUNDISHTEMP25" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP30" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP30" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP30" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP30Column" msprop:Generator_UserColumnName="TUNDISHTEMP30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP35" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP35" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP35" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP35Column" msprop:Generator_UserColumnName="TUNDISHTEMP35" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LADLESTOPTEMP" msprop:Generator_ColumnVarNameInTable="columnLADLESTOPTEMP" msprop:Generator_ColumnPropNameInRow="LADLESTOPTEMP" msprop:Generator_ColumnPropNameInTable="LADLESTOPTEMPColumn" msprop:Generator_UserColumnName="LADLESTOPTEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMPUPTO" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMPUPTO" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMPUPTO" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMPUPTOColumn" msprop:Generator_UserColumnName="TUNDISHTEMPUPTO" type="xs:string" minOccurs="0" />
+              <xs:element name="SPEED1ST" msprop:Generator_ColumnVarNameInTable="columnSPEED1ST" msprop:Generator_ColumnPropNameInRow="SPEED1ST" msprop:Generator_ColumnPropNameInTable="SPEED1STColumn" msprop:Generator_UserColumnName="SPEED1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEED2ND" msprop:Generator_ColumnVarNameInTable="columnSPEED2ND" msprop:Generator_ColumnPropNameInRow="SPEED2ND" msprop:Generator_ColumnPropNameInTable="SPEED2NDColumn" msprop:Generator_UserColumnName="SPEED2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEED3RD" msprop:Generator_ColumnVarNameInTable="columnSPEED3RD" msprop:Generator_ColumnPropNameInRow="SPEED3RD" msprop:Generator_ColumnPropNameInTable="SPEED3RDColumn" msprop:Generator_UserColumnName="SPEED3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPEED4TH" msprop:Generator_ColumnVarNameInTable="columnSPEED4TH" msprop:Generator_ColumnPropNameInRow="SPEED4TH" msprop:Generator_ColumnPropNameInTable="SPEED4THColumn" msprop:Generator_UserColumnName="SPEED4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHWEIGHT" msprop:Generator_ColumnVarNameInTable="columnTUNDISHWEIGHT" msprop:Generator_ColumnPropNameInRow="TUNDISHWEIGHT" msprop:Generator_ColumnPropNameInTable="TUNDISHWEIGHTColumn" msprop:Generator_UserColumnName="TUNDISHWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BOTTOM_TEMP" msprop:Generator_ColumnVarNameInTable="columnBOTTOM_TEMP" msprop:Generator_ColumnPropNameInRow="BOTTOM_TEMP" msprop:Generator_ColumnPropNameInTable="BOTTOM_TEMPColumn" msprop:Generator_UserColumnName="BOTTOM_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WALL_TEMP" msprop:Generator_ColumnVarNameInTable="columnWALL_TEMP" msprop:Generator_ColumnPropNameInRow="WALL_TEMP" msprop:Generator_ColumnPropNameInTable="WALL_TEMPColumn" msprop:Generator_UserColumnName="WALL_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THICKNESS" msprop:Generator_ColumnVarNameInTable="columnTHICKNESS" msprop:Generator_ColumnPropNameInRow="THICKNESS" msprop:Generator_ColumnPropNameInTable="THICKNESSColumn" msprop:Generator_UserColumnName="THICKNESS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PLUGBAR_CONTROL" msprop:Generator_ColumnVarNameInTable="columnPLUGBAR_CONTROL" msprop:Generator_ColumnPropNameInRow="PLUGBAR_CONTROL" msprop:Generator_ColumnPropNameInTable="PLUGBAR_CONTROLColumn" msprop:Generator_UserColumnName="PLUGBAR_CONTROL" type="xs:string" minOccurs="0" />
+              <xs:element name="INJECTIONBAR_BLOWAR" msprop:Generator_ColumnVarNameInTable="columnINJECTIONBAR_BLOWAR" msprop:Generator_ColumnPropNameInRow="INJECTIONBAR_BLOWAR" msprop:Generator_ColumnPropNameInTable="INJECTIONBAR_BLOWARColumn" msprop:Generator_UserColumnName="INJECTIONBAR_BLOWAR" type="xs:string" minOccurs="0" />
+              <xs:element name="FLOW_BLOWAR_PLUGBAR_1ST" msprop:Generator_ColumnVarNameInTable="columnFLOW_BLOWAR_PLUGBAR_1ST" msprop:Generator_ColumnPropNameInRow="FLOW_BLOWAR_PLUGBAR_1ST" msprop:Generator_ColumnPropNameInTable="FLOW_BLOWAR_PLUGBAR_1STColumn" msprop:Generator_UserColumnName="FLOW_BLOWAR_PLUGBAR_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_BLOWAR_PLUGBAR_2ND" msprop:Generator_ColumnVarNameInTable="columnFLOW_BLOWAR_PLUGBAR_2ND" msprop:Generator_ColumnPropNameInRow="FLOW_BLOWAR_PLUGBAR_2ND" msprop:Generator_ColumnPropNameInTable="FLOW_BLOWAR_PLUGBAR_2NDColumn" msprop:Generator_UserColumnName="FLOW_BLOWAR_PLUGBAR_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_BLOWAR_PLUGBAR_3RD" msprop:Generator_ColumnVarNameInTable="columnFLOW_BLOWAR_PLUGBAR_3RD" msprop:Generator_ColumnPropNameInRow="FLOW_BLOWAR_PLUGBAR_3RD" msprop:Generator_ColumnPropNameInTable="FLOW_BLOWAR_PLUGBAR_3RDColumn" msprop:Generator_UserColumnName="FLOW_BLOWAR_PLUGBAR_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_BLOWAR_PLUGBAR_4TH" msprop:Generator_ColumnVarNameInTable="columnFLOW_BLOWAR_PLUGBAR_4TH" msprop:Generator_ColumnPropNameInRow="FLOW_BLOWAR_PLUGBAR_4TH" msprop:Generator_ColumnPropNameInTable="FLOW_BLOWAR_PLUGBAR_4THColumn" msprop:Generator_UserColumnName="FLOW_BLOWAR_PLUGBAR_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POSITION_PLUGBAR_1ST" msprop:Generator_ColumnVarNameInTable="columnPOSITION_PLUGBAR_1ST" msprop:Generator_ColumnPropNameInRow="POSITION_PLUGBAR_1ST" msprop:Generator_ColumnPropNameInTable="POSITION_PLUGBAR_1STColumn" msprop:Generator_UserColumnName="POSITION_PLUGBAR_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POSITION_PLUGBAR_2ND" msprop:Generator_ColumnVarNameInTable="columnPOSITION_PLUGBAR_2ND" msprop:Generator_ColumnPropNameInRow="POSITION_PLUGBAR_2ND" msprop:Generator_ColumnPropNameInTable="POSITION_PLUGBAR_2NDColumn" msprop:Generator_UserColumnName="POSITION_PLUGBAR_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POSITION_PLUGBAR_3RD" msprop:Generator_ColumnVarNameInTable="columnPOSITION_PLUGBAR_3RD" msprop:Generator_ColumnPropNameInRow="POSITION_PLUGBAR_3RD" msprop:Generator_ColumnPropNameInTable="POSITION_PLUGBAR_3RDColumn" msprop:Generator_UserColumnName="POSITION_PLUGBAR_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="POSITION_PLUGBAR_4TH" msprop:Generator_ColumnVarNameInTable="columnPOSITION_PLUGBAR_4TH" msprop:Generator_ColumnPropNameInRow="POSITION_PLUGBAR_4TH" msprop:Generator_ColumnPropNameInTable="POSITION_PLUGBAR_4THColumn" msprop:Generator_UserColumnName="POSITION_PLUGBAR_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_CURRENT_1STColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_CURRENT_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_CURRENT_2NDColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_CURRENT_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_CURRENT_3RDColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_CURRENT_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_CURRENT_4THColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_CURRENT_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_FREQ_1STColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_FREQ_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_FREQ_2NDColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_FREQ_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_FREQ_3RDColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_FREQ_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnVarNameInTable="columnMOLD_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnPropNameInRow="MOLD_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnPropNameInTable="MOLD_ELEC_MIX_FREQ_4THColumn" msprop:Generator_UserColumnName="MOLD_ELEC_MIX_FREQ_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_CURRENT_1ST" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_CURRENT_1STColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_CURRENT_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_CURRENT_2ND" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_CURRENT_2NDColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_CURRENT_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_CURRENT_3RD" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_CURRENT_3RDColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_CURRENT_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_CURRENT_4TH" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_CURRENT_4THColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_CURRENT_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_FREQ_1ST" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_FREQ_1STColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_FREQ_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_FREQ_2ND" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_FREQ_2NDColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_FREQ_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_FREQ_3RD" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_FREQ_3RDColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_FREQ_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnVarNameInTable="columnEND_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnPropNameInRow="END_ELEC_MIX_FREQ_4TH" msprop:Generator_ColumnPropNameInTable="END_ELEC_MIX_FREQ_4THColumn" msprop:Generator_UserColumnName="END_ELEC_MIX_FREQ_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COOLING_METERNO" msprop:Generator_ColumnVarNameInTable="columnCOOLING_METERNO" msprop:Generator_ColumnPropNameInRow="COOLING_METERNO" msprop:Generator_ColumnPropNameInTable="COOLING_METERNOColumn" msprop:Generator_UserColumnName="COOLING_METERNO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_COOLING_1ST" msprop:Generator_ColumnVarNameInTable="columnFLOW_COOLING_1ST" msprop:Generator_ColumnPropNameInRow="FLOW_COOLING_1ST" msprop:Generator_ColumnPropNameInTable="FLOW_COOLING_1STColumn" msprop:Generator_UserColumnName="FLOW_COOLING_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_COOLING_2ND" msprop:Generator_ColumnVarNameInTable="columnFLOW_COOLING_2ND" msprop:Generator_ColumnPropNameInRow="FLOW_COOLING_2ND" msprop:Generator_ColumnPropNameInTable="FLOW_COOLING_2NDColumn" msprop:Generator_UserColumnName="FLOW_COOLING_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_COOLING_3RD" msprop:Generator_ColumnVarNameInTable="columnFLOW_COOLING_3RD" msprop:Generator_ColumnPropNameInRow="FLOW_COOLING_3RD" msprop:Generator_ColumnPropNameInTable="FLOW_COOLING_3RDColumn" msprop:Generator_UserColumnName="FLOW_COOLING_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_COOLING_4TH" msprop:Generator_ColumnVarNameInTable="columnFLOW_COOLING_4TH" msprop:Generator_ColumnPropNameInRow="FLOW_COOLING_4TH" msprop:Generator_ColumnPropNameInTable="FLOW_COOLING_4THColumn" msprop:Generator_UserColumnName="FLOW_COOLING_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COOLING_PRESS_1ST" msprop:Generator_ColumnVarNameInTable="columnCOOLING_PRESS_1ST" msprop:Generator_ColumnPropNameInRow="COOLING_PRESS_1ST" msprop:Generator_ColumnPropNameInTable="COOLING_PRESS_1STColumn" msprop:Generator_UserColumnName="COOLING_PRESS_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COOLING_PRESS_2ND" msprop:Generator_ColumnVarNameInTable="columnCOOLING_PRESS_2ND" msprop:Generator_ColumnPropNameInRow="COOLING_PRESS_2ND" msprop:Generator_ColumnPropNameInTable="COOLING_PRESS_2NDColumn" msprop:Generator_UserColumnName="COOLING_PRESS_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COOLING_PRESS_3RD" msprop:Generator_ColumnVarNameInTable="columnCOOLING_PRESS_3RD" msprop:Generator_ColumnPropNameInRow="COOLING_PRESS_3RD" msprop:Generator_ColumnPropNameInTable="COOLING_PRESS_3RDColumn" msprop:Generator_UserColumnName="COOLING_PRESS_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COOLING_PRESS_4TH" msprop:Generator_ColumnVarNameInTable="columnCOOLING_PRESS_4TH" msprop:Generator_ColumnPropNameInRow="COOLING_PRESS_4TH" msprop:Generator_ColumnPropNameInTable="COOLING_PRESS_4THColumn" msprop:Generator_UserColumnName="COOLING_PRESS_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_1ST" msprop:Generator_ColumnVarNameInTable="columnFLOW_1ST" msprop:Generator_ColumnPropNameInRow="FLOW_1ST" msprop:Generator_ColumnPropNameInTable="FLOW_1STColumn" msprop:Generator_UserColumnName="FLOW_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_2ND" msprop:Generator_ColumnVarNameInTable="columnFLOW_2ND" msprop:Generator_ColumnPropNameInRow="FLOW_2ND" msprop:Generator_ColumnPropNameInTable="FLOW_2NDColumn" msprop:Generator_UserColumnName="FLOW_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_3RD" msprop:Generator_ColumnVarNameInTable="columnFLOW_3RD" msprop:Generator_ColumnPropNameInRow="FLOW_3RD" msprop:Generator_ColumnPropNameInTable="FLOW_3RDColumn" msprop:Generator_UserColumnName="FLOW_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FLOW_4TH" msprop:Generator_ColumnVarNameInTable="columnFLOW_4TH" msprop:Generator_ColumnPropNameInRow="FLOW_4TH" msprop:Generator_ColumnPropNameInTable="FLOW_4THColumn" msprop:Generator_UserColumnName="FLOW_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IN_TEMP" msprop:Generator_ColumnVarNameInTable="columnIN_TEMP" msprop:Generator_ColumnPropNameInRow="IN_TEMP" msprop:Generator_ColumnPropNameInTable="IN_TEMPColumn" msprop:Generator_UserColumnName="IN_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_OUT_MOLD_1ST" msprop:Generator_ColumnVarNameInTable="columnTEMP_OUT_MOLD_1ST" msprop:Generator_ColumnPropNameInRow="TEMP_OUT_MOLD_1ST" msprop:Generator_ColumnPropNameInTable="TEMP_OUT_MOLD_1STColumn" msprop:Generator_UserColumnName="TEMP_OUT_MOLD_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_OUT_MOLD_2ND" msprop:Generator_ColumnVarNameInTable="columnTEMP_OUT_MOLD_2ND" msprop:Generator_ColumnPropNameInRow="TEMP_OUT_MOLD_2ND" msprop:Generator_ColumnPropNameInTable="TEMP_OUT_MOLD_2NDColumn" msprop:Generator_UserColumnName="TEMP_OUT_MOLD_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_OUT_MOLD_3RD" msprop:Generator_ColumnVarNameInTable="columnTEMP_OUT_MOLD_3RD" msprop:Generator_ColumnPropNameInRow="TEMP_OUT_MOLD_3RD" msprop:Generator_ColumnPropNameInTable="TEMP_OUT_MOLD_3RDColumn" msprop:Generator_UserColumnName="TEMP_OUT_MOLD_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_OUT_MOLD_4TH" msprop:Generator_ColumnVarNameInTable="columnTEMP_OUT_MOLD_4TH" msprop:Generator_ColumnPropNameInRow="TEMP_OUT_MOLD_4TH" msprop:Generator_ColumnPropNameInTable="TEMP_OUT_MOLD_4THColumn" msprop:Generator_UserColumnName="TEMP_OUT_MOLD_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_DIF_MOLD_1ST" msprop:Generator_ColumnVarNameInTable="columnTEMP_DIF_MOLD_1ST" msprop:Generator_ColumnPropNameInRow="TEMP_DIF_MOLD_1ST" msprop:Generator_ColumnPropNameInTable="TEMP_DIF_MOLD_1STColumn" msprop:Generator_UserColumnName="TEMP_DIF_MOLD_1ST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_DIF_MOLD_2ND" msprop:Generator_ColumnVarNameInTable="columnTEMP_DIF_MOLD_2ND" msprop:Generator_ColumnPropNameInRow="TEMP_DIF_MOLD_2ND" msprop:Generator_ColumnPropNameInTable="TEMP_DIF_MOLD_2NDColumn" msprop:Generator_UserColumnName="TEMP_DIF_MOLD_2ND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_DIF_MOLD_3RD" msprop:Generator_ColumnVarNameInTable="columnTEMP_DIF_MOLD_3RD" msprop:Generator_ColumnPropNameInRow="TEMP_DIF_MOLD_3RD" msprop:Generator_ColumnPropNameInTable="TEMP_DIF_MOLD_3RDColumn" msprop:Generator_UserColumnName="TEMP_DIF_MOLD_3RD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TEMP_DIF_MOLD_4TH" msprop:Generator_ColumnVarNameInTable="columnTEMP_DIF_MOLD_4TH" msprop:Generator_ColumnPropNameInRow="TEMP_DIF_MOLD_4TH" msprop:Generator_ColumnPropNameInTable="TEMP_DIF_MOLD_4THColumn" msprop:Generator_UserColumnName="TEMP_DIF_MOLD_4TH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OSCILLATE_METERNO" msprop:Generator_ColumnVarNameInTable="columnOSCILLATE_METERNO" msprop:Generator_ColumnPropNameInRow="OSCILLATE_METERNO" msprop:Generator_ColumnPropNameInTable="OSCILLATE_METERNOColumn" msprop:Generator_UserColumnName="OSCILLATE_METERNO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROTECT_DREG_FAC" msprop:Generator_ColumnVarNameInTable="columnPROTECT_DREG_FAC" msprop:Generator_ColumnPropNameInRow="PROTECT_DREG_FAC" msprop:Generator_ColumnPropNameInTable="PROTECT_DREG_FACColumn" msprop:Generator_UserColumnName="PROTECT_DREG_FAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTECT_DREG_TYPE" msprop:Generator_ColumnVarNameInTable="columnPROTECT_DREG_TYPE" msprop:Generator_ColumnPropNameInRow="PROTECT_DREG_TYPE" msprop:Generator_ColumnPropNameInTable="PROTECT_DREG_TYPEColumn" msprop:Generator_UserColumnName="PROTECT_DREG_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BATCH_ID" msprop:Generator_ColumnVarNameInTable="columnBATCH_ID" msprop:Generator_ColumnPropNameInRow="BATCH_ID" msprop:Generator_ColumnPropNameInTable="BATCH_IDColumn" msprop:Generator_UserColumnName="BATCH_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COVER_TYPE" msprop:Generator_ColumnVarNameInTable="columnCOVER_TYPE" msprop:Generator_ColumnPropNameInRow="COVER_TYPE" msprop:Generator_ColumnPropNameInTable="COVER_TYPEColumn" msprop:Generator_UserColumnName="COVER_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COVER_FAC" msprop:Generator_ColumnVarNameInTable="columnCOVER_FAC" msprop:Generator_ColumnPropNameInRow="COVER_FAC" msprop:Generator_ColumnPropNameInTable="COVER_FACColumn" msprop:Generator_UserColumnName="COVER_FAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COVER_ID" msprop:Generator_ColumnVarNameInTable="columnCOVER_ID" msprop:Generator_ColumnPropNameInRow="COVER_ID" msprop:Generator_ColumnPropNameInTable="COVER_IDColumn" msprop:Generator_UserColumnName="COVER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLOOM_COUNT" msprop:Generator_ColumnVarNameInTable="columnBLOOM_COUNT" msprop:Generator_ColumnPropNameInRow="BLOOM_COUNT" msprop:Generator_ColumnPropNameInTable="BLOOM_COUNTColumn" msprop:Generator_UserColumnName="BLOOM_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NOTE" msprop:Generator_ColumnVarNameInTable="columnNOTE" msprop:Generator_ColumnPropNameInRow="NOTE" msprop:Generator_ColumnPropNameInTable="NOTEColumn" msprop:Generator_UserColumnName="NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOLD_DIRECTION_ELECTMIX1" msprop:Generator_ColumnVarNameInTable="columnMOLD_DIRECTION_ELECTMIX1" msprop:Generator_ColumnPropNameInRow="MOLD_DIRECTION_ELECTMIX1" msprop:Generator_ColumnPropNameInTable="MOLD_DIRECTION_ELECTMIX1Column" msprop:Generator_UserColumnName="MOLD_DIRECTION_ELECTMIX1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_DIRECTION_ELECTMIX2" msprop:Generator_ColumnVarNameInTable="columnMOLD_DIRECTION_ELECTMIX2" msprop:Generator_ColumnPropNameInRow="MOLD_DIRECTION_ELECTMIX2" msprop:Generator_ColumnPropNameInTable="MOLD_DIRECTION_ELECTMIX2Column" msprop:Generator_UserColumnName="MOLD_DIRECTION_ELECTMIX2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_DIRECTION_ELECTMIX3" msprop:Generator_ColumnVarNameInTable="columnMOLD_DIRECTION_ELECTMIX3" msprop:Generator_ColumnPropNameInRow="MOLD_DIRECTION_ELECTMIX3" msprop:Generator_ColumnPropNameInTable="MOLD_DIRECTION_ELECTMIX3Column" msprop:Generator_UserColumnName="MOLD_DIRECTION_ELECTMIX3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOLD_DIRECTION_ELECTMIX4" msprop:Generator_ColumnVarNameInTable="columnMOLD_DIRECTION_ELECTMIX4" msprop:Generator_ColumnPropNameInRow="MOLD_DIRECTION_ELECTMIX4" msprop:Generator_ColumnPropNameInTable="MOLD_DIRECTION_ELECTMIX4Column" msprop:Generator_UserColumnName="MOLD_DIRECTION_ELECTMIX4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_DIRECTION_ELECTMIX1" msprop:Generator_ColumnVarNameInTable="columnEND_DIRECTION_ELECTMIX1" msprop:Generator_ColumnPropNameInRow="END_DIRECTION_ELECTMIX1" msprop:Generator_ColumnPropNameInTable="END_DIRECTION_ELECTMIX1Column" msprop:Generator_UserColumnName="END_DIRECTION_ELECTMIX1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_DIRECTION_ELECTMIX2" msprop:Generator_ColumnVarNameInTable="columnEND_DIRECTION_ELECTMIX2" msprop:Generator_ColumnPropNameInRow="END_DIRECTION_ELECTMIX2" msprop:Generator_ColumnPropNameInTable="END_DIRECTION_ELECTMIX2Column" msprop:Generator_UserColumnName="END_DIRECTION_ELECTMIX2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_DIRECTION_ELECTMIX3" msprop:Generator_ColumnVarNameInTable="columnEND_DIRECTION_ELECTMIX3" msprop:Generator_ColumnPropNameInRow="END_DIRECTION_ELECTMIX3" msprop:Generator_ColumnPropNameInTable="END_DIRECTION_ELECTMIX3Column" msprop:Generator_UserColumnName="END_DIRECTION_ELECTMIX3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="END_DIRECTION_ELECTMIX4" msprop:Generator_ColumnVarNameInTable="columnEND_DIRECTION_ELECTMIX4" msprop:Generator_ColumnPropNameInRow="END_DIRECTION_ELECTMIX4" msprop:Generator_ColumnPropNameInTable="END_DIRECTION_ELECTMIX4Column" msprop:Generator_UserColumnName="END_DIRECTION_ELECTMIX4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STEELTEMPUPTO1" msdata:Caption="STEELTEMPUPTO" msprop:Generator_ColumnVarNameInTable="columnSTEELTEMPUPTO1" msprop:Generator_ColumnPropNameInRow="STEELTEMPUPTO1" msprop:Generator_ColumnPropNameInTable="STEELTEMPUPTO1Column" msprop:Generator_UserColumnName="STEELTEMPUPTO1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AUTOFLOW1" msdata:Caption="AUTOFLOW" msprop:Generator_ColumnVarNameInTable="columnAUTOFLOW1" msprop:Generator_ColumnPropNameInRow="AUTOFLOW1" msprop:Generator_ColumnPropNameInTable="AUTOFLOW1Column" msprop:Generator_UserColumnName="AUTOFLOW1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROTECTION1" msdata:Caption="PROTECTION" msprop:Generator_ColumnVarNameInTable="columnPROTECTION1" msprop:Generator_ColumnPropNameInRow="PROTECTION1" msprop:Generator_ColumnPropNameInTable="PROTECTION1Column" msprop:Generator_UserColumnName="PROTECTION1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMPUPTO1" msdata:Caption="TUNDISHTEMPUPTO" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMPUPTO1" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMPUPTO1" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMPUPTO1Column" msprop:Generator_UserColumnName="TUNDISHTEMPUPTO1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INJECTIONBAR_BLOWAR1" msdata:Caption="INJECTIONBAR_BLOWAR" msprop:Generator_ColumnVarNameInTable="columnINJECTIONBAR_BLOWAR1" msprop:Generator_ColumnPropNameInRow="INJECTIONBAR_BLOWAR1" msprop:Generator_ColumnPropNameInTable="INJECTIONBAR_BLOWAR1Column" msprop:Generator_UserColumnName="INJECTIONBAR_BLOWAR1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CCMID" msprop:Generator_ColumnVarNameInTable="columnCCMID" msprop:Generator_ColumnPropNameInRow="CCMID" msprop:Generator_ColumnPropNameInTable="CCMIDColumn" msprop:Generator_UserColumnName="CCMID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISH_HEATCOUNT" msprop:Generator_ColumnVarNameInTable="columnTUNDISH_HEATCOUNT" msprop:Generator_ColumnPropNameInRow="TUNDISH_HEATCOUNT" msprop:Generator_ColumnPropNameInTable="TUNDISH_HEATCOUNTColumn" msprop:Generator_UserColumnName="TUNDISH_HEATCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPEEDCHANGE" msprop:Generator_ColumnVarNameInTable="columnSPEEDCHANGE" msprop:Generator_ColumnPropNameInRow="SPEEDCHANGE" msprop:Generator_ColumnPropNameInTable="SPEEDCHANGEColumn" msprop:Generator_UserColumnName="SPEEDCHANGE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CASTINGTUNDISHWEIGHT" msprop:Generator_ColumnVarNameInTable="columnCASTINGTUNDISHWEIGHT" msprop:Generator_ColumnPropNameInRow="CASTINGTUNDISHWEIGHT" msprop:Generator_ColumnPropNameInTable="CASTINGTUNDISHWEIGHTColumn" msprop:Generator_UserColumnName="CASTINGTUNDISHWEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ALLEXCEPT" msprop:Generator_ColumnVarNameInTable="columnALLEXCEPT" msprop:Generator_ColumnPropNameInRow="ALLEXCEPT" msprop:Generator_ColumnPropNameInTable="ALLEXCEPTColumn" msprop:Generator_UserColumnName="ALLEXCEPT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTPROTOCOL" msprop:Generator_ColumnVarNameInTable="columnACTPROTOCOL" msprop:Generator_ColumnPropNameInRow="ACTPROTOCOL" msprop:Generator_ColumnPropNameInTable="ACTPROTOCOLColumn" msprop:Generator_UserColumnName="ACTPROTOCOL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROTOCOL" msprop:Generator_ColumnVarNameInTable="columnPROTOCOL" msprop:Generator_ColumnPropNameInRow="PROTOCOL" msprop:Generator_ColumnPropNameInTable="PROTOCOLColumn" msprop:Generator_UserColumnName="PROTOCOL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOF_NOTE" msprop:Generator_ColumnVarNameInTable="columnBOF_NOTE" msprop:Generator_ColumnPropNameInRow="BOF_NOTE" msprop:Generator_ColumnPropNameInTable="BOF_NOTEColumn" msprop:Generator_UserColumnName="BOF_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LF_NOTE" msprop:Generator_ColumnVarNameInTable="columnLF_NOTE" msprop:Generator_ColumnPropNameInRow="LF_NOTE" msprop:Generator_ColumnPropNameInTable="LF_NOTEColumn" msprop:Generator_UserColumnName="LF_NOTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WARD_DREGS_FAC" msprop:Generator_ColumnVarNameInTable="columnWARD_DREGS_FAC" msprop:Generator_ColumnPropNameInRow="WARD_DREGS_FAC" msprop:Generator_ColumnPropNameInTable="WARD_DREGS_FACColumn" msprop:Generator_UserColumnName="WARD_DREGS_FAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRY_FLAP_FAC" msprop:Generator_ColumnVarNameInTable="columnDRY_FLAP_FAC" msprop:Generator_ColumnPropNameInRow="DRY_FLAP_FAC" msprop:Generator_ColumnPropNameInTable="DRY_FLAP_FACColumn" msprop:Generator_UserColumnName="DRY_FLAP_FAC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TUNDISHTEMP2" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP2" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP2" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP2Column" msprop:Generator_UserColumnName="TUNDISHTEMP2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP40" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP40" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP40" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP40Column" msprop:Generator_UserColumnName="TUNDISHTEMP40" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP45" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP45" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP45" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP45Column" msprop:Generator_UserColumnName="TUNDISHTEMP45" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP50" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP50" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP50" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP50Column" msprop:Generator_UserColumnName="TUNDISHTEMP50" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP55" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP55" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP55" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP55Column" msprop:Generator_UserColumnName="TUNDISHTEMP55" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP60" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP60" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP60" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP60Column" msprop:Generator_UserColumnName="TUNDISHTEMP60" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP65" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP65" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP65" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP65Column" msprop:Generator_UserColumnName="TUNDISHTEMP65" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TUNDISHTEMP70" msprop:Generator_ColumnVarNameInTable="columnTUNDISHTEMP70" msprop:Generator_ColumnPropNameInRow="TUNDISHTEMP70" msprop:Generator_ColumnPropNameInTable="TUNDISHTEMP70Column" msprop:Generator_UserColumnName="TUNDISHTEMP70" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAL_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnCAL_WEIGHT" msprop:Generator_ColumnPropNameInRow="CAL_WEIGHT" msprop:Generator_ColumnPropNameInTable="CAL_WEIGHTColumn" msprop:Generator_UserColumnName="CAL_WEIGHT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_CASTING_TUNDISH_TEMP" msprop:Generator_ColumnVarNameInTable="columnBEFORE_CASTING_TUNDISH_TEMP" msprop:Generator_ColumnPropNameInRow="BEFORE_CASTING_TUNDISH_TEMP" msprop:Generator_ColumnPropNameInTable="BEFORE_CASTING_TUNDISH_TEMPColumn" msprop:Generator_UserColumnName="BEFORE_CASTING_TUNDISH_TEMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_CASTING_SHUIKOU_TEMP1" msprop:Generator_ColumnVarNameInTable="columnBEFORE_CASTING_SHUIKOU_TEMP1" msprop:Generator_ColumnPropNameInRow="BEFORE_CASTING_SHUIKOU_TEMP1" msprop:Generator_ColumnPropNameInTable="BEFORE_CASTING_SHUIKOU_TEMP1Column" msprop:Generator_UserColumnName="BEFORE_CASTING_SHUIKOU_TEMP1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_CASTING_SHUIKOU_TEMP2" msprop:Generator_ColumnVarNameInTable="columnBEFORE_CASTING_SHUIKOU_TEMP2" msprop:Generator_ColumnPropNameInRow="BEFORE_CASTING_SHUIKOU_TEMP2" msprop:Generator_ColumnPropNameInTable="BEFORE_CASTING_SHUIKOU_TEMP2Column" msprop:Generator_UserColumnName="BEFORE_CASTING_SHUIKOU_TEMP2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_CASTING_SHUIKOU_TEMP3" msprop:Generator_ColumnVarNameInTable="columnBEFORE_CASTING_SHUIKOU_TEMP3" msprop:Generator_ColumnPropNameInRow="BEFORE_CASTING_SHUIKOU_TEMP3" msprop:Generator_ColumnPropNameInTable="BEFORE_CASTING_SHUIKOU_TEMP3Column" msprop:Generator_UserColumnName="BEFORE_CASTING_SHUIKOU_TEMP3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BEFORE_CASTING_SHUIKOU_TEMP4" msprop:Generator_ColumnVarNameInTable="columnBEFORE_CASTING_SHUIKOU_TEMP4" msprop:Generator_ColumnPropNameInRow="BEFORE_CASTING_SHUIKOU_TEMP4" msprop:Generator_ColumnPropNameInTable="BEFORE_CASTING_SHUIKOU_TEMP4Column" msprop:Generator_UserColumnName="BEFORE_CASTING_SHUIKOU_TEMP4" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
