@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XGMESMain", "XGMESMain\XGMESMain.csproj", "{83E61245-A98A-4EA6-868F-29AC7D9A0A5A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -37,6 +37,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOFL2Mag", "Project\BOFL2Mag\BOFL2Mag.csproj", "{2599AF6C-BD25-4308-BF8B-41BE48CB7196}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "XGMES_SETUP", "XGMES_SETUP\XGMES_SETUP.vdproj", "{A71259C1-2B2B-45C7-A5B8-EB3064EEF24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logic_shangchuan", "xgmeslogic\logic_shangchuan\logic_shangchuan.csproj", "{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "后台逻辑", "后台逻辑", "{E05A8D16-9C91-44F8-AB32-B220C54A0886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -174,12 +178,27 @@ Global
 		{A71259C1-2B2B-45C7-A5B8-EB3064EEF24A}.Release|.NET.ActiveCfg = Release
 		{A71259C1-2B2B-45C7-A5B8-EB3064EEF24A}.Release|Any CPU.ActiveCfg = Release
 		{A71259C1-2B2B-45C7-A5B8-EB3064EEF24A}.Release|Mixed Platforms.ActiveCfg = Release
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|.NET.Build.0 = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|.NET.ActiveCfg = Release|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|.NET.Build.0 = Release|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E389B06-FAAB-4F8A-9CF3-CFCC8C30A38B} = {E05A8D16-9C91-44F8-AB32-B220C54A0886}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7EFE5B3E-04F9-4687-80A9-4C486CB9B585}
 		SDKPath = C:\Program Files\L3\L3SDK\
+		SolutionGuid = {7EFE5B3E-04F9-4687-80A9-4C486CB9B585}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,22 @@
+0375267 1111  SendBloomInStoreInfor  SendBloomInfor
+自2012-03-28 add by hyh 
+1、针对高炉铁水表，在表CBFIron中新增元素Sn、Sb、As、Pb；
+2、新增表CQA_Element_Std；
+3、后台新增 权限 ；
+4、在CMIF_UNIT_MAG中新增四个元素 Sn、Sb、As、Pb、   Sn_Cal、Sb_Cal、As_Cal、Pb_Cal；
+5、在后台表CIRON_DATA中新增四个元素；
+6、在后台新增CBase_UserPwd_Lock实体类和CBase_UserPwd_Lock_Mag管理类，用于解决后；
+7、在质量通讯配置上新增四个元素；
+8、在接收铁水样成分的后台方法AcceptLabIronElementText和AcceptLabIronElement中，修改内容以满足新增的四个元素；接收数据存入表CQA_Iron_Element中；
+9、在后台实体类CBOF_FEED_DATA中新增四个元素
+10、在后台方法“指定主原料”中修改方法，以满足在计算兑铁量及成分时满足新增的四个元素
+11、由于版本不一致，导致在混铁炉主画面“是否脱硫铁水确认”功能不存在，所以在后台新增方法 SetIsDes
+2016-3-29 
+1.转炉添加枪号功能
+2.转炉指定废钢恢复原来代码。Scrap_Slot_ID   not like 'B%'
+
+2020-03-17  修正计划时间调整的算法
+2020-03-27  精炼炉—过程数据-添加字段 L3PROP_FLOAT(LadleJk)
+2020-05-28  修改NC投料电文中铁水废钢的数据精度，但并未更新模块，跟踪
+
+

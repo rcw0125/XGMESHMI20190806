@@ -1,0 +1,13 @@
+1、在CQA_PRODUCT_SHEET表中添加AOD_TYPE,在ObjectDB.ini中的[XGMESLogic\QualityMag\CQA_Product_Sheet]添加AOD_TYPE。(已完成)
+2、在CQA_Product_Sheet表中要及时赋值（这需要和技术科联系，对不锈钢经过aod的钢种要对表中的AOD_TYPE中赋值）
+3、在cplan_tapping,CPlan_Tapping_Act表中添加AODID,在cplan_casting表中添加AODID（已完成）
+4、在objectDB.INi中cplan_casting添加AODID
+5、在objectDB.INi中cplan_tapping添加AODID
+6、在CQA_Product_Sheet表中添加AOD_TYPE,
+7、在objectDB.INi中CQA_Product_Sheet添加AOD_TYPE
+8、在CQA_UNIT_ROUTE表中添加AODID
+9、在objectDB.INi中CQA_UNIT_ROUTE添加AODID
+10、在CAOD_Prod_Area表中添加S25A01
+11、在cplan_casting表中添加MATERIALCODE
+12、在objectDB.INi中cplan_casting添加MATERIALCODE
+13、在APPserver的角色中添加MELTAlloyManager和MELTOperator，并注意授予具体岗位人员权限。

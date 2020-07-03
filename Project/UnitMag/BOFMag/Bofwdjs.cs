@@ -147,6 +147,10 @@ namespace UnitMag.BOFMag
                 {
                     piancha += Math.Round(((tempdataList[1].shihuishi - tempdataList[0].shihuishi) / 100) * (-7), 1);
                 }
+                if (tempdataList[0].feizhakuai >= 0 && tempdataList[1].feizhakuai >= 0)
+                {
+                    piancha += Math.Round(((tempdataList[1].feizhakuai - tempdataList[0].feizhakuai) / 100) * (-7), 1);
+                }
                 if (tempdataList[0].shaojiekuang >= 0 && tempdataList[1].shaojiekuang >= 0)
                 {
                     piancha += Math.Round(((tempdataList[1].shaojiekuang - tempdataList[0].shaojiekuang) / 100) * (-10.32), 1);
