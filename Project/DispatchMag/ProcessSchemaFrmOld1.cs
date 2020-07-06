@@ -12,9 +12,9 @@ using HMIBase;
 
 namespace DispatchMag
 {
-    public partial class ProcessSchemaFrmOld : DockContent, IMESForm
+    public partial class ProcessSchemaFrmOld1 : DockContent, IMESForm
     {
-        public ProcessSchemaFrmOld()
+        public ProcessSchemaFrmOld1()
         {
             InitializeComponent();
         }
@@ -184,9 +184,9 @@ namespace DispatchMag
             string strReturn = "";
             switch (strUnitID)
             {
-                //case "S21":
-                //    strHeatID = txtBOF01AfterHeatID.Text;
-                //    break;
+                case "S21":
+                    strHeatID = txtBOF01AfterHeatID.Text;
+                    break;
                 case "S22":
                     strHeatID = txtBOF02AfterHeatID.Text;
                     break;
@@ -227,9 +227,9 @@ namespace DispatchMag
             {
                 switch (strUnitID)
                 {
-                    //case "S21":
-                    //    txtBOF01AfterOut.Text = "";
-                    //    break;
+                    case "S21":
+                        txtBOF01AfterOut.Text = "";
+                        break;
                     case "S22":
                         txtBOF02AfterOut.Text = "";
                         break;
@@ -275,9 +275,9 @@ namespace DispatchMag
 
             switch (strUnitID)
             {
-                //case "S21":
-                //    txtBOF01AfterOut.Text = strReturn;
-                //    break;
+                case "S21":
+                    txtBOF01AfterOut.Text = strReturn;
+                    break;
                 case "S22":
                     txtBOF02AfterOut.Text = strReturn;
                     break;
@@ -363,9 +363,9 @@ namespace DispatchMag
             AppSvrHMI.L3DataBox c = (AppSvrHMI.L3DataBox)sender;
             switch (c.Tag.ToString())
             {
-                //case "B1":
-                //    lbEquStaB1.Text = Set_BOF_EquipLableText(dbxEquStaBOF1.Text);
-                //    break;
+                case "B1":
+                    lbEquStaB1.Text = Set_BOF_EquipLableText(dbxEquStaBOF1.Text);
+                    break;
                 case "B2":
                     lbEquStaB2.Text = Set_BOF_EquipLableText(dbxEquStaBOF2.Text);
                     break;
