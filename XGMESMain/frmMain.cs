@@ -167,7 +167,6 @@ namespace XGMESMain
                 //
                 timer3.Enabled = true;
                 timer2.Enabled = true;
-
                 labelUser.Text = account;
                // ConfigurationManager.AppSettings["LastAccount"] = account;
                 //获取Configuration对象
@@ -275,7 +274,7 @@ namespace XGMESMain
 
         private string existms()
         {
-            if (IsServiceExisted("MyService"))
+            if (IsServiceExisted("MyService")&& (GetLocalIP().Contains("192.168.36")||GetLocalIP().Contains("192.168.48")))
             {
                 return "是";
             }
@@ -722,21 +721,10 @@ namespace XGMESMain
 
         private void 设备点检月报ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SbMag.sbyb yb = new SbMag.sbyb();
-            yb.ShowDialog();
+            //SbMag.sbyb yb = new SbMag.sbyb();
+            //yb.ShowDialog();
         }
-
-
-        private void 重做甩废已上传NCToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (L3DataAdapter.Session.User == null)
-            {
-                MessageBox.Show("请先登录");
-                return;
-            }
-            ccmReScrapAllFrm Frm = new ccmReScrapAllFrm();
-            Frm.ShowDialogEx(L3DataAdapter.Session);
-        }
+    
         //判断服务是否存在
         private bool IsServiceExisted(string serviceName)
         {
@@ -749,6 +737,17 @@ namespace XGMESMain
                 }
             }
             return false;
+        }
+
+        private void 重做甩废已上传NCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (L3DataAdapter.Session.User == null)
+            {
+                MessageBox.Show("请先登录");
+                return;
+            }
+            ccmReScrapAllFrm Frm = new ccmReScrapAllFrm();
+            Frm.ShowDialogEx(L3DataAdapter.Session);
         }
     }
 }

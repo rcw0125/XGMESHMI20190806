@@ -411,401 +411,362 @@
             // 
             // toolStripSeparator4
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator4, "menuLF");
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(151, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
             // 
             // menuLFSetWeightLadle
             // 
-            this.Adapter.SetAccessRight(this.menuLFSetWeightLadle, "menuLF");
             this.menuLFSetWeightLadle.Name = "menuLFSetWeightLadle";
-            this.menuLFSetWeightLadle.Size = new System.Drawing.Size(154, 22);
+            this.menuLFSetWeightLadle.Size = new System.Drawing.Size(160, 22);
             this.menuLFSetWeightLadle.Text = "称重";
             this.menuLFSetWeightLadle.Click += new System.EventHandler(this.menuLFSetWeightLadle_Click);
             // 
             // menuLFDesignateLadle
             // 
-            this.Adapter.SetAccessRight(this.menuLFDesignateLadle, "menuLF");
             this.menuLFDesignateLadle.Name = "menuLFDesignateLadle";
-            this.menuLFDesignateLadle.Size = new System.Drawing.Size(154, 22);
+            this.menuLFDesignateLadle.Size = new System.Drawing.Size(160, 22);
             this.menuLFDesignateLadle.Text = "钢包到站";
             this.menuLFDesignateLadle.Click += new System.EventHandler(this.menuLFDesignateLadle_Click);
             // 
             // menuLFProc
             // 
-            this.Adapter.SetAccessRight(this.menuLFProc, "menuLF");
             this.menuLFProc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuLFProcStart,
             this.menuLFProcStop});
             this.menuLFProc.Name = "menuLFProc";
-            this.menuLFProc.Size = new System.Drawing.Size(154, 22);
+            this.menuLFProc.Size = new System.Drawing.Size(160, 22);
             this.menuLFProc.Text = "处理";
             // 
             // menuLFProcStart
             // 
             this.menuLFProcStart.Name = "menuLFProcStart";
-            this.menuLFProcStart.Size = new System.Drawing.Size(94, 22);
+            this.menuLFProcStart.Size = new System.Drawing.Size(100, 22);
             this.menuLFProcStart.Text = "开始";
             this.menuLFProcStart.Click += new System.EventHandler(this.menuLFProcStart_Click);
             // 
             // menuLFProcStop
             // 
             this.menuLFProcStop.Name = "menuLFProcStop";
-            this.menuLFProcStop.Size = new System.Drawing.Size(94, 22);
+            this.menuLFProcStop.Size = new System.Drawing.Size(100, 22);
             this.menuLFProcStop.Text = "结束";
             this.menuLFProcStop.Click += new System.EventHandler(this.menuLFProcStop_Click);
             // 
             // toolStripMenuItem1
             // 
-            this.Adapter.SetAccessRight(this.toolStripMenuItem1, "menuLF");
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuLFBlowStart,
             this.menuLFBlowStop});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.toolStripMenuItem1.Text = "软吹";
             // 
             // menuLFBlowStart
             // 
             this.menuLFBlowStart.Name = "menuLFBlowStart";
-            this.menuLFBlowStart.Size = new System.Drawing.Size(94, 22);
+            this.menuLFBlowStart.Size = new System.Drawing.Size(100, 22);
             this.menuLFBlowStart.Text = "开始";
             this.menuLFBlowStart.Click += new System.EventHandler(this.menuLFBlowStart_Click);
             // 
             // menuLFBlowStop
             // 
             this.menuLFBlowStop.Name = "menuLFBlowStop";
-            this.menuLFBlowStop.Size = new System.Drawing.Size(94, 22);
+            this.menuLFBlowStop.Size = new System.Drawing.Size(100, 22);
             this.menuLFBlowStop.Text = "结束";
             this.menuLFBlowStop.Click += new System.EventHandler(this.menuLFBlowStop_Click);
             // 
             // menuLFLeave
             // 
-            this.Adapter.SetAccessRight(this.menuLFLeave, "menuLF");
             this.menuLFLeave.Name = "menuLFLeave";
-            this.menuLFLeave.Size = new System.Drawing.Size(154, 22);
+            this.menuLFLeave.Size = new System.Drawing.Size(160, 22);
             this.menuLFLeave.Text = "钢包离站";
             this.menuLFLeave.Click += new System.EventHandler(this.menuLFLeave_Click);
             // 
             // toolStripSeparator6
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator6, "menuLF");
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(151, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(157, 6);
             // 
             // menuLFDevStatus
             // 
-            this.Adapter.SetAccessRight(this.menuLFDevStatus, "menuLF");
             this.menuLFDevStatus.Name = "menuLFDevStatus";
-            this.menuLFDevStatus.Size = new System.Drawing.Size(154, 22);
+            this.menuLFDevStatus.Size = new System.Drawing.Size(160, 22);
             this.menuLFDevStatus.Text = "设备状态维护";
             this.menuLFDevStatus.Click += new System.EventHandler(this.menuLFDevStatus_Click);
             // 
             // menuLFChangeGrade
             // 
-            this.Adapter.SetAccessRight(this.menuLFChangeGrade, "menuLF");
             this.menuLFChangeGrade.Name = "menuLFChangeGrade";
-            this.menuLFChangeGrade.Size = new System.Drawing.Size(154, 22);
+            this.menuLFChangeGrade.Size = new System.Drawing.Size(160, 22);
             this.menuLFChangeGrade.Text = "改钢申请";
             this.menuLFChangeGrade.Click += new System.EventHandler(this.menuLFChangeGrade_Click);
             // 
             // menuLFReturnApply
             // 
-            this.Adapter.SetAccessRight(this.menuLFReturnApply, "menuLF");
             this.menuLFReturnApply.Name = "menuLFReturnApply";
-            this.menuLFReturnApply.Size = new System.Drawing.Size(154, 22);
+            this.menuLFReturnApply.Size = new System.Drawing.Size(160, 22);
             this.menuLFReturnApply.Text = "钢水全回炉申请";
             this.menuLFReturnApply.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // menuLFBackApply
             // 
-            this.Adapter.SetAccessRight(this.menuLFBackApply, "menuLF");
             this.menuLFBackApply.Name = "menuLFBackApply";
-            this.menuLFBackApply.Size = new System.Drawing.Size(154, 22);
+            this.menuLFBackApply.Size = new System.Drawing.Size(160, 22);
             this.menuLFBackApply.Text = "返送申请";
             this.menuLFBackApply.Click += new System.EventHandler(this.menuLFBackApply_Click);
             // 
             // menuAnalysisApply
             // 
-            this.Adapter.SetAccessRight(this.menuAnalysisApply, "menuLF");
             this.menuAnalysisApply.Name = "menuAnalysisApply";
-            this.menuAnalysisApply.Size = new System.Drawing.Size(154, 22);
+            this.menuAnalysisApply.Size = new System.Drawing.Size(160, 22);
             this.menuAnalysisApply.Text = "委托单管理";
             this.menuAnalysisApply.Click += new System.EventHandler(this.menuAnalysisApply_Click);
             // 
             // toolStripSeparator5
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator5, "menuLF");
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(151, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(157, 6);
             // 
             // menuLFProp
             // 
-            this.Adapter.SetAccessRight(this.menuLFProp, "menuLF");
             this.menuLFProp.Name = "menuLFProp";
-            this.menuLFProp.Size = new System.Drawing.Size(154, 22);
+            this.menuLFProp.Size = new System.Drawing.Size(160, 22);
             this.menuLFProp.Text = "属性调整";
             this.menuLFProp.Click += new System.EventHandler(this.menuLFProp_Click);
             // 
             // toolStripSeparator9
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator9, "menuCCM");
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(229, 6);
             // 
             // menuCCMArrive
             // 
-            this.Adapter.SetAccessRight(this.menuCCMArrive, "menuCCM");
             this.menuCCMArrive.Name = "menuCCMArrive";
-            this.menuCCMArrive.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMArrive.Size = new System.Drawing.Size(232, 22);
             this.menuCCMArrive.Text = "大包到达";
             this.menuCCMArrive.Click += new System.EventHandler(this.menuCCMArrive_Click);
             // 
             // menuCCMChangeCastingNo
             // 
-            this.Adapter.SetAccessRight(this.menuCCMChangeCastingNo, "menuCCM");
             this.menuCCMChangeCastingNo.Name = "menuCCMChangeCastingNo";
-            this.menuCCMChangeCastingNo.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMChangeCastingNo.Size = new System.Drawing.Size(232, 22);
             this.menuCCMChangeCastingNo.Text = "更换浇次";
             this.menuCCMChangeCastingNo.Click += new System.EventHandler(this.menuCCMChangeCastingNo_Click);
             // 
             // menuCCMChangeTundishNo
             // 
-            this.Adapter.SetAccessRight(this.menuCCMChangeTundishNo, "menuCCM");
             this.menuCCMChangeTundishNo.Name = "menuCCMChangeTundishNo";
-            this.menuCCMChangeTundishNo.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMChangeTundishNo.Size = new System.Drawing.Size(232, 22);
             this.menuCCMChangeTundishNo.Text = "更换包次";
             this.menuCCMChangeTundishNo.Click += new System.EventHandler(this.menuCCMChangeTundishNo_Click);
             // 
             // menuCCMCasting
             // 
-            this.Adapter.SetAccessRight(this.menuCCMCasting, "menuCCM");
             this.menuCCMCasting.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCCMCastingStart,
             this.menuCCMCastingStop});
             this.menuCCMCasting.Name = "menuCCMCasting";
-            this.menuCCMCasting.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMCasting.Size = new System.Drawing.Size(232, 22);
             this.menuCCMCasting.Text = "浇注";
             // 
             // menuCCMCastingStart
             // 
             this.menuCCMCastingStart.Name = "menuCCMCastingStart";
-            this.menuCCMCastingStart.Size = new System.Drawing.Size(94, 22);
+            this.menuCCMCastingStart.Size = new System.Drawing.Size(100, 22);
             this.menuCCMCastingStart.Text = "开始";
             this.menuCCMCastingStart.Click += new System.EventHandler(this.menuCCMCastingStart_Click);
             // 
             // menuCCMCastingStop
             // 
             this.menuCCMCastingStop.Name = "menuCCMCastingStop";
-            this.menuCCMCastingStop.Size = new System.Drawing.Size(94, 22);
+            this.menuCCMCastingStop.Size = new System.Drawing.Size(100, 22);
             this.menuCCMCastingStop.Text = "结束";
             this.menuCCMCastingStop.Click += new System.EventHandler(this.menuCCMCastingStop_Click);
             // 
             // toolStripSeparator10
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator10, "menuCCM");
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(229, 6);
             // 
             // menuCCMDevStatus
             // 
-            this.Adapter.SetAccessRight(this.menuCCMDevStatus, "menuCCM");
             this.menuCCMDevStatus.Name = "menuCCMDevStatus";
-            this.menuCCMDevStatus.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMDevStatus.Size = new System.Drawing.Size(232, 22);
             this.menuCCMDevStatus.Text = "设备状态维护";
             this.menuCCMDevStatus.Click += new System.EventHandler(this.menuCCMDevStatus_Click);
             // 
             // menuCCMReturnApply
             // 
-            this.Adapter.SetAccessRight(this.menuCCMReturnApply, "menuCCM");
             this.menuCCMReturnApply.Name = "menuCCMReturnApply";
-            this.menuCCMReturnApply.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMReturnApply.Size = new System.Drawing.Size(232, 22);
             this.menuCCMReturnApply.Text = "大包到达钢水全回炉申请";
             this.menuCCMReturnApply.Click += new System.EventHandler(this.menuCCMReturnApply_Click);
             // 
             // menuCCMBackApply
             // 
-            this.Adapter.SetAccessRight(this.menuCCMBackApply, "menuCCM");
             this.menuCCMBackApply.Name = "menuCCMBackApply";
-            this.menuCCMBackApply.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMBackApply.Size = new System.Drawing.Size(232, 22);
             this.menuCCMBackApply.Text = "大包到达钢水返送申请";
             this.menuCCMBackApply.Click += new System.EventHandler(this.menuCCMBackApply_Click);
             // 
             // menuCCMAnalysisApply
             // 
-            this.Adapter.SetAccessRight(this.menuCCMAnalysisApply, "menuCCM");
             this.menuCCMAnalysisApply.Name = "menuCCMAnalysisApply";
-            this.menuCCMAnalysisApply.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMAnalysisApply.Size = new System.Drawing.Size(232, 22);
             this.menuCCMAnalysisApply.Text = "委托单管理";
             this.menuCCMAnalysisApply.Click += new System.EventHandler(this.menuCCMAnalysisApply_Click);
             // 
             // toolStripSeparator11
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator11, "menuCCM");
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(229, 6);
             // 
             // 设备更换ToolStripMenuItem
             // 
-            this.Adapter.SetAccessRight(this.设备更换ToolStripMenuItem, "menuCCM");
             this.设备更换ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuSmoothBlock,
             this.MenuWaterGrap,
             this.MenuBigWaterGrap});
             this.设备更换ToolStripMenuItem.Name = "设备更换ToolStripMenuItem";
-            this.设备更换ToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.设备更换ToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.设备更换ToolStripMenuItem.Text = "更换耐材";
             // 
             // MenuSmoothBlock
             // 
             this.MenuSmoothBlock.Name = "MenuSmoothBlock";
-            this.MenuSmoothBlock.Size = new System.Drawing.Size(118, 22);
+            this.MenuSmoothBlock.Size = new System.Drawing.Size(124, 22);
             this.MenuSmoothBlock.Text = "快换滑块";
             this.MenuSmoothBlock.Click += new System.EventHandler(this.MenuSmoothBlock_Click);
             // 
             // MenuWaterGrap
             // 
             this.MenuWaterGrap.Name = "MenuWaterGrap";
-            this.MenuWaterGrap.Size = new System.Drawing.Size(118, 22);
+            this.MenuWaterGrap.Size = new System.Drawing.Size(124, 22);
             this.MenuWaterGrap.Text = "中包水口";
             this.MenuWaterGrap.Click += new System.EventHandler(this.MenuWaterGrap_Click);
             // 
             // MenuBigWaterGrap
             // 
             this.MenuBigWaterGrap.Name = "MenuBigWaterGrap";
-            this.MenuBigWaterGrap.Size = new System.Drawing.Size(118, 22);
+            this.MenuBigWaterGrap.Size = new System.Drawing.Size(124, 22);
             this.MenuBigWaterGrap.Text = "大包水口";
             this.MenuBigWaterGrap.Click += new System.EventHandler(this.MenuBigWaterGrap_Click);
             // 
             // menuLFModifyLadleGrade
             // 
-            this.Adapter.SetAccessRight(this.menuLFModifyLadleGrade, "menuLF");
             this.menuLFModifyLadleGrade.Name = "menuLFModifyLadleGrade";
-            this.menuLFModifyLadleGrade.Size = new System.Drawing.Size(154, 22);
+            this.menuLFModifyLadleGrade.Size = new System.Drawing.Size(160, 22);
             this.menuLFModifyLadleGrade.Text = "修改钢包包况";
             this.menuLFModifyLadleGrade.Click += new System.EventHandler(this.menuModifyLadleGrade_Click);
             // 
             // toolStripSeparator14
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator14, "menuCCM");
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(223, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(229, 6);
             // 
             // toolStripMenuItem4
             // 
-            this.Adapter.SetAccessRight(this.toolStripMenuItem4, "menuCCM");
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(226, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(232, 22);
             this.toolStripMenuItem4.Text = "属性调整";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // menuCCMChangeGrade
             // 
-            this.Adapter.SetAccessRight(this.menuCCMChangeGrade, "menuCCM");
             this.menuCCMChangeGrade.Name = "menuCCMChangeGrade";
-            this.menuCCMChangeGrade.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMChangeGrade.Size = new System.Drawing.Size(232, 22);
             this.menuCCMChangeGrade.Text = "改钢申请";
             this.menuCCMChangeGrade.Click += new System.EventHandler(this.menuCCMChangeGrade_Click);
             // 
             // menuCCMTCData
             // 
-            this.Adapter.SetAccessRight(this.menuCCMTCData, "menuCCM");
             this.menuCCMTCData.Name = "menuCCMTCData";
-            this.menuCCMTCData.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMTCData.Size = new System.Drawing.Size(232, 22);
             this.menuCCMTCData.Text = "连铸实绩包次浇次内炉数修正";
             this.menuCCMTCData.Click += new System.EventHandler(this.menuCCMTCData_Click);
             // 
             // toolStripSeparator1
             // 
-            this.Adapter.SetAccessRight(this.toolStripSeparator1, "MenuAODMag");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(133, 6);
             // 
             // MenuPreFeed
             // 
-            this.Adapter.SetAccessRight(this.MenuPreFeed, "MenuAODMag");
             this.MenuPreFeed.Name = "MenuPreFeed";
-            this.MenuPreFeed.Size = new System.Drawing.Size(152, 22);
+            this.MenuPreFeed.Size = new System.Drawing.Size(136, 22);
             this.MenuPreFeed.Text = "准备兑铁";
             this.MenuPreFeed.Click += new System.EventHandler(this.MenuPreFeed_Click);
             // 
             // menuBOFFeed
             // 
-            this.Adapter.SetAccessRight(this.menuBOFFeed, "MenuAODMag");
             this.menuBOFFeed.Name = "menuBOFFeed";
-            this.menuBOFFeed.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFFeed.Size = new System.Drawing.Size(136, 22);
             this.menuBOFFeed.Text = "兑铁";
             this.menuBOFFeed.Click += new System.EventHandler(this.menuBOFFeed_Click);
             // 
             // menuBOFDesignateMat
             // 
-            this.Adapter.SetAccessRight(this.menuBOFDesignateMat, "MenuAODMag");
             this.menuBOFDesignateMat.Name = "menuBOFDesignateMat";
-            this.menuBOFDesignateMat.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFDesignateMat.Size = new System.Drawing.Size(136, 22);
             this.menuBOFDesignateMat.Text = "指定主原料";
             this.menuBOFDesignateMat.Click += new System.EventHandler(this.menuBOFDesignateMat_Click);
             // 
             // 脱碳开始ToolStripMenuItem
             // 
-            this.Adapter.SetAccessRight(this.脱碳开始ToolStripMenuItem, "MenuAODMag");
             this.脱碳开始ToolStripMenuItem.Name = "脱碳开始ToolStripMenuItem";
-            this.脱碳开始ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.脱碳开始ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.脱碳开始ToolStripMenuItem.Text = "脱碳开始";
             this.脱碳开始ToolStripMenuItem.Click += new System.EventHandler(this.脱碳开始ToolStripMenuItem_Click);
             // 
             // menuBOFBlow
             // 
-            this.Adapter.SetAccessRight(this.menuBOFBlow, "MenuAODMag");
             this.menuBOFBlow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuBOFBlowStart,
             this.menuBOFBlowStop});
             this.menuBOFBlow.Name = "menuBOFBlow";
-            this.menuBOFBlow.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFBlow.Size = new System.Drawing.Size(136, 22);
             this.menuBOFBlow.Text = "吹炼";
             // 
             // menuBOFBlowStart
             // 
             this.menuBOFBlowStart.Name = "menuBOFBlowStart";
-            this.menuBOFBlowStart.Size = new System.Drawing.Size(94, 22);
+            this.menuBOFBlowStart.Size = new System.Drawing.Size(180, 22);
             this.menuBOFBlowStart.Text = "开始";
             this.menuBOFBlowStart.Click += new System.EventHandler(this.menuBOFBlowStart_Click);
             // 
             // menuBOFBlowStop
             // 
             this.menuBOFBlowStop.Name = "menuBOFBlowStop";
-            this.menuBOFBlowStop.Size = new System.Drawing.Size(94, 22);
+            this.menuBOFBlowStop.Size = new System.Drawing.Size(180, 22);
             this.menuBOFBlowStop.Text = "结束";
             this.menuBOFBlowStop.Click += new System.EventHandler(this.menuBOFBlowStop_Click);
             // 
             // 还原开始ToolStripMenuItem
             // 
-            this.Adapter.SetAccessRight(this.还原开始ToolStripMenuItem, "MenuAODMag");
             this.还原开始ToolStripMenuItem.Name = "还原开始ToolStripMenuItem";
-            this.还原开始ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.还原开始ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.还原开始ToolStripMenuItem.Text = "还原开始";
             this.还原开始ToolStripMenuItem.Click += new System.EventHandler(this.还原开始ToolStripMenuItem_Click);
             // 
             // menuBOFTapping
             // 
-            this.Adapter.SetAccessRight(this.menuBOFTapping, "MenuAODMag");
             this.menuBOFTapping.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuBOFTappingStart,
             this.menuBOFTappingStop});
             this.menuBOFTapping.Name = "menuBOFTapping";
-            this.menuBOFTapping.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFTapping.Size = new System.Drawing.Size(136, 22);
             this.menuBOFTapping.Text = "出钢";
             // 
             // menuBOFTappingStart
             // 
             this.menuBOFTappingStart.Name = "menuBOFTappingStart";
-            this.menuBOFTappingStart.Size = new System.Drawing.Size(94, 22);
+            this.menuBOFTappingStart.Size = new System.Drawing.Size(100, 22);
             this.menuBOFTappingStart.Text = "开始";
             this.menuBOFTappingStart.Click += new System.EventHandler(this.menuBOFTappingStart_Click);
             // 
             // menuBOFTappingStop
             // 
             this.menuBOFTappingStop.Name = "menuBOFTappingStop";
-            this.menuBOFTappingStop.Size = new System.Drawing.Size(94, 22);
+            this.menuBOFTappingStop.Size = new System.Drawing.Size(100, 22);
             this.menuBOFTappingStop.Text = "结束";
             this.menuBOFTappingStop.Click += new System.EventHandler(this.menuBOFTappingStop_Click);
             // 
@@ -826,36 +787,36 @@
             this.toolStripSeparator3,
             this.menuBOFProp});
             this.menuBOF.Name = "menuBOF";
-            this.menuBOF.Size = new System.Drawing.Size(153, 264);
+            this.menuBOF.Size = new System.Drawing.Size(137, 242);
             // 
             // menuBOFRefresh
             // 
             this.menuBOFRefresh.Name = "menuBOFRefresh";
-            this.menuBOFRefresh.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFRefresh.Size = new System.Drawing.Size(136, 22);
             this.menuBOFRefresh.Text = "刷新";
             this.menuBOFRefresh.Click += new System.EventHandler(this.OnRefresh);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(133, 6);
             // 
             // menuBOFAnalysRequest
             // 
             this.menuBOFAnalysRequest.Name = "menuBOFAnalysRequest";
-            this.menuBOFAnalysRequest.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFAnalysRequest.Size = new System.Drawing.Size(136, 22);
             this.menuBOFAnalysRequest.Text = "委托单管理";
             this.menuBOFAnalysRequest.Click += new System.EventHandler(this.menuBOFAnalysRequest_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(133, 6);
             // 
             // menuBOFProp
             // 
             this.menuBOFProp.Name = "menuBOFProp";
-            this.menuBOFProp.Size = new System.Drawing.Size(152, 22);
+            this.menuBOFProp.Size = new System.Drawing.Size(136, 22);
             this.menuBOFProp.Text = "属性调整";
             this.menuBOFProp.Click += new System.EventHandler(this.menuBOFProp_Click);
             // 
@@ -914,12 +875,12 @@
             this.toolStripSeparator5,
             this.menuLFProp});
             this.menuLF.Name = "menuLF";
-            this.menuLF.Size = new System.Drawing.Size(155, 308);
+            this.menuLF.Size = new System.Drawing.Size(161, 308);
             // 
             // menuLFRefresh
             // 
             this.menuLFRefresh.Name = "menuLFRefresh";
-            this.menuLFRefresh.Size = new System.Drawing.Size(154, 22);
+            this.menuLFRefresh.Size = new System.Drawing.Size(160, 22);
             this.menuLFRefresh.Text = "刷新";
             this.menuLFRefresh.Click += new System.EventHandler(this.OnRefresh);
             // 
@@ -944,12 +905,12 @@
             this.menuCCMTCData,
             this.toolStripMenuItem4});
             this.menuCCM.Name = "menuCCM";
-            this.menuCCM.Size = new System.Drawing.Size(227, 314);
+            this.menuCCM.Size = new System.Drawing.Size(233, 314);
             // 
             // menuCCMRefresh
             // 
             this.menuCCMRefresh.Name = "menuCCMRefresh";
-            this.menuCCMRefresh.Size = new System.Drawing.Size(226, 22);
+            this.menuCCMRefresh.Size = new System.Drawing.Size(232, 22);
             this.menuCCMRefresh.Text = "刷新";
             this.menuCCMRefresh.Click += new System.EventHandler(this.OnRefresh);
             // 
@@ -2319,19 +2280,19 @@
             this.tabPageBOF.Controls.Add(this.tplBOF);
             this.tabPageBOF.Controls.Add(this.BOFStatus);
             this.tabPageBOF.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPageBOF.Location = new System.Drawing.Point(4, 21);
+            this.tabPageBOF.Location = new System.Drawing.Point(4, 22);
             this.tabPageBOF.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageBOF.Name = "tabPageBOF";
-            this.tabPageBOF.Size = new System.Drawing.Size(238, 194);
+            this.tabPageBOF.Size = new System.Drawing.Size(238, 193);
             this.tabPageBOF.TabIndex = 0;
             this.tabPageBOF.Text = "                 AOD炉                  ";
             this.tabPageBOF.UseVisualStyleBackColor = true;
             // 
             // tplBOF
             // 
-            this.tplBOF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tplBOF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tplBOF.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tplBOF.ColumnCount = 2;
             this.tplBOF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
@@ -2668,18 +2629,18 @@
             this.tabPageLF.Controls.Add(this.ucLFStatus);
             this.tabPageLF.Controls.Add(this.LFAreaInfo);
             this.tabPageLF.Controls.Add(this.tlpLF);
-            this.tabPageLF.Location = new System.Drawing.Point(4, 21);
+            this.tabPageLF.Location = new System.Drawing.Point(4, 22);
             this.tabPageLF.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageLF.Name = "tabPageLF";
-            this.tabPageLF.Size = new System.Drawing.Size(238, 194);
+            this.tabPageLF.Size = new System.Drawing.Size(238, 193);
             this.tabPageLF.TabIndex = 0;
             this.tabPageLF.Text = "                 4#LF炉                  ";
             this.tabPageLF.UseVisualStyleBackColor = true;
             // 
             // tlpLFWeight
             // 
-            this.tlpLFWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpLFWeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpLFWeight.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tlpLFWeight.ColumnCount = 2;
             this.tlpLFWeight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -2744,9 +2705,9 @@
             // LFAreaInfo
             // 
             this.LFAreaInfo.Adapter = null;
-            this.LFAreaInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.LFAreaInfo.Location = new System.Drawing.Point(0, 79);
+            this.LFAreaInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LFAreaInfo.Location = new System.Drawing.Point(0, 78);
             this.LFAreaInfo.Margin = new System.Windows.Forms.Padding(0);
             this.LFAreaInfo.Name = "LFAreaInfo";
             this.LFAreaInfo.Size = new System.Drawing.Size(236, 111);
@@ -2754,8 +2715,8 @@
             // 
             // tlpLF
             // 
-            this.tlpLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpLF.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tlpLF.ColumnCount = 2;
             this.tlpLF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -2892,19 +2853,19 @@
             this.tabPageRH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPageRH.Controls.Add(this.tableLayoutPanel2);
             this.tabPageRH.Controls.Add(this.DEPStatus);
-            this.tabPageRH.Location = new System.Drawing.Point(4, 21);
+            this.tabPageRH.Location = new System.Drawing.Point(4, 22);
             this.tabPageRH.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageRH.Name = "tabPageRH";
-            this.tabPageRH.Size = new System.Drawing.Size(238, 194);
+            this.tabPageRH.Size = new System.Drawing.Size(238, 193);
             this.tabPageRH.TabIndex = 0;
             this.tabPageRH.Text = "                 脱磷站                  ";
             this.tabPageRH.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
@@ -3208,7 +3169,7 @@
             // DEPStatus
             // 
             this.DEPStatus.CCMFlowCount = 4;
-            this.DEPStatus.L3Adapter = this.Adapter;
+            this.DEPStatus.L3Adapter = null;
             this.DEPStatus.Location = new System.Drawing.Point(2, -1);
             this.DEPStatus.Name = "DEPStatus";
             this.DEPStatus.Size = new System.Drawing.Size(77, 178);
@@ -3239,19 +3200,19 @@
             this.tabPageCCM.Controls.Add(this.txtStartCastingTime);
             this.tabPageCCM.Controls.Add(this.ucCCMStatus);
             this.tabPageCCM.Controls.Add(this.label25);
-            this.tabPageCCM.Location = new System.Drawing.Point(4, 21);
+            this.tabPageCCM.Location = new System.Drawing.Point(4, 22);
             this.tabPageCCM.Margin = new System.Windows.Forms.Padding(0);
             this.tabPageCCM.Name = "tabPageCCM";
-            this.tabPageCCM.Size = new System.Drawing.Size(239, 194);
+            this.tabPageCCM.Size = new System.Drawing.Size(239, 193);
             this.tabPageCCM.TabIndex = 0;
             this.tabPageCCM.Text = "                 6#铸机                  ";
             this.tabPageCCM.UseVisualStyleBackColor = true;
             // 
             // tlpCCM
             // 
-            this.tlpCCM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpCCM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tlpCCM.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tlpCCM.ColumnCount = 2;
             this.tlpCCM.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.26027F));
@@ -3972,6 +3933,7 @@
             // 
             // menuDEP
             // 
+            this.Adapter.SetAccessRight(this.menuDEP, "DEPDuty");
             this.menuDEP.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.铁包进站ToolStripMenuItem,
             this.喷吹ToolStripMenuItem,
@@ -3983,12 +3945,12 @@
             this.toolStripMenuItem6,
             this.委托单管理ToolStripMenuItem});
             this.menuDEP.Name = "menuDEP";
-            this.menuDEP.Size = new System.Drawing.Size(131, 202);
+            this.menuDEP.Size = new System.Drawing.Size(181, 224);
             // 
             // 铁包进站ToolStripMenuItem
             // 
             this.铁包进站ToolStripMenuItem.Name = "铁包进站ToolStripMenuItem";
-            this.铁包进站ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.铁包进站ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.铁包进站ToolStripMenuItem.Text = "铁包进站";
             this.铁包进站ToolStripMenuItem.Click += new System.EventHandler(this.铁包进站ToolStripMenuItem_Click);
             // 
@@ -3998,20 +3960,20 @@
             this.开始ToolStripMenuItem,
             this.结束ToolStripMenuItem});
             this.喷吹ToolStripMenuItem.Name = "喷吹ToolStripMenuItem";
-            this.喷吹ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.喷吹ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.喷吹ToolStripMenuItem.Text = "脱硅喷吹";
             // 
             // 开始ToolStripMenuItem
             // 
             this.开始ToolStripMenuItem.Name = "开始ToolStripMenuItem";
-            this.开始ToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.开始ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.开始ToolStripMenuItem.Text = "开始";
             this.开始ToolStripMenuItem.Click += new System.EventHandler(this.开始ToolStripMenuItem_Click);
             // 
             // 结束ToolStripMenuItem
             // 
             this.结束ToolStripMenuItem.Name = "结束ToolStripMenuItem";
-            this.结束ToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.结束ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.结束ToolStripMenuItem.Text = "结束";
             this.结束ToolStripMenuItem.Click += new System.EventHandler(this.结束ToolStripMenuItem_Click);
             // 
@@ -4021,20 +3983,20 @@
             this.开始ToolStripMenuItem1,
             this.结束ToolStripMenuItem1});
             this.捞渣ToolStripMenuItem.Name = "捞渣ToolStripMenuItem";
-            this.捞渣ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.捞渣ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.捞渣ToolStripMenuItem.Text = "扒硅渣";
             // 
             // 开始ToolStripMenuItem1
             // 
             this.开始ToolStripMenuItem1.Name = "开始ToolStripMenuItem1";
-            this.开始ToolStripMenuItem1.Size = new System.Drawing.Size(94, 22);
+            this.开始ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.开始ToolStripMenuItem1.Text = "开始";
             this.开始ToolStripMenuItem1.Click += new System.EventHandler(this.开始ToolStripMenuItem1_Click);
             // 
             // 结束ToolStripMenuItem1
             // 
             this.结束ToolStripMenuItem1.Name = "结束ToolStripMenuItem1";
-            this.结束ToolStripMenuItem1.Size = new System.Drawing.Size(94, 22);
+            this.结束ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.结束ToolStripMenuItem1.Text = "结束";
             this.结束ToolStripMenuItem1.Click += new System.EventHandler(this.结束ToolStripMenuItem1_Click);
             // 
@@ -4044,20 +4006,20 @@
             this.开始ToolStripMenuItem2,
             this.结束ToolStripMenuItem2});
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(130, 22);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(180, 22);
             this.toolStripTextBox1.Text = "脱磷喷吹";
             // 
             // 开始ToolStripMenuItem2
             // 
             this.开始ToolStripMenuItem2.Name = "开始ToolStripMenuItem2";
-            this.开始ToolStripMenuItem2.Size = new System.Drawing.Size(94, 22);
+            this.开始ToolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
             this.开始ToolStripMenuItem2.Text = "开始";
             this.开始ToolStripMenuItem2.Click += new System.EventHandler(this.脱磷ToolStripMenuItem_Click);
             // 
             // 结束ToolStripMenuItem2
             // 
             this.结束ToolStripMenuItem2.Name = "结束ToolStripMenuItem2";
-            this.结束ToolStripMenuItem2.Size = new System.Drawing.Size(94, 22);
+            this.结束ToolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
             this.结束ToolStripMenuItem2.Text = "结束";
             this.结束ToolStripMenuItem2.Click += new System.EventHandler(this.结束ToolStripMenuItem2_Click_1);
             // 
@@ -4067,20 +4029,20 @@
             this.开始ToolStripMenuItem3,
             this.结束ToolStripMenuItem3});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "扒磷渣";
             // 
             // 开始ToolStripMenuItem3
             // 
             this.开始ToolStripMenuItem3.Name = "开始ToolStripMenuItem3";
-            this.开始ToolStripMenuItem3.Size = new System.Drawing.Size(94, 22);
+            this.开始ToolStripMenuItem3.Size = new System.Drawing.Size(100, 22);
             this.开始ToolStripMenuItem3.Text = "开始";
             this.开始ToolStripMenuItem3.Click += new System.EventHandler(this.开始ToolStripMenuItem3_Click);
             // 
             // 结束ToolStripMenuItem3
             // 
             this.结束ToolStripMenuItem3.Name = "结束ToolStripMenuItem3";
-            this.结束ToolStripMenuItem3.Size = new System.Drawing.Size(94, 22);
+            this.结束ToolStripMenuItem3.Size = new System.Drawing.Size(100, 22);
             this.结束ToolStripMenuItem3.Text = "结束";
             this.结束ToolStripMenuItem3.Click += new System.EventHandler(this.结束ToolStripMenuItem3_Click);
             // 
@@ -4090,41 +4052,41 @@
             this.开始ToolStripMenuItem4,
             this.结束ToolStripMenuItem4});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "补吹";
             // 
             // 开始ToolStripMenuItem4
             // 
             this.开始ToolStripMenuItem4.Name = "开始ToolStripMenuItem4";
-            this.开始ToolStripMenuItem4.Size = new System.Drawing.Size(94, 22);
+            this.开始ToolStripMenuItem4.Size = new System.Drawing.Size(100, 22);
             this.开始ToolStripMenuItem4.Text = "开始";
             this.开始ToolStripMenuItem4.Click += new System.EventHandler(this.开始ToolStripMenuItem4_Click);
             // 
             // 结束ToolStripMenuItem4
             // 
             this.结束ToolStripMenuItem4.Name = "结束ToolStripMenuItem4";
-            this.结束ToolStripMenuItem4.Size = new System.Drawing.Size(94, 22);
+            this.结束ToolStripMenuItem4.Size = new System.Drawing.Size(100, 22);
             this.结束ToolStripMenuItem4.Text = "结束";
             this.结束ToolStripMenuItem4.Click += new System.EventHandler(this.结束ToolStripMenuItem4_Click);
             // 
             // 离站ToolStripMenuItem
             // 
             this.离站ToolStripMenuItem.Name = "离站ToolStripMenuItem";
-            this.离站ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.离站ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.离站ToolStripMenuItem.Text = "离站";
             this.离站ToolStripMenuItem.Click += new System.EventHandler(this.离站ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem6.Text = "属性调整";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // 委托单管理ToolStripMenuItem
             // 
             this.委托单管理ToolStripMenuItem.Name = "委托单管理ToolStripMenuItem";
-            this.委托单管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.委托单管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.委托单管理ToolStripMenuItem.Text = "委托单管理";
             this.委托单管理ToolStripMenuItem.Click += new System.EventHandler(this.委托单管理ToolStripMenuItem_Click);
             // 
@@ -4338,8 +4300,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.TabText = "工序管理";
             this.Text = "工序管理";
-            this.Load += new System.EventHandler(this.UnitMagMainFrm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UnitMagMainFrm_FormClosing);
+            this.Load += new System.EventHandler(this.UnitMagMainFrm_Load);
             this.menuBOF.ResumeLayout(false);
             this.menuLF.ResumeLayout(false);
             this.menuCCM.ResumeLayout(false);

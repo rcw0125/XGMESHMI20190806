@@ -32,6 +32,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MIFMagMainFrm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -148,28 +170,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dsInIron = new AppSvrHMI.L3DataSet();
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
             this.btnRefreshIn = new System.Windows.Forms.ToolStripButton();
@@ -237,6 +237,9 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.hmiRootPanel2 = new HMIBase.HMIRootPanel();
             this.dgvTapData = new System.Windows.Forms.DataGridView();
+            this.CheckFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsDes = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsIsDes = new AppSvrHMI.L3DataSet();
             this.schemadsIsDes = new System.Data.DataTable();
             this.coldsIsDesL3DataTableName = new System.Data.DataColumn();
@@ -249,18 +252,56 @@
             this.coldsIsDesL3DataTableCode_Val_Double = new System.Data.DataColumn();
             this.coldsIsDesL3DataTableCode_Function_Group = new System.Data.DataColumn();
             this.coldsIsDesL3DataTableNC_Code = new System.Data.DataColumn();
+            this.Return_Steel_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SiOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mnDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sourceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsIronMode = new AppSvrHMI.L3DataSet();
             this.schemadsIronMode = new System.Data.DataTable();
             this.coldsIronModeL3DataTableCode_Des = new System.Data.DataColumn();
             this.coldsIronModeL3DataTableCode_Val_Long = new System.Data.DataColumn();
+            this.shiftDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsShift1 = new AppSvrHMI.L3DataSet();
             this.schemadsShift1 = new System.Data.DataTable();
             this.coldsShift1L3DataTableCode_Des = new System.Data.DataColumn();
             this.coldsShift1L3DataTableCode_Val_Long = new System.Data.DataColumn();
+            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsTeam1 = new AppSvrHMI.L3DataSet();
             this.schemadsTeam1 = new System.Data.DataTable();
             this.coldsTeam1L3DataTableCode_Des = new System.Data.DataColumn();
             this.coldsTeam1L3DataTableCode_Val_Long = new System.Data.DataColumn();
+            this.operatorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grossWeightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsOut = new System.Windows.Forms.BindingSource(this.components);
             this.dsOut = new AppSvrHMI.L3DataSet();
             this.btnRefreshOut = new System.Windows.Forms.ToolStripButton();
@@ -1076,47 +1117,6 @@
             this.cmdCancelIronToDEP = new AppSvrHMI.L3Command(this.components);
             this.l3CommandParameter7 = new AppSvrHMI.L3CommandParameter();
             this.l3DataSet1 = new AppSvrHMI.L3DataSet();
-            this.CheckFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsDes = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Return_Steel_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SiOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mnDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.heatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sourceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.shiftDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.teamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.operatorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grossWeightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dsInIron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsInIron)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1789,6 +1789,38 @@
             this.dgvTapData.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvTapData_CurrentCellDirtyStateChanged);
             this.dgvTapData.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvTapData_DataError);
             // 
+            // CheckFlag
+            // 
+            this.CheckFlag.DataPropertyName = "CheckFlag";
+            this.CheckFlag.FalseValue = "0";
+            this.CheckFlag.Frozen = true;
+            this.CheckFlag.HeaderText = "选择";
+            this.CheckFlag.IndeterminateValue = "0";
+            this.CheckFlag.Name = "CheckFlag";
+            this.CheckFlag.TrueValue = "1";
+            this.CheckFlag.Width = 35;
+            // 
+            // ironLadleNoDataGridViewTextBoxColumn
+            // 
+            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
+            this.ironLadleNoDataGridViewTextBoxColumn.Frozen = true;
+            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
+            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
+            this.ironLadleNoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // IsDes
+            // 
+            this.IsDes.DataPropertyName = "IsDes";
+            this.IsDes.DataSource = this.dsIsDes;
+            this.IsDes.DisplayMember = "L3DataTable.Code_Des";
+            this.IsDes.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.IsDes.HeaderText = "是否脱硫";
+            this.IsDes.Name = "IsDes";
+            this.IsDes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.IsDes.ValueMember = "L3DataTable.Code_Val_Long";
+            this.IsDes.Width = 59;
+            // 
             // dsIsDes
             // 
             this.dsIsDes.AutoLoad = true;
@@ -1889,6 +1921,286 @@
             this.coldsIsDesL3DataTableNC_Code.ColumnName = "NC_Code";
             this.coldsIsDesL3DataTableNC_Code.Namespace = "";
             // 
+            // Return_Steel_Weight
+            // 
+            this.Return_Steel_Weight.DataPropertyName = "Return_Steel_Weight";
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Return_Steel_Weight.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Return_Steel_Weight.HeaderText = "回炉钢水量[t]";
+            this.Return_Steel_Weight.Name = "Return_Steel_Weight";
+            this.Return_Steel_Weight.ReadOnly = true;
+            this.Return_Steel_Weight.Width = 108;
+            // 
+            // weightDataGridViewTextBoxColumn
+            // 
+            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.weightDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量[t]";
+            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
+            this.weightDataGridViewTextBoxColumn.ReadOnly = true;
+            this.weightDataGridViewTextBoxColumn.Width = 96;
+            // 
+            // tareDataGridViewTextBoxColumn
+            // 
+            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
+            this.tareDataGridViewTextBoxColumn.HeaderText = "压块";
+            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
+            this.tareDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tareDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // cDataGridViewTextBoxColumn1
+            // 
+            this.cDataGridViewTextBoxColumn1.DataPropertyName = "C";
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = "0";
+            this.cDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.cDataGridViewTextBoxColumn1.HeaderText = "C";
+            this.cDataGridViewTextBoxColumn1.Name = "cDataGridViewTextBoxColumn1";
+            this.cDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cDataGridViewTextBoxColumn1.Width = 36;
+            // 
+            // SiOut
+            // 
+            this.SiOut.DataPropertyName = "Si";
+            dataGridViewCellStyle5.Format = "N3";
+            dataGridViewCellStyle5.NullValue = "0";
+            this.SiOut.DefaultCellStyle = dataGridViewCellStyle5;
+            this.SiOut.HeaderText = "Si";
+            this.SiOut.Name = "SiOut";
+            this.SiOut.ReadOnly = true;
+            this.SiOut.Width = 42;
+            // 
+            // mnDataGridViewTextBoxColumn1
+            // 
+            this.mnDataGridViewTextBoxColumn1.DataPropertyName = "Mn";
+            dataGridViewCellStyle6.Format = "N3";
+            dataGridViewCellStyle6.NullValue = "0";
+            this.mnDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.mnDataGridViewTextBoxColumn1.HeaderText = "Mn";
+            this.mnDataGridViewTextBoxColumn1.Name = "mnDataGridViewTextBoxColumn1";
+            this.mnDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.mnDataGridViewTextBoxColumn1.Width = 42;
+            // 
+            // POut
+            // 
+            this.POut.DataPropertyName = "P";
+            dataGridViewCellStyle7.Format = "N3";
+            dataGridViewCellStyle7.NullValue = "0";
+            this.POut.DefaultCellStyle = dataGridViewCellStyle7;
+            this.POut.HeaderText = "P";
+            this.POut.Name = "POut";
+            this.POut.ReadOnly = true;
+            this.POut.Width = 36;
+            // 
+            // SOut
+            // 
+            this.SOut.DataPropertyName = "S";
+            dataGridViewCellStyle8.Format = "N3";
+            dataGridViewCellStyle8.NullValue = "0";
+            this.SOut.DefaultCellStyle = dataGridViewCellStyle8;
+            this.SOut.HeaderText = "S";
+            this.SOut.Name = "SOut";
+            this.SOut.ReadOnly = true;
+            this.SOut.Width = 36;
+            // 
+            // tiDataGridViewTextBoxColumn1
+            // 
+            this.tiDataGridViewTextBoxColumn1.DataPropertyName = "Ti";
+            dataGridViewCellStyle9.Format = "N3";
+            dataGridViewCellStyle9.NullValue = "0";
+            this.tiDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
+            this.tiDataGridViewTextBoxColumn1.HeaderText = "Ti";
+            this.tiDataGridViewTextBoxColumn1.Name = "tiDataGridViewTextBoxColumn1";
+            this.tiDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.tiDataGridViewTextBoxColumn1.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Sn";
+            dataGridViewCellStyle10.Format = "N3";
+            dataGridViewCellStyle10.NullValue = "0";
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn21.HeaderText = "Sn";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            this.dataGridViewTextBoxColumn21.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "Sb";
+            dataGridViewCellStyle11.Format = "N3";
+            dataGridViewCellStyle11.NullValue = "0";
+            this.dataGridViewTextBoxColumn22.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewTextBoxColumn22.HeaderText = "Sb";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            this.dataGridViewTextBoxColumn22.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "As";
+            dataGridViewCellStyle12.Format = "N3";
+            dataGridViewCellStyle12.NullValue = "0";
+            this.dataGridViewTextBoxColumn23.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn23.HeaderText = "As";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Pb";
+            dataGridViewCellStyle13.Format = "N3";
+            dataGridViewCellStyle13.NullValue = "0";
+            this.dataGridViewTextBoxColumn24.DefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridViewTextBoxColumn24.HeaderText = "Pb";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Ni";
+            dataGridViewCellStyle14.Format = "N3";
+            dataGridViewCellStyle14.NullValue = "0";
+            this.dataGridViewTextBoxColumn25.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewTextBoxColumn25.HeaderText = "Ni";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            this.dataGridViewTextBoxColumn25.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Mo";
+            dataGridViewCellStyle15.Format = "N3";
+            dataGridViewCellStyle15.NullValue = "0";
+            this.dataGridViewTextBoxColumn26.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewTextBoxColumn26.HeaderText = "Mo";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Cu";
+            dataGridViewCellStyle16.Format = "N3";
+            dataGridViewCellStyle16.NullValue = "0";
+            this.dataGridViewTextBoxColumn27.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridViewTextBoxColumn27.HeaderText = "Cu";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            this.dataGridViewTextBoxColumn27.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Cr";
+            dataGridViewCellStyle17.Format = "N3";
+            dataGridViewCellStyle17.NullValue = "0";
+            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridViewTextBoxColumn28.HeaderText = "Cr";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            this.dataGridViewTextBoxColumn28.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "B";
+            dataGridViewCellStyle18.Format = "N3";
+            dataGridViewCellStyle18.NullValue = "0";
+            this.dataGridViewTextBoxColumn29.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewTextBoxColumn29.HeaderText = "B";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Width = 36;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "V";
+            dataGridViewCellStyle19.Format = "N3";
+            dataGridViewCellStyle19.NullValue = "0";
+            this.dataGridViewTextBoxColumn30.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridViewTextBoxColumn30.HeaderText = "V";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Width = 36;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "Al";
+            dataGridViewCellStyle20.Format = "N3";
+            dataGridViewCellStyle20.NullValue = "0";
+            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridViewTextBoxColumn31.HeaderText = "Al";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.dataGridViewTextBoxColumn31.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "Nb";
+            dataGridViewCellStyle21.Format = "N3";
+            dataGridViewCellStyle21.NullValue = "0";
+            this.dataGridViewTextBoxColumn32.DefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridViewTextBoxColumn32.HeaderText = "Nb";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            this.dataGridViewTextBoxColumn32.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Zn";
+            dataGridViewCellStyle22.Format = "N3";
+            dataGridViewCellStyle22.NullValue = "0";
+            this.dataGridViewTextBoxColumn33.DefaultCellStyle = dataGridViewCellStyle22;
+            this.dataGridViewTextBoxColumn33.HeaderText = "Zn";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Width = 42;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "W";
+            dataGridViewCellStyle23.Format = "N3";
+            dataGridViewCellStyle23.NullValue = "0";
+            this.dataGridViewTextBoxColumn34.DefaultCellStyle = dataGridViewCellStyle23;
+            this.dataGridViewTextBoxColumn34.HeaderText = "W";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.dataGridViewTextBoxColumn34.Width = 36;
+            // 
+            // ironTempDataGridViewTextBoxColumn
+            // 
+            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
+            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
+            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
+            this.ironTempDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ironTempDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // heatIDDataGridViewTextBoxColumn
+            // 
+            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
+            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
+            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
+            this.heatIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.heatIDDataGridViewTextBoxColumn.Visible = false;
+            this.heatIDDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // sourceDataGridViewTextBoxColumn1
+            // 
+            this.sourceDataGridViewTextBoxColumn1.DataPropertyName = "Source";
+            this.sourceDataGridViewTextBoxColumn1.DataSource = this.dsIronMode;
+            this.sourceDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
+            this.sourceDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.sourceDataGridViewTextBoxColumn1.HeaderText = "出铁方式";
+            this.sourceDataGridViewTextBoxColumn1.Name = "sourceDataGridViewTextBoxColumn1";
+            this.sourceDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.sourceDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.sourceDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.sourceDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
+            this.sourceDataGridViewTextBoxColumn1.Width = 78;
+            // 
             // dsIronMode
             // 
             this.dsIronMode.AutoLoad = true;
@@ -1931,6 +2243,20 @@
             this.coldsIronModeL3DataTableCode_Val_Long.ColumnName = "Code_Val_Long";
             this.coldsIronModeL3DataTableCode_Val_Long.DataType = typeof(int);
             this.coldsIronModeL3DataTableCode_Val_Long.Namespace = "";
+            // 
+            // shiftDataGridViewTextBoxColumn1
+            // 
+            this.shiftDataGridViewTextBoxColumn1.DataPropertyName = "Shift";
+            this.shiftDataGridViewTextBoxColumn1.DataSource = this.dsShift1;
+            this.shiftDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
+            this.shiftDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.shiftDataGridViewTextBoxColumn1.HeaderText = "班次";
+            this.shiftDataGridViewTextBoxColumn1.Name = "shiftDataGridViewTextBoxColumn1";
+            this.shiftDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.shiftDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.shiftDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.shiftDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
+            this.shiftDataGridViewTextBoxColumn1.Width = 54;
             // 
             // dsShift1
             // 
@@ -1975,6 +2301,20 @@
             this.coldsShift1L3DataTableCode_Val_Long.DataType = typeof(int);
             this.coldsShift1L3DataTableCode_Val_Long.Namespace = "";
             // 
+            // teamDataGridViewTextBoxColumn1
+            // 
+            this.teamDataGridViewTextBoxColumn1.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn1.DataSource = this.dsTeam1;
+            this.teamDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
+            this.teamDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.teamDataGridViewTextBoxColumn1.HeaderText = "班别";
+            this.teamDataGridViewTextBoxColumn1.Name = "teamDataGridViewTextBoxColumn1";
+            this.teamDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.teamDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.teamDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.teamDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
+            this.teamDataGridViewTextBoxColumn1.Width = 54;
+            // 
             // dsTeam1
             // 
             this.dsTeam1.AutoLoad = true;
@@ -2017,6 +2357,88 @@
             this.coldsTeam1L3DataTableCode_Val_Long.ColumnName = "Code_Val_Long";
             this.coldsTeam1L3DataTableCode_Val_Long.DataType = typeof(int);
             this.coldsTeam1L3DataTableCode_Val_Long.Namespace = "";
+            // 
+            // operatorDataGridViewTextBoxColumn1
+            // 
+            this.operatorDataGridViewTextBoxColumn1.DataPropertyName = "Operator";
+            this.operatorDataGridViewTextBoxColumn1.HeaderText = "操作员";
+            this.operatorDataGridViewTextBoxColumn1.Name = "operatorDataGridViewTextBoxColumn1";
+            this.operatorDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.operatorDataGridViewTextBoxColumn1.Width = 66;
+            // 
+            // grossWeightDataGridViewTextBoxColumn1
+            // 
+            this.grossWeightDataGridViewTextBoxColumn1.DataPropertyName = "Gross_Weight";
+            this.grossWeightDataGridViewTextBoxColumn1.HeaderText = "毛重";
+            this.grossWeightDataGridViewTextBoxColumn1.Name = "grossWeightDataGridViewTextBoxColumn1";
+            this.grossWeightDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.grossWeightDataGridViewTextBoxColumn1.Width = 54;
+            // 
+            // tapTimeDataGridViewTextBoxColumn
+            // 
+            this.tapTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
+            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时刻";
+            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
+            this.tapTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // object1DataGridViewTextBoxColumn
+            // 
+            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
+            this.object1DataGridViewTextBoxColumn.HeaderText = "组罐主键1";
+            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
+            this.object1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.object1DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight1DataGridViewTextBoxColumn
+            // 
+            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
+            this.weight1DataGridViewTextBoxColumn.HeaderText = "组罐重量1";
+            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
+            this.weight1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.weight1DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // object2DataGridViewTextBoxColumn
+            // 
+            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
+            this.object2DataGridViewTextBoxColumn.HeaderText = "组罐主键2";
+            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
+            this.object2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.object2DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight2DataGridViewTextBoxColumn
+            // 
+            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
+            this.weight2DataGridViewTextBoxColumn.HeaderText = "组罐重量2";
+            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
+            this.weight2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.weight2DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // object3DataGridViewTextBoxColumn
+            // 
+            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
+            this.object3DataGridViewTextBoxColumn.HeaderText = "组罐主键3";
+            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
+            this.object3DataGridViewTextBoxColumn.ReadOnly = true;
+            this.object3DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight3DataGridViewTextBoxColumn
+            // 
+            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
+            this.weight3DataGridViewTextBoxColumn.HeaderText = "组罐重量3";
+            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
+            this.weight3DataGridViewTextBoxColumn.ReadOnly = true;
+            this.weight3DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // materialIDDataGridViewTextBoxColumn1
+            // 
+            this.materialIDDataGridViewTextBoxColumn1.DataPropertyName = "MaterialID";
+            this.materialIDDataGridViewTextBoxColumn1.HeaderText = "MaterialID";
+            this.materialIDDataGridViewTextBoxColumn1.Name = "materialIDDataGridViewTextBoxColumn1";
+            this.materialIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.materialIDDataGridViewTextBoxColumn1.Visible = false;
+            this.materialIDDataGridViewTextBoxColumn1.Width = 90;
             // 
             // bsOut
             // 
@@ -2497,6 +2919,7 @@
             // 
             this.toolStripTextBox1.AccessibleName = "位置";
             this.toolStripTextBox1.AutoSize = false;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 21);
             this.toolStripTextBox1.Text = "0";
@@ -2532,6 +2955,7 @@
             // 
             // btnCancelIron
             // 
+            this.Adapter.SetAccessRight(this.btnCancelIron, "MixTappedBtn");
             this.btnCancelIron.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnCancelIron.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelIron.Image")));
             this.btnCancelIron.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -2542,6 +2966,7 @@
             // 
             // tsBtnIsDesIron
             // 
+            this.Adapter.SetAccessRight(this.tsBtnIsDesIron, "MixTappedBtn");
             this.tsBtnIsDesIron.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsBtnIsDesIron.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnIsDesIron.Image")));
             this.tsBtnIsDesIron.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -4179,6 +4604,7 @@
             // 
             this.toolStripTextBox4.AccessibleName = "位置";
             this.toolStripTextBox4.AutoSize = false;
+            this.toolStripTextBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox4.Name = "toolStripTextBox4";
             this.toolStripTextBox4.Size = new System.Drawing.Size(50, 21);
             this.toolStripTextBox4.Text = "0";
@@ -4223,6 +4649,7 @@
             // 
             // toolStripButton21
             // 
+            this.Adapter.SetAccessRight(this.toolStripButton21, "MixTappedBtn");
             this.toolStripButton21.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
             this.toolStripButton21.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -4871,6 +5298,7 @@
             // 
             // btnSampleApp2
             // 
+            this.Adapter.SetAccessRight(this.btnSampleApp2, "MixTappedBtn");
             this.btnSampleApp2.Location = new System.Drawing.Point(10, 80);
             this.btnSampleApp2.Name = "btnSampleApp2";
             this.btnSampleApp2.Size = new System.Drawing.Size(75, 23);
@@ -5016,6 +5444,7 @@
             // 
             // btnRefresh2
             // 
+            this.Adapter.SetAccessRight(this.btnRefresh2, "MixTappedBtn");
             this.btnRefresh2.Location = new System.Drawing.Point(87, 28);
             this.btnRefresh2.Name = "btnRefresh2";
             this.btnRefresh2.Size = new System.Drawing.Size(95, 20);
@@ -5027,6 +5456,7 @@
             // 
             // btnAdjust2
             // 
+            this.Adapter.SetAccessRight(this.btnAdjust2, "MixTappedBtn");
             this.btnAdjust2.Location = new System.Drawing.Point(87, 53);
             this.btnAdjust2.Name = "btnAdjust2";
             this.btnAdjust2.Size = new System.Drawing.Size(95, 20);
@@ -5051,6 +5481,7 @@
             // 
             // btnDelivery2
             // 
+            this.Adapter.SetAccessRight(this.btnDelivery2, "MixTappedBtn");
             this.btnDelivery2.Location = new System.Drawing.Point(10, 53);
             this.btnDelivery2.Name = "btnDelivery2";
             this.btnDelivery2.Size = new System.Drawing.Size(73, 20);
@@ -5076,6 +5507,7 @@
             // 
             // btnFeed2
             // 
+            this.Adapter.SetAccessRight(this.btnFeed2, "MixTappedBtn");
             this.btnFeed2.Location = new System.Drawing.Point(10, 28);
             this.btnFeed2.Name = "btnFeed2";
             this.btnFeed2.Size = new System.Drawing.Size(73, 20);
@@ -5881,6 +6313,7 @@
             // 
             // btnSampleApp1
             // 
+            this.Adapter.SetAccessRight(this.btnSampleApp1, "MixTappedBtn");
             this.btnSampleApp1.Location = new System.Drawing.Point(7, 80);
             this.btnSampleApp1.Name = "btnSampleApp1";
             this.btnSampleApp1.Size = new System.Drawing.Size(75, 23);
@@ -6148,6 +6581,7 @@
             // 
             // btnRefresh1
             // 
+            this.Adapter.SetAccessRight(this.btnRefresh1, "MixTappedBtn");
             this.btnRefresh1.Location = new System.Drawing.Point(85, 28);
             this.btnRefresh1.Name = "btnRefresh1";
             this.btnRefresh1.Size = new System.Drawing.Size(99, 20);
@@ -6159,6 +6593,7 @@
             // 
             // btnAdjust1
             // 
+            this.Adapter.SetAccessRight(this.btnAdjust1, "MixTappedBtn");
             this.btnAdjust1.Location = new System.Drawing.Point(85, 54);
             this.btnAdjust1.Name = "btnAdjust1";
             this.btnAdjust1.Size = new System.Drawing.Size(99, 20);
@@ -6170,6 +6605,7 @@
             // 
             // btnDelivery1
             // 
+            this.Adapter.SetAccessRight(this.btnDelivery1, "MixTappedBtn");
             this.btnDelivery1.Location = new System.Drawing.Point(7, 54);
             this.btnDelivery1.Name = "btnDelivery1";
             this.btnDelivery1.Size = new System.Drawing.Size(73, 20);
@@ -6181,6 +6617,7 @@
             // 
             // btnFeed1
             // 
+            this.Adapter.SetAccessRight(this.btnFeed1, "MixTappedBtn");
             this.btnFeed1.Location = new System.Drawing.Point(7, 28);
             this.btnFeed1.Name = "btnFeed1";
             this.btnFeed1.Size = new System.Drawing.Size(73, 20);
@@ -6893,6 +7330,7 @@
             // 
             // btnSampleApp3
             // 
+            this.Adapter.SetAccessRight(this.btnSampleApp3, "MixTappedBtn");
             this.btnSampleApp3.Location = new System.Drawing.Point(10, 80);
             this.btnSampleApp3.Name = "btnSampleApp3";
             this.btnSampleApp3.Size = new System.Drawing.Size(75, 23);
@@ -7039,6 +7477,7 @@
             // 
             // btnRefresh3
             // 
+            this.Adapter.SetAccessRight(this.btnRefresh3, "MixTappedBtn");
             this.btnRefresh3.Location = new System.Drawing.Point(89, 28);
             this.btnRefresh3.Name = "btnRefresh3";
             this.btnRefresh3.Size = new System.Drawing.Size(95, 20);
@@ -7050,6 +7489,7 @@
             // 
             // btnAdjust3
             // 
+            this.Adapter.SetAccessRight(this.btnAdjust3, "MixTappedBtn");
             this.btnAdjust3.Location = new System.Drawing.Point(89, 53);
             this.btnAdjust3.Name = "btnAdjust3";
             this.btnAdjust3.Size = new System.Drawing.Size(95, 20);
@@ -7074,6 +7514,7 @@
             // 
             // btnDelivery3
             // 
+            this.Adapter.SetAccessRight(this.btnDelivery3, "MixTappedBtn");
             this.btnDelivery3.Location = new System.Drawing.Point(10, 53);
             this.btnDelivery3.Name = "btnDelivery3";
             this.btnDelivery3.Size = new System.Drawing.Size(73, 20);
@@ -7099,6 +7540,7 @@
             // 
             // btnFeed3
             // 
+            this.Adapter.SetAccessRight(this.btnFeed3, "MixTappedBtn");
             this.btnFeed3.Location = new System.Drawing.Point(10, 28);
             this.btnFeed3.Name = "btnFeed3";
             this.btnFeed3.Size = new System.Drawing.Size(73, 20);
@@ -8530,6 +8972,7 @@
             // 
             this.toolStripTextBox2.AccessibleName = "位置";
             this.toolStripTextBox2.AutoSize = false;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(50, 21);
             this.toolStripTextBox2.Text = "0";
@@ -8565,6 +9008,7 @@
             // 
             // btnConfirm
             // 
+            this.Adapter.SetAccessRight(this.btnConfirm, "MixTappedBtn");
             this.btnConfirm.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -9166,6 +9610,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -9201,6 +9646,7 @@
             // 
             // btnDirect
             // 
+            this.Adapter.SetAccessRight(this.btnDirect, "MixTappedBtn");
             this.btnDirect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnDirect.Image = ((System.Drawing.Image)(resources.GetObject("btnDirect.Image")));
             this.btnDirect.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -9211,6 +9657,7 @@
             // 
             // btnBackArrive
             // 
+            this.Adapter.SetAccessRight(this.btnBackArrive, "MixTappedBtn");
             this.btnBackArrive.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnBackArrive.Image = ((System.Drawing.Image)(resources.GetObject("btnBackArrive.Image")));
             this.btnBackArrive.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -10570,6 +11017,7 @@
             // 
             this.toolStripTextBox3.AccessibleName = "位置";
             this.toolStripTextBox3.AutoSize = false;
+            this.toolStripTextBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
             this.toolStripTextBox3.Size = new System.Drawing.Size(50, 21);
             this.toolStripTextBox3.Text = "0";
@@ -10673,428 +11121,6 @@
             this.l3DataSet1.UpdateEvent = "";
             this.l3DataSet1.UpdateMethod = "";
             this.l3DataSet1.UpdateTrigger = null;
-            // 
-            // CheckFlag
-            // 
-            this.CheckFlag.DataPropertyName = "CheckFlag";
-            this.CheckFlag.FalseValue = "0";
-            this.CheckFlag.Frozen = true;
-            this.CheckFlag.HeaderText = "选择";
-            this.CheckFlag.IndeterminateValue = "0";
-            this.CheckFlag.Name = "CheckFlag";
-            this.CheckFlag.TrueValue = "1";
-            this.CheckFlag.Width = 35;
-            // 
-            // ironLadleNoDataGridViewTextBoxColumn
-            // 
-            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
-            this.ironLadleNoDataGridViewTextBoxColumn.Frozen = true;
-            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
-            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
-            this.ironLadleNoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // IsDes
-            // 
-            this.IsDes.DataPropertyName = "IsDes";
-            this.IsDes.DataSource = this.dsIsDes;
-            this.IsDes.DisplayMember = "L3DataTable.Code_Des";
-            this.IsDes.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.IsDes.HeaderText = "是否脱硫";
-            this.IsDes.Name = "IsDes";
-            this.IsDes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.IsDes.ValueMember = "L3DataTable.Code_Val_Long";
-            this.IsDes.Width = 59;
-            // 
-            // Return_Steel_Weight
-            // 
-            this.Return_Steel_Weight.DataPropertyName = "Return_Steel_Weight";
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Return_Steel_Weight.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Return_Steel_Weight.HeaderText = "回炉钢水量[t]";
-            this.Return_Steel_Weight.Name = "Return_Steel_Weight";
-            this.Return_Steel_Weight.ReadOnly = true;
-            this.Return_Steel_Weight.Width = 108;
-            // 
-            // weightDataGridViewTextBoxColumn
-            // 
-            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.weightDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量[t]";
-            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
-            this.weightDataGridViewTextBoxColumn.ReadOnly = true;
-            this.weightDataGridViewTextBoxColumn.Width = 96;
-            // 
-            // tareDataGridViewTextBoxColumn
-            // 
-            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
-            this.tareDataGridViewTextBoxColumn.HeaderText = "压块";
-            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
-            this.tareDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tareDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // cDataGridViewTextBoxColumn1
-            // 
-            this.cDataGridViewTextBoxColumn1.DataPropertyName = "C";
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = "0";
-            this.cDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.cDataGridViewTextBoxColumn1.HeaderText = "C";
-            this.cDataGridViewTextBoxColumn1.Name = "cDataGridViewTextBoxColumn1";
-            this.cDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.cDataGridViewTextBoxColumn1.Width = 36;
-            // 
-            // SiOut
-            // 
-            this.SiOut.DataPropertyName = "Si";
-            dataGridViewCellStyle5.Format = "N3";
-            dataGridViewCellStyle5.NullValue = "0";
-            this.SiOut.DefaultCellStyle = dataGridViewCellStyle5;
-            this.SiOut.HeaderText = "Si";
-            this.SiOut.Name = "SiOut";
-            this.SiOut.ReadOnly = true;
-            this.SiOut.Width = 42;
-            // 
-            // mnDataGridViewTextBoxColumn1
-            // 
-            this.mnDataGridViewTextBoxColumn1.DataPropertyName = "Mn";
-            dataGridViewCellStyle6.Format = "N3";
-            dataGridViewCellStyle6.NullValue = "0";
-            this.mnDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.mnDataGridViewTextBoxColumn1.HeaderText = "Mn";
-            this.mnDataGridViewTextBoxColumn1.Name = "mnDataGridViewTextBoxColumn1";
-            this.mnDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.mnDataGridViewTextBoxColumn1.Width = 42;
-            // 
-            // POut
-            // 
-            this.POut.DataPropertyName = "P";
-            dataGridViewCellStyle7.Format = "N3";
-            dataGridViewCellStyle7.NullValue = "0";
-            this.POut.DefaultCellStyle = dataGridViewCellStyle7;
-            this.POut.HeaderText = "P";
-            this.POut.Name = "POut";
-            this.POut.ReadOnly = true;
-            this.POut.Width = 36;
-            // 
-            // SOut
-            // 
-            this.SOut.DataPropertyName = "S";
-            dataGridViewCellStyle8.Format = "N3";
-            dataGridViewCellStyle8.NullValue = "0";
-            this.SOut.DefaultCellStyle = dataGridViewCellStyle8;
-            this.SOut.HeaderText = "S";
-            this.SOut.Name = "SOut";
-            this.SOut.ReadOnly = true;
-            this.SOut.Width = 36;
-            // 
-            // tiDataGridViewTextBoxColumn1
-            // 
-            this.tiDataGridViewTextBoxColumn1.DataPropertyName = "Ti";
-            dataGridViewCellStyle9.Format = "N3";
-            dataGridViewCellStyle9.NullValue = "0";
-            this.tiDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle9;
-            this.tiDataGridViewTextBoxColumn1.HeaderText = "Ti";
-            this.tiDataGridViewTextBoxColumn1.Name = "tiDataGridViewTextBoxColumn1";
-            this.tiDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.tiDataGridViewTextBoxColumn1.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Sn";
-            dataGridViewCellStyle10.Format = "N3";
-            dataGridViewCellStyle10.NullValue = "0";
-            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewTextBoxColumn21.HeaderText = "Sn";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            this.dataGridViewTextBoxColumn21.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "Sb";
-            dataGridViewCellStyle11.Format = "N3";
-            dataGridViewCellStyle11.NullValue = "0";
-            this.dataGridViewTextBoxColumn22.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridViewTextBoxColumn22.HeaderText = "Sb";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            this.dataGridViewTextBoxColumn22.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "As";
-            dataGridViewCellStyle12.Format = "N3";
-            dataGridViewCellStyle12.NullValue = "0";
-            this.dataGridViewTextBoxColumn23.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewTextBoxColumn23.HeaderText = "As";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            this.dataGridViewTextBoxColumn23.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Pb";
-            dataGridViewCellStyle13.Format = "N3";
-            dataGridViewCellStyle13.NullValue = "0";
-            this.dataGridViewTextBoxColumn24.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dataGridViewTextBoxColumn24.HeaderText = "Pb";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "Ni";
-            dataGridViewCellStyle14.Format = "N3";
-            dataGridViewCellStyle14.NullValue = "0";
-            this.dataGridViewTextBoxColumn25.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridViewTextBoxColumn25.HeaderText = "Ni";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Mo";
-            dataGridViewCellStyle15.Format = "N3";
-            dataGridViewCellStyle15.NullValue = "0";
-            this.dataGridViewTextBoxColumn26.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridViewTextBoxColumn26.HeaderText = "Mo";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Cu";
-            dataGridViewCellStyle16.Format = "N3";
-            dataGridViewCellStyle16.NullValue = "0";
-            this.dataGridViewTextBoxColumn27.DefaultCellStyle = dataGridViewCellStyle16;
-            this.dataGridViewTextBoxColumn27.HeaderText = "Cu";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Cr";
-            dataGridViewCellStyle17.Format = "N3";
-            dataGridViewCellStyle17.NullValue = "0";
-            this.dataGridViewTextBoxColumn28.DefaultCellStyle = dataGridViewCellStyle17;
-            this.dataGridViewTextBoxColumn28.HeaderText = "Cr";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            this.dataGridViewTextBoxColumn28.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "B";
-            dataGridViewCellStyle18.Format = "N3";
-            dataGridViewCellStyle18.NullValue = "0";
-            this.dataGridViewTextBoxColumn29.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dataGridViewTextBoxColumn29.HeaderText = "B";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Width = 36;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "V";
-            dataGridViewCellStyle19.Format = "N3";
-            dataGridViewCellStyle19.NullValue = "0";
-            this.dataGridViewTextBoxColumn30.DefaultCellStyle = dataGridViewCellStyle19;
-            this.dataGridViewTextBoxColumn30.HeaderText = "V";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 36;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "Al";
-            dataGridViewCellStyle20.Format = "N3";
-            dataGridViewCellStyle20.NullValue = "0";
-            this.dataGridViewTextBoxColumn31.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dataGridViewTextBoxColumn31.HeaderText = "Al";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            this.dataGridViewTextBoxColumn31.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "Nb";
-            dataGridViewCellStyle21.Format = "N3";
-            dataGridViewCellStyle21.NullValue = "0";
-            this.dataGridViewTextBoxColumn32.DefaultCellStyle = dataGridViewCellStyle21;
-            this.dataGridViewTextBoxColumn32.HeaderText = "Nb";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Zn";
-            dataGridViewCellStyle22.Format = "N3";
-            dataGridViewCellStyle22.NullValue = "0";
-            this.dataGridViewTextBoxColumn33.DefaultCellStyle = dataGridViewCellStyle22;
-            this.dataGridViewTextBoxColumn33.HeaderText = "Zn";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 42;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "W";
-            dataGridViewCellStyle23.Format = "N3";
-            dataGridViewCellStyle23.NullValue = "0";
-            this.dataGridViewTextBoxColumn34.DefaultCellStyle = dataGridViewCellStyle23;
-            this.dataGridViewTextBoxColumn34.HeaderText = "W";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Width = 36;
-            // 
-            // ironTempDataGridViewTextBoxColumn
-            // 
-            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
-            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
-            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
-            this.ironTempDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ironTempDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // heatIDDataGridViewTextBoxColumn
-            // 
-            this.heatIDDataGridViewTextBoxColumn.DataPropertyName = "HeatID";
-            this.heatIDDataGridViewTextBoxColumn.HeaderText = "炉号";
-            this.heatIDDataGridViewTextBoxColumn.Name = "heatIDDataGridViewTextBoxColumn";
-            this.heatIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.heatIDDataGridViewTextBoxColumn.Visible = false;
-            this.heatIDDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // sourceDataGridViewTextBoxColumn1
-            // 
-            this.sourceDataGridViewTextBoxColumn1.DataPropertyName = "Source";
-            this.sourceDataGridViewTextBoxColumn1.DataSource = this.dsIronMode;
-            this.sourceDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
-            this.sourceDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.sourceDataGridViewTextBoxColumn1.HeaderText = "出铁方式";
-            this.sourceDataGridViewTextBoxColumn1.Name = "sourceDataGridViewTextBoxColumn1";
-            this.sourceDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.sourceDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.sourceDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.sourceDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
-            this.sourceDataGridViewTextBoxColumn1.Width = 78;
-            // 
-            // shiftDataGridViewTextBoxColumn1
-            // 
-            this.shiftDataGridViewTextBoxColumn1.DataPropertyName = "Shift";
-            this.shiftDataGridViewTextBoxColumn1.DataSource = this.dsShift1;
-            this.shiftDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
-            this.shiftDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.shiftDataGridViewTextBoxColumn1.HeaderText = "班次";
-            this.shiftDataGridViewTextBoxColumn1.Name = "shiftDataGridViewTextBoxColumn1";
-            this.shiftDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.shiftDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.shiftDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.shiftDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
-            this.shiftDataGridViewTextBoxColumn1.Width = 54;
-            // 
-            // teamDataGridViewTextBoxColumn1
-            // 
-            this.teamDataGridViewTextBoxColumn1.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn1.DataSource = this.dsTeam1;
-            this.teamDataGridViewTextBoxColumn1.DisplayMember = "L3DataTable.Code_Des";
-            this.teamDataGridViewTextBoxColumn1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.teamDataGridViewTextBoxColumn1.HeaderText = "班别";
-            this.teamDataGridViewTextBoxColumn1.Name = "teamDataGridViewTextBoxColumn1";
-            this.teamDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.teamDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.teamDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.teamDataGridViewTextBoxColumn1.ValueMember = "L3DataTable.Code_Val_Long";
-            this.teamDataGridViewTextBoxColumn1.Width = 54;
-            // 
-            // operatorDataGridViewTextBoxColumn1
-            // 
-            this.operatorDataGridViewTextBoxColumn1.DataPropertyName = "Operator";
-            this.operatorDataGridViewTextBoxColumn1.HeaderText = "操作员";
-            this.operatorDataGridViewTextBoxColumn1.Name = "operatorDataGridViewTextBoxColumn1";
-            this.operatorDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.operatorDataGridViewTextBoxColumn1.Width = 66;
-            // 
-            // grossWeightDataGridViewTextBoxColumn1
-            // 
-            this.grossWeightDataGridViewTextBoxColumn1.DataPropertyName = "Gross_Weight";
-            this.grossWeightDataGridViewTextBoxColumn1.HeaderText = "毛重";
-            this.grossWeightDataGridViewTextBoxColumn1.Name = "grossWeightDataGridViewTextBoxColumn1";
-            this.grossWeightDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.grossWeightDataGridViewTextBoxColumn1.Width = 54;
-            // 
-            // tapTimeDataGridViewTextBoxColumn
-            // 
-            this.tapTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
-            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时刻";
-            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
-            this.tapTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // object1DataGridViewTextBoxColumn
-            // 
-            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
-            this.object1DataGridViewTextBoxColumn.HeaderText = "组罐主键1";
-            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
-            this.object1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.object1DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight1DataGridViewTextBoxColumn
-            // 
-            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
-            this.weight1DataGridViewTextBoxColumn.HeaderText = "组罐重量1";
-            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
-            this.weight1DataGridViewTextBoxColumn.ReadOnly = true;
-            this.weight1DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // object2DataGridViewTextBoxColumn
-            // 
-            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
-            this.object2DataGridViewTextBoxColumn.HeaderText = "组罐主键2";
-            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
-            this.object2DataGridViewTextBoxColumn.ReadOnly = true;
-            this.object2DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight2DataGridViewTextBoxColumn
-            // 
-            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
-            this.weight2DataGridViewTextBoxColumn.HeaderText = "组罐重量2";
-            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
-            this.weight2DataGridViewTextBoxColumn.ReadOnly = true;
-            this.weight2DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // object3DataGridViewTextBoxColumn
-            // 
-            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
-            this.object3DataGridViewTextBoxColumn.HeaderText = "组罐主键3";
-            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
-            this.object3DataGridViewTextBoxColumn.ReadOnly = true;
-            this.object3DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight3DataGridViewTextBoxColumn
-            // 
-            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
-            this.weight3DataGridViewTextBoxColumn.HeaderText = "组罐重量3";
-            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
-            this.weight3DataGridViewTextBoxColumn.ReadOnly = true;
-            this.weight3DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // materialIDDataGridViewTextBoxColumn1
-            // 
-            this.materialIDDataGridViewTextBoxColumn1.DataPropertyName = "MaterialID";
-            this.materialIDDataGridViewTextBoxColumn1.HeaderText = "MaterialID";
-            this.materialIDDataGridViewTextBoxColumn1.Name = "materialIDDataGridViewTextBoxColumn1";
-            this.materialIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.materialIDDataGridViewTextBoxColumn1.Visible = false;
-            this.materialIDDataGridViewTextBoxColumn1.Width = 90;
             // 
             // MIFMagMainFrm
             // 

@@ -28,6 +28,11 @@ namespace XGMESMain
         {
             strAccount = Adapter.Session.User;//获取用户账户
             txtAccount.Text = strAccount;
+            if (strAccount.Length !=5)
+            {
+                btnConfirm.Enabled = false;
+            }
+
         }
 
 
@@ -53,7 +58,7 @@ namespace XGMESMain
                     if (bRes)
                         MessageBox.Show("密码修改成功！", "提示！", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     else
-                        MessageBox.Show("密码修改成功！但对于密码定时锁存在一个问题。", "提示！", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        MessageBox.Show("密码修改成功！", "提示！", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     this.Close();
                 }
             }

@@ -807,7 +807,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -833,6 +833,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -875,7 +876,7 @@
             this.btnQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnQuery.Image")));
             this.btnQuery.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(49, 22);
+            this.btnQuery.Size = new System.Drawing.Size(52, 22);
             this.btnQuery.Text = "查询";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
@@ -901,7 +902,7 @@
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(17, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(20, 22);
             this.toolStripLabel2.Text = "－";
             this.toolStripLabel2.Visible = false;
             // 
@@ -934,7 +935,7 @@
             this.btnOutput.Image = ((System.Drawing.Image)(resources.GetObject("btnOutput.Image")));
             this.btnOutput.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOutput.Name = "btnOutput";
-            this.btnOutput.Size = new System.Drawing.Size(91, 22);
+            this.btnOutput.Size = new System.Drawing.Size(93, 22);
             this.btnOutput.Text = "导出到Excel";
             this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
@@ -942,6 +943,7 @@
             // 
             this.txtHeatID.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.txtHeatID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHeatID.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.txtHeatID.Name = "txtHeatID";
             this.txtHeatID.Size = new System.Drawing.Size(100, 25);
             // 
@@ -1088,8 +1090,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TabText = "废钢二库出库查询";
             this.Text = "废钢二库出库查询";
-            this.Load += new System.EventHandler(this.StainlessOutStoreQueryFrm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StainlessOutStoreQueryFrm_FormClosing);
+            this.Load += new System.EventHandler(this.StainlessOutStoreQueryFrm_Load);
             this.hmiRootPanel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

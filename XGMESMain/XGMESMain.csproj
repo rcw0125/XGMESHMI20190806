@@ -97,6 +97,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\EDWinFormsUI.dll</HintPath>
     </Reference>
+    <Reference Include="EquipMag">
+      <HintPath>..\Project\EquipMag\bin\Debug\EquipMag.dll</HintPath>
+    </Reference>
     <Reference Include="HMIBase, Version=1.0.3334.35329, Culture=neutral, PublicKeyToken=f7c3d774eb907c87, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\HMIBase.dll</HintPath>
@@ -174,8 +177,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\PxWarnClass.dll</HintPath>
     </Reference>
-    <Reference Include="SbMag">
-      <HintPath>..\SbMag\bin\Debug\SbMag.dll</HintPath>
+    <Reference Include="QualityMag, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Project\QualityMag\bin\Debug\QualityMag.dll</HintPath>
     </Reference>
     <Reference Include="Session, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -303,10 +307,6 @@
       <Project>{9CFEDA75-063E-4B99-8BFD-B0087AD8936C}</Project>
       <Name>CommonMag</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Project\EquipMag\EquipMag.csproj">
-      <Project>{DEC5B615-CF9C-4EC3-87A5-855AA876252E}</Project>
-      <Name>EquipMag</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Project\NCTelDataMag\NCTelDataMag.csproj">
       <Project>{DB13FC75-F5FE-454F-807E-9AD10ED62538}</Project>
       <Name>NCTelDataMag</Name>
@@ -314,10 +314,6 @@
     <ProjectReference Include="..\Project\PlanMag\PlanMag.csproj">
       <Project>{C6B80B74-EB86-44FC-9016-F70FE4602BF5}</Project>
       <Name>PlanMag</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Project\QualityMag\QualityMag.csproj">
-      <Project>{824E6F90-DB29-4A4A-8B4A-9FA777F7DA8B}</Project>
-      <Name>QualityMag</Name>
     </ProjectReference>
     <ProjectReference Include="..\Project\StoreMag\StoreMag.csproj">
       <Project>{7A1CADE6-1539-494A-922B-86A345F6EBD9}</Project>

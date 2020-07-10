@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LadleBaseMagFrm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bsMain = new System.Windows.Forms.BindingSource(this.components);
             this.dsMain = new AppSvrHMI.L3DataSet();
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
@@ -135,6 +135,7 @@
             this.cmdHotFireEnd = new AppSvrHMI.L3Command(this.components);
             this.l3cmdpHotFireEnd = new AppSvrHMI.L3CommandParameter();
             this.cmdMeasureDesignate = new AppSvrHMI.L3Command(this.components);
+            this.cmdpMeasure = new AppSvrHMI.L3CommandParameter();
             this.cmdOffLineException = new AppSvrHMI.L3Command(this.components);
             this.cmdpOffLineException = new AppSvrHMI.L3CommandParameter();
             this.cmdHKBegin = new AppSvrHMI.L3Command(this.components);
@@ -142,7 +143,6 @@
             this.cmdHKEnd = new AppSvrHMI.L3Command(this.components);
             this.l3CommandParameter5 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter3 = new AppSvrHMI.L3CommandParameter();
-            this.cmdpMeasure = new AppSvrHMI.L3CommandParameter();
             ((System.ComponentModel.ISupportInitialize)(this.bsMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsMain)).BeginInit();
@@ -196,7 +196,7 @@
             // 
             this.Adapter.SetAccessRight(this.menuMeasure, "btnLaldeMeasure");
             this.menuMeasure.Name = "menuMeasure";
-            this.menuMeasure.Size = new System.Drawing.Size(118, 22);
+            this.menuMeasure.Size = new System.Drawing.Size(124, 22);
             this.menuMeasure.Text = "指定称重";
             this.menuMeasure.Click += new System.EventHandler(this.menuMeasure_Click);
             // 
@@ -204,7 +204,7 @@
             // 
             this.Adapter.SetAccessRight(this.btnCancel, "btnLaldeMeasure");
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(118, 22);
+            this.btnCancel.Size = new System.Drawing.Size(124, 22);
             this.btnCancel.Text = "取消指定";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -358,19 +358,21 @@
             // 
             // btnAdd
             // 
+            this.Adapter.SetAccessRight(this.btnAdd, "LadlebtnInnerBuildStart");
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeftAutoMirrorImage = true;
-            this.btnAdd.Size = new System.Drawing.Size(49, 22);
+            this.btnAdd.Size = new System.Drawing.Size(52, 22);
             this.btnAdd.Text = "新增";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
+            this.Adapter.SetAccessRight(this.btnDelete, "LadlebtnInnerBuildStart");
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.RightToLeftAutoMirrorImage = true;
-            this.btnDelete.Size = new System.Drawing.Size(49, 22);
+            this.btnDelete.Size = new System.Drawing.Size(52, 22);
             this.btnDelete.Text = "删除";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -470,7 +472,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(32, 22);
             this.bindingNavigatorCountItem.Text = "/ {0}";
             this.bindingNavigatorCountItem.ToolTipText = "总项数";
             // 
@@ -496,6 +498,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -539,11 +542,12 @@
             // 
             // btnOffLineException
             // 
+            this.Adapter.SetAccessRight(this.btnOffLineException, "LadlebtnInnerBuildStart");
             this.btnOffLineException.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOffLineException.Image = ((System.Drawing.Image)(resources.GetObject("btnOffLineException.Image")));
             this.btnOffLineException.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOffLineException.Name = "btnOffLineException";
-            this.btnOffLineException.Size = new System.Drawing.Size(57, 22);
+            this.btnOffLineException.Size = new System.Drawing.Size(60, 22);
             this.btnOffLineException.Text = "异常下线";
             this.btnOffLineException.ToolTipText = "只对状态在\"使用\"以前的钢包有效";
             this.btnOffLineException.Click += new System.EventHandler(this.btnOffLineException_Click);
@@ -576,143 +580,157 @@
             // 
             // btnInnerBuildStart
             // 
+            this.Adapter.SetAccessRight(this.btnInnerBuildStart, "LadlebtnInnerBuildStart");
             this.btnInnerBuildStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnInnerBuildStart.Image = ((System.Drawing.Image)(resources.GetObject("btnInnerBuildStart.Image")));
             this.btnInnerBuildStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInnerBuildStart.Name = "btnInnerBuildStart";
-            this.btnInnerBuildStart.Size = new System.Drawing.Size(93, 40);
+            this.btnInnerBuildStart.Size = new System.Drawing.Size(96, 40);
             this.btnInnerBuildStart.Text = "永久层砌筑开始";
             this.btnInnerBuildStart.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnInnerBuildEnd
             // 
+            this.Adapter.SetAccessRight(this.btnInnerBuildEnd, "LadlebtnInnerBuildStart");
             this.btnInnerBuildEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnInnerBuildEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnInnerBuildEnd.Image")));
             this.btnInnerBuildEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInnerBuildEnd.Name = "btnInnerBuildEnd";
-            this.btnInnerBuildEnd.Size = new System.Drawing.Size(93, 40);
+            this.btnInnerBuildEnd.Size = new System.Drawing.Size(96, 40);
             this.btnInnerBuildEnd.Text = "永久层砌筑结束";
             this.btnInnerBuildEnd.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnHKBegin
             // 
+            this.Adapter.SetAccessRight(this.btnHKBegin, "LadlebtnInnerBuildStart");
             this.btnHKBegin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnHKBegin.Image = ((System.Drawing.Image)(resources.GetObject("btnHKBegin.Image")));
             this.btnHKBegin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnHKBegin.Name = "btnHKBegin";
-            this.btnHKBegin.Size = new System.Drawing.Size(117, 40);
+            this.btnHKBegin.Size = new System.Drawing.Size(120, 40);
             this.btnHKBegin.Text = "钢包永久层烘烤开始";
             this.btnHKBegin.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnHKEnd
             // 
+            this.Adapter.SetAccessRight(this.btnHKEnd, "LadlebtnInnerBuildStart");
             this.btnHKEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnHKEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnHKEnd.Image")));
             this.btnHKEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnHKEnd.Name = "btnHKEnd";
-            this.btnHKEnd.Size = new System.Drawing.Size(117, 40);
+            this.btnHKEnd.Size = new System.Drawing.Size(120, 40);
             this.btnHKEnd.Text = "钢包永久层烘烤结束";
             this.btnHKEnd.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnWorkBuildStart
             // 
+            this.Adapter.SetAccessRight(this.btnWorkBuildStart, "LadlebtnInnerBuildStart");
             this.btnWorkBuildStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnWorkBuildStart.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkBuildStart.Image")));
             this.btnWorkBuildStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnWorkBuildStart.Name = "btnWorkBuildStart";
-            this.btnWorkBuildStart.Size = new System.Drawing.Size(93, 40);
+            this.btnWorkBuildStart.Size = new System.Drawing.Size(96, 40);
             this.btnWorkBuildStart.Text = "工作层修砌开始";
             this.btnWorkBuildStart.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnWorkBuildEnd
             // 
+            this.Adapter.SetAccessRight(this.btnWorkBuildEnd, "LadlebtnInnerBuildStart");
             this.btnWorkBuildEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnWorkBuildEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkBuildEnd.Image")));
             this.btnWorkBuildEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnWorkBuildEnd.Name = "btnWorkBuildEnd";
-            this.btnWorkBuildEnd.Size = new System.Drawing.Size(93, 40);
+            this.btnWorkBuildEnd.Size = new System.Drawing.Size(96, 40);
             this.btnWorkBuildEnd.Text = "工作层修砌结束";
             this.btnWorkBuildEnd.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnWorkFireStart
             // 
+            this.Adapter.SetAccessRight(this.btnWorkFireStart, "LadlebtnInnerBuildStart");
             this.btnWorkFireStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnWorkFireStart.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkFireStart.Image")));
             this.btnWorkFireStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnWorkFireStart.Name = "btnWorkFireStart";
-            this.btnWorkFireStart.Size = new System.Drawing.Size(93, 40);
+            this.btnWorkFireStart.Size = new System.Drawing.Size(96, 40);
             this.btnWorkFireStart.Text = "工作层烘烤开始";
             this.btnWorkFireStart.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnWorkFireEnd
             // 
+            this.Adapter.SetAccessRight(this.btnWorkFireEnd, "LadlebtnInnerBuildStart");
             this.btnWorkFireEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnWorkFireEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkFireEnd.Image")));
             this.btnWorkFireEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnWorkFireEnd.Name = "btnWorkFireEnd";
-            this.btnWorkFireEnd.Size = new System.Drawing.Size(93, 40);
+            this.btnWorkFireEnd.Size = new System.Drawing.Size(96, 40);
             this.btnWorkFireEnd.Text = "工作层烘烤结束";
             this.btnWorkFireEnd.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnOnFireStart
             // 
+            this.Adapter.SetAccessRight(this.btnOnFireStart, "LadlebtnInnerBuildStart");
             this.btnOnFireStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOnFireStart.Image = ((System.Drawing.Image)(resources.GetObject("btnOnFireStart.Image")));
             this.btnOnFireStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOnFireStart.Name = "btnOnFireStart";
-            this.btnOnFireStart.Size = new System.Drawing.Size(81, 40);
+            this.btnOnFireStart.Size = new System.Drawing.Size(84, 40);
             this.btnOnFireStart.Text = "在线烘烤开始";
             this.btnOnFireStart.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnOnFireEnd
             // 
+            this.Adapter.SetAccessRight(this.btnOnFireEnd, "LadlebtnInnerBuildStart");
             this.btnOnFireEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOnFireEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnOnFireEnd.Image")));
             this.btnOnFireEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOnFireEnd.Name = "btnOnFireEnd";
-            this.btnOnFireEnd.Size = new System.Drawing.Size(81, 40);
+            this.btnOnFireEnd.Size = new System.Drawing.Size(84, 40);
             this.btnOnFireEnd.Text = "在线烘烤结束";
             this.btnOnFireEnd.Click += new System.EventHandler(this.SetStatus);
             // 
             // btnBOFTaping
             // 
+            this.Adapter.SetAccessRight(this.btnBOFTaping, "LadlebtnInnerBuildStart");
             this.btnBOFTaping.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnBOFTaping.Image = ((System.Drawing.Image)(resources.GetObject("btnBOFTaping.Image")));
             this.btnBOFTaping.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBOFTaping.Name = "btnBOFTaping";
-            this.btnBOFTaping.Size = new System.Drawing.Size(81, 40);
+            this.btnBOFTaping.Size = new System.Drawing.Size(84, 40);
             this.btnBOFTaping.Text = "转炉出钢开始";
             this.btnBOFTaping.ToolTipText = "当转炉出钢时,而上件未及时,及时补录转炉出钢开始信号";
             this.btnBOFTaping.Click += new System.EventHandler(this.btnBOFTaping_Click);
             // 
             // btnCastingEnd
             // 
+            this.Adapter.SetAccessRight(this.btnCastingEnd, "LadlebtnInnerBuildStart");
             this.btnCastingEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnCastingEnd.Image = ((System.Drawing.Image)(resources.GetObject("btnCastingEnd.Image")));
             this.btnCastingEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCastingEnd.Name = "btnCastingEnd";
-            this.btnCastingEnd.Size = new System.Drawing.Size(81, 40);
+            this.btnCastingEnd.Size = new System.Drawing.Size(84, 40);
             this.btnCastingEnd.Text = "连铸浇注结束";
             this.btnCastingEnd.ToolTipText = "当未接收到连铸浇注结束信号而钢包实体已经浇注结束,补录连铸浇注结束信号";
             this.btnCastingEnd.Click += new System.EventHandler(this.btnCastingEnd_Click);
             // 
             // btnOffLineToCold
             // 
+            this.Adapter.SetAccessRight(this.btnOffLineToCold, "LadlebtnInnerBuildStart");
             this.btnOffLineToCold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOffLineToCold.Image = ((System.Drawing.Image)(resources.GetObject("btnOffLineToCold.Image")));
             this.btnOffLineToCold.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOffLineToCold.Name = "btnOffLineToCold";
-            this.btnOffLineToCold.Size = new System.Drawing.Size(57, 40);
+            this.btnOffLineToCold.Size = new System.Drawing.Size(60, 40);
             this.btnOffLineToCold.Text = "下线维护";
             this.btnOffLineToCold.Click += new System.EventHandler(this.btnOffLineToCold_Click);
             // 
             // btnOffLineThrow
             // 
+            this.Adapter.SetAccessRight(this.btnOffLineThrow, "LadlebtnInnerBuildStart");
             this.btnOffLineThrow.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOffLineThrow.Image = ((System.Drawing.Image)(resources.GetObject("btnOffLineThrow.Image")));
             this.btnOffLineThrow.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOffLineThrow.Name = "btnOffLineThrow";
-            this.btnOffLineThrow.Size = new System.Drawing.Size(33, 40);
+            this.btnOffLineThrow.Size = new System.Drawing.Size(36, 21);
             this.btnOffLineThrow.Text = "甩包";
             this.btnOffLineThrow.Click += new System.EventHandler(this.btnOffLineThrow_Click);
             // 
@@ -733,14 +751,14 @@
             this.dvMain.AutoGenerateColumns = false;
             this.dvMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dvMain.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dvMain.ColumnHeadersHeight = 32;
             this.dvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -761,28 +779,28 @@
             this.InnerFireID});
             this.dvMain.ContextMenuStrip = this.contextMenuStrip1;
             this.dvMain.DataSource = this.bsMain;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvMain.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvMain.DefaultCellStyle = dataGridViewCellStyle7;
             this.dvMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvMain.Location = new System.Drawing.Point(0, 0);
             this.dvMain.Margin = new System.Windows.Forms.Padding(0);
             this.dvMain.Name = "dvMain";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dvMain.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dvMain.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dvMain.RowTemplate.Height = 23;
             this.dvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dvMain.Size = new System.Drawing.Size(1249, 628);
             this.dvMain.TabIndex = 31;
             this.dvMain.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvMain_DataBindingComplete);
-            this.dvMain.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dvMain_RowPostPaint);
-            this.dvMain.RowContextMenuStripNeeded += new System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler(this.dvMain_RowContextMenuStripNeeded);
             this.dvMain.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvMain_DataError);
+            this.dvMain.RowContextMenuStripNeeded += new System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventHandler(this.dvMain_RowContextMenuStripNeeded);
+            this.dvMain.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dvMain_RowPostPaint);
             // 
             // checkFlagDataGridViewTextBoxColumn
             // 
@@ -878,9 +896,9 @@
             // tareWTDataGridViewTextBoxColumn
             // 
             this.tareWTDataGridViewTextBoxColumn.DataPropertyName = "Tare_WT";
-            dataGridViewCellStyle2.Format = "N3";
-            dataGridViewCellStyle2.NullValue = "0";
-            this.tareWTDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Format = "N3";
+            dataGridViewCellStyle6.NullValue = "0";
+            this.tareWTDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.tareWTDataGridViewTextBoxColumn.HeaderText = "钢包皮重";
             this.tareWTDataGridViewTextBoxColumn.Name = "tareWTDataGridViewTextBoxColumn";
             this.tareWTDataGridViewTextBoxColumn.ReadOnly = true;
@@ -978,7 +996,7 @@
             this.menuMeasure,
             this.btnCancel});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 48);
             // 
             // CmdSetStatus
             // 
@@ -1211,6 +1229,17 @@
             this.cmdMeasureDesignate.Trigger = null;
             this.cmdMeasureDesignate.TriggerEvent = "Click";
             // 
+            // cmdpMeasure
+            // 
+            this.cmdpMeasure.AcceptAfterExecuted = false;
+            this.cmdpMeasure.ConstantValue = null;
+            this.cmdpMeasure.MergeTarget = false;
+            this.cmdpMeasure.SourceFilter = null;
+            this.cmdpMeasure.SourceObject = null;
+            this.cmdpMeasure.SourceProperty = null;
+            this.cmdpMeasure.TargetObject = null;
+            this.cmdpMeasure.TargetProperty = null;
+            // 
             // cmdOffLineException
             // 
             this.cmdOffLineException.Adapter = this.Adapter;
@@ -1290,17 +1319,6 @@
             this.l3CommandParameter3.SourceProperty = null;
             this.l3CommandParameter3.TargetObject = null;
             this.l3CommandParameter3.TargetProperty = null;
-            // 
-            // cmdpMeasure
-            // 
-            this.cmdpMeasure.AcceptAfterExecuted = false;
-            this.cmdpMeasure.ConstantValue = null;
-            this.cmdpMeasure.MergeTarget = false;
-            this.cmdpMeasure.SourceFilter = null;
-            this.cmdpMeasure.SourceObject = null;
-            this.cmdpMeasure.SourceProperty = null;
-            this.cmdpMeasure.TargetObject = null;
-            this.cmdpMeasure.TargetProperty = null;
             // 
             // LadleBaseMagFrm
             // 

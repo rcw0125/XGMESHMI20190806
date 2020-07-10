@@ -53,8 +53,8 @@ namespace DispatchMag
 
         public void GetData()
         {
-            MESWS.WSMES mes = new MESWS.WSMES();
-            var ds = mes.GetAllProcess();
+           
+            var ds = GetAllProcess();
             if (ds.Tables["des"].Rows.Count == 2&&ds.Tables["des"]!=null&& ds != null)
             {
                 txtDeSITAP_No.Text = ds.Tables["des"].Rows[0]["tap_no"].ToString();
@@ -140,24 +140,24 @@ namespace DispatchMag
 
             if (ds.Tables["bof"].Rows.Count == 4 && ds.Tables["bof"] != null && ds != null)
             {
-                ucBOFStatus1.Status = Convert.ToInt16(ds.Tables["bof"].Rows[0]["status"].ToString());
-                txtBOF01NowHeatID.Text = ds.Tables["bof"].Rows[0]["heatid"].ToString();
-                txtBOF01NowSteelGradeIndex.Text = ds.Tables["bof"].Rows[0]["steelgradeindex"].ToString();
-                txtBOF01NowSteelGrade.Text = ds.Tables["bof"].Rows[0]["bofsteelgrade"].ToString();
-                txtBOF01NowInWeight.Text = ds.Tables["bof"].Rows[0]["load"].ToString();
-                txtBOF01NowBlowTime.Text = ds.Tables["bof"].Rows[0]["startprocesstime"].ToString();
-                txtBOF01AfterHeatID.Text = ds.Tables["bof"].Rows[0]["tapheatid"].ToString();
-                txtBOF01AfterSteelGradeIndex.Text = ds.Tables["bof"].Rows[0]["tapsteelgradeindex"].ToString();
-                txtBOF01AfterSteelGrade.Text = ds.Tables["bof"].Rows[0]["tapsteelgrade"].ToString();
-                txtBOF01AfterSteelID.Text = ds.Tables["bof"].Rows[0]["ladleid"].ToString();
-                if (ds.Tables["bof"].Rows[0]["lfid"].ToString() != "0")
-                {
-                    txtBOF01AfterOut.Text = ds.Tables["bof"].Rows[0]["lfid"].ToString();
-                }
-                else
-                {
-                    txtBOF01AfterOut.Text = ds.Tables["bof"].Rows[0]["casterid"].ToString();
-                }
+                //ucBOFStatus1.Status = Convert.ToInt16(ds.Tables["bof"].Rows[0]["status"].ToString());
+                //txtBOF01NowHeatID.Text = ds.Tables["bof"].Rows[0]["heatid"].ToString();
+                //txtBOF01NowSteelGradeIndex.Text = ds.Tables["bof"].Rows[0]["steelgradeindex"].ToString();
+                //txtBOF01NowSteelGrade.Text = ds.Tables["bof"].Rows[0]["bofsteelgrade"].ToString();
+                //txtBOF01NowInWeight.Text = ds.Tables["bof"].Rows[0]["load"].ToString();
+                //txtBOF01NowBlowTime.Text = ds.Tables["bof"].Rows[0]["startprocesstime"].ToString();
+                //txtBOF01AfterHeatID.Text = ds.Tables["bof"].Rows[0]["tapheatid"].ToString();
+                //txtBOF01AfterSteelGradeIndex.Text = ds.Tables["bof"].Rows[0]["tapsteelgradeindex"].ToString();
+                //txtBOF01AfterSteelGrade.Text = ds.Tables["bof"].Rows[0]["tapsteelgrade"].ToString();
+                //txtBOF01AfterSteelID.Text = ds.Tables["bof"].Rows[0]["ladleid"].ToString();
+                //if (ds.Tables["bof"].Rows[0]["lfid"].ToString() != "0")
+                //{
+                //    txtBOF01AfterOut.Text = ds.Tables["bof"].Rows[0]["lfid"].ToString();
+                //}
+                //else
+                //{
+                //    txtBOF01AfterOut.Text = ds.Tables["bof"].Rows[0]["casterid"].ToString();
+                //}
 
                 ucBOFStatus2.Status = Convert.ToInt16(ds.Tables["bof"].Rows[1]["status"].ToString());
                 txtBOF02NowHeatID.Text = ds.Tables["bof"].Rows[1]["heatid"].ToString();
@@ -342,6 +342,7 @@ namespace DispatchMag
                 txtTime07.Text = ds.Tables["ccm"].Rows[4]["startcastingtime"].ToString();
                 txtRemainTime07.Text = ds.Tables["ccm"].Rows[4]["remaincastingtime"].ToString();
             }
+            MessageBox.Show("查询操作完成！");
         }
 
         public void SetDesII_Status(string strStatus)
@@ -575,180 +576,9 @@ namespace DispatchMag
             //    return;
         }
 
-        //获取工艺去向
-        private void ucStatus_OnUnitStatusChanged(string UnitURI, int OldStatus, int NewStatus)
-        {
-            //string strS = "S";
-            //char[] charS = strS.ToCharArray();
-            //string strUnitID = UnitURI.Substring(UnitURI.LastIndexOfAny(charS), 3);
-            //string strHeatID = "";
-            //string strReturn = "";
-            //switch (strUnitID)
-            //{
-            //    case "S21":
-            //        strHeatID = txtBOF01AfterHeatID.Text;
-            //        break;
-            //    case "S22":
-            //        strHeatID = txtBOF02AfterHeatID.Text;
-            //        break;
-            //    case "S23":
-            //        strHeatID = txtBOF03AfterHeatID.Text;
-            //        break;
-            //    case "S24":
-            //        strHeatID = txtBOF04AfterHeatID.Text;
-            //        break;
-            //    case "S41":
-            //        strHeatID = txtLF01HeatID.Text;
-            //        break;
-            //    case "S42":
-            //        strHeatID = txtLF02HeatID.Text;
-            //        break;
-            //    case "S43":
-            //        strHeatID = txtLF03HeatID.Text;
-            //        break;
-            //    case "S51":
-            //        strHeatID = txtRH01HeatID.Text;
-            //        break;
+      
+       
 
-            //    //Modify By HuYunHai BEGIN 2011-02-15 (新建5#LF炉)
-            //    case "S45":
-            //        strHeatID = txtLF05HeatID.Text;
-            //        break;
-            //    //Modify By HuYunHai END 2011-02-15 
-
-            //        //add by hyh 2012-05-10
-            //    case "S44":
-            //        strHeatID = txtLF04HeatID.Text;
-            //        break;
-            //        //end
-            //    default:
-            //        break;
-            //}
-            //if (strHeatID == "")
-            //{
-            //    switch (strUnitID)
-            //    {
-            //        case "S21":
-            //            txtBOF01AfterOut.Text = "";
-            //            break;
-            //        case "S22":
-            //            txtBOF02AfterOut.Text = "";
-            //            break;
-            //        case "S23":
-            //            txtBOF03AfterOut.Text = "";
-            //            break;
-            //        case "S24":
-            //            txtBOF04AfterOut.Text = "";
-            //            break;
-            //        case "S41":
-            //            txtLF01AfterOut.Text = "";
-            //            break;
-            //        case "S42":
-            //            txtLF02AfterOut.Text = "";
-            //            break;
-            //        case "S43":
-            //            txtLF03AfterOut.Text = "";
-            //            break;
-            //        case "S51":
-            //            txtRH01AfterOut.Text = "";
-            //            break;
-            //        //Modify By HuYunHai BEGIN 2011-02-15 (新建5#LF炉)
-            //        case "S45":
-            //            txtLF05AfterOut.Text = "";
-            //            break;
-            //        //Modify By HuYunHai END 2011-02-15 
-
-            //        //add by hyh 2012-05-10
-            //        case "S44":
-            //            txtLF04AfterOut.Text = "";
-            //            break;
-            //        //end
-            //        default:
-            //            break;
-            //    }
-            //    return;
-            //}
-            ////执行
-            //cmdGetDirection.Parameters[0].ConstantValue = strUnitID;
-            //cmdGetDirection.Parameters[1].ConstantValue = strHeatID;
-            //cmdGetDirection.Execute();
-            //strReturn = cmdGetDirection.Command.Return.ToString();
-
-            //switch (strUnitID)
-            //{
-            //    case "S21":
-            //        txtBOF01AfterOut.Text = strReturn;
-            //        break;
-            //    case "S22":
-            //        txtBOF02AfterOut.Text = strReturn;
-            //        break;
-            //    case "S23":
-            //        txtBOF03AfterOut.Text = strReturn;
-            //        break;
-            //    case "S24":
-            //        txtBOF04AfterOut.Text = strReturn;
-            //        break;
-            //    case "S41":
-            //        txtLF01AfterOut.Text = strReturn;
-            //        break;
-            //    case "S42":
-            //        txtLF02AfterOut.Text = strReturn;
-            //        break;
-            //    case "S43":
-            //        txtLF03AfterOut.Text = strReturn;
-            //        break;
-            //    case "S51":
-            //        txtRH01AfterOut.Text = strReturn;
-            //        break;
-
-            //    //Modify By HuYunHai BEGIN 2011-02-15 (新建5#LF炉)
-            //    case "S45":
-            //        txtLF05AfterOut.Text = strReturn;
-            //        break;
-            //    //Modify By HuYunHai END   2011-02-15 
-
-            //    //Modify By hyh BEGIN 2012-05-10 (新建4LF炉)
-            //    case "S44":
-            //        txtLF04AfterOut.Text = strReturn;
-            //        break;
-            //    //Modify By HuYunHai END   2011-02-15 
-
-            //    default:
-            //        break;
-            //}
-        }
-
-        //根据炼钢记号获取对应钢种
-        private void GetSteelGradeBySteelGradeIndex(object sender, EventArgs e)
-        {
-            //try
-            //{
-            //    if (!(sender is AppSvrHMI.L3DataBox))
-            //        return;
-            //    AppSvrHMI.L3DataBox ctrl = sender as AppSvrHMI.L3DataBox;
-
-            //    if (ctrl.Tag.ToString().Length < 1)
-            //        return;
-
-            //    foreach (Control other in ctrl.Parent.Controls)
-            //    {
-            //        if (!(other is AppSvrHMI.L3DataBox)) continue;
-            //        AppSvrHMI.L3DataBox otherTxt = other as AppSvrHMI.L3DataBox;
-            //        if (otherTxt == ctrl) continue;
-            //        if (otherTxt.Tag != null && ctrl.Tag != null && otherTxt.Tag.ToString() == ctrl.Tag.ToString())
-            //        {
-            //            otherTxt.Text = CommDataMag.CommonMethed.GetSteelGradeBySteelGradeIndex(Adapter, ctrl.Text.Trim());
-            //            return;
-            //        }
-            //    }
-            //}
-            //catch { }
-        }
-
-        private void ucBOFStatus2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void ProcessSchemaFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -764,9 +594,9 @@ namespace DispatchMag
             AppSvrHMI.L3DataBox c = (AppSvrHMI.L3DataBox)sender;
             switch (c.Tag.ToString())
             {
-                case "B1":
-                    lbEquStaB1.Text = Set_BOF_EquipLableText(dbxEquStaBOF1.Text);
-                    break;
+                //case "B1":
+                //    lbEquStaB1.Text = Set_BOF_EquipLableText(dbxEquStaBOF1.Text);
+                //    break;
                 case "B2":
                     lbEquStaB2.Text = Set_BOF_EquipLableText(dbxEquStaBOF2.Text);
                     break;
@@ -825,22 +655,7 @@ namespace DispatchMag
                     lbEquStaC6.Text = Set_CCM_EquipLableText(dbxEquStaCCM6.Text);
                     break;
                     //end
-
-
-                //case "D1":
-                //    lbEquStaD1.Text = Set_DeS_EquipLableText(dbxEquStaDeS1.Text);
-                //    break;
-                //case "D2":
-                //    lbEquStaD2.Text = Set_DeS_EquipLableText(dbxEquStaDeS2.Text);
-                //    break;
-                //case "D1T":
-                //    txtDeSIDeSType.Text = Set_DeS_DeSType(txtDeSType1.Text);
-                //    break;
-                //case "D2T":
-                //    txtDeSIIDeSType.Text = Set_DeS_DeSType(txtDeSType2.Text);
-                //    break;
-                //default:
-                //    break;
+               
             }
         }
         //获取脱硫设备状态表述
@@ -1039,183 +854,9 @@ namespace DispatchMag
             catch { return ""; }
         }
 
-        private void ucCCMStatus_OnUnitStatusChanged(string UnitURI, int OldStatus, int NewStatus)
-        {
-            try
-            {
-                ////生产状态不为浇注中，不获取
-                //if (NewStatus != CommDataMag.CommonData.CCMCasting)
-                //    return;
+     
 
-                //if (UnitURI.ToString() == "")
-                //    return;
-                //if (this.Adapter == null || this.Adapter.Session == null)
-                //    return;
-
-                //object objTreatNo = null;
-                //string strCCMID = UnitURI.Substring(UnitURI.Length - 3, 3);
-                //Adapter.Session.Get(UnitURI, "TreatNo", ref objTreatNo);
-
-                //object objCastingHeatNum = null;
-                //object objTundishHeatNum = null;
-                //string strCastingHeatNum = "";
-                //string strTundishHeatNum = "";
-
-                //if (objTreatNo != null)
-                //{
-                //    Adapter.Session.Get(CommDataMag.CommonData.CCM_PROCESS_DATA_URI + objTreatNo.ToString(), "Casting_HeatNum", ref objCastingHeatNum);
-                //    if (objCastingHeatNum != null)
-                //        strCastingHeatNum = objCastingHeatNum.ToString();
-
-                //    Adapter.Session.Get(CommDataMag.CommonData.CCM_PROCESS_DATA_URI + objTreatNo.ToString(), "Tundish_HeatNum", ref objTundishHeatNum);
-                //    if (objTundishHeatNum != null)
-                //        strTundishHeatNum = objTundishHeatNum.ToString();
-
-                //}
-                //switch (strCCMID)
-                //{
-                //    // Modify By HuYunHai Begin  2011-02-14   (1#连铸机修改为7#连铸机，删除2#连铸机)
-                //    case "S67":
-                //        dbxCasting7.Text = strCastingHeatNum;
-                //        dbxTundish7.Text = strTundishHeatNum;
-                //        break;
-                //    //case "S62":
-                //    //    dbxCasting2.Text = strCastingHeatNum;
-                //    //    dbxTundish2.Text = strTundishHeatNum;
-                //    //    break;
-                //    // Modify By HuYunHai End  2011-02-14   
-                //    case "S63":
-                //        dbxCasting3.Text = strCastingHeatNum;
-                //        dbxTundish3.Text = strTundishHeatNum;
-                //        break;
-                //    case "S64":
-                //        dbxCasting4.Text = strCastingHeatNum;
-                //        dbxTundish4.Text = strTundishHeatNum;
-                //        break;
-                //    case "S65":
-                //        dbxCasting5.Text = strCastingHeatNum;
-                //        dbxTundish5.Text = strTundishHeatNum;
-                //        break;
-                //        //add by hyh 2012-05-10
-                //    case "S66":
-                //        dbxCasting6.Text = strCastingHeatNum;
-                //        dbxTundish6.Text = strTundishHeatNum;
-                //        break;
-                //        //end
-                //    default:
-                //        break;
-                //}
-            }
-            catch { }
-        }
-
-      
-        //根据脱硫状态更改图片设置
-        private void dbxDeSStatus1_TextChanged(object sender, EventArgs e)
-        {
-            //string strStatus = dbxDeSStatus1.Text;
-            //switch (strStatus)
-            //{
-            //    case "":
-            //        lbStatus1.Text = "准备脱硫";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "1":
-            //        lbStatus1.Text = "准备脱硫";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "2":
-            //        lbStatus1.Text = "铁罐进站";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "3":
-            //        lbStatus1.Text = "预捞渣开始";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "4":
-            //        lbStatus1.Text = "预捞渣结束";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "5":
-            //        lbStatus1.Text = "喷吹开始";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesBusy;
-            //        break;
-            //    case "6":
-            //        lbStatus1.Text = "喷吹结束";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "7":
-            //        lbStatus1.Text = "捞渣开始";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "8":
-            //        lbStatus1.Text = "捞渣结束";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "9":
-            //        lbStatus1.Text = "铁罐出站";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    default:
-            //        lbStatus1.Text = "准备脱硫";
-            //        pbxDeS1.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //}
-        }
-
-        private void dbxDeSStatus2_TextChanged(object sender, EventArgs e)
-        {
-            //string strStatus = dbxDeSStatus2.Text;
-            //switch (strStatus)
-            //{
-            //    case "":
-            //        lbStatus2.Text = "准备脱硫";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "1":
-            //        lbStatus2.Text = "准备脱硫";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "2":
-            //        lbStatus2.Text = "铁罐进站";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "3":
-            //        lbStatus2.Text = "预捞渣开始";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "4":
-            //        lbStatus2.Text = "预捞渣结束";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "5":
-            //        lbStatus2.Text = "喷吹开始";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesBusy;
-            //        break;
-            //    case "6":
-            //        lbStatus2.Text = "喷吹结束";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "7":
-            //        lbStatus2.Text = "捞渣开始";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "8":
-            //        lbStatus2.Text = "捞渣结束";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    case "9":
-            //        lbStatus2.Text = "铁罐出站";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //    default:
-            //        lbStatus2.Text = "准备脱硫";
-            //        pbxDeS2.Image = global::DispatchMag.Properties.Resources.DesFree;
-            //        break;
-            //}
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -1225,6 +866,207 @@ namespace DispatchMag
             {
                 MessageBox.Show("出现异常:" + ex.ToString());
             }
+        }
+
+        public DataSet GetAllProcess()
+        {
+            StringBuilder sbu = new StringBuilder();
+            DataSet ds = new DataSet();
+            try
+            {
+                //中包温度
+                sbu.Length = 0 ;
+                //sbu.Append(" select a.name,a.tap_no,a.tpc_no,a.s,a.status,a.blowtime,b.destype ");
+                //sbu.Append(" from CDeS_Prod_Area a inner join CDeS_Unit_Mag b on a.name=concat(b.name,b.curarea) ");
+                sbu.Append(" select a.name,b.curarea,a.tap_no,a.tpc_no,a.s,a.status,a.blowtime,b.destype ");
+                sbu.Append(" from CDeS_Prod_Area a inner join CDeS_Unit_Mag b on a.name=concat(b.name,b.curarea) order by b.name");
+                var dsbase = GetData(Adapter, sbu.ToString());
+                if (dsbase.Rows.Count > 0  && dsbase != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dsbase.Clone();
+                    tbM = dsbase.Copy();
+                    tbM.TableName = "des";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "des";
+                    ds.Tables.Add(tbM);
+                }
+
+                sbu.Length = 0;
+               // sbu.Append(" select name,weight,temp,c,ti,si,sn,mn,sb,p,\"AS\",s,pb,temp_time from CMIF_Unit_Mag ");
+                sbu.Append(" select name,weight,temp,c,ti,si,sn,mn,sb,p,\"AS\",s,pb,temp_time from CMIF_Unit_Mag order by name ");
+                var dsmif = GetData(Adapter, sbu.ToString());
+                if (dsmif.Rows.Count > 0 && dsmif != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dsmif.Clone();
+                    tbM = dsmif.Copy();
+                    tbM.TableName = "mif";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "mif";
+                    ds.Tables.Add(tbM);
+                }
+
+                sbu.Length = 0;
+                //sbu.Append(" select a.heatid,a.steelgradeindex,a.load,a.startprocesstime,a.status, ");
+                //sbu.Append(" (select b.steelgrade from CQA_STEELGRADEINDEX_R b where a.steelgradeindex=b.steelgradeindex) as bofsteelgrade ");
+                //sbu.Append(" ,c.steelgradeindex as tapsteelgradeindex,c.heatid as tapheatid,c.ladleid, ");
+                //sbu.Append(" (select d.steelgrade from CQA_STEELGRADEINDEX_R d where c.steelgradeindex=d.steelgradeindex) as tapsteelgrade,");
+                //sbu.Append(" e.lfid,e.casterid ");
+                //sbu.Append("  from cbof_unit_mag a inner join CTap_Unit_Mag c on c.name=concat('S3',a.sequenceno) ");
+                //sbu.Append("   inner join cplan_tapping e on a.heatid=e.heatid ");
+                //sbu.Append("   where a.name<>'S25' ");
+
+                sbu.Append(" select a.heatid,a.steelgradeindex,a.load,a.startprocesstime,a.status, ");
+                sbu.Append(" (select b.steelgrade from CQA_STEELGRADEINDEX_R b where a.steelgradeindex=b.steelgradeindex) as bofsteelgrade ");
+                sbu.Append(" ,c.steelgradeindex as tapsteelgradeindex,c.heatid as tapheatid,c.ladleid, ");
+                sbu.Append(" (select d.steelgrade from CQA_STEELGRADEINDEX_R d where c.steelgradeindex=d.steelgradeindex) as tapsteelgrade,");
+                sbu.Append(" e.lfid,e.casterid ");
+                sbu.Append("  from cbof_unit_mag a inner join CTap_Unit_Mag c on c.name=concat('S3',a.sequenceno) ");
+                sbu.Append("   left join cplan_tapping e on a.heatid=e.heatid ");
+                sbu.Append("   where a.name<>'S25' order by a.name");
+                var dsbof = GetData(Adapter, sbu.ToString());
+                if (dsbof.Rows.Count > 0  && dsbof != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dsbof.Clone();
+                    tbM = dsbof.Copy();
+                    tbM.TableName = "bof";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "bof";
+                    ds.Tables.Add(tbM);
+                }
+
+                sbu.Length = 0;
+                //sbu.Append(" select a.status,b.heatid,b.steelgradeindex,b.ladleid,b.weight,a.startprocesstime ,d.rhid,d.casterid, ");
+                //sbu.Append(" (select c.steelgrade from CQA_STEELGRADEINDEX_R c where c.steelgradeindex=b.steelgradeindex) as steelgrade ");
+                //sbu.Append(" from clf_unit_mag a left join CLF_Prod_Area b on b.name=concat(a.CODE,a.CURAREA)");
+                //sbu.Append(" left join cplan_tapping d on b.heatid=d.heatid");
+                sbu.Append(" select a.name,a.curarea,a.status,b.heatid,b.steelgradeindex,b.ladleid,round(b.weight,2) as weight,a.startprocesstime ,d.rhid,d.casterid, ");
+                sbu.Append(" (select c.steelgrade from CQA_STEELGRADEINDEX_R c where c.steelgradeindex=b.steelgradeindex) as steelgrade ");
+                sbu.Append(" from clf_unit_mag a left join CLF_Prod_Area b on b.name=concat(a.CODE,a.CURAREA)");
+                sbu.Append(" left join cplan_tapping d on b.heatid=d.heatid order by a.name");
+                var dslf = GetData(Adapter, sbu.ToString());
+                if (dslf.Rows.Count > 0  && dslf != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dslf.Clone();
+                    tbM = dslf.Copy();
+                    tbM.TableName = "lf";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "lf";
+                    ds.Tables.Add(tbM);
+                }
+
+
+                sbu.Length = 0;
+                //sbu.Append(" select a.status,b.heatid,b.steelgradeindex,b.ladleid,b.weight,a.startprocesstime , ");
+                //sbu.Append(" (select c.steelgrade from CQA_STEELGRADEINDEX_R c where c.steelgradeindex=b.steelgradeindex) as steelgrade ");
+                //sbu.Append(" from crh_unit_mag a left join Crh_Prod_Area b on b.name=concat(a.CODE,a.CURAREA) ");
+                sbu.Append(" select a.name,a.curarea,a.status,b.heatid,b.steelgradeindex,b.ladleid,b.weight,a.startprocesstime , ");
+                sbu.Append(" (select c.steelgrade from CQA_STEELGRADEINDEX_R c where c.steelgradeindex=b.steelgradeindex) as steelgrade ");
+                sbu.Append(" from crh_unit_mag a left join Crh_Prod_Area b on b.name=concat(a.CODE,a.CURAREA) ");
+                var dsrh = GetData(Adapter, sbu.ToString());
+                if (dsrh.Rows.Count > 0  && dsrh != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dsrh.Clone();
+                    tbM = dsrh.Copy();
+                    tbM.TableName = "rh";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "rh";
+                    ds.Tables.Add(tbM);
+                }
+
+                sbu.Length = 0;
+                //sbu.Append(" select a.arrivetime,a.heatid,a.status,a.steelgradeindex,a.remainedweight,a.remaincastingtime, ");
+                //sbu.Append(" a.startcastingtime,b.casting_heatnum,b.tundish_heatnum ");
+                //sbu.Append(" from cccm_unit_mag a left join cccm_process_data b on a.heatid=b.heatid");
+                sbu.Append(" select a.name,a.arrivetime,a.heatid,a.status,a.steelgradeindex,a.remainedweight,a.remaincastingtime, ");
+                sbu.Append(" a.startcastingtime,b.casting_heatnum,b.tundish_heatnum ");
+                sbu.Append(" from cccm_unit_mag a left join cccm_process_data b on a.heatid=b.heatid");
+                sbu.Append(" where a.name<>'S61' and a.name<>'S62' order by a.name");
+                var dsccm = GetData(Adapter,sbu.ToString());
+                if (dsccm.Rows.Count > 0 && dsccm != null)
+                {
+                    DataTable tbM = new DataTable();
+                    tbM = dsccm.Clone();
+                    tbM = dsccm.Copy();
+                    tbM.TableName = "ccm";
+                    ds.Tables.Add(tbM);
+                }
+                else
+                {
+                    DataTable tbM = new DataTable();
+                    tbM.TableName = "ccm";
+                    ds.Tables.Add(tbM);
+                }
+            }
+            catch
+            {
+                return ds;
+            }
+            return ds;
+
+        }
+
+        public static DataTable GetData(AppSvrHMI.L3Adapter adapter, string strSql)
+        {
+            if (adapter.Session == null || !adapter.Session.Opened)
+            {
+                MessageBox.Show("adapter连接没有打开，请重新登陆");
+                return null;
+            }
+
+            adapter.RefreshDataBindings();
+            AppSvrIF.Command cmdSQl = new AppSvrIF.Command();
+            int iRet = adapter.Session.CreateCommand((int)AppSvrIF.CommandType.QueryBySQL, strSql, "", ref cmdSQl);
+            if (iRet != 0)
+            {
+                MessageBox.Show("创建查询命令失败，请重新登陆");
+                return null;
+            }
+            iRet = adapter.Session.Execute(cmdSQl);
+            if (iRet != 0)
+            {
+                MessageBox.Show("服务执行出现错误，请重新登陆");
+                return null;
+            }
+            if (!(cmdSQl.Return is AppSvrIF.Recordset))
+            {
+                MessageBox.Show("返回结果错误，请重新登陆");
+                return null;
+            }
+            AppSvrIF.Recordset rs = cmdSQl.Return as AppSvrIF.Recordset;
+            if (rs.Tables[0].Rows.Count < 1)
+            {
+                return null;
+            }
+            else
+            {
+                return rs.Tables[0];
+            }
+
         }
     }
 }

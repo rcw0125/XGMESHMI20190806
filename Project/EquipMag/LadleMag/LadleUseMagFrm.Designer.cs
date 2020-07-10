@@ -132,25 +132,6 @@
             this.hmiRootPanel1 = new HMIBase.HMIRootPanel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dvUse = new System.Windows.Forms.DataGridView();
-            this.dsLadleChcke = new AppSvrHMI.L3DataSet();
-            this.schemadsLadleChcke = new System.Data.DataTable();
-            this.coldsLadleChckeL3DataTableCode = new System.Data.DataColumn();
-            this.coldsLadleChckeL3DataTableCode_Des = new System.Data.DataColumn();
-            this.dsLadleChcke1 = new AppSvrHMI.L3DataSet();
-            this.schemadsLadleChcke1 = new System.Data.DataTable();
-            this.coldsLadleChcke1L3DataTableCode = new System.Data.DataColumn();
-            this.coldsLadleChcke1L3DataTableCode_Des = new System.Data.DataColumn();
-            this.dsLadleThrow = new AppSvrHMI.L3DataSet();
-            this.schemadsLadleThrow = new System.Data.DataTable();
-            this.coldsLadleThrowL3DataTableCode = new System.Data.DataColumn();
-            this.coldsLadleThrowL3DataTableCode_Des = new System.Data.DataColumn();
-            this.dsAutoFlow = new AppSvrHMI.L3DataSet();
-            this.schemadsAutoFlow = new System.Data.DataTable();
-            this.coldsAutoFlowL3DataTableCode = new System.Data.DataColumn();
-            this.coldsAutoFlowL3DataTableCode_Des = new System.Data.DataColumn();
-            this.dsLadleID = new AppSvrHMI.L3DataSet();
-            this.schemadsLadleID = new System.Data.DataTable();
-            this.coldsLadleIDL3DataTableLadleID = new System.Data.DataColumn();
             this.iNPUTTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uSEDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lADLEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,8 +152,20 @@
             this.cOMPLETETIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fIRETIMELENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lADLECHECKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dsLadleChcke = new AppSvrHMI.L3DataSet();
+            this.schemadsLadleChcke = new System.Data.DataTable();
+            this.coldsLadleChckeL3DataTableCode = new System.Data.DataColumn();
+            this.coldsLadleChckeL3DataTableCode_Des = new System.Data.DataColumn();
             this.Ladle_Check1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dsLadleChcke1 = new AppSvrHMI.L3DataSet();
+            this.schemadsLadleChcke1 = new System.Data.DataTable();
+            this.coldsLadleChcke1L3DataTableCode = new System.Data.DataColumn();
+            this.coldsLadleChcke1L3DataTableCode_Des = new System.Data.DataColumn();
             this.oFFREASONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dsLadleThrow = new AppSvrHMI.L3DataSet();
+            this.schemadsLadleThrow = new System.Data.DataTable();
+            this.coldsLadleThrowL3DataTableCode = new System.Data.DataColumn();
+            this.coldsLadleThrowL3DataTableCode_Des = new System.Data.DataColumn();
             this.Dump_LadleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sKBOARDKEEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hotTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -201,6 +194,13 @@
             this.ComFlag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Wall_Temp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Auto_Flow = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dsAutoFlow = new AppSvrHMI.L3DataSet();
+            this.schemadsAutoFlow = new System.Data.DataTable();
+            this.coldsAutoFlowL3DataTableCode = new System.Data.DataColumn();
+            this.coldsAutoFlowL3DataTableCode_Des = new System.Data.DataColumn();
+            this.dsLadleID = new AppSvrHMI.L3DataSet();
+            this.schemadsLadleID = new System.Data.DataTable();
+            this.coldsLadleIDL3DataTableLadleID = new System.Data.DataColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bsUse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsUse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsMain)).BeginInit();
@@ -867,6 +867,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 21);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -1041,6 +1042,7 @@
             // 
             // btnAdd
             // 
+            this.Adapter.SetAccessRight(this.btnAdd, "LadlebtnInnerBuildStart");
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
@@ -1050,6 +1052,7 @@
             // 
             // btnDel
             // 
+            this.Adapter.SetAccessRight(this.btnDel, "LadlebtnInnerBuildStart");
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDel.Name = "btnDel";
@@ -1064,6 +1067,7 @@
             // 
             // btnConfirm
             // 
+            this.Adapter.SetAccessRight(this.btnConfirm, "LadlebtnInnerBuildStart");
             this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
             this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnConfirm.Name = "btnConfirm";
@@ -1073,6 +1077,7 @@
             // 
             // btnCancel
             // 
+            this.Adapter.SetAccessRight(this.btnCancel, "LadlebtnInnerBuildStart");
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancel.Name = "btnCancel";
@@ -1184,209 +1189,6 @@
             this.dvUse.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvM_CellMouseDoubleClick);
             this.dvUse.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvUse_DataError);
             this.dvUse.Sorted += new System.EventHandler(this.dvUse_Sorted);
-            // 
-            // dsLadleChcke
-            // 
-            this.dsLadleChcke.AutoLoad = true;
-            this.dsLadleChcke.AutoSubscribe = false;
-            this.dsLadleChcke.DataSetName = "L3DataSet";
-            this.dsLadleChcke.DeleteMethod = null;
-            this.dsLadleChcke.InsertMethod = null;
-            this.dsLadleChcke.L3DataAdapter = this.Adapter;
-            this.dsLadleChcke.LoadEvent = "Click";
-            this.dsLadleChcke.LoadTrigger = null;
-            this.dsLadleChcke.RefreshValve = 1000;
-            this.dsLadleChcke.SourceCommand = null;
-            this.dsLadleChcke.SourceCondition = "Code_Group = \'LadleChcke\' order by Code";
-            this.dsLadleChcke.SourceMethod = "";
-            this.dsLadleChcke.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsLadleChcke.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
-            this.dsLadleChcke.SubscribeTarget = null;
-            this.dsLadleChcke.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsLadleChcke});
-            this.dsLadleChcke.UpdateEvent = "Click";
-            this.dsLadleChcke.UpdateMethod = null;
-            this.dsLadleChcke.UpdateTrigger = null;
-            // 
-            // schemadsLadleChcke
-            // 
-            this.schemadsLadleChcke.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsLadleChckeL3DataTableCode,
-            this.coldsLadleChckeL3DataTableCode_Des});
-            this.schemadsLadleChcke.TableName = "L3DataTable";
-            // 
-            // coldsLadleChckeL3DataTableCode
-            // 
-            this.coldsLadleChckeL3DataTableCode.Caption = "Code";
-            this.coldsLadleChckeL3DataTableCode.ColumnName = "Code";
-            this.coldsLadleChckeL3DataTableCode.Namespace = "";
-            // 
-            // coldsLadleChckeL3DataTableCode_Des
-            // 
-            this.coldsLadleChckeL3DataTableCode_Des.Caption = "Code_Des";
-            this.coldsLadleChckeL3DataTableCode_Des.ColumnName = "Code_Des";
-            this.coldsLadleChckeL3DataTableCode_Des.Namespace = "";
-            // 
-            // dsLadleChcke1
-            // 
-            this.dsLadleChcke1.AutoLoad = true;
-            this.dsLadleChcke1.AutoSubscribe = false;
-            this.dsLadleChcke1.DataSetName = "L3DataSet";
-            this.dsLadleChcke1.DeleteMethod = null;
-            this.dsLadleChcke1.InsertMethod = null;
-            this.dsLadleChcke1.L3DataAdapter = this.Adapter;
-            this.dsLadleChcke1.LoadEvent = "Click";
-            this.dsLadleChcke1.LoadTrigger = null;
-            this.dsLadleChcke1.RefreshValve = 1000;
-            this.dsLadleChcke1.SourceCommand = null;
-            this.dsLadleChcke1.SourceCondition = "Code_Group = \'LadleChcke1\' order by Code";
-            this.dsLadleChcke1.SourceMethod = "";
-            this.dsLadleChcke1.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsLadleChcke1.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
-            this.dsLadleChcke1.SubscribeTarget = null;
-            this.dsLadleChcke1.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsLadleChcke1});
-            this.dsLadleChcke1.UpdateEvent = "Click";
-            this.dsLadleChcke1.UpdateMethod = null;
-            this.dsLadleChcke1.UpdateTrigger = null;
-            // 
-            // schemadsLadleChcke1
-            // 
-            this.schemadsLadleChcke1.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsLadleChcke1L3DataTableCode,
-            this.coldsLadleChcke1L3DataTableCode_Des});
-            this.schemadsLadleChcke1.TableName = "L3DataTable";
-            // 
-            // coldsLadleChcke1L3DataTableCode
-            // 
-            this.coldsLadleChcke1L3DataTableCode.Caption = "Code";
-            this.coldsLadleChcke1L3DataTableCode.ColumnName = "Code";
-            this.coldsLadleChcke1L3DataTableCode.Namespace = "";
-            // 
-            // coldsLadleChcke1L3DataTableCode_Des
-            // 
-            this.coldsLadleChcke1L3DataTableCode_Des.Caption = "Code_Des";
-            this.coldsLadleChcke1L3DataTableCode_Des.ColumnName = "Code_Des";
-            this.coldsLadleChcke1L3DataTableCode_Des.Namespace = "";
-            // 
-            // dsLadleThrow
-            // 
-            this.dsLadleThrow.AutoLoad = true;
-            this.dsLadleThrow.AutoSubscribe = false;
-            this.dsLadleThrow.DataSetName = "L3DataSet";
-            this.dsLadleThrow.DeleteMethod = null;
-            this.dsLadleThrow.InsertMethod = null;
-            this.dsLadleThrow.L3DataAdapter = this.Adapter;
-            this.dsLadleThrow.LoadEvent = "Click";
-            this.dsLadleThrow.LoadTrigger = null;
-            this.dsLadleThrow.RefreshValve = 1000;
-            this.dsLadleThrow.SourceCommand = null;
-            this.dsLadleThrow.SourceCondition = "Code_Group = \'ComLadleThrow\' or Code_Group = \'FinLadleThrow\'";
-            this.dsLadleThrow.SourceMethod = "";
-            this.dsLadleThrow.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsLadleThrow.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
-            this.dsLadleThrow.SubscribeTarget = null;
-            this.dsLadleThrow.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsLadleThrow});
-            this.dsLadleThrow.UpdateEvent = "Click";
-            this.dsLadleThrow.UpdateMethod = null;
-            this.dsLadleThrow.UpdateTrigger = null;
-            // 
-            // schemadsLadleThrow
-            // 
-            this.schemadsLadleThrow.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsLadleThrowL3DataTableCode,
-            this.coldsLadleThrowL3DataTableCode_Des});
-            this.schemadsLadleThrow.TableName = "L3DataTable";
-            // 
-            // coldsLadleThrowL3DataTableCode
-            // 
-            this.coldsLadleThrowL3DataTableCode.Caption = "Code";
-            this.coldsLadleThrowL3DataTableCode.ColumnName = "Code";
-            this.coldsLadleThrowL3DataTableCode.Namespace = "";
-            // 
-            // coldsLadleThrowL3DataTableCode_Des
-            // 
-            this.coldsLadleThrowL3DataTableCode_Des.Caption = "Code_Des";
-            this.coldsLadleThrowL3DataTableCode_Des.ColumnName = "Code_Des";
-            this.coldsLadleThrowL3DataTableCode_Des.Namespace = "";
-            // 
-            // dsAutoFlow
-            // 
-            this.dsAutoFlow.AutoLoad = true;
-            this.dsAutoFlow.AutoSubscribe = false;
-            this.dsAutoFlow.DataSetName = "L3DataSet";
-            this.dsAutoFlow.DeleteMethod = null;
-            this.dsAutoFlow.InsertMethod = null;
-            this.dsAutoFlow.L3DataAdapter = this.Adapter;
-            this.dsAutoFlow.LoadEvent = "Click";
-            this.dsAutoFlow.LoadTrigger = null;
-            this.dsAutoFlow.RefreshValve = 1000;
-            this.dsAutoFlow.SourceCommand = null;
-            this.dsAutoFlow.SourceCondition = "Code_Group = \'CCM_AutoFlow\' order by Code";
-            this.dsAutoFlow.SourceMethod = "";
-            this.dsAutoFlow.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsAutoFlow.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
-            this.dsAutoFlow.SubscribeTarget = null;
-            this.dsAutoFlow.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsAutoFlow});
-            this.dsAutoFlow.UpdateEvent = "Click";
-            this.dsAutoFlow.UpdateMethod = null;
-            this.dsAutoFlow.UpdateTrigger = null;
-            // 
-            // schemadsAutoFlow
-            // 
-            this.schemadsAutoFlow.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsAutoFlowL3DataTableCode,
-            this.coldsAutoFlowL3DataTableCode_Des});
-            this.schemadsAutoFlow.TableName = "L3DataTable";
-            // 
-            // coldsAutoFlowL3DataTableCode
-            // 
-            this.coldsAutoFlowL3DataTableCode.Caption = "Code";
-            this.coldsAutoFlowL3DataTableCode.ColumnName = "Code";
-            this.coldsAutoFlowL3DataTableCode.Namespace = "";
-            // 
-            // coldsAutoFlowL3DataTableCode_Des
-            // 
-            this.coldsAutoFlowL3DataTableCode_Des.Caption = "Code_Des";
-            this.coldsAutoFlowL3DataTableCode_Des.ColumnName = "Code_Des";
-            this.coldsAutoFlowL3DataTableCode_Des.Namespace = "";
-            // 
-            // dsLadleID
-            // 
-            this.dsLadleID.AutoLoad = true;
-            this.dsLadleID.AutoSubscribe = false;
-            this.dsLadleID.DataSetName = "L3DataSet";
-            this.dsLadleID.DeleteMethod = null;
-            this.dsLadleID.InsertMethod = null;
-            this.dsLadleID.L3DataAdapter = this.Adapter;
-            this.dsLadleID.LoadEvent = "Click";
-            this.dsLadleID.LoadTrigger = null;
-            this.dsLadleID.RefreshValve = 1000;
-            this.dsLadleID.SourceCommand = null;
-            this.dsLadleID.SourceCondition = "LadleID is not null order by LadleID";
-            this.dsLadleID.SourceMethod = "";
-            this.dsLadleID.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
-            this.dsLadleID.SourceURI = "XGMESLogic\\LadleMag\\CLadle_Base";
-            this.dsLadleID.SubscribeTarget = null;
-            this.dsLadleID.Tables.AddRange(new System.Data.DataTable[] {
-            this.schemadsLadleID});
-            this.dsLadleID.UpdateEvent = "Click";
-            this.dsLadleID.UpdateMethod = null;
-            this.dsLadleID.UpdateTrigger = null;
-            // 
-            // schemadsLadleID
-            // 
-            this.schemadsLadleID.Columns.AddRange(new System.Data.DataColumn[] {
-            this.coldsLadleIDL3DataTableLadleID});
-            this.schemadsLadleID.TableName = "L3DataTable";
-            // 
-            // coldsLadleIDL3DataTableLadleID
-            // 
-            this.coldsLadleIDL3DataTableLadleID.Caption = "LadleID";
-            this.coldsLadleIDL3DataTableLadleID.ColumnName = "LadleID";
-            this.coldsLadleIDL3DataTableLadleID.Namespace = "";
             // 
             // iNPUTTIMEDataGridViewTextBoxColumn
             // 
@@ -1547,6 +1349,48 @@
             this.lADLECHECKDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
             this.lADLECHECKDataGridViewTextBoxColumn.Width = 78;
             // 
+            // dsLadleChcke
+            // 
+            this.dsLadleChcke.AutoLoad = true;
+            this.dsLadleChcke.AutoSubscribe = false;
+            this.dsLadleChcke.DataSetName = "L3DataSet";
+            this.dsLadleChcke.DeleteMethod = null;
+            this.dsLadleChcke.InsertMethod = null;
+            this.dsLadleChcke.L3DataAdapter = this.Adapter;
+            this.dsLadleChcke.LoadEvent = "Click";
+            this.dsLadleChcke.LoadTrigger = null;
+            this.dsLadleChcke.RefreshValve = 1000;
+            this.dsLadleChcke.SourceCommand = null;
+            this.dsLadleChcke.SourceCondition = "Code_Group = \'LadleChcke\' order by Code";
+            this.dsLadleChcke.SourceMethod = "";
+            this.dsLadleChcke.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
+            this.dsLadleChcke.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
+            this.dsLadleChcke.SubscribeTarget = null;
+            this.dsLadleChcke.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsLadleChcke});
+            this.dsLadleChcke.UpdateEvent = "Click";
+            this.dsLadleChcke.UpdateMethod = null;
+            this.dsLadleChcke.UpdateTrigger = null;
+            // 
+            // schemadsLadleChcke
+            // 
+            this.schemadsLadleChcke.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsLadleChckeL3DataTableCode,
+            this.coldsLadleChckeL3DataTableCode_Des});
+            this.schemadsLadleChcke.TableName = "L3DataTable";
+            // 
+            // coldsLadleChckeL3DataTableCode
+            // 
+            this.coldsLadleChckeL3DataTableCode.Caption = "Code";
+            this.coldsLadleChckeL3DataTableCode.ColumnName = "Code";
+            this.coldsLadleChckeL3DataTableCode.Namespace = "";
+            // 
+            // coldsLadleChckeL3DataTableCode_Des
+            // 
+            this.coldsLadleChckeL3DataTableCode_Des.Caption = "Code_Des";
+            this.coldsLadleChckeL3DataTableCode_Des.ColumnName = "Code_Des";
+            this.coldsLadleChckeL3DataTableCode_Des.Namespace = "";
+            // 
             // Ladle_Check1
             // 
             this.Ladle_Check1.DataPropertyName = "Ladle_Check1";
@@ -1559,6 +1403,48 @@
             this.Ladle_Check1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Ladle_Check1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Ladle_Check1.ValueMember = "L3DataTable.Code";
+            // 
+            // dsLadleChcke1
+            // 
+            this.dsLadleChcke1.AutoLoad = true;
+            this.dsLadleChcke1.AutoSubscribe = false;
+            this.dsLadleChcke1.DataSetName = "L3DataSet";
+            this.dsLadleChcke1.DeleteMethod = null;
+            this.dsLadleChcke1.InsertMethod = null;
+            this.dsLadleChcke1.L3DataAdapter = this.Adapter;
+            this.dsLadleChcke1.LoadEvent = "Click";
+            this.dsLadleChcke1.LoadTrigger = null;
+            this.dsLadleChcke1.RefreshValve = 1000;
+            this.dsLadleChcke1.SourceCommand = null;
+            this.dsLadleChcke1.SourceCondition = "Code_Group = \'LadleChcke1\' order by Code";
+            this.dsLadleChcke1.SourceMethod = "";
+            this.dsLadleChcke1.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
+            this.dsLadleChcke1.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
+            this.dsLadleChcke1.SubscribeTarget = null;
+            this.dsLadleChcke1.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsLadleChcke1});
+            this.dsLadleChcke1.UpdateEvent = "Click";
+            this.dsLadleChcke1.UpdateMethod = null;
+            this.dsLadleChcke1.UpdateTrigger = null;
+            // 
+            // schemadsLadleChcke1
+            // 
+            this.schemadsLadleChcke1.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsLadleChcke1L3DataTableCode,
+            this.coldsLadleChcke1L3DataTableCode_Des});
+            this.schemadsLadleChcke1.TableName = "L3DataTable";
+            // 
+            // coldsLadleChcke1L3DataTableCode
+            // 
+            this.coldsLadleChcke1L3DataTableCode.Caption = "Code";
+            this.coldsLadleChcke1L3DataTableCode.ColumnName = "Code";
+            this.coldsLadleChcke1L3DataTableCode.Namespace = "";
+            // 
+            // coldsLadleChcke1L3DataTableCode_Des
+            // 
+            this.coldsLadleChcke1L3DataTableCode_Des.Caption = "Code_Des";
+            this.coldsLadleChcke1L3DataTableCode_Des.ColumnName = "Code_Des";
+            this.coldsLadleChcke1L3DataTableCode_Des.Namespace = "";
             // 
             // oFFREASONDataGridViewTextBoxColumn
             // 
@@ -1573,6 +1459,48 @@
             this.oFFREASONDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.oFFREASONDataGridViewTextBoxColumn.ValueMember = "L3DataTable.Code";
             this.oFFREASONDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // dsLadleThrow
+            // 
+            this.dsLadleThrow.AutoLoad = true;
+            this.dsLadleThrow.AutoSubscribe = false;
+            this.dsLadleThrow.DataSetName = "L3DataSet";
+            this.dsLadleThrow.DeleteMethod = null;
+            this.dsLadleThrow.InsertMethod = null;
+            this.dsLadleThrow.L3DataAdapter = this.Adapter;
+            this.dsLadleThrow.LoadEvent = "Click";
+            this.dsLadleThrow.LoadTrigger = null;
+            this.dsLadleThrow.RefreshValve = 1000;
+            this.dsLadleThrow.SourceCommand = null;
+            this.dsLadleThrow.SourceCondition = "Code_Group = \'ComLadleThrow\' or Code_Group = \'FinLadleThrow\'";
+            this.dsLadleThrow.SourceMethod = "";
+            this.dsLadleThrow.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
+            this.dsLadleThrow.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
+            this.dsLadleThrow.SubscribeTarget = null;
+            this.dsLadleThrow.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsLadleThrow});
+            this.dsLadleThrow.UpdateEvent = "Click";
+            this.dsLadleThrow.UpdateMethod = null;
+            this.dsLadleThrow.UpdateTrigger = null;
+            // 
+            // schemadsLadleThrow
+            // 
+            this.schemadsLadleThrow.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsLadleThrowL3DataTableCode,
+            this.coldsLadleThrowL3DataTableCode_Des});
+            this.schemadsLadleThrow.TableName = "L3DataTable";
+            // 
+            // coldsLadleThrowL3DataTableCode
+            // 
+            this.coldsLadleThrowL3DataTableCode.Caption = "Code";
+            this.coldsLadleThrowL3DataTableCode.ColumnName = "Code";
+            this.coldsLadleThrowL3DataTableCode.Namespace = "";
+            // 
+            // coldsLadleThrowL3DataTableCode_Des
+            // 
+            this.coldsLadleThrowL3DataTableCode_Des.Caption = "Code_Des";
+            this.coldsLadleThrowL3DataTableCode_Des.ColumnName = "Code_Des";
+            this.coldsLadleThrowL3DataTableCode_Des.Namespace = "";
             // 
             // Dump_LadleID
             // 
@@ -1804,6 +1732,83 @@
             this.Auto_Flow.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Auto_Flow.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Auto_Flow.ValueMember = "L3DataTable.Code";
+            // 
+            // dsAutoFlow
+            // 
+            this.dsAutoFlow.AutoLoad = true;
+            this.dsAutoFlow.AutoSubscribe = false;
+            this.dsAutoFlow.DataSetName = "L3DataSet";
+            this.dsAutoFlow.DeleteMethod = null;
+            this.dsAutoFlow.InsertMethod = null;
+            this.dsAutoFlow.L3DataAdapter = this.Adapter;
+            this.dsAutoFlow.LoadEvent = "Click";
+            this.dsAutoFlow.LoadTrigger = null;
+            this.dsAutoFlow.RefreshValve = 1000;
+            this.dsAutoFlow.SourceCommand = null;
+            this.dsAutoFlow.SourceCondition = "Code_Group = \'CCM_AutoFlow\' order by Code";
+            this.dsAutoFlow.SourceMethod = "";
+            this.dsAutoFlow.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
+            this.dsAutoFlow.SourceURI = "XGMESLogic\\BaseDataMag\\CBase_All_Code";
+            this.dsAutoFlow.SubscribeTarget = null;
+            this.dsAutoFlow.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsAutoFlow});
+            this.dsAutoFlow.UpdateEvent = "Click";
+            this.dsAutoFlow.UpdateMethod = null;
+            this.dsAutoFlow.UpdateTrigger = null;
+            // 
+            // schemadsAutoFlow
+            // 
+            this.schemadsAutoFlow.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsAutoFlowL3DataTableCode,
+            this.coldsAutoFlowL3DataTableCode_Des});
+            this.schemadsAutoFlow.TableName = "L3DataTable";
+            // 
+            // coldsAutoFlowL3DataTableCode
+            // 
+            this.coldsAutoFlowL3DataTableCode.Caption = "Code";
+            this.coldsAutoFlowL3DataTableCode.ColumnName = "Code";
+            this.coldsAutoFlowL3DataTableCode.Namespace = "";
+            // 
+            // coldsAutoFlowL3DataTableCode_Des
+            // 
+            this.coldsAutoFlowL3DataTableCode_Des.Caption = "Code_Des";
+            this.coldsAutoFlowL3DataTableCode_Des.ColumnName = "Code_Des";
+            this.coldsAutoFlowL3DataTableCode_Des.Namespace = "";
+            // 
+            // dsLadleID
+            // 
+            this.dsLadleID.AutoLoad = true;
+            this.dsLadleID.AutoSubscribe = false;
+            this.dsLadleID.DataSetName = "L3DataSet";
+            this.dsLadleID.DeleteMethod = null;
+            this.dsLadleID.InsertMethod = null;
+            this.dsLadleID.L3DataAdapter = this.Adapter;
+            this.dsLadleID.LoadEvent = "Click";
+            this.dsLadleID.LoadTrigger = null;
+            this.dsLadleID.RefreshValve = 1000;
+            this.dsLadleID.SourceCommand = null;
+            this.dsLadleID.SourceCondition = "LadleID is not null order by LadleID";
+            this.dsLadleID.SourceMethod = "";
+            this.dsLadleID.SourceType = AppSvrHMI.L3DataSetSourceType.Class;
+            this.dsLadleID.SourceURI = "XGMESLogic\\LadleMag\\CLadle_Base";
+            this.dsLadleID.SubscribeTarget = null;
+            this.dsLadleID.Tables.AddRange(new System.Data.DataTable[] {
+            this.schemadsLadleID});
+            this.dsLadleID.UpdateEvent = "Click";
+            this.dsLadleID.UpdateMethod = null;
+            this.dsLadleID.UpdateTrigger = null;
+            // 
+            // schemadsLadleID
+            // 
+            this.schemadsLadleID.Columns.AddRange(new System.Data.DataColumn[] {
+            this.coldsLadleIDL3DataTableLadleID});
+            this.schemadsLadleID.TableName = "L3DataTable";
+            // 
+            // coldsLadleIDL3DataTableLadleID
+            // 
+            this.coldsLadleIDL3DataTableLadleID.Caption = "LadleID";
+            this.coldsLadleIDL3DataTableLadleID.ColumnName = "LadleID";
+            this.coldsLadleIDL3DataTableLadleID.Namespace = "";
             // 
             // LadleUseMagFrm
             // 

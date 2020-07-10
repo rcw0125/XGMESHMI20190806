@@ -266,7 +266,7 @@
             this.Font = new System.Drawing.Font("宋体", 12F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LfadditionFrm";
-            this.TabText = "3#LF地磅记录";
+            this.TabText = "精炼炉加料记录";
             this.Text = "精炼炉加料记录";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
