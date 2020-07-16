@@ -35,6 +35,7 @@
             this.Adapter = new AppSvrHMI.L3Adapter(this.components);
             this.btnConfirm = new System.Windows.Forms.ToolStripButton();
             this.cxCheckFlag = new System.Windows.Forms.CheckBox();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.schemadsBOFData = new System.Data.DataTable();
             this.coldsBOFDataL3DataTableGUID = new System.Data.DataColumn();
             this.coldsBOFDataL3DataTableName = new System.Data.DataColumn();
@@ -85,26 +86,14 @@
             this.btnAdd = new System.Windows.Forms.ToolStripButton();
             this.hmiRootPanel1 = new HMIBase.HMIRootPanel();
             this.dvBOFData = new System.Windows.Forms.DataGridView();
-            this.HeatID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preHeatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.steelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.steelGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shiftDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsShift = new AppSvrHMI.L3DataSet();
             this.schemadsShift = new System.Data.DataTable();
             this.coldsShiftL3DataTableCode = new System.Data.DataColumn();
             this.coldsShiftL3DataTableCode_Des = new System.Data.DataColumn();
-            this.teamDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dsTeam = new AppSvrHMI.L3DataSet();
             this.schemadsTeam = new System.Data.DataTable();
             this.coldsTeamL3DataTableCode = new System.Data.DataColumn();
             this.coldsTeamL3DataTableCode_Des = new System.Data.DataColumn();
-            this.headFurnaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assistantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.secondHandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statisticsDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Locked = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dsHeatID = new AppSvrHMI.L3DataSet();
             this.schemal3DataSet1 = new System.Data.DataTable();
             this.coldsHeatIDL3DataTableCode = new System.Data.DataColumn();
@@ -120,7 +109,18 @@
             this.l3CommandParameter6 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter7 = new AppSvrHMI.L3CommandParameter();
             this.l3CommandParameter8 = new AppSvrHMI.L3CommandParameter();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.HeatID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preHeatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.steelGradeIndexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.steelGradeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shiftDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.teamDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.headFurnaceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assistantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.secondHandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statisticsDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Locked = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bsBOFData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBOFData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsBOFData)).BeginInit();
@@ -192,6 +192,16 @@
             this.cxCheckFlag.Text = "数据维护";
             this.cxCheckFlag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cxCheckFlag.UseVisualStyleBackColor = false;
+            // 
+            // toolStripButton1
+            // 
+            this.Adapter.SetAccessRight(this.toolStripButton1, "LFbtnConfirm");
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(52, 22);
+            this.toolStripButton1.Text = "解锁";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // schemadsBOFData
             // 
@@ -663,46 +673,6 @@
             this.dvBOFData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dvBOFData_DataBindingComplete);
             this.dvBOFData.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvBOFData_DataError);
             // 
-            // HeatID
-            // 
-            this.HeatID.DataPropertyName = "HeatID";
-            this.HeatID.HeaderText = "炉号";
-            this.HeatID.Name = "HeatID";
-            this.HeatID.ReadOnly = true;
-            // 
-            // preHeatIDDataGridViewTextBoxColumn
-            // 
-            this.preHeatIDDataGridViewTextBoxColumn.DataPropertyName = "PreHeatID";
-            this.preHeatIDDataGridViewTextBoxColumn.HeaderText = "预定炉号";
-            this.preHeatIDDataGridViewTextBoxColumn.Name = "preHeatIDDataGridViewTextBoxColumn";
-            this.preHeatIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // steelGradeIndexDataGridViewTextBoxColumn
-            // 
-            this.steelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "SteelGradeIndex";
-            this.steelGradeIndexDataGridViewTextBoxColumn.HeaderText = "炼钢记号";
-            this.steelGradeIndexDataGridViewTextBoxColumn.Name = "steelGradeIndexDataGridViewTextBoxColumn";
-            this.steelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // steelGradeDataGridViewTextBoxColumn
-            // 
-            this.steelGradeDataGridViewTextBoxColumn.DataPropertyName = "SteelGrade";
-            this.steelGradeDataGridViewTextBoxColumn.HeaderText = "钢种";
-            this.steelGradeDataGridViewTextBoxColumn.Name = "steelGradeDataGridViewTextBoxColumn";
-            this.steelGradeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // shiftDataGridViewCheckBoxColumn
-            // 
-            this.shiftDataGridViewCheckBoxColumn.DataPropertyName = "Shift";
-            this.shiftDataGridViewCheckBoxColumn.DataSource = this.dsShift;
-            this.shiftDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.shiftDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.shiftDataGridViewCheckBoxColumn.HeaderText = "班次";
-            this.shiftDataGridViewCheckBoxColumn.Name = "shiftDataGridViewCheckBoxColumn";
-            this.shiftDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.shiftDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.shiftDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code";
-            // 
             // dsShift
             // 
             this.dsShift.AutoLoad = true;
@@ -745,18 +715,6 @@
             this.coldsShiftL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsShiftL3DataTableCode_Des.Namespace = "";
             // 
-            // teamDataGridViewCheckBoxColumn
-            // 
-            this.teamDataGridViewCheckBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewCheckBoxColumn.DataSource = this.dsTeam;
-            this.teamDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
-            this.teamDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.teamDataGridViewCheckBoxColumn.HeaderText = "班别";
-            this.teamDataGridViewCheckBoxColumn.Name = "teamDataGridViewCheckBoxColumn";
-            this.teamDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.teamDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.teamDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code";
-            // 
             // dsTeam
             // 
             this.dsTeam.AutoLoad = true;
@@ -798,50 +756,6 @@
             this.coldsTeamL3DataTableCode_Des.Caption = "Code_Des";
             this.coldsTeamL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsTeamL3DataTableCode_Des.Namespace = "";
-            // 
-            // headFurnaceDataGridViewTextBoxColumn
-            // 
-            this.headFurnaceDataGridViewTextBoxColumn.DataPropertyName = "HeadFurnace";
-            this.headFurnaceDataGridViewTextBoxColumn.HeaderText = "炉长";
-            this.headFurnaceDataGridViewTextBoxColumn.Name = "headFurnaceDataGridViewTextBoxColumn";
-            this.headFurnaceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // assistantDataGridViewTextBoxColumn
-            // 
-            this.assistantDataGridViewTextBoxColumn.DataPropertyName = "Assistant";
-            this.assistantDataGridViewTextBoxColumn.HeaderText = "一助手";
-            this.assistantDataGridViewTextBoxColumn.Name = "assistantDataGridViewTextBoxColumn";
-            this.assistantDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // secondHandDataGridViewTextBoxColumn
-            // 
-            this.secondHandDataGridViewTextBoxColumn.DataPropertyName = "SecondHand";
-            this.secondHandDataGridViewTextBoxColumn.HeaderText = "二助手";
-            this.secondHandDataGridViewTextBoxColumn.Name = "secondHandDataGridViewTextBoxColumn";
-            this.secondHandDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productionDateDataGridViewTextBoxColumn
-            // 
-            this.productionDateDataGridViewTextBoxColumn.DataPropertyName = "ProductionDate";
-            this.productionDateDataGridViewTextBoxColumn.HeaderText = "生产日期";
-            this.productionDateDataGridViewTextBoxColumn.Name = "productionDateDataGridViewTextBoxColumn";
-            this.productionDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statisticsDateDataGridViewTextBoxColumn
-            // 
-            this.statisticsDateDataGridViewTextBoxColumn.DataPropertyName = "StatisticsDate";
-            this.statisticsDateDataGridViewTextBoxColumn.HeaderText = "统计日期";
-            this.statisticsDateDataGridViewTextBoxColumn.Name = "statisticsDateDataGridViewTextBoxColumn";
-            this.statisticsDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Locked
-            // 
-            this.Locked.DataPropertyName = "Locked";
-            this.Locked.HeaderText = "封存标志";
-            this.Locked.Name = "Locked";
-            this.Locked.ReadOnly = true;
-            this.Locked.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Locked.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // dsHeatID
             // 
@@ -1024,15 +938,102 @@
             this.l3CommandParameter8.TargetObject = null;
             this.l3CommandParameter8.TargetProperty = null;
             // 
-            // toolStripButton1
+            // HeatID
             // 
-            this.Adapter.SetAccessRight(this.toolStripButton1, "LFbtnConfirm");
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(52, 22);
-            this.toolStripButton1.Text = "解锁";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.HeatID.DataPropertyName = "HeatID";
+            this.HeatID.HeaderText = "炉号";
+            this.HeatID.Name = "HeatID";
+            this.HeatID.ReadOnly = true;
+            // 
+            // preHeatIDDataGridViewTextBoxColumn
+            // 
+            this.preHeatIDDataGridViewTextBoxColumn.DataPropertyName = "PreHeatID";
+            this.preHeatIDDataGridViewTextBoxColumn.HeaderText = "预定炉号";
+            this.preHeatIDDataGridViewTextBoxColumn.Name = "preHeatIDDataGridViewTextBoxColumn";
+            this.preHeatIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // steelGradeIndexDataGridViewTextBoxColumn
+            // 
+            this.steelGradeIndexDataGridViewTextBoxColumn.DataPropertyName = "SteelGradeIndex";
+            this.steelGradeIndexDataGridViewTextBoxColumn.HeaderText = "炼钢记号";
+            this.steelGradeIndexDataGridViewTextBoxColumn.Name = "steelGradeIndexDataGridViewTextBoxColumn";
+            this.steelGradeIndexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // steelGradeDataGridViewTextBoxColumn
+            // 
+            this.steelGradeDataGridViewTextBoxColumn.DataPropertyName = "SteelGrade";
+            this.steelGradeDataGridViewTextBoxColumn.HeaderText = "钢种";
+            this.steelGradeDataGridViewTextBoxColumn.Name = "steelGradeDataGridViewTextBoxColumn";
+            this.steelGradeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // shiftDataGridViewCheckBoxColumn
+            // 
+            this.shiftDataGridViewCheckBoxColumn.DataPropertyName = "Shift";
+            this.shiftDataGridViewCheckBoxColumn.DataSource = this.dsShift;
+            this.shiftDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.shiftDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.shiftDataGridViewCheckBoxColumn.HeaderText = "班次";
+            this.shiftDataGridViewCheckBoxColumn.Name = "shiftDataGridViewCheckBoxColumn";
+            this.shiftDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.shiftDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.shiftDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code";
+            // 
+            // teamDataGridViewCheckBoxColumn
+            // 
+            this.teamDataGridViewCheckBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewCheckBoxColumn.DataSource = this.dsTeam;
+            this.teamDataGridViewCheckBoxColumn.DisplayMember = "L3DataTable.Code_Des";
+            this.teamDataGridViewCheckBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.teamDataGridViewCheckBoxColumn.HeaderText = "班别";
+            this.teamDataGridViewCheckBoxColumn.Name = "teamDataGridViewCheckBoxColumn";
+            this.teamDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.teamDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.teamDataGridViewCheckBoxColumn.ValueMember = "L3DataTable.Code";
+            // 
+            // headFurnaceDataGridViewTextBoxColumn
+            // 
+            this.headFurnaceDataGridViewTextBoxColumn.DataPropertyName = "HeadFurnace";
+            this.headFurnaceDataGridViewTextBoxColumn.HeaderText = "炉长";
+            this.headFurnaceDataGridViewTextBoxColumn.Name = "headFurnaceDataGridViewTextBoxColumn";
+            this.headFurnaceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // assistantDataGridViewTextBoxColumn
+            // 
+            this.assistantDataGridViewTextBoxColumn.DataPropertyName = "Assistant";
+            this.assistantDataGridViewTextBoxColumn.HeaderText = "一助手";
+            this.assistantDataGridViewTextBoxColumn.Name = "assistantDataGridViewTextBoxColumn";
+            this.assistantDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // secondHandDataGridViewTextBoxColumn
+            // 
+            this.secondHandDataGridViewTextBoxColumn.DataPropertyName = "SecondHand";
+            this.secondHandDataGridViewTextBoxColumn.HeaderText = "二助手";
+            this.secondHandDataGridViewTextBoxColumn.Name = "secondHandDataGridViewTextBoxColumn";
+            this.secondHandDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productionDateDataGridViewTextBoxColumn
+            // 
+            this.productionDateDataGridViewTextBoxColumn.DataPropertyName = "ProductionDate";
+            this.productionDateDataGridViewTextBoxColumn.HeaderText = "生产日期";
+            this.productionDateDataGridViewTextBoxColumn.Name = "productionDateDataGridViewTextBoxColumn";
+            this.productionDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statisticsDateDataGridViewTextBoxColumn
+            // 
+            this.statisticsDateDataGridViewTextBoxColumn.DataPropertyName = "StatisticsDate";
+            this.statisticsDateDataGridViewTextBoxColumn.HeaderText = "统计日期";
+            this.statisticsDateDataGridViewTextBoxColumn.Name = "statisticsDateDataGridViewTextBoxColumn";
+            this.statisticsDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statisticsDateDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // Locked
+            // 
+            this.Locked.DataPropertyName = "Locked";
+            this.Locked.HeaderText = "封存标志";
+            this.Locked.Name = "Locked";
+            this.Locked.ReadOnly = true;
+            this.Locked.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Locked.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // BOFHeatFinalDataFrm
             // 
@@ -1140,6 +1141,17 @@
         private System.Data.DataTable schemadsShift;
         private System.Data.DataColumn coldsShiftL3DataTableCode;
         private System.Data.DataColumn coldsShiftL3DataTableCode_Des;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripTextBox txtHeatID;
+        private System.Windows.Forms.ToolStripButton btnAdd;
+        private AppSvrHMI.L3DataSet dsTempt;
+        private AppSvrHMI.L3Command sendSheet;
+        private AppSvrHMI.L3CommandParameter l3CommandParameter4;
+        private AppSvrHMI.L3CommandParameter l3CommandParameter5;
+        private AppSvrHMI.L3CommandParameter l3CommandParameter6;
+        private AppSvrHMI.L3CommandParameter l3CommandParameter7;
+        private AppSvrHMI.L3CommandParameter l3CommandParameter8;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeatID;
         private System.Windows.Forms.DataGridViewTextBoxColumn preHeatIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn steelGradeIndexDataGridViewTextBoxColumn;
@@ -1152,16 +1164,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productionDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statisticsDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Locked;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
-        private System.Windows.Forms.ToolStripTextBox txtHeatID;
-        private System.Windows.Forms.ToolStripButton btnAdd;
-        private AppSvrHMI.L3DataSet dsTempt;
-        private AppSvrHMI.L3Command sendSheet;
-        private AppSvrHMI.L3CommandParameter l3CommandParameter4;
-        private AppSvrHMI.L3CommandParameter l3CommandParameter5;
-        private AppSvrHMI.L3CommandParameter l3CommandParameter6;
-        private AppSvrHMI.L3CommandParameter l3CommandParameter7;
-        private AppSvrHMI.L3CommandParameter l3CommandParameter8;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

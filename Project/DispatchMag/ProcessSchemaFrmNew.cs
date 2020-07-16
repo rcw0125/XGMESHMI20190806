@@ -816,17 +816,22 @@ namespace DispatchMag
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //如果不在36段，10分钟后自动退出
-            if (!GetLocalIP().Contains("192.168.36"))
-            {
-                this.Close();
-            }
+           
+                //如果不在36段，10分钟后自动退出
+                if (!GetLocalIP().Contains("192.168.36"))
+                {
+                    this.Close();
+                    return;
+                }
 
-            string strAccount = Adapter.Session.User;//获取用户账户
-            if (strAccount.Length != 5)
-            {
-                this.Close();
-            }
+                string strAccount = Adapter.Session.User;//获取用户账户
+                if (strAccount.Length != 5)
+                {
+                    this.Close();
+                    return;
+                }
+           
+           
 
         }
 

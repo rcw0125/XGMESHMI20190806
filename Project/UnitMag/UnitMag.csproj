@@ -942,6 +942,12 @@
     <Compile Include="BFMag\IronWarnDisplay.Designer.cs">
       <DependentUpon>IronWarnDisplay.cs</DependentUpon>
     </Compile>
+    <Compile Include="sysUserLoginDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sysUserLoginDetailFrm.Designer.cs">
+      <DependentUpon>sysUserLoginDetailFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="sysUserLoginFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1828,6 +1834,10 @@
     <EmbeddedResource Include="BFMag\IronWarnDisplay.resx">
       <SubType>Designer</SubType>
       <DependentUpon>IronWarnDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sysUserLoginDetailFrm.resx">
+      <DependentUpon>sysUserLoginDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="sysUserLoginFrm.resx">
       <DependentUpon>sysUserLoginFrm.cs</DependentUpon>

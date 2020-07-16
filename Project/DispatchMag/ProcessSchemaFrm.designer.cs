@@ -189,14 +189,12 @@
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.tlpBOF = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lbEquStaB4 = new System.Windows.Forms.Label();
             this.l3DataBox87 = new AppSvrHMI.L3DataBox();
             this.label26 = new System.Windows.Forms.Label();
             this.ucBOFStatus4 = new UnitMag.BOFMag.ucBOFStatus();
             this.l3DataBox85 = new AppSvrHMI.L3DataBox();
             this.l3DataBox86 = new AppSvrHMI.L3DataBox();
             this.l3DataBox68 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaBOF4 = new AppSvrHMI.L3DataBox();
             this.l3DataBox69 = new AppSvrHMI.L3DataBox();
             this.txtBOF04AfterSteelGrade = new AppSvrHMI.L3DataBox();
             this.txtBOF04NowBlowTime = new AppSvrHMI.L3DataBox();
@@ -216,11 +214,9 @@
             this.txtBOF04AfterSteelID = new AppSvrHMI.L3DataBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.lbEquStaB3 = new System.Windows.Forms.Label();
             this.l3DataBox67 = new AppSvrHMI.L3DataBox();
             this.ucBOFStatus3 = new UnitMag.BOFMag.ucBOFStatus();
             this.l3DataBox66 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaBOF3 = new AppSvrHMI.L3DataBox();
             this.l3DataBox65 = new AppSvrHMI.L3DataBox();
             this.txtBOF03AfterSteelGrade = new AppSvrHMI.L3DataBox();
             this.txtBOF03NowInWeight = new AppSvrHMI.L3DataBox();
@@ -242,8 +238,6 @@
             this.l3DataBox57 = new AppSvrHMI.L3DataBox();
             this.l3DataBox58 = new AppSvrHMI.L3DataBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lbEquStaB2 = new System.Windows.Forms.Label();
-            this.dbxEquStaBOF2 = new AppSvrHMI.L3DataBox();
             this.l3DataBox47 = new AppSvrHMI.L3DataBox();
             this.l3DataBox46 = new AppSvrHMI.L3DataBox();
             this.ucBOFStatus2 = new UnitMag.BOFMag.ucBOFStatus();
@@ -268,12 +262,29 @@
             this.txtBOF02NowInWeight = new AppSvrHMI.L3DataBox();
             this.txtBOF02AfterSteelGrade = new AppSvrHMI.L3DataBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.l3DataBox182 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox186 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox190 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox191 = new AppSvrHMI.L3DataBox();
+            this.txtRH01AfterOut = new AppSvrHMI.L3DataBox();
+            this.l3DataBox193 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox194 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox195 = new AppSvrHMI.L3DataBox();
+            this.txtRH01HeatID = new AppSvrHMI.L3DataBox();
+            this.l3DataBox197 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox198 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox199 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox200 = new AppSvrHMI.L3DataBox();
+            this.l3DataBox201 = new AppSvrHMI.L3DataBox();
+            this.ucRHStatus2 = new UnitMag.RHMag.ucRHStatus();
+            this.dbxCurArea04 = new AppSvrHMI.L3DataBox();
+            this.label47 = new System.Windows.Forms.Label();
             this.pnlCCM = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.dbxEquStaCCM5 = new AppSvrHMI.L3DataBox();
-            this.lbEquStaC5 = new System.Windows.Forms.Label();
             this.l3DataBox20 = new AppSvrHMI.L3DataBox();
             this.label48 = new System.Windows.Forms.Label();
             this.dbxTundish5 = new AppSvrHMI.L3DataBox();
@@ -294,15 +305,11 @@
             this.txtArriveTime05 = new AppSvrHMI.L3DataBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.dbxEquStaCCM6 = new AppSvrHMI.L3DataBox();
-            this.lbEquStaC6 = new System.Windows.Forms.Label();
             this.txtRemainTime06 = new AppSvrHMI.L3DataBox();
             this.l3DataBox88 = new AppSvrHMI.L3DataBox();
             this.ucCCMStatus6 = new UnitMag.CCMMag.ucCCMStatus();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.dbxEquStaCCM7 = new AppSvrHMI.L3DataBox();
-            this.lbEquStaC7 = new System.Windows.Forms.Label();
             this.l3DataBox8 = new AppSvrHMI.L3DataBox();
             this.dbxCasting7 = new AppSvrHMI.L3DataBox();
             this.textBox103 = new AppSvrHMI.L3DataBox();
@@ -323,8 +330,6 @@
             this.ucCCMStatus7 = new UnitMag.CCMMag.ucCCMStatus();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.lbEquStaC4 = new System.Windows.Forms.Label();
-            this.dbxEquStaCCM4 = new AppSvrHMI.L3DataBox();
             this.textBox183 = new AppSvrHMI.L3DataBox();
             this.textBox179 = new AppSvrHMI.L3DataBox();
             this.txtHeatID04 = new AppSvrHMI.L3DataBox();
@@ -344,10 +349,8 @@
             this.label33 = new System.Windows.Forms.Label();
             this.ucCCMStatus4 = new UnitMag.CCMMag.ucCCMStatus();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.lbEquStaC3 = new System.Windows.Forms.Label();
             this.textBox169 = new AppSvrHMI.L3DataBox();
             this.textBox167 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaCCM3 = new AppSvrHMI.L3DataBox();
             this.txtHeatID03 = new AppSvrHMI.L3DataBox();
             this.txtSteelGradeIndex03 = new AppSvrHMI.L3DataBox();
             this.textBox171 = new AppSvrHMI.L3DataBox();
@@ -367,13 +370,11 @@
             this.pnlLR = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.lbEquStaL3 = new System.Windows.Forms.Label();
             this.dbxCurArea03 = new AppSvrHMI.L3DataBox();
             this.l3DataBox148 = new AppSvrHMI.L3DataBox();
             this.txtLF03HeatID = new AppSvrHMI.L3DataBox();
             this.l3DataBox156 = new AppSvrHMI.L3DataBox();
             this.l3DataBox158 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaLF3 = new AppSvrHMI.L3DataBox();
             this.txtLF03SteelGrade = new AppSvrHMI.L3DataBox();
             this.txtLF03SteelGradeIndex = new AppSvrHMI.L3DataBox();
             this.l3DataBox166 = new AppSvrHMI.L3DataBox();
@@ -387,14 +388,12 @@
             this.label45 = new System.Windows.Forms.Label();
             this.ucLFStatus8 = new UnitMag.LFMag.ucLFStatus();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.lbEquStaL1 = new System.Windows.Forms.Label();
             this.dbxCurArea01 = new AppSvrHMI.L3DataBox();
             this.textBox143 = new AppSvrHMI.L3DataBox();
             this.txtLF01HeatID = new AppSvrHMI.L3DataBox();
             this.textBox145 = new AppSvrHMI.L3DataBox();
             this.l3DataBox14 = new AppSvrHMI.L3DataBox();
             this.txtLF01SteelGradeIndex = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaLF1 = new AppSvrHMI.L3DataBox();
             this.txtLF01SteelGrade = new AppSvrHMI.L3DataBox();
             this.textBox147 = new AppSvrHMI.L3DataBox();
             this.txtLF01SteelID = new AppSvrHMI.L3DataBox();
@@ -407,14 +406,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ucLFStatus1 = new UnitMag.LFMag.ucLFStatus();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.lbEquStaL2 = new System.Windows.Forms.Label();
             this.dbxCurArea02 = new AppSvrHMI.L3DataBox();
             this.textBox113 = new AppSvrHMI.L3DataBox();
             this.txtLF02HeatID = new AppSvrHMI.L3DataBox();
             this.textBox115 = new AppSvrHMI.L3DataBox();
             this.l3DataBox16 = new AppSvrHMI.L3DataBox();
             this.txtLF02SteelGrade = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaLF2 = new AppSvrHMI.L3DataBox();
             this.txtLF02SteelGradeIndex = new AppSvrHMI.L3DataBox();
             this.textBox117 = new AppSvrHMI.L3DataBox();
             this.txtLF02SteelID = new AppSvrHMI.L3DataBox();
@@ -427,13 +424,11 @@
             this.label22 = new System.Windows.Forms.Label();
             this.ucLFStatus2 = new UnitMag.LFMag.ucLFStatus();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.lbEquStaL4 = new System.Windows.Forms.Label();
             this.dbxCurArea06 = new AppSvrHMI.L3DataBox();
             this.textBox123 = new AppSvrHMI.L3DataBox();
             this.txtLF04HeatID = new AppSvrHMI.L3DataBox();
             this.l3DataBox18 = new AppSvrHMI.L3DataBox();
             this.textBox125 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaLF4 = new AppSvrHMI.L3DataBox();
             this.txtLF04SteelGrade = new AppSvrHMI.L3DataBox();
             this.txtLF04SteelGradeIndex = new AppSvrHMI.L3DataBox();
             this.textBox127 = new AppSvrHMI.L3DataBox();
@@ -448,13 +443,11 @@
             this.ucLFStatus3 = new UnitMag.LFMag.ucLFStatus();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.lbEquStaL5 = new System.Windows.Forms.Label();
             this.dbxCurArea05 = new AppSvrHMI.L3DataBox();
             this.l3DataBox142 = new AppSvrHMI.L3DataBox();
             this.txtLF05HeatID = new AppSvrHMI.L3DataBox();
             this.l3DataBox144 = new AppSvrHMI.L3DataBox();
             this.l3DataBox145 = new AppSvrHMI.L3DataBox();
-            this.dbxEquStaLF5 = new AppSvrHMI.L3DataBox();
             this.txtLF05SteelGrade = new AppSvrHMI.L3DataBox();
             this.txtLF05SteelGradeIndex = new AppSvrHMI.L3DataBox();
             this.l3DataBox149 = new AppSvrHMI.L3DataBox();
@@ -560,7 +553,6 @@
             this.lbDeSIICurArea = new System.Windows.Forms.Label();
             this.lbStatus2 = new System.Windows.Forms.Label();
             this.pbxDeS2 = new System.Windows.Forms.PictureBox();
-            this.lbEquStaD2 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.l3DataBox96 = new AppSvrHMI.L3DataBox();
             this.txtDeSIIDeSType = new AppSvrHMI.L3DataBox();
@@ -576,7 +568,6 @@
             this.lbDeSICurArea = new System.Windows.Forms.Label();
             this.lbStatus1 = new System.Windows.Forms.Label();
             this.pbxDeS1 = new System.Windows.Forms.PictureBox();
-            this.lbEquStaD1 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.l3DataBox6 = new AppSvrHMI.L3DataBox();
             this.txtDeSIDeSType = new AppSvrHMI.L3DataBox();
@@ -656,26 +647,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.ucLFStatus6 = new UnitMag.LFMag.ucLFStatus();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbEquStaR1 = new System.Windows.Forms.Label();
-            this.ucRHStatus2 = new UnitMag.RHMag.ucRHStatus();
-            this.dbxEquStaRH1 = new AppSvrHMI.L3DataBox();
-            this.dbxCurArea04 = new AppSvrHMI.L3DataBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.l3DataBox182 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox186 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox190 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox191 = new AppSvrHMI.L3DataBox();
-            this.txtRH01AfterOut = new AppSvrHMI.L3DataBox();
-            this.l3DataBox193 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox194 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox195 = new AppSvrHMI.L3DataBox();
-            this.txtRH01HeatID = new AppSvrHMI.L3DataBox();
-            this.l3DataBox197 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox198 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox199 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox200 = new AppSvrHMI.L3DataBox();
-            this.l3DataBox201 = new AppSvrHMI.L3DataBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox16.SuspendLayout();
             this.groupBox24.SuspendLayout();
             this.groupBox25.SuspendLayout();
@@ -2493,14 +2465,12 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.lbEquStaB4);
             this.panel8.Controls.Add(this.l3DataBox87);
             this.panel8.Controls.Add(this.label26);
             this.panel8.Controls.Add(this.ucBOFStatus4);
             this.panel8.Controls.Add(this.l3DataBox85);
             this.panel8.Controls.Add(this.l3DataBox86);
             this.panel8.Controls.Add(this.l3DataBox68);
-            this.panel8.Controls.Add(this.dbxEquStaBOF4);
             this.panel8.Controls.Add(this.l3DataBox69);
             this.panel8.Controls.Add(this.txtBOF04AfterSteelGrade);
             this.panel8.Controls.Add(this.txtBOF04NowBlowTime);
@@ -2525,15 +2495,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(234, 194);
             this.panel8.TabIndex = 6;
-            // 
-            // lbEquStaB4
-            // 
-            this.lbEquStaB4.Location = new System.Drawing.Point(16, 2);
-            this.lbEquStaB4.Name = "lbEquStaB4";
-            this.lbEquStaB4.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaB4.TabIndex = 104;
-            this.lbEquStaB4.Text = "正常";
-            this.lbEquStaB4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l3DataBox87
             // 
@@ -2568,7 +2529,7 @@
             // ucBOFStatus4
             // 
             this.ucBOFStatus4.CCMFlowCount = 4;
-            this.ucBOFStatus4.L3Adapter = this.Adapter;
+            this.ucBOFStatus4.L3Adapter = null;
             this.ucBOFStatus4.Location = new System.Drawing.Point(3, 25);
             this.ucBOFStatus4.Name = "ucBOFStatus4";
             this.ucBOFStatus4.Size = new System.Drawing.Size(70, 107);
@@ -2576,7 +2537,6 @@
             this.ucBOFStatus4.StatusProperty = "Status";
             this.ucBOFStatus4.TabIndex = 102;
             this.ucBOFStatus4.UnitURI = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
-           
             // 
             // l3DataBox85
             // 
@@ -2640,22 +2600,6 @@
             this.l3DataBox68.Text = "炼钢记号";
             this.l3DataBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.l3DataBox68.Value = null;
-            // 
-            // dbxEquStaBOF4
-            // 
-            this.dbxEquStaBOF4.DataFormat = null;
-            this.dbxEquStaBOF4.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S24";
-            this.dbxEquStaBOF4.DataProperty = "Equip_Status";
-            this.dbxEquStaBOF4.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaBOF4.L3DataAdapter = null;
-            this.dbxEquStaBOF4.Location = new System.Drawing.Point(62, 2);
-            this.dbxEquStaBOF4.Name = "dbxEquStaBOF4";
-            this.dbxEquStaBOF4.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaBOF4.TabIndex = 110;
-            this.dbxEquStaBOF4.Tag = "B4";
-            this.dbxEquStaBOF4.Value = null;
-            this.dbxEquStaBOF4.Visible = false;
-            this.dbxEquStaBOF4.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // l3DataBox69
             // 
@@ -2751,7 +2695,6 @@
             this.txtBOF04NowSteelGradeIndex.TabIndex = 62;
             this.txtBOF04NowSteelGradeIndex.Tag = "1";
             this.txtBOF04NowSteelGradeIndex.Value = null;
-       
             // 
             // l3DataBox82
             // 
@@ -2903,7 +2846,6 @@
             this.txtBOF04AfterSteelGradeIndex.TabIndex = 62;
             this.txtBOF04AfterSteelGradeIndex.Tag = "2";
             this.txtBOF04AfterSteelGradeIndex.Value = null;
-           
             // 
             // txtBOF04NowHeatID
             // 
@@ -2993,12 +2935,10 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.lbEquStaB3);
             this.panel18.Controls.Add(this.l3DataBox67);
             this.panel18.Controls.Add(this.label25);
             this.panel18.Controls.Add(this.ucBOFStatus3);
             this.panel18.Controls.Add(this.l3DataBox66);
-            this.panel18.Controls.Add(this.dbxEquStaBOF3);
             this.panel18.Controls.Add(this.l3DataBox65);
             this.panel18.Controls.Add(this.txtBOF03AfterSteelGrade);
             this.panel18.Controls.Add(this.txtBOF03NowInWeight);
@@ -3026,15 +2966,6 @@
             this.panel18.Size = new System.Drawing.Size(234, 193);
             this.panel18.TabIndex = 5;
             // 
-            // lbEquStaB3
-            // 
-            this.lbEquStaB3.Location = new System.Drawing.Point(16, 2);
-            this.lbEquStaB3.Name = "lbEquStaB3";
-            this.lbEquStaB3.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaB3.TabIndex = 104;
-            this.lbEquStaB3.Text = "正常";
-            this.lbEquStaB3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // l3DataBox67
             // 
             this.l3DataBox67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(228)))), ((int)(((byte)(157)))));
@@ -3059,7 +2990,7 @@
             // ucBOFStatus3
             // 
             this.ucBOFStatus3.CCMFlowCount = 4;
-            this.ucBOFStatus3.L3Adapter = this.Adapter;
+            this.ucBOFStatus3.L3Adapter = null;
             this.ucBOFStatus3.Location = new System.Drawing.Point(3, 27);
             this.ucBOFStatus3.Name = "ucBOFStatus3";
             this.ucBOFStatus3.Size = new System.Drawing.Size(70, 107);
@@ -3067,7 +2998,6 @@
             this.ucBOFStatus3.StatusProperty = "Status";
             this.ucBOFStatus3.TabIndex = 102;
             this.ucBOFStatus3.UnitURI = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
-         
             // 
             // l3DataBox66
             // 
@@ -3089,22 +3019,6 @@
             this.l3DataBox66.Text = "钢种";
             this.l3DataBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.l3DataBox66.Value = null;
-            // 
-            // dbxEquStaBOF3
-            // 
-            this.dbxEquStaBOF3.DataFormat = null;
-            this.dbxEquStaBOF3.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S23";
-            this.dbxEquStaBOF3.DataProperty = "Equip_Status";
-            this.dbxEquStaBOF3.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaBOF3.L3DataAdapter = null;
-            this.dbxEquStaBOF3.Location = new System.Drawing.Point(62, 2);
-            this.dbxEquStaBOF3.Name = "dbxEquStaBOF3";
-            this.dbxEquStaBOF3.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaBOF3.TabIndex = 109;
-            this.dbxEquStaBOF3.Tag = "B3";
-            this.dbxEquStaBOF3.Value = null;
-            this.dbxEquStaBOF3.Visible = false;
-            this.dbxEquStaBOF3.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // l3DataBox65
             // 
@@ -3340,7 +3254,6 @@
             this.txtBOF03AfterSteelGradeIndex.TabIndex = 62;
             this.txtBOF03AfterSteelGradeIndex.Tag = "2";
             this.txtBOF03AfterSteelGradeIndex.Value = null;
-          
             // 
             // txtBOF03AfterOut
             // 
@@ -3420,7 +3333,6 @@
             this.txtBOF03NowSteelGradeIndex.TabIndex = 62;
             this.txtBOF03NowSteelGradeIndex.Tag = "1";
             this.txtBOF03NowSteelGradeIndex.Value = null;
-           
             // 
             // txtBOF03NowBlowTime
             // 
@@ -3484,8 +3396,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.lbEquStaB2);
-            this.panel5.Controls.Add(this.dbxEquStaBOF2);
             this.panel5.Controls.Add(this.l3DataBox47);
             this.panel5.Controls.Add(this.label24);
             this.panel5.Controls.Add(this.l3DataBox46);
@@ -3516,31 +3426,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(234, 193);
             this.panel5.TabIndex = 3;
-            // 
-            // lbEquStaB2
-            // 
-            this.lbEquStaB2.Location = new System.Drawing.Point(16, 2);
-            this.lbEquStaB2.Name = "lbEquStaB2";
-            this.lbEquStaB2.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaB2.TabIndex = 104;
-            this.lbEquStaB2.Text = "正常";
-            this.lbEquStaB2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dbxEquStaBOF2
-            // 
-            this.dbxEquStaBOF2.DataFormat = null;
-            this.dbxEquStaBOF2.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
-            this.dbxEquStaBOF2.DataProperty = "Equip_Status";
-            this.dbxEquStaBOF2.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaBOF2.L3DataAdapter = null;
-            this.dbxEquStaBOF2.Location = new System.Drawing.Point(62, 5);
-            this.dbxEquStaBOF2.Name = "dbxEquStaBOF2";
-            this.dbxEquStaBOF2.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaBOF2.TabIndex = 108;
-            this.dbxEquStaBOF2.Tag = "B2";
-            this.dbxEquStaBOF2.Value = null;
-            this.dbxEquStaBOF2.Visible = false;
-            this.dbxEquStaBOF2.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // l3DataBox47
             // 
@@ -3587,15 +3472,14 @@
             // ucBOFStatus2
             // 
             this.ucBOFStatus2.CCMFlowCount = 4;
-            this.ucBOFStatus2.L3Adapter = this.Adapter;
+            this.ucBOFStatus2.L3Adapter = null;
             this.ucBOFStatus2.Location = new System.Drawing.Point(3, 28);
             this.ucBOFStatus2.Name = "ucBOFStatus2";
             this.ucBOFStatus2.Size = new System.Drawing.Size(70, 107);
             this.ucBOFStatus2.Status = 0;
-            this.ucBOFStatus2.StatusProperty = "Status";
+            this.ucBOFStatus2.StatusProperty = "";
             this.ucBOFStatus2.TabIndex = 102;
             this.ucBOFStatus2.UnitURI = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
-           
             // 
             // l3DataBox45
             // 
@@ -3741,8 +3625,8 @@
             this.txtBOF02NowBlowTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBOF02NowBlowTime.DataFormat = null;
-            this.txtBOF02NowBlowTime.DataObject = "XGMESLogic\\BOFMag\\CBOF_Unit_Mag\\S22";
-            this.txtBOF02NowBlowTime.DataProperty = "StartProcessTime";
+            this.txtBOF02NowBlowTime.DataObject = "";
+            this.txtBOF02NowBlowTime.DataProperty = "";
             this.txtBOF02NowBlowTime.DataType = AppSvrHMI.L3DataBoxType.dtText;
             this.txtBOF02NowBlowTime.L3DataAdapter = null;
             this.txtBOF02NowBlowTime.Location = new System.Drawing.Point(178, 64);
@@ -3814,7 +3698,6 @@
             this.txtBOF02NowSteelGradeIndex.TabIndex = 62;
             this.txtBOF02NowSteelGradeIndex.Tag = "1";
             this.txtBOF02NowSteelGradeIndex.Value = null;
-           
             // 
             // l3DataBox31
             // 
@@ -3855,7 +3738,6 @@
             this.txtBOF02AfterSteelGradeIndex.TabIndex = 62;
             this.txtBOF02AfterSteelGradeIndex.Tag = "2";
             this.txtBOF02AfterSteelGradeIndex.Value = null;
-          
             // 
             // txtBOF02AfterSteelID
             // 
@@ -3975,6 +3857,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.l3DataBox182);
             this.panel6.Controls.Add(this.l3DataBox186);
@@ -3990,9 +3873,7 @@
             this.panel6.Controls.Add(this.l3DataBox199);
             this.panel6.Controls.Add(this.l3DataBox200);
             this.panel6.Controls.Add(this.l3DataBox201);
-            this.panel6.Controls.Add(this.lbEquStaR1);
             this.panel6.Controls.Add(this.ucRHStatus2);
-            this.panel6.Controls.Add(this.dbxEquStaRH1);
             this.panel6.Controls.Add(this.dbxCurArea04);
             this.panel6.Controls.Add(this.label47);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4001,6 +3882,339 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(234, 193);
             this.panel6.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 135;
+            this.label1.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("宋体", 12F);
+            this.button1.Location = new System.Drawing.Point(109, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 32);
+            this.button1.TabIndex = 134;
+            this.button1.Text = "手动刷新";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // l3DataBox182
+            // 
+            this.l3DataBox182.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox182.DataFormat = null;
+            this.l3DataBox182.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
+            this.l3DataBox182.DataProperty = "SteelGradeIndex";
+            this.l3DataBox182.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox182.L3DataAdapter = null;
+            this.l3DataBox182.Location = new System.Drawing.Point(157, 75);
+            this.l3DataBox182.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox182.Multiline = true;
+            this.l3DataBox182.Name = "l3DataBox182";
+            this.l3DataBox182.ReadOnly = true;
+            this.l3DataBox182.Size = new System.Drawing.Size(63, 18);
+            this.l3DataBox182.TabIndex = 133;
+            this.l3DataBox182.Tag = "1";
+            this.l3DataBox182.Value = null;
+            // 
+            // l3DataBox186
+            // 
+            this.l3DataBox186.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox186.DataFormat = null;
+            this.l3DataBox186.DataObject = null;
+            this.l3DataBox186.DataProperty = null;
+            this.l3DataBox186.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox186.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox186.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox186.L3DataAdapter = null;
+            this.l3DataBox186.Location = new System.Drawing.Point(84, 75);
+            this.l3DataBox186.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox186.Multiline = true;
+            this.l3DataBox186.Name = "l3DataBox186";
+            this.l3DataBox186.ReadOnly = true;
+            this.l3DataBox186.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox186.TabIndex = 120;
+            this.l3DataBox186.Text = "炼钢记号";
+            this.l3DataBox186.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox186.Value = null;
+            // 
+            // l3DataBox190
+            // 
+            this.l3DataBox190.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox190.DataFormat = "N3";
+            this.l3DataBox190.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
+            this.l3DataBox190.DataProperty = "Weight";
+            this.l3DataBox190.DataType = AppSvrHMI.L3DataBoxType.dtFloat;
+            this.l3DataBox190.L3DataAdapter = null;
+            this.l3DataBox190.Location = new System.Drawing.Point(157, 129);
+            this.l3DataBox190.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox190.Multiline = true;
+            this.l3DataBox190.Name = "l3DataBox190";
+            this.l3DataBox190.ReadOnly = true;
+            this.l3DataBox190.Size = new System.Drawing.Size(63, 18);
+            this.l3DataBox190.TabIndex = 121;
+            this.l3DataBox190.Value = null;
+            // 
+            // l3DataBox191
+            // 
+            this.l3DataBox191.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox191.DataFormat = null;
+            this.l3DataBox191.DataObject = null;
+            this.l3DataBox191.DataProperty = null;
+            this.l3DataBox191.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox191.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox191.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox191.L3DataAdapter = null;
+            this.l3DataBox191.Location = new System.Drawing.Point(84, 57);
+            this.l3DataBox191.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox191.Multiline = true;
+            this.l3DataBox191.Name = "l3DataBox191";
+            this.l3DataBox191.ReadOnly = true;
+            this.l3DataBox191.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox191.TabIndex = 122;
+            this.l3DataBox191.Text = "炉号";
+            this.l3DataBox191.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox191.Value = null;
+            // 
+            // txtRH01AfterOut
+            // 
+            this.txtRH01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRH01AfterOut.DataFormat = null;
+            this.txtRH01AfterOut.DataObject = "";
+            this.txtRH01AfterOut.DataProperty = "";
+            this.txtRH01AfterOut.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.txtRH01AfterOut.L3DataAdapter = null;
+            this.txtRH01AfterOut.Location = new System.Drawing.Point(157, 165);
+            this.txtRH01AfterOut.Margin = new System.Windows.Forms.Padding(0);
+            this.txtRH01AfterOut.Multiline = true;
+            this.txtRH01AfterOut.Name = "txtRH01AfterOut";
+            this.txtRH01AfterOut.ReadOnly = true;
+            this.txtRH01AfterOut.Size = new System.Drawing.Size(63, 18);
+            this.txtRH01AfterOut.TabIndex = 123;
+            this.txtRH01AfterOut.Value = null;
+            // 
+            // l3DataBox193
+            // 
+            this.l3DataBox193.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox193.DataFormat = null;
+            this.l3DataBox193.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
+            this.l3DataBox193.DataProperty = "StartProcessTime";
+            this.l3DataBox193.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox193.L3DataAdapter = null;
+            this.l3DataBox193.Location = new System.Drawing.Point(157, 147);
+            this.l3DataBox193.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox193.Multiline = true;
+            this.l3DataBox193.Name = "l3DataBox193";
+            this.l3DataBox193.ReadOnly = true;
+            this.l3DataBox193.Size = new System.Drawing.Size(63, 18);
+            this.l3DataBox193.TabIndex = 124;
+            this.l3DataBox193.Value = null;
+            // 
+            // l3DataBox194
+            // 
+            this.l3DataBox194.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox194.DataFormat = null;
+            this.l3DataBox194.DataObject = null;
+            this.l3DataBox194.DataProperty = null;
+            this.l3DataBox194.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox194.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox194.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox194.L3DataAdapter = null;
+            this.l3DataBox194.Location = new System.Drawing.Point(84, 129);
+            this.l3DataBox194.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox194.Multiline = true;
+            this.l3DataBox194.Name = "l3DataBox194";
+            this.l3DataBox194.ReadOnly = true;
+            this.l3DataBox194.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox194.TabIndex = 125;
+            this.l3DataBox194.Text = "重量[t]";
+            this.l3DataBox194.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox194.Value = null;
+            // 
+            // l3DataBox195
+            // 
+            this.l3DataBox195.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox195.DataFormat = null;
+            this.l3DataBox195.DataObject = null;
+            this.l3DataBox195.DataProperty = null;
+            this.l3DataBox195.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox195.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox195.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox195.L3DataAdapter = null;
+            this.l3DataBox195.Location = new System.Drawing.Point(84, 165);
+            this.l3DataBox195.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox195.Multiline = true;
+            this.l3DataBox195.Name = "l3DataBox195";
+            this.l3DataBox195.ReadOnly = true;
+            this.l3DataBox195.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox195.TabIndex = 126;
+            this.l3DataBox195.Text = "工艺去向";
+            this.l3DataBox195.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox195.Value = null;
+            // 
+            // txtRH01HeatID
+            // 
+            this.txtRH01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRH01HeatID.DataFormat = null;
+            this.txtRH01HeatID.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
+            this.txtRH01HeatID.DataProperty = "HeatID";
+            this.txtRH01HeatID.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.txtRH01HeatID.L3DataAdapter = null;
+            this.txtRH01HeatID.Location = new System.Drawing.Point(155, 57);
+            this.txtRH01HeatID.Margin = new System.Windows.Forms.Padding(0);
+            this.txtRH01HeatID.Multiline = true;
+            this.txtRH01HeatID.Name = "txtRH01HeatID";
+            this.txtRH01HeatID.ReadOnly = true;
+            this.txtRH01HeatID.Size = new System.Drawing.Size(65, 18);
+            this.txtRH01HeatID.TabIndex = 127;
+            this.txtRH01HeatID.Value = null;
+            // 
+            // l3DataBox197
+            // 
+            this.l3DataBox197.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox197.DataFormat = null;
+            this.l3DataBox197.DataObject = null;
+            this.l3DataBox197.DataProperty = null;
+            this.l3DataBox197.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox197.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox197.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox197.L3DataAdapter = null;
+            this.l3DataBox197.Location = new System.Drawing.Point(84, 147);
+            this.l3DataBox197.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox197.Multiline = true;
+            this.l3DataBox197.Name = "l3DataBox197";
+            this.l3DataBox197.ReadOnly = true;
+            this.l3DataBox197.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox197.TabIndex = 128;
+            this.l3DataBox197.Text = "RH始";
+            this.l3DataBox197.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox197.Value = null;
+            // 
+            // l3DataBox198
+            // 
+            this.l3DataBox198.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox198.DataFormat = null;
+            this.l3DataBox198.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
+            this.l3DataBox198.DataProperty = "LadleID";
+            this.l3DataBox198.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox198.L3DataAdapter = null;
+            this.l3DataBox198.Location = new System.Drawing.Point(157, 111);
+            this.l3DataBox198.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox198.Multiline = true;
+            this.l3DataBox198.Name = "l3DataBox198";
+            this.l3DataBox198.ReadOnly = true;
+            this.l3DataBox198.Size = new System.Drawing.Size(63, 18);
+            this.l3DataBox198.TabIndex = 129;
+            this.l3DataBox198.Value = null;
+            // 
+            // l3DataBox199
+            // 
+            this.l3DataBox199.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox199.DataFormat = null;
+            this.l3DataBox199.DataObject = null;
+            this.l3DataBox199.DataProperty = null;
+            this.l3DataBox199.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox199.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox199.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox199.L3DataAdapter = null;
+            this.l3DataBox199.Location = new System.Drawing.Point(84, 111);
+            this.l3DataBox199.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox199.Multiline = true;
+            this.l3DataBox199.Name = "l3DataBox199";
+            this.l3DataBox199.ReadOnly = true;
+            this.l3DataBox199.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox199.TabIndex = 130;
+            this.l3DataBox199.Text = "钢包号";
+            this.l3DataBox199.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox199.Value = null;
+            // 
+            // l3DataBox200
+            // 
+            this.l3DataBox200.BackColor = System.Drawing.Color.DimGray;
+            this.l3DataBox200.DataFormat = null;
+            this.l3DataBox200.DataObject = null;
+            this.l3DataBox200.DataProperty = null;
+            this.l3DataBox200.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox200.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.l3DataBox200.ForeColor = System.Drawing.SystemColors.Window;
+            this.l3DataBox200.L3DataAdapter = null;
+            this.l3DataBox200.Location = new System.Drawing.Point(84, 93);
+            this.l3DataBox200.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox200.Multiline = true;
+            this.l3DataBox200.Name = "l3DataBox200";
+            this.l3DataBox200.ReadOnly = true;
+            this.l3DataBox200.Size = new System.Drawing.Size(73, 18);
+            this.l3DataBox200.TabIndex = 131;
+            this.l3DataBox200.Text = "钢种";
+            this.l3DataBox200.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.l3DataBox200.Value = null;
+            // 
+            // l3DataBox201
+            // 
+            this.l3DataBox201.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.l3DataBox201.DataFormat = null;
+            this.l3DataBox201.DataObject = "";
+            this.l3DataBox201.DataProperty = "";
+            this.l3DataBox201.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.l3DataBox201.L3DataAdapter = null;
+            this.l3DataBox201.Location = new System.Drawing.Point(157, 93);
+            this.l3DataBox201.Margin = new System.Windows.Forms.Padding(0);
+            this.l3DataBox201.Multiline = true;
+            this.l3DataBox201.Name = "l3DataBox201";
+            this.l3DataBox201.ReadOnly = true;
+            this.l3DataBox201.Size = new System.Drawing.Size(63, 18);
+            this.l3DataBox201.TabIndex = 132;
+            this.l3DataBox201.Tag = "1";
+            this.l3DataBox201.Value = null;
+            // 
+            // ucRHStatus2
+            // 
+            this.ucRHStatus2.CCMFlowCount = 4;
+            this.ucRHStatus2.L3Adapter = this.Adapter;
+            this.ucRHStatus2.Location = new System.Drawing.Point(9, 64);
+            this.ucRHStatus2.Margin = new System.Windows.Forms.Padding(0);
+            this.ucRHStatus2.Name = "ucRHStatus2";
+            this.ucRHStatus2.Size = new System.Drawing.Size(62, 94);
+            this.ucRHStatus2.Status = 0;
+            this.ucRHStatus2.StatusProperty = "Status";
+            this.ucRHStatus2.TabIndex = 117;
+            this.ucRHStatus2.UnitURI = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
+            // 
+            // dbxCurArea04
+            // 
+            this.dbxCurArea04.DataFormat = null;
+            this.dbxCurArea04.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
+            this.dbxCurArea04.DataProperty = "CurArea";
+            this.dbxCurArea04.DataType = AppSvrHMI.L3DataBoxType.dtText;
+            this.dbxCurArea04.L3DataAdapter = null;
+            this.dbxCurArea04.Location = new System.Drawing.Point(54, 166);
+            this.dbxCurArea04.Name = "dbxCurArea04";
+            this.dbxCurArea04.ReadOnly = true;
+            this.dbxCurArea04.Size = new System.Drawing.Size(20, 21);
+            this.dbxCurArea04.TabIndex = 116;
+            this.dbxCurArea04.Value = null;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(7, 170);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(41, 12);
+            this.label47.TabIndex = 115;
+            this.label47.Text = "1#RH炉";
             // 
             // pnlCCM
             // 
@@ -4049,8 +4263,6 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.dbxEquStaCCM5);
-            this.panel10.Controls.Add(this.lbEquStaC5);
             this.panel10.Controls.Add(this.l3DataBox20);
             this.panel10.Controls.Add(this.label48);
             this.panel10.Controls.Add(this.dbxTundish5);
@@ -4075,31 +4287,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(242, 156);
             this.panel10.TabIndex = 6;
-            // 
-            // dbxEquStaCCM5
-            // 
-            this.dbxEquStaCCM5.DataFormat = null;
-            this.dbxEquStaCCM5.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
-            this.dbxEquStaCCM5.DataProperty = "Equip_Status";
-            this.dbxEquStaCCM5.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaCCM5.L3DataAdapter = null;
-            this.dbxEquStaCCM5.Location = new System.Drawing.Point(86, 3);
-            this.dbxEquStaCCM5.Name = "dbxEquStaCCM5";
-            this.dbxEquStaCCM5.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaCCM5.TabIndex = 119;
-            this.dbxEquStaCCM5.Tag = "C5";
-            this.dbxEquStaCCM5.Value = null;
-            this.dbxEquStaCCM5.Visible = false;
-            this.dbxEquStaCCM5.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
-            // lbEquStaC5
-            // 
-            this.lbEquStaC5.Location = new System.Drawing.Point(43, 2);
-            this.lbEquStaC5.Name = "lbEquStaC5";
-            this.lbEquStaC5.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaC5.TabIndex = 108;
-            this.lbEquStaC5.Text = "正常";
-            this.lbEquStaC5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l3DataBox20
             // 
@@ -4410,7 +4597,7 @@
             // ucCCMStatus5
             // 
             this.ucCCMStatus5.CCMFlowCount = 4;
-            this.ucCCMStatus5.L3Adapter = this.Adapter;
+            this.ucCCMStatus5.L3Adapter = null;
             this.ucCCMStatus5.Location = new System.Drawing.Point(2, 12);
             this.ucCCMStatus5.Name = "ucCCMStatus5";
             this.ucCCMStatus5.Size = new System.Drawing.Size(101, 101);
@@ -4419,7 +4606,6 @@
             this.ucCCMStatus5.TabIndex = 105;
             this.ucCCMStatus5.Tag = "5";
             this.ucCCMStatus5.UnitURI = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S65";
-        
             // 
             // txtArriveTime05
             // 
@@ -4451,8 +4637,6 @@
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.dbxEquStaCCM6);
-            this.panel17.Controls.Add(this.lbEquStaC6);
             this.panel17.Controls.Add(this.textBox191);
             this.panel17.Controls.Add(this.label34);
             this.panel17.Controls.Add(this.dbxTundish6);
@@ -4477,31 +4661,6 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(242, 154);
             this.panel17.TabIndex = 5;
-            // 
-            // dbxEquStaCCM6
-            // 
-            this.dbxEquStaCCM6.DataFormat = null;
-            this.dbxEquStaCCM6.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
-            this.dbxEquStaCCM6.DataProperty = "Equip_Status";
-            this.dbxEquStaCCM6.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaCCM6.L3DataAdapter = null;
-            this.dbxEquStaCCM6.Location = new System.Drawing.Point(86, 3);
-            this.dbxEquStaCCM6.Name = "dbxEquStaCCM6";
-            this.dbxEquStaCCM6.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaCCM6.TabIndex = 119;
-            this.dbxEquStaCCM6.Tag = "C6";
-            this.dbxEquStaCCM6.Value = null;
-            this.dbxEquStaCCM6.Visible = false;
-            this.dbxEquStaCCM6.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
-            // lbEquStaC6
-            // 
-            this.lbEquStaC6.Location = new System.Drawing.Point(43, 2);
-            this.lbEquStaC6.Name = "lbEquStaC6";
-            this.lbEquStaC6.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaC6.TabIndex = 108;
-            this.lbEquStaC6.Text = "正常";
-            this.lbEquStaC6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtRemainTime06
             // 
@@ -4545,7 +4704,7 @@
             // ucCCMStatus6
             // 
             this.ucCCMStatus6.CCMFlowCount = 4;
-            this.ucCCMStatus6.L3Adapter = this.Adapter;
+            this.ucCCMStatus6.L3Adapter = null;
             this.ucCCMStatus6.Location = new System.Drawing.Point(2, 12);
             this.ucCCMStatus6.Name = "ucCCMStatus6";
             this.ucCCMStatus6.Size = new System.Drawing.Size(101, 101);
@@ -4554,7 +4713,6 @@
             this.ucCCMStatus6.TabIndex = 105;
             this.ucCCMStatus6.Tag = "6";
             this.ucCCMStatus6.UnitURI = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S66";
-         
             // 
             // panel14
             // 
@@ -4568,8 +4726,6 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.dbxEquStaCCM7);
-            this.panel9.Controls.Add(this.lbEquStaC7);
             this.panel9.Controls.Add(this.l3DataBox8);
             this.panel9.Controls.Add(this.dbxCasting7);
             this.panel9.Controls.Add(this.textBox103);
@@ -4594,31 +4750,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(242, 154);
             this.panel9.TabIndex = 7;
-            // 
-            // dbxEquStaCCM7
-            // 
-            this.dbxEquStaCCM7.DataFormat = null;
-            this.dbxEquStaCCM7.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
-            this.dbxEquStaCCM7.DataProperty = "Equip_Status";
-            this.dbxEquStaCCM7.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaCCM7.L3DataAdapter = null;
-            this.dbxEquStaCCM7.Location = new System.Drawing.Point(86, 4);
-            this.dbxEquStaCCM7.Name = "dbxEquStaCCM7";
-            this.dbxEquStaCCM7.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaCCM7.TabIndex = 115;
-            this.dbxEquStaCCM7.Tag = "C7";
-            this.dbxEquStaCCM7.Value = null;
-            this.dbxEquStaCCM7.Visible = false;
-            this.dbxEquStaCCM7.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
-            // lbEquStaC7
-            // 
-            this.lbEquStaC7.Location = new System.Drawing.Point(43, 2);
-            this.lbEquStaC7.Name = "lbEquStaC7";
-            this.lbEquStaC7.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaC7.TabIndex = 134;
-            this.lbEquStaC7.Text = "正常";
-            this.lbEquStaC7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l3DataBox8
             // 
@@ -4947,7 +5078,7 @@
             // ucCCMStatus7
             // 
             this.ucCCMStatus7.CCMFlowCount = 3;
-            this.ucCCMStatus7.L3Adapter = this.Adapter;
+            this.ucCCMStatus7.L3Adapter = null;
             this.ucCCMStatus7.Location = new System.Drawing.Point(2, 9);
             this.ucCCMStatus7.Name = "ucCCMStatus7";
             this.ucCCMStatus7.Size = new System.Drawing.Size(101, 108);
@@ -4956,7 +5087,6 @@
             this.ucCCMStatus7.TabIndex = 133;
             this.ucCCMStatus7.Tag = "7";
             this.ucCCMStatus7.UnitURI = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S67";
-        
             // 
             // panel21
             // 
@@ -4970,8 +5100,6 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.lbEquStaC4);
-            this.panel15.Controls.Add(this.dbxEquStaCCM4);
             this.panel15.Controls.Add(this.textBox183);
             this.panel15.Controls.Add(this.textBox179);
             this.panel15.Controls.Add(this.txtHeatID04);
@@ -4996,31 +5124,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(242, 154);
             this.panel15.TabIndex = 4;
-            // 
-            // lbEquStaC4
-            // 
-            this.lbEquStaC4.Location = new System.Drawing.Point(47, 6);
-            this.lbEquStaC4.Name = "lbEquStaC4";
-            this.lbEquStaC4.Size = new System.Drawing.Size(37, 15);
-            this.lbEquStaC4.TabIndex = 135;
-            this.lbEquStaC4.Text = "正常";
-            this.lbEquStaC4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dbxEquStaCCM4
-            // 
-            this.dbxEquStaCCM4.DataFormat = null;
-            this.dbxEquStaCCM4.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
-            this.dbxEquStaCCM4.DataProperty = "Equip_Status";
-            this.dbxEquStaCCM4.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaCCM4.L3DataAdapter = null;
-            this.dbxEquStaCCM4.Location = new System.Drawing.Point(86, 3);
-            this.dbxEquStaCCM4.Name = "dbxEquStaCCM4";
-            this.dbxEquStaCCM4.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaCCM4.TabIndex = 118;
-            this.dbxEquStaCCM4.Tag = "C4";
-            this.dbxEquStaCCM4.Value = null;
-            this.dbxEquStaCCM4.Visible = false;
-            this.dbxEquStaCCM4.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // textBox183
             // 
@@ -5349,7 +5452,7 @@
             // ucCCMStatus4
             // 
             this.ucCCMStatus4.CCMFlowCount = 4;
-            this.ucCCMStatus4.L3Adapter = this.Adapter;
+            this.ucCCMStatus4.L3Adapter = null;
             this.ucCCMStatus4.Location = new System.Drawing.Point(2, 16);
             this.ucCCMStatus4.Name = "ucCCMStatus4";
             this.ucCCMStatus4.Size = new System.Drawing.Size(95, 98);
@@ -5358,14 +5461,11 @@
             this.ucCCMStatus4.TabIndex = 105;
             this.ucCCMStatus4.Tag = "4";
             this.ucCCMStatus4.UnitURI = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S64";
-      
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.lbEquStaC3);
             this.panel16.Controls.Add(this.textBox169);
             this.panel16.Controls.Add(this.textBox167);
-            this.panel16.Controls.Add(this.dbxEquStaCCM3);
             this.panel16.Controls.Add(this.txtHeatID03);
             this.panel16.Controls.Add(this.txtSteelGradeIndex03);
             this.panel16.Controls.Add(this.textBox171);
@@ -5388,15 +5488,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(242, 154);
             this.panel16.TabIndex = 3;
-            // 
-            // lbEquStaC3
-            // 
-            this.lbEquStaC3.Location = new System.Drawing.Point(41, 5);
-            this.lbEquStaC3.Name = "lbEquStaC3";
-            this.lbEquStaC3.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaC3.TabIndex = 108;
-            this.lbEquStaC3.Text = "正常";
-            this.lbEquStaC3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox169
             // 
@@ -5439,22 +5530,6 @@
             this.textBox167.Text = "浇注炉号";
             this.textBox167.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox167.Value = null;
-            // 
-            // dbxEquStaCCM3
-            // 
-            this.dbxEquStaCCM3.DataFormat = null;
-            this.dbxEquStaCCM3.DataObject = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
-            this.dbxEquStaCCM3.DataProperty = "Equip_Status";
-            this.dbxEquStaCCM3.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaCCM3.L3DataAdapter = null;
-            this.dbxEquStaCCM3.Location = new System.Drawing.Point(86, 3);
-            this.dbxEquStaCCM3.Name = "dbxEquStaCCM3";
-            this.dbxEquStaCCM3.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaCCM3.TabIndex = 117;
-            this.dbxEquStaCCM3.Tag = "C3";
-            this.dbxEquStaCCM3.Value = null;
-            this.dbxEquStaCCM3.Visible = false;
-            this.dbxEquStaCCM3.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // txtHeatID03
             // 
@@ -5741,7 +5816,7 @@
             // ucCCMStatus3
             // 
             this.ucCCMStatus3.CCMFlowCount = 4;
-            this.ucCCMStatus3.L3Adapter = this.Adapter;
+            this.ucCCMStatus3.L3Adapter = null;
             this.ucCCMStatus3.Location = new System.Drawing.Point(2, 10);
             this.ucCCMStatus3.Name = "ucCCMStatus3";
             this.ucCCMStatus3.Size = new System.Drawing.Size(94, 104);
@@ -5750,7 +5825,6 @@
             this.ucCCMStatus3.TabIndex = 105;
             this.ucCCMStatus3.Tag = "3";
             this.ucCCMStatus3.UnitURI = "XGMESLogic\\CCMMag\\CCCM_Unit_Mag\\S63";
-
             // 
             // pnlLR
             // 
@@ -5788,13 +5862,11 @@
             // 
             // panel30
             // 
-            this.panel30.Controls.Add(this.lbEquStaL3);
             this.panel30.Controls.Add(this.dbxCurArea03);
             this.panel30.Controls.Add(this.l3DataBox148);
             this.panel30.Controls.Add(this.txtLF03HeatID);
             this.panel30.Controls.Add(this.l3DataBox156);
             this.panel30.Controls.Add(this.l3DataBox158);
-            this.panel30.Controls.Add(this.dbxEquStaLF3);
             this.panel30.Controls.Add(this.txtLF03SteelGrade);
             this.panel30.Controls.Add(this.txtLF03SteelGradeIndex);
             this.panel30.Controls.Add(this.l3DataBox166);
@@ -5814,15 +5886,6 @@
             this.panel30.Size = new System.Drawing.Size(220, 156);
             this.panel30.TabIndex = 11;
             // 
-            // lbEquStaL3
-            // 
-            this.lbEquStaL3.Location = new System.Drawing.Point(29, 2);
-            this.lbEquStaL3.Name = "lbEquStaL3";
-            this.lbEquStaL3.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaL3.TabIndex = 106;
-            this.lbEquStaL3.Text = "正常";
-            this.lbEquStaL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dbxCurArea03
             // 
             this.dbxCurArea03.DataFormat = null;
@@ -5836,7 +5899,6 @@
             this.dbxCurArea03.Size = new System.Drawing.Size(20, 21);
             this.dbxCurArea03.TabIndex = 100;
             this.dbxCurArea03.Value = null;
-            this.dbxCurArea03.TextChanged += new System.EventHandler(this.dbxCurArea03_TextChanged);
             // 
             // l3DataBox148
             // 
@@ -5919,22 +5981,6 @@
             this.l3DataBox158.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.l3DataBox158.Value = null;
             // 
-            // dbxEquStaLF3
-            // 
-            this.dbxEquStaLF3.DataFormat = null;
-            this.dbxEquStaLF3.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S43";
-            this.dbxEquStaLF3.DataProperty = "Equip_Status";
-            this.dbxEquStaLF3.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaLF3.L3DataAdapter = null;
-            this.dbxEquStaLF3.Location = new System.Drawing.Point(76, 2);
-            this.dbxEquStaLF3.Name = "dbxEquStaLF3";
-            this.dbxEquStaLF3.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaLF3.TabIndex = 113;
-            this.dbxEquStaLF3.Tag = "L3";
-            this.dbxEquStaLF3.Value = null;
-            this.dbxEquStaLF3.Visible = false;
-            this.dbxEquStaLF3.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
             // txtLF03SteelGrade
             // 
             this.txtLF03SteelGrade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -5972,7 +6018,6 @@
             this.txtLF03SteelGradeIndex.TabIndex = 62;
             this.txtLF03SteelGradeIndex.Tag = "1";
             this.txtLF03SteelGradeIndex.Value = null;
-      
             // 
             // l3DataBox166
             // 
@@ -6142,7 +6187,7 @@
             // ucLFStatus8
             // 
             this.ucLFStatus8.CCMFlowCount = 4;
-            this.ucLFStatus8.L3Adapter = this.Adapter;
+            this.ucLFStatus8.L3Adapter = null;
             this.ucLFStatus8.Location = new System.Drawing.Point(5, 21);
             this.ucLFStatus8.Name = "ucLFStatus8";
             this.ucLFStatus8.Size = new System.Drawing.Size(103, 108);
@@ -6151,18 +6196,15 @@
             this.ucLFStatus8.TabIndex = 103;
             this.ucLFStatus8.Tag = "3";
             this.ucLFStatus8.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S43";
-
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.lbEquStaL1);
             this.panel12.Controls.Add(this.dbxCurArea01);
             this.panel12.Controls.Add(this.textBox143);
             this.panel12.Controls.Add(this.txtLF01HeatID);
             this.panel12.Controls.Add(this.textBox145);
             this.panel12.Controls.Add(this.l3DataBox14);
             this.panel12.Controls.Add(this.txtLF01SteelGradeIndex);
-            this.panel12.Controls.Add(this.dbxEquStaLF1);
             this.panel12.Controls.Add(this.txtLF01SteelGrade);
             this.panel12.Controls.Add(this.textBox147);
             this.panel12.Controls.Add(this.txtLF01SteelID);
@@ -6181,15 +6223,6 @@
             this.panel12.Size = new System.Drawing.Size(220, 154);
             this.panel12.TabIndex = 9;
             // 
-            // lbEquStaL1
-            // 
-            this.lbEquStaL1.Location = new System.Drawing.Point(29, 2);
-            this.lbEquStaL1.Name = "lbEquStaL1";
-            this.lbEquStaL1.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaL1.TabIndex = 105;
-            this.lbEquStaL1.Text = "正常";
-            this.lbEquStaL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dbxCurArea01
             // 
             this.dbxCurArea01.DataFormat = null;
@@ -6203,7 +6236,6 @@
             this.dbxCurArea01.Size = new System.Drawing.Size(20, 21);
             this.dbxCurArea01.TabIndex = 98;
             this.dbxCurArea01.Value = null;
-            this.dbxCurArea01.TextChanged += new System.EventHandler(this.dbxCurArea01_TextChanged);
             // 
             // textBox143
             // 
@@ -6304,23 +6336,6 @@
             this.txtLF01SteelGradeIndex.TabIndex = 62;
             this.txtLF01SteelGradeIndex.Tag = "1";
             this.txtLF01SteelGradeIndex.Value = null;
-  
-            // 
-            // dbxEquStaLF1
-            // 
-            this.dbxEquStaLF1.DataFormat = null;
-            this.dbxEquStaLF1.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S41";
-            this.dbxEquStaLF1.DataProperty = "Equip_Status";
-            this.dbxEquStaLF1.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaLF1.L3DataAdapter = null;
-            this.dbxEquStaLF1.Location = new System.Drawing.Point(75, 2);
-            this.dbxEquStaLF1.Name = "dbxEquStaLF1";
-            this.dbxEquStaLF1.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaLF1.TabIndex = 112;
-            this.dbxEquStaLF1.Tag = "L1";
-            this.dbxEquStaLF1.Value = null;
-            this.dbxEquStaLF1.Visible = false;
-            this.dbxEquStaLF1.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
             // 
             // txtLF01SteelGrade
             // 
@@ -6509,7 +6524,7 @@
             // ucLFStatus1
             // 
             this.ucLFStatus1.CCMFlowCount = 4;
-            this.ucLFStatus1.L3Adapter = this.Adapter;
+            this.ucLFStatus1.L3Adapter = null;
             this.ucLFStatus1.Location = new System.Drawing.Point(3, 24);
             this.ucLFStatus1.Name = "ucLFStatus1";
             this.ucLFStatus1.Size = new System.Drawing.Size(103, 108);
@@ -6518,18 +6533,15 @@
             this.ucLFStatus1.TabIndex = 103;
             this.ucLFStatus1.Tag = "1";
             this.ucLFStatus1.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S41";
-
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.lbEquStaL2);
             this.panel11.Controls.Add(this.dbxCurArea02);
             this.panel11.Controls.Add(this.textBox113);
             this.panel11.Controls.Add(this.txtLF02HeatID);
             this.panel11.Controls.Add(this.textBox115);
             this.panel11.Controls.Add(this.l3DataBox16);
             this.panel11.Controls.Add(this.txtLF02SteelGrade);
-            this.panel11.Controls.Add(this.dbxEquStaLF2);
             this.panel11.Controls.Add(this.txtLF02SteelGradeIndex);
             this.panel11.Controls.Add(this.textBox117);
             this.panel11.Controls.Add(this.txtLF02SteelID);
@@ -6548,15 +6560,6 @@
             this.panel11.Size = new System.Drawing.Size(220, 154);
             this.panel11.TabIndex = 3;
             // 
-            // lbEquStaL2
-            // 
-            this.lbEquStaL2.Location = new System.Drawing.Point(29, 2);
-            this.lbEquStaL2.Name = "lbEquStaL2";
-            this.lbEquStaL2.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaL2.TabIndex = 105;
-            this.lbEquStaL2.Text = "正常";
-            this.lbEquStaL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dbxCurArea02
             // 
             this.dbxCurArea02.DataFormat = null;
@@ -6570,7 +6573,6 @@
             this.dbxCurArea02.Size = new System.Drawing.Size(20, 21);
             this.dbxCurArea02.TabIndex = 99;
             this.dbxCurArea02.Value = null;
-            this.dbxCurArea02.TextChanged += new System.EventHandler(this.dbxCurArea02_TextChanged);
             // 
             // textBox113
             // 
@@ -6672,22 +6674,6 @@
             this.txtLF02SteelGrade.Tag = "1";
             this.txtLF02SteelGrade.Value = null;
             // 
-            // dbxEquStaLF2
-            // 
-            this.dbxEquStaLF2.DataFormat = null;
-            this.dbxEquStaLF2.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S42";
-            this.dbxEquStaLF2.DataProperty = "Equip_Status";
-            this.dbxEquStaLF2.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaLF2.L3DataAdapter = null;
-            this.dbxEquStaLF2.Location = new System.Drawing.Point(76, 2);
-            this.dbxEquStaLF2.Name = "dbxEquStaLF2";
-            this.dbxEquStaLF2.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaLF2.TabIndex = 111;
-            this.dbxEquStaLF2.Tag = "L2";
-            this.dbxEquStaLF2.Value = null;
-            this.dbxEquStaLF2.Visible = false;
-            this.dbxEquStaLF2.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
             // txtLF02SteelGradeIndex
             // 
             this.txtLF02SteelGradeIndex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -6706,7 +6692,6 @@
             this.txtLF02SteelGradeIndex.TabIndex = 62;
             this.txtLF02SteelGradeIndex.Tag = "1";
             this.txtLF02SteelGradeIndex.Value = null;
-
             // 
             // textBox117
             // 
@@ -6809,7 +6794,6 @@
             this.textBox120.Text = "重量[t]";
             this.textBox120.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox120.Value = null;
-            this.textBox120.TextChanged += new System.EventHandler(this.dbxCurArea02_TextChanged);
             // 
             // txtLF02DealTime
             // 
@@ -6877,7 +6861,7 @@
             // ucLFStatus2
             // 
             this.ucLFStatus2.CCMFlowCount = 4;
-            this.ucLFStatus2.L3Adapter = this.Adapter;
+            this.ucLFStatus2.L3Adapter = null;
             this.ucLFStatus2.Location = new System.Drawing.Point(2, 22);
             this.ucLFStatus2.Name = "ucLFStatus2";
             this.ucLFStatus2.Size = new System.Drawing.Size(103, 108);
@@ -6886,17 +6870,14 @@
             this.ucLFStatus2.TabIndex = 103;
             this.ucLFStatus2.Tag = "2";
             this.ucLFStatus2.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S42";
-
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.lbEquStaL4);
             this.panel7.Controls.Add(this.dbxCurArea06);
             this.panel7.Controls.Add(this.textBox123);
             this.panel7.Controls.Add(this.txtLF04HeatID);
             this.panel7.Controls.Add(this.l3DataBox18);
             this.panel7.Controls.Add(this.textBox125);
-            this.panel7.Controls.Add(this.dbxEquStaLF4);
             this.panel7.Controls.Add(this.txtLF04SteelGrade);
             this.panel7.Controls.Add(this.txtLF04SteelGradeIndex);
             this.panel7.Controls.Add(this.textBox127);
@@ -6916,15 +6897,6 @@
             this.panel7.Size = new System.Drawing.Size(220, 154);
             this.panel7.TabIndex = 10;
             // 
-            // lbEquStaL4
-            // 
-            this.lbEquStaL4.Location = new System.Drawing.Point(29, 2);
-            this.lbEquStaL4.Name = "lbEquStaL4";
-            this.lbEquStaL4.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaL4.TabIndex = 106;
-            this.lbEquStaL4.Text = "正常";
-            this.lbEquStaL4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dbxCurArea06
             // 
             this.dbxCurArea06.DataFormat = null;
@@ -6938,7 +6910,6 @@
             this.dbxCurArea06.Size = new System.Drawing.Size(20, 21);
             this.dbxCurArea06.TabIndex = 100;
             this.dbxCurArea06.Value = null;
-            this.dbxCurArea06.TextChanged += new System.EventHandler(this.dbxCurArea06_TextChanged);
             // 
             // textBox123
             // 
@@ -7021,22 +6992,6 @@
             this.textBox125.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox125.Value = null;
             // 
-            // dbxEquStaLF4
-            // 
-            this.dbxEquStaLF4.DataFormat = null;
-            this.dbxEquStaLF4.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S44";
-            this.dbxEquStaLF4.DataProperty = "Equip_Status";
-            this.dbxEquStaLF4.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaLF4.L3DataAdapter = null;
-            this.dbxEquStaLF4.Location = new System.Drawing.Point(76, 2);
-            this.dbxEquStaLF4.Name = "dbxEquStaLF4";
-            this.dbxEquStaLF4.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaLF4.TabIndex = 113;
-            this.dbxEquStaLF4.Tag = "L4";
-            this.dbxEquStaLF4.Value = null;
-            this.dbxEquStaLF4.Visible = false;
-            this.dbxEquStaLF4.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
             // txtLF04SteelGrade
             // 
             this.txtLF04SteelGrade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -7074,7 +7029,6 @@
             this.txtLF04SteelGradeIndex.TabIndex = 62;
             this.txtLF04SteelGradeIndex.Tag = "1";
             this.txtLF04SteelGradeIndex.Value = null;
-
             // 
             // textBox127
             // 
@@ -7244,7 +7198,7 @@
             // ucLFStatus3
             // 
             this.ucLFStatus3.CCMFlowCount = 4;
-            this.ucLFStatus3.L3Adapter = this.Adapter;
+            this.ucLFStatus3.L3Adapter = null;
             this.ucLFStatus3.Location = new System.Drawing.Point(5, 21);
             this.ucLFStatus3.Name = "ucLFStatus3";
             this.ucLFStatus3.Size = new System.Drawing.Size(103, 108);
@@ -7253,7 +7207,6 @@
             this.ucLFStatus3.TabIndex = 103;
             this.ucLFStatus3.Tag = "4";
             this.ucLFStatus3.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S44";
-
             // 
             // panel27
             // 
@@ -7266,13 +7219,11 @@
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.lbEquStaL5);
             this.panel28.Controls.Add(this.dbxCurArea05);
             this.panel28.Controls.Add(this.l3DataBox142);
             this.panel28.Controls.Add(this.txtLF05HeatID);
             this.panel28.Controls.Add(this.l3DataBox144);
             this.panel28.Controls.Add(this.l3DataBox145);
-            this.panel28.Controls.Add(this.dbxEquStaLF5);
             this.panel28.Controls.Add(this.txtLF05SteelGrade);
             this.panel28.Controls.Add(this.txtLF05SteelGradeIndex);
             this.panel28.Controls.Add(this.l3DataBox149);
@@ -7292,15 +7243,6 @@
             this.panel28.Size = new System.Drawing.Size(214, 148);
             this.panel28.TabIndex = 7;
             // 
-            // lbEquStaL5
-            // 
-            this.lbEquStaL5.Location = new System.Drawing.Point(29, 2);
-            this.lbEquStaL5.Name = "lbEquStaL5";
-            this.lbEquStaL5.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaL5.TabIndex = 106;
-            this.lbEquStaL5.Text = "正常";
-            this.lbEquStaL5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dbxCurArea05
             // 
             this.dbxCurArea05.DataFormat = null;
@@ -7314,7 +7256,6 @@
             this.dbxCurArea05.Size = new System.Drawing.Size(20, 21);
             this.dbxCurArea05.TabIndex = 100;
             this.dbxCurArea05.Value = null;
-            this.dbxCurArea05.TextChanged += new System.EventHandler(this.dbxCurArea05_TextChanged);
             // 
             // l3DataBox142
             // 
@@ -7397,22 +7338,6 @@
             this.l3DataBox145.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.l3DataBox145.Value = null;
             // 
-            // dbxEquStaLF5
-            // 
-            this.dbxEquStaLF5.DataFormat = null;
-            this.dbxEquStaLF5.DataObject = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S45";
-            this.dbxEquStaLF5.DataProperty = "Equip_Status";
-            this.dbxEquStaLF5.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaLF5.L3DataAdapter = null;
-            this.dbxEquStaLF5.Location = new System.Drawing.Point(76, 2);
-            this.dbxEquStaLF5.Name = "dbxEquStaLF5";
-            this.dbxEquStaLF5.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaLF5.TabIndex = 113;
-            this.dbxEquStaLF5.Tag = "L5";
-            this.dbxEquStaLF5.Value = null;
-            this.dbxEquStaLF5.Visible = false;
-            this.dbxEquStaLF5.TextChanged += new System.EventHandler(this.dbxEquipStatus_TextChanged);
-            // 
             // txtLF05SteelGrade
             // 
             this.txtLF05SteelGrade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -7450,7 +7375,6 @@
             this.txtLF05SteelGradeIndex.TabIndex = 62;
             this.txtLF05SteelGradeIndex.Tag = "1";
             this.txtLF05SteelGradeIndex.Value = null;
-       
             // 
             // l3DataBox149
             // 
@@ -7620,7 +7544,7 @@
             // ucLFStatus7
             // 
             this.ucLFStatus7.CCMFlowCount = 4;
-            this.ucLFStatus7.L3Adapter = this.Adapter;
+            this.ucLFStatus7.L3Adapter = null;
             this.ucLFStatus7.Location = new System.Drawing.Point(5, 21);
             this.ucLFStatus7.Name = "ucLFStatus7";
             this.ucLFStatus7.Size = new System.Drawing.Size(103, 108);
@@ -7629,13 +7553,12 @@
             this.ucLFStatus7.TabIndex = 103;
             this.ucLFStatus7.Tag = "5";
             this.ucLFStatus7.UnitURI = "XGMESLogic\\LFMag\\CLF_Unit_Mag\\S45";
-    
             // 
             // tlpMIF
             // 
             this.tlpMIF.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tlpMIF.ColumnCount = 1;
-            this.tlpMIF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 256F));
+            this.tlpMIF.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 262F));
             this.tlpMIF.Controls.Add(this.panel29, 0, 2);
             this.tlpMIF.Controls.Add(this.panel4, 0, 1);
             this.tlpMIF.Controls.Add(this.panel3, 0, 0);
@@ -7685,7 +7608,7 @@
             this.panel29.Location = new System.Drawing.Point(1, 519);
             this.panel29.Margin = new System.Windows.Forms.Padding(0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(256, 258);
+            this.panel29.Size = new System.Drawing.Size(262, 258);
             this.panel29.TabIndex = 4;
             // 
             // l3DataBox165
@@ -8224,7 +8147,7 @@
             this.panel4.Location = new System.Drawing.Point(1, 260);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(256, 258);
+            this.panel4.Size = new System.Drawing.Size(262, 258);
             this.panel4.TabIndex = 3;
             // 
             // l3DataBox157
@@ -8763,7 +8686,7 @@
             this.panel3.Location = new System.Drawing.Point(1, 1);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(256, 258);
+            this.panel3.Size = new System.Drawing.Size(262, 258);
             this.panel3.TabIndex = 2;
             // 
             // l3DataBox141
@@ -9289,7 +9212,6 @@
             this.panel20.Controls.Add(this.lbDeSIICurArea);
             this.panel20.Controls.Add(this.lbStatus2);
             this.panel20.Controls.Add(this.pbxDeS2);
-            this.panel20.Controls.Add(this.lbEquStaD2);
             this.panel20.Controls.Add(this.label36);
             this.panel20.Controls.Add(this.l3DataBox96);
             this.panel20.Controls.Add(this.txtDeSIIDeSType);
@@ -9335,16 +9257,6 @@
             this.pbxDeS2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxDeS2.TabIndex = 109;
             this.pbxDeS2.TabStop = false;
-            // 
-            // lbEquStaD2
-            // 
-            this.lbEquStaD2.AutoSize = true;
-            this.lbEquStaD2.Location = new System.Drawing.Point(48, 5);
-            this.lbEquStaD2.Name = "lbEquStaD2";
-            this.lbEquStaD2.Size = new System.Drawing.Size(29, 12);
-            this.lbEquStaD2.TabIndex = 103;
-            this.lbEquStaD2.Text = "正常";
-            this.lbEquStaD2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label36
             // 
@@ -9546,7 +9458,6 @@
             this.panel19.Controls.Add(this.lbDeSICurArea);
             this.panel19.Controls.Add(this.lbStatus1);
             this.panel19.Controls.Add(this.pbxDeS1);
-            this.panel19.Controls.Add(this.lbEquStaD1);
             this.panel19.Controls.Add(this.label35);
             this.panel19.Controls.Add(this.l3DataBox6);
             this.panel19.Controls.Add(this.txtDeSIDeSType);
@@ -9592,16 +9503,6 @@
             this.pbxDeS1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxDeS1.TabIndex = 112;
             this.pbxDeS1.TabStop = false;
-            // 
-            // lbEquStaD1
-            // 
-            this.lbEquStaD1.AutoSize = true;
-            this.lbEquStaD1.Location = new System.Drawing.Point(48, 4);
-            this.lbEquStaD1.Name = "lbEquStaD1";
-            this.lbEquStaD1.Size = new System.Drawing.Size(29, 12);
-            this.lbEquStaD1.TabIndex = 103;
-            this.lbEquStaD1.Text = "正常";
-            this.lbEquStaD1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label35
             // 
@@ -10961,355 +10862,13 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 20000;
-       
+            this.timer1.Interval = 30000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbEquStaR1
+            // backgroundWorker1
             // 
-            this.lbEquStaR1.Location = new System.Drawing.Point(7, 47);
-            this.lbEquStaR1.Name = "lbEquStaR1";
-            this.lbEquStaR1.Size = new System.Drawing.Size(50, 15);
-            this.lbEquStaR1.TabIndex = 118;
-            this.lbEquStaR1.Text = "正常";
-            this.lbEquStaR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ucRHStatus2
-            // 
-            this.ucRHStatus2.CCMFlowCount = 4;
-            this.ucRHStatus2.L3Adapter = this.Adapter;
-            this.ucRHStatus2.Location = new System.Drawing.Point(9, 64);
-            this.ucRHStatus2.Margin = new System.Windows.Forms.Padding(0);
-            this.ucRHStatus2.Name = "ucRHStatus2";
-            this.ucRHStatus2.Size = new System.Drawing.Size(62, 94);
-            this.ucRHStatus2.Status = 0;
-            this.ucRHStatus2.StatusProperty = "Status";
-            this.ucRHStatus2.TabIndex = 117;
-            this.ucRHStatus2.UnitURI = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
-            // 
-            // dbxEquStaRH1
-            // 
-            this.dbxEquStaRH1.DataFormat = null;
-            this.dbxEquStaRH1.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
-            this.dbxEquStaRH1.DataProperty = "Equip_Status";
-            this.dbxEquStaRH1.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxEquStaRH1.L3DataAdapter = null;
-            this.dbxEquStaRH1.Location = new System.Drawing.Point(54, 47);
-            this.dbxEquStaRH1.Name = "dbxEquStaRH1";
-            this.dbxEquStaRH1.Size = new System.Drawing.Size(21, 21);
-            this.dbxEquStaRH1.TabIndex = 119;
-            this.dbxEquStaRH1.Tag = "R1";
-            this.dbxEquStaRH1.Value = null;
-            this.dbxEquStaRH1.Visible = false;
-            // 
-            // dbxCurArea04
-            // 
-            this.dbxCurArea04.DataFormat = null;
-            this.dbxCurArea04.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
-            this.dbxCurArea04.DataProperty = "CurArea";
-            this.dbxCurArea04.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.dbxCurArea04.L3DataAdapter = null;
-            this.dbxCurArea04.Location = new System.Drawing.Point(54, 166);
-            this.dbxCurArea04.Name = "dbxCurArea04";
-            this.dbxCurArea04.ReadOnly = true;
-            this.dbxCurArea04.Size = new System.Drawing.Size(20, 21);
-            this.dbxCurArea04.TabIndex = 116;
-            this.dbxCurArea04.Value = null;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(7, 170);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(41, 12);
-            this.label47.TabIndex = 115;
-            this.label47.Text = "1#RH炉";
-            // 
-            // l3DataBox182
-            // 
-            this.l3DataBox182.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.l3DataBox182.DataFormat = null;
-            this.l3DataBox182.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
-            this.l3DataBox182.DataProperty = "SteelGradeIndex";
-            this.l3DataBox182.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox182.L3DataAdapter = null;
-            this.l3DataBox182.Location = new System.Drawing.Point(157, 75);
-            this.l3DataBox182.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox182.Multiline = true;
-            this.l3DataBox182.Name = "l3DataBox182";
-            this.l3DataBox182.ReadOnly = true;
-            this.l3DataBox182.Size = new System.Drawing.Size(63, 18);
-            this.l3DataBox182.TabIndex = 133;
-            this.l3DataBox182.Tag = "1";
-            this.l3DataBox182.Value = null;
-            // 
-            // l3DataBox186
-            // 
-            this.l3DataBox186.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox186.DataFormat = null;
-            this.l3DataBox186.DataObject = null;
-            this.l3DataBox186.DataProperty = null;
-            this.l3DataBox186.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox186.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox186.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox186.L3DataAdapter = null;
-            this.l3DataBox186.Location = new System.Drawing.Point(84, 75);
-            this.l3DataBox186.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox186.Multiline = true;
-            this.l3DataBox186.Name = "l3DataBox186";
-            this.l3DataBox186.ReadOnly = true;
-            this.l3DataBox186.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox186.TabIndex = 120;
-            this.l3DataBox186.Text = "炼钢记号";
-            this.l3DataBox186.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox186.Value = null;
-            // 
-            // l3DataBox190
-            // 
-            this.l3DataBox190.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.l3DataBox190.DataFormat = "N3";
-            this.l3DataBox190.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
-            this.l3DataBox190.DataProperty = "Weight";
-            this.l3DataBox190.DataType = AppSvrHMI.L3DataBoxType.dtFloat;
-            this.l3DataBox190.L3DataAdapter = null;
-            this.l3DataBox190.Location = new System.Drawing.Point(157, 129);
-            this.l3DataBox190.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox190.Multiline = true;
-            this.l3DataBox190.Name = "l3DataBox190";
-            this.l3DataBox190.ReadOnly = true;
-            this.l3DataBox190.Size = new System.Drawing.Size(61, 18);
-            this.l3DataBox190.TabIndex = 121;
-            this.l3DataBox190.Value = null;
-            // 
-            // l3DataBox191
-            // 
-            this.l3DataBox191.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox191.DataFormat = null;
-            this.l3DataBox191.DataObject = null;
-            this.l3DataBox191.DataProperty = null;
-            this.l3DataBox191.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox191.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox191.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox191.L3DataAdapter = null;
-            this.l3DataBox191.Location = new System.Drawing.Point(84, 57);
-            this.l3DataBox191.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox191.Multiline = true;
-            this.l3DataBox191.Name = "l3DataBox191";
-            this.l3DataBox191.ReadOnly = true;
-            this.l3DataBox191.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox191.TabIndex = 122;
-            this.l3DataBox191.Text = "炉号";
-            this.l3DataBox191.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox191.Value = null;
-            // 
-            // txtRH01AfterOut
-            // 
-            this.txtRH01AfterOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRH01AfterOut.DataFormat = null;
-            this.txtRH01AfterOut.DataObject = "";
-            this.txtRH01AfterOut.DataProperty = "";
-            this.txtRH01AfterOut.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.txtRH01AfterOut.L3DataAdapter = null;
-            this.txtRH01AfterOut.Location = new System.Drawing.Point(157, 165);
-            this.txtRH01AfterOut.Margin = new System.Windows.Forms.Padding(0);
-            this.txtRH01AfterOut.Multiline = true;
-            this.txtRH01AfterOut.Name = "txtRH01AfterOut";
-            this.txtRH01AfterOut.ReadOnly = true;
-            this.txtRH01AfterOut.Size = new System.Drawing.Size(61, 18);
-            this.txtRH01AfterOut.TabIndex = 123;
-            this.txtRH01AfterOut.Value = null;
-            // 
-            // l3DataBox193
-            // 
-            this.l3DataBox193.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.l3DataBox193.DataFormat = null;
-            this.l3DataBox193.DataObject = "XGMESLogic\\RHMag\\CRH_Unit_Mag\\S51";
-            this.l3DataBox193.DataProperty = "StartProcessTime";
-            this.l3DataBox193.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox193.L3DataAdapter = null;
-            this.l3DataBox193.Location = new System.Drawing.Point(157, 147);
-            this.l3DataBox193.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox193.Multiline = true;
-            this.l3DataBox193.Name = "l3DataBox193";
-            this.l3DataBox193.ReadOnly = true;
-            this.l3DataBox193.Size = new System.Drawing.Size(62, 18);
-            this.l3DataBox193.TabIndex = 124;
-            this.l3DataBox193.Value = null;
-            // 
-            // l3DataBox194
-            // 
-            this.l3DataBox194.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox194.DataFormat = null;
-            this.l3DataBox194.DataObject = null;
-            this.l3DataBox194.DataProperty = null;
-            this.l3DataBox194.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox194.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox194.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox194.L3DataAdapter = null;
-            this.l3DataBox194.Location = new System.Drawing.Point(84, 129);
-            this.l3DataBox194.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox194.Multiline = true;
-            this.l3DataBox194.Name = "l3DataBox194";
-            this.l3DataBox194.ReadOnly = true;
-            this.l3DataBox194.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox194.TabIndex = 125;
-            this.l3DataBox194.Text = "重量[t]";
-            this.l3DataBox194.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox194.Value = null;
-            // 
-            // l3DataBox195
-            // 
-            this.l3DataBox195.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox195.DataFormat = null;
-            this.l3DataBox195.DataObject = null;
-            this.l3DataBox195.DataProperty = null;
-            this.l3DataBox195.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox195.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox195.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox195.L3DataAdapter = null;
-            this.l3DataBox195.Location = new System.Drawing.Point(84, 165);
-            this.l3DataBox195.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox195.Multiline = true;
-            this.l3DataBox195.Name = "l3DataBox195";
-            this.l3DataBox195.ReadOnly = true;
-            this.l3DataBox195.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox195.TabIndex = 126;
-            this.l3DataBox195.Text = "工艺去向";
-            this.l3DataBox195.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox195.Value = null;
-            // 
-            // txtRH01HeatID
-            // 
-            this.txtRH01HeatID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRH01HeatID.DataFormat = null;
-            this.txtRH01HeatID.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
-            this.txtRH01HeatID.DataProperty = "HeatID";
-            this.txtRH01HeatID.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.txtRH01HeatID.L3DataAdapter = null;
-            this.txtRH01HeatID.Location = new System.Drawing.Point(155, 57);
-            this.txtRH01HeatID.Margin = new System.Windows.Forms.Padding(0);
-            this.txtRH01HeatID.Multiline = true;
-            this.txtRH01HeatID.Name = "txtRH01HeatID";
-            this.txtRH01HeatID.ReadOnly = true;
-            this.txtRH01HeatID.Size = new System.Drawing.Size(63, 18);
-            this.txtRH01HeatID.TabIndex = 127;
-            this.txtRH01HeatID.Value = null;
-            // 
-            // l3DataBox197
-            // 
-            this.l3DataBox197.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox197.DataFormat = null;
-            this.l3DataBox197.DataObject = null;
-            this.l3DataBox197.DataProperty = null;
-            this.l3DataBox197.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox197.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox197.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox197.L3DataAdapter = null;
-            this.l3DataBox197.Location = new System.Drawing.Point(84, 147);
-            this.l3DataBox197.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox197.Multiline = true;
-            this.l3DataBox197.Name = "l3DataBox197";
-            this.l3DataBox197.ReadOnly = true;
-            this.l3DataBox197.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox197.TabIndex = 128;
-            this.l3DataBox197.Text = "RH始";
-            this.l3DataBox197.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox197.Value = null;
-            // 
-            // l3DataBox198
-            // 
-            this.l3DataBox198.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.l3DataBox198.DataFormat = null;
-            this.l3DataBox198.DataObject = "XGMESLogic\\RHMag\\CRH_Prod_Area\\{Name04}";
-            this.l3DataBox198.DataProperty = "LadleID";
-            this.l3DataBox198.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox198.L3DataAdapter = null;
-            this.l3DataBox198.Location = new System.Drawing.Point(157, 111);
-            this.l3DataBox198.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox198.Multiline = true;
-            this.l3DataBox198.Name = "l3DataBox198";
-            this.l3DataBox198.ReadOnly = true;
-            this.l3DataBox198.Size = new System.Drawing.Size(63, 18);
-            this.l3DataBox198.TabIndex = 129;
-            this.l3DataBox198.Value = null;
-            // 
-            // l3DataBox199
-            // 
-            this.l3DataBox199.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox199.DataFormat = null;
-            this.l3DataBox199.DataObject = null;
-            this.l3DataBox199.DataProperty = null;
-            this.l3DataBox199.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox199.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox199.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox199.L3DataAdapter = null;
-            this.l3DataBox199.Location = new System.Drawing.Point(84, 111);
-            this.l3DataBox199.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox199.Multiline = true;
-            this.l3DataBox199.Name = "l3DataBox199";
-            this.l3DataBox199.ReadOnly = true;
-            this.l3DataBox199.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox199.TabIndex = 130;
-            this.l3DataBox199.Text = "钢包号";
-            this.l3DataBox199.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox199.Value = null;
-            // 
-            // l3DataBox200
-            // 
-            this.l3DataBox200.BackColor = System.Drawing.Color.DimGray;
-            this.l3DataBox200.DataFormat = null;
-            this.l3DataBox200.DataObject = null;
-            this.l3DataBox200.DataProperty = null;
-            this.l3DataBox200.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox200.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.l3DataBox200.ForeColor = System.Drawing.SystemColors.Window;
-            this.l3DataBox200.L3DataAdapter = null;
-            this.l3DataBox200.Location = new System.Drawing.Point(84, 93);
-            this.l3DataBox200.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox200.Multiline = true;
-            this.l3DataBox200.Name = "l3DataBox200";
-            this.l3DataBox200.ReadOnly = true;
-            this.l3DataBox200.Size = new System.Drawing.Size(73, 18);
-            this.l3DataBox200.TabIndex = 131;
-            this.l3DataBox200.Text = "钢种";
-            this.l3DataBox200.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.l3DataBox200.Value = null;
-            // 
-            // l3DataBox201
-            // 
-            this.l3DataBox201.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.l3DataBox201.DataFormat = null;
-            this.l3DataBox201.DataObject = "";
-            this.l3DataBox201.DataProperty = "";
-            this.l3DataBox201.DataType = AppSvrHMI.L3DataBoxType.dtText;
-            this.l3DataBox201.L3DataAdapter = null;
-            this.l3DataBox201.Location = new System.Drawing.Point(157, 93);
-            this.l3DataBox201.Margin = new System.Windows.Forms.Padding(0);
-            this.l3DataBox201.Multiline = true;
-            this.l3DataBox201.Name = "l3DataBox201";
-            this.l3DataBox201.ReadOnly = true;
-            this.l3DataBox201.Size = new System.Drawing.Size(62, 18);
-            this.l3DataBox201.TabIndex = 132;
-            this.l3DataBox201.Tag = "1";
-            this.l3DataBox201.Value = null;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("宋体", 12F);
-            this.button1.Location = new System.Drawing.Point(109, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 34);
-            this.button1.TabIndex = 134;
-            this.button1.Text = "手动刷新";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // ProcessSchemaFrm
             // 
@@ -11325,6 +10884,7 @@
             this.Text = "流程监视";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProcessSchemaFrm_FormClosing);
             this.Load += new System.EventHandler(this.ProcessSchemaFrm_Load);
+            this.VisibleChanged += new System.EventHandler(this.ProcessSchemaFrm_VisibleChanged);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             this.groupBox24.ResumeLayout(false);
@@ -11652,14 +11212,6 @@
         private AppSvrHMI.L3DataBox l3DataBox36;
         private AppSvrHMI.L3DataBox txtBOF02NowInWeight;
         private AppSvrHMI.L3DataBox txtBOF02AfterSteelGrade;
-        private AppSvrHMI.L3DataBox dbxEquStaBOF4;
-        private AppSvrHMI.L3DataBox dbxEquStaBOF3;
-        private AppSvrHMI.L3DataBox dbxEquStaBOF2;
-        private AppSvrHMI.L3DataBox dbxEquStaCCM6;
-        private System.Windows.Forms.Label lbEquStaB4;
-        private System.Windows.Forms.Label lbEquStaB3;
-        private System.Windows.Forms.Label lbEquStaB2;
-        private System.Windows.Forms.Label lbEquStaC6;
         private AppSvrHMI.L3DataBox txtRemainTime06;
         private AppSvrHMI.L3DataBox l3DataBox88;
         private System.Windows.Forms.TableLayoutPanel FLPDeS;
@@ -11691,8 +11243,6 @@
         private System.Data.DataTable schemadsDeSType;
         private System.Data.DataColumn coldsDeSTypeL3DataTableCODE_DES;
         private System.Data.DataColumn coldsDeSTypeL3DataTableCODE_VAL_LONG;
-        private System.Windows.Forms.Label lbEquStaD2;
-        private System.Windows.Forms.Label lbEquStaD1;
         private System.Windows.Forms.PictureBox pbxDeS2;
         private System.Windows.Forms.PictureBox pbxDeS1;
         private System.Windows.Forms.Label lbStatus2;
@@ -11701,14 +11251,12 @@
         private System.Windows.Forms.Label lbDeSICurArea;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lbEquStaC7;
         private AppSvrHMI.L3DataBox l3DataBox8;
         private AppSvrHMI.L3DataBox dbxCasting7;
         private AppSvrHMI.L3DataBox textBox103;
         private AppSvrHMI.L3DataBox txtHeatID07;
         private AppSvrHMI.L3DataBox textBox105;
         private AppSvrHMI.L3DataBox txtSteelGradeIndex07;
-        private AppSvrHMI.L3DataBox dbxEquStaCCM7;
         private System.Windows.Forms.Label label30;
         private AppSvrHMI.L3DataBox textBox107;
         private AppSvrHMI.L3DataBox textBox109;
@@ -11723,8 +11271,6 @@
         private UnitMag.CCMMag.ucCCMStatus ucCCMStatus7;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label lbEquStaC4;
-        private AppSvrHMI.L3DataBox dbxEquStaCCM4;
         private AppSvrHMI.L3DataBox textBox183;
         private AppSvrHMI.L3DataBox textBox179;
         private AppSvrHMI.L3DataBox txtHeatID04;
@@ -11745,10 +11291,8 @@
         private UnitMag.CCMMag.ucCCMStatus ucCCMStatus4;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label lbEquStaC3;
         private AppSvrHMI.L3DataBox textBox169;
         private AppSvrHMI.L3DataBox textBox167;
-        private AppSvrHMI.L3DataBox dbxEquStaCCM3;
         private AppSvrHMI.L3DataBox txtHeatID03;
         private AppSvrHMI.L3DataBox txtSteelGradeIndex03;
         private AppSvrHMI.L3DataBox textBox171;
@@ -11829,13 +11373,10 @@
         private UnitMag.LFMag.ucLFStatus ucLFStatus6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lbEquStaL4;
-        private AppSvrHMI.L3DataBox dbxCurArea06;
         private AppSvrHMI.L3DataBox textBox123;
         private AppSvrHMI.L3DataBox txtLF04HeatID;
         private AppSvrHMI.L3DataBox l3DataBox18;
         private AppSvrHMI.L3DataBox textBox125;
-        private AppSvrHMI.L3DataBox dbxEquStaLF4;
         private AppSvrHMI.L3DataBox txtLF04SteelGrade;
         private AppSvrHMI.L3DataBox txtLF04SteelGradeIndex;
         private AppSvrHMI.L3DataBox textBox127;
@@ -11849,14 +11390,12 @@
         private System.Windows.Forms.Label label19;
         private UnitMag.LFMag.ucLFStatus ucLFStatus3;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label lbEquStaL1;
         private AppSvrHMI.L3DataBox dbxCurArea01;
         private AppSvrHMI.L3DataBox textBox143;
         private AppSvrHMI.L3DataBox txtLF01HeatID;
         private AppSvrHMI.L3DataBox textBox145;
         private AppSvrHMI.L3DataBox l3DataBox14;
         private AppSvrHMI.L3DataBox txtLF01SteelGradeIndex;
-        private AppSvrHMI.L3DataBox dbxEquStaLF1;
         private AppSvrHMI.L3DataBox txtLF01SteelGrade;
         private AppSvrHMI.L3DataBox textBox147;
         private AppSvrHMI.L3DataBox txtLF01SteelID;
@@ -11869,14 +11408,12 @@
         private System.Windows.Forms.Label label9;
         private UnitMag.LFMag.ucLFStatus ucLFStatus1;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label lbEquStaL2;
         private AppSvrHMI.L3DataBox dbxCurArea02;
         private AppSvrHMI.L3DataBox textBox113;
         private AppSvrHMI.L3DataBox txtLF02HeatID;
         private AppSvrHMI.L3DataBox textBox115;
         private AppSvrHMI.L3DataBox l3DataBox16;
         private AppSvrHMI.L3DataBox txtLF02SteelGrade;
-        private AppSvrHMI.L3DataBox dbxEquStaLF2;
         private AppSvrHMI.L3DataBox txtLF02SteelGradeIndex;
         private AppSvrHMI.L3DataBox textBox117;
         private AppSvrHMI.L3DataBox txtLF02SteelID;
@@ -11890,13 +11427,11 @@
         private UnitMag.LFMag.ucLFStatus ucLFStatus2;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label lbEquStaL5;
         private AppSvrHMI.L3DataBox dbxCurArea05;
         private AppSvrHMI.L3DataBox l3DataBox142;
         private AppSvrHMI.L3DataBox txtLF05HeatID;
         private AppSvrHMI.L3DataBox l3DataBox144;
         private AppSvrHMI.L3DataBox l3DataBox145;
-        private AppSvrHMI.L3DataBox dbxEquStaLF5;
         private AppSvrHMI.L3DataBox txtLF05SteelGrade;
         private AppSvrHMI.L3DataBox txtLF05SteelGradeIndex;
         private AppSvrHMI.L3DataBox l3DataBox149;
@@ -11998,8 +11533,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel10;
-        private AppSvrHMI.L3DataBox dbxEquStaCCM5;
-        private System.Windows.Forms.Label lbEquStaC5;
         private AppSvrHMI.L3DataBox l3DataBox20;
         private System.Windows.Forms.Label label48;
         private AppSvrHMI.L3DataBox dbxTundish5;
@@ -12019,13 +11552,11 @@
         private UnitMag.CCMMag.ucCCMStatus ucCCMStatus5;
         private AppSvrHMI.L3DataBox txtArriveTime05;
         private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label lbEquStaL3;
         private AppSvrHMI.L3DataBox dbxCurArea03;
         private AppSvrHMI.L3DataBox l3DataBox148;
         private AppSvrHMI.L3DataBox txtLF03HeatID;
         private AppSvrHMI.L3DataBox l3DataBox156;
         private AppSvrHMI.L3DataBox l3DataBox158;
-        private AppSvrHMI.L3DataBox dbxEquStaLF3;
         private AppSvrHMI.L3DataBox txtLF03SteelGrade;
         private AppSvrHMI.L3DataBox txtLF03SteelGradeIndex;
         private AppSvrHMI.L3DataBox l3DataBox166;
@@ -12053,11 +11584,12 @@
         private AppSvrHMI.L3DataBox l3DataBox199;
         private AppSvrHMI.L3DataBox l3DataBox200;
         private AppSvrHMI.L3DataBox l3DataBox201;
-        private System.Windows.Forms.Label lbEquStaR1;
         private UnitMag.RHMag.ucRHStatus ucRHStatus2;
-        private AppSvrHMI.L3DataBox dbxEquStaRH1;
         private AppSvrHMI.L3DataBox dbxCurArea04;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button button1;
+        private AppSvrHMI.L3DataBox dbxCurArea06;
+        private System.Windows.Forms.Label label1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

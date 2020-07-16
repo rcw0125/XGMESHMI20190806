@@ -24,23 +24,27 @@ namespace UnitMag.DEPMag
                 case 1:
                     return "铁包进站";
                 case 2:
-                    return "捞渣开始";
+                    return "脱硅喷吹开始";
                 case 3:
-                    return "捞渣结束";
+                    return "脱硅喷吹结束";
                 case 4:
-                    return "喷吹开始";
+                    return "扒硅渣开始";
                 case 5:
-                    return "喷吹结束";
+                    return "扒硅渣结束";
                 case 6:
-                    return "脱硅开始";
+                    return "脱磷喷吹开始";
                 case 7:
-                    return "脱硅结束";
+                    return "脱磷喷吹结束";
                 case 8:
-                    return "脱磷开始";
+                    return "扒磷渣开始";
                 case 9:
-                    return "脱磷结束";
+                    return "扒磷渣结束";
                 case 10:
-                    return "等待";
+                    return "补吹开始";
+                case 11:
+                    return "补吹结束";
+                case 12:
+                    return "铁包离站";
                 //case CommDataMag.CommonData.DePArrived:
                 //    return CommDataMag.CommonData.strDePArrived;
 
