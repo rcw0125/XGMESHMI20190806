@@ -99,6 +99,12 @@
     <Compile Include="Control.designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataWeihu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataWeihu.Designer.cs">
+      <DependentUpon>DataWeihu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataWeihu.resx">
+      <DependentUpon>DataWeihu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataUpdate.resx">
       <DependentUpon>DataUpdate.cs</DependentUpon>

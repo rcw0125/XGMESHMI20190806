@@ -1168,5 +1168,39 @@ namespace PlanMag
             cmdQuery.Execute();
             AnalysisPlandata(dsTappingPlan);
         }
+
+        private void btnData_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //DispAccountFrm frm = new DispAccountFrm();
+                //frm.ShowDialogEx(Adapter.Session);
+                try
+                {
+                    dvTapPlan.EndEdit();
+                    int nRow = dvTapPlan.RowCount;
+                    int nRecordCount = 0;
+                    int nCurRow = 0;
+                    for (int i = 0; i < nRow; i += 3)
+                    {
+                        string strIsSelected = dvTapPlan.Rows[i].Cells[0].Value.ToString();
+                        if (strIsSelected == "□") continue;
+                        nCurRow = i;
+                        nRecordCount++;
+                    }
+                    if (nRecordCount != 1) { MessageBox.Show("只能选一条数据", "提示"); return; }
+                    int nPlanRow = nCurRow / 3;
+                    string heatid = ArrayPlanData[nPlanRow].strHeatID;
+                    DataWeihu frm = new DataWeihu();
+                    frm.ShowDialogEx(Adapter.Session, heatid);
+                }
+                catch { }
+
+
+
+
+            }
+            catch { }
+        }
     }
 }

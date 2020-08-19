@@ -48,6 +48,7 @@
             this.btnTappingModify = new System.Windows.Forms.ToolStripButton();
             this.btnShowChangeRoute = new System.Windows.Forms.ToolStripButton();
             this.btnDispAccount = new System.Windows.Forms.ToolStripButton();
+            this.btnData = new System.Windows.Forms.ToolStripButton();
             this.l3CommandParameter3 = new AppSvrHMI.L3CommandParameter();
             this.tstxtBOFID = new System.Windows.Forms.ToolStripTextBox();
             this.l3CommandParameter4 = new AppSvrHMI.L3CommandParameter();
@@ -438,6 +439,16 @@
             this.btnDispAccount.Text = "异常数据修改";
             this.btnDispAccount.Click += new System.EventHandler(this.btnDispAccount_Click_1);
             // 
+            // btnData
+            // 
+            this.Adapter.SetAccessRight(this.btnData, "BtnTappingPlanSend");
+            this.btnData.Image = ((System.Drawing.Image)(resources.GetObject("btnData.Image")));
+            this.btnData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnData.Name = "btnData";
+            this.btnData.Size = new System.Drawing.Size(92, 40);
+            this.btnData.Text = "数据维护";
+            this.btnData.Click += new System.EventHandler(this.btnData_Click);
+            // 
             // l3CommandParameter3
             // 
             this.l3CommandParameter3.AcceptAfterExecuted = false;
@@ -451,6 +462,7 @@
             // 
             // tstxtBOFID
             // 
+            this.tstxtBOFID.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.tstxtBOFID.Name = "tstxtBOFID";
             this.tstxtBOFID.Size = new System.Drawing.Size(100, 25);
             this.tstxtBOFID.Visible = false;
@@ -468,6 +480,7 @@
             // 
             // tstxtCasterID
             // 
+            this.tstxtCasterID.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.tstxtCasterID.Name = "tstxtCasterID";
             this.tstxtCasterID.Size = new System.Drawing.Size(100, 25);
             this.tstxtCasterID.Visible = false;
@@ -1127,11 +1140,12 @@
             this.btnOnSeqExchange,
             this.btnTappingModify,
             this.btnShowChangeRoute,
-            this.btnDispAccount});
+            this.btnDispAccount,
+            this.btnData});
             this.tSp1.Location = new System.Drawing.Point(0, 0);
             this.tSp1.Name = "tSp1";
             this.tSp1.Padding = new System.Windows.Forms.Padding(0);
-            this.tSp1.Size = new System.Drawing.Size(1000, 43);
+            this.tSp1.Size = new System.Drawing.Size(1050, 43);
             this.tSp1.TabIndex = 27;
             this.tSp1.Text = "toolStrip1";
             // 
@@ -1185,7 +1199,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(0, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1000, 102);
+            this.groupBox1.Size = new System.Drawing.Size(1050, 102);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "实绩";
@@ -1796,7 +1810,7 @@
             this.hmiRootPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hmiRootPanel1.Location = new System.Drawing.Point(0, 170);
             this.hmiRootPanel1.Name = "hmiRootPanel1";
-            this.hmiRootPanel1.Size = new System.Drawing.Size(1000, 230);
+            this.hmiRootPanel1.Size = new System.Drawing.Size(1050, 230);
             this.hmiRootPanel1.TabIndex = 30;
             // 
             // dvTapPlan
@@ -1862,7 +1876,7 @@
             dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dvTapPlan.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dvTapPlan.RowTemplate.Height = 23;
-            this.dvTapPlan.Size = new System.Drawing.Size(996, 226);
+            this.dvTapPlan.Size = new System.Drawing.Size(1046, 226);
             this.dvTapPlan.TabIndex = 2;
             this.dvTapPlan.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvTapPlan_CellMouseDown);
             // 
@@ -2682,7 +2696,7 @@
             this.bdN1.MovePreviousItem = null;
             this.bdN1.Name = "bdN1";
             this.bdN1.PositionItem = null;
-            this.bdN1.Size = new System.Drawing.Size(1000, 25);
+            this.bdN1.Size = new System.Drawing.Size(1050, 25);
             this.bdN1.TabIndex = 28;
             this.bdN1.Text = "bindingNavigator1";
             // 
@@ -2849,7 +2863,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 400);
+            this.ClientSize = new System.Drawing.Size(1050, 400);
             this.Controls.Add(this.hmiRootPanel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bdN1);
@@ -3145,5 +3159,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnData;
     }
 }

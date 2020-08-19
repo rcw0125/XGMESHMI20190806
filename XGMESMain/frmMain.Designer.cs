@@ -171,6 +171,7 @@
             this.连铸责任人维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大包称重分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.大包称重分析ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.连铸切割ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.设备状态变化查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.生产实绩查询PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -427,20 +428,6 @@
             this.汽化冷却除尘管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.汽化冷却补水管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.吨上件称重记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NC电文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.NC电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.定单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.钢坯投料电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.钢坯完工电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.钢坯质检电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.钢坯入库电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.铁水电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.铁水完工电文补发PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.铁水质检电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.铁水入库电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.基础数据维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.班别班次维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.工器具材料厂家维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -462,6 +449,20 @@
             this.模型名称维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.模型数据维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.废钢标准维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NC电文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.NC电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.定单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.钢坯投料电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.钢坯完工电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.钢坯质检电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.钢坯入库电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.铁水电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.铁水完工电文补发PToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.铁水质检电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.铁水入库电文补发ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpCatalog = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpIndex = new System.Windows.Forms.ToolStripMenuItem();
@@ -1580,7 +1581,8 @@
             this.连铸耐材使用实绩查询ToolStripMenuItem,
             this.连铸责任人维护ToolStripMenuItem,
             this.大包称重分析ToolStripMenuItem,
-            this.大包称重分析ToolStripMenuItem1});
+            this.大包称重分析ToolStripMenuItem1,
+            this.连铸切割ToolStripMenuItem});
             this.连铸工序管理ToolStripMenuItem.Name = "连铸工序管理ToolStripMenuItem";
             this.连铸工序管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.panelMain.SetTargetForm(this.连铸工序管理ToolStripMenuItem, "");
@@ -1745,6 +1747,13 @@
             this.大包称重分析ToolStripMenuItem1.Size = new System.Drawing.Size(205, 22);
             this.panelMain.SetTargetForm(this.大包称重分析ToolStripMenuItem1, "UnitMag.NewLadleWeightFrm, UnitMag");
             this.大包称重分析ToolStripMenuItem1.Text = "大包称重分析(新版)";
+            // 
+            // 连铸切割ToolStripMenuItem
+            // 
+            this.连铸切割ToolStripMenuItem.Name = "连铸切割ToolStripMenuItem";
+            this.连铸切割ToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.panelMain.SetTargetForm(this.连铸切割ToolStripMenuItem, "UnitMag.cut.Caster3Cut, UnitMag");
+            this.连铸切割ToolStripMenuItem.Text = "3#连铸切割";
             // 
             // toolStripSeparator17
             // 
@@ -3929,125 +3938,6 @@
             this.panelMain.SetTargetForm(this.吨上件称重记录ToolStripMenuItem, "EquipMag.LfWeightFrm, EquipMag");
             this.吨上件称重记录ToolStripMenuItem.Text = "80吨上件称重记录";
             // 
-            // NC电文ToolStripMenuItem
-            // 
-            this.NC电文ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.NC电文补发ToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.电文补发ToolStripMenuItem,
-            this.铁水电文补发ToolStripMenuItem});
-            this.NC电文ToolStripMenuItem.Name = "NC电文ToolStripMenuItem";
-            this.NC电文ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.panelMain.SetTargetForm(this.NC电文ToolStripMenuItem, "");
-            this.NC电文ToolStripMenuItem.Text = "NC电文(&N)";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.L3DataAdapter.SetAccessRight(this.toolStripMenuItem2, "NCTelQuery");
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(163, 22);
-            this.panelMain.SetTargetForm(this.toolStripMenuItem2, "NCTelDataMag.NCTelCheckFrm, NCTelDataMag");
-            this.toolStripMenuItem2.Text = "电文批量补发";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // NC电文补发ToolStripMenuItem
-            // 
-            this.L3DataAdapter.SetAccessRight(this.NC电文补发ToolStripMenuItem, "NCTelQuery");
-            this.NC电文补发ToolStripMenuItem.Name = "NC电文补发ToolStripMenuItem";
-            this.NC电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.panelMain.SetTargetForm(this.NC电文补发ToolStripMenuItem, "NCTelDataMag.NCTelDataFrm, NCTelDataMag");
-            this.NC电文补发ToolStripMenuItem.Text = "电文查询(&T)";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(160, 6);
-            this.toolStripSeparator4.Visible = false;
-            // 
-            // 电文补发ToolStripMenuItem
-            // 
-            this.L3DataAdapter.SetAccessRight(this.电文补发ToolStripMenuItem, "NCSteelTel");
-            this.电文补发ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.定单ToolStripMenuItem,
-            this.钢坯投料电文补发ToolStripMenuItem,
-            this.钢坯完工电文补发ToolStripMenuItem,
-            this.钢坯质检电文补发ToolStripMenuItem,
-            this.钢坯入库电文补发ToolStripMenuItem});
-            this.电文补发ToolStripMenuItem.Name = "电文补发ToolStripMenuItem";
-            this.电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.panelMain.SetTargetForm(this.电文补发ToolStripMenuItem, "");
-            this.电文补发ToolStripMenuItem.Text = "钢坯电文补发(&S)";
-            // 
-            // 定单ToolStripMenuItem
-            // 
-            this.定单ToolStripMenuItem.Name = "定单ToolStripMenuItem";
-            this.定单ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.panelMain.SetTargetForm(this.定单ToolStripMenuItem, "NCTelDataMag.PlanOrderFrm, NCTelDataMag");
-            this.定单ToolStripMenuItem.Text = "钢坯计划定单(&P)";
-            // 
-            // 钢坯投料电文补发ToolStripMenuItem
-            // 
-            this.钢坯投料电文补发ToolStripMenuItem.Name = "钢坯投料电文补发ToolStripMenuItem";
-            this.钢坯投料电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.panelMain.SetTargetForm(this.钢坯投料电文补发ToolStripMenuItem, "NCTelDataMag.MeterialInfoFrm, NCTelDataMag");
-            this.钢坯投料电文补发ToolStripMenuItem.Text = "钢坯投料电文补发(&M)";
-            // 
-            // 钢坯完工电文补发ToolStripMenuItem
-            // 
-            this.钢坯完工电文补发ToolStripMenuItem.Name = "钢坯完工电文补发ToolStripMenuItem";
-            this.钢坯完工电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.panelMain.SetTargetForm(this.钢坯完工电文补发ToolStripMenuItem, "NCTelDataMag.BloomInfoFrm, NCTelDataMag");
-            this.钢坯完工电文补发ToolStripMenuItem.Text = "钢坯完工电文补发(&E)";
-            // 
-            // 钢坯质检电文补发ToolStripMenuItem
-            // 
-            this.钢坯质检电文补发ToolStripMenuItem.Name = "钢坯质检电文补发ToolStripMenuItem";
-            this.钢坯质检电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.panelMain.SetTargetForm(this.钢坯质检电文补发ToolStripMenuItem, "NCTelDataMag.QualityInforFrm, NCTelDataMag");
-            this.钢坯质检电文补发ToolStripMenuItem.Text = "钢坯质检电文补发(&Q)";
-            this.钢坯质检电文补发ToolStripMenuItem.Visible = false;
-            // 
-            // 钢坯入库电文补发ToolStripMenuItem
-            // 
-            this.钢坯入库电文补发ToolStripMenuItem.Name = "钢坯入库电文补发ToolStripMenuItem";
-            this.钢坯入库电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.panelMain.SetTargetForm(this.钢坯入库电文补发ToolStripMenuItem, "NCTelDataMag.InStoreInforFrm, NCTelDataMag");
-            this.钢坯入库电文补发ToolStripMenuItem.Text = "钢坯入库电文补发(&S)";
-            // 
-            // 铁水电文补发ToolStripMenuItem
-            // 
-            this.L3DataAdapter.SetAccessRight(this.铁水电文补发ToolStripMenuItem, "NCIronTel");
-            this.铁水电文补发ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.铁水完工电文补发PToolStripMenuItem,
-            this.铁水质检电文补发ToolStripMenuItem,
-            this.铁水入库电文补发ToolStripMenuItem});
-            this.铁水电文补发ToolStripMenuItem.Name = "铁水电文补发ToolStripMenuItem";
-            this.铁水电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.panelMain.SetTargetForm(this.铁水电文补发ToolStripMenuItem, "");
-            this.铁水电文补发ToolStripMenuItem.Text = "铁水电文补发(&E)";
-            // 
-            // 铁水完工电文补发PToolStripMenuItem
-            // 
-            this.铁水完工电文补发PToolStripMenuItem.Name = "铁水完工电文补发PToolStripMenuItem";
-            this.铁水完工电文补发PToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.panelMain.SetTargetForm(this.铁水完工电文补发PToolStripMenuItem, "NCTelDataMag.IronBloomInfoFrm, NCTelDataMag");
-            this.铁水完工电文补发PToolStripMenuItem.Text = "铁水完工电文补发(&E)";
-            // 
-            // 铁水质检电文补发ToolStripMenuItem
-            // 
-            this.铁水质检电文补发ToolStripMenuItem.Name = "铁水质检电文补发ToolStripMenuItem";
-            this.铁水质检电文补发ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.panelMain.SetTargetForm(this.铁水质检电文补发ToolStripMenuItem, "NCTelDataMag.IronQualityFrm, NCTelDataMag");
-            this.铁水质检电文补发ToolStripMenuItem.Text = "铁水质检电文补发(&Q)";
-            // 
-            // 铁水入库电文补发ToolStripMenuItem
-            // 
-            this.铁水入库电文补发ToolStripMenuItem.Name = "铁水入库电文补发ToolStripMenuItem";
-            this.铁水入库电文补发ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.panelMain.SetTargetForm(this.铁水入库电文补发ToolStripMenuItem, "NCTelDataMag.IronInStoreInfoFrm, NCTelDataMag");
-            this.铁水入库电文补发ToolStripMenuItem.Text = "铁水入库电文补发(&S)";
-            // 
             // 基础数据维护ToolStripMenuItem
             // 
             this.基础数据维护ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -4230,6 +4120,125 @@
             this.废钢标准维护ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.panelMain.SetTargetForm(this.废钢标准维护ToolStripMenuItem, "BOFL2Mag.ModelScrapStdFrm, BOFL2Mag");
             this.废钢标准维护ToolStripMenuItem.Text = "废钢标准维护";
+            // 
+            // NC电文ToolStripMenuItem
+            // 
+            this.NC电文ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.NC电文补发ToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.电文补发ToolStripMenuItem,
+            this.铁水电文补发ToolStripMenuItem});
+            this.NC电文ToolStripMenuItem.Name = "NC电文ToolStripMenuItem";
+            this.NC电文ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
+            this.panelMain.SetTargetForm(this.NC电文ToolStripMenuItem, "");
+            this.NC电文ToolStripMenuItem.Text = "NC电文(&N)";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.L3DataAdapter.SetAccessRight(this.toolStripMenuItem2, "NCTelQuery");
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(163, 22);
+            this.panelMain.SetTargetForm(this.toolStripMenuItem2, "NCTelDataMag.NCTelCheckFrm, NCTelDataMag");
+            this.toolStripMenuItem2.Text = "电文批量补发";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // NC电文补发ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.NC电文补发ToolStripMenuItem, "NCTelQuery");
+            this.NC电文补发ToolStripMenuItem.Name = "NC电文补发ToolStripMenuItem";
+            this.NC电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.panelMain.SetTargetForm(this.NC电文补发ToolStripMenuItem, "NCTelDataMag.NCTelDataFrm, NCTelDataMag");
+            this.NC电文补发ToolStripMenuItem.Text = "电文查询(&T)";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(160, 6);
+            this.toolStripSeparator4.Visible = false;
+            // 
+            // 电文补发ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.电文补发ToolStripMenuItem, "NCSteelTel");
+            this.电文补发ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.定单ToolStripMenuItem,
+            this.钢坯投料电文补发ToolStripMenuItem,
+            this.钢坯完工电文补发ToolStripMenuItem,
+            this.钢坯质检电文补发ToolStripMenuItem,
+            this.钢坯入库电文补发ToolStripMenuItem});
+            this.电文补发ToolStripMenuItem.Name = "电文补发ToolStripMenuItem";
+            this.电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.panelMain.SetTargetForm(this.电文补发ToolStripMenuItem, "");
+            this.电文补发ToolStripMenuItem.Text = "钢坯电文补发(&S)";
+            // 
+            // 定单ToolStripMenuItem
+            // 
+            this.定单ToolStripMenuItem.Name = "定单ToolStripMenuItem";
+            this.定单ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.panelMain.SetTargetForm(this.定单ToolStripMenuItem, "NCTelDataMag.PlanOrderFrm, NCTelDataMag");
+            this.定单ToolStripMenuItem.Text = "钢坯计划定单(&P)";
+            // 
+            // 钢坯投料电文补发ToolStripMenuItem
+            // 
+            this.钢坯投料电文补发ToolStripMenuItem.Name = "钢坯投料电文补发ToolStripMenuItem";
+            this.钢坯投料电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.panelMain.SetTargetForm(this.钢坯投料电文补发ToolStripMenuItem, "NCTelDataMag.MeterialInfoFrm, NCTelDataMag");
+            this.钢坯投料电文补发ToolStripMenuItem.Text = "钢坯投料电文补发(&M)";
+            // 
+            // 钢坯完工电文补发ToolStripMenuItem
+            // 
+            this.钢坯完工电文补发ToolStripMenuItem.Name = "钢坯完工电文补发ToolStripMenuItem";
+            this.钢坯完工电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.panelMain.SetTargetForm(this.钢坯完工电文补发ToolStripMenuItem, "NCTelDataMag.BloomInfoFrm, NCTelDataMag");
+            this.钢坯完工电文补发ToolStripMenuItem.Text = "钢坯完工电文补发(&E)";
+            // 
+            // 钢坯质检电文补发ToolStripMenuItem
+            // 
+            this.钢坯质检电文补发ToolStripMenuItem.Name = "钢坯质检电文补发ToolStripMenuItem";
+            this.钢坯质检电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.panelMain.SetTargetForm(this.钢坯质检电文补发ToolStripMenuItem, "NCTelDataMag.QualityInforFrm, NCTelDataMag");
+            this.钢坯质检电文补发ToolStripMenuItem.Text = "钢坯质检电文补发(&Q)";
+            this.钢坯质检电文补发ToolStripMenuItem.Visible = false;
+            // 
+            // 钢坯入库电文补发ToolStripMenuItem
+            // 
+            this.钢坯入库电文补发ToolStripMenuItem.Name = "钢坯入库电文补发ToolStripMenuItem";
+            this.钢坯入库电文补发ToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.panelMain.SetTargetForm(this.钢坯入库电文补发ToolStripMenuItem, "NCTelDataMag.InStoreInforFrm, NCTelDataMag");
+            this.钢坯入库电文补发ToolStripMenuItem.Text = "钢坯入库电文补发(&S)";
+            // 
+            // 铁水电文补发ToolStripMenuItem
+            // 
+            this.L3DataAdapter.SetAccessRight(this.铁水电文补发ToolStripMenuItem, "NCIronTel");
+            this.铁水电文补发ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.铁水完工电文补发PToolStripMenuItem,
+            this.铁水质检电文补发ToolStripMenuItem,
+            this.铁水入库电文补发ToolStripMenuItem});
+            this.铁水电文补发ToolStripMenuItem.Name = "铁水电文补发ToolStripMenuItem";
+            this.铁水电文补发ToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.panelMain.SetTargetForm(this.铁水电文补发ToolStripMenuItem, "");
+            this.铁水电文补发ToolStripMenuItem.Text = "铁水电文补发(&E)";
+            // 
+            // 铁水完工电文补发PToolStripMenuItem
+            // 
+            this.铁水完工电文补发PToolStripMenuItem.Name = "铁水完工电文补发PToolStripMenuItem";
+            this.铁水完工电文补发PToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.panelMain.SetTargetForm(this.铁水完工电文补发PToolStripMenuItem, "NCTelDataMag.IronBloomInfoFrm, NCTelDataMag");
+            this.铁水完工电文补发PToolStripMenuItem.Text = "铁水完工电文补发(&E)";
+            // 
+            // 铁水质检电文补发ToolStripMenuItem
+            // 
+            this.铁水质检电文补发ToolStripMenuItem.Name = "铁水质检电文补发ToolStripMenuItem";
+            this.铁水质检电文补发ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.panelMain.SetTargetForm(this.铁水质检电文补发ToolStripMenuItem, "NCTelDataMag.IronQualityFrm, NCTelDataMag");
+            this.铁水质检电文补发ToolStripMenuItem.Text = "铁水质检电文补发(&Q)";
+            // 
+            // 铁水入库电文补发ToolStripMenuItem
+            // 
+            this.铁水入库电文补发ToolStripMenuItem.Name = "铁水入库电文补发ToolStripMenuItem";
+            this.铁水入库电文补发ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.panelMain.SetTargetForm(this.铁水入库电文补发ToolStripMenuItem, "NCTelDataMag.IronInStoreInfoFrm, NCTelDataMag");
+            this.铁水入库电文补发ToolStripMenuItem.Text = "铁水入库电文补发(&S)";
             // 
             // menuHelp
             // 
@@ -5178,6 +5187,7 @@
         private System.Windows.Forms.ToolStripMenuItem 手动查询工序流程ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 重做甩废已上传NCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 用户登陆日志明细ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 连铸切割ToolStripMenuItem;
     }
 }
 

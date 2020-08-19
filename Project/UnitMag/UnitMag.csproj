@@ -611,6 +611,18 @@
     <Compile Include="CQA_BOF_Std_Ladle.cs" />
     <Compile Include="CQA_BOF_Std_Slag_Ele.cs" />
     <Compile Include="CQA_BOF_Std_Tapping.cs" />
+    <Compile Include="cut\Caster3Cut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cut\Caster3Cut.Designer.cs">
+      <DependentUpon>Caster3Cut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cut\ucCaster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cut\ucCaster.Designer.cs">
+      <DependentUpon>ucCaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="DbHelp.cs" />
     <Compile Include="DEPMag\DEPAttributeFrm.cs">
       <SubType>Form</SubType>
@@ -1646,6 +1658,12 @@
     <EmbeddedResource Include="CCMMag\ucCCMDataFor07.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ucCCMDataFor07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cut\Caster3Cut.resx">
+      <DependentUpon>Caster3Cut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cut\ucCaster.resx">
+      <DependentUpon>ucCaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DEPMag\DEPAttributeFrm.resx">
       <DependentUpon>DEPAttributeFrm.cs</DependentUpon>
