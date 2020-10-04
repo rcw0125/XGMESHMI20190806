@@ -142,9 +142,32 @@ namespace UnitMag.DEPMag
             // 测温[12/28/2008 sun]
             dsTemp.SourceCondition = "HeatID = '" + dbxHeatID.Text + "' order by Temp_Time desc";
 
+            // select a.other1_max,a.other2_max from CQA_PRODUCT_SHEET a, cplan_tapping b where a.steelgradeindex = b.steelgradeindex and b.heatid = '612000552'
+            string strSql = "select a.other1_max,a.other2_max from CQA_PRODUCT_SHEET a, cplan_tapping b where a.steelgradeindex = b.steelgradeindex and b.heatid='" + dbxHeatID.Text + "'";
+            var dt = UnitMag.MESTool.GetData(Adapter, strSql);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                if (dt.Rows[0]["other1_max"] != null && dt.Rows[0]["other1_max"].ToString() != "")
+                {
+                    std_p = Convert.ToDouble(dt.Rows[0]["other1_max"]);
+                }
+                else
+                {
+                    std_p = 0;
+                }
 
+                if (dt.Rows[0]["other2_max"] != null && dt.Rows[0]["other2_max"].ToString() != "")
+                {
+                    std_si = Convert.ToDouble(dt.Rows[0]["other2_max"]);
+                }
+                else
+                {
+                    std_si = 0;
+                }
+            }
 
         }
+        double std_p = 0, std_si = 0;
 
         //给L3DataSet赋L3DataAdapter以取数据赋值到dv中，然后取消绑定
         private void dsSetL3DataAdapter()
@@ -399,7 +422,44 @@ namespace UnitMag.DEPMag
             dsFeedPro.SourceCondition = "MaterialID = '" + dbxIronLadle.Text.Trim() + "'";
         }
 
+        private void dataGridView2_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            try
+            {
+                if (e.ColumnIndex == 11)
+                {
+                    if (e.Value != null && Convert.ToDouble(e.Value) > std_si)
+                    {
+                        e.CellStyle.BackColor = Color.Red;
+                    }
 
+                }
+
+               
+            }
+            catch
+            {
+
+            }
+
+            try
+            {
+                if (e.ColumnIndex == 13)
+                {
+                    if (e.Value != null && Convert.ToDouble(e.Value) > std_p)
+                    {
+                        e.CellStyle.BackColor = Color.Red;
+                    }
+
+                }
+
+
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
 

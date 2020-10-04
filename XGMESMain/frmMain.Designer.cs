@@ -1807,7 +1807,6 @@
             this.sPC控制图ToolStripMenuItem.Size = new System.Drawing.Size(78, 21);
             this.panelMain.SetTargetForm(this.sPC控制图ToolStripMenuItem, "");
             this.sPC控制图ToolStripMenuItem.Text = "SPC控制图";
-            this.sPC控制图ToolStripMenuItem.Visible = false;
             // 
             // 转炉ToolStripMenuItem
             // 

@@ -134,7 +134,7 @@ namespace XGMESMain
                 MessageBox.Show("没有配置服务！请先配置服务的连接。");
                 return;
             }
-            string connstr = conn.ConnectionString;          
+            string connstr = conn.ConnectionString;
             connstr = connstr.Replace("1089", "2525");
             frmLogin login = new frmLogin();
             string account = ConfigurationManager.AppSettings["LastAccount"];

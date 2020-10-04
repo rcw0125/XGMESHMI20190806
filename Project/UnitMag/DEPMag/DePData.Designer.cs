@@ -166,6 +166,42 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.hmiRootPanel3 = new HMIBase.HMIRootPanel();
             this.dgvTapData = new System.Windows.Forms.DataGridView();
+            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.snDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.asDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.niDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.crDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.znDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isDesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.operatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grossWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnSteelWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bsOut = new System.Windows.Forms.BindingSource(this.components);
             this.dsOut = new AppSvrHMI.L3DataSet();
             this.schemadsOut = new System.Data.DataTable();
@@ -373,42 +409,6 @@
             this.schemadsSampleAddr = new System.Data.DataTable();
             this.coldsSampleAddrL3DataTableCode = new System.Data.DataColumn();
             this.coldsSampleAddrL3DataTableCode_Des = new System.Data.DataColumn();
-            this.ironLadleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ironTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.siDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.snDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.asDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.niDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.moDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.crDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nbDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.znDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isDesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operatorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grossWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnSteelWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tapTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.object3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.weight3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CheckFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bsPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsPlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemadsPlan)).BeginInit();
@@ -1408,10 +1408,10 @@
             // tabPlan
             // 
             this.tabPlan.Controls.Add(this.hmiRootPanel2);
-            this.tabPlan.Location = new System.Drawing.Point(4, 21);
+            this.tabPlan.Location = new System.Drawing.Point(4, 22);
             this.tabPlan.Margin = new System.Windows.Forms.Padding(0);
             this.tabPlan.Name = "tabPlan";
-            this.tabPlan.Size = new System.Drawing.Size(992, 425);
+            this.tabPlan.Size = new System.Drawing.Size(992, 424);
             this.tabPlan.TabIndex = 0;
             this.tabPlan.Text = "脱磷计划";
             this.tabPlan.UseVisualStyleBackColor = true;
@@ -1425,7 +1425,7 @@
             this.hmiRootPanel2.Location = new System.Drawing.Point(0, 0);
             this.hmiRootPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.hmiRootPanel2.Name = "hmiRootPanel2";
-            this.hmiRootPanel2.Size = new System.Drawing.Size(992, 425);
+            this.hmiRootPanel2.Size = new System.Drawing.Size(992, 424);
             this.hmiRootPanel2.TabIndex = 0;
             // 
             // l3dbxTappingStatus
@@ -1449,7 +1449,7 @@
             this.gbxBOFArr.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbxBOFArr.Location = new System.Drawing.Point(0, 176);
             this.gbxBOFArr.Name = "gbxBOFArr";
-            this.gbxBOFArr.Size = new System.Drawing.Size(992, 249);
+            this.gbxBOFArr.Size = new System.Drawing.Size(992, 248);
             this.gbxBOFArr.TabIndex = 5;
             this.gbxBOFArr.TabStop = false;
             this.gbxBOFArr.Text = "等待脱磷站处理铁水";
@@ -1462,17 +1462,17 @@
             this.tabControl2.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(986, 229);
+            this.tabControl2.Size = new System.Drawing.Size(986, 228);
             this.tabControl2.TabIndex = 13;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.hmiRootPanel3);
             this.tabPage1.Controls.Add(this.bindingNavigator1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(978, 204);
+            this.tabPage1.Size = new System.Drawing.Size(978, 202);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -1484,7 +1484,7 @@
             this.hmiRootPanel3.Location = new System.Drawing.Point(3, 28);
             this.hmiRootPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.hmiRootPanel3.Name = "hmiRootPanel3";
-            this.hmiRootPanel3.Size = new System.Drawing.Size(972, 173);
+            this.hmiRootPanel3.Size = new System.Drawing.Size(972, 171);
             this.hmiRootPanel3.TabIndex = 1;
             // 
             // dgvTapData
@@ -1546,8 +1546,264 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvTapData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTapData.RowTemplate.Height = 23;
-            this.dgvTapData.Size = new System.Drawing.Size(968, 169);
+            this.dgvTapData.Size = new System.Drawing.Size(968, 167);
             this.dgvTapData.TabIndex = 3;
+            // 
+            // ironLadleNoDataGridViewTextBoxColumn
+            // 
+            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
+            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
+            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
+            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // ironTempDataGridViewTextBoxColumn
+            // 
+            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
+            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
+            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
+            this.ironTempDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // weightDataGridViewTextBoxColumn
+            // 
+            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
+            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量";
+            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
+            this.weightDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // tareDataGridViewTextBoxColumn
+            // 
+            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
+            this.tareDataGridViewTextBoxColumn.HeaderText = "皮重";
+            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
+            this.tareDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // cDataGridViewTextBoxColumn
+            // 
+            this.cDataGridViewTextBoxColumn.DataPropertyName = "C";
+            this.cDataGridViewTextBoxColumn.HeaderText = "C";
+            this.cDataGridViewTextBoxColumn.Name = "cDataGridViewTextBoxColumn";
+            this.cDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // siDataGridViewTextBoxColumn
+            // 
+            this.siDataGridViewTextBoxColumn.DataPropertyName = "Si";
+            this.siDataGridViewTextBoxColumn.HeaderText = "Si";
+            this.siDataGridViewTextBoxColumn.Name = "siDataGridViewTextBoxColumn";
+            this.siDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // mnDataGridViewTextBoxColumn
+            // 
+            this.mnDataGridViewTextBoxColumn.DataPropertyName = "Mn";
+            this.mnDataGridViewTextBoxColumn.HeaderText = "Mn";
+            this.mnDataGridViewTextBoxColumn.Name = "mnDataGridViewTextBoxColumn";
+            this.mnDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // pDataGridViewTextBoxColumn
+            // 
+            this.pDataGridViewTextBoxColumn.DataPropertyName = "P";
+            this.pDataGridViewTextBoxColumn.HeaderText = "P";
+            this.pDataGridViewTextBoxColumn.Name = "pDataGridViewTextBoxColumn";
+            this.pDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // sDataGridViewTextBoxColumn
+            // 
+            this.sDataGridViewTextBoxColumn.DataPropertyName = "S";
+            this.sDataGridViewTextBoxColumn.HeaderText = "S";
+            this.sDataGridViewTextBoxColumn.Name = "sDataGridViewTextBoxColumn";
+            this.sDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // tiDataGridViewTextBoxColumn
+            // 
+            this.tiDataGridViewTextBoxColumn.DataPropertyName = "Ti";
+            this.tiDataGridViewTextBoxColumn.HeaderText = "Ti";
+            this.tiDataGridViewTextBoxColumn.Name = "tiDataGridViewTextBoxColumn";
+            this.tiDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // snDataGridViewTextBoxColumn
+            // 
+            this.snDataGridViewTextBoxColumn.DataPropertyName = "Sn";
+            this.snDataGridViewTextBoxColumn.HeaderText = "Sn";
+            this.snDataGridViewTextBoxColumn.Name = "snDataGridViewTextBoxColumn";
+            this.snDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // sbDataGridViewTextBoxColumn
+            // 
+            this.sbDataGridViewTextBoxColumn.DataPropertyName = "Sb";
+            this.sbDataGridViewTextBoxColumn.HeaderText = "Sb";
+            this.sbDataGridViewTextBoxColumn.Name = "sbDataGridViewTextBoxColumn";
+            this.sbDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // asDataGridViewTextBoxColumn
+            // 
+            this.asDataGridViewTextBoxColumn.DataPropertyName = "As";
+            this.asDataGridViewTextBoxColumn.HeaderText = "As";
+            this.asDataGridViewTextBoxColumn.Name = "asDataGridViewTextBoxColumn";
+            this.asDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // pbDataGridViewTextBoxColumn
+            // 
+            this.pbDataGridViewTextBoxColumn.DataPropertyName = "Pb";
+            this.pbDataGridViewTextBoxColumn.HeaderText = "Pb";
+            this.pbDataGridViewTextBoxColumn.Name = "pbDataGridViewTextBoxColumn";
+            this.pbDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // niDataGridViewTextBoxColumn
+            // 
+            this.niDataGridViewTextBoxColumn.DataPropertyName = "Ni";
+            this.niDataGridViewTextBoxColumn.HeaderText = "Ni";
+            this.niDataGridViewTextBoxColumn.Name = "niDataGridViewTextBoxColumn";
+            this.niDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // moDataGridViewTextBoxColumn
+            // 
+            this.moDataGridViewTextBoxColumn.DataPropertyName = "Mo";
+            this.moDataGridViewTextBoxColumn.HeaderText = "Mo";
+            this.moDataGridViewTextBoxColumn.Name = "moDataGridViewTextBoxColumn";
+            this.moDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // cuDataGridViewTextBoxColumn
+            // 
+            this.cuDataGridViewTextBoxColumn.DataPropertyName = "Cu";
+            this.cuDataGridViewTextBoxColumn.HeaderText = "Cu";
+            this.cuDataGridViewTextBoxColumn.Name = "cuDataGridViewTextBoxColumn";
+            this.cuDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // crDataGridViewTextBoxColumn
+            // 
+            this.crDataGridViewTextBoxColumn.DataPropertyName = "Cr";
+            this.crDataGridViewTextBoxColumn.HeaderText = "Cr";
+            this.crDataGridViewTextBoxColumn.Name = "crDataGridViewTextBoxColumn";
+            this.crDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // bDataGridViewTextBoxColumn
+            // 
+            this.bDataGridViewTextBoxColumn.DataPropertyName = "B";
+            this.bDataGridViewTextBoxColumn.HeaderText = "B";
+            this.bDataGridViewTextBoxColumn.Name = "bDataGridViewTextBoxColumn";
+            this.bDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // vDataGridViewTextBoxColumn
+            // 
+            this.vDataGridViewTextBoxColumn.DataPropertyName = "V";
+            this.vDataGridViewTextBoxColumn.HeaderText = "V";
+            this.vDataGridViewTextBoxColumn.Name = "vDataGridViewTextBoxColumn";
+            this.vDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // alDataGridViewTextBoxColumn
+            // 
+            this.alDataGridViewTextBoxColumn.DataPropertyName = "Al";
+            this.alDataGridViewTextBoxColumn.HeaderText = "Al";
+            this.alDataGridViewTextBoxColumn.Name = "alDataGridViewTextBoxColumn";
+            this.alDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // nbDataGridViewTextBoxColumn
+            // 
+            this.nbDataGridViewTextBoxColumn.DataPropertyName = "Nb";
+            this.nbDataGridViewTextBoxColumn.HeaderText = "Nb";
+            this.nbDataGridViewTextBoxColumn.Name = "nbDataGridViewTextBoxColumn";
+            this.nbDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // znDataGridViewTextBoxColumn
+            // 
+            this.znDataGridViewTextBoxColumn.DataPropertyName = "Zn";
+            this.znDataGridViewTextBoxColumn.HeaderText = "Zn";
+            this.znDataGridViewTextBoxColumn.Name = "znDataGridViewTextBoxColumn";
+            this.znDataGridViewTextBoxColumn.Width = 42;
+            // 
+            // wDataGridViewTextBoxColumn
+            // 
+            this.wDataGridViewTextBoxColumn.DataPropertyName = "W";
+            this.wDataGridViewTextBoxColumn.HeaderText = "W";
+            this.wDataGridViewTextBoxColumn.Name = "wDataGridViewTextBoxColumn";
+            this.wDataGridViewTextBoxColumn.Width = 36;
+            // 
+            // isDesDataGridViewTextBoxColumn
+            // 
+            this.isDesDataGridViewTextBoxColumn.DataPropertyName = "IsDes";
+            this.isDesDataGridViewTextBoxColumn.HeaderText = "是否脱硫";
+            this.isDesDataGridViewTextBoxColumn.Name = "isDesDataGridViewTextBoxColumn";
+            this.isDesDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // operatorDataGridViewTextBoxColumn
+            // 
+            this.operatorDataGridViewTextBoxColumn.DataPropertyName = "Operator";
+            this.operatorDataGridViewTextBoxColumn.HeaderText = "操作员";
+            this.operatorDataGridViewTextBoxColumn.Name = "operatorDataGridViewTextBoxColumn";
+            this.operatorDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // grossWeightDataGridViewTextBoxColumn
+            // 
+            this.grossWeightDataGridViewTextBoxColumn.DataPropertyName = "Gross_Weight";
+            this.grossWeightDataGridViewTextBoxColumn.HeaderText = "毛重";
+            this.grossWeightDataGridViewTextBoxColumn.Name = "grossWeightDataGridViewTextBoxColumn";
+            this.grossWeightDataGridViewTextBoxColumn.Width = 54;
+            // 
+            // returnSteelWeightDataGridViewTextBoxColumn
+            // 
+            this.returnSteelWeightDataGridViewTextBoxColumn.DataPropertyName = "Return_Steel_Weight";
+            this.returnSteelWeightDataGridViewTextBoxColumn.HeaderText = "回炉钢水量";
+            this.returnSteelWeightDataGridViewTextBoxColumn.Name = "returnSteelWeightDataGridViewTextBoxColumn";
+            this.returnSteelWeightDataGridViewTextBoxColumn.Visible = false;
+            this.returnSteelWeightDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // tapTimeDataGridViewTextBoxColumn
+            // 
+            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
+            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时刻";
+            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
+            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
+            // 
+            // object1DataGridViewTextBoxColumn
+            // 
+            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
+            this.object1DataGridViewTextBoxColumn.HeaderText = "组罐主键1";
+            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
+            this.object1DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight1DataGridViewTextBoxColumn
+            // 
+            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
+            this.weight1DataGridViewTextBoxColumn.HeaderText = "组罐重量1";
+            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
+            this.weight1DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // object2DataGridViewTextBoxColumn
+            // 
+            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
+            this.object2DataGridViewTextBoxColumn.HeaderText = "组罐主键2";
+            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
+            this.object2DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight2DataGridViewTextBoxColumn
+            // 
+            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
+            this.weight2DataGridViewTextBoxColumn.HeaderText = "组罐重量2";
+            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
+            this.weight2DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // object3DataGridViewTextBoxColumn
+            // 
+            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
+            this.object3DataGridViewTextBoxColumn.HeaderText = "组罐主键3";
+            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
+            this.object3DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // weight3DataGridViewTextBoxColumn
+            // 
+            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
+            this.weight3DataGridViewTextBoxColumn.HeaderText = "组罐重量3";
+            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
+            this.weight3DataGridViewTextBoxColumn.Width = 84;
+            // 
+            // CheckFlag
+            // 
+            this.CheckFlag.DataPropertyName = "CheckFlag";
+            this.CheckFlag.FalseValue = "0";
+            this.CheckFlag.HeaderText = "选择";
+            this.CheckFlag.IndeterminateValue = "0";
+            this.CheckFlag.Name = "CheckFlag";
+            this.CheckFlag.TrueValue = "1";
+            this.CheckFlag.Width = 35;
             // 
             // bsOut
             // 
@@ -1977,7 +2233,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(35, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel2.Text = "/ {0}";
             this.toolStripLabel2.ToolTipText = "总项数";
             // 
@@ -2008,6 +2264,7 @@
             // 
             this.toolStripTextBox2.AccessibleName = "位置";
             this.toolStripTextBox2.AutoSize = false;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(50, 21);
             this.toolStripTextBox2.Text = "0";
@@ -2077,8 +2334,8 @@
             this.dvPlan.RowTemplate.Height = 23;
             this.dvPlan.Size = new System.Drawing.Size(992, 176);
             this.dvPlan.TabIndex = 2;
-            this.dvPlan.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dvPlan_RowPrePaint);
             this.dvPlan.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvPlan_DataError);
+            this.dvPlan.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dvPlan_RowPrePaint);
             // 
             // heatIDDataGridViewTextBoxColumn
             // 
@@ -2341,18 +2598,18 @@
             this.tabProcess.Controls.Add(this.groupBox43);
             this.tabProcess.Controls.Add(this.groupBox47);
             this.tabProcess.Controls.Add(this.groupBox40);
-            this.tabProcess.Location = new System.Drawing.Point(4, 21);
+            this.tabProcess.Location = new System.Drawing.Point(4, 22);
             this.tabProcess.Margin = new System.Windows.Forms.Padding(0);
             this.tabProcess.Name = "tabProcess";
-            this.tabProcess.Size = new System.Drawing.Size(992, 425);
+            this.tabProcess.Size = new System.Drawing.Size(992, 424);
             this.tabProcess.TabIndex = 3;
             this.tabProcess.Text = "脱磷冶炼实绩";
             this.tabProcess.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label15);
@@ -2672,6 +2929,7 @@
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView2.Size = new System.Drawing.Size(992, 109);
             this.dataGridView2.TabIndex = 2;
+            this.dataGridView2.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridView2_CellPainting);
             // 
             // sampleCodeDataGridViewTextBoxColumn
             // 
@@ -3123,8 +3381,8 @@
             // 
             // groupBox43
             // 
-            this.groupBox43.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox43.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox43.Controls.Add(this.dbxIronLadle);
             this.groupBox43.Controls.Add(this.dbxHeatID);
             this.groupBox43.Controls.Add(this.dvTemp);
@@ -3196,8 +3454,8 @@
             this.dvTemp.RowTemplate.Height = 23;
             this.dvTemp.Size = new System.Drawing.Size(250, 285);
             this.dvTemp.TabIndex = 1;
-            this.dvTemp.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvLabElement_DataError);
             this.dvTemp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvTemp_CellContentClick);
+            this.dvTemp.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dvLabElement_DataError);
             // 
             // heatIDDataGridViewTextBoxColumn2
             // 
@@ -3280,8 +3538,8 @@
             // 
             // groupBox47
             // 
-            this.groupBox47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox47.Controls.Add(this.dataGridView8);
             this.groupBox47.Location = new System.Drawing.Point(3, 136);
             this.groupBox47.Name = "groupBox47";
@@ -3450,8 +3708,8 @@
             // 
             // groupBox40
             // 
-            this.groupBox40.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox40.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox40.Controls.Add(this.dvAllay);
             this.groupBox40.Location = new System.Drawing.Point(468, 136);
             this.groupBox40.Margin = new System.Windows.Forms.Padding(0);
@@ -3650,262 +3908,6 @@
             this.coldsSampleAddrL3DataTableCode_Des.Caption = "Code_Des";
             this.coldsSampleAddrL3DataTableCode_Des.ColumnName = "Code_Des";
             this.coldsSampleAddrL3DataTableCode_Des.Namespace = "";
-            // 
-            // ironLadleNoDataGridViewTextBoxColumn
-            // 
-            this.ironLadleNoDataGridViewTextBoxColumn.DataPropertyName = "IronLadleNo";
-            this.ironLadleNoDataGridViewTextBoxColumn.HeaderText = "铁包号";
-            this.ironLadleNoDataGridViewTextBoxColumn.Name = "ironLadleNoDataGridViewTextBoxColumn";
-            this.ironLadleNoDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // ironTempDataGridViewTextBoxColumn
-            // 
-            this.ironTempDataGridViewTextBoxColumn.DataPropertyName = "IronTemp";
-            this.ironTempDataGridViewTextBoxColumn.HeaderText = "铁水温度";
-            this.ironTempDataGridViewTextBoxColumn.Name = "ironTempDataGridViewTextBoxColumn";
-            this.ironTempDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // weightDataGridViewTextBoxColumn
-            // 
-            this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
-            this.weightDataGridViewTextBoxColumn.HeaderText = "铁水重量";
-            this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
-            this.weightDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // tareDataGridViewTextBoxColumn
-            // 
-            this.tareDataGridViewTextBoxColumn.DataPropertyName = "Tare";
-            this.tareDataGridViewTextBoxColumn.HeaderText = "皮重";
-            this.tareDataGridViewTextBoxColumn.Name = "tareDataGridViewTextBoxColumn";
-            this.tareDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // cDataGridViewTextBoxColumn
-            // 
-            this.cDataGridViewTextBoxColumn.DataPropertyName = "C";
-            this.cDataGridViewTextBoxColumn.HeaderText = "C";
-            this.cDataGridViewTextBoxColumn.Name = "cDataGridViewTextBoxColumn";
-            this.cDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // siDataGridViewTextBoxColumn
-            // 
-            this.siDataGridViewTextBoxColumn.DataPropertyName = "Si";
-            this.siDataGridViewTextBoxColumn.HeaderText = "Si";
-            this.siDataGridViewTextBoxColumn.Name = "siDataGridViewTextBoxColumn";
-            this.siDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // mnDataGridViewTextBoxColumn
-            // 
-            this.mnDataGridViewTextBoxColumn.DataPropertyName = "Mn";
-            this.mnDataGridViewTextBoxColumn.HeaderText = "Mn";
-            this.mnDataGridViewTextBoxColumn.Name = "mnDataGridViewTextBoxColumn";
-            this.mnDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // pDataGridViewTextBoxColumn
-            // 
-            this.pDataGridViewTextBoxColumn.DataPropertyName = "P";
-            this.pDataGridViewTextBoxColumn.HeaderText = "P";
-            this.pDataGridViewTextBoxColumn.Name = "pDataGridViewTextBoxColumn";
-            this.pDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // sDataGridViewTextBoxColumn
-            // 
-            this.sDataGridViewTextBoxColumn.DataPropertyName = "S";
-            this.sDataGridViewTextBoxColumn.HeaderText = "S";
-            this.sDataGridViewTextBoxColumn.Name = "sDataGridViewTextBoxColumn";
-            this.sDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // tiDataGridViewTextBoxColumn
-            // 
-            this.tiDataGridViewTextBoxColumn.DataPropertyName = "Ti";
-            this.tiDataGridViewTextBoxColumn.HeaderText = "Ti";
-            this.tiDataGridViewTextBoxColumn.Name = "tiDataGridViewTextBoxColumn";
-            this.tiDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // snDataGridViewTextBoxColumn
-            // 
-            this.snDataGridViewTextBoxColumn.DataPropertyName = "Sn";
-            this.snDataGridViewTextBoxColumn.HeaderText = "Sn";
-            this.snDataGridViewTextBoxColumn.Name = "snDataGridViewTextBoxColumn";
-            this.snDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // sbDataGridViewTextBoxColumn
-            // 
-            this.sbDataGridViewTextBoxColumn.DataPropertyName = "Sb";
-            this.sbDataGridViewTextBoxColumn.HeaderText = "Sb";
-            this.sbDataGridViewTextBoxColumn.Name = "sbDataGridViewTextBoxColumn";
-            this.sbDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // asDataGridViewTextBoxColumn
-            // 
-            this.asDataGridViewTextBoxColumn.DataPropertyName = "As";
-            this.asDataGridViewTextBoxColumn.HeaderText = "As";
-            this.asDataGridViewTextBoxColumn.Name = "asDataGridViewTextBoxColumn";
-            this.asDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // pbDataGridViewTextBoxColumn
-            // 
-            this.pbDataGridViewTextBoxColumn.DataPropertyName = "Pb";
-            this.pbDataGridViewTextBoxColumn.HeaderText = "Pb";
-            this.pbDataGridViewTextBoxColumn.Name = "pbDataGridViewTextBoxColumn";
-            this.pbDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // niDataGridViewTextBoxColumn
-            // 
-            this.niDataGridViewTextBoxColumn.DataPropertyName = "Ni";
-            this.niDataGridViewTextBoxColumn.HeaderText = "Ni";
-            this.niDataGridViewTextBoxColumn.Name = "niDataGridViewTextBoxColumn";
-            this.niDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // moDataGridViewTextBoxColumn
-            // 
-            this.moDataGridViewTextBoxColumn.DataPropertyName = "Mo";
-            this.moDataGridViewTextBoxColumn.HeaderText = "Mo";
-            this.moDataGridViewTextBoxColumn.Name = "moDataGridViewTextBoxColumn";
-            this.moDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // cuDataGridViewTextBoxColumn
-            // 
-            this.cuDataGridViewTextBoxColumn.DataPropertyName = "Cu";
-            this.cuDataGridViewTextBoxColumn.HeaderText = "Cu";
-            this.cuDataGridViewTextBoxColumn.Name = "cuDataGridViewTextBoxColumn";
-            this.cuDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // crDataGridViewTextBoxColumn
-            // 
-            this.crDataGridViewTextBoxColumn.DataPropertyName = "Cr";
-            this.crDataGridViewTextBoxColumn.HeaderText = "Cr";
-            this.crDataGridViewTextBoxColumn.Name = "crDataGridViewTextBoxColumn";
-            this.crDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // bDataGridViewTextBoxColumn
-            // 
-            this.bDataGridViewTextBoxColumn.DataPropertyName = "B";
-            this.bDataGridViewTextBoxColumn.HeaderText = "B";
-            this.bDataGridViewTextBoxColumn.Name = "bDataGridViewTextBoxColumn";
-            this.bDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // vDataGridViewTextBoxColumn
-            // 
-            this.vDataGridViewTextBoxColumn.DataPropertyName = "V";
-            this.vDataGridViewTextBoxColumn.HeaderText = "V";
-            this.vDataGridViewTextBoxColumn.Name = "vDataGridViewTextBoxColumn";
-            this.vDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // alDataGridViewTextBoxColumn
-            // 
-            this.alDataGridViewTextBoxColumn.DataPropertyName = "Al";
-            this.alDataGridViewTextBoxColumn.HeaderText = "Al";
-            this.alDataGridViewTextBoxColumn.Name = "alDataGridViewTextBoxColumn";
-            this.alDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // nbDataGridViewTextBoxColumn
-            // 
-            this.nbDataGridViewTextBoxColumn.DataPropertyName = "Nb";
-            this.nbDataGridViewTextBoxColumn.HeaderText = "Nb";
-            this.nbDataGridViewTextBoxColumn.Name = "nbDataGridViewTextBoxColumn";
-            this.nbDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // znDataGridViewTextBoxColumn
-            // 
-            this.znDataGridViewTextBoxColumn.DataPropertyName = "Zn";
-            this.znDataGridViewTextBoxColumn.HeaderText = "Zn";
-            this.znDataGridViewTextBoxColumn.Name = "znDataGridViewTextBoxColumn";
-            this.znDataGridViewTextBoxColumn.Width = 42;
-            // 
-            // wDataGridViewTextBoxColumn
-            // 
-            this.wDataGridViewTextBoxColumn.DataPropertyName = "W";
-            this.wDataGridViewTextBoxColumn.HeaderText = "W";
-            this.wDataGridViewTextBoxColumn.Name = "wDataGridViewTextBoxColumn";
-            this.wDataGridViewTextBoxColumn.Width = 36;
-            // 
-            // isDesDataGridViewTextBoxColumn
-            // 
-            this.isDesDataGridViewTextBoxColumn.DataPropertyName = "IsDes";
-            this.isDesDataGridViewTextBoxColumn.HeaderText = "是否脱硫";
-            this.isDesDataGridViewTextBoxColumn.Name = "isDesDataGridViewTextBoxColumn";
-            this.isDesDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // operatorDataGridViewTextBoxColumn
-            // 
-            this.operatorDataGridViewTextBoxColumn.DataPropertyName = "Operator";
-            this.operatorDataGridViewTextBoxColumn.HeaderText = "操作员";
-            this.operatorDataGridViewTextBoxColumn.Name = "operatorDataGridViewTextBoxColumn";
-            this.operatorDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // grossWeightDataGridViewTextBoxColumn
-            // 
-            this.grossWeightDataGridViewTextBoxColumn.DataPropertyName = "Gross_Weight";
-            this.grossWeightDataGridViewTextBoxColumn.HeaderText = "毛重";
-            this.grossWeightDataGridViewTextBoxColumn.Name = "grossWeightDataGridViewTextBoxColumn";
-            this.grossWeightDataGridViewTextBoxColumn.Width = 54;
-            // 
-            // returnSteelWeightDataGridViewTextBoxColumn
-            // 
-            this.returnSteelWeightDataGridViewTextBoxColumn.DataPropertyName = "Return_Steel_Weight";
-            this.returnSteelWeightDataGridViewTextBoxColumn.HeaderText = "回炉钢水量";
-            this.returnSteelWeightDataGridViewTextBoxColumn.Name = "returnSteelWeightDataGridViewTextBoxColumn";
-            this.returnSteelWeightDataGridViewTextBoxColumn.Visible = false;
-            this.returnSteelWeightDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // tapTimeDataGridViewTextBoxColumn
-            // 
-            this.tapTimeDataGridViewTextBoxColumn.DataPropertyName = "Tap_Time";
-            this.tapTimeDataGridViewTextBoxColumn.HeaderText = "出铁时刻";
-            this.tapTimeDataGridViewTextBoxColumn.Name = "tapTimeDataGridViewTextBoxColumn";
-            this.tapTimeDataGridViewTextBoxColumn.Width = 78;
-            // 
-            // object1DataGridViewTextBoxColumn
-            // 
-            this.object1DataGridViewTextBoxColumn.DataPropertyName = "Object1";
-            this.object1DataGridViewTextBoxColumn.HeaderText = "组罐主键1";
-            this.object1DataGridViewTextBoxColumn.Name = "object1DataGridViewTextBoxColumn";
-            this.object1DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight1DataGridViewTextBoxColumn
-            // 
-            this.weight1DataGridViewTextBoxColumn.DataPropertyName = "Weight1";
-            this.weight1DataGridViewTextBoxColumn.HeaderText = "组罐重量1";
-            this.weight1DataGridViewTextBoxColumn.Name = "weight1DataGridViewTextBoxColumn";
-            this.weight1DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // object2DataGridViewTextBoxColumn
-            // 
-            this.object2DataGridViewTextBoxColumn.DataPropertyName = "Object2";
-            this.object2DataGridViewTextBoxColumn.HeaderText = "组罐主键2";
-            this.object2DataGridViewTextBoxColumn.Name = "object2DataGridViewTextBoxColumn";
-            this.object2DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight2DataGridViewTextBoxColumn
-            // 
-            this.weight2DataGridViewTextBoxColumn.DataPropertyName = "Weight2";
-            this.weight2DataGridViewTextBoxColumn.HeaderText = "组罐重量2";
-            this.weight2DataGridViewTextBoxColumn.Name = "weight2DataGridViewTextBoxColumn";
-            this.weight2DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // object3DataGridViewTextBoxColumn
-            // 
-            this.object3DataGridViewTextBoxColumn.DataPropertyName = "Object3";
-            this.object3DataGridViewTextBoxColumn.HeaderText = "组罐主键3";
-            this.object3DataGridViewTextBoxColumn.Name = "object3DataGridViewTextBoxColumn";
-            this.object3DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // weight3DataGridViewTextBoxColumn
-            // 
-            this.weight3DataGridViewTextBoxColumn.DataPropertyName = "Weight3";
-            this.weight3DataGridViewTextBoxColumn.HeaderText = "组罐重量3";
-            this.weight3DataGridViewTextBoxColumn.Name = "weight3DataGridViewTextBoxColumn";
-            this.weight3DataGridViewTextBoxColumn.Width = 84;
-            // 
-            // CheckFlag
-            // 
-            this.CheckFlag.DataPropertyName = "CheckFlag";
-            this.CheckFlag.FalseValue = "0";
-            this.CheckFlag.HeaderText = "选择";
-            this.CheckFlag.IndeterminateValue = "0";
-            this.CheckFlag.Name = "CheckFlag";
-            this.CheckFlag.TrueValue = "1";
-            this.CheckFlag.Width = 35;
             // 
             // DePData
             // 
